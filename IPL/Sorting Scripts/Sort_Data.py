@@ -9,7 +9,7 @@ def filter_and_sort(csv_path, output_csv):
     df = pd.read_csv(csv_path, low_memory=False)
 
     # Filter rows where the 'year' column is 2025
-    df_filtered = df[df['year'] == 2022]
+    df_filtered = df[df['year'].isin([2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025])]
 
     # Optionally, print the number of filtered rows
     print(f"Filtered CSV contains {df_filtered.shape[0]} rows.")
@@ -48,8 +48,8 @@ def filter_and_sort(csv_path, output_csv):
 
 if __name__ == "__main__":
     # Define the input and output CSV file paths
-    input_csv = r"E:\IPL\dream11_points_predictor-main\dream11_points_predictor-main\IPL\Data\t20_bbb.csv"
-    output_csv = r"E:\IPL\dream11_points_predictor-main\dream11_points_predictor-main\IPL\Sorted_Data\t20_bbb_22_filtered.csv"
+    input_csv = r"D:\ED\FIFS_IPL\data\t20_bbb.csv"
+    output_csv = r"D:\ED\FIFS_IPL\data\t20_bbb_sorted.csv"
 
     # Check if the input file exists
     if not os.path.exists(input_csv):

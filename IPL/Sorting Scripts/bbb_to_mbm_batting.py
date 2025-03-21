@@ -3,7 +3,7 @@ import csv
 import os
 
 
-def process_batting_scorecard(ball_by_ball_file):
+def process_batting_scorecard(ball_by_ball_file, competition):
     """Process ball-by-ball data into batting scorecard format."""
     # Read ball-by-ball data
     df = pd.read_csv(ball_by_ball_file)
@@ -78,13 +78,14 @@ def process_batting_scorecard(ball_by_ball_file):
             'sixes': stats['sixes'],
             'strikeRate': round(strike_rate, 2),
             'isOut': stats['isOut'],
-            'wicketType': stats['wicketType'] if stats['isOut'] else 'not out'
+            'wicketType': stats['wicketType'] if stats['isOut'] else 'not out',
+            'competition': competition  # New column added for competition
         })
 
     return pd.DataFrame(results)
 
 
-def process_all_matches(folder_path):
+def process_all_matches(folder_path, competition):
     """Process all matches in the specified folder."""
     # Get all CSV files in the folder
     all_files = os.listdir(folder_path)
@@ -107,7 +108,7 @@ def process_all_matches(folder_path):
 
             # Process match
             print(f"Processing match {idx}/{total_matches}: {match_id}")
-            scorecard = process_batting_scorecard(match_path)
+            scorecard = process_batting_scorecard(match_path, competition)
             all_scorecards.append(scorecard)
 
         except Exception as e:
@@ -126,19 +127,22 @@ def main():
     # Get folder path from user
     folder_path = input("Enter the path to the folder containing match files: ").strip()
 
+    # Get competition name from user
+    competition = input("Enter the competition name(make sure it matches the competition column): ").strip()
+
     # Verify folder exists
     if not os.path.exists(folder_path):
         print("Error: Folder not found!")
         return
 
     print("Starting to process matches...")
-    combined_scorecard = process_all_matches(folder_path)
+    combined_scorecard = process_all_matches(folder_path, competition)
 
     if combined_scorecard is not None:
         # Save to CSV
         output_file = os.path.join(folder_path, "all_matches_scorecard.csv")
         combined_scorecard.to_csv(output_file, index=False)
-        print(f"\nProcessing complete!")
+        print("\nProcessing complete!")
         print(f"Total matches processed: {len(combined_scorecard['MatchID'].unique())}")
         print(f"Output saved to: {output_file}")
     else:
