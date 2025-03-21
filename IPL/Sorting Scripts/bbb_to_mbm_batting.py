@@ -8,13 +8,26 @@ def process_batting_scorecard(ball_by_ball_file, competition):
     # Read ball-by-ball data
     df = pd.read_csv(ball_by_ball_file)
 
-    # Filter rows based on the competition column if it exists
-    if 'competition' in df.columns and competition:
+    # Apply filtering only if the user did not input "." (which means no filtering)
+    if 'competition' in df.columns and competition and competition != '.':
         df = df[df['competition'].str.lower() == competition.lower()]
 
-    # If no rows match, return an empty DataFrame
+    # If no rows match after filtering, return an empty DataFrame
     if df.empty:
         return pd.DataFrame()
+
+    # Determine the competition value for output.
+    # If the user input is "." and the CSV has a competition column, use its actual value.
+    if competition == '.' and 'competition' in df.columns:
+        output_competition = df['competition'].iloc[0]
+    else:
+        output_competition = competition
+
+    # If the date column exists, capture the match date (assuming all rows share the same date)
+    if 'date' in df.columns:
+        match_date = df['date'].iloc[0]
+    else:
+        match_date = ""
 
     # Initialize batting statistics
     batting_stats = {}
@@ -72,6 +85,7 @@ def process_batting_scorecard(ball_by_ball_file, competition):
         strike_rate = (stats['runs'] / stats['balls'] * 100) if stats['balls'] > 0 else 0
         results.append({
             'MatchID': match_id,
+            'date': match_date,  # New date column added
             'innings': stats['innings'],
             'team': team,
             'batsman': player,
@@ -84,59 +98,77 @@ def process_batting_scorecard(ball_by_ball_file, competition):
             'strikeRate': round(strike_rate, 2),
             'isOut': stats['isOut'],
             'wicketType': stats['wicketType'] if stats['isOut'] else 'not out',
-            'competition': competition  # Include the competition name
+            'competition': output_competition  # Use the appropriate competition value
         })
 
     return pd.DataFrame(results)
 
 
-def process_all_matches(folder_path, competition):
-    """Process all matches in the specified folder, filtering by competition using the file data."""
-    # Get all CSV files in the folder
-    all_files = os.listdir(folder_path)
+def process_all_matches(path, competition):
+    """Process matches from a given folder or a single CSV file."""
+    # If the provided path is a file, process it directly.
+    if os.path.isfile(path):
+        print(f"Processing single file: {os.path.basename(path)}")
+        scorecard = process_batting_scorecard(path, competition)
+        return scorecard
 
-    # Find match files (excluding _info files)
-    match_files = [f for f in all_files if f.endswith('.csv')]
+    # Otherwise, assume it's a folder and process all CSV files within it.
+    elif os.path.isdir(path):
+        all_files = os.listdir(path)
+        match_files = [f for f in all_files if f.endswith('.csv')]
+        all_scorecards = []
+        total_matches = len(match_files)
+        for idx, match_file in enumerate(match_files, 1):
+            try:
+                match_id = match_file.replace('.csv', '')
+                match_path = os.path.join(path, match_file)
+                print(f"Processing match {idx}/{total_matches}: {match_id}")
+                scorecard = process_batting_scorecard(match_path, competition)
+                # Only append if the scorecard has rows (i.e. the file contained relevant data)
+                if not scorecard.empty:
+                    all_scorecards.append(scorecard)
+            except Exception as e:
+                print(f"Error processing match {match_id}: {str(e)}")
+                continue
 
-    all_scorecards = []
-
-    total_matches = len(match_files)
-    for idx, match_file in enumerate(match_files, 1):
-        try:
-            match_id = match_file.replace('.csv', '')
-            match_path = os.path.join(folder_path, match_file)
-            print(f"Processing match {idx}/{total_matches}: {match_id}")
-            scorecard = process_batting_scorecard(match_path, competition)
-            # Only append if scorecard has rows (i.e. the file contained data for the specified competition)
-            if not scorecard.empty:
-                all_scorecards.append(scorecard)
-        except Exception as e:
-            print(f"Error processing match {match_id}: {str(e)}")
-            continue
-
-    if all_scorecards:
-        combined_scorecard = pd.concat(all_scorecards, ignore_index=True)
-        return combined_scorecard
+        if all_scorecards:
+            combined_scorecard = pd.concat(all_scorecards, ignore_index=True)
+            return combined_scorecard
+        else:
+            return None
     else:
+        print("Provided path is neither a file nor a folder.")
         return None
 
 
 def main():
-    folder_path = input("Enter the path to the folder containing match files: ").strip()
-    competition = input("Enter the competition name: ").strip()
+    input_path = input("Enter the path to a CSV file or a folder containing match files: ").strip()
+    competition = input("Enter the competition name (or enter '.' for all matches): ").strip()
 
-    if not os.path.exists(folder_path):
-        print("Error: Folder not found!")
+    if not os.path.exists(input_path):
+        print("Error: Path not found!")
         return
 
     print("Starting to process matches...")
-    combined_scorecard = process_all_matches(folder_path, competition)
+    combined_scorecard = process_all_matches(input_path, competition)
 
-    if combined_scorecard is not None:
-        output_file = os.path.join(folder_path, "all_matches_scorecard.csv")
+    if combined_scorecard is not None and not combined_scorecard.empty:
+        # Set output file name based on competition input.
+        if competition == '.':
+            output_filename = "all_mbm_scorecard.csv"
+        else:
+            output_filename = f"{competition}_mbm_scorecard.csv"
+        # Determine output folder: if processing a file, use its directory; otherwise, use the folder path.
+        if os.path.isfile(input_path):
+            output_file = os.path.join(os.path.dirname(input_path), output_filename)
+        else:
+            output_file = os.path.join(input_path, output_filename)
         combined_scorecard.to_csv(output_file, index=False)
         print("\nProcessing complete!")
-        print(f"Total matches processed: {len(combined_scorecard['MatchID'].unique())}")
+        if 'MatchID' in combined_scorecard.columns:
+            print(f"Total matches processed: {len(combined_scorecard['MatchID'].unique())}")
+        else:
+            print("Processed scorecard from a single file")
         print(f"Output saved to: {output_file}")
     else:
         print("No matches were processed successfully")
