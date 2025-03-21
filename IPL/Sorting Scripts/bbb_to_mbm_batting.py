@@ -8,6 +8,14 @@ def process_batting_scorecard(ball_by_ball_file, competition):
     # Read ball-by-ball data
     df = pd.read_csv(ball_by_ball_file)
 
+    # Filter rows based on the competition column if it exists
+    if 'competition' in df.columns and competition:
+        df = df[df['competition'].str.lower() == competition.lower()]
+
+    # If no rows match, return an empty DataFrame
+    if df.empty:
+        return pd.DataFrame()
+
     # Initialize batting statistics
     batting_stats = {}
 
@@ -60,11 +68,8 @@ def process_batting_scorecard(ball_by_ball_file, competition):
 
     # Create results DataFrame
     results = []
-
-    # Process each player who batted
     for (match_id, team, player), stats in batting_stats.items():
         strike_rate = (stats['runs'] / stats['balls'] * 100) if stats['balls'] > 0 else 0
-
         results.append({
             'MatchID': match_id,
             'innings': stats['innings'],
@@ -79,43 +84,36 @@ def process_batting_scorecard(ball_by_ball_file, competition):
             'strikeRate': round(strike_rate, 2),
             'isOut': stats['isOut'],
             'wicketType': stats['wicketType'] if stats['isOut'] else 'not out',
-            'competition': competition  # New column added for competition
+            'competition': competition  # Include the competition name
         })
 
     return pd.DataFrame(results)
 
 
 def process_all_matches(folder_path, competition):
-    """Process all matches in the specified folder."""
+    """Process all matches in the specified folder, filtering by competition using the file data."""
     # Get all CSV files in the folder
     all_files = os.listdir(folder_path)
 
     # Find match files (excluding _info files)
     match_files = [f for f in all_files if f.endswith('.csv')]
 
-    # Initialize list to store all scorecards
     all_scorecards = []
 
-    # Process each match
     total_matches = len(match_files)
     for idx, match_file in enumerate(match_files, 1):
         try:
-            # Extract match ID from filename
             match_id = match_file.replace('.csv', '')
-
-            # Construct file path
             match_path = os.path.join(folder_path, match_file)
-
-            # Process match
             print(f"Processing match {idx}/{total_matches}: {match_id}")
             scorecard = process_batting_scorecard(match_path, competition)
-            all_scorecards.append(scorecard)
-
+            # Only append if scorecard has rows (i.e. the file contained data for the specified competition)
+            if not scorecard.empty:
+                all_scorecards.append(scorecard)
         except Exception as e:
             print(f"Error processing match {match_id}: {str(e)}")
             continue
 
-    # Combine all scorecards
     if all_scorecards:
         combined_scorecard = pd.concat(all_scorecards, ignore_index=True)
         return combined_scorecard
@@ -124,13 +122,9 @@ def process_all_matches(folder_path, competition):
 
 
 def main():
-    # Get folder path from user
     folder_path = input("Enter the path to the folder containing match files: ").strip()
+    competition = input("Enter the competition name: ").strip()
 
-    # Get competition name from user
-    competition = input("Enter the competition name(make sure it matches the competition column): ").strip()
-
-    # Verify folder exists
     if not os.path.exists(folder_path):
         print("Error: Folder not found!")
         return
@@ -139,7 +133,6 @@ def main():
     combined_scorecard = process_all_matches(folder_path, competition)
 
     if combined_scorecard is not None:
-        # Save to CSV
         output_file = os.path.join(folder_path, "all_matches_scorecard.csv")
         combined_scorecard.to_csv(output_file, index=False)
         print("\nProcessing complete!")
