@@ -2,13 +2,31 @@ import pandas as pd
 import csv
 import os
 
+# -------------------------------------------------------------------------
+# Global: Load people mapping from people.csv
+# -------------------------------------------------------------------------
+PEOPLE_FILE = r"D:\ED\FIFS_IPL\data\people.csv"
+try:
+    df_people = pd.read_csv(PEOPLE_FILE)
+    # Drop rows where key_cricinfo is NaN and convert key_cricinfo to numeric
+    df_people_valid = df_people.dropna(subset=['key_cricinfo'])
+    df_people_valid['key_cricinfo'] = pd.to_numeric(df_people_valid['key_cricinfo'], errors='coerce')
+    # Create mapping dictionary: key (numeric) -> identifier (as is)
+    people_mapping = df_people_valid.set_index('key_cricinfo')['identifier'].to_dict()
+except Exception as e:
+    print("Error loading people.csv:", e)
+    people_mapping = {}
 
+# -------------------------------------------------------------------------
+# Process a single ball-by-ball file into a batting scorecard format.
+# This function now also adds p_bat_hex and p_bowl_hex columns.
+# -------------------------------------------------------------------------
 def process_batting_scorecard(ball_by_ball_file, competition):
     """Process ball-by-ball data into batting scorecard format."""
     # Read ball-by-ball data
     df = pd.read_csv(ball_by_ball_file)
 
-    # Apply filtering only if the user did not input "." (which means no filtering)
+    # Filter by competition if needed (if user didn't input ".")
     if 'competition' in df.columns and competition and competition != '.':
         df = df[df['competition'].str.lower() == competition.lower()]
 
@@ -17,75 +35,84 @@ def process_batting_scorecard(ball_by_ball_file, competition):
         return pd.DataFrame()
 
     # Determine the competition value for output.
-    # If the user input is "." and the CSV has a competition column, use its actual value.
     if competition == '.' and 'competition' in df.columns:
         output_competition = df['competition'].iloc[0]
     else:
         output_competition = competition
 
-    # If the date column exists, capture the match date (assuming all rows share the same date)
-    if 'date' in df.columns:
-        match_date = df['date'].iloc[0]
-    else:
-        match_date = ""
+    # Capture the match date (assuming all rows share the same date)
+    match_date = df['date'].iloc[0] if 'date' in df.columns else ""
 
-    # Initialize batting statistics
+    # Initialize batting statistics dictionary.
+    # The key is a tuple: (match_id, batting_team, striker)
     batting_stats = {}
 
-    # Process each ball
+    # Process each ball in the DataFrame.
     for _, ball in df.iterrows():
-        striker = ball['p_bat']  # Player ID of the batsman
-        batsman_name = ball['bat']  # Actual batsman name
-        bowler_name = ball['bowl']  # Actual bowler name
-        batting_team = ball['team_bat']
-        match_id = ball['p_match']  # Get the match ID
+        # Convert p_bat and p_bowl values to numeric for matching.
+        striker = pd.to_numeric(ball['p_bat'], errors='coerce')
+        # p_bowl might be NaN or missing in some rows, so convert it similarly.
+        bowler_id = pd.to_numeric(ball['p_bowl'], errors='coerce') if 'p_bowl' in ball else None
 
-        # Update statistics for the specific match and player
-        stats = batting_stats.get((match_id, batting_team, striker), {
-            'batsman_name': batsman_name,
-            'bowler_name': bowler_name,
-            'runs': 0,
-            'balls': 0,
-            'fours': 0,
-            'sixes': 0,
-            'isOut': False,
-            'wicketType': '',
-            'innings': ball['inns']
-        })
+        batsman_name = ball['bat']     # Batsman's name
+        bowler_name = ball['bowl']       # Bowler's name
+        batting_team = ball['team_bat']  # Batting team name
+        match_id = ball['p_match']       # Match ID
 
-        # Update runs and balls
+        key = (match_id, batting_team, striker)
+        if key not in batting_stats:
+            # Initialize statistics with extra fields for mapping.
+            batting_stats[key] = {
+                'batsman_name': batsman_name,
+                'bowler_name': bowler_name,
+                'runs': 0,
+                'balls': 0,
+                'fours': 0,
+                'sixes': 0,
+                'isOut': False,
+                'wicketType': '',
+                'innings': ball['inns'],
+                'p_bat_id': striker,  # store the raw striker id
+                'p_bowl_id': bowler_id  # store the bowler id (will update if wicket falls)
+            }
+        stats = batting_stats[key]
+
+        # Update runs and balls faced.
         runs = ball['batruns']
         stats['balls'] += 1
         stats['runs'] += runs
 
-        # Count boundaries based on the score column
+        # Count boundaries (using batruns field)
         score = ball['batruns']
         if score == 4:
             stats['fours'] += 1
         elif score == 6:
             stats['sixes'] += 1
         elif score == 5:
-            stats['fours'] += 1  # Count as a four with an extra wide
+            stats['fours'] += 1  # Count a 5 as a four (with an extra wide)
 
-        # Check for wicket
-        out_status = str(ball['out']).strip().upper()  # Normalize to uppercase
-        dismissed_player = str(ball['p_out']).strip()  # Ensure it's treated as a string
-
+        # Check if the batsman is dismissed on this ball.
+        out_status = str(ball['out']).strip().upper()  # Normalize
+        dismissed_player = str(ball['p_out']).strip()
         if out_status == 'TRUE' and dismissed_player == str(striker):
             stats['isOut'] = True
-            stats['wicketType'] = str(ball['dismissal']).strip()  # Use the dismissal type directly
-            stats['bowler_name'] = bowler_name  # Update the bowler who got the wicket
+            stats['wicketType'] = str(ball['dismissal']).strip()
+            stats['bowler_name'] = bowler_name
+            # Update bowler id to the one who took the wicket.
+            stats['p_bowl_id'] = bowler_id
 
-        # Save the updated stats back to the dictionary
-        batting_stats[(match_id, batting_team, striker)] = stats
+        batting_stats[key] = stats
 
-    # Create results DataFrame
+    # Create results DataFrame with the aggregated stats.
     results = []
     for (match_id, team, player), stats in batting_stats.items():
         strike_rate = (stats['runs'] / stats['balls'] * 100) if stats['balls'] > 0 else 0
+        # Map the p_bat and p_bowl ids using the people_mapping dictionary.
+        p_bat_hex = people_mapping.get(stats['p_bat_id'], '')
+        p_bowl_hex = people_mapping.get(stats['p_bowl_id'], '')
         results.append({
             'MatchID': match_id,
-            'date': match_date,  # New date column added
+            'date': match_date,
             'innings': stats['innings'],
             'team': team,
             'batsman': player,
@@ -98,21 +125,24 @@ def process_batting_scorecard(ball_by_ball_file, competition):
             'strikeRate': round(strike_rate, 2),
             'isOut': stats['isOut'],
             'wicketType': stats['wicketType'] if stats['isOut'] else 'not out',
-            'competition': output_competition  # Use the appropriate competition value
+            'competition': output_competition,
+            'p_bat_hex': p_bat_hex,
+            'p_bowl_hex': p_bowl_hex
         })
 
     return pd.DataFrame(results)
 
 
+# -------------------------------------------------------------------------
+# Process all matches from a folder or a single file.
+# -------------------------------------------------------------------------
 def process_all_matches(path, competition):
     """Process matches from a given folder or a single CSV file."""
-    # If the provided path is a file, process it directly.
     if os.path.isfile(path):
         print(f"Processing single file: {os.path.basename(path)}")
         scorecard = process_batting_scorecard(path, competition)
         return scorecard
 
-    # Otherwise, assume it's a folder and process all CSV files within it.
     elif os.path.isdir(path):
         all_files = os.listdir(path)
         match_files = [f for f in all_files if f.endswith('.csv')]
@@ -124,7 +154,6 @@ def process_all_matches(path, competition):
                 match_path = os.path.join(path, match_file)
                 print(f"Processing match {idx}/{total_matches}: {match_id}")
                 scorecard = process_batting_scorecard(match_path, competition)
-                # Only append if the scorecard has rows (i.e. the file contained relevant data)
                 if not scorecard.empty:
                     all_scorecards.append(scorecard)
             except Exception as e:
@@ -141,6 +170,9 @@ def process_all_matches(path, competition):
         return None
 
 
+# -------------------------------------------------------------------------
+# Main function to run the processing.
+# -------------------------------------------------------------------------
 def main():
     input_path = input("Enter the path to a CSV file or a folder containing match files: ").strip()
     competition = input("Enter the competition name (or enter '.' for all matches): ").strip()
@@ -153,12 +185,10 @@ def main():
     combined_scorecard = process_all_matches(input_path, competition)
 
     if combined_scorecard is not None and not combined_scorecard.empty:
-        # Set output file name based on competition input.
         if competition == '.':
             output_filename = "all_mbm_scorecard.csv"
         else:
             output_filename = f"{competition}_mbm_scorecard.csv"
-        # Determine output folder: if processing a file, use its directory; otherwise, use the folder path.
         if os.path.isfile(input_path):
             output_file = os.path.join(os.path.dirname(input_path), output_filename)
         else:
