@@ -5,7 +5,7 @@ import os
 # -------------------------------------------------------------------------
 # Global: Load people mapping from people.csv
 # -------------------------------------------------------------------------
-PEOPLE_FILE = r"D:\ED\FIFS_IPL\data\people.csv"
+PEOPLE_FILE = r"/IPL/required_data/people.csv"
 try:
     df_people = pd.read_csv(PEOPLE_FILE)
     # Drop rows where key_cricinfo is NaN and convert key_cricinfo to numeric
