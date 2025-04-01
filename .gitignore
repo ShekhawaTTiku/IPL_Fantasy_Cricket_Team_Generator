@@ -3,3 +3,4 @@
 /.ipynb_checkpoints/
 venv/
 cricket-ipl-api/node_modules/
+logs.log
