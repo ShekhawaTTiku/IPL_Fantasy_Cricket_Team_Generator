@@ -5,8 +5,8 @@ const fs = require("fs");
 const csv = require("csv-parser");
 const getTodayIPLMatchIds = require("./fetchMatchId");
 
-const csvFilePath = "./people.csv";
-const doc = new GoogleSpreadsheet(process.env.GOOGLE_SHEET_ID);
+const csvFilePath = "../data/register_data/people.csv";
+const doc = new GoogleSpreadsheet(process.env.GOOGLE_SHEET_ID_BAT);
 
 async function authenticateGoogleSheet() {
     try {
@@ -85,16 +85,18 @@ async function updateGoogleSheet() {
             for (const batter of innings.batsman) {
                 let bowlerName = null;
                 let bowlerId = null;
+                let bowlerCricinfoId = null; // New field for bowler's Cricinfo ID
                 let wicketType = batter.outDec || "Not Out";
                 let wicket_Desc = batter.outDec || "Not Out";
                 let is_Out = "False";
 
+                // Determine the type of dismissal and bowler details
                 if (wicketType.includes("b ") && !wicketType.includes("c ")) {
-                    bowlerName = wicketType.split("b ")[1];
+                    bowlerName = wicketType.split("b ")[1]?.trim();
                     wicketType = wicketType.includes("lbw") ? "LBW" : "Bowled";
                     is_Out = "True";
                 } else if (wicketType.includes("c ") && wicketType.includes(" b ")) {
-                    bowlerName = wicketType.split(" b ")[1];
+                    bowlerName = wicketType.split(" b ")[1]?.trim();
                     wicketType = "Caught";
                     is_Out = "True";
                 } else if (wicketType.includes("st ")) {
@@ -108,26 +110,35 @@ async function updateGoogleSheet() {
                     is_Out = "True";
                 }
 
+                // Find the bowler's ID and Cricinfo ID if bowlerName is available
                 if (bowlerName) {
-                    const bowler = innings.bowler.find(b => b.name === bowlerName);
-                    bowlerId = bowler ? bowler.id : null;
+                    const bowler = innings.bowler.find(b => 
+                        b.name.trim() === bowlerName || b.nickName?.trim() === bowlerName // Match name or nickname
+                    );
+                    if (bowler) {
+                        bowlerId = bowler.id;
+                        bowlerCricinfoId = playerMapping[bowler.id?.toString()] || "N/A"; // Map Cricbuzz ID to Cricinfo ID
+                    }
                 }
 
+                // Handle "Did Not Bat" (DNB) cases
                 if (!batter.balls && !batter.runs && !batter.fours && !batter.sixes && !batter.outDec) {
                     wicketType = "DNB";
                     is_Out = "DNB";
-                    is_Out = "DNB";
                 }
 
-                let mappedCricinfoId = playerMapping[batter.id] || null;
+                // Map Cricinfo ID for the batter
+                const batterCricinfoId = playerMapping[batter.id?.toString()] || "N/A";
 
+                // Push the row to the rows array
                 rows.push({
                     date: new Date().toISOString().split("T")[0],
                     match_id: matchId,
                     batting_team: battingTeam,
                     bowling_team: bowlingTeam,
                     innings: innings.inningsId,
-                    batter_id: mappedCricinfoId || batter.id,
+                    batter_id: batter.id, // Cricbuzz ID
+                    batter_cricinfo_id: batterCricinfoId, // Cricinfo ID
                     batter: batter.name,
                     runs: batter.runs || 0,
                     balls: batter.balls || 0,
@@ -137,7 +148,8 @@ async function updateGoogleSheet() {
                     isOut: is_Out,
                     wicket_desc: wicket_Desc,
                     wicket_type: wicketType,
-                    bowler_id: bowlerId,
+                    bowler_id: bowlerId, // Cricbuzz ID
+                    bowler_cricinfo_id: bowlerCricinfoId, // Cricinfo ID
                     bowler: bowlerName,
                     venue: venue,
                 });
