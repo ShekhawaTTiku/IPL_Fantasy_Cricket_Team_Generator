@@ -4,3 +4,6 @@
 venv/
 cricket-ipl-api/node_modules/
 logs.log
+data/bbb/ganjoo_t20_bbb_filtered.csv
+data/bbb/t20_bbb.csv
+notebooks/model_training/logs.log
