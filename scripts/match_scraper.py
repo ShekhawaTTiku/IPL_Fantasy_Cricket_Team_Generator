@@ -20,7 +20,15 @@ def get_match_urls():
 
     # Find all <a> tags with the specific class name
     for link in soup.find_all("a", class_="text-hvr-underline", href=True):
-        if "/live-cricket-scores/" in link["href"]:
+        if "/cricket-scores/" in link["href"]:
+            match_id = link["href"].split("/")[-2]
+            match_name = link["href"].split("/")[-1]
+            match_url = f"https://www.cricbuzz.com/cricket-match-facts/{match_id}/{match_name}"
+
+            if match_url not in seen_links:
+                match_links.append(match_url)
+                seen_links.add(match_url)
+        elif "/live-cricket-scores/" in link["href"]:
             match_id = link["href"].split("/")[-2]
             match_name = link["href"].split("/")[-1]
             match_url = f"https://www.cricbuzz.com/cricket-match-facts/{match_id}/{match_name}"
