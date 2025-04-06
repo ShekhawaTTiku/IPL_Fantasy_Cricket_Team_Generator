@@ -20,7 +20,15 @@ def get_match_urls():
 
     # Find all <a> tags with the specific class name
     for link in soup.find_all("a", class_="text-hvr-underline", href=True):
-        if "/live-cricket-scores/" in link["href"]:
+        if "/cricket-scores/" in link["href"]:
+            match_id = link["href"].split("/")[-2]
+            match_name = link["href"].split("/")[-1]
+            match_url = f"https://www.cricbuzz.com/cricket-match-facts/{match_id}/{match_name}"
+
+            if match_url not in seen_links:
+                match_links.append(match_url)
+                seen_links.add(match_url)
+        elif "/live-cricket-scores/" in link["href"]:
             match_id = link["href"].split("/")[-2]
             match_name = link["href"].split("/")[-1]
             match_url = f"https://www.cricbuzz.com/cricket-match-facts/{match_id}/{match_name}"
@@ -74,57 +82,123 @@ def extract_match_date(soup):
 
 
 
+def extract_player_id(url):
+    """Extract player ID from URL."""
+    try:
+        # URL format: https://www.cricbuzz.com/profiles/12627/kl-rahul
+        # or: /profiles/12627/kl-rahul
+        parts = url.split('/')
+        for i, part in enumerate(parts):
+            if part == "profiles" and i+1 < len(parts):
+                return parts[i+1]
+        return "Unknown"
+    except Exception as e:
+        print(f"⚠️ Error extracting player ID: {e}")
+        return "Unknown"
 
 def extract_playing_xi(soup):
     """Extracts Playing XI and Bench players from the match page."""
     print("🏏 Extracting Playing XI and Bench players...")
 
-    # Find all player name sections inside the div with the specific class
     match_info_sections = soup.select("div.cb-col.cb-col-100")
 
     team1_players, team2_players = [], []
     bench1_players, bench2_players = [], []
+    
+    # Lists for URLs
+    team1_urls, team2_urls = [], []
+    bench1_urls, bench2_urls = [], []
+    
+    # New lists for player IDs
+    team1_ids, team2_ids = [], []
+    bench1_ids, bench2_ids = [], []
+
+    # Function to extract player ID from URL
+    def extract_player_id(url):
+        try:
+            # URL format is typically /profiles/12345/player-name
+            parts = url.split('/')
+            for i, part in enumerate(parts):
+                if part == "profiles" and i+1 < len(parts):
+                    return parts[i+1]
+            return "Unknown"
+        except Exception as e:
+            print(f"⚠️ Error extracting player ID: {e}")
+            return "Unknown"
 
     for section in match_info_sections:
-        # Find the title of the section (Playing or Bench)
         title_div = section.find("div", class_="cb-col cb-col-27 cb-mat-fct-itm text-bold")
         if not title_div:
             continue
 
         title_text = title_div.get_text(strip=True)
 
-        # Find the corresponding player names in the same section
         player_names = []
+        player_urls = []
+        player_ids = []  # Store extracted IDs
         player_links = section.select("div.cb-col.cb-col-73.cb-mat-fct-itm a.text-hvr-underline")
 
         for player in player_links:
             player_name = player.get_text(strip=True)
+            player_url = player.get("href")
+            player_id = extract_player_id(player_url)  # Extract ID from URL
+            
             player_names.append(player_name)
+            player_urls.append(player_url)
+            player_ids.append(player_id)
+            
+            print(f"👤 Player: {player_name}, URL: {player_url}, ID: {player_id}")
 
-        # Identify Playing XI or Bench and assign accordingly
         if "Playing" in title_text:
             if not team1_players:
                 team1_players = player_names[:11]
+                team1_urls = player_urls[:11]
+                team1_ids = player_ids[:11]  # Store team1 player IDs
                 print(f"✅ Team 1 Playing XI: {team1_players}")
             else:
                 team2_players = player_names[:11]
+                team2_urls = player_urls[:11]
+                team2_ids = player_ids[:11]  # Store team2 player IDs
                 print(f"✅ Team 2 Playing XI: {team2_players}")
         elif "Bench" in title_text:
             if not bench1_players:
-                bench1_players = player_names[:5]  # Limit to the first 5 players
+                bench1_players = player_names[:5]
+                bench1_urls = player_urls[:5]
+                bench1_ids = player_ids[:5]  # Store bench1 player IDs
                 print(f"🪑 Team 1 Bench: {bench1_players}")
             else:
-                bench2_players = player_names[:5]  # Limit to the first 5 players
+                bench2_players = player_names[:5]
+                bench2_urls = player_urls[:5]
+                bench2_ids = player_ids[:5]  # Store bench2 player IDs
                 print(f"🪑 Team 2 Bench: {bench2_players}")
 
+    # Construct full URLs
+    base_url = "https://www.cricbuzz.com"
+    team1_full_urls = [f"{base_url}{url}" for url in team1_urls]
+    team2_full_urls = [f"{base_url}{url}" for url in team2_urls]
+    bench1_full_urls = [f"{base_url}{url}" for url in bench1_urls]
+    bench2_full_urls = [f"{base_url}{url}" for url in bench2_urls]
+    
+    # Display player info including IDs
+    print("\n📋 All Player URLs and IDs:")
+    for name, url, pid in zip(team1_players, team1_full_urls, team1_ids):
+        print(f"  - {name}: {url} (ID: {pid})")
+    
+    # Combine playing XI and bench
     team1_players.extend(bench1_players)
     team2_players.extend(bench2_players)
+    
+    # Combine IDs as well
+    team1_ids.extend(bench1_ids)
+    team2_ids.extend(bench2_ids)
 
-    return team1_players, team2_players
+    # Return player names, URLs, and IDs
+    return (team1_players, team2_players), (team1_full_urls + bench1_full_urls, team2_full_urls + bench2_full_urls), (team1_ids, team2_ids)
+
 
 
 def extract_match_details(match_url):
-    """Extracts match details including date, playing XI, teams, venue, toss, and innings."""
+    """Extracts match details including date, playing XI, teams, venue, toss, innings, and player IDs."""
     print(f"🌐 Fetching match details from: {match_url}")
     response = requests.get(match_url, headers=headers)
     if response.status_code != 200:
@@ -145,7 +219,9 @@ def extract_match_details(match_url):
     team1_name, team2_name = teams
     print(f"✅ Teams found: {team1_name} vs {team2_name}")
 
-    team1_players, team2_players = extract_playing_xi(soup)
+    # Updated to unpack three return values including player IDs
+    (team1_players, team2_players), (team1_urls, team2_urls), (team1_ids, team2_ids) = extract_playing_xi(soup)
+    
     if not team1_players or not team2_players:
         print(f"⚠️ Error extracting playing XI for {match_url}")
         return match_date, []
@@ -185,19 +261,18 @@ def extract_match_details(match_url):
 
     print(f"Team 1 Innings: {team1_innings}, Team 2 Innings: {team2_innings}")
 
-
-
+    # Updated to include player IDs in match data
     match_data = []
-    for player in team1_players:
-        match_data.append([player, team1_name, team2_name, venue, toss_info, team1_innings])
-    for player in team2_players:
-        match_data.append([player, team2_name, team1_name, venue, toss_info, team2_innings])
+    for player, player_id in zip(team1_players, team1_ids):
+        match_data.append([player, team1_name, team2_name, venue, toss_info, team1_innings, player_id])
+    for player, player_id in zip(team2_players, team2_ids):
+        match_data.append([player, team2_name, team1_name, venue, toss_info, team2_innings, player_id])
 
     print(f"✅ Successfully extracted match details for {match_url}")
     return match_date, match_data
 
+
 def save_to_csv(data, match_number):
-    """Saves extracted data to a CSV file inside the Downloads folder with match number."""
     download_folder = "Today_Match_Details"
     os.makedirs(download_folder, exist_ok=True)
     filename = f"match_{match_number}.csv"
@@ -205,10 +280,11 @@ def save_to_csv(data, match_number):
 
     with open(file_path, "w", newline="", encoding="utf-8") as file:
         writer = csv.writer(file)
-        writer.writerow(["Player Name", "Team", "Opponent", "Venue", "Toss Info", "Innings"])
+        writer.writerow(["Player Name", "Team", "Opponent", "Venue", "Toss Info", "Innings", "Player ID"])
         writer.writerows(data)
 
     print(f"✅ CSV file saved successfully: {file_path}")
+
 
 def fetch_match_details_by_number():
     """Asks for a match number, fetches match details, and saves to CSV."""
