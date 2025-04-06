@@ -262,14 +262,32 @@ def extract_match_details(match_url):
     print(f"Team 1 Innings: {team1_innings}, Team 2 Innings: {team2_innings}")
 
     # Updated to include player IDs in match data
+    # Using full team names from the mapping dictionary keys
     match_data = []
+    
+    # Get the full team names from the dictionary or use the extracted names
+    for team_full_name in team_name_map.keys():
+        if team_name_map[team_full_name] == team1_name or team_full_name == team1_name:
+            team1_full = team_full_name
+            break
+    else:
+        team1_full = team1_name
+        
+    for team_full_name in team_name_map.keys():
+        if team_name_map[team_full_name] == team2_name or team_full_name == team2_name:
+            team2_full = team_full_name
+            break
+    else:
+        team2_full = team2_name
+    
     for player, player_id in zip(team1_players, team1_ids):
-        match_data.append([player, team1_name, team2_name, venue, toss_info, team1_innings, player_id])
+        match_data.append([player, team1_full, team2_full, venue, toss_info, team1_innings, player_id])
     for player, player_id in zip(team2_players, team2_ids):
-        match_data.append([player, team2_name, team1_name, venue, toss_info, team2_innings, player_id])
+        match_data.append([player, team2_full, team1_full, venue, toss_info, team2_innings, player_id])
 
     print(f"✅ Successfully extracted match details for {match_url}")
     return match_date, match_data
+
 
 
 def save_to_csv(data, match_number):
