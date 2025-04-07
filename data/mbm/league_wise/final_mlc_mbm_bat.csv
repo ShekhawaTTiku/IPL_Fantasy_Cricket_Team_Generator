@@ -1,0 +1,938 @@
+match_id,date,venue,inns,batter_id,batter,bowler,bowler_id,runs,balls,fours,sixes,sr,isOut,wicketType,bat_team,bowl_team,league
+1381361,2023-07-13,Grand Prairie Stadium,1,379140,DP Conway,A Zampa,379504,55,37,7,1,148.65,True,caught,Texas Super Kings,Los Angeles Knight Riders,MLC
+1381361,2023-07-13,Grand Prairie Stadium,1,44828,F du Plessis,LH Ferguson,493773,0,1,0,0,0.0,True,caught,Texas Super Kings,Los Angeles Knight Riders,MLC
+1381361,2023-07-13,Grand Prairie Stadium,1,699483,BKEL Milantha,Ali Khan,927119,17,14,1,1,121.43,True,caught,Texas Super Kings,Los Angeles Knight Riders,MLC
+1381361,2023-07-13,Grand Prairie Stadium,1,321777,DA Miller,LH Ferguson,493773,61,42,2,4,145.24,True,caught,Texas Super Kings,Los Angeles Knight Riders,MLC
+1381361,2023-07-13,Grand Prairie Stadium,1,451947,Milind Kumar,SP Narine,230558,2,3,0,0,66.67,True,lbw,Texas Super Kings,Los Angeles Knight Riders,MLC
+1381361,2023-07-13,Grand Prairie Stadium,1,502714,MJ Santner,Ali Khan,927119,21,14,0,2,150.0,True,caught,Texas Super Kings,Los Angeles Knight Riders,MLC
+1381361,2023-07-13,Grand Prairie Stadium,1,450881,CP Savage,,,5,3,1,0,166.67,False,not out,Texas Super Kings,Los Angeles Knight Riders,MLC
+1381361,2023-07-13,Grand Prairie Stadium,1,51439,DJ Bravo,,,16,6,0,2,266.67,False,not out,Texas Super Kings,Los Angeles Knight Riders,MLC
+1381361,2023-07-13,Grand Prairie Stadium,1,596010,G Coetzee,,,0,0,0,0,0.0,False,DNB,Texas Super Kings,Los Angeles Knight Riders,
+1381361,2023-07-13,Grand Prairie Stadium,1,223642,J Theron,,,0,0,0,0,0.0,False,DNB,Texas Super Kings,Los Angeles Knight Riders,
+1381361,2023-07-13,Grand Prairie Stadium,1,935881,Mohammad Mohsin,,,0,0,0,0,0.0,False,DNB,Texas Super Kings,Los Angeles Knight Riders,
+1381361,2023-07-13,Grand Prairie Stadium,2,226492,MJ Guptill,J Theron,223642,0,3,0,0,0.0,True,caught,Los Angeles Knight Riders,Texas Super Kings,MLC
+1381361,2023-07-13,Grand Prairie Stadium,2,318845,RR Rossouw,J Theron,223642,4,3,1,0,133.33,True,bowled,Los Angeles Knight Riders,Texas Super Kings,MLC
+1381361,2023-07-13,Grand Prairie Stadium,2,446499,UBT Chand,G Coetzee,596010,4,6,0,0,66.67,True,bowled,Los Angeles Knight Riders,Texas Super Kings,MLC
+1381361,2023-07-13,Grand Prairie Stadium,2,348129,NR Kumar,CP Savage,450881,0,3,0,0,0.0,True,caught,Los Angeles Knight Riders,Texas Super Kings,MLC
+1381361,2023-07-13,Grand Prairie Stadium,2,430105,JS Malhotra,G Coetzee,596010,22,11,2,2,200.0,True,bowled,Los Angeles Knight Riders,Texas Super Kings,MLC
+1381361,2023-07-13,Grand Prairie Stadium,2,276298,AD Russell,DJ Bravo,51439,55,34,7,3,161.76,True,caught,Los Angeles Knight Riders,Texas Super Kings,MLC
+1381361,2023-07-13,Grand Prairie Stadium,2,230558,SP Narine,Mohammad Mohsin,935881,15,13,0,1,115.38,True,caught,Los Angeles Knight Riders,Texas Super Kings,MLC
+1381361,2023-07-13,Grand Prairie Stadium,2,429927,CA Dry,Mohammad Mohsin,935881,0,2,0,0,0.0,True,bowled,Los Angeles Knight Riders,Texas Super Kings,MLC
+1381361,2023-07-13,Grand Prairie Stadium,2,379504,A Zampa,Mohammad Mohsin,935881,3,4,0,0,75.0,True,bowled,Los Angeles Knight Riders,Texas Super Kings,MLC
+1381361,2023-07-13,Grand Prairie Stadium,2,493773,LH Ferguson,Mohammad Mohsin,935881,1,4,0,0,25.0,True,bowled,Los Angeles Knight Riders,Texas Super Kings,MLC
+1381361,2023-07-13,Grand Prairie Stadium,2,927119,Ali Khan,,,1,2,0,0,50.0,False,not out,Los Angeles Knight Riders,Texas Super Kings,MLC
+1381362,2023-07-14,Grand Prairie Stadium,1,959759,FH Allen,K Rabada,550215,10,5,2,0,200.0,True,caught,San Francisco Unicorns,MI New York,MLC
+1381362,2023-07-14,Grand Prairie Stadium,1,230193,MS Wade,K Rabada,550215,5,6,1,0,83.33,True,lbw,San Francisco Unicorns,MI New York,MLC
+1381362,2023-07-14,Grand Prairie Stadium,1,325012,MP Stoinis,TA Boult,277912,6,7,1,0,85.71,True,bowled,San Francisco Unicorns,MI New York,MLC
+1381362,2023-07-14,Grand Prairie Stadium,1,5334,AJ Finch,S Ladda,317292,9,13,0,1,69.23,True,caught,San Francisco Unicorns,MI New York,MLC
+1381362,2023-07-14,Grand Prairie Stadium,1,277662,CJ Anderson,,,91,52,4,7,175.0,False,not out,San Francisco Unicorns,MI New York,MLC
+1381362,2023-07-14,Grand Prairie Stadium,1,922943,Shadab Khan,TA Boult,277912,61,30,4,5,203.33,True,bowled,San Francisco Unicorns,MI New York,MLC
+1381362,2023-07-14,Grand Prairie Stadium,1,1079860,Tajinder Singh,,,18,10,3,0,180.0,False,not out,San Francisco Unicorns,MI New York,MLC
+1381362,2023-07-14,Grand Prairie Stadium,1,440894,C le Roux,,,0,0,0,0,0.0,False,DNB,San Francisco Unicorns,MI New York,
+1381362,2023-07-14,Grand Prairie Stadium,1,628217,Chaitanya Bishnoi,,,0,0,0,0,0.0,False,DNB,San Francisco Unicorns,MI New York,
+1381362,2023-07-14,Grand Prairie Stadium,1,1161606,Haris Rauf,,,0,0,0,0,0.0,False,DNB,San Francisco Unicorns,MI New York,
+1381362,2023-07-14,Grand Prairie Stadium,1,19264,LE Plunkett,,,0,0,0,0,0.0,False,DNB,San Francisco Unicorns,MI New York,
+1381362,2023-07-14,Grand Prairie Stadium,2,1070665,D Brevis,Shadab Khan,922943,32,25,2,2,128.0,True,caught,MI New York,San Francisco Unicorns,MLC
+1381362,2023-07-14,Grand Prairie Stadium,2,355359,SR Taylor,C le Roux,440894,0,1,0,0,0.0,True,caught,MI New York,San Francisco Unicorns,MLC
+1381362,2023-07-14,Grand Prairie Stadium,2,1159641,MD Patel,C le Roux,440894,8,8,2,0,100.0,True,caught,MI New York,San Francisco Unicorns,MLC
+1381362,2023-07-14,Grand Prairie Stadium,2,604302,N Pooran,LE Plunkett,19264,40,28,2,3,142.86,True,caught and bowled,MI New York,San Francisco Unicorns,MLC
+1381362,2023-07-14,Grand Prairie Stadium,2,230559,KA Pollard,LE Plunkett,19264,48,27,2,4,177.78,True,caught,MI New York,San Francisco Unicorns,MLC
+1381362,2023-07-14,Grand Prairie Stadium,2,892749,TH David,,,53,28,4,4,189.29,False,not out,MI New York,San Francisco Unicorns,MLC
+1381362,2023-07-14,Grand Prairie Stadium,2,384518,Hammad Azam,,,2,3,0,0,66.67,False,not out,MI New York,San Francisco Unicorns,MLC
+1381362,2023-07-14,Grand Prairie Stadium,2,547092,Ehsan Adil,,,0,0,0,0,0.0,False,DNB,MI New York,San Francisco Unicorns,
+1381362,2023-07-14,Grand Prairie Stadium,2,550215,K Rabada,,,0,0,0,0,0.0,False,DNB,MI New York,San Francisco Unicorns,
+1381362,2023-07-14,Grand Prairie Stadium,2,317292,S Ladda,,,0,0,0,0,0.0,False,DNB,MI New York,San Francisco Unicorns,
+1381362,2023-07-14,Grand Prairie Stadium,2,348133,SR Taylor,,,0,0,0,0,0.0,False,DNB,MI New York,San Francisco Unicorns,
+1381362,2023-07-14,Grand Prairie Stadium,2,277912,TA Boult,,,0,0,0,0,0.0,False,DNB,MI New York,San Francisco Unicorns,
+1381363,2023-07-14,Grand Prairie Stadium,1,605575,MW Short,Imad Wasim,227758,2,3,0,0,66.67,True,bowled,Washington Freedom,Seattle Orcas,MLC
+1381363,2023-07-14,Grand Prairie Stadium,1,485379,AGS Gous,Harmeet Singh,391128,28,33,3,0,84.85,True,caught,Washington Freedom,Seattle Orcas,MLC
+1381363,2023-07-14,Grand Prairie Stadium,1,556916,Mukhtar Ahmed,WD Parnell,265564,5,5,1,0,100.0,True,lbw,Washington Freedom,Seattle Orcas,MLC
+1381363,2023-07-14,Grand Prairie Stadium,1,823509,GD Phillips,CJ Gannon,326635,20,13,3,1,153.85,True,caught,Washington Freedom,Seattle Orcas,MLC
+1381363,2023-07-14,Grand Prairie Stadium,1,5961,MC Henriques,AJ Tye,459508,24,19,1,1,126.32,True,caught,Washington Freedom,Seattle Orcas,MLC
+1381363,2023-07-14,Grand Prairie Stadium,1,696401,M Jansen,Harmeet Singh,391128,8,7,1,0,114.29,True,bowled,Washington Freedom,Seattle Orcas,MLC
+1381363,2023-07-14,Grand Prairie Stadium,1,328160,AJ Pienaar,WD Parnell,265564,10,14,0,0,71.43,True,caught,Washington Freedom,Seattle Orcas,MLC
+1381363,2023-07-14,Grand Prairie Stadium,1,530812,AJ Hosein,,,33,22,2,1,150.0,False,not out,Washington Freedom,Seattle Orcas,MLC
+1381363,2023-07-14,Grand Prairie Stadium,1,379926,DL Piedt,,,3,4,0,0,75.0,False,not out,Washington Freedom,Seattle Orcas,MLC
+1381363,2023-07-14,Grand Prairie Stadium,1,481979,A Nortje,,,0,0,0,0,0.0,False,DNB,Washington Freedom,Seattle Orcas,
+1381363,2023-07-14,Grand Prairie Stadium,1,398513,SN Netravalkar,,,0,0,0,0,0.0,False,DNB,Washington Freedom,Seattle Orcas,
+1381363,2023-07-14,Grand Prairie Stadium,2,379143,Q de Kock,A Nortje,481979,10,11,1,1,90.91,True,bowled,Seattle Orcas,Washington Freedom,MLC
+1381363,2023-07-14,Grand Prairie Stadium,2,788879,Nauman Anwar,DL Piedt,379926,48,37,3,3,129.73,True,bowled,Seattle Orcas,Washington Freedom,MLC
+1381363,2023-07-14,Grand Prairie Stadium,2,422965,GSNFG Jayasuriya,AJ Hosein,530812,6,8,0,0,75.0,True,caught,Seattle Orcas,Washington Freedom,MLC
+1381363,2023-07-14,Grand Prairie Stadium,2,436757,H Klaasen,MC Henriques,5961,1,3,0,0,33.33,True,bowled,Seattle Orcas,Washington Freedom,MLC
+1381363,2023-07-14,Grand Prairie Stadium,2,227758,Imad Wasim,,,43,38,3,1,113.16,False,not out,Seattle Orcas,Washington Freedom,MLC
+1381363,2023-07-14,Grand Prairie Stadium,2,670025,SO Hetmyer,M Jansen,696401,23,19,1,1,121.05,True,bowled,Seattle Orcas,Washington Freedom,MLC
+1381363,2023-07-14,Grand Prairie Stadium,2,554701,Shubham Ranjane,,,8,2,2,0,400.0,False,not out,Seattle Orcas,Washington Freedom,MLC
+1381363,2023-07-14,Grand Prairie Stadium,2,459508,AJ Tye,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,Washington Freedom,
+1381363,2023-07-14,Grand Prairie Stadium,2,326635,CJ Gannon,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,Washington Freedom,
+1381363,2023-07-14,Grand Prairie Stadium,2,422847,Harmeet Singh,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,Washington Freedom,
+1381363,2023-07-14,Grand Prairie Stadium,2,265564,WD Parnell,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,Washington Freedom,
+1381364,2023-07-15,Grand Prairie Stadium,1,379143,Q de Kock,Haris Rauf,1161606,7,6,1,0,116.67,True,bowled,Seattle Orcas,San Francisco Unicorns,MLC
+1381364,2023-07-15,Grand Prairie Stadium,1,788879,Nauman Anwar,LE Plunkett,19264,30,21,5,0,142.86,True,caught,Seattle Orcas,San Francisco Unicorns,MLC
+1381364,2023-07-15,Grand Prairie Stadium,1,422965,GSNFG Jayasuriya,CJ Anderson,277662,33,27,3,1,122.22,True,caught,Seattle Orcas,San Francisco Unicorns,MLC
+1381364,2023-07-15,Grand Prairie Stadium,1,436757,H Klaasen,LE Plunkett,19264,53,31,4,3,170.97,True,caught,Seattle Orcas,San Francisco Unicorns,MLC
+1381364,2023-07-15,Grand Prairie Stadium,1,670025,SO Hetmyer,,,36,30,1,2,120.0,False,not out,Seattle Orcas,San Francisco Unicorns,MLC
+1381364,2023-07-15,Grand Prairie Stadium,1,554701,Shubham Ranjane,,,10,6,2,0,166.67,False,not out,Seattle Orcas,San Francisco Unicorns,MLC
+1381364,2023-07-15,Grand Prairie Stadium,1,459508,AJ Tye,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,San Francisco Unicorns,
+1381364,2023-07-15,Grand Prairie Stadium,1,326635,CJ Gannon,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,San Francisco Unicorns,
+1381364,2023-07-15,Grand Prairie Stadium,1,422847,Harmeet Singh,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,San Francisco Unicorns,
+1381364,2023-07-15,Grand Prairie Stadium,1,227758,Imad Wasim,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,San Francisco Unicorns,
+1381364,2023-07-15,Grand Prairie Stadium,1,265564,WD Parnell,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,San Francisco Unicorns,
+1381364,2023-07-15,Grand Prairie Stadium,2,230193,MS Wade,Imad Wasim,227758,28,16,4,1,175.0,True,bowled,San Francisco Unicorns,Seattle Orcas,MLC
+1381364,2023-07-15,Grand Prairie Stadium,2,959759,FH Allen,CJ Gannon,326635,28,10,4,2,280.0,True,run out,San Francisco Unicorns,Seattle Orcas,MLC
+1381364,2023-07-15,Grand Prairie Stadium,2,325012,MP Stoinis,Imad Wasim,227758,15,20,1,0,75.0,True,caught,San Francisco Unicorns,Seattle Orcas,MLC
+1381364,2023-07-15,Grand Prairie Stadium,2,5334,AJ Finch,Harmeet Singh,391128,14,16,1,1,87.5,True,caught,San Francisco Unicorns,Seattle Orcas,MLC
+1381364,2023-07-15,Grand Prairie Stadium,2,922943,Shadab Khan,CJ Gannon,326635,37,23,2,2,160.87,True,caught,San Francisco Unicorns,Seattle Orcas,MLC
+1381364,2023-07-15,Grand Prairie Stadium,2,277662,CJ Anderson,CJ Gannon,326635,12,10,1,0,120.0,True,caught,San Francisco Unicorns,Seattle Orcas,MLC
+1381364,2023-07-15,Grand Prairie Stadium,2,1079860,Tajinder Singh,AJ Tye,459508,1,4,0,0,25.0,True,caught,San Francisco Unicorns,Seattle Orcas,MLC
+1381364,2023-07-15,Grand Prairie Stadium,2,628217,Chaitanya Bishnoi,AJ Tye,459508,1,3,0,0,33.33,True,caught,San Francisco Unicorns,Seattle Orcas,MLC
+1381364,2023-07-15,Grand Prairie Stadium,2,19264,LE Plunkett,CJ Gannon,326635,2,3,0,0,66.67,True,caught,San Francisco Unicorns,Seattle Orcas,MLC
+1381364,2023-07-15,Grand Prairie Stadium,2,1161606,Haris Rauf,,,1,1,0,0,100.0,False,not out,San Francisco Unicorns,Seattle Orcas,MLC
+1381364,2023-07-15,Grand Prairie Stadium,2,440894,C le Roux,CJ Gannon,326635,0,1,0,0,0.0,True,caught,San Francisco Unicorns,Seattle Orcas,MLC
+1381365,2023-07-16,Grand Prairie Stadium,1,605575,MW Short,MJ Santner,502714,80,50,10,3,160.0,True,caught,Washington Freedom,Texas Super Kings,MLC
+1381365,2023-07-16,Grand Prairie Stadium,1,485379,AGS Gous,G Coetzee,596010,7,6,1,0,116.67,True,bowled,Washington Freedom,Texas Super Kings,MLC
+1381365,2023-07-16,Grand Prairie Stadium,1,556916,Mukhtar Ahmed,DJ Bravo,51439,20,20,1,1,100.0,True,caught,Washington Freedom,Texas Super Kings,MLC
+1381365,2023-07-16,Grand Prairie Stadium,1,823509,GD Phillips,Mohammad Mohsin,935881,6,7,0,0,85.71,True,caught,Washington Freedom,Texas Super Kings,MLC
+1381365,2023-07-16,Grand Prairie Stadium,1,5961,MC Henriques,G Coetzee,596010,21,24,0,1,87.5,True,lbw,Washington Freedom,Texas Super Kings,MLC
+1381365,2023-07-16,Grand Prairie Stadium,1,328160,AJ Pienaar,,,18,11,1,1,163.64,False,not out,Washington Freedom,Texas Super Kings,MLC
+1381365,2023-07-16,Grand Prairie Stadium,1,696401,M Jansen,,,4,3,0,0,133.33,False,not out,Washington Freedom,Texas Super Kings,MLC
+1381365,2023-07-16,Grand Prairie Stadium,1,481979,A Nortje,,,0,0,0,0,0.0,False,DNB,Washington Freedom,Texas Super Kings,
+1381365,2023-07-16,Grand Prairie Stadium,1,530812,AJ Hosein,,,0,0,0,0,0.0,False,DNB,Washington Freedom,Texas Super Kings,
+1381365,2023-07-16,Grand Prairie Stadium,1,379926,DL Piedt,,,0,0,0,0,0.0,False,DNB,Washington Freedom,Texas Super Kings,
+1381365,2023-07-16,Grand Prairie Stadium,1,398513,SN Netravalkar,,,0,0,0,0,0.0,False,DNB,Washington Freedom,Texas Super Kings,
+1381365,2023-07-16,Grand Prairie Stadium,2,44828,F du Plessis,SN Netravalkar,398513,14,15,2,0,93.33,True,caught,Texas Super Kings,Washington Freedom,MLC
+1381365,2023-07-16,Grand Prairie Stadium,2,379140,DP Conway,M Jansen,696401,0,1,0,0,0.0,True,bowled,Texas Super Kings,Washington Freedom,MLC
+1381365,2023-07-16,Grand Prairie Stadium,2,699483,BKEL Milantha,AJ Hosein,530812,15,20,1,0,75.0,True,caught,Texas Super Kings,Washington Freedom,MLC
+1381365,2023-07-16,Grand Prairie Stadium,2,321777,DA Miller,DL Piedt,379926,14,11,1,1,127.27,True,caught,Texas Super Kings,Washington Freedom,MLC
+1381365,2023-07-16,Grand Prairie Stadium,2,451947,Milind Kumar,AJ Hosein,530812,3,5,0,0,60.0,True,lbw,Texas Super Kings,Washington Freedom,MLC
+1381365,2023-07-16,Grand Prairie Stadium,2,502714,MJ Santner,MC Henriques,5961,22,19,0,2,115.79,True,caught,Texas Super Kings,Washington Freedom,MLC
+1381365,2023-07-16,Grand Prairie Stadium,2,51439,DJ Bravo,,,76,39,5,6,194.87,False,not out,Texas Super Kings,Washington Freedom,MLC
+1381365,2023-07-16,Grand Prairie Stadium,2,450881,CP Savage,M Jansen,696401,7,9,0,0,77.78,True,lbw,Texas Super Kings,Washington Freedom,MLC
+1381365,2023-07-16,Grand Prairie Stadium,2,596010,G Coetzee,,,1,1,0,0,100.0,False,not out,Texas Super Kings,Washington Freedom,MLC
+1381365,2023-07-16,Grand Prairie Stadium,2,223642,J Theron,,,0,0,0,0,0.0,False,DNB,Texas Super Kings,Washington Freedom,
+1381365,2023-07-16,Grand Prairie Stadium,2,935881,Mohammad Mohsin,,,0,0,0,0,0.0,False,DNB,Texas Super Kings,Washington Freedom,
+1381366,2023-07-16,Grand Prairie Stadium,1,1070665,D Brevis,CA Dry,429927,15,7,2,1,214.29,True,lbw,MI New York,Los Angeles Knight Riders,MLC
+1381366,2023-07-16,Grand Prairie Stadium,1,647771,Shayan Jahangir,Ali Khan,927119,4,8,0,0,50.0,True,bowled,MI New York,Los Angeles Knight Riders,MLC
+1381366,2023-07-16,Grand Prairie Stadium,1,1159641,MD Patel,CA Dry,429927,4,7,0,0,57.14,True,caught,MI New York,Los Angeles Knight Riders,MLC
+1381366,2023-07-16,Grand Prairie Stadium,1,384518,Hammad Azam,A Zampa,379504,8,17,1,0,47.06,True,lbw,MI New York,Los Angeles Knight Riders,MLC
+1381366,2023-07-16,Grand Prairie Stadium,1,604302,N Pooran,Ali Khan,927119,38,37,1,2,102.7,True,caught,MI New York,Los Angeles Knight Riders,MLC
+1381366,2023-07-16,Grand Prairie Stadium,1,230559,KA Pollard,A Zampa,379504,5,9,0,0,55.56,True,bowled,MI New York,Los Angeles Knight Riders,MLC
+1381366,2023-07-16,Grand Prairie Stadium,1,892749,TH David,,,48,21,4,4,228.57,False,not out,MI New York,Los Angeles Knight Riders,MLC
+1381366,2023-07-16,Grand Prairie Stadium,1,550215,K Rabada,LH Ferguson,493773,1,6,0,0,16.67,True,run out,MI New York,Los Angeles Knight Riders,MLC
+1381366,2023-07-16,Grand Prairie Stadium,1,1041679,NP Kenjige,LH Ferguson,493773,2,4,0,0,50.0,True,caught,MI New York,Los Angeles Knight Riders,MLC
+1381366,2023-07-16,Grand Prairie Stadium,1,277912,TA Boult,,,7,4,0,1,175.0,False,not out,MI New York,Los Angeles Knight Riders,MLC
+1381366,2023-07-16,Grand Prairie Stadium,1,547092,Ehsan Adil,,,0,0,0,0,0.0,False,DNB,MI New York,Los Angeles Knight Riders,
+1381366,2023-07-16,Grand Prairie Stadium,2,226492,MJ Guptill,NP Kenjige,1041679,0,3,0,0,0.0,True,lbw,Los Angeles Knight Riders,MI New York,MLC
+1381366,2023-07-16,Grand Prairie Stadium,2,318845,RR Rossouw,K Rabada,550215,2,8,0,0,25.0,True,caught,Los Angeles Knight Riders,MI New York,MLC
+1381366,2023-07-16,Grand Prairie Stadium,2,446499,UBT Chand,KA Pollard,230559,26,26,2,1,100.0,True,caught,Los Angeles Knight Riders,MI New York,MLC
+1381366,2023-07-16,Grand Prairie Stadium,2,348129,NR Kumar,K Rabada,550215,0,3,0,0,0.0,True,caught,Los Angeles Knight Riders,MI New York,MLC
+1381366,2023-07-16,Grand Prairie Stadium,2,430105,JS Malhotra,NP Kenjige,1041679,5,10,0,0,50.0,True,caught,Los Angeles Knight Riders,MI New York,MLC
+1381366,2023-07-16,Grand Prairie Stadium,2,276298,AD Russell,KA Pollard,230559,2,6,0,0,33.33,True,caught,Los Angeles Knight Riders,MI New York,MLC
+1381366,2023-07-16,Grand Prairie Stadium,2,230558,SP Narine,Ehsan Adil,547092,2,4,0,0,50.0,True,caught,Los Angeles Knight Riders,MI New York,MLC
+1381366,2023-07-16,Grand Prairie Stadium,2,429927,CA Dry,Ehsan Adil,547092,0,5,0,0,0.0,True,lbw,Los Angeles Knight Riders,MI New York,MLC
+1381366,2023-07-16,Grand Prairie Stadium,2,379504,A Zampa,,,6,7,0,0,85.71,False,not out,Los Angeles Knight Riders,MI New York,MLC
+1381366,2023-07-16,Grand Prairie Stadium,2,927119,Ali Khan,TA Boult,277912,4,10,0,0,40.0,True,bowled,Los Angeles Knight Riders,MI New York,MLC
+1381366,2023-07-16,Grand Prairie Stadium,2,493773,LH Ferguson,TA Boult,277912,0,1,0,0,0.0,True,caught,Los Angeles Knight Riders,MI New York,MLC
+1381367,2023-07-17,Grand Prairie Stadium,1,379140,DP Conway,Rashid Khan,793463,74,55,8,1,134.55,True,bowled,Texas Super Kings,MI New York,MLC
+1381367,2023-07-17,Grand Prairie Stadium,1,44828,F du Plessis,K Rabada,550215,8,9,1,0,88.89,True,bowled,Texas Super Kings,MI New York,MLC
+1381367,2023-07-17,Grand Prairie Stadium,1,322815,C Chetty,KA Pollard,230559,12,18,1,0,66.67,True,caught,Texas Super Kings,MI New York,MLC
+1381367,2023-07-17,Grand Prairie Stadium,1,321777,DA Miller,K Rabada,550215,17,15,1,0,113.33,True,caught,Texas Super Kings,MI New York,MLC
+1381367,2023-07-17,Grand Prairie Stadium,1,502714,MJ Santner,,,27,13,1,2,207.69,False,not out,Texas Super Kings,MI New York,MLC
+1381367,2023-07-17,Grand Prairie Stadium,1,51439,DJ Bravo,TA Boult,277912,5,4,1,0,125.0,True,caught,Texas Super Kings,MI New York,MLC
+1381367,2023-07-17,Grand Prairie Stadium,1,826901,DR Sams,TA Boult,277912,1,4,0,0,25.0,True,lbw,Texas Super Kings,MI New York,MLC
+1381367,2023-07-17,Grand Prairie Stadium,1,451947,Milind Kumar,,,1,2,0,0,50.0,False,not out,Texas Super Kings,MI New York,MLC
+1381367,2023-07-17,Grand Prairie Stadium,1,223642,J Theron,,,0,0,0,0,0.0,False,DNB,Texas Super Kings,MI New York,
+1381367,2023-07-17,Grand Prairie Stadium,1,935881,Mohammad Mohsin,,,0,0,0,0,0.0,False,DNB,Texas Super Kings,MI New York,
+1381367,2023-07-17,Grand Prairie Stadium,1,290739,Zia-ul-Haq,,,0,0,0,0,0.0,False,DNB,Texas Super Kings,MI New York,
+1381367,2023-07-17,Grand Prairie Stadium,2,647771,Shayan Jahangir,Mohammad Mohsin,935881,41,38,5,0,107.89,True,stumped,MI New York,Texas Super Kings,MLC
+1381367,2023-07-17,Grand Prairie Stadium,2,1159641,MD Patel,J Theron,223642,0,2,0,0,0.0,True,caught,MI New York,Texas Super Kings,MLC
+1381367,2023-07-17,Grand Prairie Stadium,2,355359,SR Taylor,Zia-ul-Haq,290739,15,21,1,0,71.43,True,lbw,MI New York,Texas Super Kings,MLC
+1381367,2023-07-17,Grand Prairie Stadium,2,604302,N Pooran,J Theron,223642,19,15,0,1,126.67,True,run out,MI New York,Texas Super Kings,MLC
+1381367,2023-07-17,Grand Prairie Stadium,2,892749,TH David,DR Sams,826901,24,19,1,1,126.32,True,caught,MI New York,Texas Super Kings,MLC
+1381367,2023-07-17,Grand Prairie Stadium,2,230559,KA Pollard,Mohammad Mohsin,935881,0,1,0,0,0.0,True,lbw,MI New York,Texas Super Kings,MLC
+1381367,2023-07-17,Grand Prairie Stadium,2,384518,Hammad Azam,DJ Bravo,51439,13,12,2,0,108.33,True,caught,MI New York,Texas Super Kings,MLC
+1381367,2023-07-17,Grand Prairie Stadium,2,793463,Rashid Khan,,,13,9,2,0,144.44,False,not out,MI New York,Texas Super Kings,MLC
+1381367,2023-07-17,Grand Prairie Stadium,2,550215,K Rabada,DR Sams,826901,0,1,0,0,0.0,True,caught,MI New York,Texas Super Kings,MLC
+1381367,2023-07-17,Grand Prairie Stadium,2,277912,TA Boult,,,2,3,0,0,66.67,False,not out,MI New York,Texas Super Kings,MLC
+1381367,2023-07-17,Grand Prairie Stadium,2,547092,Ehsan Adil,,,0,0,0,0,0.0,False,DNB,MI New York,Texas Super Kings,
+1381367,2023-07-17,Grand Prairie Stadium,2,348133,SR Taylor,,,0,0,0,0,0.0,False,DNB,MI New York,Texas Super Kings,
+1381368,2023-07-18,Grand Prairie Stadium,1,230193,MS Wade,Ali Khan,927119,78,41,7,5,190.24,True,caught,San Francisco Unicorns,Los Angeles Knight Riders,MLC
+1381368,2023-07-18,Grand Prairie Stadium,1,959759,FH Allen,SP Narine,230558,20,19,1,2,105.26,True,caught,San Francisco Unicorns,Los Angeles Knight Riders,MLC
+1381368,2023-07-18,Grand Prairie Stadium,1,325012,MP Stoinis,AD Russell,276298,37,18,3,3,205.56,True,caught,San Francisco Unicorns,Los Angeles Knight Riders,MLC
+1381368,2023-07-18,Grand Prairie Stadium,1,922943,Shadab Khan,A Zampa,379504,9,11,0,0,81.82,True,caught,San Francisco Unicorns,Los Angeles Knight Riders,MLC
+1381368,2023-07-18,Grand Prairie Stadium,1,277662,CJ Anderson,A Zampa,379504,39,20,3,3,195.0,True,caught,San Francisco Unicorns,Los Angeles Knight Riders,MLC
+1381368,2023-07-18,Grand Prairie Stadium,1,5334,AJ Finch,,,12,10,2,0,120.0,False,not out,San Francisco Unicorns,Los Angeles Knight Riders,MLC
+1381368,2023-07-18,Grand Prairie Stadium,1,1079860,Tajinder Singh,A Zampa,379504,0,1,0,0,0.0,True,caught,San Francisco Unicorns,Los Angeles Knight Riders,MLC
+1381368,2023-07-18,Grand Prairie Stadium,1,628217,Chaitanya Bishnoi,,,0,1,0,0,0.0,False,not out,San Francisco Unicorns,Los Angeles Knight Riders,MLC
+1381368,2023-07-18,Grand Prairie Stadium,1,440894,C le Roux,,,0,0,0,0,0.0,False,DNB,San Francisco Unicorns,Los Angeles Knight Riders,
+1381368,2023-07-18,Grand Prairie Stadium,1,1161606,Haris Rauf,,,0,0,0,0,0.0,False,DNB,San Francisco Unicorns,Los Angeles Knight Riders,
+1381368,2023-07-18,Grand Prairie Stadium,1,19264,LE Plunkett,,,0,0,0,0,0.0,False,DNB,San Francisco Unicorns,Los Angeles Knight Riders,
+1381368,2023-07-18,Grand Prairie Stadium,2,298438,JJ Roy,Haris Rauf,1161606,45,21,4,4,214.29,True,bowled,Los Angeles Knight Riders,San Francisco Unicorns,MLC
+1381368,2023-07-18,Grand Prairie Stadium,2,446499,UBT Chand,Chaitanya Bishnoi,628217,20,17,2,0,117.65,True,caught,Los Angeles Knight Riders,San Francisco Unicorns,MLC
+1381368,2023-07-18,Grand Prairie Stadium,2,348129,NR Kumar,CJ Anderson,277662,31,23,3,1,134.78,True,caught,Los Angeles Knight Riders,San Francisco Unicorns,MLC
+1381368,2023-07-18,Grand Prairie Stadium,2,318845,RR Rossouw,Shadab Khan,922943,8,8,0,0,100.0,True,caught and bowled,Los Angeles Knight Riders,San Francisco Unicorns,MLC
+1381368,2023-07-18,Grand Prairie Stadium,2,430105,JS Malhotra,Shadab Khan,922943,7,8,1,0,87.5,True,caught,Los Angeles Knight Riders,San Francisco Unicorns,MLC
+1381368,2023-07-18,Grand Prairie Stadium,2,276298,AD Russell,,,42,26,2,4,161.54,False,not out,Los Angeles Knight Riders,San Francisco Unicorns,MLC
+1381368,2023-07-18,Grand Prairie Stadium,2,230558,SP Narine,,,28,17,0,3,164.71,False,not out,Los Angeles Knight Riders,San Francisco Unicorns,MLC
+1381368,2023-07-18,Grand Prairie Stadium,2,379504,A Zampa,,,0,0,0,0,0.0,False,DNB,Los Angeles Knight Riders,San Francisco Unicorns,
+1381368,2023-07-18,Grand Prairie Stadium,2,927119,Ali Khan,,,0,0,0,0,0.0,False,DNB,Los Angeles Knight Riders,San Francisco Unicorns,
+1381368,2023-07-18,Grand Prairie Stadium,2,429927,CA Dry,,,0,0,0,0,0.0,False,DNB,Los Angeles Knight Riders,San Francisco Unicorns,
+1381368,2023-07-18,Grand Prairie Stadium,2,1123718,SH Johnson,,,0,0,0,0,0.0,False,DNB,Los Angeles Knight Riders,San Francisco Unicorns,
+1381369,2023-07-20,"Church Street Park, Morrisville",1,298438,JJ Roy,SN Netravalkar,398513,7,10,1,0,70.0,True,lbw,Los Angeles Knight Riders,Washington Freedom,MLC
+1381369,2023-07-20,"Church Street Park, Morrisville",1,446499,UBT Chand,MC Henriques,5961,18,21,1,1,85.71,True,lbw,Los Angeles Knight Riders,Washington Freedom,MLC
+1381369,2023-07-20,"Church Street Park, Morrisville",1,348129,NR Kumar,MC Henriques,5961,9,8,0,1,112.5,True,caught,Los Angeles Knight Riders,Washington Freedom,MLC
+1381369,2023-07-20,"Church Street Park, Morrisville",1,318845,RR Rossouw,M Jansen,696401,41,30,0,4,136.67,True,caught,Los Angeles Knight Riders,Washington Freedom,MLC
+1381369,2023-07-20,"Church Street Park, Morrisville",1,430105,JS Malhotra,AJ Hosein,530812,12,10,0,1,120.0,True,bowled,Los Angeles Knight Riders,Washington Freedom,MLC
+1381369,2023-07-20,"Church Street Park, Morrisville",1,276298,AD Russell,,,70,37,6,6,189.19,False,not out,Los Angeles Knight Riders,Washington Freedom,MLC
+1381369,2023-07-20,"Church Street Park, Morrisville",1,230558,SP Narine,M Jansen,696401,0,2,0,0,0.0,True,caught,Los Angeles Knight Riders,Washington Freedom,MLC
+1381369,2023-07-20,"Church Street Park, Morrisville",1,429927,CA Dry,MC Henriques,5961,7,3,0,1,233.33,True,caught,Los Angeles Knight Riders,Washington Freedom,MLC
+1381369,2023-07-20,"Church Street Park, Morrisville",1,379504,A Zampa,,,1,1,0,0,100.0,False,not out,Los Angeles Knight Riders,Washington Freedom,MLC
+1381369,2023-07-20,"Church Street Park, Morrisville",1,927119,Ali Khan,,,0,0,0,0,0.0,False,DNB,Los Angeles Knight Riders,Washington Freedom,
+1381369,2023-07-20,"Church Street Park, Morrisville",1,1123718,SH Johnson,,,0,0,0,0,0.0,False,DNB,Los Angeles Knight Riders,Washington Freedom,
+1381369,2023-07-20,"Church Street Park, Morrisville",2,605575,MW Short,SP Narine,230558,43,35,3,1,122.86,True,bowled,Washington Freedom,Los Angeles Knight Riders,MLC
+1381369,2023-07-20,"Church Street Park, Morrisville",2,485379,AGS Gous,SH Johnson,1123718,40,15,5,2,266.67,True,caught,Washington Freedom,Los Angeles Knight Riders,MLC
+1381369,2023-07-20,"Church Street Park, Morrisville",2,556916,Mukhtar Ahmed,Ali Khan,927119,15,11,3,0,136.36,True,caught,Washington Freedom,Los Angeles Knight Riders,MLC
+1381369,2023-07-20,"Church Street Park, Morrisville",2,823509,GD Phillips,A Zampa,379504,29,19,1,2,152.63,True,caught,Washington Freedom,Los Angeles Knight Riders,MLC
+1381369,2023-07-20,"Church Street Park, Morrisville",2,5961,MC Henriques,,,16,12,2,0,133.33,False,not out,Washington Freedom,Los Angeles Knight Riders,MLC
+1381369,2023-07-20,"Church Street Park, Morrisville",2,328160,AJ Pienaar,,,26,17,4,0,152.94,False,not out,Washington Freedom,Los Angeles Knight Riders,MLC
+1381369,2023-07-20,"Church Street Park, Morrisville",2,481979,A Nortje,,,0,0,0,0,0.0,False,DNB,Washington Freedom,Los Angeles Knight Riders,
+1381369,2023-07-20,"Church Street Park, Morrisville",2,530812,AJ Hosein,,,0,0,0,0,0.0,False,DNB,Washington Freedom,Los Angeles Knight Riders,
+1381369,2023-07-20,"Church Street Park, Morrisville",2,379926,DL Piedt,,,0,0,0,0,0.0,False,DNB,Washington Freedom,Los Angeles Knight Riders,
+1381369,2023-07-20,"Church Street Park, Morrisville",2,696401,M Jansen,,,0,0,0,0,0.0,False,DNB,Washington Freedom,Los Angeles Knight Riders,
+1381369,2023-07-20,"Church Street Park, Morrisville",2,398513,SN Netravalkar,,,0,0,0,0,0.0,False,DNB,Washington Freedom,Los Angeles Knight Riders,
+1381370,2023-07-21,"Church Street Park, Morrisville",1,379140,DP Conway,Imad Wasim,227758,0,1,0,0,0.0,True,caught,Texas Super Kings,Seattle Orcas,MLC
+1381370,2023-07-21,"Church Street Park, Morrisville",1,322815,C Chetty,WD Parnell,265564,22,18,2,1,122.22,True,caught,Texas Super Kings,Seattle Orcas,MLC
+1381370,2023-07-21,"Church Street Park, Morrisville",1,44828,F du Plessis,AJ Tye,459508,13,10,2,0,130.0,True,bowled,Texas Super Kings,Seattle Orcas,MLC
+1381370,2023-07-21,"Church Street Park, Morrisville",1,321777,DA Miller,WD Parnell,265564,8,10,0,0,80.0,True,bowled,Texas Super Kings,Seattle Orcas,MLC
+1381370,2023-07-21,"Church Street Park, Morrisville",1,451947,Milind Kumar,WD Parnell,265564,1,7,0,0,14.29,True,caught,Texas Super Kings,Seattle Orcas,MLC
+1381370,2023-07-21,"Church Street Park, Morrisville",1,502714,MJ Santner,CJ Gannon,326635,2,5,0,0,40.0,True,caught,Texas Super Kings,Seattle Orcas,MLC
+1381370,2023-07-21,"Church Street Park, Morrisville",1,51439,DJ Bravo,WD Parnell,265564,39,39,4,1,100.0,True,caught,Texas Super Kings,Seattle Orcas,MLC
+1381370,2023-07-21,"Church Street Park, Morrisville",1,826901,DR Sams,AJ Tye,459508,26,19,1,2,136.84,True,caught,Texas Super Kings,Seattle Orcas,MLC
+1381370,2023-07-21,"Church Street Park, Morrisville",1,935881,Mohammad Mohsin,WD Parnell,265564,7,10,1,0,70.0,True,run out,Texas Super Kings,Seattle Orcas,MLC
+1381370,2023-07-21,"Church Street Park, Morrisville",1,290739,Zia-ul-Haq,WD Parnell,265564,0,1,0,0,0.0,True,caught,Texas Super Kings,Seattle Orcas,MLC
+1381370,2023-07-21,"Church Street Park, Morrisville",1,223642,J Theron,,,1,1,0,0,100.0,False,not out,Texas Super Kings,Seattle Orcas,MLC
+1381370,2023-07-21,"Church Street Park, Morrisville",2,379143,Q de Kock,Mohammad Mohsin,935881,53,36,3,3,147.22,True,caught,Seattle Orcas,Texas Super Kings,MLC
+1381370,2023-07-21,"Church Street Park, Morrisville",2,788879,Nauman Anwar,MJ Santner,502714,19,32,1,0,59.38,True,bowled,Seattle Orcas,Texas Super Kings,MLC
+1381370,2023-07-21,"Church Street Park, Morrisville",2,436757,H Klaasen,,,42,21,4,3,200.0,False,not out,Seattle Orcas,Texas Super Kings,MLC
+1381370,2023-07-21,"Church Street Park, Morrisville",2,437316,MD Shanaka,,,10,7,1,0,142.86,False,not out,Seattle Orcas,Texas Super Kings,MLC
+1381370,2023-07-21,"Church Street Park, Morrisville",2,459508,AJ Tye,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,Texas Super Kings,
+1381370,2023-07-21,"Church Street Park, Morrisville",2,326635,CJ Gannon,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,Texas Super Kings,
+1381370,2023-07-21,"Church Street Park, Morrisville",2,422965,GSNFG Jayasuriya,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,Texas Super Kings,
+1381370,2023-07-21,"Church Street Park, Morrisville",2,422847,Harmeet Singh,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,Texas Super Kings,
+1381370,2023-07-21,"Church Street Park, Morrisville",2,227758,Imad Wasim,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,Texas Super Kings,
+1381370,2023-07-21,"Church Street Park, Morrisville",2,554701,Shubham Ranjane,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,Texas Super Kings,
+1381370,2023-07-21,"Church Street Park, Morrisville",2,265564,WD Parnell,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,Texas Super Kings,
+1381371,2023-07-22,"Church Street Park, Morrisville",1,605575,MW Short,MP Stoinis,325012,5,10,0,0,50.0,True,run out,Washington Freedom,San Francisco Unicorns,MLC
+1381371,2023-07-22,"Church Street Park, Morrisville",1,485379,AGS Gous,Haris Rauf,1161606,23,16,5,0,143.75,True,lbw,Washington Freedom,San Francisco Unicorns,MLC
+1381371,2023-07-22,"Church Street Park, Morrisville",1,556916,Mukhtar Ahmed,Haris Rauf,1161606,1,4,0,0,25.0,True,caught,Washington Freedom,San Francisco Unicorns,MLC
+1381371,2023-07-22,"Church Street Park, Morrisville",1,823509,GD Phillips,Haris Rauf,1161606,0,3,0,0,0.0,True,bowled,Washington Freedom,San Francisco Unicorns,MLC
+1381371,2023-07-22,"Church Street Park, Morrisville",1,5961,MC Henriques,MP Stoinis,325012,30,27,3,0,111.11,True,caught,Washington Freedom,San Francisco Unicorns,MLC
+1381371,2023-07-22,"Church Street Park, Morrisville",1,328160,AJ Pienaar,LE Plunkett,19264,29,28,1,1,103.57,True,caught,Washington Freedom,San Francisco Unicorns,MLC
+1381371,2023-07-22,"Church Street Park, Morrisville",1,530812,AJ Hosein,LE Plunkett,19264,7,7,1,0,100.0,True,caught,Washington Freedom,San Francisco Unicorns,MLC
+1381371,2023-07-22,"Church Street Park, Morrisville",1,696401,M Jansen,,,19,15,2,0,126.67,False,not out,Washington Freedom,San Francisco Unicorns,MLC
+1381371,2023-07-22,"Church Street Park, Morrisville",1,379926,DL Piedt,Haris Rauf,1161606,12,10,2,0,120.0,True,run out,Washington Freedom,San Francisco Unicorns,MLC
+1381371,2023-07-22,"Church Street Park, Morrisville",1,481979,A Nortje,,,0,0,0,0,0.0,False,DNB,Washington Freedom,San Francisco Unicorns,
+1381371,2023-07-22,"Church Street Park, Morrisville",1,398513,SN Netravalkar,,,0,0,0,0,0.0,False,DNB,Washington Freedom,San Francisco Unicorns,
+1381371,2023-07-22,"Church Street Park, Morrisville",2,959759,FH Allen,A Nortje,481979,13,9,3,0,144.44,True,caught,San Francisco Unicorns,Washington Freedom,MLC
+1381371,2023-07-22,"Church Street Park, Morrisville",2,230193,MS Wade,SN Netravalkar,398513,8,10,1,0,80.0,True,caught,San Francisco Unicorns,Washington Freedom,MLC
+1381371,2023-07-22,"Church Street Park, Morrisville",2,325012,MP Stoinis,SN Netravalkar,398513,3,6,0,0,50.0,True,bowled,San Francisco Unicorns,Washington Freedom,MLC
+1381371,2023-07-22,"Church Street Park, Morrisville",2,922943,Shadab Khan,SN Netravalkar,398513,0,2,0,0,0.0,True,bowled,San Francisco Unicorns,Washington Freedom,MLC
+1381371,2023-07-22,"Church Street Park, Morrisville",2,277662,CJ Anderson,M Jansen,696401,34,34,4,1,100.0,True,caught,San Francisco Unicorns,Washington Freedom,MLC
+1381371,2023-07-22,"Church Street Park, Morrisville",2,5334,AJ Finch,AJ Hosein,530812,14,28,0,1,50.0,True,stumped,San Francisco Unicorns,Washington Freedom,MLC
+1381371,2023-07-22,"Church Street Park, Morrisville",2,1079860,Tajinder Singh,DL Piedt,379926,1,4,0,0,25.0,True,lbw,San Francisco Unicorns,Washington Freedom,MLC
+1381371,2023-07-22,"Church Street Park, Morrisville",2,628217,Chaitanya Bishnoi,SN Netravalkar,398513,16,16,0,1,100.0,True,caught,San Francisco Unicorns,Washington Freedom,MLC
+1381371,2023-07-22,"Church Street Park, Morrisville",2,19264,LE Plunkett,SN Netravalkar,398513,5,8,0,0,62.5,True,caught,San Francisco Unicorns,Washington Freedom,MLC
+1381371,2023-07-22,"Church Street Park, Morrisville",2,1161606,Haris Rauf,SN Netravalkar,398513,0,1,0,0,0.0,True,caught,San Francisco Unicorns,Washington Freedom,MLC
+1381371,2023-07-22,"Church Street Park, Morrisville",2,440894,C le Roux,,,1,1,0,0,100.0,False,not out,San Francisco Unicorns,Washington Freedom,MLC
+1381372,2023-07-23,"Church Street Park, Morrisville",1,379143,Q de Kock,A Zampa,379504,10,9,2,0,111.11,True,caught,Seattle Orcas,Los Angeles Knight Riders,MLC
+1381372,2023-07-23,"Church Street Park, Morrisville",1,788879,Nauman Anwar,AD Russell,276298,32,20,5,0,160.0,True,caught,Seattle Orcas,Los Angeles Knight Riders,MLC
+1381372,2023-07-23,"Church Street Park, Morrisville",1,422965,GSNFG Jayasuriya,,,60,45,7,1,133.33,False,not out,Seattle Orcas,Los Angeles Knight Riders,MLC
+1381372,2023-07-23,"Church Street Park, Morrisville",1,436757,H Klaasen,SP Narine,230558,25,13,3,1,192.31,True,bowled,Seattle Orcas,Los Angeles Knight Riders,MLC
+1381372,2023-07-23,"Church Street Park, Morrisville",1,554701,Shubham Ranjane,A Zampa,379504,8,12,0,0,66.67,True,caught,Seattle Orcas,Los Angeles Knight Riders,MLC
+1381372,2023-07-23,"Church Street Park, Morrisville",1,437316,MD Shanaka,SC van Schalkwyk,334621,7,5,0,1,140.0,True,caught,Seattle Orcas,Los Angeles Knight Riders,MLC
+1381372,2023-07-23,"Church Street Park, Morrisville",1,227758,Imad Wasim,SH Johnson,1123718,19,15,2,0,126.67,True,lbw,Seattle Orcas,Los Angeles Knight Riders,MLC
+1381372,2023-07-23,"Church Street Park, Morrisville",1,459508,AJ Tye,,,1,2,0,0,50.0,False,not out,Seattle Orcas,Los Angeles Knight Riders,MLC
+1381372,2023-07-23,"Church Street Park, Morrisville",1,326635,CJ Gannon,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,Los Angeles Knight Riders,
+1381372,2023-07-23,"Church Street Park, Morrisville",1,422847,Harmeet Singh,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,Los Angeles Knight Riders,
+1381372,2023-07-23,"Church Street Park, Morrisville",1,265564,WD Parnell,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,Los Angeles Knight Riders,
+1381372,2023-07-23,"Church Street Park, Morrisville",2,298438,JJ Roy,Imad Wasim,227758,2,5,0,0,40.0,True,bowled,Los Angeles Knight Riders,Seattle Orcas,MLC
+1381372,2023-07-23,"Church Street Park, Morrisville",2,430105,JS Malhotra,CJ Gannon,326635,2,5,0,0,40.0,True,caught,Los Angeles Knight Riders,Seattle Orcas,MLC
+1381372,2023-07-23,"Church Street Park, Morrisville",2,870013,G Singh,CJ Gannon,326635,3,3,0,0,100.0,True,caught,Los Angeles Knight Riders,Seattle Orcas,MLC
+1381372,2023-07-23,"Church Street Park, Morrisville",2,922967,Saif Badar,AJ Tye,459508,10,9,2,0,111.11,True,caught,Los Angeles Knight Riders,Seattle Orcas,MLC
+1381372,2023-07-23,"Church Street Park, Morrisville",2,318845,RR Rossouw,,,78,38,3,7,205.26,False,not out,Los Angeles Knight Riders,Seattle Orcas,MLC
+1381372,2023-07-23,"Church Street Park, Morrisville",2,276298,AD Russell,Harmeet Singh,391128,37,29,4,2,127.59,True,caught,Los Angeles Knight Riders,Seattle Orcas,MLC
+1381372,2023-07-23,"Church Street Park, Morrisville",2,230558,SP Narine,AJ Tye,459508,8,5,0,1,160.0,True,caught,Los Angeles Knight Riders,Seattle Orcas,MLC
+1381372,2023-07-23,"Church Street Park, Morrisville",2,334621,SC van Schalkwyk,WD Parnell,265564,12,6,1,1,200.0,True,caught,Los Angeles Knight Riders,Seattle Orcas,MLC
+1381372,2023-07-23,"Church Street Park, Morrisville",2,379504,A Zampa,CJ Gannon,326635,12,11,1,0,109.09,True,caught,Los Angeles Knight Riders,Seattle Orcas,MLC
+1381372,2023-07-23,"Church Street Park, Morrisville",2,1123718,SH Johnson,,,5,5,0,0,100.0,False,not out,Los Angeles Knight Riders,Seattle Orcas,MLC
+1381372,2023-07-23,"Church Street Park, Morrisville",2,927119,Ali Khan,,,0,0,0,0,0.0,False,DNB,Los Angeles Knight Riders,Seattle Orcas,
+1381373,2023-07-23,"Church Street Park, Morrisville",1,605575,MW Short,D Wiese,221140,14,15,2,0,93.33,True,caught,Washington Freedom,MI New York,MLC
+1381373,2023-07-23,"Church Street Park, Morrisville",1,485379,AGS Gous,Rashid Khan,793463,20,15,3,0,133.33,True,caught,Washington Freedom,MI New York,MLC
+1381373,2023-07-23,"Church Street Park, Morrisville",1,556916,Mukhtar Ahmed,NP Kenjige,1041679,18,15,3,0,120.0,True,caught,Washington Freedom,MI New York,MLC
+1381373,2023-07-23,"Church Street Park, Morrisville",1,823509,GD Phillips,KA Pollard,230559,47,35,2,3,134.29,True,caught,Washington Freedom,MI New York,MLC
+1381373,2023-07-23,"Church Street Park, Morrisville",1,5961,MC Henriques,KA Pollard,230559,32,30,2,0,106.67,True,caught,Washington Freedom,MI New York,MLC
+1381373,2023-07-23,"Church Street Park, Morrisville",1,328160,AJ Pienaar,,,8,4,0,1,200.0,False,not out,Washington Freedom,MI New York,MLC
+1381373,2023-07-23,"Church Street Park, Morrisville",1,530812,AJ Hosein,TA Boult,277912,8,4,0,1,200.0,True,bowled,Washington Freedom,MI New York,MLC
+1381373,2023-07-23,"Church Street Park, Morrisville",1,696401,M Jansen,,,8,2,0,1,400.0,False,not out,Washington Freedom,MI New York,MLC
+1381373,2023-07-23,"Church Street Park, Morrisville",1,481979,A Nortje,,,0,0,0,0,0.0,False,DNB,Washington Freedom,MI New York,
+1381373,2023-07-23,"Church Street Park, Morrisville",1,379926,DL Piedt,,,0,0,0,0,0.0,False,DNB,Washington Freedom,MI New York,
+1381373,2023-07-23,"Church Street Park, Morrisville",1,398513,SN Netravalkar,,,0,0,0,0,0.0,False,DNB,Washington Freedom,MI New York,
+1381373,2023-07-23,"Church Street Park, Morrisville",2,647771,Shayan Jahangir,DL Piedt,379926,29,21,1,2,138.1,True,caught,MI New York,Washington Freedom,MLC
+1381373,2023-07-23,"Church Street Park, Morrisville",2,1159641,MD Patel,AJ Hosein,530812,44,29,5,1,151.72,True,bowled,MI New York,Washington Freedom,MLC
+1381373,2023-07-23,"Church Street Park, Morrisville",2,604302,N Pooran,,,62,33,4,6,187.88,False,not out,MI New York,Washington Freedom,MLC
+1381373,2023-07-23,"Church Street Park, Morrisville",2,230559,KA Pollard,,,21,10,1,2,210.0,False,not out,MI New York,Washington Freedom,MLC
+1381373,2023-07-23,"Church Street Park, Morrisville",2,221140,D Wiese,,,0,0,0,0,0.0,False,DNB,MI New York,Washington Freedom,
+1381373,2023-07-23,"Church Street Park, Morrisville",2,547092,Ehsan Adil,,,0,0,0,0,0.0,False,DNB,MI New York,Washington Freedom,
+1381373,2023-07-23,"Church Street Park, Morrisville",2,384518,Hammad Azam,,,0,0,0,0,0.0,False,DNB,MI New York,Washington Freedom,
+1381373,2023-07-23,"Church Street Park, Morrisville",2,1041679,NP Kenjige,,,0,0,0,0,0.0,False,DNB,MI New York,Washington Freedom,
+1381373,2023-07-23,"Church Street Park, Morrisville",2,793463,Rashid Khan,,,0,0,0,0,0.0,False,DNB,MI New York,Washington Freedom,
+1381373,2023-07-23,"Church Street Park, Morrisville",2,277912,TA Boult,,,0,0,0,0,0.0,False,DNB,MI New York,Washington Freedom,
+1381373,2023-07-23,"Church Street Park, Morrisville",2,892749,TH David,,,0,0,0,0,0.0,False,DNB,MI New York,Washington Freedom,
+1381374,2023-07-24,"Church Street Park, Morrisville",1,959759,FH Allen,DR Sams,826901,4,3,1,0,133.33,True,caught,San Francisco Unicorns,Texas Super Kings,MLC
+1381374,2023-07-24,"Church Street Park, Morrisville",1,325012,MP Stoinis,G Coetzee,596010,13,12,3,0,108.33,True,caught,San Francisco Unicorns,Texas Super Kings,MLC
+1381374,2023-07-24,"Church Street Park, Morrisville",1,230193,MS Wade,MJ Santner,502714,49,30,4,3,163.33,True,caught,San Francisco Unicorns,Texas Super Kings,MLC
+1381374,2023-07-24,"Church Street Park, Morrisville",1,922943,Shadab Khan,MJ Santner,502714,20,23,0,1,86.96,True,caught,San Francisco Unicorns,Texas Super Kings,MLC
+1381374,2023-07-24,"Church Street Park, Morrisville",1,277662,CJ Anderson,G Coetzee,596010,14,15,0,1,93.33,True,bowled,San Francisco Unicorns,Texas Super Kings,MLC
+1381374,2023-07-24,"Church Street Park, Morrisville",1,628217,Chaitanya Bishnoi,DR Sams,826901,35,21,3,2,166.67,True,caught,San Francisco Unicorns,Texas Super Kings,MLC
+1381374,2023-07-24,"Church Street Park, Morrisville",1,5334,AJ Finch,G Coetzee,596010,19,10,3,0,190.0,True,bowled,San Francisco Unicorns,Texas Super Kings,MLC
+1381374,2023-07-24,"Church Street Park, Morrisville",1,1079860,Tajinder Singh,G Coetzee,596010,2,2,0,0,100.0,True,caught,San Francisco Unicorns,Texas Super Kings,MLC
+1381374,2023-07-24,"Church Street Park, Morrisville",1,19264,LE Plunkett,,,2,2,0,0,100.0,False,not out,San Francisco Unicorns,Texas Super Kings,MLC
+1381374,2023-07-24,"Church Street Park, Morrisville",1,1161606,Haris Rauf,,,6,2,0,1,300.0,False,not out,San Francisco Unicorns,Texas Super Kings,MLC
+1381374,2023-07-24,"Church Street Park, Morrisville",1,440894,C le Roux,,,0,0,0,0,0.0,False,DNB,San Francisco Unicorns,Texas Super Kings,
+1381374,2023-07-24,"Church Street Park, Morrisville",2,44828,F du Plessis,C le Roux,440894,0,2,0,0,0.0,True,lbw,Texas Super Kings,San Francisco Unicorns,MLC
+1381374,2023-07-24,"Church Street Park, Morrisville",2,322815,C Chetty,Haris Rauf,1161606,4,5,1,0,80.0,True,caught,Texas Super Kings,San Francisco Unicorns,MLC
+1381374,2023-07-24,"Church Street Park, Morrisville",2,379140,DP Conway,Shadab Khan,922943,30,27,3,1,111.11,True,stumped,Texas Super Kings,San Francisco Unicorns,MLC
+1381374,2023-07-24,"Church Street Park, Morrisville",2,451947,Milind Kumar,Haris Rauf,1161606,52,42,4,2,123.81,True,bowled,Texas Super Kings,San Francisco Unicorns,MLC
+1381374,2023-07-24,"Church Street Park, Morrisville",2,321777,DA Miller,LE Plunkett,19264,10,8,1,0,125.0,True,caught,Texas Super Kings,San Francisco Unicorns,MLC
+1381374,2023-07-24,"Church Street Park, Morrisville",2,502714,MJ Santner,Shadab Khan,922943,7,9,0,0,77.78,True,bowled,Texas Super Kings,San Francisco Unicorns,MLC
+1381374,2023-07-24,"Church Street Park, Morrisville",2,826901,DR Sams,MP Stoinis,325012,42,18,2,4,233.33,True,caught,Texas Super Kings,San Francisco Unicorns,MLC
+1381374,2023-07-24,"Church Street Park, Morrisville",2,450881,CP Savage,,,7,2,0,1,350.0,False,not out,Texas Super Kings,San Francisco Unicorns,MLC
+1381374,2023-07-24,"Church Street Park, Morrisville",2,596010,G Coetzee,,,2,2,0,0,100.0,False,not out,Texas Super Kings,San Francisco Unicorns,MLC
+1381374,2023-07-24,"Church Street Park, Morrisville",2,223642,J Theron,,,0,0,0,0,0.0,False,DNB,Texas Super Kings,San Francisco Unicorns,
+1381374,2023-07-24,"Church Street Park, Morrisville",2,935881,Mohammad Mohsin,,,0,0,0,0,0.0,False,DNB,Texas Super Kings,San Francisco Unicorns,
+1381375,2023-07-25,"Church Street Park, Morrisville",1,647771,Shayan Jahangir,AJ Tye,459508,19,14,3,0,135.71,True,caught,MI New York,Seattle Orcas,MLC
+1381375,2023-07-25,"Church Street Park, Morrisville",1,1159641,MD Patel,Imad Wasim,227758,2,7,0,0,28.57,True,stumped,MI New York,Seattle Orcas,MLC
+1381375,2023-07-25,"Church Street Park, Morrisville",1,604302,N Pooran,Imad Wasim,227758,68,34,3,7,200.0,True,caught,MI New York,Seattle Orcas,MLC
+1381375,2023-07-25,"Church Street Park, Morrisville",1,384518,Hammad Azam,GSNFG Jayasuriya,422965,2,5,0,0,40.0,True,run out,MI New York,Seattle Orcas,MLC
+1381375,2023-07-25,"Church Street Park, Morrisville",1,230559,KA Pollard,Harmeet Singh,391128,34,18,1,3,188.89,True,caught,MI New York,Seattle Orcas,MLC
+1381375,2023-07-25,"Church Street Park, Morrisville",1,892749,TH David,Harmeet Singh,391128,18,16,1,1,112.5,True,bowled,MI New York,Seattle Orcas,MLC
+1381375,2023-07-25,"Church Street Park, Morrisville",1,221140,D Wiese,CJ Gannon,326635,19,13,3,0,146.15,True,run out,MI New York,Seattle Orcas,MLC
+1381375,2023-07-25,"Church Street Park, Morrisville",1,793463,Rashid Khan,CJ Gannon,326635,2,4,0,0,50.0,True,caught,MI New York,Seattle Orcas,MLC
+1381375,2023-07-25,"Church Street Park, Morrisville",1,1041679,NP Kenjige,,,3,3,0,0,100.0,False,not out,MI New York,Seattle Orcas,MLC
+1381375,2023-07-25,"Church Street Park, Morrisville",1,277912,TA Boult,,,20,6,1,2,333.33,False,not out,MI New York,Seattle Orcas,MLC
+1381375,2023-07-25,"Church Street Park, Morrisville",1,547092,Ehsan Adil,,,0,0,0,0,0.0,False,DNB,MI New York,Seattle Orcas,
+1381375,2023-07-25,"Church Street Park, Morrisville",2,379143,Q de Kock,Rashid Khan,793463,9,10,0,1,90.0,True,lbw,Seattle Orcas,MI New York,MLC
+1381375,2023-07-25,"Church Street Park, Morrisville",2,788879,Nauman Anwar,NP Kenjige,1041679,51,30,6,3,170.0,True,caught,Seattle Orcas,MI New York,MLC
+1381375,2023-07-25,"Church Street Park, Morrisville",2,422965,GSNFG Jayasuriya,Rashid Khan,793463,0,5,0,0,0.0,True,lbw,Seattle Orcas,MI New York,MLC
+1381375,2023-07-25,"Church Street Park, Morrisville",2,436757,H Klaasen,,,110,44,9,7,250.0,False,not out,Seattle Orcas,MI New York,MLC
+1381375,2023-07-25,"Church Street Park, Morrisville",2,554701,Shubham Ranjane,TA Boult,277912,7,5,1,0,140.0,True,caught,Seattle Orcas,MI New York,MLC
+1381375,2023-07-25,"Church Street Park, Morrisville",2,437316,MD Shanaka,D Wiese,221140,10,12,0,1,83.33,True,bowled,Seattle Orcas,MI New York,MLC
+1381375,2023-07-25,"Church Street Park, Morrisville",2,327830,D Pretorius,TA Boult,277912,2,3,0,0,66.67,True,caught,Seattle Orcas,MI New York,MLC
+1381375,2023-07-25,"Church Street Park, Morrisville",2,227758,Imad Wasim,TA Boult,277912,0,1,0,0,0.0,True,lbw,Seattle Orcas,MI New York,MLC
+1381375,2023-07-25,"Church Street Park, Morrisville",2,391128,Harmeet Singh,TA Boult,277912,0,2,0,0,0.0,True,bowled,Seattle Orcas,MI New York,MLC
+1381375,2023-07-25,"Church Street Park, Morrisville",2,459508,AJ Tye,,,4,4,0,0,100.0,False,not out,Seattle Orcas,MI New York,MLC
+1381375,2023-07-25,"Church Street Park, Morrisville",2,326635,CJ Gannon,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,MI New York,
+1381375,2023-07-25,"Church Street Park, Morrisville",2,422847,Harmeet Singh,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,MI New York,
+1381376,2023-07-27,Grand Prairie Stadium,1,647771,Shayan Jahangir,AJ Hosein,530812,25,27,3,0,92.59,True,lbw,MI New York,Washington Freedom,MLC
+1381376,2023-07-27,Grand Prairie Stadium,1,1159641,MD Patel,,,5,10,0,0,50.0,False,not out,MI New York,Washington Freedom,MLC
+1381376,2023-07-27,Grand Prairie Stadium,1,604302,N Pooran,SN Netravalkar,398513,1,10,0,0,10.0,True,bowled,MI New York,Washington Freedom,MLC
+1381376,2023-07-27,Grand Prairie Stadium,1,1070665,D Brevis,M Jansen,696401,57,41,4,3,139.02,True,caught,MI New York,Washington Freedom,MLC
+1381376,2023-07-27,Grand Prairie Stadium,1,892749,TH David,JG Dill,594293,23,12,1,2,191.67,True,lbw,MI New York,Washington Freedom,MLC
+1381376,2023-07-27,Grand Prairie Stadium,1,221140,D Wiese,,,3,4,0,0,75.0,False,not out,MI New York,Washington Freedom,MLC
+1381376,2023-07-27,Grand Prairie Stadium,1,355359,SR Taylor,,,15,12,0,1,125.0,False,not out,MI New York,Washington Freedom,MLC
+1381376,2023-07-27,Grand Prairie Stadium,1,793463,Rashid Khan,SN Netravalkar,398513,2,5,0,0,40.0,True,lbw,MI New York,Washington Freedom,MLC
+1381376,2023-07-27,Grand Prairie Stadium,1,547092,Ehsan Adil,,,0,0,0,0,0.0,False,DNB,MI New York,Washington Freedom,
+1381376,2023-07-27,Grand Prairie Stadium,1,1041679,NP Kenjige,,,0,0,0,0,0.0,False,DNB,MI New York,Washington Freedom,
+1381376,2023-07-27,Grand Prairie Stadium,1,348133,SR Taylor,,,0,0,0,0,0.0,False,DNB,MI New York,Washington Freedom,
+1381376,2023-07-27,Grand Prairie Stadium,1,277912,TA Boult,,,0,0,0,0,0.0,False,DNB,MI New York,Washington Freedom,
+1381376,2023-07-27,Grand Prairie Stadium,2,605575,MW Short,TA Boult,277912,8,8,0,1,100.0,True,bowled,Washington Freedom,MI New York,MLC
+1381376,2023-07-27,Grand Prairie Stadium,2,485379,AGS Gous,NP Kenjige,1041679,24,25,4,0,96.0,True,caught,Washington Freedom,MI New York,MLC
+1381376,2023-07-27,Grand Prairie Stadium,2,556916,Mukhtar Ahmed,D Wiese,221140,19,19,1,1,100.0,True,run out,Washington Freedom,MI New York,MLC
+1381376,2023-07-27,Grand Prairie Stadium,2,823509,GD Phillips,TA Boult,277912,20,19,2,0,105.26,True,caught,Washington Freedom,MI New York,MLC
+1381376,2023-07-27,Grand Prairie Stadium,2,5961,MC Henriques,D Wiese,221140,2,3,0,0,66.67,True,bowled,Washington Freedom,MI New York,MLC
+1381376,2023-07-27,Grand Prairie Stadium,2,328160,AJ Pienaar,NP Kenjige,1041679,4,4,0,0,100.0,True,lbw,Washington Freedom,MI New York,MLC
+1381376,2023-07-27,Grand Prairie Stadium,2,530812,AJ Hosein,TA Boult,277912,11,14,1,0,78.57,True,caught,Washington Freedom,MI New York,MLC
+1381376,2023-07-27,Grand Prairie Stadium,2,696401,M Jansen,TA Boult,277912,28,18,1,3,155.56,True,caught,Washington Freedom,MI New York,MLC
+1381376,2023-07-27,Grand Prairie Stadium,2,594293,JG Dill,,,3,3,0,0,100.0,False,not out,Washington Freedom,MI New York,MLC
+1381376,2023-07-27,Grand Prairie Stadium,2,481979,A Nortje,,,4,6,0,0,66.67,False,not out,Washington Freedom,MI New York,MLC
+1381376,2023-07-27,Grand Prairie Stadium,2,398513,SN Netravalkar,,,1,1,0,0,100.0,False,not out,Washington Freedom,MI New York,MLC
+1381377,2023-07-27,Grand Prairie Stadium,1,379140,DP Conway,CJ Gannon,326635,24,19,1,2,126.32,True,caught,Texas Super Kings,Seattle Orcas,MLC
+1381377,2023-07-27,Grand Prairie Stadium,1,44828,F du Plessis,Imad Wasim,227758,5,8,0,0,62.5,True,caught,Texas Super Kings,Seattle Orcas,MLC
+1381377,2023-07-27,Grand Prairie Stadium,1,322815,C Chetty,Imad Wasim,227758,24,21,3,0,114.29,True,caught and bowled,Texas Super Kings,Seattle Orcas,MLC
+1381377,2023-07-27,Grand Prairie Stadium,1,451947,Milind Kumar,Harmeet Singh,391128,5,10,0,0,50.0,True,caught,Texas Super Kings,Seattle Orcas,MLC
+1381377,2023-07-27,Grand Prairie Stadium,1,321777,DA Miller,AJ Tye,459508,16,17,2,0,94.12,True,caught,Texas Super Kings,Seattle Orcas,MLC
+1381377,2023-07-27,Grand Prairie Stadium,1,502714,MJ Santner,AJ Tye,459508,2,5,0,0,40.0,True,caught,Texas Super Kings,Seattle Orcas,MLC
+1381377,2023-07-27,Grand Prairie Stadium,1,826901,DR Sams,,,26,25,1,1,104.0,False,not out,Texas Super Kings,Seattle Orcas,MLC
+1381377,2023-07-27,Grand Prairie Stadium,1,450881,CP Savage,D Pretorius,327830,14,11,1,1,127.27,True,run out,Texas Super Kings,Seattle Orcas,MLC
+1381377,2023-07-27,Grand Prairie Stadium,1,935881,Mohammad Mohsin,AJ Tye,459508,3,3,0,0,100.0,True,caught,Texas Super Kings,Seattle Orcas,MLC
+1381377,2023-07-27,Grand Prairie Stadium,1,596010,G Coetzee,AJ Tye,459508,1,1,0,0,100.0,True,run out,Texas Super Kings,Seattle Orcas,MLC
+1381377,2023-07-27,Grand Prairie Stadium,1,223642,J Theron,,,0,0,0,0,0.0,False,DNB,Texas Super Kings,Seattle Orcas,
+1381377,2023-07-27,Grand Prairie Stadium,2,379143,Q de Kock,,,88,50,10,4,176.0,False,not out,Seattle Orcas,Texas Super Kings,MLC
+1381377,2023-07-27,Grand Prairie Stadium,2,788879,Nauman Anwar,J Theron,223642,2,6,0,0,33.33,True,caught,Seattle Orcas,Texas Super Kings,MLC
+1381377,2023-07-27,Grand Prairie Stadium,2,422965,GSNFG Jayasuriya,,,31,34,4,0,91.18,False,not out,Seattle Orcas,Texas Super Kings,MLC
+1381377,2023-07-27,Grand Prairie Stadium,2,459508,AJ Tye,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,Texas Super Kings,
+1381377,2023-07-27,Grand Prairie Stadium,2,326635,CJ Gannon,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,Texas Super Kings,
+1381377,2023-07-27,Grand Prairie Stadium,2,327830,D Pretorius,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,Texas Super Kings,
+1381377,2023-07-27,Grand Prairie Stadium,2,436757,H Klaasen,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,Texas Super Kings,
+1381377,2023-07-27,Grand Prairie Stadium,2,422847,Harmeet Singh,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,Texas Super Kings,
+1381377,2023-07-27,Grand Prairie Stadium,2,227758,Imad Wasim,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,Texas Super Kings,
+1381377,2023-07-27,Grand Prairie Stadium,2,554701,Shubham Ranjane,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,Texas Super Kings,
+1381377,2023-07-27,Grand Prairie Stadium,2,265564,WD Parnell,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,Texas Super Kings,
+1381378,2023-07-28,Grand Prairie Stadium,1,44828,F du Plessis,TA Boult,277912,6,9,0,0,66.67,True,caught,Texas Super Kings,MI New York,MLC
+1381378,2023-07-28,Grand Prairie Stadium,1,379140,DP Conway,TA Boult,277912,38,35,3,1,108.57,True,caught,Texas Super Kings,MI New York,MLC
+1381378,2023-07-28,Grand Prairie Stadium,1,502714,MJ Santner,TA Boult,277912,6,3,1,0,200.0,True,caught,Texas Super Kings,MI New York,MLC
+1381378,2023-07-28,Grand Prairie Stadium,1,322815,C Chetty,Ehsan Adil,547092,14,13,3,0,107.69,True,caught,Texas Super Kings,MI New York,MLC
+1381378,2023-07-28,Grand Prairie Stadium,1,451947,Milind Kumar,Rashid Khan,793463,37,34,3,1,108.82,True,caught,Texas Super Kings,MI New York,MLC
+1381378,2023-07-28,Grand Prairie Stadium,1,826901,DR Sams,TA Boult,277912,8,12,1,0,66.67,True,run out,Texas Super Kings,MI New York,MLC
+1381378,2023-07-28,Grand Prairie Stadium,1,321777,DA Miller,TH David,892749,17,10,0,2,170.0,True,caught,Texas Super Kings,MI New York,MLC
+1381378,2023-07-28,Grand Prairie Stadium,1,450881,CP Savage,TA Boult,277912,6,2,0,1,300.0,True,bowled,Texas Super Kings,MI New York,MLC
+1381378,2023-07-28,Grand Prairie Stadium,1,596010,G Coetzee,TH David,892749,0,1,0,0,0.0,True,caught,Texas Super Kings,MI New York,MLC
+1381378,2023-07-28,Grand Prairie Stadium,1,223642,J Theron,,,1,1,0,0,100.0,False,not out,Texas Super Kings,MI New York,MLC
+1381378,2023-07-28,Grand Prairie Stadium,1,935881,Mohammad Mohsin,,,1,1,0,0,100.0,False,not out,Texas Super Kings,MI New York,MLC
+1381378,2023-07-28,Grand Prairie Stadium,2,647771,Shayan Jahangir,CP Savage,450881,36,18,5,2,200.0,True,caught,MI New York,Texas Super Kings,MLC
+1381378,2023-07-28,Grand Prairie Stadium,2,1070762,S van Staden,J Theron,223642,6,12,1,0,50.0,True,caught,MI New York,Texas Super Kings,MLC
+1381378,2023-07-28,Grand Prairie Stadium,2,604302,N Pooran,DR Sams,826901,23,20,0,2,115.0,True,lbw,MI New York,Texas Super Kings,MLC
+1381378,2023-07-28,Grand Prairie Stadium,2,1070665,D Brevis,,,41,33,1,2,124.24,False,not out,MI New York,Texas Super Kings,MLC
+1381378,2023-07-28,Grand Prairie Stadium,2,892749,TH David,Mohammad Mohsin,935881,33,20,0,4,165.0,True,caught,MI New York,Texas Super Kings,MLC
+1381378,2023-07-28,Grand Prairie Stadium,2,221140,D Wiese,,,19,11,0,1,172.73,False,not out,MI New York,Texas Super Kings,MLC
+1381378,2023-07-28,Grand Prairie Stadium,2,547092,Ehsan Adil,,,0,0,0,0,0.0,False,DNB,MI New York,Texas Super Kings,
+1381378,2023-07-28,Grand Prairie Stadium,2,1041679,NP Kenjige,,,0,0,0,0,0.0,False,DNB,MI New York,Texas Super Kings,
+1381378,2023-07-28,Grand Prairie Stadium,2,793463,Rashid Khan,,,0,0,0,0,0.0,False,DNB,MI New York,Texas Super Kings,
+1381378,2023-07-28,Grand Prairie Stadium,2,348133,SR Taylor,,,0,0,0,0,0.0,False,DNB,MI New York,Texas Super Kings,
+1381378,2023-07-28,Grand Prairie Stadium,2,277912,TA Boult,,,0,0,0,0,0.0,False,DNB,MI New York,Texas Super Kings,
+1381379,2023-07-30,Grand Prairie Stadium,1,379143,Q de Kock,TA Boult,277912,87,52,9,4,167.31,True,bowled,Seattle Orcas,MI New York,MLC
+1381379,2023-07-30,Grand Prairie Stadium,1,788879,Nauman Anwar,Rashid Khan,793463,9,13,1,0,69.23,True,stumped,Seattle Orcas,MI New York,MLC
+1381379,2023-07-30,Grand Prairie Stadium,1,422965,GSNFG Jayasuriya,SR Taylor,355359,16,15,1,1,106.67,True,caught and bowled,Seattle Orcas,MI New York,MLC
+1381379,2023-07-30,Grand Prairie Stadium,1,436757,H Klaasen,Rashid Khan,793463,4,7,0,0,57.14,True,caught,Seattle Orcas,MI New York,MLC
+1381379,2023-07-30,Grand Prairie Stadium,1,554701,Shubham Ranjane,TA Boult,277912,29,16,5,0,181.25,True,caught,Seattle Orcas,MI New York,MLC
+1381379,2023-07-30,Grand Prairie Stadium,1,227758,Imad Wasim,Rashid Khan,793463,7,6,1,0,116.67,True,caught,Seattle Orcas,MI New York,MLC
+1381379,2023-07-30,Grand Prairie Stadium,1,459508,AJ Tye,TA Boult,277912,1,2,0,0,50.0,True,caught,Seattle Orcas,MI New York,MLC
+1381379,2023-07-30,Grand Prairie Stadium,1,327830,D Pretorius,D Wiese,221140,21,7,3,1,300.0,True,caught,Seattle Orcas,MI New York,MLC
+1381379,2023-07-30,Grand Prairie Stadium,1,265564,WD Parnell,,,2,1,0,0,200.0,False,not out,Seattle Orcas,MI New York,MLC
+1381379,2023-07-30,Grand Prairie Stadium,1,391128,Harmeet Singh,,,2,1,0,0,200.0,False,not out,Seattle Orcas,MI New York,MLC
+1381379,2023-07-30,Grand Prairie Stadium,1,326635,CJ Gannon,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,MI New York,
+1381379,2023-07-30,Grand Prairie Stadium,1,422847,Harmeet Singh,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,MI New York,
+1381379,2023-07-30,Grand Prairie Stadium,2,355359,SR Taylor,Imad Wasim,227758,0,3,0,0,0.0,True,bowled,MI New York,Seattle Orcas,MLC
+1381379,2023-07-30,Grand Prairie Stadium,2,604302,N Pooran,,,137,55,10,13,249.09,False,not out,MI New York,Seattle Orcas,MLC
+1381379,2023-07-30,Grand Prairie Stadium,2,647771,Shayan Jahangir,WD Parnell,265564,10,11,0,1,90.91,True,caught,MI New York,Seattle Orcas,MLC
+1381379,2023-07-30,Grand Prairie Stadium,2,1070665,D Brevis,,,20,18,2,1,111.11,False,not out,MI New York,Seattle Orcas,MLC
+1381379,2023-07-30,Grand Prairie Stadium,2,892749,TH David,,,10,9,1,0,111.11,False,not out,MI New York,Seattle Orcas,MLC
+1381379,2023-07-30,Grand Prairie Stadium,2,221140,D Wiese,,,0,0,0,0,0.0,False,DNB,MI New York,Seattle Orcas,
+1381379,2023-07-30,Grand Prairie Stadium,2,384518,Hammad Azam,,,0,0,0,0,0.0,False,DNB,MI New York,Seattle Orcas,
+1381379,2023-07-30,Grand Prairie Stadium,2,772471,Jasdeep Singh,,,0,0,0,0,0.0,False,DNB,MI New York,Seattle Orcas,
+1381379,2023-07-30,Grand Prairie Stadium,2,1041679,NP Kenjige,,,0,0,0,0,0.0,False,DNB,MI New York,Seattle Orcas,
+1381379,2023-07-30,Grand Prairie Stadium,2,793463,Rashid Khan,,,0,0,0,0,0.0,False,DNB,MI New York,Seattle Orcas,
+1381379,2023-07-30,Grand Prairie Stadium,2,348133,SR Taylor,,,0,0,0,0,0.0,False,DNB,MI New York,Seattle Orcas,
+1381379,2023-07-30,Grand Prairie Stadium,2,277912,TA Boult,,,0,0,0,0,0.0,False,DNB,MI New York,Seattle Orcas,
+1432726,2024-07-05,"Church Street Park, Morrisville",1,379143,Q de Kock,TA Boult,277912,5,10,0,0,50.0,True,caught,Seattle Orcas,MI New York,MLC
+1432726,2024-07-05,"Church Street Park, Morrisville",1,788879,Nauman Anwar,TA Boult,277912,0,4,0,0,0.0,True,caught,Seattle Orcas,MI New York,MLC
+1432726,2024-07-05,"Church Street Park, Morrisville",1,957645,Aaron Jones,Rashid Khan,793463,12,16,2,0,75.0,True,lbw,Seattle Orcas,MI New York,MLC
+1432726,2024-07-05,"Church Street Park, Morrisville",1,554701,Shubham Ranjane,Rashid Khan,793463,35,31,2,2,112.9,True,caught,Seattle Orcas,MI New York,MLC
+1432726,2024-07-05,"Church Street Park, Morrisville",1,436757,H Klaasen,Rashid Khan,793463,5,5,0,0,100.0,True,caught,Seattle Orcas,MI New York,MLC
+1432726,2024-07-05,"Church Street Park, Morrisville",1,227758,Imad Wasim,KA Pollard,230559,3,10,0,0,30.0,True,caught,Seattle Orcas,MI New York,MLC
+1432726,2024-07-05,"Church Street Park, Morrisville",1,326968,MG Bracewell,Ehsan Adil,547092,5,5,1,0,100.0,True,caught,Seattle Orcas,MI New York,MLC
+1432726,2024-07-05,"Church Street Park, Morrisville",1,391128,Harmeet Singh,TA Boult,277912,20,14,2,1,142.86,True,caught,Seattle Orcas,MI New York,MLC
+1432726,2024-07-05,"Church Street Park, Morrisville",1,326635,CJ Gannon,A Nortje,481979,7,7,1,0,100.0,True,caught,Seattle Orcas,MI New York,MLC
+1432726,2024-07-05,"Church Street Park, Morrisville",1,971349,N Burger,KA Pollard,230559,4,9,0,0,44.44,True,caught,Seattle Orcas,MI New York,MLC
+1432726,2024-07-05,"Church Street Park, Morrisville",1,1272475,Zaman Khan,,,7,4,1,0,175.0,False,not out,Seattle Orcas,MI New York,MLC
+1432726,2024-07-05,"Church Street Park, Morrisville",1,422847,Harmeet Singh,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,MI New York,
+1432726,2024-07-05,"Church Street Park, Morrisville",2,1441683,R Clinton,CJ Gannon,326635,6,5,1,0,120.0,True,caught,MI New York,Seattle Orcas,MLC
+1432726,2024-07-05,"Church Street Park, Morrisville",2,1159641,MD Patel,CJ Gannon,326635,8,12,1,0,66.67,True,caught,MI New York,Seattle Orcas,MLC
+1432726,2024-07-05,"Church Street Park, Morrisville",2,604302,N Pooran,,,62,37,7,2,167.57,False,not out,MI New York,Seattle Orcas,MLC
+1432726,2024-07-05,"Church Street Park, Morrisville",2,647771,Shayan Jahangir,Zaman Khan,1272475,3,8,0,0,37.5,True,caught,MI New York,Seattle Orcas,MLC
+1432726,2024-07-05,"Church Street Park, Morrisville",2,892749,TH David,N Burger,971349,12,15,1,0,80.0,True,caught,MI New York,Seattle Orcas,MLC
+1432726,2024-07-05,"Church Street Park, Morrisville",2,230559,KA Pollard,,,8,9,0,1,88.89,False,not out,MI New York,Seattle Orcas,MLC
+1432726,2024-07-05,"Church Street Park, Morrisville",2,481979,A Nortje,,,0,0,0,0,0.0,False,DNB,MI New York,Seattle Orcas,
+1432726,2024-07-05,"Church Street Park, Morrisville",2,547092,Ehsan Adil,,,0,0,0,0,0.0,False,DNB,MI New York,Seattle Orcas,
+1432726,2024-07-05,"Church Street Park, Morrisville",2,793463,Rashid Khan,,,0,0,0,0,0.0,False,DNB,MI New York,Seattle Orcas,
+1432726,2024-07-05,"Church Street Park, Morrisville",2,348133,SR Taylor,,,0,0,0,0,0.0,False,DNB,MI New York,Seattle Orcas,
+1432726,2024-07-05,"Church Street Park, Morrisville",2,277912,TA Boult,,,0,0,0,0,0.0,False,DNB,MI New York,Seattle Orcas,
+1432727,2024-07-05,"Grand Prairie Stadium, Dallas",1,298438,JJ Roy,Zia-ul-Haq,290739,2,11,0,0,18.18,True,caught,Los Angeles Knight Riders,Texas Super Kings,MLC
+1432727,2024-07-05,"Grand Prairie Stadium, Dallas",1,230558,SP Narine,Zia-ul-Haq,290739,2,3,0,0,66.67,True,bowled,Los Angeles Knight Riders,Texas Super Kings,MLC
+1432727,2024-07-05,"Grand Prairie Stadium, Dallas",1,446499,UBT Chand,MP Stoinis,325012,68,45,6,3,151.11,True,caught,Los Angeles Knight Riders,Texas Super Kings,MLC
+1432727,2024-07-05,"Grand Prairie Stadium, Dallas",1,56143,Shakib Al Hasan,AM Hardie,1124283,18,13,3,0,138.46,True,caught,Los Angeles Knight Riders,Texas Super Kings,MLC
+1432727,2024-07-05,"Grand Prairie Stadium, Dallas",1,348129,NR Kumar,MP Stoinis,325012,26,17,1,2,152.94,True,caught,Los Angeles Knight Riders,Texas Super Kings,MLC
+1432727,2024-07-05,"Grand Prairie Stadium, Dallas",1,321777,DA Miller,AM Hardie,1124283,4,9,0,0,44.44,True,caught and bowled,Los Angeles Knight Riders,Texas Super Kings,MLC
+1432727,2024-07-05,"Grand Prairie Stadium, Dallas",1,276298,AD Russell,G Coetzee,596010,10,5,1,1,200.0,True,hit wicket,Los Angeles Knight Riders,Texas Super Kings,MLC
+1432727,2024-07-05,"Grand Prairie Stadium, Dallas",1,348031,DYA Davis,,,13,13,2,0,100.0,False,not out,Los Angeles Knight Riders,Texas Super Kings,MLC
+1432727,2024-07-05,"Grand Prairie Stadium, Dallas",1,429927,CA Dry,,,12,4,3,0,300.0,False,not out,Los Angeles Knight Riders,Texas Super Kings,MLC
+1432727,2024-07-05,"Grand Prairie Stadium, Dallas",1,927119,Ali Khan,,,0,0,0,0,0.0,False,DNB,Los Angeles Knight Riders,Texas Super Kings,
+1432727,2024-07-05,"Grand Prairie Stadium, Dallas",1,1123718,SH Johnson,,,0,0,0,0,0.0,False,DNB,Los Angeles Knight Riders,Texas Super Kings,
+1432727,2024-07-05,"Grand Prairie Stadium, Dallas",2,379140,DP Conway,Ali Khan,927119,53,39,4,2,135.9,True,bowled,Texas Super Kings,Los Angeles Knight Riders,MLC
+1432727,2024-07-05,"Grand Prairie Stadium, Dallas",2,44828,F du Plessis,SH Johnson,1123718,14,14,2,0,100.0,True,caught,Texas Super Kings,Los Angeles Knight Riders,MLC
+1432727,2024-07-05,"Grand Prairie Stadium, Dallas",2,1124283,AM Hardie,Shakib Al Hasan,56143,11,14,0,1,78.57,True,caught,Texas Super Kings,Los Angeles Knight Riders,MLC
+1432727,2024-07-05,"Grand Prairie Stadium, Dallas",2,1441622,J Tromp,Ali Khan,927119,18,14,2,0,128.57,True,caught,Texas Super Kings,Los Angeles Knight Riders,MLC
+1432727,2024-07-05,"Grand Prairie Stadium, Dallas",2,325012,MP Stoinis,SP Narine,230558,2,6,0,0,33.33,True,lbw,Texas Super Kings,Los Angeles Knight Riders,MLC
+1432727,2024-07-05,"Grand Prairie Stadium, Dallas",2,451947,Milind Kumar,Ali Khan,927119,0,1,0,0,0.0,True,caught,Texas Super Kings,Los Angeles Knight Riders,MLC
+1432727,2024-07-05,"Grand Prairie Stadium, Dallas",2,450881,CP Savage,,,29,18,2,1,161.11,False,not out,Texas Super Kings,Los Angeles Knight Riders,MLC
+1432727,2024-07-05,"Grand Prairie Stadium, Dallas",2,596010,G Coetzee,SH Johnson,1123718,4,5,0,0,80.0,True,bowled,Texas Super Kings,Los Angeles Knight Riders,MLC
+1432727,2024-07-05,"Grand Prairie Stadium, Dallas",2,935881,Mohammad Mohsin,Ali Khan,927119,4,3,1,0,133.33,True,caught,Texas Super Kings,Los Angeles Knight Riders,MLC
+1432727,2024-07-05,"Grand Prairie Stadium, Dallas",2,793447,Naveen-ul-Haq,,,6,7,1,0,85.71,False,not out,Texas Super Kings,Los Angeles Knight Riders,MLC
+1432727,2024-07-05,"Grand Prairie Stadium, Dallas",2,290739,Zia-ul-Haq,,,0,0,0,0,0.0,False,DNB,Texas Super Kings,Los Angeles Knight Riders,
+1432728,2024-07-06,"Church Street Park, Morrisville",1,1441683,R Clinton,GJ Maxwell,325026,28,22,3,1,127.27,True,bowled,MI New York,Washington Freedom,MLC
+1432728,2024-07-06,"Church Street Park, Morrisville",1,1159641,MD Patel,M Jansen,696401,5,6,1,0,83.33,True,caught,MI New York,Washington Freedom,MLC
+1432728,2024-07-06,"Church Street Park, Morrisville",1,647771,Shayan Jahangir,JG Dill,594293,6,10,1,0,60.0,True,caught,MI New York,Washington Freedom,MLC
+1432728,2024-07-06,"Church Street Park, Morrisville",1,604302,N Pooran,LH Ferguson,493773,44,30,5,1,146.67,True,caught,MI New York,Washington Freedom,MLC
+1432728,2024-07-06,"Church Street Park, Morrisville",1,892749,TH David,JG Dill,594293,9,12,1,0,75.0,True,caught,MI New York,Washington Freedom,MLC
+1432728,2024-07-06,"Church Street Park, Morrisville",1,230559,KA Pollard,SN Netravalkar,398513,3,6,0,0,50.0,True,caught,MI New York,Washington Freedom,MLC
+1432728,2024-07-06,"Church Street Park, Morrisville",1,793463,Rashid Khan,SN Netravalkar,398513,31,15,2,3,206.67,True,bowled,MI New York,Washington Freedom,MLC
+1432728,2024-07-06,"Church Street Park, Morrisville",1,277912,TA Boult,JG Dill,594293,5,7,1,0,71.43,True,caught,MI New York,Washington Freedom,MLC
+1432728,2024-07-06,"Church Street Park, Morrisville",1,481979,A Nortje,SN Netravalkar,398513,14,9,2,1,155.56,True,caught,MI New York,Washington Freedom,MLC
+1432728,2024-07-06,"Church Street Park, Morrisville",1,1041679,NP Kenjige,,,5,2,1,0,250.0,False,not out,MI New York,Washington Freedom,MLC
+1432728,2024-07-06,"Church Street Park, Morrisville",1,547092,Ehsan Adil,,,1,1,0,0,100.0,False,not out,MI New York,Washington Freedom,MLC
+1432728,2024-07-06,"Church Street Park, Morrisville",2,530011,TM Head,Ehsan Adil,547092,1,7,0,0,14.29,True,caught,Washington Freedom,MI New York,MLC
+1432728,2024-07-06,"Church Street Park, Morrisville",2,267192,SPD Smith,,,46,28,4,3,164.29,False,not out,Washington Freedom,MI New York,MLC
+1432728,2024-07-06,"Church Street Park, Morrisville",2,485379,AGS Gous,,,5,11,1,0,45.45,False,not out,Washington Freedom,MI New York,MLC
+1432728,2024-07-06,"Church Street Park, Morrisville",2,530812,AJ Hosein,,,0,0,0,0,0.0,False,DNB,Washington Freedom,MI New York,
+1432728,2024-07-06,"Church Street Park, Morrisville",2,328160,AJ Pienaar,,,0,0,0,0,0.0,False,DNB,Washington Freedom,MI New York,
+1432728,2024-07-06,"Church Street Park, Morrisville",2,325026,GJ Maxwell,,,0,0,0,0,0.0,False,DNB,Washington Freedom,MI New York,
+1432728,2024-07-06,"Church Street Park, Morrisville",2,594293,JG Dill,,,0,0,0,0,0.0,False,DNB,Washington Freedom,MI New York,
+1432728,2024-07-06,"Church Street Park, Morrisville",2,493773,LH Ferguson,,,0,0,0,0,0.0,False,DNB,Washington Freedom,MI New York,
+1432728,2024-07-06,"Church Street Park, Morrisville",2,696401,M Jansen,,,0,0,0,0,0.0,False,DNB,Washington Freedom,MI New York,
+1432728,2024-07-06,"Church Street Park, Morrisville",2,556916,Mukhtar Ahmed,,,0,0,0,0,0.0,False,DNB,Washington Freedom,MI New York,
+1432728,2024-07-06,"Church Street Park, Morrisville",2,398513,SN Netravalkar,,,0,0,0,0,0.0,False,DNB,Washington Freedom,MI New York,
+1432729,2024-07-07,"Grand Prairie Stadium, Dallas",1,298438,JJ Roy,LE Plunkett,19264,26,18,4,0,144.44,True,bowled,Los Angeles Knight Riders,San Francisco Unicorns,MLC
+1432729,2024-07-07,"Grand Prairie Stadium, Dallas",1,230558,SP Narine,Haris Rauf,1161606,6,6,1,0,100.0,True,caught,Los Angeles Knight Riders,San Francisco Unicorns,MLC
+1432729,2024-07-07,"Grand Prairie Stadium, Dallas",1,446499,UBT Chand,BL Couch,1219972,0,5,0,0,0.0,True,caught,Los Angeles Knight Riders,San Francisco Unicorns,MLC
+1432729,2024-07-07,"Grand Prairie Stadium, Dallas",1,56143,Shakib Al Hasan,Abrar Ahmed,734459,35,26,6,0,134.62,True,caught,Los Angeles Knight Riders,San Francisco Unicorns,MLC
+1432729,2024-07-07,"Grand Prairie Stadium, Dallas",1,348129,NR Kumar,BL Couch,1219972,20,19,0,1,105.26,True,caught,Los Angeles Knight Riders,San Francisco Unicorns,MLC
+1432729,2024-07-07,"Grand Prairie Stadium, Dallas",1,321777,DA Miller,Haris Rauf,1161606,24,18,1,1,133.33,True,caught,Los Angeles Knight Riders,San Francisco Unicorns,MLC
+1432729,2024-07-07,"Grand Prairie Stadium, Dallas",1,276298,AD Russell,,,40,25,2,3,160.0,False,not out,Los Angeles Knight Riders,San Francisco Unicorns,MLC
+1432729,2024-07-07,"Grand Prairie Stadium, Dallas",1,348031,DYA Davis,,,2,4,0,0,50.0,False,not out,Los Angeles Knight Riders,San Francisco Unicorns,MLC
+1432729,2024-07-07,"Grand Prairie Stadium, Dallas",1,927119,Ali Khan,,,0,0,0,0,0.0,False,DNB,Los Angeles Knight Riders,San Francisco Unicorns,
+1432729,2024-07-07,"Grand Prairie Stadium, Dallas",1,429927,CA Dry,,,0,0,0,0,0.0,False,DNB,Los Angeles Knight Riders,San Francisco Unicorns,
+1432729,2024-07-07,"Grand Prairie Stadium, Dallas",1,1123718,SH Johnson,,,0,0,0,0,0.0,False,DNB,Los Angeles Knight Riders,San Francisco Unicorns,
+1432729,2024-07-07,"Grand Prairie Stadium, Dallas",2,959759,FH Allen,SH Johnson,1123718,63,37,4,5,170.27,True,caught,San Francisco Unicorns,Los Angeles Knight Riders,MLC
+1432729,2024-07-07,"Grand Prairie Stadium, Dallas",2,1168049,J Fraser-McGurk,SH Johnson,1123718,9,7,2,0,128.57,True,caught,San Francisco Unicorns,Los Angeles Knight Riders,MLC
+1432729,2024-07-07,"Grand Prairie Stadium, Dallas",2,605575,MW Short,SP Narine,230558,58,26,3,5,223.08,True,bowled,San Francisco Unicorns,Los Angeles Knight Riders,MLC
+1432729,2024-07-07,"Grand Prairie Stadium, Dallas",2,662235,JP Inglis,SH Johnson,1123718,15,11,2,0,136.36,True,caught,San Francisco Unicorns,Los Angeles Knight Riders,MLC
+1432729,2024-07-07,"Grand Prairie Stadium, Dallas",2,277662,CJ Anderson,,,11,9,0,1,122.22,False,not out,San Francisco Unicorns,Los Angeles Knight Riders,MLC
+1432729,2024-07-07,"Grand Prairie Stadium, Dallas",2,959789,Hassan Khan,,,2,4,0,0,50.0,False,not out,San Francisco Unicorns,Los Angeles Knight Riders,MLC
+1432729,2024-07-07,"Grand Prairie Stadium, Dallas",2,734459,Abrar Ahmed,,,0,0,0,0,0.0,False,DNB,San Francisco Unicorns,Los Angeles Knight Riders,
+1432729,2024-07-07,"Grand Prairie Stadium, Dallas",2,1219972,BL Couch,,,0,0,0,0,0.0,False,DNB,San Francisco Unicorns,Los Angeles Knight Riders,
+1432729,2024-07-07,"Grand Prairie Stadium, Dallas",2,1161606,Haris Rauf,,,0,0,0,0,0.0,False,DNB,San Francisco Unicorns,Los Angeles Knight Riders,
+1432729,2024-07-07,"Grand Prairie Stadium, Dallas",2,19264,LE Plunkett,,,0,0,0,0,0.0,False,DNB,San Francisco Unicorns,Los Angeles Knight Riders,
+1432729,2024-07-07,"Grand Prairie Stadium, Dallas",2,1277627,SP Krishnamurthi,,,0,0,0,0,0.0,False,DNB,San Francisco Unicorns,Los Angeles Knight Riders,
+1432730,2024-07-08,"Church Street Park, Morrisville",1,379140,DP Conway,SN Netravalkar,398513,39,26,3,1,150.0,True,caught,Texas Super Kings,Washington Freedom,MLC
+1432730,2024-07-08,"Church Street Park, Morrisville",1,44828,F du Plessis,SN Netravalkar,398513,100,58,12,5,172.41,True,caught,Texas Super Kings,Washington Freedom,MLC
+1432730,2024-07-08,"Church Street Park, Morrisville",1,1124283,AM Hardie,AJ Hosein,530812,2,5,0,0,40.0,True,lbw,Texas Super Kings,Washington Freedom,MLC
+1432730,2024-07-08,"Church Street Park, Morrisville",1,325012,MP Stoinis,JG Dill,594293,29,18,4,1,161.11,True,caught,Texas Super Kings,Washington Freedom,MLC
+1432730,2024-07-08,"Church Street Park, Morrisville",1,451947,Milind Kumar,,,11,9,1,0,122.22,False,not out,Texas Super Kings,Washington Freedom,MLC
+1432730,2024-07-08,"Church Street Park, Morrisville",1,450881,CP Savage,M Jansen,696401,1,2,0,0,50.0,True,caught,Texas Super Kings,Washington Freedom,MLC
+1432730,2024-07-08,"Church Street Park, Morrisville",1,51439,DJ Bravo,,,5,2,1,0,250.0,False,not out,Texas Super Kings,Washington Freedom,MLC
+1432730,2024-07-08,"Church Street Park, Morrisville",1,1441622,J Tromp,,,0,0,0,0,0.0,False,DNB,Texas Super Kings,Washington Freedom,
+1432730,2024-07-08,"Church Street Park, Morrisville",1,935881,Mohammad Mohsin,,,0,0,0,0,0.0,False,DNB,Texas Super Kings,Washington Freedom,
+1432730,2024-07-08,"Church Street Park, Morrisville",1,793447,Naveen-ul-Haq,,,0,0,0,0,0.0,False,DNB,Texas Super Kings,Washington Freedom,
+1432730,2024-07-08,"Church Street Park, Morrisville",1,290739,Zia-ul-Haq,,,0,0,0,0,0.0,False,DNB,Texas Super Kings,Washington Freedom,
+1432730,2024-07-08,"Church Street Park, Morrisville",2,530011,TM Head,,,32,12,4,2,266.67,False,not out,Washington Freedom,Texas Super Kings,MLC
+1432730,2024-07-08,"Church Street Park, Morrisville",2,267192,SPD Smith,,,26,13,1,3,200.0,False,not out,Washington Freedom,Texas Super Kings,MLC
+1432730,2024-07-08,"Church Street Park, Morrisville",2,485379,AGS Gous,,,0,0,0,0,0.0,False,DNB,Washington Freedom,Texas Super Kings,
+1432730,2024-07-08,"Church Street Park, Morrisville",2,530812,AJ Hosein,,,0,0,0,0,0.0,False,DNB,Washington Freedom,Texas Super Kings,
+1432730,2024-07-08,"Church Street Park, Morrisville",2,328160,AJ Pienaar,,,0,0,0,0,0.0,False,DNB,Washington Freedom,Texas Super Kings,
+1432730,2024-07-08,"Church Street Park, Morrisville",2,325026,GJ Maxwell,,,0,0,0,0,0.0,False,DNB,Washington Freedom,Texas Super Kings,
+1432730,2024-07-08,"Church Street Park, Morrisville",2,594293,JG Dill,,,0,0,0,0,0.0,False,DNB,Washington Freedom,Texas Super Kings,
+1432730,2024-07-08,"Church Street Park, Morrisville",2,493773,LH Ferguson,,,0,0,0,0,0.0,False,DNB,Washington Freedom,Texas Super Kings,
+1432730,2024-07-08,"Church Street Park, Morrisville",2,696401,M Jansen,,,0,0,0,0,0.0,False,DNB,Washington Freedom,Texas Super Kings,
+1432730,2024-07-08,"Church Street Park, Morrisville",2,556916,Mukhtar Ahmed,,,0,0,0,0,0.0,False,DNB,Washington Freedom,Texas Super Kings,
+1432730,2024-07-08,"Church Street Park, Morrisville",2,398513,SN Netravalkar,,,0,0,0,0,0.0,False,DNB,Washington Freedom,Texas Super Kings,
+1432731,2024-07-09,"Grand Prairie Stadium, Dallas",1,298438,JJ Roy,CJ Gannon,326635,69,52,5,4,132.69,True,caught,Los Angeles Knight Riders,Seattle Orcas,MLC
+1432731,2024-07-09,"Grand Prairie Stadium, Dallas",1,230558,SP Narine,Zaman Khan,1272475,5,6,1,0,83.33,True,caught,Los Angeles Knight Riders,Seattle Orcas,MLC
+1432731,2024-07-09,"Grand Prairie Stadium, Dallas",1,446499,UBT Chand,Harmeet Singh,391128,18,21,2,0,85.71,True,caught,Los Angeles Knight Riders,Seattle Orcas,MLC
+1432731,2024-07-09,"Grand Prairie Stadium, Dallas",1,56143,Shakib Al Hasan,Harmeet Singh,391128,7,7,1,0,100.0,True,caught,Los Angeles Knight Riders,Seattle Orcas,MLC
+1432731,2024-07-09,"Grand Prairie Stadium, Dallas",1,321777,DA Miller,,,44,22,5,2,200.0,False,not out,Los Angeles Knight Riders,Seattle Orcas,MLC
+1432731,2024-07-09,"Grand Prairie Stadium, Dallas",1,276298,AD Russell,Zaman Khan,1272475,14,10,0,1,140.0,True,caught,Los Angeles Knight Riders,Seattle Orcas,MLC
+1432731,2024-07-09,"Grand Prairie Stadium, Dallas",1,922967,Saif Badar,,,2,2,0,0,100.0,False,not out,Los Angeles Knight Riders,Seattle Orcas,MLC
+1432731,2024-07-09,"Grand Prairie Stadium, Dallas",1,927119,Ali Khan,,,0,0,0,0,0.0,False,DNB,Los Angeles Knight Riders,Seattle Orcas,
+1432731,2024-07-09,"Grand Prairie Stadium, Dallas",1,429927,CA Dry,,,0,0,0,0,0.0,False,DNB,Los Angeles Knight Riders,Seattle Orcas,
+1432731,2024-07-09,"Grand Prairie Stadium, Dallas",1,348129,NR Kumar,,,0,0,0,0,0.0,False,DNB,Los Angeles Knight Riders,Seattle Orcas,
+1432731,2024-07-09,"Grand Prairie Stadium, Dallas",1,1123718,SH Johnson,,,0,0,0,0,0.0,False,DNB,Los Angeles Knight Riders,Seattle Orcas,
+1432731,2024-07-09,"Grand Prairie Stadium, Dallas",2,605661,RD Rickelton,,,103,66,9,5,156.06,False,not out,Seattle Orcas,Los Angeles Knight Riders,MLC
+1432731,2024-07-09,"Grand Prairie Stadium, Dallas",2,788879,Nauman Anwar,SH Johnson,1123718,9,7,1,0,128.57,True,bowled,Seattle Orcas,Los Angeles Knight Riders,MLC
+1432731,2024-07-09,"Grand Prairie Stadium, Dallas",2,379143,Q de Kock,,,51,46,3,2,110.87,False,not out,Seattle Orcas,Los Angeles Knight Riders,MLC
+1432731,2024-07-09,"Grand Prairie Stadium, Dallas",2,326635,CJ Gannon,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,Los Angeles Knight Riders,
+1432731,2024-07-09,"Grand Prairie Stadium, Dallas",2,436757,H Klaasen,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,Los Angeles Knight Riders,
+1432731,2024-07-09,"Grand Prairie Stadium, Dallas",2,384518,Hammad Azam,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,Los Angeles Knight Riders,
+1432731,2024-07-09,"Grand Prairie Stadium, Dallas",2,422847,Harmeet Singh,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,Los Angeles Knight Riders,
+1432731,2024-07-09,"Grand Prairie Stadium, Dallas",2,227758,Imad Wasim,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,Los Angeles Knight Riders,
+1432731,2024-07-09,"Grand Prairie Stadium, Dallas",2,971349,N Burger,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,Los Angeles Knight Riders,
+1432731,2024-07-09,"Grand Prairie Stadium, Dallas",2,554701,Shubham Ranjane,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,Los Angeles Knight Riders,
+1432731,2024-07-09,"Grand Prairie Stadium, Dallas",2,1272475,Zaman Khan,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,Los Angeles Knight Riders,
+1432732,2024-07-10,"Church Street Park, Morrisville",1,959759,FH Allen,Zia-ul-Haq,290739,10,4,1,1,250.0,True,caught,San Francisco Unicorns,Texas Super Kings,MLC
+1432732,2024-07-10,"Church Street Park, Morrisville",1,605575,MW Short,Naveen-ul-Haq,793447,33,15,2,3,220.0,True,caught,San Francisco Unicorns,Texas Super Kings,MLC
+1432732,2024-07-10,"Church Street Park, Morrisville",1,1168049,J Fraser-McGurk,Zia-ul-Haq,290739,11,7,1,0,157.14,True,bowled,San Francisco Unicorns,Texas Super Kings,MLC
+1432732,2024-07-10,"Church Street Park, Morrisville",1,1277627,SP Krishnamurthi,DJ Bravo,51439,17,12,1,1,141.67,True,caught,San Francisco Unicorns,Texas Super Kings,MLC
+1432732,2024-07-10,"Church Street Park, Morrisville",1,662235,JP Inglis,DJ Bravo,51439,1,2,0,0,50.0,True,caught,San Francisco Unicorns,Texas Super Kings,MLC
+1432732,2024-07-10,"Church Street Park, Morrisville",1,277662,CJ Anderson,Mohammad Mohsin,935881,3,4,0,0,75.0,True,lbw,San Francisco Unicorns,Texas Super Kings,MLC
+1432732,2024-07-10,"Church Street Park, Morrisville",1,959789,Hassan Khan,Mohammad Mohsin,935881,19,22,1,1,86.36,True,caught,San Francisco Unicorns,Texas Super Kings,MLC
+1432732,2024-07-10,"Church Street Park, Morrisville",1,19264,LE Plunkett,Mohammad Mohsin,935881,0,1,0,0,0.0,True,bowled,San Francisco Unicorns,Texas Super Kings,MLC
+1432732,2024-07-10,"Church Street Park, Morrisville",1,1161606,Haris Rauf,MJ Santner,502714,13,20,1,0,65.0,True,caught,San Francisco Unicorns,Texas Super Kings,MLC
+1432732,2024-07-10,"Church Street Park, Morrisville",1,1219972,BL Couch,,,5,13,0,0,38.46,False,not out,San Francisco Unicorns,Texas Super Kings,MLC
+1432732,2024-07-10,"Church Street Park, Morrisville",1,734459,Abrar Ahmed,Mohammad Mohsin,935881,6,7,0,0,85.71,True,lbw,San Francisco Unicorns,Texas Super Kings,MLC
+1432732,2024-07-10,"Church Street Park, Morrisville",2,379140,DP Conway,Haris Rauf,1161606,32,19,5,0,168.42,True,retired hurt,Texas Super Kings,San Francisco Unicorns,MLC
+1432732,2024-07-10,"Church Street Park, Morrisville",2,44828,F du Plessis,LE Plunkett,19264,34,17,1,4,200.0,True,caught,Texas Super Kings,San Francisco Unicorns,MLC
+1432732,2024-07-10,"Church Street Park, Morrisville",2,1124283,AM Hardie,Hassan Khan,959789,34,23,3,2,147.83,True,caught,Texas Super Kings,San Francisco Unicorns,MLC
+1432732,2024-07-10,"Church Street Park, Morrisville",2,1441622,J Tromp,Hassan Khan,959789,9,9,1,0,100.0,True,caught,Texas Super Kings,San Francisco Unicorns,MLC
+1432732,2024-07-10,"Church Street Park, Morrisville",2,451947,Milind Kumar,,,4,5,0,0,80.0,False,not out,Texas Super Kings,San Francisco Unicorns,MLC
+1432732,2024-07-10,"Church Street Park, Morrisville",2,502714,MJ Santner,,,9,4,0,1,225.0,False,not out,Texas Super Kings,San Francisco Unicorns,MLC
+1432732,2024-07-10,"Church Street Park, Morrisville",2,450881,CP Savage,,,0,0,0,0,0.0,False,DNB,Texas Super Kings,San Francisco Unicorns,
+1432732,2024-07-10,"Church Street Park, Morrisville",2,51439,DJ Bravo,,,0,0,0,0,0.0,False,DNB,Texas Super Kings,San Francisco Unicorns,
+1432732,2024-07-10,"Church Street Park, Morrisville",2,935881,Mohammad Mohsin,,,0,0,0,0,0.0,False,DNB,Texas Super Kings,San Francisco Unicorns,
+1432732,2024-07-10,"Church Street Park, Morrisville",2,793447,Naveen-ul-Haq,,,0,0,0,0,0.0,False,DNB,Texas Super Kings,San Francisco Unicorns,
+1432732,2024-07-10,"Church Street Park, Morrisville",2,290739,Zia-ul-Haq,,,0,0,0,0,0.0,False,DNB,Texas Super Kings,San Francisco Unicorns,
+1432733,2024-07-11,"Grand Prairie Stadium, Dallas",1,605661,RD Rickelton,LH Ferguson,493773,4,11,0,0,36.36,True,caught,Seattle Orcas,Washington Freedom,MLC
+1432733,2024-07-11,"Grand Prairie Stadium, Dallas",1,788879,Nauman Anwar,SN Netravalkar,398513,3,9,0,0,33.33,True,caught,Seattle Orcas,Washington Freedom,MLC
+1432733,2024-07-11,"Grand Prairie Stadium, Dallas",1,379143,Q de Kock,LH Ferguson,493773,24,19,1,2,126.32,True,bowled,Seattle Orcas,Washington Freedom,MLC
+1432733,2024-07-11,"Grand Prairie Stadium, Dallas",1,436757,H Klaasen,M Jansen,696401,51,30,4,3,170.0,True,caught,Seattle Orcas,Washington Freedom,MLC
+1432733,2024-07-11,"Grand Prairie Stadium, Dallas",1,554701,Shubham Ranjane,IG Holland,334340,12,17,0,0,70.59,True,run out,Seattle Orcas,Washington Freedom,MLC
+1432733,2024-07-11,"Grand Prairie Stadium, Dallas",1,227758,Imad Wasim,LH Ferguson,493773,4,6,0,0,66.67,True,caught,Seattle Orcas,Washington Freedom,MLC
+1432733,2024-07-11,"Grand Prairie Stadium, Dallas",1,384518,Hammad Azam,LH Ferguson,493773,4,9,0,0,44.44,True,lbw,Seattle Orcas,Washington Freedom,MLC
+1432733,2024-07-11,"Grand Prairie Stadium, Dallas",1,391128,Harmeet Singh,SN Netravalkar,398513,2,3,0,0,66.67,True,bowled,Seattle Orcas,Washington Freedom,MLC
+1432733,2024-07-11,"Grand Prairie Stadium, Dallas",1,326635,CJ Gannon,IG Holland,334340,8,5,0,1,160.0,True,caught,Seattle Orcas,Washington Freedom,MLC
+1432733,2024-07-11,"Grand Prairie Stadium, Dallas",1,971349,N Burger,SN Netravalkar,398513,3,6,0,0,50.0,True,caught,Seattle Orcas,Washington Freedom,MLC
+1432733,2024-07-11,"Grand Prairie Stadium, Dallas",1,1272475,Zaman Khan,,,2,3,0,0,66.67,False,not out,Seattle Orcas,Washington Freedom,MLC
+1432733,2024-07-11,"Grand Prairie Stadium, Dallas",1,422847,Harmeet Singh,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,Washington Freedom,
+1432733,2024-07-11,"Grand Prairie Stadium, Dallas",2,530011,TM Head,Imad Wasim,227758,0,2,0,0,0.0,True,caught,Washington Freedom,Seattle Orcas,MLC
+1432733,2024-07-11,"Grand Prairie Stadium, Dallas",2,959767,R Ravindra,N Burger,971349,26,16,3,2,162.5,True,caught,Washington Freedom,Seattle Orcas,MLC
+1432733,2024-07-11,"Grand Prairie Stadium, Dallas",2,267192,SPD Smith,CJ Gannon,326635,12,13,1,0,92.31,True,bowled,Washington Freedom,Seattle Orcas,MLC
+1432733,2024-07-11,"Grand Prairie Stadium, Dallas",2,556916,Mukhtar Ahmed,N Burger,971349,8,8,1,0,100.0,True,caught,Washington Freedom,Seattle Orcas,MLC
+1432733,2024-07-11,"Grand Prairie Stadium, Dallas",2,325026,GJ Maxwell,Harmeet Singh,391128,10,11,1,0,90.91,True,caught,Washington Freedom,Seattle Orcas,MLC
+1432733,2024-07-11,"Grand Prairie Stadium, Dallas",2,699483,BKEL Milantha,,,33,30,2,0,110.0,False,not out,Washington Freedom,Seattle Orcas,MLC
+1432733,2024-07-11,"Grand Prairie Stadium, Dallas",2,328160,AJ Pienaar,,,31,30,4,0,103.33,False,not out,Washington Freedom,Seattle Orcas,MLC
+1432733,2024-07-11,"Grand Prairie Stadium, Dallas",2,334340,IG Holland,,,0,0,0,0,0.0,False,DNB,Washington Freedom,Seattle Orcas,
+1432733,2024-07-11,"Grand Prairie Stadium, Dallas",2,493773,LH Ferguson,,,0,0,0,0,0.0,False,DNB,Washington Freedom,Seattle Orcas,
+1432733,2024-07-11,"Grand Prairie Stadium, Dallas",2,696401,M Jansen,,,0,0,0,0,0.0,False,DNB,Washington Freedom,Seattle Orcas,
+1432733,2024-07-11,"Grand Prairie Stadium, Dallas",2,398513,SN Netravalkar,,,0,0,0,0,0.0,False,DNB,Washington Freedom,Seattle Orcas,
+1432736,2024-07-14,"Church Street Park, Morrisville",1,298438,JJ Roy,LH Ferguson,493773,12,10,2,0,120.0,True,bowled,Los Angeles Knight Riders,Washington Freedom,MLC
+1432736,2024-07-14,"Church Street Park, Morrisville",1,230558,SP Narine,SN Netravalkar,398513,0,2,0,0,0.0,True,bowled,Los Angeles Knight Riders,Washington Freedom,MLC
+1432736,2024-07-14,"Church Street Park, Morrisville",1,446499,UBT Chand,SN Netravalkar,398513,1,4,0,0,25.0,True,caught,Los Angeles Knight Riders,Washington Freedom,MLC
+1432736,2024-07-14,"Church Street Park, Morrisville",1,56143,Shakib Al Hasan,GJ Maxwell,325026,0,2,0,0,0.0,True,bowled,Los Angeles Knight Riders,Washington Freedom,MLC
+1432736,2024-07-14,"Church Street Park, Morrisville",1,922967,Saif Badar,R Ravindra,959767,35,28,1,3,125.0,True,lbw,Los Angeles Knight Riders,Washington Freedom,MLC
+1432736,2024-07-14,"Church Street Park, Morrisville",1,348129,NR Kumar,GJ Maxwell,325026,11,14,1,0,78.57,True,caught,Los Angeles Knight Riders,Washington Freedom,MLC
+1432736,2024-07-14,"Church Street Park, Morrisville",1,321777,DA Miller,LH Ferguson,493773,1,5,0,0,20.0,True,caught,Los Angeles Knight Riders,Washington Freedom,MLC
+1432736,2024-07-14,"Church Street Park, Morrisville",1,276298,AD Russell,GJ Maxwell,325026,20,12,3,1,166.67,True,caught,Los Angeles Knight Riders,Washington Freedom,MLC
+1432736,2024-07-14,"Church Street Park, Morrisville",1,334621,SC van Schalkwyk,,,12,16,1,0,75.0,False,not out,Los Angeles Knight Riders,Washington Freedom,MLC
+1432736,2024-07-14,"Church Street Park, Morrisville",1,1123718,SH Johnson,SN Netravalkar,398513,16,9,2,1,177.78,True,bowled,Los Angeles Knight Riders,Washington Freedom,MLC
+1432736,2024-07-14,"Church Street Park, Morrisville",1,927119,Ali Khan,SN Netravalkar,398513,11,10,0,1,110.0,True,caught,Los Angeles Knight Riders,Washington Freedom,MLC
+1432736,2024-07-14,"Church Street Park, Morrisville",2,530011,TM Head,SC van Schalkwyk,334621,54,32,2,6,168.75,True,bowled,Washington Freedom,Los Angeles Knight Riders,MLC
+1432736,2024-07-14,"Church Street Park, Morrisville",2,267192,SPD Smith,,,42,36,2,2,116.67,False,not out,Washington Freedom,Los Angeles Knight Riders,MLC
+1432736,2024-07-14,"Church Street Park, Morrisville",2,959767,R Ravindra,SH Johnson,1123718,11,16,1,0,68.75,True,caught,Washington Freedom,Los Angeles Knight Riders,MLC
+1432736,2024-07-14,"Church Street Park, Morrisville",2,485379,AGS Gous,,,15,12,3,0,125.0,False,not out,Washington Freedom,Los Angeles Knight Riders,MLC
+1432736,2024-07-14,"Church Street Park, Morrisville",2,328160,AJ Pienaar,,,0,0,0,0,0.0,False,DNB,Washington Freedom,Los Angeles Knight Riders,
+1432736,2024-07-14,"Church Street Park, Morrisville",2,325026,GJ Maxwell,,,0,0,0,0,0.0,False,DNB,Washington Freedom,Los Angeles Knight Riders,
+1432736,2024-07-14,"Church Street Park, Morrisville",2,334340,IG Holland,,,0,0,0,0,0.0,False,DNB,Washington Freedom,Los Angeles Knight Riders,
+1432736,2024-07-14,"Church Street Park, Morrisville",2,493773,LH Ferguson,,,0,0,0,0,0.0,False,DNB,Washington Freedom,Los Angeles Knight Riders,
+1432736,2024-07-14,"Church Street Park, Morrisville",2,696401,M Jansen,,,0,0,0,0,0.0,False,DNB,Washington Freedom,Los Angeles Knight Riders,
+1432736,2024-07-14,"Church Street Park, Morrisville",2,556916,Mukhtar Ahmed,,,0,0,0,0,0.0,False,DNB,Washington Freedom,Los Angeles Knight Riders,
+1432736,2024-07-14,"Church Street Park, Morrisville",2,398513,SN Netravalkar,,,0,0,0,0,0.0,False,DNB,Washington Freedom,Los Angeles Knight Riders,
+1432737,2024-07-14,"Grand Prairie Stadium, Dallas",1,379140,DP Conway,Ehsan Adil,547092,40,28,3,1,142.86,True,caught,Texas Super Kings,MI New York,MLC
+1432737,2024-07-14,"Grand Prairie Stadium, Dallas",1,44828,F du Plessis,NP Kenjige,1041679,61,38,4,4,160.53,True,caught,Texas Super Kings,MI New York,MLC
+1432737,2024-07-14,"Grand Prairie Stadium, Dallas",1,1124283,AM Hardie,Rashid Khan,793463,22,17,1,0,129.41,True,lbw,Texas Super Kings,MI New York,MLC
+1432737,2024-07-14,"Grand Prairie Stadium, Dallas",1,325012,MP Stoinis,,,24,18,1,1,133.33,False,not out,Texas Super Kings,MI New York,MLC
+1432737,2024-07-14,"Grand Prairie Stadium, Dallas",1,1441622,J Tromp,TA Boult,277912,3,6,0,0,50.0,True,caught,Texas Super Kings,MI New York,MLC
+1432737,2024-07-14,"Grand Prairie Stadium, Dallas",1,451947,Milind Kumar,,,2,2,0,0,100.0,False,not out,Texas Super Kings,MI New York,MLC
+1432737,2024-07-14,"Grand Prairie Stadium, Dallas",1,450881,CP Savage,TA Boult,277912,10,6,0,1,166.67,True,bowled,Texas Super Kings,MI New York,MLC
+1432737,2024-07-14,"Grand Prairie Stadium, Dallas",1,51439,DJ Bravo,,,7,5,1,0,140.0,False,not out,Texas Super Kings,MI New York,MLC
+1432737,2024-07-14,"Grand Prairie Stadium, Dallas",1,935881,Mohammad Mohsin,,,0,0,0,0,0.0,False,DNB,Texas Super Kings,MI New York,
+1432737,2024-07-14,"Grand Prairie Stadium, Dallas",1,793447,Naveen-ul-Haq,,,0,0,0,0,0.0,False,DNB,Texas Super Kings,MI New York,
+1432737,2024-07-14,"Grand Prairie Stadium, Dallas",1,290739,Zia-ul-Haq,,,0,0,0,0,0.0,False,DNB,Texas Super Kings,MI New York,
+1432737,2024-07-14,"Grand Prairie Stadium, Dallas",2,1441683,R Clinton,MP Stoinis,325012,7,6,1,0,116.67,True,bowled,MI New York,Texas Super Kings,MLC
+1432737,2024-07-14,"Grand Prairie Stadium, Dallas",2,355359,SR Taylor,MP Stoinis,325012,18,13,2,0,138.46,True,caught,MI New York,Texas Super Kings,MLC
+1432737,2024-07-14,"Grand Prairie Stadium, Dallas",2,604302,N Pooran,Zia-ul-Haq,290739,1,4,0,0,25.0,True,lbw,MI New York,Texas Super Kings,MLC
+1432737,2024-07-14,"Grand Prairie Stadium, Dallas",2,230559,KA Pollard,Zia-ul-Haq,290739,5,17,0,0,29.41,True,caught,MI New York,Texas Super Kings,MLC
+1432737,2024-07-14,"Grand Prairie Stadium, Dallas",2,1159641,MD Patel,MP Stoinis,325012,61,45,3,4,135.56,True,caught,MI New York,Texas Super Kings,MLC
+1432737,2024-07-14,"Grand Prairie Stadium, Dallas",2,892749,TH David,Mohammad Mohsin,935881,6,10,0,0,60.0,True,bowled,MI New York,Texas Super Kings,MLC
+1432737,2024-07-14,"Grand Prairie Stadium, Dallas",2,793463,Rashid Khan,MP Stoinis,325012,50,23,4,5,217.39,True,caught,MI New York,Texas Super Kings,MLC
+1432737,2024-07-14,"Grand Prairie Stadium, Dallas",2,550215,K Rabada,,,1,1,0,0,100.0,False,not out,MI New York,Texas Super Kings,MLC
+1432737,2024-07-14,"Grand Prairie Stadium, Dallas",2,277912,TA Boult,,,4,1,1,0,400.0,False,not out,MI New York,Texas Super Kings,MLC
+1432737,2024-07-14,"Grand Prairie Stadium, Dallas",2,547092,Ehsan Adil,,,0,0,0,0,0.0,False,DNB,MI New York,Texas Super Kings,
+1432737,2024-07-14,"Grand Prairie Stadium, Dallas",2,1041679,NP Kenjige,,,0,0,0,0,0.0,False,DNB,MI New York,Texas Super Kings,
+1432737,2024-07-14,"Grand Prairie Stadium, Dallas",2,348133,SR Taylor,,,0,0,0,0,0.0,False,DNB,MI New York,Texas Super Kings,
+1432738,2024-07-15,"Church Street Park, Morrisville",1,959759,FH Allen,Imad Wasim,227758,34,18,2,3,188.89,True,caught and bowled,San Francisco Unicorns,Seattle Orcas,MLC
+1432738,2024-07-15,"Church Street Park, Morrisville",1,1168049,J Fraser-McGurk,Imad Wasim,227758,11,10,2,0,110.0,True,bowled,San Francisco Unicorns,Seattle Orcas,MLC
+1432738,2024-07-15,"Church Street Park, Morrisville",1,605575,MW Short,CJ Gannon,326635,56,32,4,4,175.0,True,caught,San Francisco Unicorns,Seattle Orcas,MLC
+1432738,2024-07-15,"Church Street Park, Morrisville",1,662235,JP Inglis,Harmeet Singh,391128,8,8,0,0,100.0,True,caught,San Francisco Unicorns,Seattle Orcas,MLC
+1432738,2024-07-15,"Church Street Park, Morrisville",1,277662,CJ Anderson,CJ Gannon,326635,5,11,0,0,45.45,True,bowled,San Francisco Unicorns,Seattle Orcas,MLC
+1432738,2024-07-15,"Church Street Park, Morrisville",1,1277627,SP Krishnamurthi,Zaman Khan,1272475,30,21,2,1,142.86,True,caught,San Francisco Unicorns,Seattle Orcas,MLC
+1432738,2024-07-15,"Church Street Park, Morrisville",1,959789,Hassan Khan,CJ Gannon,326635,10,13,1,0,76.92,True,caught,San Francisco Unicorns,Seattle Orcas,MLC
+1432738,2024-07-15,"Church Street Park, Morrisville",1,489889,PJ Cummins,,,6,8,0,0,75.0,False,not out,San Francisco Unicorns,Seattle Orcas,MLC
+1432738,2024-07-15,"Church Street Park, Morrisville",1,440894,C le Roux,,,0,0,0,0,0.0,False,DNB,San Francisco Unicorns,Seattle Orcas,
+1432738,2024-07-15,"Church Street Park, Morrisville",1,1161606,Haris Rauf,,,0,0,0,0,0.0,False,DNB,San Francisco Unicorns,Seattle Orcas,
+1432738,2024-07-15,"Church Street Park, Morrisville",1,19264,LE Plunkett,,,0,0,0,0,0.0,False,DNB,San Francisco Unicorns,Seattle Orcas,
+1432738,2024-07-15,"Church Street Park, Morrisville",2,605661,RD Rickelton,LE Plunkett,19264,29,21,3,1,138.1,True,bowled,Seattle Orcas,San Francisco Unicorns,MLC
+1432738,2024-07-15,"Church Street Park, Morrisville",2,422965,GSNFG Jayasuriya,PJ Cummins,489889,54,37,7,2,145.95,True,caught,Seattle Orcas,San Francisco Unicorns,MLC
+1432738,2024-07-15,"Church Street Park, Morrisville",2,379143,Q de Kock,MW Short,605575,2,5,0,0,40.0,True,caught,Seattle Orcas,San Francisco Unicorns,MLC
+1432738,2024-07-15,"Church Street Park, Morrisville",2,436757,H Klaasen,CJ Anderson,277662,6,9,0,0,66.67,True,caught,Seattle Orcas,San Francisco Unicorns,MLC
+1432738,2024-07-15,"Church Street Park, Morrisville",2,957645,Aaron Jones,LE Plunkett,19264,6,5,1,0,120.0,True,caught and bowled,Seattle Orcas,San Francisco Unicorns,MLC
+1432738,2024-07-15,"Church Street Park, Morrisville",2,391128,Harmeet Singh,LE Plunkett,19264,15,18,2,0,83.33,True,caught,Seattle Orcas,San Francisco Unicorns,MLC
+1432738,2024-07-15,"Church Street Park, Morrisville",2,384518,Hammad Azam,,,16,14,0,0,114.29,False,not out,Seattle Orcas,San Francisco Unicorns,MLC
+1432738,2024-07-15,"Church Street Park, Morrisville",2,326635,CJ Gannon,,,6,11,0,0,54.55,False,not out,Seattle Orcas,San Francisco Unicorns,MLC
+1432738,2024-07-15,"Church Street Park, Morrisville",2,422847,Harmeet Singh,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,San Francisco Unicorns,
+1432738,2024-07-15,"Church Street Park, Morrisville",2,227758,Imad Wasim,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,San Francisco Unicorns,
+1432738,2024-07-15,"Church Street Park, Morrisville",2,971349,N Burger,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,San Francisco Unicorns,
+1432738,2024-07-15,"Church Street Park, Morrisville",2,1272475,Zaman Khan,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,San Francisco Unicorns,
+1432739,2024-07-16,"Grand Prairie Stadium, Dallas",1,530011,TM Head,R Shepherd,677077,54,33,9,2,163.64,True,caught,Washington Freedom,MI New York,MLC
+1432739,2024-07-16,"Grand Prairie Stadium, Dallas",1,267192,SPD Smith,Rashid Khan,793463,8,10,1,0,80.0,True,caught,Washington Freedom,MI New York,MLC
+1432739,2024-07-16,"Grand Prairie Stadium, Dallas",1,485379,AGS Gous,KA Pollard,230559,59,48,3,4,122.92,True,caught,Washington Freedom,MI New York,MLC
+1432739,2024-07-16,"Grand Prairie Stadium, Dallas",1,325026,GJ Maxwell,Rashid Khan,793463,15,14,0,1,107.14,True,bowled,Washington Freedom,MI New York,MLC
+1432739,2024-07-16,"Grand Prairie Stadium, Dallas",1,959767,R Ravindra,KA Pollard,230559,31,14,2,2,221.43,True,caught,Washington Freedom,MI New York,MLC
+1432739,2024-07-16,"Grand Prairie Stadium, Dallas",1,328160,AJ Pienaar,,,1,1,0,0,100.0,False,not out,Washington Freedom,MI New York,MLC
+1432739,2024-07-16,"Grand Prairie Stadium, Dallas",1,334340,IG Holland,,,0,0,0,0,0.0,False,DNB,Washington Freedom,MI New York,
+1432739,2024-07-16,"Grand Prairie Stadium, Dallas",1,772471,Jasdeep Singh,,,0,0,0,0,0.0,False,DNB,Washington Freedom,MI New York,
+1432739,2024-07-16,"Grand Prairie Stadium, Dallas",1,493773,LH Ferguson,,,0,0,0,0,0.0,False,DNB,Washington Freedom,MI New York,
+1432739,2024-07-16,"Grand Prairie Stadium, Dallas",1,696401,M Jansen,,,0,0,0,0,0.0,False,DNB,Washington Freedom,MI New York,
+1432739,2024-07-16,"Grand Prairie Stadium, Dallas",1,556916,Mukhtar Ahmed,,,0,0,0,0,0.0,False,DNB,Washington Freedom,MI New York,
+1432739,2024-07-16,"Grand Prairie Stadium, Dallas",2,355359,SR Taylor,M Jansen,696401,0,3,0,0,0.0,True,caught,MI New York,Washington Freedom,MLC
+1432739,2024-07-16,"Grand Prairie Stadium, Dallas",2,1159641,MD Patel,Jasdeep Singh,772471,4,6,1,0,66.67,True,caught,MI New York,Washington Freedom,MLC
+1432739,2024-07-16,"Grand Prairie Stadium, Dallas",2,647771,Shayan Jahangir,M Jansen,696401,3,9,0,0,33.33,True,caught,MI New York,Washington Freedom,MLC
+1432739,2024-07-16,"Grand Prairie Stadium, Dallas",2,1070665,D Brevis,Jasdeep Singh,772471,2,5,0,0,40.0,True,caught,MI New York,Washington Freedom,MLC
+1432739,2024-07-16,"Grand Prairie Stadium, Dallas",2,604302,N Pooran,LH Ferguson,493773,4,6,1,0,66.67,True,caught,MI New York,Washington Freedom,MLC
+1432739,2024-07-16,"Grand Prairie Stadium, Dallas",2,230559,KA Pollard,Jasdeep Singh,772471,4,9,0,0,44.44,True,bowled,MI New York,Washington Freedom,MLC
+1432739,2024-07-16,"Grand Prairie Stadium, Dallas",2,677077,R Shepherd,IG Holland,334340,25,14,3,2,178.57,True,caught,MI New York,Washington Freedom,MLC
+1432739,2024-07-16,"Grand Prairie Stadium, Dallas",2,793463,Rashid Khan,LH Ferguson,493773,7,6,0,1,116.67,True,caught,MI New York,Washington Freedom,MLC
+1432739,2024-07-16,"Grand Prairie Stadium, Dallas",2,277912,TA Boult,GJ Maxwell,325026,16,13,0,1,123.08,True,caught,MI New York,Washington Freedom,MLC
+1432739,2024-07-16,"Grand Prairie Stadium, Dallas",2,1041679,NP Kenjige,,,9,9,2,0,100.0,False,not out,MI New York,Washington Freedom,MLC
+1432739,2024-07-16,"Grand Prairie Stadium, Dallas",2,547092,Ehsan Adil,GJ Maxwell,325026,0,2,0,0,0.0,True,bowled,MI New York,Washington Freedom,MLC
+1432739,2024-07-16,"Grand Prairie Stadium, Dallas",2,348133,SR Taylor,,,0,0,0,0,0.0,False,DNB,MI New York,Washington Freedom,
+1432740,2024-07-17,"Church Street Park, Morrisville",1,605661,RD Rickelton,SH Johnson,1123718,89,52,7,6,171.15,True,caught,Seattle Orcas,Los Angeles Knight Riders,MLC
+1432740,2024-07-17,"Church Street Park, Morrisville",1,422965,GSNFG Jayasuriya,CA Dry,429927,2,9,0,0,22.22,True,caught,Seattle Orcas,Los Angeles Knight Riders,MLC
+1432740,2024-07-17,"Church Street Park, Morrisville",1,379143,Q de Kock,CA Dry,429927,0,4,0,0,0.0,True,run out,Seattle Orcas,Los Angeles Knight Riders,MLC
+1432740,2024-07-17,"Church Street Park, Morrisville",1,436757,H Klaasen,,,23,23,2,0,100.0,False,not out,Seattle Orcas,Los Angeles Knight Riders,MLC
+1432740,2024-07-17,"Church Street Park, Morrisville",1,957645,Aaron Jones,SP Narine,230558,9,14,1,0,64.29,True,bowled,Seattle Orcas,Los Angeles Knight Riders,MLC
+1432740,2024-07-17,"Church Street Park, Morrisville",1,326968,MG Bracewell,AD Russell,276298,5,7,0,0,71.43,True,bowled,Seattle Orcas,Los Angeles Knight Riders,MLC
+1432740,2024-07-17,"Church Street Park, Morrisville",1,677081,KMA Paul,,,4,6,0,0,66.67,False,not out,Seattle Orcas,Los Angeles Knight Riders,MLC
+1432740,2024-07-17,"Church Street Park, Morrisville",1,391128,Harmeet Singh,,,4,5,0,0,80.0,False,not out,Seattle Orcas,Los Angeles Knight Riders,MLC
+1432740,2024-07-17,"Church Street Park, Morrisville",1,1193309,Ali Sheikh,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,Los Angeles Knight Riders,
+1432740,2024-07-17,"Church Street Park, Morrisville",1,326635,CJ Gannon,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,Los Angeles Knight Riders,
+1432740,2024-07-17,"Church Street Park, Morrisville",1,422847,Harmeet Singh,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,Los Angeles Knight Riders,
+1432740,2024-07-17,"Church Street Park, Morrisville",1,542023,L Ngidi,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,Los Angeles Knight Riders,
+1432740,2024-07-17,"Church Street Park, Morrisville",2,298438,JJ Roy,Harmeet Singh,391128,27,24,3,0,112.5,True,caught,Los Angeles Knight Riders,Seattle Orcas,MLC
+1432740,2024-07-17,"Church Street Park, Morrisville",2,230558,SP Narine,L Ngidi,542023,8,7,0,1,114.29,True,bowled,Los Angeles Knight Riders,Seattle Orcas,MLC
+1432740,2024-07-17,"Church Street Park, Morrisville",2,446499,UBT Chand,Harmeet Singh,391128,62,47,3,3,131.91,True,caught,Los Angeles Knight Riders,Seattle Orcas,MLC
+1432740,2024-07-17,"Church Street Park, Morrisville",2,321777,DA Miller,KMA Paul,677081,2,4,0,0,50.0,True,caught,Los Angeles Knight Riders,Seattle Orcas,MLC
+1432740,2024-07-17,"Church Street Park, Morrisville",2,348129,NR Kumar,CJ Gannon,326635,12,9,0,1,133.33,True,caught,Los Angeles Knight Riders,Seattle Orcas,MLC
+1432740,2024-07-17,"Church Street Park, Morrisville",2,922967,Saif Badar,,,18,16,0,1,112.5,False,not out,Los Angeles Knight Riders,Seattle Orcas,MLC
+1432740,2024-07-17,"Church Street Park, Morrisville",2,276298,AD Russell,CJ Gannon,326635,10,7,0,1,142.86,True,caught,Los Angeles Knight Riders,Seattle Orcas,MLC
+1432740,2024-07-17,"Church Street Park, Morrisville",2,429927,CA Dry,,,0,1,0,0,0.0,False,not out,Los Angeles Knight Riders,Seattle Orcas,MLC
+1432740,2024-07-17,"Church Street Park, Morrisville",2,927119,Ali Khan,,,0,0,0,0,0.0,False,DNB,Los Angeles Knight Riders,Seattle Orcas,
+1432740,2024-07-17,"Church Street Park, Morrisville",2,1123718,SH Johnson,,,0,0,0,0,0.0,False,DNB,Los Angeles Knight Riders,Seattle Orcas,
+1432740,2024-07-17,"Church Street Park, Morrisville",2,1108490,Waqar Salamkheil,,,0,0,0,0,0.0,False,DNB,Los Angeles Knight Riders,Seattle Orcas,
+1432741,2024-07-18,"Grand Prairie Stadium, Dallas",1,959759,FH Allen,NP Kenjige,1041679,2,3,0,0,66.67,True,caught and bowled,San Francisco Unicorns,MI New York,MLC
+1432741,2024-07-18,"Grand Prairie Stadium, Dallas",1,1277627,SP Krishnamurthi,TA Boult,277912,1,3,0,0,33.33,True,caught,San Francisco Unicorns,MI New York,MLC
+1432741,2024-07-18,"Grand Prairie Stadium, Dallas",1,605575,MW Short,NP Kenjige,1041679,4,7,0,0,57.14,True,bowled,San Francisco Unicorns,MI New York,MLC
+1432741,2024-07-18,"Grand Prairie Stadium, Dallas",1,662235,JP Inglis,R Shepherd,677077,1,7,0,0,14.29,True,caught,San Francisco Unicorns,MI New York,MLC
+1432741,2024-07-18,"Grand Prairie Stadium, Dallas",1,914541,SE Rutherford,NP Kenjige,1041679,14,15,3,0,93.33,True,run out,San Francisco Unicorns,MI New York,MLC
+1432741,2024-07-18,"Grand Prairie Stadium, Dallas",1,959789,Hassan Khan,Rashid Khan,793463,44,35,2,2,125.71,True,bowled,San Francisco Unicorns,MI New York,MLC
+1432741,2024-07-18,"Grand Prairie Stadium, Dallas",1,277662,CJ Anderson,,,59,37,4,2,159.46,False,not out,San Francisco Unicorns,MI New York,MLC
+1432741,2024-07-18,"Grand Prairie Stadium, Dallas",1,489889,PJ Cummins,TA Boult,277912,13,12,1,1,108.33,True,caught,San Francisco Unicorns,MI New York,MLC
+1432741,2024-07-18,"Grand Prairie Stadium, Dallas",1,1161606,Haris Rauf,,,1,1,0,0,100.0,False,not out,San Francisco Unicorns,MI New York,MLC
+1432741,2024-07-18,"Grand Prairie Stadium, Dallas",1,1219972,BL Couch,,,0,0,0,0,0.0,False,DNB,San Francisco Unicorns,MI New York,
+1432741,2024-07-18,"Grand Prairie Stadium, Dallas",1,19264,LE Plunkett,,,0,0,0,0,0.0,False,DNB,San Francisco Unicorns,MI New York,
+1432741,2024-07-18,"Grand Prairie Stadium, Dallas",2,1070665,D Brevis,BL Couch,1219972,56,36,5,3,155.56,True,caught,MI New York,San Francisco Unicorns,MLC
+1432741,2024-07-18,"Grand Prairie Stadium, Dallas",2,1441683,R Clinton,MW Short,605575,0,6,0,0,0.0,True,caught,MI New York,San Francisco Unicorns,MLC
+1432741,2024-07-18,"Grand Prairie Stadium, Dallas",2,604302,N Pooran,MW Short,605575,26,30,2,0,86.67,True,bowled,MI New York,San Francisco Unicorns,MLC
+1432741,2024-07-18,"Grand Prairie Stadium, Dallas",2,230559,KA Pollard,BL Couch,1219972,4,8,0,0,50.0,True,lbw,MI New York,San Francisco Unicorns,MLC
+1432741,2024-07-18,"Grand Prairie Stadium, Dallas",2,1159641,MD Patel,Hassan Khan,959789,5,9,0,0,55.56,True,caught,MI New York,San Francisco Unicorns,MLC
+1432741,2024-07-18,"Grand Prairie Stadium, Dallas",2,677077,R Shepherd,MW Short,605575,7,7,0,1,100.0,True,caught,MI New York,San Francisco Unicorns,MLC
+1432741,2024-07-18,"Grand Prairie Stadium, Dallas",2,793463,Rashid Khan,,,14,12,1,0,116.67,False,not out,MI New York,San Francisco Unicorns,MLC
+1432741,2024-07-18,"Grand Prairie Stadium, Dallas",2,1070986,H Richards,Haris Rauf,1161606,24,13,0,3,184.62,True,lbw,MI New York,San Francisco Unicorns,MLC
+1432741,2024-07-18,"Grand Prairie Stadium, Dallas",2,1041679,NP Kenjige,,,0,0,0,0,0.0,False,DNB,MI New York,San Francisco Unicorns,
+1432741,2024-07-18,"Grand Prairie Stadium, Dallas",2,290719,Sunny Patel,,,0,0,0,0,0.0,False,DNB,MI New York,San Francisco Unicorns,
+1432741,2024-07-18,"Grand Prairie Stadium, Dallas",2,277912,TA Boult,,,0,0,0,0,0.0,False,DNB,MI New York,San Francisco Unicorns,
+1432742,2024-07-19,"Grand Prairie Stadium, Dallas",1,530011,TM Head,Noor Ahmad,1182529,53,22,8,2,240.91,True,caught,Washington Freedom,Texas Super Kings,MLC
+1432742,2024-07-19,"Grand Prairie Stadium, Dallas",1,267192,SPD Smith,DJ Bravo,51439,57,40,2,3,142.5,True,caught,Washington Freedom,Texas Super Kings,MLC
+1432742,2024-07-19,"Grand Prairie Stadium, Dallas",1,485379,AGS Gous,DJ Bravo,51439,15,9,3,0,166.67,True,lbw,Washington Freedom,Texas Super Kings,MLC
+1432742,2024-07-19,"Grand Prairie Stadium, Dallas",1,959767,R Ravindra,Noor Ahmad,1182529,1,2,0,0,50.0,True,caught and bowled,Washington Freedom,Texas Super Kings,MLC
+1432742,2024-07-19,"Grand Prairie Stadium, Dallas",1,325026,GJ Maxwell,Noor Ahmad,1182529,34,23,1,3,147.83,True,bowled,Washington Freedom,Texas Super Kings,MLC
+1432742,2024-07-19,"Grand Prairie Stadium, Dallas",1,328160,AJ Pienaar,,,33,21,0,3,157.14,False,not out,Washington Freedom,Texas Super Kings,MLC
+1432742,2024-07-19,"Grand Prairie Stadium, Dallas",1,556916,Mukhtar Ahmed,,,6,3,1,0,200.0,False,not out,Washington Freedom,Texas Super Kings,MLC
+1432742,2024-07-19,"Grand Prairie Stadium, Dallas",1,772471,Jasdeep Singh,,,0,0,0,0,0.0,False,DNB,Washington Freedom,Texas Super Kings,
+1432742,2024-07-19,"Grand Prairie Stadium, Dallas",1,493773,LH Ferguson,,,0,0,0,0,0.0,False,DNB,Washington Freedom,Texas Super Kings,
+1432742,2024-07-19,"Grand Prairie Stadium, Dallas",1,696401,M Jansen,,,0,0,0,0,0.0,False,DNB,Washington Freedom,Texas Super Kings,
+1432742,2024-07-19,"Grand Prairie Stadium, Dallas",1,429748,MA Aponso,,,0,0,0,0,0.0,False,DNB,Washington Freedom,Texas Super Kings,
+1432742,2024-07-19,"Grand Prairie Stadium, Dallas",2,379140,DP Conway,GJ Maxwell,325026,16,10,3,0,160.0,True,lbw,Texas Super Kings,Washington Freedom,MLC
+1432742,2024-07-19,"Grand Prairie Stadium, Dallas",2,44828,F du Plessis,Jasdeep Singh,772471,55,32,5,5,171.88,True,caught,Texas Super Kings,Washington Freedom,MLC
+1432742,2024-07-19,"Grand Prairie Stadium, Dallas",2,1124283,AM Hardie,Jasdeep Singh,772471,19,13,2,1,146.15,True,caught,Texas Super Kings,Washington Freedom,MLC
+1432742,2024-07-19,"Grand Prairie Stadium, Dallas",2,1441622,J Tromp,R Ravindra,959767,2,7,0,0,28.57,True,caught,Texas Super Kings,Washington Freedom,MLC
+1432742,2024-07-19,"Grand Prairie Stadium, Dallas",2,325012,MP Stoinis,Jasdeep Singh,772471,16,15,1,1,106.67,True,caught,Texas Super Kings,Washington Freedom,MLC
+1432742,2024-07-19,"Grand Prairie Stadium, Dallas",2,451947,Milind Kumar,R Ravindra,959767,2,4,0,0,50.0,True,caught,Texas Super Kings,Washington Freedom,MLC
+1432742,2024-07-19,"Grand Prairie Stadium, Dallas",2,450881,CP Savage,R Ravindra,959767,35,23,2,3,152.17,True,lbw,Texas Super Kings,Washington Freedom,MLC
+1432742,2024-07-19,"Grand Prairie Stadium, Dallas",2,51439,DJ Bravo,GJ Maxwell,325026,1,2,0,0,50.0,True,stumped,Texas Super Kings,Washington Freedom,MLC
+1432742,2024-07-19,"Grand Prairie Stadium, Dallas",2,935881,Mohammad Mohsin,GJ Maxwell,325026,8,7,0,1,114.29,True,stumped,Texas Super Kings,Washington Freedom,MLC
+1432742,2024-07-19,"Grand Prairie Stadium, Dallas",2,1182529,Noor Ahmad,R Ravindra,959767,1,5,0,0,20.0,True,caught,Texas Super Kings,Washington Freedom,MLC
+1432742,2024-07-19,"Grand Prairie Stadium, Dallas",2,290739,Zia-ul-Haq,,,1,1,0,0,100.0,False,not out,Texas Super Kings,Washington Freedom,MLC
+1432743,2024-07-20,"Grand Prairie Stadium, Dallas",1,605661,RD Rickelton,C le Roux,440894,0,1,0,0,0.0,True,caught,Seattle Orcas,San Francisco Unicorns,MLC
+1432743,2024-07-20,"Grand Prairie Stadium, Dallas",1,379143,Q de Kock,BL Couch,1219972,62,33,8,3,187.88,True,caught,Seattle Orcas,San Francisco Unicorns,MLC
+1432743,2024-07-20,"Grand Prairie Stadium, Dallas",1,957645,Aaron Jones,C le Roux,440894,0,1,0,0,0.0,True,lbw,Seattle Orcas,San Francisco Unicorns,MLC
+1432743,2024-07-20,"Grand Prairie Stadium, Dallas",1,422965,GSNFG Jayasuriya,CJ Anderson,277662,31,33,4,0,93.94,True,bowled,Seattle Orcas,San Francisco Unicorns,MLC
+1432743,2024-07-20,"Grand Prairie Stadium, Dallas",1,436757,H Klaasen,Hassan Khan,959789,8,8,1,0,100.0,True,caught,Seattle Orcas,San Francisco Unicorns,MLC
+1432743,2024-07-20,"Grand Prairie Stadium, Dallas",1,554701,Shubham Ranjane,,,26,25,1,1,104.0,False,not out,Seattle Orcas,San Francisco Unicorns,MLC
+1432743,2024-07-20,"Grand Prairie Stadium, Dallas",1,391128,Harmeet Singh,Hassan Khan,959789,3,7,0,0,42.86,True,caught,Seattle Orcas,San Francisco Unicorns,MLC
+1432743,2024-07-20,"Grand Prairie Stadium, Dallas",1,677081,KMA Paul,Hassan Khan,959789,0,1,0,0,0.0,True,bowled,Seattle Orcas,San Francisco Unicorns,MLC
+1432743,2024-07-20,"Grand Prairie Stadium, Dallas",1,227758,Imad Wasim,,,17,11,2,0,154.55,False,not out,Seattle Orcas,San Francisco Unicorns,MLC
+1432743,2024-07-20,"Grand Prairie Stadium, Dallas",1,326635,CJ Gannon,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,San Francisco Unicorns,
+1432743,2024-07-20,"Grand Prairie Stadium, Dallas",1,422847,Harmeet Singh,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,San Francisco Unicorns,
+1432743,2024-07-20,"Grand Prairie Stadium, Dallas",1,542023,L Ngidi,,,0,0,0,0,0.0,False,DNB,Seattle Orcas,San Francisco Unicorns,
+1432743,2024-07-20,"Grand Prairie Stadium, Dallas",2,959759,FH Allen,Harmeet Singh,391128,77,30,8,6,256.67,True,caught,San Francisco Unicorns,Seattle Orcas,MLC
+1432743,2024-07-20,"Grand Prairie Stadium, Dallas",2,605575,MW Short,Imad Wasim,227758,19,14,0,2,135.71,True,caught,San Francisco Unicorns,Seattle Orcas,MLC
+1432743,2024-07-20,"Grand Prairie Stadium, Dallas",2,1277627,SP Krishnamurthi,Harmeet Singh,391128,10,16,1,0,62.5,True,caught,San Francisco Unicorns,Seattle Orcas,MLC
+1432743,2024-07-20,"Grand Prairie Stadium, Dallas",2,662235,JP Inglis,,,24,17,2,1,141.18,False,not out,San Francisco Unicorns,Seattle Orcas,MLC
+1432743,2024-07-20,"Grand Prairie Stadium, Dallas",2,914541,SE Rutherford,CJ Gannon,326635,17,8,1,2,212.5,True,caught and bowled,San Francisco Unicorns,Seattle Orcas,MLC
+1432743,2024-07-20,"Grand Prairie Stadium, Dallas",2,277662,CJ Anderson,,,4,1,1,0,400.0,False,not out,San Francisco Unicorns,Seattle Orcas,MLC
+1432743,2024-07-20,"Grand Prairie Stadium, Dallas",2,1219972,BL Couch,,,0,0,0,0,0.0,False,DNB,San Francisco Unicorns,Seattle Orcas,
+1432743,2024-07-20,"Grand Prairie Stadium, Dallas",2,440894,C le Roux,,,0,0,0,0,0.0,False,DNB,San Francisco Unicorns,Seattle Orcas,
+1432743,2024-07-20,"Grand Prairie Stadium, Dallas",2,1161606,Haris Rauf,,,0,0,0,0,0.0,False,DNB,San Francisco Unicorns,Seattle Orcas,
+1432743,2024-07-20,"Grand Prairie Stadium, Dallas",2,959789,Hassan Khan,,,0,0,0,0,0.0,False,DNB,San Francisco Unicorns,Seattle Orcas,
+1432743,2024-07-20,"Grand Prairie Stadium, Dallas",2,489889,PJ Cummins,,,0,0,0,0,0.0,False,DNB,San Francisco Unicorns,Seattle Orcas,
+1432744,2024-07-21,"Grand Prairie Stadium, Dallas",1,298438,JJ Roy,Rashid Khan,793463,27,23,3,1,117.39,True,bowled,Los Angeles Knight Riders,MI New York,MLC
+1432744,2024-07-21,"Grand Prairie Stadium, Dallas",1,230558,SP Narine,TA Boult,277912,6,4,1,0,150.0,True,caught,Los Angeles Knight Riders,MI New York,MLC
+1432744,2024-07-21,"Grand Prairie Stadium, Dallas",1,446499,UBT Chand,R Shepherd,677077,9,10,2,0,90.0,True,lbw,Los Angeles Knight Riders,MI New York,MLC
+1432744,2024-07-21,"Grand Prairie Stadium, Dallas",1,321777,DA Miller,NP Kenjige,1041679,6,9,0,0,66.67,True,caught,Los Angeles Knight Riders,MI New York,MLC
+1432744,2024-07-21,"Grand Prairie Stadium, Dallas",1,348129,NR Kumar,Rashid Khan,793463,15,23,0,0,65.22,True,bowled,Los Angeles Knight Riders,MI New York,MLC
+1432744,2024-07-21,"Grand Prairie Stadium, Dallas",1,922967,Saif Badar,NP Kenjige,1041679,9,10,0,0,90.0,True,caught,Los Angeles Knight Riders,MI New York,MLC
+1432744,2024-07-21,"Grand Prairie Stadium, Dallas",1,276298,AD Russell,KA Pollard,230559,35,21,6,1,166.67,True,caught,Los Angeles Knight Riders,MI New York,MLC
+1432744,2024-07-21,"Grand Prairie Stadium, Dallas",1,429927,CA Dry,TA Boult,277912,1,4,0,0,25.0,True,bowled,Los Angeles Knight Riders,MI New York,MLC
+1432744,2024-07-21,"Grand Prairie Stadium, Dallas",1,1123718,SH Johnson,Rashid Khan,793463,10,5,2,0,200.0,True,lbw,Los Angeles Knight Riders,MI New York,MLC
+1432744,2024-07-21,"Grand Prairie Stadium, Dallas",1,928067,J Little,,,4,7,1,0,57.14,False,not out,Los Angeles Knight Riders,MI New York,MLC
+1432744,2024-07-21,"Grand Prairie Stadium, Dallas",1,927119,Ali Khan,,,0,0,0,0,0.0,False,DNB,Los Angeles Knight Riders,MI New York,
+1432744,2024-07-21,"Grand Prairie Stadium, Dallas",2,1070665,D Brevis,CA Dry,429927,27,19,5,0,142.11,True,caught,MI New York,Los Angeles Knight Riders,MLC
+1432744,2024-07-21,"Grand Prairie Stadium, Dallas",2,1441683,R Clinton,SH Johnson,1123718,8,13,0,0,61.54,True,lbw,MI New York,Los Angeles Knight Riders,MLC
+1432744,2024-07-21,"Grand Prairie Stadium, Dallas",2,604302,N Pooran,Ali Khan,927119,35,28,2,2,125.0,True,lbw,MI New York,Los Angeles Knight Riders,MLC
+1432744,2024-07-21,"Grand Prairie Stadium, Dallas",2,1159641,MD Patel,SP Narine,230558,2,6,0,0,33.33,True,caught and bowled,MI New York,Los Angeles Knight Riders,MLC
+1432744,2024-07-21,"Grand Prairie Stadium, Dallas",2,1070986,H Richards,AD Russell,276298,11,15,2,0,73.33,True,caught,MI New York,Los Angeles Knight Riders,MLC
+1432744,2024-07-21,"Grand Prairie Stadium, Dallas",2,677077,R Shepherd,SP Narine,230558,1,4,0,0,25.0,True,caught,MI New York,Los Angeles Knight Riders,MLC
+1432744,2024-07-21,"Grand Prairie Stadium, Dallas",2,230559,KA Pollard,,,33,12,2,3,275.0,False,not out,MI New York,Los Angeles Knight Riders,MLC
+1432744,2024-07-21,"Grand Prairie Stadium, Dallas",2,793463,Rashid Khan,,,5,5,1,0,100.0,False,not out,MI New York,Los Angeles Knight Riders,MLC
+1432744,2024-07-21,"Grand Prairie Stadium, Dallas",2,1041679,NP Kenjige,,,0,0,0,0,0.0,False,DNB,MI New York,Los Angeles Knight Riders,
+1432744,2024-07-21,"Grand Prairie Stadium, Dallas",2,1441684,R Ugarkar,,,0,0,0,0,0.0,False,DNB,MI New York,Los Angeles Knight Riders,
+1432744,2024-07-21,"Grand Prairie Stadium, Dallas",2,277912,TA Boult,,,0,0,0,0,0.0,False,DNB,MI New York,Los Angeles Knight Riders,
+1432745,2024-07-22,"Grand Prairie Stadium, Dallas",1,530011,TM Head,CJ Anderson,277662,56,36,5,3,155.56,True,caught,Washington Freedom,San Francisco Unicorns,MLC
+1432745,2024-07-22,"Grand Prairie Stadium, Dallas",1,267192,SPD Smith,CJ Anderson,277662,56,31,5,4,180.65,True,caught,Washington Freedom,San Francisco Unicorns,MLC
+1432745,2024-07-22,"Grand Prairie Stadium, Dallas",1,485379,AGS Gous,,,29,20,1,2,145.0,False,not out,Washington Freedom,San Francisco Unicorns,MLC
+1432745,2024-07-22,"Grand Prairie Stadium, Dallas",1,959767,R Ravindra,,,16,6,0,2,266.67,False,not out,Washington Freedom,San Francisco Unicorns,MLC
+1432745,2024-07-22,"Grand Prairie Stadium, Dallas",1,556916,Mukhtar Ahmed,,,9,4,0,1,225.0,False,not out,Washington Freedom,San Francisco Unicorns,MLC
+1432745,2024-07-22,"Grand Prairie Stadium, Dallas",1,530812,AJ Hosein,,,0,0,0,0,0.0,False,DNB,Washington Freedom,San Francisco Unicorns,
+1432745,2024-07-22,"Grand Prairie Stadium, Dallas",1,328160,AJ Pienaar,,,0,0,0,0,0.0,False,DNB,Washington Freedom,San Francisco Unicorns,
+1432745,2024-07-22,"Grand Prairie Stadium, Dallas",1,459508,AJ Tye,,,0,0,0,0,0.0,False,DNB,Washington Freedom,San Francisco Unicorns,
+1432745,2024-07-22,"Grand Prairie Stadium, Dallas",1,1088610,J Edwards,,,0,0,0,0,0.0,False,DNB,Washington Freedom,San Francisco Unicorns,
+1432745,2024-07-22,"Grand Prairie Stadium, Dallas",1,594293,JG Dill,,,0,0,0,0,0.0,False,DNB,Washington Freedom,San Francisco Unicorns,
+1432745,2024-07-22,"Grand Prairie Stadium, Dallas",1,398513,SN Netravalkar,,,0,0,0,0,0.0,False,DNB,Washington Freedom,San Francisco Unicorns,
+1432745,2024-07-22,"Grand Prairie Stadium, Dallas",2,959759,FH Allen,AJ Hosein,530812,0,1,0,0,0.0,True,bowled,San Francisco Unicorns,Washington Freedom,MLC
+1432745,2024-07-22,"Grand Prairie Stadium, Dallas",2,1277627,SP Krishnamurthi,,,79,42,5,6,188.1,False,not out,San Francisco Unicorns,Washington Freedom,MLC
+1432745,2024-07-22,"Grand Prairie Stadium, Dallas",2,1168049,J Fraser-McGurk,AJ Tye,459508,18,9,2,1,200.0,True,caught,San Francisco Unicorns,Washington Freedom,MLC
+1432745,2024-07-22,"Grand Prairie Stadium, Dallas",2,662235,JP Inglis,AJ Tye,459508,45,17,1,6,264.71,True,caught,San Francisco Unicorns,Washington Freedom,MLC
+1432745,2024-07-22,"Grand Prairie Stadium, Dallas",2,914541,SE Rutherford,AJ Tye,459508,0,2,0,0,0.0,True,caught and bowled,San Francisco Unicorns,Washington Freedom,MLC
+1432745,2024-07-22,"Grand Prairie Stadium, Dallas",2,959789,Hassan Khan,,,32,11,4,2,290.91,False,not out,San Francisco Unicorns,Washington Freedom,MLC
+1432745,2024-07-22,"Grand Prairie Stadium, Dallas",2,277662,CJ Anderson,,,0,0,0,0,0.0,False,DNB,San Francisco Unicorns,Washington Freedom,
+1432745,2024-07-22,"Grand Prairie Stadium, Dallas",2,1161606,Haris Rauf,,,0,0,0,0,0.0,False,DNB,San Francisco Unicorns,Washington Freedom,
+1432745,2024-07-22,"Grand Prairie Stadium, Dallas",2,1427052,J Drysdale,,,0,0,0,0,0.0,False,DNB,San Francisco Unicorns,Washington Freedom,
+1432745,2024-07-22,"Grand Prairie Stadium, Dallas",2,506612,MJ Henry,,,0,0,0,0,0.0,False,DNB,San Francisco Unicorns,Washington Freedom,
+1432745,2024-07-22,"Grand Prairie Stadium, Dallas",2,1079860,Tajinder Singh,,,0,0,0,0,0.0,False,DNB,San Francisco Unicorns,Washington Freedom,
+1432746,2024-07-23,"Grand Prairie Stadium, Dallas",1,379140,DP Conway,A Desai,1441681,0,1,0,0,0.0,True,lbw,Texas Super Kings,Seattle Orcas,MLC
+1432746,2024-07-23,"Grand Prairie Stadium, Dallas",1,1441622,J Tromp,CJ Gannon,326635,6,7,1,0,85.71,True,caught,Texas Super Kings,Seattle Orcas,MLC
+1432746,2024-07-23,"Grand Prairie Stadium, Dallas",1,44828,F du Plessis,KMA Paul,677081,39,17,6,1,229.41,True,caught,Texas Super Kings,Seattle Orcas,MLC
+1432746,2024-07-23,"Grand Prairie Stadium, Dallas",1,451947,Milind Kumar,KMA Paul,677081,29,28,0,2,103.57,True,caught,Texas Super Kings,Seattle Orcas,MLC
+1432746,2024-07-23,"Grand Prairie Stadium, Dallas",1,325012,MP Stoinis,A Desai,1441681,11,9,0,1,122.22,True,caught,Texas Super Kings,Seattle Orcas,MLC
+1432746,2024-07-23,"Grand Prairie Stadium, Dallas",1,502714,MJ Santner,MG Bracewell,326968,15,16,1,1,93.75,True,caught,Texas Super Kings,Seattle Orcas,MLC
+1432746,2024-07-23,"Grand Prairie Stadium, Dallas",1,450881,CP Savage,,,45,27,6,2,166.67,False,not out,Texas Super Kings,Seattle Orcas,MLC
+1432746,2024-07-23,"Grand Prairie Stadium, Dallas",1,953793,CAH Stevenson,N Burger,971349,17,11,1,1,154.55,True,bowled,Texas Super Kings,Seattle Orcas,MLC
+1432746,2024-07-23,"Grand Prairie Stadium, Dallas",1,1160390,Zia Shahzad,CJ Gannon,326635,2,3,0,0,66.67,True,run out,Texas Super Kings,Seattle Orcas,MLC
+1432746,2024-07-23,"Grand Prairie Stadium, Dallas",1,1182529,Noor Ahmad,,,6,2,0,1,300.0,False,not out,Texas Super Kings,Seattle Orcas,MLC
+1432746,2024-07-23,"Grand Prairie Stadium, Dallas",1,535353,OEG Baartman,,,0,0,0,0,0.0,False,DNB,Texas Super Kings,Seattle Orcas,
+1432746,2024-07-23,"Grand Prairie Stadium, Dallas",2,605661,RD Rickelton,OEG Baartman,535353,0,1,0,0,0.0,True,caught,Seattle Orcas,Texas Super Kings,MLC
+1432746,2024-07-23,"Grand Prairie Stadium, Dallas",2,422965,GSNFG Jayasuriya,CP Savage,450881,24,27,3,1,88.89,True,caught,Seattle Orcas,Texas Super Kings,MLC
+1432746,2024-07-23,"Grand Prairie Stadium, Dallas",2,379143,Q de Kock,CP Savage,450881,26,19,2,1,136.84,True,bowled,Seattle Orcas,Texas Super Kings,MLC
+1432746,2024-07-23,"Grand Prairie Stadium, Dallas",2,436757,H Klaasen,MJ Santner,502714,4,8,0,0,50.0,True,caught,Seattle Orcas,Texas Super Kings,MLC
+1432746,2024-07-23,"Grand Prairie Stadium, Dallas",2,326968,MG Bracewell,Noor Ahmad,1182529,4,8,0,0,50.0,True,lbw,Seattle Orcas,Texas Super Kings,MLC
+1432746,2024-07-23,"Grand Prairie Stadium, Dallas",2,554701,Shubham Ranjane,OEG Baartman,535353,16,18,1,0,88.89,True,run out,Seattle Orcas,Texas Super Kings,MLC
+1432746,2024-07-23,"Grand Prairie Stadium, Dallas",2,677081,KMA Paul,Noor Ahmad,1182529,25,17,3,0,147.06,True,bowled,Seattle Orcas,Texas Super Kings,MLC
+1432746,2024-07-23,"Grand Prairie Stadium, Dallas",2,1193309,Ali Sheikh,OEG Baartman,535353,15,9,2,0,166.67,True,caught,Seattle Orcas,Texas Super Kings,MLC
+1432746,2024-07-23,"Grand Prairie Stadium, Dallas",2,326635,CJ Gannon,OEG Baartman,535353,7,5,0,1,140.0,True,caught,Seattle Orcas,Texas Super Kings,MLC
+1432746,2024-07-23,"Grand Prairie Stadium, Dallas",2,971349,N Burger,,,3,3,0,0,100.0,False,not out,Seattle Orcas,Texas Super Kings,MLC
+1432746,2024-07-23,"Grand Prairie Stadium, Dallas",2,1441681,A Desai,,,5,5,1,0,100.0,False,not out,Seattle Orcas,Texas Super Kings,MLC
+1432747,2024-07-24,"Grand Prairie Stadium, Dallas",1,1070665,D Brevis,Zia-ul-Haq,290739,0,4,0,0,0.0,True,caught,MI New York,Texas Super Kings,MLC
+1432747,2024-07-24,"Grand Prairie Stadium, Dallas",1,604302,N Pooran,MP Stoinis,325012,8,9,1,0,88.89,True,caught,MI New York,Texas Super Kings,MLC
+1432747,2024-07-24,"Grand Prairie Stadium, Dallas",1,647771,Shayan Jahangir,DJ Bravo,51439,26,23,2,1,113.04,True,caught,MI New York,Texas Super Kings,MLC
+1432747,2024-07-24,"Grand Prairie Stadium, Dallas",1,1159641,MD Patel,Noor Ahmad,1182529,48,41,5,1,117.07,True,bowled,MI New York,Texas Super Kings,MLC
+1432747,2024-07-24,"Grand Prairie Stadium, Dallas",1,793463,Rashid Khan,MP Stoinis,325012,55,30,4,4,183.33,True,lbw,MI New York,Texas Super Kings,MLC
+1432747,2024-07-24,"Grand Prairie Stadium, Dallas",1,677077,R Shepherd,,,7,8,0,0,87.5,False,not out,MI New York,Texas Super Kings,MLC
+1432747,2024-07-24,"Grand Prairie Stadium, Dallas",1,230559,KA Pollard,AM Hardie,1124283,6,3,0,1,200.0,True,caught,MI New York,Texas Super Kings,MLC
+1432747,2024-07-24,"Grand Prairie Stadium, Dallas",1,1070986,H Richards,AM Hardie,1124283,0,1,0,0,0.0,True,caught,MI New York,Texas Super Kings,MLC
+1432747,2024-07-24,"Grand Prairie Stadium, Dallas",1,277912,TA Boult,AM Hardie,1124283,1,1,0,0,100.0,True,run out,MI New York,Texas Super Kings,MLC
+1432747,2024-07-24,"Grand Prairie Stadium, Dallas",1,1041679,NP Kenjige,,,0,0,0,0,0.0,False,DNB,MI New York,Texas Super Kings,
+1432747,2024-07-24,"Grand Prairie Stadium, Dallas",1,1441684,R Ugarkar,,,0,0,0,0,0.0,False,DNB,MI New York,Texas Super Kings,
+1432747,2024-07-24,"Grand Prairie Stadium, Dallas",2,379140,DP Conway,,,51,43,3,1,118.6,False,not out,Texas Super Kings,MI New York,MLC
+1432747,2024-07-24,"Grand Prairie Stadium, Dallas",2,44828,F du Plessis,NP Kenjige,1041679,72,47,6,3,153.19,True,caught,Texas Super Kings,MI New York,MLC
+1432747,2024-07-24,"Grand Prairie Stadium, Dallas",2,1124283,AM Hardie,,,40,22,3,2,181.82,False,not out,Texas Super Kings,MI New York,MLC
+1432747,2024-07-24,"Grand Prairie Stadium, Dallas",2,450881,CP Savage,,,0,0,0,0,0.0,False,DNB,Texas Super Kings,MI New York,
+1432747,2024-07-24,"Grand Prairie Stadium, Dallas",2,51439,DJ Bravo,,,0,0,0,0,0.0,False,DNB,Texas Super Kings,MI New York,
+1432747,2024-07-24,"Grand Prairie Stadium, Dallas",2,1441622,J Tromp,,,0,0,0,0,0.0,False,DNB,Texas Super Kings,MI New York,
+1432747,2024-07-24,"Grand Prairie Stadium, Dallas",2,325012,MP Stoinis,,,0,0,0,0,0.0,False,DNB,Texas Super Kings,MI New York,
+1432747,2024-07-24,"Grand Prairie Stadium, Dallas",2,451947,Milind Kumar,,,0,0,0,0,0.0,False,DNB,Texas Super Kings,MI New York,
+1432747,2024-07-24,"Grand Prairie Stadium, Dallas",2,935881,Mohammad Mohsin,,,0,0,0,0,0.0,False,DNB,Texas Super Kings,MI New York,
+1432747,2024-07-24,"Grand Prairie Stadium, Dallas",2,1182529,Noor Ahmad,,,0,0,0,0,0.0,False,DNB,Texas Super Kings,MI New York,
+1432747,2024-07-24,"Grand Prairie Stadium, Dallas",2,290739,Zia-ul-Haq,,,0,0,0,0,0.0,False,DNB,Texas Super Kings,MI New York,
+1432748,2024-07-25,"Grand Prairie Stadium, Dallas",1,959759,FH Allen,M Jansen,696401,6,4,1,0,150.0,True,caught,San Francisco Unicorns,Washington Freedom,MLC
+1432748,2024-07-25,"Grand Prairie Stadium, Dallas",1,1277627,SP Krishnamurthi,R Ravindra,959767,19,19,2,1,100.0,True,lbw,San Francisco Unicorns,Washington Freedom,MLC
+1432748,2024-07-25,"Grand Prairie Stadium, Dallas",1,1168049,J Fraser-McGurk,SN Netravalkar,398513,11,11,2,0,100.0,True,caught,San Francisco Unicorns,Washington Freedom,MLC
+1432748,2024-07-25,"Grand Prairie Stadium, Dallas",1,662235,JP Inglis,M Jansen,696401,8,7,0,1,114.29,True,bowled,San Francisco Unicorns,Washington Freedom,MLC
+1432748,2024-07-25,"Grand Prairie Stadium, Dallas",1,959789,Hassan Khan,R Ravindra,959767,57,36,0,6,158.33,True,stumped,San Francisco Unicorns,Washington Freedom,MLC
+1432748,2024-07-25,"Grand Prairie Stadium, Dallas",1,914541,SE Rutherford,LH Ferguson,493773,6,9,0,0,66.67,True,caught,San Francisco Unicorns,Washington Freedom,MLC
+1432748,2024-07-25,"Grand Prairie Stadium, Dallas",1,277662,CJ Anderson,M Jansen,696401,26,19,1,2,136.84,True,caught,San Francisco Unicorns,Washington Freedom,MLC
+1432748,2024-07-25,"Grand Prairie Stadium, Dallas",1,489889,PJ Cummins,SN Netravalkar,398513,1,2,0,0,50.0,True,caught,San Francisco Unicorns,Washington Freedom,MLC
+1432748,2024-07-25,"Grand Prairie Stadium, Dallas",1,1161606,Haris Rauf,R Ravindra,959767,2,3,0,0,66.67,True,caught,San Francisco Unicorns,Washington Freedom,MLC
+1432748,2024-07-25,"Grand Prairie Stadium, Dallas",1,440894,C le Roux,R Ravindra,959767,0,2,0,0,0.0,True,bowled,San Francisco Unicorns,Washington Freedom,MLC
+1432748,2024-07-25,"Grand Prairie Stadium, Dallas",1,1427052,J Drysdale,,,1,4,0,0,25.0,False,not out,San Francisco Unicorns,Washington Freedom,MLC
+1432748,2024-07-25,"Grand Prairie Stadium, Dallas",2,530011,TM Head,,,77,44,10,3,175.0,False,not out,Washington Freedom,San Francisco Unicorns,MLC
+1432748,2024-07-25,"Grand Prairie Stadium, Dallas",2,267192,SPD Smith,PJ Cummins,489889,1,3,0,0,33.33,True,caught,Washington Freedom,San Francisco Unicorns,MLC
+1432748,2024-07-25,"Grand Prairie Stadium, Dallas",2,485379,AGS Gous,Hassan Khan,959789,9,14,2,0,64.29,True,caught,Washington Freedom,San Francisco Unicorns,MLC
+1432748,2024-07-25,"Grand Prairie Stadium, Dallas",2,959767,R Ravindra,Hassan Khan,959789,3,9,0,0,33.33,True,caught,Washington Freedom,San Francisco Unicorns,MLC
+1432748,2024-07-25,"Grand Prairie Stadium, Dallas",2,325026,GJ Maxwell,,,54,23,4,5,234.78,False,not out,Washington Freedom,San Francisco Unicorns,MLC
+1432748,2024-07-25,"Grand Prairie Stadium, Dallas",2,328160,AJ Pienaar,,,0,0,0,0,0.0,False,DNB,Washington Freedom,San Francisco Unicorns,
+1432748,2024-07-25,"Grand Prairie Stadium, Dallas",2,334340,IG Holland,,,0,0,0,0,0.0,False,DNB,Washington Freedom,San Francisco Unicorns,
+1432748,2024-07-25,"Grand Prairie Stadium, Dallas",2,493773,LH Ferguson,,,0,0,0,0,0.0,False,DNB,Washington Freedom,San Francisco Unicorns,
+1432748,2024-07-25,"Grand Prairie Stadium, Dallas",2,696401,M Jansen,,,0,0,0,0,0.0,False,DNB,Washington Freedom,San Francisco Unicorns,
+1432748,2024-07-25,"Grand Prairie Stadium, Dallas",2,556916,Mukhtar Ahmed,,,0,0,0,0,0.0,False,DNB,Washington Freedom,San Francisco Unicorns,
+1432748,2024-07-25,"Grand Prairie Stadium, Dallas",2,398513,SN Netravalkar,,,0,0,0,0,0.0,False,DNB,Washington Freedom,San Francisco Unicorns,
+1432749,2024-07-26,"Grand Prairie Stadium, Dallas",1,959759,FH Allen,Mohammad Mohsin,935881,101,53,9,5,190.57,True,bowled,San Francisco Unicorns,Texas Super Kings,MLC
+1432749,2024-07-26,"Grand Prairie Stadium, Dallas",1,1168049,J Fraser-McGurk,Noor Ahmad,1182529,18,14,0,1,128.57,True,caught,San Francisco Unicorns,Texas Super Kings,MLC
+1432749,2024-07-26,"Grand Prairie Stadium, Dallas",1,1277627,SP Krishnamurthi,Noor Ahmad,1182529,0,2,0,0,0.0,True,bowled,San Francisco Unicorns,Texas Super Kings,MLC
+1432749,2024-07-26,"Grand Prairie Stadium, Dallas",1,662235,JP Inglis,MP Stoinis,325012,37,25,2,1,148.0,True,caught,San Francisco Unicorns,Texas Super Kings,MLC
+1432749,2024-07-26,"Grand Prairie Stadium, Dallas",1,914541,SE Rutherford,Noor Ahmad,1182529,1,5,0,0,20.0,True,caught and bowled,San Francisco Unicorns,Texas Super Kings,MLC
+1432749,2024-07-26,"Grand Prairie Stadium, Dallas",1,959789,Hassan Khan,,,27,15,4,1,180.0,False,not out,San Francisco Unicorns,Texas Super Kings,MLC
+1432749,2024-07-26,"Grand Prairie Stadium, Dallas",1,277662,CJ Anderson,OEG Baartman,535353,3,6,0,0,50.0,True,caught,San Francisco Unicorns,Texas Super Kings,MLC
+1432749,2024-07-26,"Grand Prairie Stadium, Dallas",1,489889,PJ Cummins,,,0,1,0,0,0.0,False,not out,San Francisco Unicorns,Texas Super Kings,MLC
+1432749,2024-07-26,"Grand Prairie Stadium, Dallas",1,440894,C le Roux,,,0,0,0,0,0.0,False,DNB,San Francisco Unicorns,Texas Super Kings,
+1432749,2024-07-26,"Grand Prairie Stadium, Dallas",1,1161606,Haris Rauf,,,0,0,0,0,0.0,False,DNB,San Francisco Unicorns,Texas Super Kings,
+1432749,2024-07-26,"Grand Prairie Stadium, Dallas",1,1427052,J Drysdale,,,0,0,0,0,0.0,False,DNB,San Francisco Unicorns,Texas Super Kings,
+1432749,2024-07-26,"Grand Prairie Stadium, Dallas",2,379140,DP Conway,,,62,38,4,2,163.16,False,not out,Texas Super Kings,San Francisco Unicorns,MLC
+1432749,2024-07-26,"Grand Prairie Stadium, Dallas",2,44828,F du Plessis,C le Roux,440894,45,22,7,1,204.55,True,caught,Texas Super Kings,San Francisco Unicorns,MLC
+1432749,2024-07-26,"Grand Prairie Stadium, Dallas",2,1124283,AM Hardie,J Drysdale,1427052,19,15,3,0,126.67,True,caught,Texas Super Kings,San Francisco Unicorns,MLC
+1432749,2024-07-26,"Grand Prairie Stadium, Dallas",2,451947,Milind Kumar,Hassan Khan,959789,2,4,0,0,50.0,True,caught,Texas Super Kings,San Francisco Unicorns,MLC
+1432749,2024-07-26,"Grand Prairie Stadium, Dallas",2,325012,MP Stoinis,J Drysdale,1427052,1,5,0,0,20.0,True,caught,Texas Super Kings,San Francisco Unicorns,MLC
+1432749,2024-07-26,"Grand Prairie Stadium, Dallas",2,1441622,J Tromp,,,56,36,5,2,155.56,False,not out,Texas Super Kings,San Francisco Unicorns,MLC
+1432749,2024-07-26,"Grand Prairie Stadium, Dallas",2,450881,CP Savage,,,0,0,0,0,0.0,False,DNB,Texas Super Kings,San Francisco Unicorns,
+1432749,2024-07-26,"Grand Prairie Stadium, Dallas",2,935881,Mohammad Mohsin,,,0,0,0,0,0.0,False,DNB,Texas Super Kings,San Francisco Unicorns,
+1432749,2024-07-26,"Grand Prairie Stadium, Dallas",2,1182529,Noor Ahmad,,,0,0,0,0,0.0,False,DNB,Texas Super Kings,San Francisco Unicorns,
+1432749,2024-07-26,"Grand Prairie Stadium, Dallas",2,535353,OEG Baartman,,,0,0,0,0,0.0,False,DNB,Texas Super Kings,San Francisco Unicorns,
+1432749,2024-07-26,"Grand Prairie Stadium, Dallas",2,290739,Zia-ul-Haq,,,0,0,0,0,0.0,False,DNB,Texas Super Kings,San Francisco Unicorns,
+1432750,2024-07-28,"Grand Prairie Stadium, Dallas",1,530011,TM Head,PJ Cummins,489889,9,6,2,0,150.0,True,caught,Washington Freedom,San Francisco Unicorns,MLC
+1432750,2024-07-28,"Grand Prairie Stadium, Dallas",1,267192,SPD Smith,PJ Cummins,489889,88,52,7,6,169.23,True,caught,Washington Freedom,San Francisco Unicorns,MLC
+1432750,2024-07-28,"Grand Prairie Stadium, Dallas",1,485379,AGS Gous,Hassan Khan,959789,21,14,3,1,150.0,True,caught,Washington Freedom,San Francisco Unicorns,MLC
+1432750,2024-07-28,"Grand Prairie Stadium, Dallas",1,959767,R Ravindra,Haris Rauf,1161606,11,9,1,0,122.22,True,bowled,Washington Freedom,San Francisco Unicorns,MLC
+1432750,2024-07-28,"Grand Prairie Stadium, Dallas",1,325026,GJ Maxwell,J Drysdale,1427052,40,22,1,4,181.82,True,caught,Washington Freedom,San Francisco Unicorns,MLC
+1432750,2024-07-28,"Grand Prairie Stadium, Dallas",1,556916,Mukhtar Ahmed,,,19,9,2,1,211.11,False,not out,Washington Freedom,San Francisco Unicorns,MLC
+1432750,2024-07-28,"Grand Prairie Stadium, Dallas",1,328160,AJ Pienaar,,,13,9,1,0,144.44,False,not out,Washington Freedom,San Francisco Unicorns,MLC
+1432750,2024-07-28,"Grand Prairie Stadium, Dallas",1,459508,AJ Tye,,,0,0,0,0,0.0,False,DNB,Washington Freedom,San Francisco Unicorns,
+1432750,2024-07-28,"Grand Prairie Stadium, Dallas",1,334340,IG Holland,,,0,0,0,0,0.0,False,DNB,Washington Freedom,San Francisco Unicorns,
+1432750,2024-07-28,"Grand Prairie Stadium, Dallas",1,696401,M Jansen,,,0,0,0,0,0.0,False,DNB,Washington Freedom,San Francisco Unicorns,
+1432750,2024-07-28,"Grand Prairie Stadium, Dallas",1,398513,SN Netravalkar,,,0,0,0,0,0.0,False,DNB,Washington Freedom,San Francisco Unicorns,
+1432750,2024-07-28,"Grand Prairie Stadium, Dallas",2,959759,FH Allen,M Jansen,696401,13,13,2,0,100.0,True,bowled,San Francisco Unicorns,Washington Freedom,MLC
+1432750,2024-07-28,"Grand Prairie Stadium, Dallas",2,1168049,J Fraser-McGurk,M Jansen,696401,3,6,0,0,50.0,True,bowled,San Francisco Unicorns,Washington Freedom,MLC
+1432750,2024-07-28,"Grand Prairie Stadium, Dallas",2,1277627,SP Krishnamurthi,SN Netravalkar,398513,13,9,3,0,144.44,True,caught,San Francisco Unicorns,Washington Freedom,MLC
+1432750,2024-07-28,"Grand Prairie Stadium, Dallas",2,662235,JP Inglis,AJ Tye,459508,18,11,2,1,163.64,True,bowled,San Francisco Unicorns,Washington Freedom,MLC
+1432750,2024-07-28,"Grand Prairie Stadium, Dallas",2,914541,SE Rutherford,GJ Maxwell,325026,4,9,0,0,44.44,True,caught,San Francisco Unicorns,Washington Freedom,MLC
+1432750,2024-07-28,"Grand Prairie Stadium, Dallas",2,959789,Hassan Khan,M Jansen,696401,13,6,1,1,216.67,True,caught,San Francisco Unicorns,Washington Freedom,MLC
+1432750,2024-07-28,"Grand Prairie Stadium, Dallas",2,277662,CJ Anderson,AJ Tye,459508,0,2,0,0,0.0,True,caught,San Francisco Unicorns,Washington Freedom,MLC
+1432750,2024-07-28,"Grand Prairie Stadium, Dallas",2,489889,PJ Cummins,R Ravindra,959767,13,7,0,2,185.71,True,lbw,San Francisco Unicorns,Washington Freedom,MLC
+1432750,2024-07-28,"Grand Prairie Stadium, Dallas",2,1161606,Haris Rauf,R Ravindra,959767,7,8,1,0,87.5,True,stumped,San Francisco Unicorns,Washington Freedom,MLC
+1432750,2024-07-28,"Grand Prairie Stadium, Dallas",2,440894,C le Roux,,,20,19,1,1,105.26,False,not out,San Francisco Unicorns,Washington Freedom,MLC
+1432750,2024-07-28,"Grand Prairie Stadium, Dallas",2,1427052,J Drysdale,R Ravindra,959767,5,6,1,0,83.33,True,bowled,San Francisco Unicorns,Washington Freedom,MLC
