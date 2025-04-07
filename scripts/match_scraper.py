@@ -1,14 +1,43 @@
-#import requests
+import requests
 from bs4 import BeautifulSoup
 import csv
 from datetime import datetime, timezone
 import os
-import requests
 import pandas as pd
 
 # Cricbuzz Fixtures URL for IPL 2025
 FIXTURES_URL = "https://www.cricbuzz.com/cricket-series/9237/indian-premier-league-2025/matches"
 headers = {"User-Agent": "Mozilla/5.0"}
+
+# Create a mapping from cricbuzz_id to cricinfo_id using the CSV file
+def create_id_mapping(csv_path="data/register_data/squadData_ipl25_updated.csv"):
+    print(f"🔄 Creating player ID mapping from {csv_path}")
+    try:
+        df = pd.read_csv(csv_path)
+        
+        # Create a dictionary mapping cricbuzz_id to cricinfo_id
+        id_mapping = {}
+        for _, row in df.iterrows():
+            # Skip rows with missing values
+            if pd.isna(row['key_cricbuzz']) or pd.isna(row['key_cricinfo']):
+                continue
+                
+            # Convert to string and strip any decimal points (e.g. 12345.0 -> "12345")
+            cricbuzz_id = str(int(row['key_cricbuzz'])) if not pd.isna(row['key_cricbuzz']) else None
+            cricinfo_id = str(int(row['key_cricinfo'])) if not pd.isna(row['key_cricinfo']) else None
+            
+            if cricbuzz_id and cricinfo_id:
+                id_mapping[cricbuzz_id] = cricinfo_id
+        
+        print(f"✅ Successfully created mapping for {len(id_mapping)} players")
+        print(f"🔍 Sample mapping entries: {list(id_mapping.items())[:5]}")
+        return id_mapping
+    except Exception as e:
+        print(f"❌ Error creating ID mapping: {e}")
+        return {}
+
+# Global variable for id mapping
+player_id_mapping = create_id_mapping()
 
 def get_match_urls():
     """Fetch all match URLs from the IPL 2025 fixtures page and list them by number."""
@@ -43,11 +72,6 @@ def get_match_urls():
 
     return match_links
 
-get_match_urls()
-
-
-from datetime import datetime
-
 def extract_match_date(soup):
     """Extracts match date from the match facts page."""
     try:
@@ -71,16 +95,14 @@ def extract_match_date(soup):
                     print(f"📅 Formatted date from timestamp: {formatted_date}")
                     return formatted_date
                 except Exception as e:
-                    print(f"⚠ Error parsing timestamp: {e}")
+                    print(f"⚠️ Error parsing timestamp: {e}")
 
-        print("⚠ Date not found.")
+        print("⚠️ Date not found.")
         return "Unknown"
 
     except Exception as e:
-        print(f"⚠ Error extracting match date: {e}")
+        print(f"⚠️ Error extracting match date: {e}")
         return "Unknown"
-
-
 
 def extract_player_id(url):
     """Extract player ID from URL."""
@@ -93,7 +115,7 @@ def extract_player_id(url):
                 return parts[i+1]
         return "Unknown"
     except Exception as e:
-        print(f"⚠ Error extracting player ID: {e}")
+        print(f"⚠️ Error extracting player ID: {e}")
         return "Unknown"
 
 def extract_playing_xi(soup):
@@ -112,19 +134,6 @@ def extract_playing_xi(soup):
     # New lists for player IDs
     team1_ids, team2_ids = [], []
     bench1_ids, bench2_ids = [], []
-
-    # Function to extract player ID from URL
-    def extract_player_id(url):
-        try:
-            # URL format is typically /profiles/12345/player-name
-            parts = url.split('/')
-            for i, part in enumerate(parts):
-                if part == "profiles" and i+1 < len(parts):
-                    return parts[i+1]
-            return "Unknown"
-        except Exception as e:
-            print(f"⚠ Error extracting player ID: {e}")
-            return "Unknown"
 
     for section in match_info_sections:
         title_div = section.find("div", class_="cb-col cb-col-27 cb-mat-fct-itm text-bold")
@@ -182,7 +191,8 @@ def extract_playing_xi(soup):
     # Display player info including IDs
     print("\n📋 All Player URLs and IDs:")
     for name, url, pid in zip(team1_players, team1_full_urls, team1_ids):
-        print(f"  - {name}: {url} (ID: {pid})")
+        cricinfo_id = player_id_mapping.get(pid, "Unknown")
+        print(f"  - {name}: {url} (CricBuzz ID: {pid}, Cricinfo ID: {cricinfo_id})")
     
     # Combine playing XI and bench
     team1_players.extend(bench1_players)
@@ -195,22 +205,7 @@ def extract_playing_xi(soup):
     # Return player names, URLs, and IDs
     return (team1_players, team2_players), (team1_full_urls + bench1_full_urls, team2_full_urls + bench2_full_urls), (team1_ids, team2_ids)
 
-
-def load_player_mapping(file_path):
-    """Load player mappings from the CSV file."""
-    player_mapping = {}
-    try:
-        df = pd.read_csv(file_path)
-        for index, row in df.iterrows():
-            # Convert key_cricbuzz to string to match the extracted player IDs
-            key_cricbuzz = str(int(row['key_cricbuzz'])) if pd.notna(row['key_cricbuzz']) else ""
-            player_mapping[key_cricbuzz] = row['key_cricinfo']
-    except Exception as e:
-        print(f"Error loading player mapping: {e}")
-    return player_mapping
-
-
-def extract_match_details(match_url, player_mapping):
+def extract_match_details(match_url):
     """Extracts match details including date, playing XI, teams, venue, toss, innings, and player IDs."""
     print(f"🌐 Fetching match details from: {match_url}")
     response = requests.get(match_url, headers=headers)
@@ -227,7 +222,7 @@ def extract_match_details(match_url, player_mapping):
 
     teams = fact_sections[0].get_text(strip=True).split(",")[0].split(" vs ") if len(fact_sections) > 0 else []
     if len(teams) < 2:
-        print(f"⚠ Error extracting team names for {match_url}")
+        print(f"⚠️ Error extracting team names for {match_url}")
         return match_date, []
     team1_name, team2_name = teams
     print(f"✅ Teams found: {team1_name} vs {team2_name}")
@@ -236,7 +231,7 @@ def extract_match_details(match_url, player_mapping):
     (team1_players, team2_players), (team1_urls, team2_urls), (team1_ids, team2_ids) = extract_playing_xi(soup)
     
     if not team1_players or not team2_players:
-        print(f"⚠ Error extracting playing XI for {match_url}")
+        print(f"⚠️ Error extracting playing XI for {match_url}")
         return match_date, []
 
     # Mapping full team names to abbreviations
@@ -274,10 +269,6 @@ def extract_match_details(match_url, player_mapping):
 
     print(f"Team 1 Innings: {team1_innings}, Team 2 Innings: {team2_innings}")
 
-    # Updated to include player IDs in match data
-    # Using full team names from the mapping dictionary keys
-    match_data = []
-    
     # Get the full team names from the dictionary or use the extracted names
     for team_full_name in team_name_map.keys():
         if team_name_map[team_full_name] == team1_name or team_full_name == team1_name:
@@ -293,16 +284,30 @@ def extract_match_details(match_url, player_mapping):
     else:
         team2_full = team2_name
     
+    # Match data with cricinfo_id
+    match_data = []
+    
+    # Debug: print a sample of the mapping dictionary
+    print("\n🔍 Debugging Player ID Mapping:")
+    print(f"Total mappings available: {len(player_id_mapping)}")
+    print(f"Sample keys in mapping: {list(player_id_mapping.keys())[:5]}")
+    
+    # Add players from team 1
     for player, player_id in zip(team1_players, team1_ids):
-        cricinfo_id = player_mapping.get(player_id, "Unknown")
+        # Get the cricinfo_id from the mapping
+        cricinfo_id = player_id_mapping.get(player_id, "Unknown")
+        print(f"Looking up {player} with CricBuzz ID: {player_id} -> Cricinfo ID: {cricinfo_id}")
         match_data.append([player, team1_full, team2_full, venue, toss_info, team1_innings, player_id, cricinfo_id])
+    
+    # Add players from team 2
     for player, player_id in zip(team2_players, team2_ids):
-        cricinfo_id = player_mapping.get(player_id, "Unknown")
+        # Get the cricinfo_id from the mapping
+        cricinfo_id = player_id_mapping.get(player_id, "Unknown")
+        print(f"Looking up {player} with CricBuzz ID: {player_id} -> Cricinfo ID: {cricinfo_id}")
         match_data.append([player, team2_full, team1_full, venue, toss_info, team2_innings, player_id, cricinfo_id])
 
     print(f"✅ Successfully extracted match details for {match_url}")
     return match_date, match_data
-
 
 def save_to_csv(data, match_number):
     download_folder = "Today_Match_Details"
@@ -312,11 +317,11 @@ def save_to_csv(data, match_number):
 
     with open(file_path, "w", newline="", encoding="utf-8") as file:
         writer = csv.writer(file)
+        # Updated header to include cricinfo_id
         writer.writerow(["Player Name", "Team", "Opponent", "Venue", "Toss Info", "Innings", "Player ID", "Cricinfo ID"])
         writer.writerows(data)
 
     print(f"✅ CSV file saved successfully: {file_path}")
-
 
 def fetch_match_details_by_number():
     """Asks for a match number, fetches match details, and saves to CSV."""
@@ -325,10 +330,9 @@ def fetch_match_details_by_number():
         match_number = int(input("Enter the match number: "))
         if 1 <= match_number <= len(match_urls):
             selected_url = match_urls[match_number - 1]
-            player_mapping = load_player_mapping('data/register_data/squadData_ipl25_updated.csv')
-            match_date, match_data = extract_match_details(selected_url, player_mapping)
+            match_date, match_data = extract_match_details(selected_url)
             if match_data:
-                save_to_csv(match_data)
+                save_to_csv(match_data, match_number)
                 print(f"✅ Match details saved for {selected_url}")
             else:
                 print(f"❌ No Playing XI data found for match number {match_number}")
@@ -337,15 +341,13 @@ def fetch_match_details_by_number():
     except ValueError:
         print("❌ Invalid input. Please enter a number.")
 
-
 if __name__ == "__main__":
     match_urls = get_match_urls()
     match_number = int(input("Enter the match number from the list: "))
     if 1 <= match_number <= len(match_urls):
         selected_url = match_urls[match_number - 1]
         print(f"✅ Selected Match URL: {selected_url}")
-        player_mapping = load_player_mapping('data/register_data/squadData_ipl25_updated.csv')
-        match_date, match_data = extract_match_details(selected_url, player_mapping)
+        match_date, match_data = extract_match_details(selected_url)
         if match_data:
             save_to_csv(match_data, match_number)
         else:
