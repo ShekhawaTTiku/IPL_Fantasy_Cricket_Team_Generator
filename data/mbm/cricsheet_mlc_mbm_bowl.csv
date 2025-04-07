@@ -1,0 +1,498 @@
+match_id,bowler,bowler_id,bowl_team,bat_team,inns,overs,balls,wickets,runs,lbw_or_bowled,dots,eco,maidens,venue,date,league
+1381361,Ali Khan,927119.0,Los Angeles Knight Riders,Texas Super Kings,1,4.0,24,2,40.0,0,10,10.0,0,Grand Prairie Stadium,2023-07-13,MLC
+1381361,LH Ferguson,493773.0,Los Angeles Knight Riders,Texas Super Kings,1,4.0,24,2,23.0,0,13,5.75,0,Grand Prairie Stadium,2023-07-13,MLC
+1381361,AD Russell,276298.0,Los Angeles Knight Riders,Texas Super Kings,1,3.0,20,0,37.0,0,8,12.333333333333334,0,Grand Prairie Stadium,2023-07-13,MLC
+1381361,CA Dry,429927.0,Los Angeles Knight Riders,Texas Super Kings,1,2.0,12,0,22.0,0,3,11.0,0,Grand Prairie Stadium,2023-07-13,MLC
+1381361,SP Narine,230558.0,Los Angeles Knight Riders,Texas Super Kings,1,4.0,25,1,29.0,1,8,7.25,0,Grand Prairie Stadium,2023-07-13,MLC
+1381361,A Zampa,379504.0,Los Angeles Knight Riders,Texas Super Kings,1,3.0,18,1,29.0,0,2,9.666666666666666,0,Grand Prairie Stadium,2023-07-13,MLC
+1381361,J Theron,223642.0,Texas Super Kings,Los Angeles Knight Riders,2,2.0,12,2,16.0,1,7,8.0,0,Grand Prairie Stadium,2023-07-13,MLC
+1381361,CP Savage,450881.0,Texas Super Kings,Los Angeles Knight Riders,2,2.0,13,1,25.0,0,7,12.5,0,Grand Prairie Stadium,2023-07-13,MLC
+1381361,G Coetzee,596010.0,Texas Super Kings,Los Angeles Knight Riders,2,2.0,12,2,22.0,2,6,11.0,0,Grand Prairie Stadium,2023-07-13,MLC
+1381361,MJ Santner,502714.0,Texas Super Kings,Los Angeles Knight Riders,2,3.0,21,0,28.0,0,8,9.333333333333334,0,Grand Prairie Stadium,2023-07-13,MLC
+1381361,DJ Bravo,51439.0,Texas Super Kings,Los Angeles Knight Riders,2,2.0,12,1,10.0,0,5,5.0,0,Grand Prairie Stadium,2023-07-13,MLC
+1381361,Mohammad Mohsin,935881.0,Texas Super Kings,Los Angeles Knight Riders,2,3.0,18,4,8.0,3,13,2.6666666666666665,0,Grand Prairie Stadium,2023-07-13,MLC
+1381362,TA Boult,277912.0,MI New York,San Francisco Unicorns,1,4.0,26,2,38.0,2,10,9.5,0,Grand Prairie Stadium,2023-07-14,MLC
+1381362,K Rabada,550215.0,MI New York,San Francisco Unicorns,1,4.0,25,2,32.0,1,14,8.0,0,Grand Prairie Stadium,2023-07-14,MLC
+1381362,Ehsan Adil,547092.0,MI New York,San Francisco Unicorns,1,3.0,18,0,38.0,0,4,12.666666666666666,0,Grand Prairie Stadium,2023-07-14,MLC
+1381362,S Ladda,317292.0,MI New York,San Francisco Unicorns,1,3.0,21,1,43.0,0,9,14.333333333333334,0,Grand Prairie Stadium,2023-07-14,MLC
+1381362,SR Taylor,355359.0,MI New York,San Francisco Unicorns,1,2.0,12,0,15.0,0,2,7.5,0,Grand Prairie Stadium,2023-07-14,MLC
+1381362,KA Pollard,230559.0,MI New York,San Francisco Unicorns,1,3.0,18,0,25.0,0,5,8.333333333333334,0,Grand Prairie Stadium,2023-07-14,MLC
+1381362,Hammad Azam,384518.0,MI New York,San Francisco Unicorns,1,1.0,6,0,15.0,0,1,15.0,0,Grand Prairie Stadium,2023-07-14,MLC
+1381362,C le Roux,440894.0,San Francisco Unicorns,MI New York,2,4.0,27,2,39.0,0,13,9.75,0,Grand Prairie Stadium,2023-07-14,MLC
+1381362,Haris Rauf,1161606.0,San Francisco Unicorns,MI New York,2,4.0,27,0,34.0,0,15,8.5,0,Grand Prairie Stadium,2023-07-14,MLC
+1381362,LE Plunkett,19264.0,San Francisco Unicorns,MI New York,2,4.0,24,2,30.0,0,11,7.5,0,Grand Prairie Stadium,2023-07-14,MLC
+1381362,Shadab Khan,922943.0,San Francisco Unicorns,MI New York,2,3.0,18,1,32.0,0,4,10.666666666666666,0,Grand Prairie Stadium,2023-07-14,MLC
+1381362,MP Stoinis,325012.0,San Francisco Unicorns,MI New York,2,4.0,25,0,40.0,0,7,10.0,0,Grand Prairie Stadium,2023-07-14,MLC
+1381362,Chaitanya Bishnoi,628217.0,San Francisco Unicorns,MI New York,2,1.0,6,0,15.0,0,1,15.0,0,Grand Prairie Stadium,2023-07-14,MLC
+1381363,Imad Wasim,227758.0,Seattle Orcas,Washington Freedom,1,4.0,25,1,19.0,1,10,4.75,0,Grand Prairie Stadium,2023-07-14,MLC
+1381363,CJ Gannon,326635.0,Seattle Orcas,Washington Freedom,1,4.0,26,1,34.0,0,12,8.5,0,Grand Prairie Stadium,2023-07-14,MLC
+1381363,WD Parnell,265564.0,Seattle Orcas,Washington Freedom,1,4.0,26,2,40.0,1,13,10.0,0,Grand Prairie Stadium,2023-07-14,MLC
+1381363,AJ Tye,459508.0,Seattle Orcas,Washington Freedom,1,4.0,25,1,26.0,0,7,6.5,0,Grand Prairie Stadium,2023-07-14,MLC
+1381363,Harmeet Singh,391128.0,Seattle Orcas,Washington Freedom,1,4.0,24,2,24.0,1,7,6.0,0,Grand Prairie Stadium,2023-07-14,MLC
+1381363,M Jansen,696401.0,Washington Freedom,Seattle Orcas,2,3.4,23,1,30.0,1,12,8.181818181818182,0,Grand Prairie Stadium,2023-07-14,MLC
+1381363,SN Netravalkar,398513.0,Washington Freedom,Seattle Orcas,2,4.0,24,0,23.0,0,11,5.75,0,Grand Prairie Stadium,2023-07-14,MLC
+1381363,A Nortje,481979.0,Washington Freedom,Seattle Orcas,2,4.0,25,1,29.0,1,12,7.25,0,Grand Prairie Stadium,2023-07-14,MLC
+1381363,AJ Hosein,530812.0,Washington Freedom,Seattle Orcas,2,2.0,12,1,20.0,0,3,10.0,0,Grand Prairie Stadium,2023-07-14,MLC
+1381363,MC Henriques,5961.0,Washington Freedom,Seattle Orcas,2,2.0,12,1,8.0,1,5,4.0,0,Grand Prairie Stadium,2023-07-14,MLC
+1381363,DL Piedt,379926.0,Washington Freedom,Seattle Orcas,2,4.0,24,1,31.0,1,7,7.75,0,Grand Prairie Stadium,2023-07-14,MLC
+1381364,C le Roux,440894.0,San Francisco Unicorns,Seattle Orcas,1,4.0,24,0,29.0,0,9,7.25,0,Grand Prairie Stadium,2023-07-15,MLC
+1381364,Haris Rauf,1161606.0,San Francisco Unicorns,Seattle Orcas,1,4.0,25,1,42.0,1,8,10.5,0,Grand Prairie Stadium,2023-07-15,MLC
+1381364,MP Stoinis,325012.0,San Francisco Unicorns,Seattle Orcas,1,4.0,27,0,28.0,0,11,7.0,0,Grand Prairie Stadium,2023-07-15,MLC
+1381364,LE Plunkett,19264.0,San Francisco Unicorns,Seattle Orcas,1,4.0,25,2,36.0,0,7,9.0,0,Grand Prairie Stadium,2023-07-15,MLC
+1381364,Shadab Khan,922943.0,San Francisco Unicorns,Seattle Orcas,1,2.0,12,0,21.0,0,4,10.5,0,Grand Prairie Stadium,2023-07-15,MLC
+1381364,CJ Anderson,277662.0,San Francisco Unicorns,Seattle Orcas,1,2.0,12,1,19.0,0,4,9.5,0,Grand Prairie Stadium,2023-07-15,MLC
+1381364,Imad Wasim,227758.0,Seattle Orcas,San Francisco Unicorns,2,3.0,18,2,24.0,1,9,8.0,0,Grand Prairie Stadium,2023-07-15,MLC
+1381364,CJ Gannon,326635.0,Seattle Orcas,San Francisco Unicorns,2,3.5,23,4,23.0,0,12,6.0,0,Grand Prairie Stadium,2023-07-15,MLC
+1381364,WD Parnell,265564.0,Seattle Orcas,San Francisco Unicorns,2,3.0,19,0,40.0,0,5,13.333333333333334,0,Grand Prairie Stadium,2023-07-15,MLC
+1381364,Harmeet Singh,391128.0,Seattle Orcas,San Francisco Unicorns,2,4.0,24,1,15.0,0,13,3.75,0,Grand Prairie Stadium,2023-07-15,MLC
+1381364,AJ Tye,459508.0,Seattle Orcas,San Francisco Unicorns,2,3.0,19,2,27.0,0,6,9.0,0,Grand Prairie Stadium,2023-07-15,MLC
+1381364,GSNFG Jayasuriya,422965.0,Seattle Orcas,San Francisco Unicorns,2,1.0,6,0,12.0,0,0,12.0,0,Grand Prairie Stadium,2023-07-15,MLC
+1381365,J Theron,223642.0,Texas Super Kings,Washington Freedom,1,2.0,13,0,27.0,0,4,13.5,0,Grand Prairie Stadium,2023-07-16,MLC
+1381365,CP Savage,450881.0,Texas Super Kings,Washington Freedom,1,2.0,13,0,19.0,0,6,9.5,0,Grand Prairie Stadium,2023-07-16,MLC
+1381365,MJ Santner,502714.0,Texas Super Kings,Washington Freedom,1,4.0,24,1,32.0,0,8,8.0,0,Grand Prairie Stadium,2023-07-16,MLC
+1381365,G Coetzee,596010.0,Texas Super Kings,Washington Freedom,1,4.0,25,2,26.0,2,13,6.5,1,Grand Prairie Stadium,2023-07-16,MLC
+1381365,Mohammad Mohsin,935881.0,Texas Super Kings,Washington Freedom,1,4.0,24,1,28.0,0,7,7.0,0,Grand Prairie Stadium,2023-07-16,MLC
+1381365,DJ Bravo,51439.0,Texas Super Kings,Washington Freedom,1,4.0,25,1,28.0,0,11,7.0,0,Grand Prairie Stadium,2023-07-16,MLC
+1381365,M Jansen,696401.0,Washington Freedom,Texas Super Kings,2,4.0,26,3,31.0,2,13,7.75,0,Grand Prairie Stadium,2023-07-16,MLC
+1381365,SN Netravalkar,398513.0,Washington Freedom,Texas Super Kings,2,3.0,18,1,17.0,0,7,5.666666666666667,0,Grand Prairie Stadium,2023-07-16,MLC
+1381365,A Nortje,481979.0,Washington Freedom,Texas Super Kings,2,4.0,25,0,45.0,0,10,11.25,0,Grand Prairie Stadium,2023-07-16,MLC
+1381365,DL Piedt,379926.0,Washington Freedom,Texas Super Kings,2,3.0,18,1,28.0,0,6,9.333333333333334,0,Grand Prairie Stadium,2023-07-16,MLC
+1381365,GD Phillips,823509.0,Washington Freedom,Texas Super Kings,2,1.0,6,0,4.0,0,2,4.0,0,Grand Prairie Stadium,2023-07-16,MLC
+1381365,AJ Hosein,530812.0,Washington Freedom,Texas Super Kings,2,4.0,24,2,25.0,1,10,6.25,0,Grand Prairie Stadium,2023-07-16,MLC
+1381365,MC Henriques,5961.0,Washington Freedom,Texas Super Kings,2,1.0,6,1,5.0,0,2,5.0,0,Grand Prairie Stadium,2023-07-16,MLC
+1381366,LH Ferguson,493773.0,Los Angeles Knight Riders,MI New York,1,4.0,27,1,37.0,0,18,9.25,0,Grand Prairie Stadium,2023-07-16,MLC
+1381366,Ali Khan,927119.0,Los Angeles Knight Riders,MI New York,1,4.0,27,2,28.0,1,16,7.0,0,Grand Prairie Stadium,2023-07-16,MLC
+1381366,CA Dry,429927.0,Los Angeles Knight Riders,MI New York,1,2.0,12,2,10.0,1,7,5.0,0,Grand Prairie Stadium,2023-07-16,MLC
+1381366,A Zampa,379504.0,Los Angeles Knight Riders,MI New York,1,4.0,25,2,25.0,2,11,6.25,0,Grand Prairie Stadium,2023-07-16,MLC
+1381366,SP Narine,230558.0,Los Angeles Knight Riders,MI New York,1,4.0,24,0,15.0,0,11,3.75,0,Grand Prairie Stadium,2023-07-16,MLC
+1381366,AD Russell,276298.0,Los Angeles Knight Riders,MI New York,1,2.0,12,0,28.0,0,4,14.0,0,Grand Prairie Stadium,2023-07-16,MLC
+1381366,NP Kenjige,1041679.0,MI New York,Los Angeles Knight Riders,2,3.0,18,2,7.0,1,11,2.3333333333333335,0,Grand Prairie Stadium,2023-07-16,MLC
+1381366,TA Boult,277912.0,MI New York,Los Angeles Knight Riders,2,2.5,18,2,10.0,1,13,3.5294117647058822,0,Grand Prairie Stadium,2023-07-16,MLC
+1381366,K Rabada,550215.0,MI New York,Los Angeles Knight Riders,2,3.0,18,2,16.0,0,10,5.333333333333333,1,Grand Prairie Stadium,2023-07-16,MLC
+1381366,Ehsan Adil,547092.0,MI New York,Los Angeles Knight Riders,2,3.0,18,2,7.0,1,11,2.3333333333333335,0,Grand Prairie Stadium,2023-07-16,MLC
+1381366,KA Pollard,230559.0,MI New York,Los Angeles Knight Riders,2,2.0,13,2,9.0,0,8,4.5,0,Grand Prairie Stadium,2023-07-16,MLC
+1381367,Ehsan Adil,547092.0,MI New York,Texas Super Kings,1,2.0,12,0,21.0,0,4,10.5,0,Grand Prairie Stadium,2023-07-17,MLC
+1381367,TA Boult,277912.0,MI New York,Texas Super Kings,1,4.0,25,2,29.0,1,13,7.25,0,Grand Prairie Stadium,2023-07-17,MLC
+1381367,K Rabada,550215.0,MI New York,Texas Super Kings,1,4.0,24,2,30.0,1,6,7.5,0,Grand Prairie Stadium,2023-07-17,MLC
+1381367,KA Pollard,230559.0,MI New York,Texas Super Kings,1,3.0,19,1,17.0,0,6,5.666666666666667,0,Grand Prairie Stadium,2023-07-17,MLC
+1381367,SR Taylor,355359.0,MI New York,Texas Super Kings,1,3.0,18,0,18.0,0,4,6.0,0,Grand Prairie Stadium,2023-07-17,MLC
+1381367,Rashid Khan,793463.0,MI New York,Texas Super Kings,1,4.0,24,1,32.0,1,8,8.0,0,Grand Prairie Stadium,2023-07-17,MLC
+1381367,DR Sams,826901.0,Texas Super Kings,MI New York,2,4.0,25,2,15.0,0,15,3.75,0,Grand Prairie Stadium,2023-07-17,MLC
+1381367,J Theron,223642.0,Texas Super Kings,MI New York,2,3.0,20,1,18.0,0,12,6.0,0,Grand Prairie Stadium,2023-07-17,MLC
+1381367,Zia-ul-Haq,290739.0,Texas Super Kings,MI New York,2,3.0,20,1,15.0,1,11,5.0,0,Grand Prairie Stadium,2023-07-17,MLC
+1381367,MJ Santner,502714.0,Texas Super Kings,MI New York,2,2.0,13,0,17.0,0,4,8.5,0,Grand Prairie Stadium,2023-07-17,MLC
+1381367,Mohammad Mohsin,935881.0,Texas Super Kings,MI New York,2,4.0,24,2,36.0,1,8,9.0,0,Grand Prairie Stadium,2023-07-17,MLC
+1381367,DJ Bravo,51439.0,Texas Super Kings,MI New York,2,4.0,25,1,33.0,0,4,8.25,0,Grand Prairie Stadium,2023-07-17,MLC
+1381368,SH Johnson,1123718.0,Los Angeles Knight Riders,San Francisco Unicorns,1,4.0,24,0,21.0,0,12,5.25,0,Grand Prairie Stadium,2023-07-18,MLC
+1381368,Ali Khan,927119.0,Los Angeles Knight Riders,San Francisco Unicorns,1,3.4,24,1,61.0,0,8,16.636363636363637,0,Grand Prairie Stadium,2023-07-18,MLC
+1381368,AD Russell,276298.0,Los Angeles Knight Riders,San Francisco Unicorns,1,3.2,23,1,32.0,0,10,9.6,0,Grand Prairie Stadium,2023-07-18,MLC
+1381368,CA Dry,429927.0,Los Angeles Knight Riders,San Francisco Unicorns,1,1.0,6,0,21.0,0,1,21.0,0,Grand Prairie Stadium,2023-07-18,MLC
+1381368,A Zampa,379504.0,Los Angeles Knight Riders,San Francisco Unicorns,1,4.0,24,3,41.0,0,9,10.25,0,Grand Prairie Stadium,2023-07-18,MLC
+1381368,SP Narine,230558.0,Los Angeles Knight Riders,San Francisco Unicorns,1,4.0,26,1,34.0,0,10,8.5,0,Grand Prairie Stadium,2023-07-18,MLC
+1381368,C le Roux,440894.0,San Francisco Unicorns,Los Angeles Knight Riders,2,4.0,25,0,30.0,0,10,7.5,0,Grand Prairie Stadium,2023-07-18,MLC
+1381368,Haris Rauf,1161606.0,San Francisco Unicorns,Los Angeles Knight Riders,2,4.0,24,1,40.0,1,10,10.0,0,Grand Prairie Stadium,2023-07-18,MLC
+1381368,Shadab Khan,922943.0,San Francisco Unicorns,Los Angeles Knight Riders,2,4.0,24,2,26.0,0,8,6.5,0,Grand Prairie Stadium,2023-07-18,MLC
+1381368,MP Stoinis,325012.0,San Francisco Unicorns,Los Angeles Knight Riders,2,4.0,26,0,39.0,0,8,9.75,0,Grand Prairie Stadium,2023-07-18,MLC
+1381368,Chaitanya Bishnoi,628217.0,San Francisco Unicorns,Los Angeles Knight Riders,2,1.0,6,1,4.0,0,2,4.0,0,Grand Prairie Stadium,2023-07-18,MLC
+1381368,LE Plunkett,19264.0,San Francisco Unicorns,Los Angeles Knight Riders,2,2.0,12,0,27.0,0,4,13.5,0,Grand Prairie Stadium,2023-07-18,MLC
+1381368,CJ Anderson,277662.0,San Francisco Unicorns,Los Angeles Knight Riders,2,1.0,6,1,18.0,0,1,18.0,0,Grand Prairie Stadium,2023-07-18,MLC
+1381369,M Jansen,696401.0,Washington Freedom,Los Angeles Knight Riders,1,4.0,26,2,29.0,0,16,7.25,0,"Church Street Park, Morrisville",2023-07-20,MLC
+1381369,SN Netravalkar,398513.0,Washington Freedom,Los Angeles Knight Riders,1,4.0,24,1,40.0,1,9,10.0,0,"Church Street Park, Morrisville",2023-07-20,MLC
+1381369,A Nortje,481979.0,Washington Freedom,Los Angeles Knight Riders,1,4.0,26,0,31.0,0,13,7.75,0,"Church Street Park, Morrisville",2023-07-20,MLC
+1381369,MC Henriques,5961.0,Washington Freedom,Los Angeles Knight Riders,1,3.0,18,3,26.0,1,8,8.666666666666666,0,"Church Street Park, Morrisville",2023-07-20,MLC
+1381369,DL Piedt,379926.0,Washington Freedom,Los Angeles Knight Riders,1,2.0,12,0,8.0,0,7,4.0,0,"Church Street Park, Morrisville",2023-07-20,MLC
+1381369,AJ Hosein,530812.0,Washington Freedom,Los Angeles Knight Riders,1,3.0,19,1,37.0,1,8,12.333333333333334,0,"Church Street Park, Morrisville",2023-07-20,MLC
+1381369,SH Johnson,1123718.0,Los Angeles Knight Riders,Washington Freedom,2,3.0,18,1,39.0,0,5,13.0,0,"Church Street Park, Morrisville",2023-07-20,MLC
+1381369,Ali Khan,927119.0,Los Angeles Knight Riders,Washington Freedom,2,3.1,20,1,38.0,0,8,12.0,0,"Church Street Park, Morrisville",2023-07-20,MLC
+1381369,A Zampa,379504.0,Los Angeles Knight Riders,Washington Freedom,2,4.0,24,1,36.0,0,5,9.0,0,"Church Street Park, Morrisville",2023-07-20,MLC
+1381369,CA Dry,429927.0,Los Angeles Knight Riders,Washington Freedom,2,4.0,24,0,38.0,0,5,9.5,0,"Church Street Park, Morrisville",2023-07-20,MLC
+1381369,SP Narine,230558.0,Los Angeles Knight Riders,Washington Freedom,2,4.0,25,1,20.0,1,12,5.0,0,"Church Street Park, Morrisville",2023-07-20,MLC
+1381370,Imad Wasim,227758.0,Seattle Orcas,Texas Super Kings,1,4.0,25,1,25.0,0,14,6.25,0,"Church Street Park, Morrisville",2023-07-21,MLC
+1381370,CJ Gannon,326635.0,Seattle Orcas,Texas Super Kings,1,4.0,25,1,30.0,0,8,7.5,0,"Church Street Park, Morrisville",2023-07-21,MLC
+1381370,AJ Tye,459508.0,Seattle Orcas,Texas Super Kings,1,4.0,25,2,15.0,1,15,3.75,0,"Church Street Park, Morrisville",2023-07-21,MLC
+1381370,WD Parnell,265564.0,Seattle Orcas,Texas Super Kings,1,4.0,25,5,20.0,1,17,5.0,0,"Church Street Park, Morrisville",2023-07-21,MLC
+1381370,Harmeet Singh,391128.0,Seattle Orcas,Texas Super Kings,1,3.0,18,0,20.0,0,6,6.666666666666667,0,"Church Street Park, Morrisville",2023-07-21,MLC
+1381370,MD Shanaka,437316.0,Seattle Orcas,Texas Super Kings,1,1.0,7,0,14.0,0,2,14.0,0,"Church Street Park, Morrisville",2023-07-21,MLC
+1381370,DR Sams,826901.0,Texas Super Kings,Seattle Orcas,2,3.0,19,0,15.0,0,9,5.0,0,"Church Street Park, Morrisville",2023-07-21,MLC
+1381370,J Theron,223642.0,Texas Super Kings,Seattle Orcas,2,3.0,18,0,15.0,0,7,5.0,0,"Church Street Park, Morrisville",2023-07-21,MLC
+1381370,Zia-ul-Haq,290739.0,Texas Super Kings,Seattle Orcas,2,3.0,19,0,25.0,0,9,8.333333333333334,0,"Church Street Park, Morrisville",2023-07-21,MLC
+1381370,MJ Santner,502714.0,Texas Super Kings,Seattle Orcas,2,3.0,18,1,15.0,1,8,5.0,0,"Church Street Park, Morrisville",2023-07-21,MLC
+1381370,Mohammad Mohsin,935881.0,Texas Super Kings,Seattle Orcas,2,3.0,18,1,45.0,0,4,15.0,0,"Church Street Park, Morrisville",2023-07-21,MLC
+1381370,DJ Bravo,51439.0,Texas Super Kings,Seattle Orcas,2,1.0,6,0,11.0,0,0,11.0,0,"Church Street Park, Morrisville",2023-07-21,MLC
+1381371,C le Roux,440894.0,San Francisco Unicorns,Washington Freedom,1,3.0,18,0,19.0,0,11,6.333333333333333,0,"Church Street Park, Morrisville",2023-07-22,MLC
+1381371,Shadab Khan,922943.0,San Francisco Unicorns,Washington Freedom,1,4.0,24,0,32.0,0,9,8.0,0,"Church Street Park, Morrisville",2023-07-22,MLC
+1381371,Haris Rauf,1161606.0,San Francisco Unicorns,Washington Freedom,1,4.0,25,3,20.0,2,11,5.0,0,"Church Street Park, Morrisville",2023-07-22,MLC
+1381371,MP Stoinis,325012.0,San Francisco Unicorns,Washington Freedom,1,4.0,25,1,23.0,0,14,5.75,1,"Church Street Park, Morrisville",2023-07-22,MLC
+1381371,LE Plunkett,19264.0,San Francisco Unicorns,Washington Freedom,1,4.0,24,2,24.0,0,8,6.0,0,"Church Street Park, Morrisville",2023-07-22,MLC
+1381371,CJ Anderson,277662.0,San Francisco Unicorns,Washington Freedom,1,1.0,6,0,10.0,0,0,10.0,0,"Church Street Park, Morrisville",2023-07-22,MLC
+1381371,M Jansen,696401.0,Washington Freedom,San Francisco Unicorns,2,4.0,25,1,35.0,0,14,8.75,0,"Church Street Park, Morrisville",2023-07-22,MLC
+1381371,SN Netravalkar,398513.0,Washington Freedom,San Francisco Unicorns,2,3.5,24,6,9.0,2,17,2.3478260869565215,0,"Church Street Park, Morrisville",2023-07-22,MLC
+1381371,A Nortje,481979.0,Washington Freedom,San Francisco Unicorns,2,4.0,24,1,24.0,0,12,6.0,0,"Church Street Park, Morrisville",2023-07-22,MLC
+1381371,AJ Hosein,530812.0,Washington Freedom,San Francisco Unicorns,2,3.0,18,1,14.0,0,9,4.666666666666667,0,"Church Street Park, Morrisville",2023-07-22,MLC
+1381371,MC Henriques,5961.0,Washington Freedom,San Francisco Unicorns,2,3.0,18,0,9.0,0,10,3.0,0,"Church Street Park, Morrisville",2023-07-22,MLC
+1381371,DL Piedt,379926.0,Washington Freedom,San Francisco Unicorns,2,2.0,12,1,6.0,1,6,3.0,0,"Church Street Park, Morrisville",2023-07-22,MLC
+1381372,Ali Khan,927119.0,Los Angeles Knight Riders,Seattle Orcas,1,3.0,20,0,35.0,0,7,11.666666666666666,0,"Church Street Park, Morrisville",2023-07-23,MLC
+1381372,SH Johnson,1123718.0,Los Angeles Knight Riders,Seattle Orcas,1,4.0,25,1,27.0,1,13,6.75,0,"Church Street Park, Morrisville",2023-07-23,MLC
+1381372,A Zampa,379504.0,Los Angeles Knight Riders,Seattle Orcas,1,4.0,25,2,26.0,0,11,6.5,0,"Church Street Park, Morrisville",2023-07-23,MLC
+1381372,AD Russell,276298.0,Los Angeles Knight Riders,Seattle Orcas,1,2.0,13,1,28.0,0,3,14.0,0,"Church Street Park, Morrisville",2023-07-23,MLC
+1381372,SC van Schalkwyk,334621.0,Los Angeles Knight Riders,Seattle Orcas,1,3.0,18,1,22.0,0,4,7.333333333333333,0,"Church Street Park, Morrisville",2023-07-23,MLC
+1381372,SP Narine,230558.0,Los Angeles Knight Riders,Seattle Orcas,1,4.0,25,1,30.0,1,5,7.5,0,"Church Street Park, Morrisville",2023-07-23,MLC
+1381372,Imad Wasim,227758.0,Seattle Orcas,Los Angeles Knight Riders,2,3.1,19,1,25.0,1,7,7.894736842105264,0,"Church Street Park, Morrisville",2023-07-23,MLC
+1381372,CJ Gannon,326635.0,Seattle Orcas,Los Angeles Knight Riders,2,4.0,24,3,13.0,0,16,3.25,0,"Church Street Park, Morrisville",2023-07-23,MLC
+1381372,AJ Tye,459508.0,Seattle Orcas,Los Angeles Knight Riders,2,4.0,27,2,48.0,0,9,12.0,0,"Church Street Park, Morrisville",2023-07-23,MLC
+1381372,WD Parnell,265564.0,Seattle Orcas,Los Angeles Knight Riders,2,4.0,25,1,35.0,0,8,8.75,0,"Church Street Park, Morrisville",2023-07-23,MLC
+1381372,MD Shanaka,437316.0,Seattle Orcas,Los Angeles Knight Riders,2,1.0,6,0,12.0,0,2,12.0,0,"Church Street Park, Morrisville",2023-07-23,MLC
+1381372,Harmeet Singh,391128.0,Seattle Orcas,Los Angeles Knight Riders,2,2.0,13,1,31.0,0,4,15.5,0,"Church Street Park, Morrisville",2023-07-23,MLC
+1381372,GSNFG Jayasuriya,422965.0,Seattle Orcas,Los Angeles Knight Riders,2,1.0,6,0,10.0,0,1,10.0,0,"Church Street Park, Morrisville",2023-07-23,MLC
+1381373,NP Kenjige,1041679.0,MI New York,Washington Freedom,1,4.0,24,1,19.0,0,9,4.75,0,"Church Street Park, Morrisville",2023-07-23,MLC
+1381373,TA Boult,277912.0,MI New York,Washington Freedom,1,4.0,24,1,42.0,1,6,10.5,0,"Church Street Park, Morrisville",2023-07-23,MLC
+1381373,D Wiese,221140.0,MI New York,Washington Freedom,1,4.0,27,1,37.0,0,9,9.25,0,"Church Street Park, Morrisville",2023-07-23,MLC
+1381373,Rashid Khan,793463.0,MI New York,Washington Freedom,1,4.0,24,1,29.0,0,10,7.25,0,"Church Street Park, Morrisville",2023-07-23,MLC
+1381373,KA Pollard,230559.0,MI New York,Washington Freedom,1,4.0,26,2,33.0,0,10,8.25,0,"Church Street Park, Morrisville",2023-07-23,MLC
+1381373,AJ Hosein,530812.0,Washington Freedom,MI New York,2,2.0,12,1,9.0,1,6,4.5,0,"Church Street Park, Morrisville",2023-07-23,MLC
+1381373,SN Netravalkar,398513.0,Washington Freedom,MI New York,2,3.0,18,0,45.0,0,3,15.0,0,"Church Street Park, Morrisville",2023-07-23,MLC
+1381373,M Jansen,696401.0,Washington Freedom,MI New York,2,3.0,19,0,29.0,0,7,9.666666666666666,0,"Church Street Park, Morrisville",2023-07-23,MLC
+1381373,A Nortje,481979.0,Washington Freedom,MI New York,2,3.0,18,0,13.0,0,10,4.333333333333333,0,"Church Street Park, Morrisville",2023-07-23,MLC
+1381373,MC Henriques,5961.0,Washington Freedom,MI New York,2,1.3,9,0,25.0,0,2,16.666666666666668,0,"Church Street Park, Morrisville",2023-07-23,MLC
+1381373,DL Piedt,379926.0,Washington Freedom,MI New York,2,2.0,12,1,14.0,0,5,7.0,0,"Church Street Park, Morrisville",2023-07-23,MLC
+1381373,AJ Pienaar,328160.0,Washington Freedom,MI New York,2,1.0,6,0,22.0,0,2,22.0,0,"Church Street Park, Morrisville",2023-07-23,MLC
+1381374,DR Sams,826901.0,Texas Super Kings,San Francisco Unicorns,1,4.0,24,2,47.0,0,9,11.75,0,"Church Street Park, Morrisville",2023-07-24,MLC
+1381374,J Theron,223642.0,Texas Super Kings,San Francisco Unicorns,1,3.0,18,0,20.0,0,10,6.666666666666667,0,"Church Street Park, Morrisville",2023-07-24,MLC
+1381374,G Coetzee,596010.0,Texas Super Kings,San Francisco Unicorns,1,4.0,25,4,31.0,2,13,7.75,0,"Church Street Park, Morrisville",2023-07-24,MLC
+1381374,MJ Santner,502714.0,Texas Super Kings,San Francisco Unicorns,1,4.0,25,2,30.0,0,8,7.5,0,"Church Street Park, Morrisville",2023-07-24,MLC
+1381374,Mohammad Mohsin,935881.0,Texas Super Kings,San Francisco Unicorns,1,1.0,6,0,9.0,0,2,9.0,0,"Church Street Park, Morrisville",2023-07-24,MLC
+1381374,CP Savage,450881.0,Texas Super Kings,San Francisco Unicorns,1,4.0,26,0,31.0,0,9,7.75,0,"Church Street Park, Morrisville",2023-07-24,MLC
+1381374,C le Roux,440894.0,San Francisco Unicorns,Texas Super Kings,2,3.0,20,1,24.0,1,12,8.0,0,"Church Street Park, Morrisville",2023-07-24,MLC
+1381374,Haris Rauf,1161606.0,San Francisco Unicorns,Texas Super Kings,2,4.0,26,2,32.0,1,14,8.0,1,"Church Street Park, Morrisville",2023-07-24,MLC
+1381374,LE Plunkett,19264.0,San Francisco Unicorns,Texas Super Kings,2,3.1,20,1,20.0,0,7,6.315789473684211,0,"Church Street Park, Morrisville",2023-07-24,MLC
+1381374,Shadab Khan,922943.0,San Francisco Unicorns,Texas Super Kings,2,4.0,24,2,45.0,1,5,11.25,0,"Church Street Park, Morrisville",2023-07-24,MLC
+1381374,Chaitanya Bishnoi,628217.0,San Francisco Unicorns,Texas Super Kings,2,1.0,6,0,6.0,0,0,6.0,0,"Church Street Park, Morrisville",2023-07-24,MLC
+1381374,MP Stoinis,325012.0,San Francisco Unicorns,Texas Super Kings,2,4.0,24,1,40.0,0,7,10.0,0,"Church Street Park, Morrisville",2023-07-24,MLC
+1381375,Imad Wasim,227758.0,Seattle Orcas,MI New York,1,4.0,24,2,23.0,0,14,5.75,0,"Church Street Park, Morrisville",2023-07-25,MLC
+1381375,CJ Gannon,326635.0,Seattle Orcas,MI New York,1,4.0,24,1,36.0,0,5,9.0,0,"Church Street Park, Morrisville",2023-07-25,MLC
+1381375,AJ Tye,459508.0,Seattle Orcas,MI New York,1,4.0,25,1,55.0,0,7,13.75,0,"Church Street Park, Morrisville",2023-07-25,MLC
+1381375,D Pretorius,327830.0,Seattle Orcas,MI New York,1,2.0,12,0,24.0,0,4,12.0,0,"Church Street Park, Morrisville",2023-07-25,MLC
+1381375,GSNFG Jayasuriya,422965.0,Seattle Orcas,MI New York,1,1.0,6,0,8.0,0,3,8.0,0,"Church Street Park, Morrisville",2023-07-25,MLC
+1381375,MD Shanaka,437316.0,Seattle Orcas,MI New York,1,2.0,14,0,23.0,0,3,11.5,0,"Church Street Park, Morrisville",2023-07-25,MLC
+1381375,Harmeet Singh,391128.0,Seattle Orcas,MI New York,1,3.0,18,2,21.0,1,6,7.0,0,"Church Street Park, Morrisville",2023-07-25,MLC
+1381375,TA Boult,277912.0,MI New York,Seattle Orcas,2,4.0,25,4,31.0,2,13,7.75,0,"Church Street Park, Morrisville",2023-07-25,MLC
+1381375,Ehsan Adil,547092.0,MI New York,Seattle Orcas,2,3.0,18,0,30.0,0,6,10.0,0,"Church Street Park, Morrisville",2023-07-25,MLC
+1381375,Rashid Khan,793463.0,MI New York,Seattle Orcas,2,4.0,25,2,41.0,2,11,10.25,1,"Church Street Park, Morrisville",2023-07-25,MLC
+1381375,D Wiese,221140.0,MI New York,Seattle Orcas,2,4.0,24,1,46.0,1,6,11.5,0,"Church Street Park, Morrisville",2023-07-25,MLC
+1381375,NP Kenjige,1041679.0,MI New York,Seattle Orcas,2,3.2,20,1,35.0,0,6,10.5,0,"Church Street Park, Morrisville",2023-07-25,MLC
+1381375,KA Pollard,230559.0,MI New York,Seattle Orcas,2,1.0,6,0,12.0,0,1,12.0,0,"Church Street Park, Morrisville",2023-07-25,MLC
+1381376,M Jansen,696401.0,Washington Freedom,MI New York,1,4.0,27,1,12.0,0,19,3.0,0,Grand Prairie Stadium,2023-07-27,MLC
+1381376,JG Dill,594293.0,Washington Freedom,MI New York,1,4.0,28,1,25.0,1,14,6.25,0,Grand Prairie Stadium,2023-07-27,MLC
+1381376,SN Netravalkar,398513.0,Washington Freedom,MI New York,1,4.0,24,2,25.0,2,10,6.25,0,Grand Prairie Stadium,2023-07-27,MLC
+1381376,A Nortje,481979.0,Washington Freedom,MI New York,1,4.0,25,0,40.0,0,8,10.0,0,Grand Prairie Stadium,2023-07-27,MLC
+1381376,AJ Hosein,530812.0,Washington Freedom,MI New York,1,3.0,18,1,24.0,1,6,8.0,0,Grand Prairie Stadium,2023-07-27,MLC
+1381376,MC Henriques,5961.0,Washington Freedom,MI New York,1,1.0,6,0,13.0,0,2,13.0,0,Grand Prairie Stadium,2023-07-27,MLC
+1381376,TA Boult,277912.0,MI New York,Washington Freedom,2,4.0,24,4,20.0,1,13,5.0,0,Grand Prairie Stadium,2023-07-27,MLC
+1381376,NP Kenjige,1041679.0,MI New York,Washington Freedom,2,4.0,24,2,19.0,1,10,4.75,0,Grand Prairie Stadium,2023-07-27,MLC
+1381376,D Wiese,221140.0,MI New York,Washington Freedom,2,4.0,24,1,25.0,1,11,6.25,0,Grand Prairie Stadium,2023-07-27,MLC
+1381376,Rashid Khan,793463.0,MI New York,Washington Freedom,2,4.0,24,0,28.0,0,11,7.0,0,Grand Prairie Stadium,2023-07-27,MLC
+1381376,Ehsan Adil,547092.0,MI New York,Washington Freedom,2,4.0,24,0,32.0,0,9,8.0,0,Grand Prairie Stadium,2023-07-27,MLC
+1381377,Imad Wasim,227758.0,Seattle Orcas,Texas Super Kings,1,4.0,24,2,23.0,0,12,5.75,0,Grand Prairie Stadium,2023-07-27,MLC
+1381377,CJ Gannon,326635.0,Seattle Orcas,Texas Super Kings,1,2.0,14,1,19.0,0,8,9.5,0,Grand Prairie Stadium,2023-07-27,MLC
+1381377,D Pretorius,327830.0,Seattle Orcas,Texas Super Kings,1,3.0,19,0,19.0,0,6,6.333333333333333,0,Grand Prairie Stadium,2023-07-27,MLC
+1381377,Harmeet Singh,391128.0,Seattle Orcas,Texas Super Kings,1,4.0,24,1,16.0,0,11,4.0,0,Grand Prairie Stadium,2023-07-27,MLC
+1381377,WD Parnell,265564.0,Seattle Orcas,Texas Super Kings,1,3.0,18,0,16.0,0,7,5.333333333333333,0,Grand Prairie Stadium,2023-07-27,MLC
+1381377,AJ Tye,459508.0,Seattle Orcas,Texas Super Kings,1,4.0,26,3,32.0,0,12,8.0,0,Grand Prairie Stadium,2023-07-27,MLC
+1381377,DR Sams,826901.0,Texas Super Kings,Seattle Orcas,2,2.0,12,0,16.0,0,5,8.0,0,Grand Prairie Stadium,2023-07-27,MLC
+1381377,J Theron,223642.0,Texas Super Kings,Seattle Orcas,2,3.0,18,1,20.0,0,9,6.666666666666667,0,Grand Prairie Stadium,2023-07-27,MLC
+1381377,G Coetzee,596010.0,Texas Super Kings,Seattle Orcas,2,2.0,14,0,19.0,0,7,9.5,0,Grand Prairie Stadium,2023-07-27,MLC
+1381377,CP Savage,450881.0,Texas Super Kings,Seattle Orcas,2,3.0,20,0,27.0,0,7,9.0,0,Grand Prairie Stadium,2023-07-27,MLC
+1381377,MJ Santner,502714.0,Texas Super Kings,Seattle Orcas,2,1.0,7,0,9.0,0,2,9.0,1,Grand Prairie Stadium,2023-07-27,MLC
+1381377,Mohammad Mohsin,935881.0,Texas Super Kings,Seattle Orcas,2,3.0,18,0,23.0,0,8,7.666666666666667,0,Grand Prairie Stadium,2023-07-27,MLC
+1381377,Milind Kumar,451947.0,Texas Super Kings,Seattle Orcas,2,1.0,6,0,12.0,0,2,12.0,0,Grand Prairie Stadium,2023-07-27,MLC
+1381378,TA Boult,277912.0,MI New York,Texas Super Kings,1,4.0,25,4,24.0,1,16,6.0,0,Grand Prairie Stadium,2023-07-28,MLC
+1381378,Ehsan Adil,547092.0,MI New York,Texas Super Kings,1,3.0,20,1,22.0,0,10,7.333333333333333,1,Grand Prairie Stadium,2023-07-28,MLC
+1381378,D Wiese,221140.0,MI New York,Texas Super Kings,1,4.0,26,0,38.0,0,9,9.5,0,Grand Prairie Stadium,2023-07-28,MLC
+1381378,Rashid Khan,793463.0,MI New York,Texas Super Kings,1,4.0,26,1,25.0,0,12,6.25,0,Grand Prairie Stadium,2023-07-28,MLC
+1381378,SR Taylor,355359.0,MI New York,Texas Super Kings,1,4.0,24,0,28.0,0,10,7.0,0,Grand Prairie Stadium,2023-07-28,MLC
+1381378,TH David,892749.0,MI New York,Texas Super Kings,1,1.0,8,2,14.0,0,5,14.0,0,Grand Prairie Stadium,2023-07-28,MLC
+1381378,DR Sams,826901.0,Texas Super Kings,MI New York,2,4.0,25,1,31.0,1,10,7.75,0,Grand Prairie Stadium,2023-07-28,MLC
+1381378,J Theron,223642.0,Texas Super Kings,MI New York,2,2.0,13,1,12.0,0,8,6.0,0,Grand Prairie Stadium,2023-07-28,MLC
+1381378,G Coetzee,596010.0,Texas Super Kings,MI New York,2,3.0,18,0,28.0,0,8,9.333333333333334,0,Grand Prairie Stadium,2023-07-28,MLC
+1381378,CP Savage,450881.0,Texas Super Kings,MI New York,2,4.0,26,1,27.0,0,10,6.75,0,Grand Prairie Stadium,2023-07-28,MLC
+1381378,MJ Santner,502714.0,Texas Super Kings,MI New York,2,3.0,18,0,34.0,0,4,11.333333333333334,0,Grand Prairie Stadium,2023-07-28,MLC
+1381378,Mohammad Mohsin,935881.0,Texas Super Kings,MI New York,2,3.0,18,1,30.0,0,5,10.0,0,Grand Prairie Stadium,2023-07-28,MLC
+1381379,TA Boult,277912.0,MI New York,Seattle Orcas,1,4.0,25,3,34.0,1,9,8.5,0,Grand Prairie Stadium,2023-07-30,MLC
+1381379,Jasdeep Singh,772471.0,MI New York,Seattle Orcas,1,2.0,12,0,33.0,0,2,16.5,0,Grand Prairie Stadium,2023-07-30,MLC
+1381379,Rashid Khan,793463.0,MI New York,Seattle Orcas,1,4.0,24,3,9.0,0,19,2.25,0,Grand Prairie Stadium,2023-07-30,MLC
+1381379,SR Taylor,355359.0,MI New York,Seattle Orcas,1,4.0,24,1,25.0,0,10,6.25,0,Grand Prairie Stadium,2023-07-30,MLC
+1381379,D Wiese,221140.0,MI New York,Seattle Orcas,1,4.0,27,1,65.0,0,6,16.25,0,Grand Prairie Stadium,2023-07-30,MLC
+1381379,NP Kenjige,1041679.0,MI New York,Seattle Orcas,1,1.0,6,0,8.0,0,1,8.0,0,Grand Prairie Stadium,2023-07-30,MLC
+1381379,TH David,892749.0,MI New York,Seattle Orcas,1,1.0,6,0,8.0,0,1,8.0,0,Grand Prairie Stadium,2023-07-30,MLC
+1381379,Imad Wasim,227758.0,Seattle Orcas,MI New York,2,2.0,12,1,14.0,1,8,7.0,0,Grand Prairie Stadium,2023-07-30,MLC
+1381379,CJ Gannon,326635.0,Seattle Orcas,MI New York,2,4.0,24,0,36.0,0,10,9.0,0,Grand Prairie Stadium,2023-07-30,MLC
+1381379,D Pretorius,327830.0,Seattle Orcas,MI New York,2,3.0,19,0,47.0,0,3,15.666666666666666,0,Grand Prairie Stadium,2023-07-30,MLC
+1381379,WD Parnell,265564.0,Seattle Orcas,MI New York,2,2.0,13,1,22.0,0,7,11.0,0,Grand Prairie Stadium,2023-07-30,MLC
+1381379,AJ Tye,459508.0,Seattle Orcas,MI New York,2,2.0,12,0,27.0,0,6,13.5,0,Grand Prairie Stadium,2023-07-30,MLC
+1381379,Harmeet Singh,391128.0,Seattle Orcas,MI New York,2,3.0,21,0,37.0,0,11,12.333333333333334,0,Grand Prairie Stadium,2023-07-30,MLC
+1432726,TA Boult,277912.0,MI New York,Seattle Orcas,1,4.0,24,3,25.0,0,11,6.25,0,"Church Street Park, Morrisville",2024-07-05,MLC
+1432726,Ehsan Adil,547092.0,MI New York,Seattle Orcas,1,4.0,25,1,16.0,0,16,4.0,0,"Church Street Park, Morrisville",2024-07-05,MLC
+1432726,A Nortje,481979.0,MI New York,Seattle Orcas,1,4.0,27,1,20.0,0,16,5.0,0,"Church Street Park, Morrisville",2024-07-05,MLC
+1432726,Rashid Khan,793463.0,MI New York,Seattle Orcas,1,4.0,24,3,22.0,1,13,5.5,0,"Church Street Park, Morrisville",2024-07-05,MLC
+1432726,SR Taylor,355359.0,MI New York,Seattle Orcas,1,1.0,6,0,13.0,0,1,13.0,0,"Church Street Park, Morrisville",2024-07-05,MLC
+1432726,KA Pollard,230559.0,MI New York,Seattle Orcas,1,2.1,13,2,11.0,0,6,5.0769230769230775,1,"Church Street Park, Morrisville",2024-07-05,MLC
+1432726,Imad Wasim,227758.0,Seattle Orcas,MI New York,2,1.0,6,0,4.0,0,2,4.0,0,"Church Street Park, Morrisville",2024-07-05,MLC
+1432726,N Burger,971349.0,Seattle Orcas,MI New York,2,4.0,27,1,28.0,0,15,7.0,0,"Church Street Park, Morrisville",2024-07-05,MLC
+1432726,CJ Gannon,326635.0,Seattle Orcas,MI New York,2,3.0,20,2,40.0,0,9,13.333333333333334,0,"Church Street Park, Morrisville",2024-07-05,MLC
+1432726,Zaman Khan,1272475.0,Seattle Orcas,MI New York,2,3.2,22,1,17.0,0,12,5.1,0,"Church Street Park, Morrisville",2024-07-05,MLC
+1432726,MG Bracewell,326968.0,Seattle Orcas,MI New York,2,2.0,14,0,14.0,0,5,7.0,0,"Church Street Park, Morrisville",2024-07-05,MLC
+1432726,Shubham Ranjane,554701.0,Seattle Orcas,MI New York,2,1.0,7,0,6.0,0,3,6.0,0,"Church Street Park, Morrisville",2024-07-05,MLC
+1432727,Zia-ul-Haq,290739.0,Texas Super Kings,Los Angeles Knight Riders,1,3.0,19,2,16.0,1,11,5.333333333333333,0,"Grand Prairie Stadium, Dallas",2024-07-05,MLC
+1432727,Naveen-ul-Haq,793447.0,Texas Super Kings,Los Angeles Knight Riders,1,4.0,26,0,31.0,0,15,7.75,0,"Grand Prairie Stadium, Dallas",2024-07-05,MLC
+1432727,G Coetzee,596010.0,Texas Super Kings,Los Angeles Knight Riders,1,4.0,25,1,28.0,0,12,7.0,0,"Grand Prairie Stadium, Dallas",2024-07-05,MLC
+1432727,AM Hardie,1124283.0,Texas Super Kings,Los Angeles Knight Riders,1,3.0,19,2,26.0,0,8,8.666666666666666,0,"Grand Prairie Stadium, Dallas",2024-07-05,MLC
+1432727,Mohammad Mohsin,935881.0,Texas Super Kings,Los Angeles Knight Riders,1,3.0,18,0,22.0,0,5,7.333333333333333,0,"Grand Prairie Stadium, Dallas",2024-07-05,MLC
+1432727,MP Stoinis,325012.0,Texas Super Kings,Los Angeles Knight Riders,1,3.0,18,2,37.0,0,8,12.333333333333334,0,"Grand Prairie Stadium, Dallas",2024-07-05,MLC
+1432727,SH Johnson,1123718.0,Los Angeles Knight Riders,Texas Super Kings,2,4.0,25,2,18.0,1,14,4.5,0,"Grand Prairie Stadium, Dallas",2024-07-05,MLC
+1432727,CA Dry,429927.0,Los Angeles Knight Riders,Texas Super Kings,2,2.0,12,0,17.0,0,4,8.5,0,"Grand Prairie Stadium, Dallas",2024-07-05,MLC
+1432727,AD Russell,276298.0,Los Angeles Knight Riders,Texas Super Kings,2,3.0,19,0,25.0,0,7,8.333333333333334,0,"Grand Prairie Stadium, Dallas",2024-07-05,MLC
+1432727,Shakib Al Hasan,56143.0,Los Angeles Knight Riders,Texas Super Kings,2,3.0,19,1,32.0,0,4,10.666666666666666,0,"Grand Prairie Stadium, Dallas",2024-07-05,MLC
+1432727,SP Narine,230558.0,Los Angeles Knight Riders,Texas Super Kings,2,4.0,24,1,23.0,1,8,5.75,0,"Grand Prairie Stadium, Dallas",2024-07-05,MLC
+1432727,Ali Khan,927119.0,Los Angeles Knight Riders,Texas Super Kings,2,4.0,26,4,33.0,1,9,8.25,0,"Grand Prairie Stadium, Dallas",2024-07-05,MLC
+1432728,M Jansen,696401.0,Washington Freedom,MI New York,1,4.0,27,1,43.0,0,16,10.75,0,"Church Street Park, Morrisville",2024-07-06,MLC
+1432728,SN Netravalkar,398513.0,Washington Freedom,MI New York,1,4.0,24,3,24.0,1,11,6.0,0,"Church Street Park, Morrisville",2024-07-06,MLC
+1432728,JG Dill,594293.0,Washington Freedom,MI New York,1,4.0,24,3,33.0,0,8,8.25,0,"Church Street Park, Morrisville",2024-07-06,MLC
+1432728,LH Ferguson,493773.0,Washington Freedom,MI New York,1,4.0,24,1,28.0,0,14,7.0,0,"Church Street Park, Morrisville",2024-07-06,MLC
+1432728,GJ Maxwell,325026.0,Washington Freedom,MI New York,1,3.0,18,1,17.0,1,7,5.666666666666667,0,"Church Street Park, Morrisville",2024-07-06,MLC
+1432728,AJ Hosein,530812.0,Washington Freedom,MI New York,1,1.0,6,0,9.0,0,2,9.0,0,"Church Street Park, Morrisville",2024-07-06,MLC
+1432728,TA Boult,277912.0,MI New York,Washington Freedom,2,2.0,12,0,3.0,0,9,1.5,0,"Church Street Park, Morrisville",2024-07-06,MLC
+1432728,Ehsan Adil,547092.0,MI New York,Washington Freedom,2,2.0,13,1,14.0,0,9,7.0,1,"Church Street Park, Morrisville",2024-07-06,MLC
+1432728,Rashid Khan,793463.0,MI New York,Washington Freedom,2,2.0,12,0,12.0,0,6,6.0,0,"Church Street Park, Morrisville",2024-07-06,MLC
+1432728,A Nortje,481979.0,MI New York,Washington Freedom,2,1.0,7,0,22.0,0,2,22.0,0,"Church Street Park, Morrisville",2024-07-06,MLC
+1432728,NP Kenjige,1041679.0,MI New York,Washington Freedom,2,0.4,4,0,3.0,0,2,4.5,0,"Church Street Park, Morrisville",2024-07-06,MLC
+1432729,BL Couch,1219972.0,San Francisco Unicorns,Los Angeles Knight Riders,1,4.0,25,2,24.0,0,11,6.0,0,"Grand Prairie Stadium, Dallas",2024-07-07,MLC
+1432729,Haris Rauf,1161606.0,San Francisco Unicorns,Los Angeles Knight Riders,1,4.0,26,2,38.0,0,14,9.5,0,"Grand Prairie Stadium, Dallas",2024-07-07,MLC
+1432729,MW Short,605575.0,San Francisco Unicorns,Los Angeles Knight Riders,1,4.0,24,0,38.0,0,6,9.5,0,"Grand Prairie Stadium, Dallas",2024-07-07,MLC
+1432729,Abrar Ahmed,734459.0,San Francisco Unicorns,Los Angeles Knight Riders,1,4.0,24,1,33.0,0,7,8.25,0,"Grand Prairie Stadium, Dallas",2024-07-07,MLC
+1432729,LE Plunkett,19264.0,San Francisco Unicorns,Los Angeles Knight Riders,1,4.0,25,1,29.0,1,7,7.25,0,"Grand Prairie Stadium, Dallas",2024-07-07,MLC
+1432729,SH Johnson,1123718.0,Los Angeles Knight Riders,San Francisco Unicorns,2,4.0,26,3,36.0,0,12,9.0,0,"Grand Prairie Stadium, Dallas",2024-07-07,MLC
+1432729,CA Dry,429927.0,Los Angeles Knight Riders,San Francisco Unicorns,2,2.0,12,0,19.0,0,4,9.5,0,"Grand Prairie Stadium, Dallas",2024-07-07,MLC
+1432729,Shakib Al Hasan,56143.0,Los Angeles Knight Riders,San Francisco Unicorns,2,2.0,12,0,27.0,0,4,13.5,0,"Grand Prairie Stadium, Dallas",2024-07-07,MLC
+1432729,AD Russell,276298.0,Los Angeles Knight Riders,San Francisco Unicorns,2,1.0,6,0,17.0,0,2,17.0,0,"Grand Prairie Stadium, Dallas",2024-07-07,MLC
+1432729,SP Narine,230558.0,Los Angeles Knight Riders,San Francisco Unicorns,2,4.0,27,1,39.0,1,8,9.75,0,"Grand Prairie Stadium, Dallas",2024-07-07,MLC
+1432729,Ali Khan,927119.0,Los Angeles Knight Riders,San Francisco Unicorns,2,2.2,14,0,26.0,0,2,11.142857142857142,1,"Grand Prairie Stadium, Dallas",2024-07-07,MLC
+1432730,M Jansen,696401.0,Washington Freedom,Texas Super Kings,1,4.0,27,1,47.0,0,12,11.75,0,"Church Street Park, Morrisville",2024-07-08,MLC
+1432730,SN Netravalkar,398513.0,Washington Freedom,Texas Super Kings,1,4.0,25,2,33.0,0,13,8.25,0,"Church Street Park, Morrisville",2024-07-08,MLC
+1432730,AJ Hosein,530812.0,Washington Freedom,Texas Super Kings,1,3.0,18,1,32.0,1,4,10.666666666666666,0,"Church Street Park, Morrisville",2024-07-08,MLC
+1432730,LH Ferguson,493773.0,Washington Freedom,Texas Super Kings,1,4.0,25,0,34.0,0,11,8.5,0,"Church Street Park, Morrisville",2024-07-08,MLC
+1432730,GJ Maxwell,325026.0,Washington Freedom,Texas Super Kings,1,2.0,12,0,19.0,0,3,9.5,0,"Church Street Park, Morrisville",2024-07-08,MLC
+1432730,JG Dill,594293.0,Washington Freedom,Texas Super Kings,1,3.0,22,1,35.0,0,6,11.666666666666666,0,"Church Street Park, Morrisville",2024-07-08,MLC
+1432730,Zia-ul-Haq,290739.0,Texas Super Kings,Washington Freedom,2,2.0,13,0,19.0,0,8,9.5,0,"Church Street Park, Morrisville",2024-07-08,MLC
+1432730,Naveen-ul-Haq,793447.0,Texas Super Kings,Washington Freedom,2,1.0,7,0,18.0,0,1,18.0,1,"Church Street Park, Morrisville",2024-07-08,MLC
+1432730,AM Hardie,1124283.0,Texas Super Kings,Washington Freedom,2,1.0,7,0,24.0,0,1,24.0,0,"Church Street Park, Morrisville",2024-07-08,MLC
+1432731,N Burger,971349.0,Seattle Orcas,Los Angeles Knight Riders,1,4.0,27,0,51.0,0,11,12.75,0,"Grand Prairie Stadium, Dallas",2024-07-09,MLC
+1432731,CJ Gannon,326635.0,Seattle Orcas,Los Angeles Knight Riders,1,4.0,25,1,26.0,0,14,6.5,0,"Grand Prairie Stadium, Dallas",2024-07-09,MLC
+1432731,Zaman Khan,1272475.0,Seattle Orcas,Los Angeles Knight Riders,1,4.0,24,2,24.0,0,7,6.0,0,"Grand Prairie Stadium, Dallas",2024-07-09,MLC
+1432731,Imad Wasim,227758.0,Seattle Orcas,Los Angeles Knight Riders,1,4.0,24,0,28.0,0,9,7.0,0,"Grand Prairie Stadium, Dallas",2024-07-09,MLC
+1432731,Harmeet Singh,391128.0,Seattle Orcas,Los Angeles Knight Riders,1,4.0,24,2,34.0,0,6,8.5,0,"Grand Prairie Stadium, Dallas",2024-07-09,MLC
+1432731,SH Johnson,1123718.0,Los Angeles Knight Riders,Seattle Orcas,2,4.0,25,1,28.0,1,12,7.0,0,"Grand Prairie Stadium, Dallas",2024-07-09,MLC
+1432731,CA Dry,429927.0,Los Angeles Knight Riders,Seattle Orcas,2,3.0,18,0,29.0,0,5,9.666666666666666,0,"Grand Prairie Stadium, Dallas",2024-07-09,MLC
+1432731,SP Narine,230558.0,Los Angeles Knight Riders,Seattle Orcas,2,4.0,24,0,25.0,0,11,6.25,0,"Grand Prairie Stadium, Dallas",2024-07-09,MLC
+1432731,AD Russell,276298.0,Los Angeles Knight Riders,Seattle Orcas,2,3.0,20,0,33.0,0,8,11.0,0,"Grand Prairie Stadium, Dallas",2024-07-09,MLC
+1432731,Shakib Al Hasan,56143.0,Los Angeles Knight Riders,Seattle Orcas,2,2.0,12,0,23.0,0,1,11.5,0,"Grand Prairie Stadium, Dallas",2024-07-09,MLC
+1432731,Ali Khan,927119.0,Los Angeles Knight Riders,Seattle Orcas,2,3.5,23,0,28.0,0,5,7.304347826086956,0,"Grand Prairie Stadium, Dallas",2024-07-09,MLC
+1432732,Zia-ul-Haq,290739.0,Texas Super Kings,San Francisco Unicorns,1,3.0,21,2,41.0,1,8,13.666666666666666,0,"Church Street Park, Morrisville",2024-07-10,MLC
+1432732,Naveen-ul-Haq,793447.0,Texas Super Kings,San Francisco Unicorns,1,3.0,18,1,21.0,0,8,7.0,0,"Church Street Park, Morrisville",2024-07-10,MLC
+1432732,MJ Santner,502714.0,Texas Super Kings,San Francisco Unicorns,1,3.0,18,1,15.0,0,11,5.0,1,"Church Street Park, Morrisville",2024-07-10,MLC
+1432732,DJ Bravo,51439.0,Texas Super Kings,San Francisco Unicorns,1,3.0,19,2,20.0,0,8,6.666666666666667,0,"Church Street Park, Morrisville",2024-07-10,MLC
+1432732,Mohammad Mohsin,935881.0,Texas Super Kings,San Francisco Unicorns,1,3.5,23,4,13.0,3,11,3.391304347826087,0,"Church Street Park, Morrisville",2024-07-10,MLC
+1432732,AM Hardie,1124283.0,Texas Super Kings,San Francisco Unicorns,1,2.0,15,0,15.0,0,7,7.5,0,"Church Street Park, Morrisville",2024-07-10,MLC
+1432732,Haris Rauf,1161606.0,San Francisco Unicorns,Texas Super Kings,2,3.5,23,1,24.0,0,8,6.260869565217391,0,"Church Street Park, Morrisville",2024-07-10,MLC
+1432732,BL Couch,1219972.0,San Francisco Unicorns,Texas Super Kings,2,2.0,14,0,25.0,0,4,12.5,0,"Church Street Park, Morrisville",2024-07-10,MLC
+1432732,LE Plunkett,19264.0,San Francisco Unicorns,Texas Super Kings,2,2.0,13,1,35.0,0,3,17.5,0,"Church Street Park, Morrisville",2024-07-10,MLC
+1432732,Abrar Ahmed,734459.0,San Francisco Unicorns,Texas Super Kings,2,3.0,19,0,26.0,0,7,8.666666666666666,0,"Church Street Park, Morrisville",2024-07-10,MLC
+1432732,Hassan Khan,959789.0,San Francisco Unicorns,Texas Super Kings,2,2.0,12,2,16.0,0,4,8.0,0,"Church Street Park, Morrisville",2024-07-10,MLC
+1432733,M Jansen,696401.0,Washington Freedom,Seattle Orcas,1,4.0,26,1,28.0,0,16,7.0,0,"Grand Prairie Stadium, Dallas",2024-07-11,MLC
+1432733,SN Netravalkar,398513.0,Washington Freedom,Seattle Orcas,1,3.4,22,3,18.0,1,13,4.909090909090909,0,"Grand Prairie Stadium, Dallas",2024-07-11,MLC
+1432733,GJ Maxwell,325026.0,Washington Freedom,Seattle Orcas,1,4.0,24,0,17.0,0,8,4.25,0,"Grand Prairie Stadium, Dallas",2024-07-11,MLC
+1432733,LH Ferguson,493773.0,Washington Freedom,Seattle Orcas,1,4.0,27,4,26.0,2,15,6.5,0,"Grand Prairie Stadium, Dallas",2024-07-11,MLC
+1432733,IG Holland,334340.0,Washington Freedom,Seattle Orcas,1,4.0,24,1,34.0,0,7,8.5,0,"Grand Prairie Stadium, Dallas",2024-07-11,MLC
+1432733,Imad Wasim,227758.0,Seattle Orcas,Washington Freedom,2,4.0,24,1,31.0,0,10,7.75,1,"Grand Prairie Stadium, Dallas",2024-07-11,MLC
+1432733,N Burger,971349.0,Seattle Orcas,Washington Freedom,2,4.0,26,2,27.0,0,11,6.75,0,"Grand Prairie Stadium, Dallas",2024-07-11,MLC
+1432733,CJ Gannon,326635.0,Seattle Orcas,Washington Freedom,2,3.0,18,1,27.0,1,4,9.0,0,"Grand Prairie Stadium, Dallas",2024-07-11,MLC
+1432733,Harmeet Singh,391128.0,Seattle Orcas,Washington Freedom,2,4.0,24,1,15.0,0,13,3.75,0,"Grand Prairie Stadium, Dallas",2024-07-11,MLC
+1432733,Zaman Khan,1272475.0,Seattle Orcas,Washington Freedom,2,3.2,24,0,26.0,0,9,7.8,0,"Grand Prairie Stadium, Dallas",2024-07-11,MLC
+1432736,M Jansen,696401.0,Washington Freedom,Los Angeles Knight Riders,1,4.0,25,0,25.0,0,12,6.25,0,"Church Street Park, Morrisville",2024-07-14,MLC
+1432736,SN Netravalkar,398513.0,Washington Freedom,Los Angeles Knight Riders,1,3.4,22,4,35.0,2,12,9.545454545454545,0,"Church Street Park, Morrisville",2024-07-14,MLC
+1432736,GJ Maxwell,325026.0,Washington Freedom,Los Angeles Knight Riders,1,4.0,25,3,15.0,1,15,3.75,0,"Church Street Park, Morrisville",2024-07-14,MLC
+1432736,LH Ferguson,493773.0,Washington Freedom,Los Angeles Knight Riders,1,4.0,26,2,31.0,1,16,7.75,0,"Church Street Park, Morrisville",2024-07-14,MLC
+1432736,R Ravindra,959767.0,Washington Freedom,Los Angeles Knight Riders,1,2.0,12,1,7.0,1,6,3.5,0,"Church Street Park, Morrisville",2024-07-14,MLC
+1432736,IG Holland,334340.0,Washington Freedom,Los Angeles Knight Riders,1,1.0,6,0,11.0,0,2,11.0,0,"Church Street Park, Morrisville",2024-07-14,MLC
+1432736,SH Johnson,1123718.0,Los Angeles Knight Riders,Washington Freedom,2,4.0,27,1,33.0,0,14,8.25,0,"Church Street Park, Morrisville",2024-07-14,MLC
+1432736,AD Russell,276298.0,Los Angeles Knight Riders,Washington Freedom,2,2.0,13,0,19.0,0,8,9.5,0,"Church Street Park, Morrisville",2024-07-14,MLC
+1432736,Shakib Al Hasan,56143.0,Los Angeles Knight Riders,Washington Freedom,2,3.0,19,0,29.0,0,7,9.666666666666666,0,"Church Street Park, Morrisville",2024-07-14,MLC
+1432736,Ali Khan,927119.0,Los Angeles Knight Riders,Washington Freedom,2,1.0,6,0,13.0,0,1,13.0,0,"Church Street Park, Morrisville",2024-07-14,MLC
+1432736,SP Narine,230558.0,Los Angeles Knight Riders,Washington Freedom,2,4.0,25,0,17.0,0,12,4.25,0,"Church Street Park, Morrisville",2024-07-14,MLC
+1432736,SC van Schalkwyk,334621.0,Los Angeles Knight Riders,Washington Freedom,2,2.0,12,1,17.0,1,3,8.5,0,"Church Street Park, Morrisville",2024-07-14,MLC
+1432737,TA Boult,277912.0,MI New York,Texas Super Kings,1,4.0,26,2,48.0,1,7,12.0,0,"Grand Prairie Stadium, Dallas",2024-07-14,MLC
+1432737,K Rabada,550215.0,MI New York,Texas Super Kings,1,4.0,24,0,35.0,0,6,8.75,0,"Grand Prairie Stadium, Dallas",2024-07-14,MLC
+1432737,SR Taylor,355359.0,MI New York,Texas Super Kings,1,2.0,12,0,20.0,0,5,10.0,0,"Grand Prairie Stadium, Dallas",2024-07-14,MLC
+1432737,Rashid Khan,793463.0,MI New York,Texas Super Kings,1,4.0,25,1,17.0,1,10,4.25,0,"Grand Prairie Stadium, Dallas",2024-07-14,MLC
+1432737,NP Kenjige,1041679.0,MI New York,Texas Super Kings,1,3.0,20,1,35.0,0,6,11.666666666666666,0,"Grand Prairie Stadium, Dallas",2024-07-14,MLC
+1432737,Ehsan Adil,547092.0,MI New York,Texas Super Kings,1,2.0,12,1,11.0,0,4,5.5,0,"Grand Prairie Stadium, Dallas",2024-07-14,MLC
+1432737,KA Pollard,230559.0,MI New York,Texas Super Kings,1,1.0,6,0,8.0,0,0,8.0,0,"Grand Prairie Stadium, Dallas",2024-07-14,MLC
+1432737,Zia-ul-Haq,290739.0,Texas Super Kings,MI New York,2,4.0,25,2,15.0,1,15,3.75,0,"Grand Prairie Stadium, Dallas",2024-07-14,MLC
+1432737,MP Stoinis,325012.0,Texas Super Kings,MI New York,2,4.0,26,4,50.0,1,10,12.5,0,"Grand Prairie Stadium, Dallas",2024-07-14,MLC
+1432737,Naveen-ul-Haq,793447.0,Texas Super Kings,MI New York,2,4.0,26,0,46.0,0,11,11.5,0,"Grand Prairie Stadium, Dallas",2024-07-14,MLC
+1432737,DJ Bravo,51439.0,Texas Super Kings,MI New York,2,4.0,27,0,32.0,0,14,8.0,0,"Grand Prairie Stadium, Dallas",2024-07-14,MLC
+1432737,Mohammad Mohsin,935881.0,Texas Super Kings,MI New York,2,4.0,24,1,18.0,1,9,4.5,0,"Grand Prairie Stadium, Dallas",2024-07-14,MLC
+1432738,Imad Wasim,227758.0,Seattle Orcas,San Francisco Unicorns,1,4.0,24,2,28.0,1,12,7.0,0,"Church Street Park, Morrisville",2024-07-15,MLC
+1432738,N Burger,971349.0,Seattle Orcas,San Francisco Unicorns,1,4.0,26,0,38.0,0,11,9.5,0,"Church Street Park, Morrisville",2024-07-15,MLC
+1432738,CJ Gannon,326635.0,Seattle Orcas,San Francisco Unicorns,1,4.0,25,3,26.0,1,13,6.5,0,"Church Street Park, Morrisville",2024-07-15,MLC
+1432738,Zaman Khan,1272475.0,Seattle Orcas,San Francisco Unicorns,1,4.0,25,1,39.0,0,7,9.75,0,"Church Street Park, Morrisville",2024-07-15,MLC
+1432738,Harmeet Singh,391128.0,Seattle Orcas,San Francisco Unicorns,1,4.0,25,1,34.0,0,7,8.5,0,"Church Street Park, Morrisville",2024-07-15,MLC
+1432738,C le Roux,440894.0,San Francisco Unicorns,Seattle Orcas,2,1.4,10,0,11.0,0,5,6.6000000000000005,0,"Church Street Park, Morrisville",2024-07-15,MLC
+1432738,MW Short,605575.0,San Francisco Unicorns,Seattle Orcas,2,3.0,18,1,15.0,0,9,5.0,0,"Church Street Park, Morrisville",2024-07-15,MLC
+1432738,CJ Anderson,277662.0,San Francisco Unicorns,Seattle Orcas,2,3.2,21,1,21.0,0,7,6.3,1,"Church Street Park, Morrisville",2024-07-15,MLC
+1432738,PJ Cummins,489889.0,San Francisco Unicorns,Seattle Orcas,2,4.0,26,1,35.0,0,9,8.75,0,"Church Street Park, Morrisville",2024-07-15,MLC
+1432738,Haris Rauf,1161606.0,San Francisco Unicorns,Seattle Orcas,2,4.0,25,0,30.0,0,10,7.5,0,"Church Street Park, Morrisville",2024-07-15,MLC
+1432738,LE Plunkett,19264.0,San Francisco Unicorns,Seattle Orcas,2,4.0,24,3,26.0,1,13,6.5,0,"Church Street Park, Morrisville",2024-07-15,MLC
+1432739,NP Kenjige,1041679.0,MI New York,Washington Freedom,1,4.0,24,0,32.0,0,11,8.0,0,"Grand Prairie Stadium, Dallas",2024-07-16,MLC
+1432739,TA Boult,277912.0,MI New York,Washington Freedom,1,4.0,26,0,42.0,0,13,10.5,0,"Grand Prairie Stadium, Dallas",2024-07-16,MLC
+1432739,Rashid Khan,793463.0,MI New York,Washington Freedom,1,4.0,25,2,39.0,1,13,9.75,0,"Grand Prairie Stadium, Dallas",2024-07-16,MLC
+1432739,Ehsan Adil,547092.0,MI New York,Washington Freedom,1,2.0,14,0,24.0,0,6,12.0,0,"Grand Prairie Stadium, Dallas",2024-07-16,MLC
+1432739,R Shepherd,677077.0,MI New York,Washington Freedom,1,4.0,29,1,31.0,0,15,7.75,0,"Grand Prairie Stadium, Dallas",2024-07-16,MLC
+1432739,KA Pollard,230559.0,MI New York,Washington Freedom,1,2.0,12,2,14.0,0,4,7.0,0,"Grand Prairie Stadium, Dallas",2024-07-16,MLC
+1432739,M Jansen,696401.0,Washington Freedom,MI New York,2,4.0,28,2,18.0,0,20,4.5,1,"Grand Prairie Stadium, Dallas",2024-07-16,MLC
+1432739,Jasdeep Singh,772471.0,Washington Freedom,MI New York,2,3.0,19,3,14.0,1,14,4.666666666666667,0,"Grand Prairie Stadium, Dallas",2024-07-16,MLC
+1432739,LH Ferguson,493773.0,Washington Freedom,MI New York,2,2.0,12,2,16.0,0,6,8.0,0,"Grand Prairie Stadium, Dallas",2024-07-16,MLC
+1432739,GJ Maxwell,325026.0,Washington Freedom,MI New York,2,2.3,16,2,20.0,1,10,8.0,1,"Grand Prairie Stadium, Dallas",2024-07-16,MLC
+1432739,IG Holland,334340.0,Washington Freedom,MI New York,2,1.0,6,1,11.0,0,3,11.0,0,"Grand Prairie Stadium, Dallas",2024-07-16,MLC
+1432739,R Ravindra,959767.0,Washington Freedom,MI New York,2,1.0,6,0,5.0,0,4,5.0,0,"Grand Prairie Stadium, Dallas",2024-07-16,MLC
+1432740,SH Johnson,1123718.0,Los Angeles Knight Riders,Seattle Orcas,1,4.0,24,1,43.0,0,9,10.75,0,"Church Street Park, Morrisville",2024-07-17,MLC
+1432740,AD Russell,276298.0,Los Angeles Knight Riders,Seattle Orcas,1,4.0,24,1,15.0,1,10,3.75,0,"Church Street Park, Morrisville",2024-07-17,MLC
+1432740,CA Dry,429927.0,Los Angeles Knight Riders,Seattle Orcas,1,2.0,14,1,8.0,0,13,4.0,1,"Church Street Park, Morrisville",2024-07-17,MLC
+1432740,Ali Khan,927119.0,Los Angeles Knight Riders,Seattle Orcas,1,4.0,24,0,25.0,0,8,6.25,0,"Church Street Park, Morrisville",2024-07-17,MLC
+1432740,Waqar Salamkheil,1108490.0,Los Angeles Knight Riders,Seattle Orcas,1,2.0,12,0,26.0,0,3,13.0,0,"Church Street Park, Morrisville",2024-07-17,MLC
+1432740,SP Narine,230558.0,Los Angeles Knight Riders,Seattle Orcas,1,4.0,24,1,21.0,1,12,5.25,0,"Church Street Park, Morrisville",2024-07-17,MLC
+1432740,L Ngidi,542023.0,Seattle Orcas,Los Angeles Knight Riders,2,3.1,19,1,24.0,1,9,7.578947368421053,0,"Church Street Park, Morrisville",2024-07-17,MLC
+1432740,CJ Gannon,326635.0,Seattle Orcas,Los Angeles Knight Riders,2,4.0,24,2,35.0,0,6,8.75,0,"Church Street Park, Morrisville",2024-07-17,MLC
+1432740,Harmeet Singh,391128.0,Seattle Orcas,Los Angeles Knight Riders,2,4.0,24,2,27.0,0,10,6.75,0,"Church Street Park, Morrisville",2024-07-17,MLC
+1432740,KMA Paul,677081.0,Seattle Orcas,Los Angeles Knight Riders,2,4.0,25,1,25.0,0,11,6.25,0,"Church Street Park, Morrisville",2024-07-17,MLC
+1432740,MG Bracewell,326968.0,Seattle Orcas,Los Angeles Knight Riders,2,3.0,18,0,19.0,0,5,6.333333333333333,0,"Church Street Park, Morrisville",2024-07-17,MLC
+1432740,Ali Sheikh,1193309.0,Seattle Orcas,Los Angeles Knight Riders,2,1.0,6,0,10.0,0,1,10.0,0,"Church Street Park, Morrisville",2024-07-17,MLC
+1432741,NP Kenjige,1041679.0,MI New York,San Francisco Unicorns,1,4.0,24,2,13.0,1,17,3.25,0,"Grand Prairie Stadium, Dallas",2024-07-18,MLC
+1432741,TA Boult,277912.0,MI New York,San Francisco Unicorns,1,4.0,27,2,35.0,0,12,8.75,0,"Grand Prairie Stadium, Dallas",2024-07-18,MLC
+1432741,R Shepherd,677077.0,MI New York,San Francisco Unicorns,1,4.0,27,1,31.0,0,11,7.75,0,"Grand Prairie Stadium, Dallas",2024-07-18,MLC
+1432741,KA Pollard,230559.0,MI New York,San Francisco Unicorns,1,2.0,13,0,14.0,0,3,7.0,0,"Grand Prairie Stadium, Dallas",2024-07-18,MLC
+1432741,Rashid Khan,793463.0,MI New York,San Francisco Unicorns,1,4.0,24,1,26.0,1,8,6.5,0,"Grand Prairie Stadium, Dallas",2024-07-18,MLC
+1432741,Sunny Patel,290719.0,MI New York,San Francisco Unicorns,1,2.0,13,0,28.0,0,4,14.0,0,"Grand Prairie Stadium, Dallas",2024-07-18,MLC
+1432741,BL Couch,1219972.0,San Francisco Unicorns,MI New York,2,4.0,27,2,27.0,1,15,6.75,0,"Grand Prairie Stadium, Dallas",2024-07-18,MLC
+1432741,MW Short,605575.0,San Francisco Unicorns,MI New York,2,4.0,26,3,27.0,1,16,6.75,0,"Grand Prairie Stadium, Dallas",2024-07-18,MLC
+1432741,PJ Cummins,489889.0,San Francisco Unicorns,MI New York,2,4.0,26,0,27.0,0,12,6.75,0,"Grand Prairie Stadium, Dallas",2024-07-18,MLC
+1432741,Haris Rauf,1161606.0,San Francisco Unicorns,MI New York,2,4.0,25,1,35.0,1,7,8.75,0,"Grand Prairie Stadium, Dallas",2024-07-18,MLC
+1432741,LE Plunkett,19264.0,San Francisco Unicorns,MI New York,2,1.5,11,0,15.0,0,2,8.181818181818182,0,"Grand Prairie Stadium, Dallas",2024-07-18,MLC
+1432741,Hassan Khan,959789.0,San Francisco Unicorns,MI New York,2,2.0,12,1,9.0,0,8,4.5,0,"Grand Prairie Stadium, Dallas",2024-07-18,MLC
+1432741,CJ Anderson,277662.0,San Francisco Unicorns,MI New York,2,0.1,1,0,4.0,0,0,24.0,0,"Grand Prairie Stadium, Dallas",2024-07-18,MLC
+1432742,Zia-ul-Haq,290739.0,Texas Super Kings,Washington Freedom,1,4.0,24,0,41.0,0,6,10.25,0,"Grand Prairie Stadium, Dallas",2024-07-19,MLC
+1432742,MP Stoinis,325012.0,Texas Super Kings,Washington Freedom,1,4.0,26,0,54.0,0,8,13.5,0,"Grand Prairie Stadium, Dallas",2024-07-19,MLC
+1432742,Noor Ahmad,1182529.0,Texas Super Kings,Washington Freedom,1,4.0,24,3,38.0,1,8,9.5,0,"Grand Prairie Stadium, Dallas",2024-07-19,MLC
+1432742,DJ Bravo,51439.0,Texas Super Kings,Washington Freedom,1,4.0,27,2,40.0,1,12,10.0,0,"Grand Prairie Stadium, Dallas",2024-07-19,MLC
+1432742,Mohammad Mohsin,935881.0,Texas Super Kings,Washington Freedom,1,4.0,24,0,31.0,0,5,7.75,0,"Grand Prairie Stadium, Dallas",2024-07-19,MLC
+1432742,M Jansen,696401.0,Washington Freedom,Texas Super Kings,2,3.0,20,0,32.0,0,11,10.666666666666666,0,"Grand Prairie Stadium, Dallas",2024-07-19,MLC
+1432742,Jasdeep Singh,772471.0,Washington Freedom,Texas Super Kings,2,4.0,26,3,25.0,0,14,6.25,0,"Grand Prairie Stadium, Dallas",2024-07-19,MLC
+1432742,GJ Maxwell,325026.0,Washington Freedom,Texas Super Kings,2,4.0,24,3,42.0,1,10,10.5,0,"Grand Prairie Stadium, Dallas",2024-07-19,MLC
+1432742,MA Aponso,429748.0,Washington Freedom,Texas Super Kings,2,1.0,6,0,22.0,0,2,22.0,0,"Grand Prairie Stadium, Dallas",2024-07-19,MLC
+1432742,LH Ferguson,493773.0,Washington Freedom,Texas Super Kings,2,4.0,26,0,25.0,0,16,6.25,1,"Grand Prairie Stadium, Dallas",2024-07-19,MLC
+1432742,R Ravindra,959767.0,Washington Freedom,Texas Super Kings,2,3.5,23,4,16.0,1,14,4.173913043478261,0,"Grand Prairie Stadium, Dallas",2024-07-19,MLC
+1432743,C le Roux,440894.0,San Francisco Unicorns,Seattle Orcas,1,3.0,18,2,14.0,1,9,4.666666666666667,0,"Grand Prairie Stadium, Dallas",2024-07-20,MLC
+1432743,MW Short,605575.0,San Francisco Unicorns,Seattle Orcas,1,4.0,24,0,24.0,0,12,6.0,0,"Grand Prairie Stadium, Dallas",2024-07-20,MLC
+1432743,BL Couch,1219972.0,San Francisco Unicorns,Seattle Orcas,1,1.2,9,1,21.0,0,5,15.75,1,"Grand Prairie Stadium, Dallas",2024-07-20,MLC
+1432743,Haris Rauf,1161606.0,San Francisco Unicorns,Seattle Orcas,1,4.0,24,0,32.0,0,7,8.0,0,"Grand Prairie Stadium, Dallas",2024-07-20,MLC
+1432743,PJ Cummins,489889.0,San Francisco Unicorns,Seattle Orcas,1,4.0,24,0,45.0,0,6,11.25,0,"Grand Prairie Stadium, Dallas",2024-07-20,MLC
+1432743,CJ Anderson,277662.0,San Francisco Unicorns,Seattle Orcas,1,1.4,10,1,11.0,1,3,6.6000000000000005,0,"Grand Prairie Stadium, Dallas",2024-07-20,MLC
+1432743,Hassan Khan,959789.0,San Francisco Unicorns,Seattle Orcas,1,2.0,12,3,5.0,1,7,2.5,0,"Grand Prairie Stadium, Dallas",2024-07-20,MLC
+1432743,L Ngidi,542023.0,Seattle Orcas,San Francisco Unicorns,2,2.0,12,0,32.0,0,3,16.0,0,"Grand Prairie Stadium, Dallas",2024-07-20,MLC
+1432743,Imad Wasim,227758.0,Seattle Orcas,San Francisco Unicorns,2,4.0,24,1,20.0,0,16,5.0,0,"Grand Prairie Stadium, Dallas",2024-07-20,MLC
+1432743,CJ Gannon,326635.0,Seattle Orcas,San Francisco Unicorns,2,2.0,12,1,29.0,0,2,14.5,0,"Grand Prairie Stadium, Dallas",2024-07-20,MLC
+1432743,KMA Paul,677081.0,Seattle Orcas,San Francisco Unicorns,2,3.0,19,0,33.0,0,5,11.0,0,"Grand Prairie Stadium, Dallas",2024-07-20,MLC
+1432743,Harmeet Singh,391128.0,Seattle Orcas,San Francisco Unicorns,2,3.2,21,2,39.0,0,9,11.7,0,"Grand Prairie Stadium, Dallas",2024-07-20,MLC
+1432744,R Ugarkar,1441684.0,MI New York,Los Angeles Knight Riders,1,3.0,20,0,15.0,0,8,5.0,0,"Grand Prairie Stadium, Dallas",2024-07-21,MLC
+1432744,TA Boult,277912.0,MI New York,Los Angeles Knight Riders,1,4.0,25,2,38.0,1,14,9.5,0,"Grand Prairie Stadium, Dallas",2024-07-21,MLC
+1432744,NP Kenjige,1041679.0,MI New York,Los Angeles Knight Riders,1,4.0,24,2,22.0,0,12,5.5,0,"Grand Prairie Stadium, Dallas",2024-07-21,MLC
+1432744,Rashid Khan,793463.0,MI New York,Los Angeles Knight Riders,1,4.0,24,3,22.0,3,14,5.5,0,"Grand Prairie Stadium, Dallas",2024-07-21,MLC
+1432744,R Shepherd,677077.0,MI New York,Los Angeles Knight Riders,1,4.0,26,1,30.0,1,11,7.5,0,"Grand Prairie Stadium, Dallas",2024-07-21,MLC
+1432744,KA Pollard,230559.0,MI New York,Los Angeles Knight Riders,1,0.1,1,1,0.0,0,1,0.0,1,"Grand Prairie Stadium, Dallas",2024-07-21,MLC
+1432744,SH Johnson,1123718.0,Los Angeles Knight Riders,MI New York,2,4.0,24,1,35.0,1,10,8.75,0,"Grand Prairie Stadium, Dallas",2024-07-21,MLC
+1432744,J Little,928067.0,Los Angeles Knight Riders,MI New York,2,4.0,27,0,34.0,0,12,8.5,0,"Grand Prairie Stadium, Dallas",2024-07-21,MLC
+1432744,CA Dry,429927.0,Los Angeles Knight Riders,MI New York,2,3.0,20,1,15.0,0,15,5.0,0,"Grand Prairie Stadium, Dallas",2024-07-21,MLC
+1432744,SP Narine,230558.0,Los Angeles Knight Riders,MI New York,2,4.0,25,2,24.0,0,14,6.0,0,"Grand Prairie Stadium, Dallas",2024-07-21,MLC
+1432744,AD Russell,276298.0,Los Angeles Knight Riders,MI New York,2,1.0,6,1,12.0,0,2,12.0,0,"Grand Prairie Stadium, Dallas",2024-07-21,MLC
+1432744,Ali Khan,927119.0,Los Angeles Knight Riders,MI New York,2,1.0,7,1,10.0,1,3,10.0,0,"Grand Prairie Stadium, Dallas",2024-07-21,MLC
+1432745,Hassan Khan,959789.0,San Francisco Unicorns,Washington Freedom,1,4.0,24,0,27.0,0,7,6.75,0,"Grand Prairie Stadium, Dallas",2024-07-22,MLC
+1432745,MJ Henry,506612.0,San Francisco Unicorns,Washington Freedom,1,2.3,17,0,41.0,0,5,16.4,0,"Grand Prairie Stadium, Dallas",2024-07-22,MLC
+1432745,Haris Rauf,1161606.0,San Francisco Unicorns,Washington Freedom,1,2.0,12,0,20.0,0,4,10.0,0,"Grand Prairie Stadium, Dallas",2024-07-22,MLC
+1432745,J Drysdale,1427052.0,San Francisco Unicorns,Washington Freedom,1,3.0,21,0,39.0,0,8,13.0,0,"Grand Prairie Stadium, Dallas",2024-07-22,MLC
+1432745,Tajinder Singh,1079860.0,San Francisco Unicorns,Washington Freedom,1,2.0,13,0,26.0,0,2,13.0,0,"Grand Prairie Stadium, Dallas",2024-07-22,MLC
+1432745,CJ Anderson,277662.0,San Francisco Unicorns,Washington Freedom,1,2.0,13,2,20.0,0,5,10.0,0,"Grand Prairie Stadium, Dallas",2024-07-22,MLC
+1432745,AJ Hosein,530812.0,Washington Freedom,San Francisco Unicorns,2,3.0,19,1,39.0,1,4,13.0,0,"Grand Prairie Stadium, Dallas",2024-07-22,MLC
+1432745,SN Netravalkar,398513.0,Washington Freedom,San Francisco Unicorns,2,3.0,18,0,36.0,0,7,12.0,0,"Grand Prairie Stadium, Dallas",2024-07-22,MLC
+1432745,J Edwards,1088610.0,Washington Freedom,San Francisco Unicorns,2,2.0,12,0,35.0,0,3,17.5,0,"Grand Prairie Stadium, Dallas",2024-07-22,MLC
+1432745,AJ Tye,459508.0,Washington Freedom,San Francisco Unicorns,2,3.0,18,3,41.0,0,7,13.666666666666666,0,"Grand Prairie Stadium, Dallas",2024-07-22,MLC
+1432745,R Ravindra,959767.0,Washington Freedom,San Francisco Unicorns,2,1.4,10,0,11.0,0,2,6.6000000000000005,0,"Grand Prairie Stadium, Dallas",2024-07-22,MLC
+1432745,JG Dill,594293.0,Washington Freedom,San Francisco Unicorns,2,1.0,6,0,13.0,0,1,13.0,0,"Grand Prairie Stadium, Dallas",2024-07-22,MLC
+1432746,A Desai,1441681.0,Seattle Orcas,Texas Super Kings,1,4.0,26,2,30.0,1,15,7.5,0,"Grand Prairie Stadium, Dallas",2024-07-23,MLC
+1432746,CJ Gannon,326635.0,Seattle Orcas,Texas Super Kings,1,3.0,18,1,29.0,0,7,9.666666666666666,0,"Grand Prairie Stadium, Dallas",2024-07-23,MLC
+1432746,N Burger,971349.0,Seattle Orcas,Texas Super Kings,1,4.0,25,1,42.0,1,10,10.5,0,"Grand Prairie Stadium, Dallas",2024-07-23,MLC
+1432746,KMA Paul,677081.0,Seattle Orcas,Texas Super Kings,1,3.0,19,2,18.0,0,11,6.0,0,"Grand Prairie Stadium, Dallas",2024-07-23,MLC
+1432746,Ali Sheikh,1193309.0,Seattle Orcas,Texas Super Kings,1,3.0,18,0,30.0,0,4,10.0,0,"Grand Prairie Stadium, Dallas",2024-07-23,MLC
+1432746,MG Bracewell,326968.0,Seattle Orcas,Texas Super Kings,1,3.0,18,1,25.0,0,9,8.333333333333334,0,"Grand Prairie Stadium, Dallas",2024-07-23,MLC
+1432746,OEG Baartman,535353.0,Texas Super Kings,Seattle Orcas,2,4.0,27,3,20.0,0,18,5.0,0,"Grand Prairie Stadium, Dallas",2024-07-23,MLC
+1432746,MP Stoinis,325012.0,Texas Super Kings,Seattle Orcas,2,3.0,19,0,25.0,0,7,8.333333333333334,0,"Grand Prairie Stadium, Dallas",2024-07-23,MLC
+1432746,CAH Stevenson,953793.0,Texas Super Kings,Seattle Orcas,2,1.0,8,0,14.0,0,4,14.0,0,"Grand Prairie Stadium, Dallas",2024-07-23,MLC
+1432746,Noor Ahmad,1182529.0,Texas Super Kings,Seattle Orcas,2,4.0,25,2,19.0,2,15,4.75,0,"Grand Prairie Stadium, Dallas",2024-07-23,MLC
+1432746,CP Savage,450881.0,Texas Super Kings,Seattle Orcas,2,3.0,18,2,23.0,1,7,7.666666666666667,0,"Grand Prairie Stadium, Dallas",2024-07-23,MLC
+1432746,MJ Santner,502714.0,Texas Super Kings,Seattle Orcas,2,3.0,19,1,27.0,0,7,9.0,0,"Grand Prairie Stadium, Dallas",2024-07-23,MLC
+1432746,Zia Shahzad,1160390.0,Texas Super Kings,Seattle Orcas,2,2.0,12,0,10.0,0,3,5.0,0,"Grand Prairie Stadium, Dallas",2024-07-23,MLC
+1432747,Zia-ul-Haq,290739.0,Texas Super Kings,MI New York,1,4.0,26,1,27.0,0,14,6.75,0,"Grand Prairie Stadium, Dallas",2024-07-24,MLC
+1432747,MP Stoinis,325012.0,Texas Super Kings,MI New York,1,4.0,25,2,18.0,1,14,4.5,0,"Grand Prairie Stadium, Dallas",2024-07-24,MLC
+1432747,Noor Ahmad,1182529.0,Texas Super Kings,MI New York,1,4.0,25,1,37.0,1,6,9.25,0,"Grand Prairie Stadium, Dallas",2024-07-24,MLC
+1432747,CP Savage,450881.0,Texas Super Kings,MI New York,1,1.0,7,0,8.0,0,2,8.0,0,"Grand Prairie Stadium, Dallas",2024-07-24,MLC
+1432747,Mohammad Mohsin,935881.0,Texas Super Kings,MI New York,1,4.0,24,0,26.0,0,11,6.5,0,"Grand Prairie Stadium, Dallas",2024-07-24,MLC
+1432747,DJ Bravo,51439.0,Texas Super Kings,MI New York,1,1.3,10,1,21.0,0,3,14.0,0,"Grand Prairie Stadium, Dallas",2024-07-24,MLC
+1432747,AM Hardie,1124283.0,Texas Super Kings,MI New York,1,1.3,11,2,22.0,0,6,14.666666666666666,0,"Grand Prairie Stadium, Dallas",2024-07-24,MLC
+1432747,TA Boult,277912.0,MI New York,Texas Super Kings,2,4.0,26,0,50.0,0,10,12.5,0,"Grand Prairie Stadium, Dallas",2024-07-24,MLC
+1432747,R Ugarkar,1441684.0,MI New York,Texas Super Kings,2,2.3,15,0,19.0,0,4,7.6,0,"Grand Prairie Stadium, Dallas",2024-07-24,MLC
+1432747,Rashid Khan,793463.0,MI New York,Texas Super Kings,2,4.0,24,0,22.0,0,9,5.5,0,"Grand Prairie Stadium, Dallas",2024-07-24,MLC
+1432747,R Shepherd,677077.0,MI New York,Texas Super Kings,2,3.0,19,0,26.0,0,2,8.666666666666666,0,"Grand Prairie Stadium, Dallas",2024-07-24,MLC
+1432747,KA Pollard,230559.0,MI New York,Texas Super Kings,2,2.0,13,0,26.0,0,1,13.0,0,"Grand Prairie Stadium, Dallas",2024-07-24,MLC
+1432747,NP Kenjige,1041679.0,MI New York,Texas Super Kings,2,3.0,18,1,24.0,0,4,8.0,0,"Grand Prairie Stadium, Dallas",2024-07-24,MLC
+1432748,M Jansen,696401.0,Washington Freedom,San Francisco Unicorns,1,4.0,29,3,46.0,1,16,11.5,0,"Grand Prairie Stadium, Dallas",2024-07-25,MLC
+1432748,SN Netravalkar,398513.0,Washington Freedom,San Francisco Unicorns,1,4.0,24,2,23.0,0,13,5.75,0,"Grand Prairie Stadium, Dallas",2024-07-25,MLC
+1432748,LH Ferguson,493773.0,Washington Freedom,San Francisco Unicorns,1,3.2,21,1,24.0,0,10,7.199999999999999,0,"Grand Prairie Stadium, Dallas",2024-07-25,MLC
+1432748,R Ravindra,959767.0,Washington Freedom,San Francisco Unicorns,1,2.4,17,4,11.0,2,12,4.125,3,"Grand Prairie Stadium, Dallas",2024-07-25,MLC
+1432748,GJ Maxwell,325026.0,Washington Freedom,San Francisco Unicorns,1,4.0,25,0,26.0,0,11,6.5,0,"Grand Prairie Stadium, Dallas",2024-07-25,MLC
+1432748,IG Holland,334340.0,Washington Freedom,San Francisco Unicorns,1,1.0,6,0,15.0,0,1,15.0,0,"Grand Prairie Stadium, Dallas",2024-07-25,MLC
+1432748,C le Roux,440894.0,San Francisco Unicorns,Washington Freedom,2,3.0,18,0,32.0,0,8,10.666666666666666,0,"Grand Prairie Stadium, Dallas",2024-07-25,MLC
+1432748,PJ Cummins,489889.0,San Francisco Unicorns,Washington Freedom,2,3.0,19,1,19.0,0,11,6.333333333333333,1,"Grand Prairie Stadium, Dallas",2024-07-25,MLC
+1432748,Haris Rauf,1161606.0,San Francisco Unicorns,Washington Freedom,2,2.3,15,0,31.0,0,4,12.4,0,"Grand Prairie Stadium, Dallas",2024-07-25,MLC
+1432748,Hassan Khan,959789.0,San Francisco Unicorns,Washington Freedom,2,4.0,24,2,32.0,0,12,8.0,0,"Grand Prairie Stadium, Dallas",2024-07-25,MLC
+1432748,J Drysdale,1427052.0,San Francisco Unicorns,Washington Freedom,2,2.0,13,0,18.0,0,6,9.0,0,"Grand Prairie Stadium, Dallas",2024-07-25,MLC
+1432748,CJ Anderson,277662.0,San Francisco Unicorns,Washington Freedom,2,1.0,7,0,15.0,0,2,15.0,0,"Grand Prairie Stadium, Dallas",2024-07-25,MLC
+1432749,Zia-ul-Haq,290739.0,Texas Super Kings,San Francisco Unicorns,1,3.0,19,0,37.0,0,6,12.333333333333334,0,"Grand Prairie Stadium, Dallas",2024-07-26,MLC
+1432749,MP Stoinis,325012.0,Texas Super Kings,San Francisco Unicorns,1,3.0,19,1,34.0,0,5,11.333333333333334,0,"Grand Prairie Stadium, Dallas",2024-07-26,MLC
+1432749,OEG Baartman,535353.0,Texas Super Kings,San Francisco Unicorns,1,4.0,25,1,41.0,0,7,10.25,0,"Grand Prairie Stadium, Dallas",2024-07-26,MLC
+1432749,Noor Ahmad,1182529.0,Texas Super Kings,San Francisco Unicorns,1,4.0,25,3,27.0,1,13,6.75,0,"Grand Prairie Stadium, Dallas",2024-07-26,MLC
+1432749,AM Hardie,1124283.0,Texas Super Kings,San Francisco Unicorns,1,1.0,9,0,13.0,0,4,13.0,0,"Grand Prairie Stadium, Dallas",2024-07-26,MLC
+1432749,CP Savage,450881.0,Texas Super Kings,San Francisco Unicorns,1,1.0,7,0,8.0,0,3,8.0,0,"Grand Prairie Stadium, Dallas",2024-07-26,MLC
+1432749,Mohammad Mohsin,935881.0,Texas Super Kings,San Francisco Unicorns,1,4.0,25,1,37.0,1,5,9.25,0,"Grand Prairie Stadium, Dallas",2024-07-26,MLC
+1432749,C le Roux,440894.0,San Francisco Unicorns,Texas Super Kings,2,4.0,25,1,39.0,0,8,9.75,0,"Grand Prairie Stadium, Dallas",2024-07-26,MLC
+1432749,PJ Cummins,489889.0,San Francisco Unicorns,Texas Super Kings,2,4.0,25,0,50.0,0,3,12.5,0,"Grand Prairie Stadium, Dallas",2024-07-26,MLC
+1432749,Haris Rauf,1161606.0,San Francisco Unicorns,Texas Super Kings,2,4.0,25,0,43.0,0,6,10.75,0,"Grand Prairie Stadium, Dallas",2024-07-26,MLC
+1432749,Hassan Khan,959789.0,San Francisco Unicorns,Texas Super Kings,2,4.0,24,1,25.0,0,8,6.25,0,"Grand Prairie Stadium, Dallas",2024-07-26,MLC
+1432749,J Drysdale,1427052.0,San Francisco Unicorns,Texas Super Kings,2,4.0,26,2,33.0,0,10,8.25,0,"Grand Prairie Stadium, Dallas",2024-07-26,MLC
+1432750,C le Roux,440894.0,San Francisco Unicorns,Washington Freedom,1,4.0,24,0,40.0,0,9,10.0,0,"Grand Prairie Stadium, Dallas",2024-07-28,MLC
+1432750,PJ Cummins,489889.0,San Francisco Unicorns,Washington Freedom,1,4.0,24,2,35.0,0,11,8.75,0,"Grand Prairie Stadium, Dallas",2024-07-28,MLC
+1432750,Hassan Khan,959789.0,San Francisco Unicorns,Washington Freedom,1,4.0,24,1,42.0,0,8,10.5,0,"Grand Prairie Stadium, Dallas",2024-07-28,MLC
+1432750,Haris Rauf,1161606.0,San Francisco Unicorns,Washington Freedom,1,4.0,24,1,41.0,1,5,10.25,0,"Grand Prairie Stadium, Dallas",2024-07-28,MLC
+1432750,J Drysdale,1427052.0,San Francisco Unicorns,Washington Freedom,1,4.0,28,1,47.0,0,10,11.75,0,"Grand Prairie Stadium, Dallas",2024-07-28,MLC
+1432750,M Jansen,696401.0,Washington Freedom,San Francisco Unicorns,2,4.0,24,3,28.0,2,14,7.0,1,"Grand Prairie Stadium, Dallas",2024-07-28,MLC
+1432750,SN Netravalkar,398513.0,Washington Freedom,San Francisco Unicorns,2,4.0,25,1,33.0,0,11,8.25,0,"Grand Prairie Stadium, Dallas",2024-07-28,MLC
+1432750,GJ Maxwell,325026.0,Washington Freedom,San Francisco Unicorns,2,2.0,12,1,14.0,0,4,7.0,0,"Grand Prairie Stadium, Dallas",2024-07-28,MLC
+1432750,AJ Tye,459508.0,Washington Freedom,San Francisco Unicorns,2,2.0,12,2,12.0,1,6,6.0,0,"Grand Prairie Stadium, Dallas",2024-07-28,MLC
+1432750,R Ravindra,959767.0,Washington Freedom,San Francisco Unicorns,2,4.0,24,3,23.0,2,14,5.75,0,"Grand Prairie Stadium, Dallas",2024-07-28,MLC
