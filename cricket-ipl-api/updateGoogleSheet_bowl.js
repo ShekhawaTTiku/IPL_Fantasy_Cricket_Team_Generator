@@ -5,7 +5,7 @@ const fs = require("fs");
 const csv = require("csv-parser");
 const getTodayIPLMatchIds = require("./fetchMatchId");
 
-const csvFilePath = "./squadData_ipl25_updated.csv";
+const csvFilePath = "./map.csv";
 const doc = new GoogleSpreadsheet(process.env.GOOGLE_SHEET_ID_BOWL);
 
 async function authenticateGoogleSheet() {
