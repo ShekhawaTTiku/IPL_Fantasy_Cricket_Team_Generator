@@ -8,7 +8,7 @@ credits,role,dream11_name,team,cricbuzz_name,key_cricbuzz,key_cricinfo
 7.5,BOWL,Noor Ahmad,CSK,Noor Ahmad,15452.0,1182529
 6.0,BOWL,Anshul Kamboj,CSK,Anshul Kamboj,,1175428
 7.0,BOWL,Nathan Ellis,CSK,Nathan Ellis,15480.0,826915
-6.5,BOWL,Mukesh Choudhary,CSK,Mukesh Choudhary,,1125688
+6.5,BOWL,Mukesh Choudhary,CSK,Mukesh Choudhary,13184.0,1125688
 9.0,BAT,Ruturaj Gaikwad,CSK,Ruturaj Gaikwad,11813.0,1060380
 6.0,BOWL,Kamlesh Nagarkoti,CSK,Kamlesh Nagarkoti,12092.0,1070188
 8.0,BAT,Rachin Ravindra,CSK,Rachin Ravindra,11177.0,959767
@@ -18,7 +18,7 @@ credits,role,dream11_name,team,cricbuzz_name,key_cricbuzz,key_cricinfo
 7.5,ALL,Sam Curran,CSK,Sam Curran,10420.0,662973
 6.5,BOWL,Shreyas Gopal,CSK,Shreyas Gopal,9746.0,344580
 7.0,BAT,Deepak Hooda,CSK,Deepak Hooda,9427.0,497121
-8.0,WK,Devon Conway,CSK,Devon Conway,,379140
+8.0,WK,Devon Conway,CSK,Devon Conway,9838.0,379140
 6.5,ALL,Jamie Overton,CSK,Jamie Overton,8512.0,510530
 6.5,BAT,Vijay Shankar,CSK,Vijay Shankar,8204.0,477021
 8.0,ALL,Ravichandran Ashwin,CSK,Ravichandran Ashwin,1593.0,26421
@@ -98,7 +98,7 @@ credits,role,dream11_name,team,cricbuzz_name,key_cricbuzz,key_cricinfo
 6.5,BOWL,Shamar Joseph,LSG,Shamar Joseph,,1356971
 7.5,BOWL,Mayank Yadav,LSG,Mayank Yadav,8292.0,1292563
 6.0,ALL,Arshin Kulkarni,LSG,Arshin Kulkarni,51378.0,1403153
-7.0,BOWL,Akash Deep,LSG,Akash Deep,,1176959
+7.0,BOWL,Akash Deep,LSG,Akash Deep,14726.0,1176959
 6.0,BOWL,Akash Singh,LSG,Akash Singh,14696.0,1175458
 5.0,ALL,Yuvraj Chaudhary,LSG,Yuvraj Chaudhary,,1175463
 8.0,BOWL,Ravi Bishnoi,LSG,Ravi Bishnoi,14659.0,1175441
@@ -107,7 +107,7 @@ credits,role,dream11_name,team,cricbuzz_name,key_cricbuzz,key_cricinfo
 5.5,BOWL,Rajvardhan Hangargekar,LSG,Rajvardhan Hangargekar,14599.0,1175429
 7.0,BAT,Ayush Badoni,LSG,Ayush Badoni,13907.0,1151270
 5.5,WK,Aryan Juyal,LSG,Aryan Juyal,,1130300
-7.0,BOWL,Mohsin Khan,LSG,Mohsin Khan,10226.0,1132005
+7.0,BOWL,Mohsin Khan,LSG,Mohsin Khan,9781.0,1132005
 6.5,BAT,Matthew Breetzke,LSG,Matthew Breetzke,13089.0,595267
 6.0,BOWL,Manimaran Siddharth,LSG,Manimaran Siddharth,12930.0,1151286
 9.0,WK,Rishabh Pant,LSG,Rishabh Pant,10744.0,931581
@@ -140,7 +140,7 @@ credits,role,dream11_name,team,cricbuzz_name,key_cricbuzz,key_cricinfo
 8.0,BOWL,Deepak Chahar,MI,Deepak Chahar,7836.0,447261
 6.5,BOWL,Karn Sharma,MI,Karn Sharma,1844.0,30288
 9.0,BAT,Rohit Sharma,MI,Rohit Sharma,576.0,34102
-6.0,ALL,Musheer Khan,PBKS,Musheer Khan,10226.0,1316430
+6.0,ALL,Musheer Khan,PBKS,Musheer Khan,9781.0,1316430
 5.0,BAT,Harnoor Singh Pannu,PBKS,Harnoor Singh Pannu,,1292496
 5.5,BAT,Pyla Avinash,PBKS,Pyla Avinash,,1324449
 5.5,ALL,Suryansh Shedge,PBKS,Suryansh Shedge,14922.0,1339698
@@ -157,7 +157,7 @@ credits,role,dream11_name,team,cricbuzz_name,key_cricbuzz,key_cricinfo
 6.5,BOWL,Xavier Bartlett,PBKS,Xavier Bartlett,,1050545
 7.5,BAT,Shashank Singh,PBKS,Shashank Singh,10919.0,377534
 7.5,BOWL,Lockie Ferguson,PBKS,Lockie Ferguson,10692.0,493773
-7.5,WK,Josh Inglis,PBKS,Josh Inglis,,662235
+7.5,WK,Josh Inglis,PBKS,Josh Inglis,10637.0,662235
 7.0,BOWL,Vyshak Vijaykumar,PBKS,Vijaykumar Vyshak,10486.0,777815
 6.0,BOWL,Pravin Dubey,PBKS,Praveen Dubey,10484.0,777515
 6.5,BOWL,Yash Thakur,PBKS,Yash Thakur,8683.0,1070196
@@ -166,7 +166,7 @@ credits,role,dream11_name,team,cricbuzz_name,key_cricbuzz,key_cricinfo
 8.5,BOWL,Yuzvendra Chahal,PBKS,Yuzvendra Chahal,7910.0,430246
 8.5,ALL,Glenn Maxwell,PBKS,Glenn Maxwell,7662.0,325026
 5.0,BOWL,Abhinandan Singh,RCB,Abhinandan Singh,1447073.0,1449085
-5.5,BAT,Swastik Chikara,RCB,Swastik Chikara,,1403198
+5.5,BAT,Swastik Chikara,RCB,Swastik Chikara,52418.0,1403198
 6.0,ALL,Mohit Rathee,RCB,Mohit Rathee,,1349361
 6.0,BOWL,Suyash Sharma,RCB,Suyash Sharma,36487.0,1350792
 7.0,BAT,Jacob Bethell,RCB,Jacob Bethell,19636.0,1194959
@@ -195,10 +195,10 @@ credits,role,dream11_name,team,cricbuzz_name,key_cricbuzz,key_cricinfo
 5.5,BAT,Shubham Dubey,RR,Shubham Dubey,19328.0,1252585
 6.5,ALL,Yudhvir Singh Charak,RR,Yudhvir Singh,10896.0,1206052
 7.5,BOWL,Maheesh Theekshana,RR,Maheesh Theekshana,18504.0,1138316
-7.5,WK,Dhruv Jurel,RR,Dhruv Jurel,,1175488
+7.5,WK,Dhruv Jurel,RR,Dhruv Jurel,14691.0,1175488
 6.0,BOWL,Kumar Kartikeya,RR,Kumar Kartikeya,14190.0,1159843
 9.0,BAT,Yashasvi Jaiswal,RR,Yashasvi Jaiswal,13940.0,1151278
-7.0,BOWL,FazalHaq Farooqi,RR,Fazalhaq Farooqi,,974175
+7.0,BOWL,FazalHaq Farooqi,RR,Fazalhaq Farooqi,14282.0,974175
 8.0,ALL,Riyan Parag,RR,Riyan Parag,12305.0,1079434
 7.5,BOWL,Tushar Deshpande,RR,Tushar Deshpande,11307.0,822553
 8.0,BOWL,Jofra Archer,RR,Jofra Archer,11540.0,669855
@@ -215,7 +215,7 @@ credits,role,dream11_name,team,cricbuzz_name,key_cricbuzz,key_cricinfo
 6.0,BOWL,Simarjeet- Singh,SRH,Simarjeet Singh,14163.0,1159722
 6.5,BOWL,Rahul Chahar,SRH,Rahul Chahar,12087.0,1064812
 8.5,ALL,Abhishek Sharma,SRH,Abhishek Sharma,12086.0,1070183
-7.0,BAT,Kamindu Mendis,SRH,Kamindu Mendis,,784373
+7.0,BAT,Kamindu Mendis,SRH,Kamindu Mendis,10940.0,784373
 7.0,ALL,Wiaan Mulder,SRH,Wiaan Mulder,11200.0,698189
 5.5,BOWL,Zeeshan Ansari,SRH,Zeeshan Ansari,10946.0,942371
 8.0,WK,Ishan Kishan,SRH,Ishan Kishan,10276.0,720471
