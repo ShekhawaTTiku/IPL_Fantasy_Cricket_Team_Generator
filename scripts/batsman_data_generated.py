@@ -70,11 +70,11 @@ def calculate_stats(df):
     balls_faced_per_match = total_balls / matches if matches > 0 else 0
 
     return {
-        "batting_average": round(batting_average, 2),
-        "strike_rate": round(strike_rate, 2),
-        "boundaries_per_match": round(boundaries_per_match, 2),
-        "runs_per_match": round(runs_per_match, 2),
-        "balls_faced_per_match": round(balls_faced_per_match, 2)
+        "batting_average": round(batting_average, 4),
+        "strike_rate": round(strike_rate, 42),
+        "boundaries_per_match": round(boundaries_per_match, 4),
+        "runs_per_match": round(runs_per_match, 4),
+        "balls_faced_per_match": round(balls_faced_per_match, 4)
     }
 
 def process_player_row(player_input, sheet_df):
@@ -86,7 +86,7 @@ def process_player_row(player_input, sheet_df):
     season = str(player_input['season'])
     venue = player_input['venue']
 
-    player_df = sheet_df[sheet_df['batter_id'] == player_id].copy()
+    player_df = sheet_df[sheet_df['batter_cricinfo_id'] == player_id].copy()
 
     if player_df.empty:
         return {**player_input,
