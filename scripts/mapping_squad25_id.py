@@ -101,7 +101,7 @@ def update_player_ids():
                 print(f"Updated {player_name} with ID: {player_id}")
     
     # Save the updated data
-    updated_file_path = 'data/register_data/squadData_ipl25_updated.csv'
+    updated_file_path = 'data/register_data/squadData_ipl25_updated2.csv'
     squad_data.to_csv(updated_file_path, index=False)
     
     print(f"Updated {updated_count} player IDs in squadData_ipl25.csv")
