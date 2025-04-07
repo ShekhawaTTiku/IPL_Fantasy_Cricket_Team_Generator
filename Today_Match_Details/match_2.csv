@@ -1,33 +1,33 @@
-Player Name,Team,Opponent,Venue,Toss Info,Innings
-Quinton de Kock (wk),KKR,SRH,"Eden Gardens, Kolkata",Sunrisers Hyderabad won the toss and opt to bowl,1
-Sunil Narine,KKR,SRH,"Eden Gardens, Kolkata",Sunrisers Hyderabad won the toss and opt to bowl,1
-Ajinkya Rahane (c),KKR,SRH,"Eden Gardens, Kolkata",Sunrisers Hyderabad won the toss and opt to bowl,1
-Venkatesh Iyer,KKR,SRH,"Eden Gardens, Kolkata",Sunrisers Hyderabad won the toss and opt to bowl,1
-Rinku Singh,KKR,SRH,"Eden Gardens, Kolkata",Sunrisers Hyderabad won the toss and opt to bowl,1
-Angkrish Raghuvanshi,KKR,SRH,"Eden Gardens, Kolkata",Sunrisers Hyderabad won the toss and opt to bowl,1
-Moeen Ali,KKR,SRH,"Eden Gardens, Kolkata",Sunrisers Hyderabad won the toss and opt to bowl,1
-Ramandeep Singh,KKR,SRH,"Eden Gardens, Kolkata",Sunrisers Hyderabad won the toss and opt to bowl,1
-Andre Russell,KKR,SRH,"Eden Gardens, Kolkata",Sunrisers Hyderabad won the toss and opt to bowl,1
-Harshit Rana,KKR,SRH,"Eden Gardens, Kolkata",Sunrisers Hyderabad won the toss and opt to bowl,1
-Varun Chakaravarthy,KKR,SRH,"Eden Gardens, Kolkata",Sunrisers Hyderabad won the toss and opt to bowl,1
-Manish Pandey,KKR,SRH,"Eden Gardens, Kolkata",Sunrisers Hyderabad won the toss and opt to bowl,1
-Spencer Johnson,KKR,SRH,"Eden Gardens, Kolkata",Sunrisers Hyderabad won the toss and opt to bowl,1
-Anrich Nortje,KKR,SRH,"Eden Gardens, Kolkata",Sunrisers Hyderabad won the toss and opt to bowl,1
-Vaibhav Arora,KKR,SRH,"Eden Gardens, Kolkata",Sunrisers Hyderabad won the toss and opt to bowl,1
-Anukul Roy,KKR,SRH,"Eden Gardens, Kolkata",Sunrisers Hyderabad won the toss and opt to bowl,1
-Abhishek Sharma,SRH,KKR,"Eden Gardens, Kolkata",Sunrisers Hyderabad won the toss and opt to bowl,2
-Ishan Kishan,SRH,KKR,"Eden Gardens, Kolkata",Sunrisers Hyderabad won the toss and opt to bowl,2
-Nitish Kumar Reddy,SRH,KKR,"Eden Gardens, Kolkata",Sunrisers Hyderabad won the toss and opt to bowl,2
-Aniket Verma,SRH,KKR,"Eden Gardens, Kolkata",Sunrisers Hyderabad won the toss and opt to bowl,2
-Heinrich Klaasen (wk),SRH,KKR,"Eden Gardens, Kolkata",Sunrisers Hyderabad won the toss and opt to bowl,2
-Kamindu Mendis,SRH,KKR,"Eden Gardens, Kolkata",Sunrisers Hyderabad won the toss and opt to bowl,2
-Simarjeet Singh,SRH,KKR,"Eden Gardens, Kolkata",Sunrisers Hyderabad won the toss and opt to bowl,2
-Pat Cummins (c),SRH,KKR,"Eden Gardens, Kolkata",Sunrisers Hyderabad won the toss and opt to bowl,2
-Harshal Patel,SRH,KKR,"Eden Gardens, Kolkata",Sunrisers Hyderabad won the toss and opt to bowl,2
-Mohammed Shami,SRH,KKR,"Eden Gardens, Kolkata",Sunrisers Hyderabad won the toss and opt to bowl,2
-Zeeshan Ansari,SRH,KKR,"Eden Gardens, Kolkata",Sunrisers Hyderabad won the toss and opt to bowl,2
-Travis Head,SRH,KKR,"Eden Gardens, Kolkata",Sunrisers Hyderabad won the toss and opt to bowl,2
-Abhinav Manohar,SRH,KKR,"Eden Gardens, Kolkata",Sunrisers Hyderabad won the toss and opt to bowl,2
-Wiaan Mulder,SRH,KKR,"Eden Gardens, Kolkata",Sunrisers Hyderabad won the toss and opt to bowl,2
-Adam Zampa,SRH,KKR,"Eden Gardens, Kolkata",Sunrisers Hyderabad won the toss and opt to bowl,2
-Sachin Baby,SRH,KKR,"Eden Gardens, Kolkata",Sunrisers Hyderabad won the toss and opt to bowl,2
+Player Name,Team,Opponent,Venue,Toss Info,Innings,Player ID
+Travis Head,SRH,RR,"Rajiv Gandhi International Stadium, Hyderabad",Rajasthan Royals won the toss and opt to bowl,1,8497
+Abhishek Sharma,SRH,RR,"Rajiv Gandhi International Stadium, Hyderabad",Rajasthan Royals won the toss and opt to bowl,1,12086
+Ishan Kishan,SRH,RR,"Rajiv Gandhi International Stadium, Hyderabad",Rajasthan Royals won the toss and opt to bowl,1,10276
+Nitish Kumar Reddy,SRH,RR,"Rajiv Gandhi International Stadium, Hyderabad",Rajasthan Royals won the toss and opt to bowl,1,14701
+Heinrich Klaasen (wk),SRH,RR,"Rajiv Gandhi International Stadium, Hyderabad",Rajasthan Royals won the toss and opt to bowl,1,10209
+Aniket Verma,SRH,RR,"Rajiv Gandhi International Stadium, Hyderabad",Rajasthan Royals won the toss and opt to bowl,1,1447065
+Abhinav Manohar,SRH,RR,"Rajiv Gandhi International Stadium, Hyderabad",Rajasthan Royals won the toss and opt to bowl,1,10499
+Pat Cummins (c),SRH,RR,"Rajiv Gandhi International Stadium, Hyderabad",Rajasthan Royals won the toss and opt to bowl,1,8095
+Simarjeet Singh,SRH,RR,"Rajiv Gandhi International Stadium, Hyderabad",Rajasthan Royals won the toss and opt to bowl,1,14163
+Harshal Patel,SRH,RR,"Rajiv Gandhi International Stadium, Hyderabad",Rajasthan Royals won the toss and opt to bowl,1,8175
+Mohammed Shami,SRH,RR,"Rajiv Gandhi International Stadium, Hyderabad",Rajasthan Royals won the toss and opt to bowl,1,7909
+Sachin Baby,SRH,RR,"Rajiv Gandhi International Stadium, Hyderabad",Rajasthan Royals won the toss and opt to bowl,1,8709
+Jaydev Unadkat,SRH,RR,"Rajiv Gandhi International Stadium, Hyderabad",Rajasthan Royals won the toss and opt to bowl,1,6327
+Zeeshan Ansari,SRH,RR,"Rajiv Gandhi International Stadium, Hyderabad",Rajasthan Royals won the toss and opt to bowl,1,10946
+Adam Zampa,SRH,RR,"Rajiv Gandhi International Stadium, Hyderabad",Rajasthan Royals won the toss and opt to bowl,1,8642
+Wiaan Mulder,SRH,RR,"Rajiv Gandhi International Stadium, Hyderabad",Rajasthan Royals won the toss and opt to bowl,1,11200
+Yashasvi Jaiswal,RR,SRH,"Rajiv Gandhi International Stadium, Hyderabad",Rajasthan Royals won the toss and opt to bowl,2,13940
+Shubham Dubey,RR,SRH,"Rajiv Gandhi International Stadium, Hyderabad",Rajasthan Royals won the toss and opt to bowl,2,19328
+Nitish Rana,RR,SRH,"Rajiv Gandhi International Stadium, Hyderabad",Rajasthan Royals won the toss and opt to bowl,2,9204
+Riyan Parag (c),RR,SRH,"Rajiv Gandhi International Stadium, Hyderabad",Rajasthan Royals won the toss and opt to bowl,2,12305
+Dhruv Jurel (wk),RR,SRH,"Rajiv Gandhi International Stadium, Hyderabad",Rajasthan Royals won the toss and opt to bowl,2,14691
+Shimron Hetmyer,RR,SRH,"Rajiv Gandhi International Stadium, Hyderabad",Rajasthan Royals won the toss and opt to bowl,2,9789
+Jofra Archer,RR,SRH,"Rajiv Gandhi International Stadium, Hyderabad",Rajasthan Royals won the toss and opt to bowl,2,11540
+Maheesh Theekshana,RR,SRH,"Rajiv Gandhi International Stadium, Hyderabad",Rajasthan Royals won the toss and opt to bowl,2,18504
+Tushar Deshpande,RR,SRH,"Rajiv Gandhi International Stadium, Hyderabad",Rajasthan Royals won the toss and opt to bowl,2,11307
+Sandeep Sharma,RR,SRH,"Rajiv Gandhi International Stadium, Hyderabad",Rajasthan Royals won the toss and opt to bowl,2,8356
+Fazalhaq Farooqi,RR,SRH,"Rajiv Gandhi International Stadium, Hyderabad",Rajasthan Royals won the toss and opt to bowl,2,14282
+Kunal Singh Rathore,RR,SRH,"Rajiv Gandhi International Stadium, Hyderabad",Rajasthan Royals won the toss and opt to bowl,2,32854
+Akash Madhwal,RR,SRH,"Rajiv Gandhi International Stadium, Hyderabad",Rajasthan Royals won the toss and opt to bowl,2,15727
+Kumar Kartikeya,RR,SRH,"Rajiv Gandhi International Stadium, Hyderabad",Rajasthan Royals won the toss and opt to bowl,2,14190
+Kwena Maphaka,RR,SRH,"Rajiv Gandhi International Stadium, Hyderabad",Rajasthan Royals won the toss and opt to bowl,2,23346
+Wanindu Hasaranga,RR,SRH,"Rajiv Gandhi International Stadium, Hyderabad",Rajasthan Royals won the toss and opt to bowl,2,10926
