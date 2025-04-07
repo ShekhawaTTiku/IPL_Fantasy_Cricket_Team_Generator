@@ -1,33 +1,33 @@
-Player Name,Team,Opponent,Venue,Toss Info,Innings,Player ID
-Shubman Gill (c),Gujarat Titans,Mumbai Indians,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,1,11808
-Sai Sudharsan,Gujarat Titans,Mumbai Indians,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,1,13866
-Jos Buttler (wk),Gujarat Titans,Mumbai Indians,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,1,2258
-Sherfane Rutherford,Gujarat Titans,Mumbai Indians,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,1,13748
-Shahrukh Khan,Gujarat Titans,Mumbai Indians,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,1,10226
-Rahul Tewatia,Gujarat Titans,Mumbai Indians,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,1,9693
-Rashid Khan,Gujarat Titans,Mumbai Indians,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,1,10738
-Ravisrinivasan Sai Kishore,Gujarat Titans,Mumbai Indians,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,1,11595
-Kagiso Rabada,Gujarat Titans,Mumbai Indians,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,1,9585
-Mohammed Siraj,Gujarat Titans,Mumbai Indians,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,1,10808
-Prasidh Krishna,Gujarat Titans,Mumbai Indians,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,1,10551
-Washington Sundar,Gujarat Titans,Mumbai Indians,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,1,10945
-Glenn Phillips,Gujarat Titans,Mumbai Indians,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,1,10693
-Anuj Rawat,Gujarat Titans,Mumbai Indians,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,1,13135
-Mahipal Lomror,Gujarat Titans,Mumbai Indians,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,1,10954
-Arshad Khan,Gujarat Titans,Mumbai Indians,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,1,18637
-Rohit Sharma,Mumbai Indians,Gujarat Titans,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,2,576
-Ryan Rickelton (wk),Mumbai Indians,Gujarat Titans,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,2,13070
-Suryakumar Yadav,Mumbai Indians,Gujarat Titans,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,2,7915
-Tilak Varma,Mumbai Indians,Gujarat Titans,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,2,14504
-Hardik Pandya (c),Mumbai Indians,Gujarat Titans,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,2,9647
-Naman Dhir,Mumbai Indians,Gujarat Titans,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,2,36139
-Mitchell Santner,Mumbai Indians,Gujarat Titans,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,2,10100
-Deepak Chahar,Mumbai Indians,Gujarat Titans,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,2,7836
-Trent Boult,Mumbai Indians,Gujarat Titans,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,2,8117
-Mujeeb Ur Rahman,Mumbai Indians,Gujarat Titans,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,2,12071
-Satyanarayana Raju,Mumbai Indians,Gujarat Titans,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,2,1431171
-Robin Minz,Mumbai Indians,Gujarat Titans,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,2,36454
-Ashwani Kumar,Mumbai Indians,Gujarat Titans,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,2,11684
-Raj Bawa,Mumbai Indians,Gujarat Titans,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,2,22601
-Will Jacks,Mumbai Indians,Gujarat Titans,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,2,12258
-Corbin Bosch,Mumbai Indians,Gujarat Titans,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,2,9576
+Player Name,Team,Opponent,Venue,Toss Info,Innings,Player ID,Cricinfo ID
+Shubman Gill (c),Gujarat Titans,Mumbai Indians,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,1,11808,1070173
+Sai Sudharsan,Gujarat Titans,Mumbai Indians,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,1,13866,1151288
+Jos Buttler (wk),Gujarat Titans,Mumbai Indians,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,1,2258,308967
+Sherfane Rutherford,Gujarat Titans,Mumbai Indians,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,1,13748,914541
+Shahrukh Khan,Gujarat Titans,Mumbai Indians,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,1,10226,719719
+Rahul Tewatia,Gujarat Titans,Mumbai Indians,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,1,9693,423838
+Rashid Khan,Gujarat Titans,Mumbai Indians,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,1,10738,793463
+Ravisrinivasan Sai Kishore,Gujarat Titans,Mumbai Indians,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,1,11595,1048739
+Kagiso Rabada,Gujarat Titans,Mumbai Indians,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,1,9585,550215
+Mohammed Siraj,Gujarat Titans,Mumbai Indians,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,1,10808,940973
+Prasidh Krishna,Gujarat Titans,Mumbai Indians,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,1,10551,917159
+Washington Sundar,Gujarat Titans,Mumbai Indians,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,1,10945,719715
+Glenn Phillips,Gujarat Titans,Mumbai Indians,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,1,10693,823509
+Anuj Rawat,Gujarat Titans,Mumbai Indians,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,1,13135,1123073
+Mahipal Lomror,Gujarat Titans,Mumbai Indians,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,1,10954,853265
+Arshad Khan,Gujarat Titans,Mumbai Indians,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,1,18637,1244751
+Rohit Sharma,Mumbai Indians,Gujarat Titans,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,2,576,34102
+Ryan Rickelton (wk),Mumbai Indians,Gujarat Titans,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,2,13070,Unknown
+Suryakumar Yadav,Mumbai Indians,Gujarat Titans,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,2,7915,446507
+Tilak Varma,Mumbai Indians,Gujarat Titans,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,2,14504,1170265
+Hardik Pandya (c),Mumbai Indians,Gujarat Titans,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,2,9647,625371
+Naman Dhir,Mumbai Indians,Gujarat Titans,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,2,36139,1287032
+Mitchell Santner,Mumbai Indians,Gujarat Titans,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,2,10100,502714
+Deepak Chahar,Mumbai Indians,Gujarat Titans,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,2,7836,447261
+Trent Boult,Mumbai Indians,Gujarat Titans,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,2,8117,277912
+Mujeeb Ur Rahman,Mumbai Indians,Gujarat Titans,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,2,12071,974109
+Satyanarayana Raju,Mumbai Indians,Gujarat Titans,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,2,1431171,1392201
+Robin Minz,Mumbai Indians,Gujarat Titans,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,2,36454,1350762
+Ashwani Kumar,Mumbai Indians,Gujarat Titans,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,2,11684,1209126
+Raj Bawa,Mumbai Indians,Gujarat Titans,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,2,22601,1292502
+Will Jacks,Mumbai Indians,Gujarat Titans,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,2,12258,897549
+Corbin Bosch,Mumbai Indians,Gujarat Titans,"Narendra Modi Stadium, Ahmedabad",Mumbai Indians won the toss and opt to bowl,2,9576,594322

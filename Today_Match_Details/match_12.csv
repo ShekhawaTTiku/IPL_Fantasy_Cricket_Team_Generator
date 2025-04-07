@@ -1,33 +1,33 @@
-Player Name,Team,Opponent,Venue,Toss Info,Innings,Player ID
-Ryan Rickelton (wk),Mumbai Indians,Kolkata Knight Riders,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,2,13070
-Will Jacks,Mumbai Indians,Kolkata Knight Riders,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,2,12258
-Suryakumar Yadav,Mumbai Indians,Kolkata Knight Riders,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,2,7915
-Tilak Varma,Mumbai Indians,Kolkata Knight Riders,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,2,14504
-Hardik Pandya (c),Mumbai Indians,Kolkata Knight Riders,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,2,9647
-Naman Dhir,Mumbai Indians,Kolkata Knight Riders,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,2,36139
-Mitchell Santner,Mumbai Indians,Kolkata Knight Riders,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,2,10100
-Deepak Chahar,Mumbai Indians,Kolkata Knight Riders,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,2,7836
-Trent Boult,Mumbai Indians,Kolkata Knight Riders,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,2,8117
-Ashwani Kumar,Mumbai Indians,Kolkata Knight Riders,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,2,11684
-Vignesh Puthur,Mumbai Indians,Kolkata Knight Riders,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,2,1447337
-Rohit Sharma,Mumbai Indians,Kolkata Knight Riders,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,2,576
-Corbin Bosch,Mumbai Indians,Kolkata Knight Riders,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,2,9576
-Raj Bawa,Mumbai Indians,Kolkata Knight Riders,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,2,22601
-Robin Minz,Mumbai Indians,Kolkata Knight Riders,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,2,36454
-Satyanarayana Raju,Mumbai Indians,Kolkata Knight Riders,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,2,1431171
-Quinton de Kock (wk),Kolkata Knight Riders,Mumbai Indians,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,1,8520
-Sunil Narine,Kolkata Knight Riders,Mumbai Indians,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,1,2276
-Ajinkya Rahane (c),Kolkata Knight Riders,Mumbai Indians,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,1,1447
-Angkrish Raghuvanshi,Kolkata Knight Riders,Mumbai Indians,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,1,22566
-Venkatesh Iyer,Kolkata Knight Riders,Mumbai Indians,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,1,10917
-Rinku Singh,Kolkata Knight Riders,Mumbai Indians,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,1,10896
-Andre Russell,Kolkata Knight Riders,Mumbai Indians,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,1,7736
-Ramandeep Singh,Kolkata Knight Riders,Mumbai Indians,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,1,12337
-Spencer Johnson,Kolkata Knight Riders,Mumbai Indians,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,1,13143
-Harshit Rana,Kolkata Knight Riders,Mumbai Indians,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,1,24729
-Varun Chakaravarthy,Kolkata Knight Riders,Mumbai Indians,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,1,12926
-Anrich Nortje,Kolkata Knight Riders,Mumbai Indians,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,1,11427
-Manish Pandey,Kolkata Knight Riders,Mumbai Indians,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,1,1836
-Vaibhav Arora,Kolkata Knight Riders,Mumbai Indians,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,1,15861
-Anukul Roy,Kolkata Knight Riders,Mumbai Indians,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,1,12344
-Luvnith Sisodia,Kolkata Knight Riders,Mumbai Indians,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,1,13972
+Player Name,Team,Opponent,Venue,Toss Info,Innings,Player ID,Cricinfo ID
+Ryan Rickelton (wk),Mumbai Indians,Kolkata Knight Riders,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,2,13070,Unknown
+Will Jacks,Mumbai Indians,Kolkata Knight Riders,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,2,12258,897549
+Suryakumar Yadav,Mumbai Indians,Kolkata Knight Riders,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,2,7915,446507
+Tilak Varma,Mumbai Indians,Kolkata Knight Riders,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,2,14504,1170265
+Hardik Pandya (c),Mumbai Indians,Kolkata Knight Riders,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,2,9647,625371
+Naman Dhir,Mumbai Indians,Kolkata Knight Riders,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,2,36139,1287032
+Mitchell Santner,Mumbai Indians,Kolkata Knight Riders,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,2,10100,502714
+Deepak Chahar,Mumbai Indians,Kolkata Knight Riders,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,2,7836,447261
+Trent Boult,Mumbai Indians,Kolkata Knight Riders,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,2,8117,277912
+Ashwani Kumar,Mumbai Indians,Kolkata Knight Riders,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,2,11684,1209126
+Vignesh Puthur,Mumbai Indians,Kolkata Knight Riders,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,2,1447337,1460388
+Rohit Sharma,Mumbai Indians,Kolkata Knight Riders,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,2,576,34102
+Corbin Bosch,Mumbai Indians,Kolkata Knight Riders,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,2,9576,594322
+Raj Bawa,Mumbai Indians,Kolkata Knight Riders,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,2,22601,1292502
+Robin Minz,Mumbai Indians,Kolkata Knight Riders,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,2,36454,1350762
+Satyanarayana Raju,Mumbai Indians,Kolkata Knight Riders,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,2,1431171,1392201
+Quinton de Kock (wk),Kolkata Knight Riders,Mumbai Indians,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,1,8520,379143
+Sunil Narine,Kolkata Knight Riders,Mumbai Indians,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,1,2276,230558
+Ajinkya Rahane (c),Kolkata Knight Riders,Mumbai Indians,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,1,1447,277916
+Angkrish Raghuvanshi,Kolkata Knight Riders,Mumbai Indians,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,1,22566,1292495
+Venkatesh Iyer,Kolkata Knight Riders,Mumbai Indians,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,1,10917,851403
+Rinku Singh,Kolkata Knight Riders,Mumbai Indians,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,1,10896,1206052
+Andre Russell,Kolkata Knight Riders,Mumbai Indians,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,1,7736,276298
+Ramandeep Singh,Kolkata Knight Riders,Mumbai Indians,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,1,12337,1079470
+Spencer Johnson,Kolkata Knight Riders,Mumbai Indians,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,1,13143,1123718
+Harshit Rana,Kolkata Knight Riders,Mumbai Indians,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,1,24729,1312645
+Varun Chakaravarthy,Kolkata Knight Riders,Mumbai Indians,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,1,12926,1108375
+Anrich Nortje,Kolkata Knight Riders,Mumbai Indians,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,1,11427,481979
+Manish Pandey,Kolkata Knight Riders,Mumbai Indians,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,1,1836,290630
+Vaibhav Arora,Kolkata Knight Riders,Mumbai Indians,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,1,15861,1209292
+Anukul Roy,Kolkata Knight Riders,Mumbai Indians,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,1,12344,1079839
+Luvnith Sisodia,Kolkata Knight Riders,Mumbai Indians,"Wankhede Stadium, Mumbai",Mumbai Indians won the toss and opt to bowl,1,13972,1155253
