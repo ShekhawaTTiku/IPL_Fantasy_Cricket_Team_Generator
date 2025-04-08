@@ -140,11 +140,13 @@ def main():
 
     # Read input CSV
     input_df = pd.read_csv(input_csv_path)
+    # Convert Cricinfo ID column to integer type
+    input_df['Cricinfo ID'] = pd.to_numeric(input_df['Cricinfo ID'], errors='coerce')
 
     output_rows = []
     for _, row in input_df.iterrows():
         player_input = {
-            "player_id": row['Player ID'],
+            "player_id": row['Cricinfo ID'],
             "player_name": row['Player Name'],
             "bat_team": row['Team'],
             "bowl_team": row['Opponent'],
