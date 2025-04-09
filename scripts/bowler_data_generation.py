@@ -98,7 +98,7 @@ def process_player_row(player_input, sheet_df):
     if player_df.empty:
         print(f"Player {player_name} with ID {player_id} not found in Google Sheet.")
         return {**player_input,
-                **{f"{cat}_{stat}": 0.0 for cat in ['career', 'last5', 'innings', 'venue']
+                **{f"{cat}_{stat}": 0.0 for cat in ['career', 'last5', 'innings', 'venue', 'season']
                                       for stat in ['average', 'strike_rate', 'economy', 'wickets_per_match', 'overs_per_match']}}
     else:
         print(f"Player {player_name} with ID {player_id} found in Google Sheet.")
@@ -108,9 +108,21 @@ def process_player_row(player_input, sheet_df):
     # Career stats
     career_stats = calculate_stats(player_df)
 
-    # Last 5 matches in season
+    # Last 5 matches (consider across seasons if fewer than 5 matches in the current season)
     last5_df = player_df[player_df['date'].dt.year == int(season)]
     last5_df = get_last_5_unique_matches(last5_df)
+
+    # Check if fewer than 5 matches are present in the current season
+    if len(last5_df['match_id'].unique()) < 5:
+        remaining_matches = 5 - len(last5_df['match_id'].unique())
+    
+        # Get matches from previous seasons
+        additional_df = player_df[player_df['date'].dt.year < int(season)]
+        additional_df = get_last_5_unique_matches(additional_df)
+    
+        # Combine current season and previous seasons matches
+        last5_df = pd.concat([last5_df, additional_df]).drop_duplicates(subset='match_id').head(5)
+
     last5_stats = calculate_stats(last5_df)
 
     # Innings stats
@@ -121,9 +133,13 @@ def process_player_row(player_input, sheet_df):
     venue_df = player_df[player_df['venue'] == venue]
     venue_stats = calculate_stats(venue_df)
 
+    # Season stats
+    season_df = player_df[player_df['date'].dt.year == int(season)]
+    season_stats = calculate_stats(season_df)
+
     # Combine all stats
     result = {**player_input}
-    for prefix, stats in zip(['career', 'last5', 'innings', 'venue'], [career_stats, last5_stats, innings_stats, venue_stats]):
+    for prefix, stats in zip(['career', 'last5', 'innings', 'venue', 'season'], [career_stats, last5_stats, innings_stats, venue_stats, season_stats]):
         for key, value in stats.items():
             result[f"{prefix}_{key}"] = value
 
