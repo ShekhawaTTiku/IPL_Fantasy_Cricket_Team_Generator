@@ -11,7 +11,7 @@ const getFormattedDate = () => {
     const month = monthNames[today.getMonth()];
     const year = today.getFullYear();
     return `${day} ${month} ${year}`; // Uncomment for dynamic date
-    // return "7 Apr 2025"; // Hardcoded for testing
+    // return "8 Apr 2025"; // Hardcoded for testing
 };
 
 async function getTodayIPLMatchId() {
