@@ -58,15 +58,18 @@ def calculate_stats(df):
 
     total_runs_conceded = df['runs'].sum()
     total_balls_bowled = df['balls'].sum()
-    total_overs_bowled = df['overs'].sum()
     total_wickets = df['wickets'].sum()
     matches = df['match_id'].nunique()
 
+    if total_balls_bowled > 0:
+        economy = (total_runs_conceded / total_balls_bowled) * 6
+    else:
+        economy = 0.0
+
     average = total_runs_conceded / total_wickets if total_wickets > 0 else total_runs_conceded
     strike_rate = total_balls_bowled / total_wickets if total_wickets > 0 else total_balls_bowled
-    economy = total_runs_conceded / total_overs_bowled if total_overs_bowled > 0 else 0
     wickets_per_match = total_wickets / matches if matches > 0 else 0
-    overs_per_match = total_overs_bowled / matches if matches > 0 else 0
+    overs_per_match = total_balls_bowled / 6 / matches if matches > 0 else 0
 
     return {
         "average": round(average, 4),
