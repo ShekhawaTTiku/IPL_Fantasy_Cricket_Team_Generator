@@ -3,7 +3,6 @@ import pandas as pd
 import numpy as np
 
 # Load the CSV data
-# Replace 'squadData_ipl25_updated.csv' with your file path if different
 df = pd.read_csv('data/register_data/squadData_ipl25_updated.csv')
 
 # Find rows where key_cricbuzz is null or NaN

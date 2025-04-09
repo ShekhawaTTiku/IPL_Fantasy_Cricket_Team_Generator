@@ -6,6 +6,8 @@ import os
 from datetime import datetime
 import json
 import match_scraper
+import batsman_data_generation as batsman_gen
+import bowler_data_generation as bowler_gen
 # ---------------- CONFIG ----------------
 SCOPES = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/spreadsheets",
           "https://www.googleapis.com/auth/drive.file", "https://www.googleapis.com/auth/drive"]
@@ -92,13 +94,7 @@ def match_scrapping(match_number=None):
     
     This method imports and calls the run_match_scrapper function from the 
     match_scrapper module to scrape cricket match data.
-    
-    Args:
-        match_number (int, optional): Specific match number to scrape.
-                                     If None, will prompt for input.
-    
-    Returns:
-        dict: A dictionary containing match details and file path information
+
     """
     #match_number = match_number or input("Enter match number to scrape (or 'all' for all matches): ").strip()
     try:
@@ -116,7 +112,6 @@ def match_scrapping(match_number=None):
             print(f"❌ Failed to scrape match data: {result['message']}")
         
         return result
-    
     except ImportError:
         print("❌ Error: Could not import run_match_scrapper from match_scrapper module.")
         print("   Make sure match_scrapper.py is in the same directory as main.py.")
@@ -125,6 +120,14 @@ def match_scrapping(match_number=None):
     except Exception as e:
         print(f"❌ Error while running match scrapper: {str(e)}")
         return {"success": False, "message": f"Error: {str(e)}"}
+    
+def bat_test_gen(match_id):
+    output_path = batsman_gen.batting_test_gen(match_id)
+    return output_path
+
+def bowl_test_gen(match_id):
+    output_path = bowler_gen.bowling_test_gen(match_id)
+    return output_path
 
 if __name__ == "__main__": 
     # Load all datasets
@@ -135,10 +138,13 @@ if __name__ == "__main__":
     # Display data heads
     print("\nBatting Data:")
     print(batting_data.shape)
-    
     print("\nBowling Data:")
     print(bowling_data.shape)
-    
     print("\nSquad Data:")
     print(squad_data.shape)
-    match_scrapping()
+    #match_scrapping
+    result=match_scrapping()
+    match_number = result['match_number']
+    #match stats calculations
+    bat_test_gen(match_number)
+    bowl_test_gen(match_number)
