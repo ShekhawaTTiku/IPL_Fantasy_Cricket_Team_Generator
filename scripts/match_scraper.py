@@ -10,7 +10,7 @@ FIXTURES_URL = "https://www.cricbuzz.com/cricket-series/9237/indian-premier-leag
 headers = {"User-Agent": "Mozilla/5.0"}
 
 # Create a mapping from cricbuzz_id to cricinfo_id using the CSV file
-def create_id_mapping(csv_path="data/register_data/squadData_ipl25_updated.csv"):
+def create_id_mapping(csv_path="data/register_data/squadData_ipl25_updated_new.csv"):
     print(f"🔄 Creating player ID mapping from {csv_path}")
     try:
         df = pd.read_csv(csv_path)
@@ -216,7 +216,19 @@ def extract_match_details(match_url):
     soup = BeautifulSoup(response.text, "html.parser")
     match_date = extract_match_date(soup)
     fact_sections = soup.select("div.cb-col.cb-col-73.cb-mat-fct-itm")
-    venue = fact_sections[4].get_text(strip=True) if len(fact_sections) > 4 else "Unknown"
+    
+    # Modified venue extraction to only keep part before comma
+    venue = "Unknown"
+    if len(fact_sections) > 4:
+        full_venue = fact_sections[4].get_text(strip=True)
+        # Only keep the part before the comma
+        venue = full_venue.split(',')[0].strip()
+        print(f"📍 Original venue: {full_venue}")
+        print(f"📍 Processed venue: {venue}")
+    
+    # Explicit string conversion
+    venue = str(venue)
+        
     toss_info = fact_sections[2].get_text(strip=True) if len(fact_sections) > 2 else "Unknown"
     print(f"📍 Venue: {venue}, 🪙 Toss Info: {toss_info}")
 
@@ -315,13 +327,39 @@ def save_to_csv(data, match_number):
     filename = f"match_{match_number}.csv"
     file_path = os.path.join(download_folder, filename)
 
-    with open(file_path, "w", newline="", encoding="utf-8") as file:
-        writer = csv.writer(file)
-        # Updated header to include cricinfo_id
-        writer.writerow(["Player Name", "Team", "Opponent", "Venue", "Toss Info", "Innings", "Player ID", "Cricinfo ID"])
-        writer.writerows(data)
-
+    # Convert to pandas DataFrame
+    df = pd.DataFrame(data, columns=["Player Name", "Team", "Opponent", "Venue", "Toss Info", "Innings", "Player ID", "Cricinfo ID"])
+    
+    # Explicitly convert Venue column to string type (not object)
+    # Using the pandas StringDtype for explicit string typing
+    try:
+        df['Venue'] = df['Venue'].astype('string')
+    except:
+        # Fallback for older pandas versions
+        df['Venue'] = df['Venue'].astype(str)
+    
+    # Save DataFrame to CSV
+    df.to_csv(file_path, index=False)
+    
     print(f"✅ CSV file saved successfully: {file_path}")
+    print(f"Venue column data type: {df['Venue'].dtype}")
+
+def check_venue_dtype(match_number):
+    filename = f"Today_Match_Details/match_{match_number}.csv"
+    # Load with explicit string dtype for Venue column
+    df = pd.read_csv(filename, dtype={'Venue': 'string'})
+    print(f"Venue column data type: {df['Venue'].dtype}")
+    print(f"Sample venue value: {df['Venue'].iloc[0]}")
+    
+    # If the type is still not string, force convert and save back
+    if df['Venue'].dtype != 'string':
+        try:
+            df['Venue'] = df['Venue'].astype('string')
+        except:
+            # Fallback for older pandas versions
+            df['Venue'] = df['Venue'].astype(str)
+        df.to_csv(filename, index=False)
+        print(f"✅ CSV file updated with venue explicitly as string type")
 
 def fetch_match_details_by_number():
     """Asks for a match number, fetches match details, and saves to CSV."""
@@ -350,6 +388,7 @@ if __name__ == "__main__":
         match_date, match_data = extract_match_details(selected_url)
         if match_data:
             save_to_csv(match_data, match_number)
+            check_venue_dtype(match_number)
         else:
             print("❌ No match data found!")
     else:

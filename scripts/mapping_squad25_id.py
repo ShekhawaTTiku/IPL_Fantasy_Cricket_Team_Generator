@@ -8,7 +8,7 @@ def update_player_ids():
     Update the key_crickbuzz column with matching Player IDs.
     """
     # Load squad data with the correct path
-    squad_data_path = 'data/register_data/squadData_ipl25.csv'
+    squad_data_path = 'data/register_data/squadData_ipl25_updated_new.csv'
     squad_data = pd.read_csv(squad_data_path)
     
     # Print column names to debug

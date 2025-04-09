@@ -74,7 +74,6 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         csv_path = sys.argv[1]
     else:
-        # Default path if none provided
         csv_path = 'data/register_data/squadData_ipl25_updated_new.csv'
     
     find_duplicate_ids(csv_path)
