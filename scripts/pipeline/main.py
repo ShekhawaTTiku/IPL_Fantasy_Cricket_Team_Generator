@@ -4,7 +4,8 @@ from google.oauth2.service_account import Credentials
 from dotenv import load_dotenv
 import os
 from datetime import datetime
-
+import json
+import match_scraper
 # ---------------- CONFIG ----------------
 SCOPES = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/spreadsheets",
           "https://www.googleapis.com/auth/drive.file", "https://www.googleapis.com/auth/drive"]
@@ -85,6 +86,46 @@ def load_squadData25():
     df = load_google_sheet(SQUAD_SHEET_URL, SQUAD_SHEET_NAME)
     return df
 
+def match_scrapping(match_number=None):
+    """
+    Function to execute match scraping functionality from match_scrapper.py
+    
+    This method imports and calls the run_match_scrapper function from the 
+    match_scrapper module to scrape cricket match data.
+    
+    Args:
+        match_number (int, optional): Specific match number to scrape.
+                                     If None, will prompt for input.
+    
+    Returns:
+        dict: A dictionary containing match details and file path information
+    """
+    #match_number = match_number or input("Enter match number to scrape (or 'all' for all matches): ").strip()
+    try:
+        print("Starting match scrapper...")
+        
+        # Call the run_match_scrapper function with optional match_number
+        result = match_scraper.run_match_scrapper()
+        # Print summary
+        if result['success']:
+            print(f"✅ Successfully scraped match data!")
+            print(f"📅 Match date: {result['match_date']}")
+            print(f"📊 Data saved to: {result['csv_path']}")
+            print(f"👥 Players found: {len(result['match_data'])}")
+        else:
+            print(f"❌ Failed to scrape match data: {result['message']}")
+        
+        return result
+    
+    except ImportError:
+        print("❌ Error: Could not import run_match_scrapper from match_scrapper module.")
+        print("   Make sure match_scrapper.py is in the same directory as main.py.")
+        return {"success": False, "message": "Import error with match_scrapper module"}
+    
+    except Exception as e:
+        print(f"❌ Error while running match scrapper: {str(e)}")
+        return {"success": False, "message": f"Error: {str(e)}"}
+
 if __name__ == "__main__": 
     # Load all datasets
     batting_data = load_bat_mbm()
@@ -100,3 +141,4 @@ if __name__ == "__main__":
     
     print("\nSquad Data:")
     print(squad_data.shape)
+    match_scrapping()
