@@ -9,3 +9,4 @@ data/bbb/ganjoo_t20_bbb_filtered.csv
 data/bbb/t20_bbb.csv
 notebooks/model_training/logs.log
 scripts/pipeline/__pycache__
+pycaret_env

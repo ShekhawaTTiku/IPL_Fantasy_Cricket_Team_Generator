@@ -7,7 +7,7 @@ import sys
 from datetime import datetime
 import json
 import pickle
-import kagglehub
+import kagglehub  
 import match_scraper
 import batsman_data_generation as batsman_gen
 import bowler_data_generation as bowler_gen
@@ -136,7 +136,7 @@ def bowl_test_gen(match_id):
 def load_batting_model(model_path=None):
 
     if model_path is None:
-        model_path = kagglehub.model_download("avignyansarangi/batting.pkl/other/default")
+        raise NotImplementedError("kagglehub is not available. Replace this line with an alternative model download logic.")
     
     if os.path.isdir(model_path):
         # Look for .pkl files in the directory
@@ -174,9 +174,9 @@ def load_bowling_model(model_type="bowling", model_path=None):
     # If path is not provided, download the model based on type
     if model_path is None:
         if model_type.lower() == "batting":
-            model_path = kagglehub.model_download("avignyansarangi/batting.pkl/other/default")
+            raise NotImplementedError("kagglehub is not available. Replace this line with an alternative model download logic.")
         elif model_type.lower() == "bowling":
-            model_path = kagglehub.model_download("avignyansarangi/bowling-model/other/default")
+            raise NotImplementedError("kagglehub is not available. Replace this line with an alternative model download logic.")
         else:
             raise ValueError(f"Unknown model type: {model_type}. Must be 'batting' or 'bowling'")
     
