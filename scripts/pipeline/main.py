@@ -3,8 +3,11 @@ import gspread
 from google.oauth2.service_account import Credentials
 from dotenv import load_dotenv
 import os
+import sys
 from datetime import datetime
 import json
+import pickle
+import kagglehub
 import match_scraper
 import batsman_data_generation as batsman_gen
 import bowler_data_generation as bowler_gen
@@ -109,6 +112,7 @@ def match_scrapping(match_number=None):
             print(f"📊 Data saved to: {result['csv_path']}")
             print(f"👥 Players found: {len(result['match_data'])}")
         else:
+            #scope for error handling if scrapper fails any time later
             print(f"❌ Failed to scrape match data: {result['message']}")
         
         return result
@@ -129,12 +133,80 @@ def bowl_test_gen(match_id):
     output_path = bowler_gen.bowling_test_gen(match_id)
     return output_path
 
+def load_batting_model(model_path=None):
+
+    if model_path is None:
+        model_path = kagglehub.model_download("avignyansarangi/batting.pkl/other/default")
+    
+    if os.path.isdir(model_path):
+        # Look for .pkl files in the directory
+        pkl_files = [f for f in os.listdir(model_path) if f.endswith('.pkl')]
+        if not pkl_files:
+            raise FileNotFoundError(f"No .pkl files found in {model_path}")
+        # Use the first .pkl file found
+        model_path = os.path.join(model_path, pkl_files[0])
+    
+    # Load and return the model
+    with open(model_path, 'rb') as f:
+        model = pickle.load(f)
+    
+    print(f"Model loaded successfully from {model_path}")
+    return model
+
+def load_bowling_model(model_type="bowling", model_path=None):
+    """
+    
+    Args:
+        model_type (str): Type of model to load ("batting" or "bowling")
+        model_path (str, optional): Path to the model file. If None, the model will be downloaded.
+        
+    Returns:
+        The loaded model
+    """
+    # Check for PyCaret installation
+    try:
+        import pycaret
+    except ImportError:
+        print("PyCaret is not installed but is required for this model.")
+        print("Please install it using: pip install pycaret")
+        sys.exit(1)
+    
+    # If path is not provided, download the model based on type
+    if model_path is None:
+        if model_type.lower() == "batting":
+            model_path = kagglehub.model_download("avignyansarangi/batting.pkl/other/default")
+        elif model_type.lower() == "bowling":
+            model_path = kagglehub.model_download("avignyansarangi/bowling-model/other/default")
+        else:
+            raise ValueError(f"Unknown model type: {model_type}. Must be 'batting' or 'bowling'")
+    
+    # Check if the path is a directory (kagglehub might return a directory)
+    if os.path.isdir(model_path):
+        # Look for .pkl files in the directory
+        pkl_files = [f for f in os.listdir(model_path) if f.endswith('.pkl')]
+        if not pkl_files:
+            raise FileNotFoundError(f"No .pkl files found in {model_path}")
+        # Use the first .pkl file found
+        model_path = os.path.join(model_path, pkl_files[0])
+    
+    try:
+        # Load and return the model
+        with open(model_path, 'rb') as f:
+            model = pickle.load(f)
+        
+        print(f"{model_type.capitalize()} model loaded successfully from {model_path}")
+        return model
+    except Exception as e:
+        print(f"Error loading {model_type} model: {e}")
+        print("This may be due to missing dependencies or compatibility issues.")
+        sys.exit(1)
 if __name__ == "__main__": 
+
     # Load all datasets
     batting_data = load_bat_mbm()
     bowling_data = load_bowl_mbm()
     squad_data = load_squadData25()
-    
+
     # Display data heads
     print("\nBatting Data:")
     print(batting_data.shape)
@@ -142,9 +214,15 @@ if __name__ == "__main__":
     print(bowling_data.shape)
     print("\nSquad Data:")
     print(squad_data.shape)
+
     #match_scrapping
     result=match_scrapping()
     match_number = result['match_number']
+
     #match stats calculations
     bat_test_gen(match_number)
     bowl_test_gen(match_number)
+
+    # Load batting model
+    batting_model = load_batting_model()
+    bowling_model= load_bowling_model()
