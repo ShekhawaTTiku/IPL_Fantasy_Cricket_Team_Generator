@@ -10,7 +10,7 @@ FIXTURES_URL = "https://www.cricbuzz.com/cricket-series/9237/indian-premier-leag
 headers = {"User-Agent": "Mozilla/5.0"}
 
 # Create a mapping from cricbuzz_id to cricinfo_id using the CSV file
-def create_id_mapping(csv_path="data/register_data/squadData_ipl25_updated_new.csv"):
+def create_id_mapping(csv_path="data/register_data/squadData_ipl25.csv"):
     print(f"🔄 Creating player ID mapping from {csv_path}")
     try:
         df = pd.read_csv(csv_path)
