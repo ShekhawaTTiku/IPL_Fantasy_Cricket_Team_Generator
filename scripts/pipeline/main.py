@@ -133,11 +133,22 @@ def bowl_test_gen(match_id):
     output_path = bowler_gen.bowling_test_gen(match_id)
     return output_path
 
-def load_batting_model(model_path=None):
 
-    if model_path is None:
-        raise NotImplementedError("kagglehub is not available. Replace this line with an alternative model download logic.")
+def load_batting_model(model_path=None):
+    """
+    Load the batting model from the specified path or download it if not provided.
     
+    Args:
+        model_path (str, optional): Path to the model file. If None, the model will be downloaded.
+        
+    Returns:
+        The loaded model
+    """
+    # If path is not provided, download the model
+    if model_path is None:
+        model_path = kagglehub.model_download("avignyansarangi/batting.pkl/other/default")
+    
+    # Check if the path is a directory (kagglehub might return a directory)
     if os.path.isdir(model_path):
         # Look for .pkl files in the directory
         pkl_files = [f for f in os.listdir(model_path) if f.endswith('.pkl')]
@@ -153,32 +164,20 @@ def load_batting_model(model_path=None):
     print(f"Model loaded successfully from {model_path}")
     return model
 
-def load_bowling_model(model_type="bowling", model_path=None):
+
+def load_bowling_model(model_path=None):
     """
+    Load the bowling model from the specified path or download it if not provided.
     
     Args:
-        model_type (str): Type of model to load ("batting" or "bowling")
         model_path (str, optional): Path to the model file. If None, the model will be downloaded.
         
     Returns:
         The loaded model
     """
-    # Check for PyCaret installation
-    try:
-        import pycaret
-    except ImportError:
-        print("PyCaret is not installed but is required for this model.")
-        print("Please install it using: pip install pycaret")
-        sys.exit(1)
-    
-    # If path is not provided, download the model based on type
+    # If path is not provided, download the model
     if model_path is None:
-        if model_type.lower() == "batting":
-            raise NotImplementedError("kagglehub is not available. Replace this line with an alternative model download logic.")
-        elif model_type.lower() == "bowling":
-            raise NotImplementedError("kagglehub is not available. Replace this line with an alternative model download logic.")
-        else:
-            raise ValueError(f"Unknown model type: {model_type}. Must be 'batting' or 'bowling'")
+        model_path = kagglehub.model_download("avignyansarangi/bowling-model/other/default")
     
     # Check if the path is a directory (kagglehub might return a directory)
     if os.path.isdir(model_path):
@@ -189,17 +188,14 @@ def load_bowling_model(model_type="bowling", model_path=None):
         # Use the first .pkl file found
         model_path = os.path.join(model_path, pkl_files[0])
     
-    try:
-        # Load and return the model
-        with open(model_path, 'rb') as f:
-            model = pickle.load(f)
-        
-        print(f"{model_type.capitalize()} model loaded successfully from {model_path}")
-        return model
-    except Exception as e:
-        print(f"Error loading {model_type} model: {e}")
-        print("This may be due to missing dependencies or compatibility issues.")
-        sys.exit(1)
+    # Load and return the model
+    with open(model_path, 'rb') as f:
+        model = pickle.load(f)
+    
+    print(f"Bowling model loaded successfully from {model_path}")
+    return model
+
+
 if __name__ == "__main__": 
 
     # Load all datasets
