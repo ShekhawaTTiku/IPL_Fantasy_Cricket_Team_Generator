@@ -41,10 +41,20 @@ def load_google_sheet(sheet_url):
 
 # ---------------- HELPERS ----------------
 def get_last_5_unique_matches(df):
+    """Gets the last 5 unique matches regardless of whether the player bowled or not"""
     df_sorted = df.sort_values(by='date', ascending=False)
     unique_matches = df_sorted['match_id'].drop_duplicates()
     last_5_ids = unique_matches.head(5).tolist()
     return df[df['match_id'].isin(last_5_ids)]
+
+def get_last_5_bowling_matches(df):
+    """Gets the last 5 unique matches where the player actually bowled (excluding DNB - Did Not Bowl)"""
+    # Filter out matches where player didn't bowl any balls
+    bowled_df = df[df['balls'] > 0]
+    bowled_df_sorted = bowled_df.sort_values(by='date', ascending=False)
+    unique_bowling_matches = bowled_df_sorted['match_id'].drop_duplicates()
+    last_5_bowling_ids = unique_bowling_matches.head(5).tolist()
+    return df[df['match_id'].isin(last_5_bowling_ids)]
 
 def calculate_stats(df):
     if df.empty:
@@ -108,7 +118,7 @@ def process_player_row(player_input, sheet_df):
     # Career stats
     career_stats = calculate_stats(player_df)
 
-    # Last 5 matches (consider across seasons if fewer than 5 matches in the current season)
+    # Last 5 matches for economy, wickets_per_match, overs_per_match
     last5_df = player_df[player_df['date'].dt.year == int(season)]
     last5_df = get_last_5_unique_matches(last5_df)
 
@@ -122,8 +132,23 @@ def process_player_row(player_input, sheet_df):
     
         # Combine current season and previous seasons matches
         last5_df = pd.concat([last5_df, additional_df]).drop_duplicates(subset='match_id').head(5)
+    
+    # Last 5 bowling matches (excluding DNB) for average and strike_rate
+    last5_bowling_df = player_df[player_df['date'].dt.year == int(season)]
+    last5_bowling_df = get_last_5_bowling_matches(last5_bowling_df)
+    
+    # Check if fewer than 5 bowling matches in current season
+    if len(last5_bowling_df['match_id'].unique()) < 5:
+        # Get bowling matches from previous seasons
+        additional_bowling_df = player_df[player_df['date'].dt.year < int(season)]
+        additional_bowling_df = get_last_5_bowling_matches(additional_bowling_df)
+        
+        # Combine current and previous seasons bowling matches
+        last5_bowling_df = pd.concat([last5_bowling_df, additional_bowling_df]).drop_duplicates(subset='match_id').head(5)
 
-    last5_stats = calculate_stats(last5_df)
+    # Calculate stats for regular and bowling-only last 5 matches
+    last5_stats_regular = calculate_stats(last5_df)
+    last5_stats_bowling = calculate_stats(last5_bowling_df)
 
     # Innings stats
     innings_df = player_df[player_df['innings'] == innings]
@@ -139,10 +164,27 @@ def process_player_row(player_input, sheet_df):
 
     # Combine all stats
     result = {**player_input}
-    for prefix, stats in zip(['career', 'last5', 'innings', 'venue', 'season'], [career_stats, last5_stats, innings_stats, venue_stats, season_stats]):
+    
+    # Add career stats first
+    for key, value in career_stats.items():
+        result[f"career_{key}"] = value
+    
+    # Add last5 stats next (after career stats)
+    # For average and strike_rate, use the bowling-only stats
+    result['last5_average'] = last5_stats_bowling['average']
+    result['last5_strike_rate'] = last5_stats_bowling['strike_rate']
+    
+    # For other metrics, use the regular last5 stats
+    result['last5_economy'] = last5_stats_regular['economy']
+    result['last5_wickets_per_match'] = last5_stats_regular['wickets_per_match']
+    result['last5_overs_per_match'] = last5_stats_regular['overs_per_match']
+    
+    # Then add innings, venue, and season stats
+    for prefix, stats in zip(['innings', 'venue', 'season'], 
+                           [innings_stats, venue_stats, season_stats]):
         for key, value in stats.items():
             result[f"{prefix}_{key}"] = value
-
+    
     return result
 
 # ---------------- MAIN ----------------

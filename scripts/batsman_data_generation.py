@@ -41,10 +41,20 @@ def load_google_sheet(sheet_url):
 
 # ---------------- HELPERS ----------------
 def get_last_5_unique_matches(df):
+    """Gets the last 5 unique matches regardless of whether the player batted or not"""
     df_sorted = df.sort_values(by='date', ascending=False)
     unique_matches = df_sorted['match_id'].drop_duplicates()
     last_5_ids = unique_matches.head(5).tolist()
     return df[df['match_id'].isin(last_5_ids)]
+
+def get_last_5_batting_matches(df):
+    """Gets the last 5 unique matches where the player actually batted (excluding DNBs)"""
+    # Filter out DNBs (matches where player didn't face any balls)
+    batted_df = df[df['balls'] > 0]
+    batted_df_sorted = batted_df.sort_values(by='date', ascending=False)
+    unique_batting_matches = batted_df_sorted['match_id'].drop_duplicates()
+    last_5_batting_ids = unique_batting_matches.head(5).tolist()
+    return df[df['match_id'].isin(last_5_batting_ids)]
 
 def calculate_stats(df):
     if df.empty:
@@ -71,7 +81,7 @@ def calculate_stats(df):
 
     return {
         "batting_average": round(batting_average, 4),
-        "strike_rate": round(strike_rate, 42),
+        "strike_rate": round(strike_rate, 2),  # Fixed the rounding from 42 to 2
         "boundaries_per_match": round(boundaries_per_match, 4),
         "runs_per_match": round(runs_per_match, 4),
         "balls_faced_per_match": round(balls_faced_per_match, 4)
@@ -98,7 +108,7 @@ def process_player_row(player_input, sheet_df):
     # Career stats
     career_stats = calculate_stats(player_df)
 
-    # Last 5 matches (consider across seasons if fewer than 5 matches in the current season)
+    # Last 5 matches for boundaries_per_match, runs_per_match, balls_faced_per_match
     last5_df = player_df[player_df['date'].dt.year == int(season)]
     last5_df = get_last_5_unique_matches(last5_df)
 
@@ -112,8 +122,23 @@ def process_player_row(player_input, sheet_df):
     
         # Combine current season and previous seasons matches
         last5_df = pd.concat([last5_df, additional_df]).drop_duplicates(subset='match_id').head(5)
+    
+    # Last 5 batting matches (excluding DNBs) for batting_average and strike_rate
+    last5_batting_df = player_df[player_df['date'].dt.year == int(season)]
+    last5_batting_df = get_last_5_batting_matches(last5_batting_df)
+    
+    # Check if fewer than 5 batting matches in current season
+    if len(last5_batting_df['match_id'].unique()) < 5:
+        # Get batting matches from previous seasons
+        additional_batting_df = player_df[player_df['date'].dt.year < int(season)]
+        additional_batting_df = get_last_5_batting_matches(additional_batting_df)
+        
+        # Combine current and previous seasons batting matches
+        last5_batting_df = pd.concat([last5_batting_df, additional_batting_df]).drop_duplicates(subset='match_id').head(5)
 
-    last5_stats = calculate_stats(last5_df)
+    # Calculate stats for regular and batting-only last 5 matches
+    last5_stats_regular = calculate_stats(last5_df)
+    last5_stats_batting = calculate_stats(last5_batting_df)
 
     # Innings stats
     innings_df = player_df[player_df['innings'] == innings]
@@ -129,10 +154,27 @@ def process_player_row(player_input, sheet_df):
 
     # Combine all stats
     result = {**player_input}
-    for prefix, stats in zip(['career', 'last5', 'innings', 'venue', 'season'], [career_stats, last5_stats, innings_stats, venue_stats, season_stats]):
+    
+    # Add career stats first
+    for key, value in career_stats.items():
+        result[f"career_{key}"] = value
+    
+    # Add last5 stats next (after career stats)
+    # For batting_average and strike_rate, use the batting-only stats
+    result['last5_batting_average'] = last5_stats_batting['batting_average']
+    result['last5_strike_rate'] = last5_stats_batting['strike_rate']
+    
+    # For other metrics, use the regular last5 stats
+    result['last5_boundaries_per_match'] = last5_stats_regular['boundaries_per_match']
+    result['last5_runs_per_match'] = last5_stats_regular['runs_per_match']
+    result['last5_balls_faced_per_match'] = last5_stats_regular['balls_faced_per_match']
+    
+    # Then add innings, venue, and season stats
+    for prefix, stats in zip(['innings', 'venue', 'season'], 
+                           [innings_stats, venue_stats, season_stats]):
         for key, value in stats.items():
             result[f"{prefix}_{key}"] = value
-
+    
     return result
 
 # ---------------- MAIN ----------------
