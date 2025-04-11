@@ -10,7 +10,7 @@ FIXTURES_URL = "https://www.cricbuzz.com/cricket-series/9237/indian-premier-leag
 headers = {"User-Agent": "Mozilla/5.0"}
 
 # Create a mapping from cricbuzz_id to cricinfo_id using the CSV file
-def create_id_mapping(csv_path="data/register_data/squadData_ipl25.csv"):
+def create_id_mapping(csv_path="D:/App/FIFS_IPL/data/register_data/squadData_ipl25.csv"):
     print(f"🔄 Creating player ID mapping from {csv_path}")
     try:
         df = pd.read_csv(csv_path)
@@ -322,7 +322,8 @@ def extract_match_details(match_url):
     return match_date, match_data
 
 def save_to_csv(data, match_number):
-    download_folder = "Today_Match_Details"
+    # Use absolute path instead of relative path
+    download_folder = "D:/App/FIFS_IPL/Today_Match_Details"
     os.makedirs(download_folder, exist_ok=True)
     filename = f"match_{match_number}.csv"
     file_path = os.path.join(download_folder, filename)
@@ -345,7 +346,8 @@ def save_to_csv(data, match_number):
     print(f"Venue column data type: {df['Venue'].dtype}")
 
 def check_venue_dtype(match_number):
-    filename = f"Today_Match_Details/match_{match_number}.csv"
+    # Updated to use absolute path
+    filename = f"D:/App/FIFS_IPL/Today_Match_Details/match_{match_number}.csv"
     # Load with explicit string dtype for Venue column
     df = pd.read_csv(filename, dtype={'Venue': 'string'})
     print(f"Venue column data type: {df['Venue'].dtype}")
@@ -427,7 +429,7 @@ def run_match_scrapper():
                 # Update result dictionary
                 result["success"] = True
                 result["message"] = f"Match details saved for match #{match_number}"
-                result["csv_path"] = f"Today_Match_Details/match_{match_number}.csv"
+                result["csv_path"] = f"D:/App/FIFS_IPL/Today_Match_Details/match_{match_number}.csv"
             else:
                 result["message"] = "No match data found!"
         else:
@@ -442,4 +444,3 @@ def run_match_scrapper():
 # Original main code replaced with the callable function above
 if __name__ == "__main__":
     result = run_match_scrapper()
-    print(f"Operation completed: {result['message']}")
