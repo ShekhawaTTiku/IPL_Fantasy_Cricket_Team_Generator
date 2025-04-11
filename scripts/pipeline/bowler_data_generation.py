@@ -91,6 +91,7 @@ def calculate_stats(df):
 
 def process_player_row(player_input, sheet_df):
     player_id = int(player_input['player_id'])  # Ensure player_id is an integer
+    cutoff_date = pd.to_datetime(player_input['cutoff_date'])  # Parse cutoff_date
     player_name = player_input['player_name']
     bowl_team = player_input['bowl_team']
     bat_team = player_input['bat_team']
@@ -103,7 +104,7 @@ def process_player_row(player_input, sheet_df):
     # Ensure key_cricinfo is treated as an integer
     sheet_df = sheet_df[pd.to_numeric(sheet_df['key_cricinfo'], errors='coerce').notnull()]
     sheet_df['key_cricinfo'] = sheet_df['key_cricinfo'].astype(int)
-    player_df = sheet_df[sheet_df['key_cricinfo'] == player_id].copy()
+    player_df = sheet_df[(sheet_df['key_cricinfo'] == player_id) & (pd.to_datetime(sheet_df['date']) < cutoff_date)].copy()
 
     if player_df.empty:
         print(f"Player {player_name} with ID {player_id} not found in Google Sheet.")
@@ -200,7 +201,7 @@ def bowling_test_gen(match_number):
     """
     try:
         # Base directories
-        base_app_dir = "D:\\App\\FIFS_IPL"
+        base_app_dir = "D:\\Daily\\FIFS_Git\\FIFS_IPL"
         
         # Input and output directories with proper path formatting
         today_match_dir = os.path.join(base_app_dir, "Today_Match_Details")
@@ -237,6 +238,19 @@ def bowling_test_gen(match_number):
         # Read input CSV
         print(f"⏳ Reading match data from: {input_csv_path}")
         input_df = pd.read_csv(input_csv_path)
+
+        # Add year to dates in the 'Date' column and parse them
+        try:
+            input_df['Date'] = input_df['Date'] + ", 2025"  # Append the year
+            input_df['Date'] = pd.to_datetime(input_df['Date'], format="%d %b, %Y", errors='coerce')
+        except Exception as e:
+            print(f"Error parsing Date column: {e}")
+            sys.exit(1)
+
+        # Drop rows with invalid or missing dates
+        if input_df['Date'].isnull().any():
+            print("⚠️ Warning: Some rows have invalid dates and will be dropped.")
+            input_df = input_df.dropna(subset=['Date'])
         
         # Convert Cricinfo ID column to integer type
         input_df['Cricinfo ID'] = pd.to_numeric(input_df['Cricinfo ID'], errors='coerce').fillna(0).astype(int)
@@ -251,7 +265,8 @@ def bowling_test_gen(match_number):
                 "bat_team": row['Opponent'],
                 "innings": row['Innings'],
                 "season": 2025,
-                "venue": row['Venue']
+                "venue": row['Venue'],
+                "cutoff_date": row['Date']
             }
             result_row = process_player_row(player_input, sheet_df)
             output_rows.append(result_row)
@@ -294,6 +309,20 @@ def main():
 
     # Read input CSV
     input_df = pd.read_csv(input_csv_path)
+
+    # Add year to dates in the 'Date' column and parse them
+    try:
+        input_df['Date'] = input_df['Date'] + ", 2025"  # Append the year
+        input_df['Date'] = pd.to_datetime(input_df['Date'], format="%d %b, %Y", errors='coerce')
+    except Exception as e:
+        print(f"Error parsing Date column: {e}")
+        sys.exit(1)
+
+    # Drop rows with invalid or missing dates
+    if input_df['Date'].isnull().any():
+        print("⚠️ Warning: Some rows have invalid dates and will be dropped.")
+        input_df = input_df.dropna(subset=['Date'])
+
     # Convert Cricinfo ID column to integer type
     input_df['Cricinfo ID'] = pd.to_numeric(input_df['Cricinfo ID'], errors='coerce').fillna(0).astype(int)
 
@@ -310,7 +339,8 @@ def main():
             "bat_team": row['Opponent'],
             "innings": row['Innings'],
             "season": 2025,
-            "venue": row['Venue']
+            "venue": row['Venue'],
+            "cutoff_date": row['Date']
         }
         result_row = process_player_row(player_input, sheet_df)
         output_rows.append(result_row)

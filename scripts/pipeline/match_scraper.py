@@ -10,7 +10,7 @@ FIXTURES_URL = "https://www.cricbuzz.com/cricket-series/9237/indian-premier-leag
 headers = {"User-Agent": "Mozilla/5.0"}
 
 # Create a mapping from cricbuzz_id to cricinfo_id using the CSV file
-def create_id_mapping(csv_path="D:/App/FIFS_IPL/data/register_data/squadData_ipl25.csv"):
+def create_id_mapping(csv_path="data/register_data/squadData_ipl25.csv"):
     print(f"🔄 Creating player ID mapping from {csv_path}")
     try:
         df = pd.read_csv(csv_path)
@@ -309,27 +309,26 @@ def extract_match_details(match_url):
         # Get the cricinfo_id from the mapping
         cricinfo_id = player_id_mapping.get(player_id, "Unknown")
         print(f"Looking up {player} with CricBuzz ID: {player_id} -> Cricinfo ID: {cricinfo_id}")
-        match_data.append([player, team1_full, team2_full, venue, toss_info, team1_innings, player_id, cricinfo_id])
+        match_data.append([player, team1_full, team2_full, venue, toss_info, team1_innings, player_id, cricinfo_id, match_date])
     
     # Add players from team 2
     for player, player_id in zip(team2_players, team2_ids):
         # Get the cricinfo_id from the mapping
         cricinfo_id = player_id_mapping.get(player_id, "Unknown")
         print(f"Looking up {player} with CricBuzz ID: {player_id} -> Cricinfo ID: {cricinfo_id}")
-        match_data.append([player, team2_full, team1_full, venue, toss_info, team2_innings, player_id, cricinfo_id])
+        match_data.append([player, team2_full, team1_full, venue, toss_info, team2_innings, player_id, cricinfo_id, match_date])
 
     print(f"✅ Successfully extracted match details for {match_url}")
     return match_date, match_data
 
 def save_to_csv(data, match_number):
-    # Use absolute path instead of relative path
-    download_folder = "D:/App/FIFS_IPL/Today_Match_Details"
+    download_folder = "Today_Match_Details"
     os.makedirs(download_folder, exist_ok=True)
     filename = f"match_{match_number}.csv"
     file_path = os.path.join(download_folder, filename)
 
     # Convert to pandas DataFrame
-    df = pd.DataFrame(data, columns=["Player Name", "Team", "Opponent", "Venue", "Toss Info", "Innings", "Player ID", "Cricinfo ID"])
+    df = pd.DataFrame(data, columns=["Player Name", "Team", "Opponent", "Venue", "Toss Info", "Innings", "Player ID", "Cricinfo ID", "Date"])
     
     # Explicitly convert Venue column to string type (not object)
     # Using the pandas StringDtype for explicit string typing
@@ -346,8 +345,7 @@ def save_to_csv(data, match_number):
     print(f"Venue column data type: {df['Venue'].dtype}")
 
 def check_venue_dtype(match_number):
-    # Updated to use absolute path
-    filename = f"D:/App/FIFS_IPL/Today_Match_Details/match_{match_number}.csv"
+    filename = f"Today_Match_Details/match_{match_number}.csv"
     # Load with explicit string dtype for Venue column
     df = pd.read_csv(filename, dtype={'Venue': 'string'})
     print(f"Venue column data type: {df['Venue'].dtype}")

@@ -237,7 +237,7 @@ def predict_fantasy_points(batting_data, bowling_data, match_number):
     print(f"Starting prediction process for match {match_number}")
     
     # Create fp_predictor folder if it doesn't exist
-    fp_predictor_dir = "D:/App/FIFS_IPL/fp_predictor"
+    fp_predictor_dir = "D:\\Daily\\FIFS_Git\\FIFS_IPL\\fp_predictor"
     if not os.path.exists(fp_predictor_dir):
         os.makedirs(fp_predictor_dir)
         print(f"Created directory: {fp_predictor_dir}")
@@ -259,7 +259,7 @@ def predict_fantasy_points(batting_data, bowling_data, match_number):
         
         # Load model - REMOVED .pkl extension
         print("Loading batting model...")
-        batting_model = load_model(r"D:/App/FIFS_IPL/models/batting_model_flag")
+        batting_model = load_model("D:\\Daily\\FIFS_Git\\FIFS_IPL\\models\\batting_model_flag")
         print("Batting model loaded successfully")
         
         # Make predictions
@@ -337,7 +337,7 @@ def predict_fantasy_points(batting_data, bowling_data, match_number):
         
         # Load model - REMOVED .pkl extension
         print("Loading bowling model...")
-        bowling_model = load_model(r"D:/App/FIFS_IPL/models/bowling_model_flag")
+        bowling_model = load_model("D:\\Daily\\FIFS_Git\\FIFS_IPL\\models\\batting_model_flag")
         print("Bowling model loaded successfully")
         
         # Make predictions

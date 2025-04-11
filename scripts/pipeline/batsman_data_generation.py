@@ -81,7 +81,7 @@ def calculate_stats(df):
 
     return {
         "batting_average": round(batting_average, 4),
-        "strike_rate": round(strike_rate, 2),
+        "strike_rate": round(strike_rate, 2),  # Fixed the rounding from 42 to 2
         "boundaries_per_match": round(boundaries_per_match, 4),
         "runs_per_match": round(runs_per_match, 4),
         "balls_faced_per_match": round(balls_faced_per_match, 4)
@@ -89,6 +89,7 @@ def calculate_stats(df):
 
 def process_player_row(player_input, sheet_df):
     player_id = player_input['player_id']
+    cutoff_date = pd.to_datetime(player_input['cutoff_date'])
     player_name = player_input['player_name']
     bat_team = player_input['bat_team']
     bowl_team = player_input['bowl_team']
@@ -96,7 +97,7 @@ def process_player_row(player_input, sheet_df):
     season = str(player_input['season'])
     venue = player_input['venue']
 
-    player_df = sheet_df[sheet_df['batter_cricinfo_id'] == player_id].copy()
+    player_df = sheet_df[(sheet_df['batter_cricinfo_id'] == player_id) & (pd.to_datetime(sheet_df['date']) < cutoff_date)].copy()
 
     if player_df.empty:
         return {**player_input,
@@ -190,7 +191,7 @@ def batting_test_gen(match_number):
     """
     try:
         # Base directories
-        base_app_dir = "D:\\App\\FIFS_IPL"
+        base_app_dir = "D:\\Daily\\FIFS_Git\\FIFS_IPL"
         
         # Input and output directories with proper path formatting
         today_match_dir = os.path.join(base_app_dir, "Today_Match_Details")
@@ -224,6 +225,19 @@ def batting_test_gen(match_number):
         # Read input CSV
         print(f"⏳ Reading match data from: {input_csv_path}")
         input_df = pd.read_csv(input_csv_path)
+
+        # Attempt to parse the Date column with a known format
+        try:
+            input_df['Date'] = input_df['Date'] + ", 2025"  # Append the year
+            input_df['Date'] = pd.to_datetime(input_df['Date'], format="%d %b, %Y", errors='coerce')
+        except Exception as e:
+            print(f"Error parsing Date column: {e}")
+            sys.exit(1)
+
+        # Drop rows with invalid or missing dates
+        if input_df['Date'].isnull().any():
+            print("⚠️ Warning: Some rows have invalid dates and will be dropped.")
+            input_df = input_df.dropna(subset=['Date'])
         
         # Convert Cricinfo ID column to integer type
         input_df['Cricinfo ID'] = pd.to_numeric(input_df['Cricinfo ID'], errors='coerce')
@@ -238,7 +252,8 @@ def batting_test_gen(match_number):
                 "bowl_team": row['Opponent'],
                 "innings": row['Innings'],
                 "season": 2025,
-                "venue": row['Venue']
+                "venue": row['Venue'],
+                "cutoff_date": row['Date']
             }
             result_row = process_player_row(player_input, sheet_df)
             output_rows.append(result_row)
@@ -274,6 +289,20 @@ def main():
 
     # Read input CSV
     input_df = pd.read_csv(input_csv_path)
+
+    # Attempt to parse the Date column with a known format
+    try:
+        input_df['Date'] = input_df['Date'] + ", 2025"  # Append the year
+        input_df['Date'] = pd.to_datetime(input_df['Date'], format="%d %b, %Y", errors='coerce')
+    except Exception as e:
+        print(f"Error parsing Date column: {e}")
+        sys.exit(1)
+
+    # Drop rows with invalid or missing dates
+    if input_df['Date'].isnull().any():
+        print("⚠️ Warning: Some rows have invalid dates and will be dropped.")
+        input_df = input_df.dropna(subset=['Date'])
+
     # Convert Cricinfo ID column to integer type
     input_df['Cricinfo ID'] = pd.to_numeric(input_df['Cricinfo ID'], errors='coerce')
 
@@ -286,7 +315,8 @@ def main():
             "bowl_team": row['Opponent'],
             "innings": row['Innings'],
             "season": 2025,
-            "venue": row['Venue']
+            "venue": row['Venue'],
+            "cutoff_date": row['Date']
         }
         result_row = process_player_row(player_input, sheet_df)
         output_rows.append(result_row)
