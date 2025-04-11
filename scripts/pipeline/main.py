@@ -11,6 +11,7 @@ import kagglehub
 import match_scraper
 import batsman_data_generation as batsman_gen
 import bowler_data_generation as bowler_gen
+from pycaret.regression import load_model, predict_model
 # ---------------- CONFIG ----------------
 SCOPES = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/spreadsheets",
           "https://www.googleapis.com/auth/drive.file", "https://www.googleapis.com/auth/drive"]
@@ -134,7 +135,7 @@ def bowl_test_gen(match_id):
     return output_path
 
 
-def load_batting_model(model_path=None):
+'''def load_batting_model(model_path=None):
     """
     Load the batting model from the specified path or download it if not provided.
     
@@ -219,9 +220,187 @@ def prediction_fp(bat_test_path, bowl_test_path, batting_model, bowling_model, m
     
     # Define output file paths
     batting_fp_path = os.path.join(output_dir, f"match_{match_number}_bat_fp.csv")
-    bowling_fp_path = os.path.join(output_dir, f"match_{match_number}_bowl_fp.csv")
+    bowling_fp_path = os.path.join(output_dir, f"match_{match_number}_bowl_fp.csv")'''
     
-   
+
+
+
+def predict_fantasy_points(batting_data, bowling_data, match_number):
+    """
+    Predict fantasy points using PyCaret models for batting and bowling data.
+    
+    Args:
+        batting_data: DataFrame containing batting data or path to batting CSV
+        bowling_data: DataFrame containing bowling data or path to bowling CSV
+        match_number: Match number for naming the output files
+    """
+    print(f"Starting prediction process for match {match_number}")
+    
+    # Create fp_predictor folder if it doesn't exist
+    fp_predictor_dir = "D:/App/FIFS_IPL/fp_predictor"
+    if not os.path.exists(fp_predictor_dir):
+        os.makedirs(fp_predictor_dir)
+        print(f"Created directory: {fp_predictor_dir}")
+    else:
+        print(f"Directory already exists: {fp_predictor_dir}")
+    
+    # Process batting data
+    try:
+        # Check if batting_data is a file path or DataFrame
+        if isinstance(batting_data, str):
+            print(f"Reading batting data from file: {batting_data}")
+            batting_df = pd.read_csv(batting_data)
+        else:
+            print("Using provided batting DataFrame")
+            batting_df = batting_data
+            
+        print(f"Batting data shape: {batting_df.shape[0]} rows, {batting_df.shape[1]} columns")
+        print(f"Column names: {batting_df.columns.tolist()}")
+        
+        # Load model - REMOVED .pkl extension
+        print("Loading batting model...")
+        batting_model = load_model(r"D:/App/FIFS_IPL/models/batting_model_flag")
+        print("Batting model loaded successfully")
+        
+        # Make predictions
+        print("Making batting predictions...")
+        batting_predictions = predict_model(batting_model, data=batting_df)
+        print(f"Predictions completed. Result shape: {batting_predictions.shape[0]} rows, {batting_predictions.shape[1]} columns")
+        print(f"Prediction columns: {batting_predictions.columns.tolist()}")
+        
+        # Find prediction column (name can vary by PyCaret version)
+        pred_cols = [col for col in batting_predictions.columns 
+                   if col.startswith('prediction_') or col == 'Label' or col == 'Score']
+        
+        print(f"Identified prediction columns: {pred_cols}")
+        
+        if pred_cols:
+            # Create result dataframe with required columns
+            batting_results = pd.DataFrame()
+            
+            # Add player id
+            if 'player id' in batting_predictions.columns:
+                batting_results['player id'] = batting_predictions['player id']
+                print("Used 'player id' column")
+            elif 'player_id' in batting_predictions.columns:
+                batting_results['player id'] = batting_predictions['player_id']
+                print("Used 'player_id' column")
+            else:
+                print(f"WARNING: Could not find player ID column. Available columns: {batting_predictions.columns.tolist()}")
+            
+            # Add batting_fp
+            if 'batting_fp' in batting_predictions.columns:
+                batting_results['batting_fp'] = batting_predictions['batting_fp']
+                print("Added 'batting_fp' column")
+            else:
+                print(f"WARNING: 'batting_fp' column not found. Available columns: {batting_predictions.columns.tolist()}")
+            
+            # Add prediction
+            batting_results['generated_fp'] = batting_predictions[pred_cols[0]]
+            print(f"Added generated_fp column from {pred_cols[0]}")
+            
+            # Save to CSV
+            batting_output_path = os.path.join(fp_predictor_dir, f"predicted_bat_{match_number}.csv")
+            print(f"Saving batting predictions to {batting_output_path}")
+            
+            # Print a preview of what we're saving
+            print("Preview of batting results:")
+            print(batting_results.head())
+            
+            batting_results.to_csv(batting_output_path, index=False)
+            
+            # Verify file was created
+            if os.path.exists(batting_output_path):
+                print(f"SUCCESS: Batting predictions saved to {batting_output_path}")
+            else:
+                print(f"ERROR: Failed to create {batting_output_path}")
+        else:
+            print("ERROR: Could not identify prediction column in batting results")
+            
+    except Exception as e:
+        print(f"ERROR processing batting data: {str(e)}")
+        import traceback
+        traceback.print_exc(file=sys.stdout)
+    
+    # Process bowling data
+    try:
+        # Check if bowling_data is a file path or DataFrame
+        if isinstance(bowling_data, str):
+            print(f"Reading bowling data from file: {bowling_data}")
+            bowling_df = pd.read_csv(bowling_data)
+        else:
+            print("Using provided bowling DataFrame")
+            bowling_df = bowling_data
+            
+        print(f"Bowling data shape: {bowling_df.shape[0]} rows, {bowling_df.shape[1]} columns")
+        print(f"Column names: {bowling_df.columns.tolist()}")
+        
+        # Load model - REMOVED .pkl extension
+        print("Loading bowling model...")
+        bowling_model = load_model(r"D:/App/FIFS_IPL/models/bowling_model_flag")
+        print("Bowling model loaded successfully")
+        
+        # Make predictions
+        print("Making bowling predictions...")
+        bowling_predictions = predict_model(bowling_model, data=bowling_df)
+        print(f"Predictions completed. Result shape: {bowling_predictions.shape[0]} rows, {bowling_predictions.shape[1]} columns")
+        print(f"Prediction columns: {bowling_predictions.columns.tolist()}")
+        
+        # Find prediction column (name can vary by PyCaret version)
+        pred_cols = [col for col in bowling_predictions.columns 
+                   if col.startswith('prediction_') or col == 'Label' or col == 'Score']
+        
+        print(f"Identified prediction columns: {pred_cols}")
+        
+        if pred_cols:
+            # Create result dataframe with required columns
+            bowling_results = pd.DataFrame()
+            
+            # Add player id
+            if 'player id' in bowling_predictions.columns:
+                bowling_results['player id'] = bowling_predictions['player id']
+                print("Used 'player id' column")
+            elif 'player_id' in bowling_predictions.columns:
+                bowling_results['player id'] = bowling_predictions['player_id']
+                print("Used 'player_id' column")
+            else:
+                print(f"WARNING: Could not find player ID column. Available columns: {bowling_predictions.columns.tolist()}")
+            
+            # Add bowling_fp
+            if 'bowling_fp' in bowling_predictions.columns:
+                bowling_results['bowling_fp'] = bowling_predictions['bowling_fp']
+                print("Added 'bowling_fp' column")
+            else:
+                print(f"WARNING: 'bowling_fp' column not found. Available columns: {bowling_predictions.columns.tolist()}")
+            
+            # Add prediction
+            bowling_results['generated_fp'] = bowling_predictions[pred_cols[0]]
+            print(f"Added generated_fp column from {pred_cols[0]}")
+            
+            # Save to CSV
+            bowling_output_path = os.path.join(fp_predictor_dir, f"predicted_bowl_{match_number}.csv")
+            print(f"Saving bowling predictions to {bowling_output_path}")
+            
+            # Print a preview of what we're saving
+            print("Preview of bowling results:")
+            print(bowling_results.head())
+            
+            bowling_results.to_csv(bowling_output_path, index=False)
+            
+            # Verify file was created
+            if os.path.exists(bowling_output_path):
+                print(f"SUCCESS: Bowling predictions saved to {bowling_output_path}")
+            else:
+                print(f"ERROR: Failed to create {bowling_output_path}")
+        else:
+            print("ERROR: Could not identify prediction column in bowling results")
+            
+    except Exception as e:
+        print(f"ERROR processing bowling data: {str(e)}")
+        import traceback
+        traceback.print_exc(file=sys.stdout)
+
+    #print("Prediction process completed.")
 
 
 if __name__ == "__main__": 
@@ -247,17 +426,7 @@ if __name__ == "__main__":
     bat_test_gen(match_number)
     bowl_test_gen(match_number)
 
-    # Load batting model
-    #batting_model = load_batting_model()
-    #bowling_model= load_bowling_model()
-
-    #print(f"Batting model type: {type(batting_model).__name__}")
-    #print(f"Bowling model type: {type(bowling_model).__name__}")
     
-    '''bat_fp_path, bowl_fp_path = prediction_fp(
-        bat_test_path=f"D:\\App\\FIFS_IPL\\test_data_output\\output_bat_{match_number}.csv",
-        bowl_test_path=f"D:\\App\\FIFS_IPL\\test_data_output\\output_bowl_{match_number}.csv",
-        batting_model=batting_model,
-        bowling_model=bowling_model,
-        match_number=match_number  # Pass the match_number directly
-    )'''
+    batting_data_path = f"D:/App/FIFS_IPL/test_data_output/output_bat_{match_number}.csv"
+    bowling_data_path = f"D:/App/FIFS_IPL/test_data_output/output_bowl_{match_number}.csv"
+    predict_fantasy_points(batting_data, bowling_data, match_number)
