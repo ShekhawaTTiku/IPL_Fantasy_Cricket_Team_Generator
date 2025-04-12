@@ -191,7 +191,7 @@ def batting_test_gen(match_number):
     """
     try:
         # Base directories
-        base_app_dir = "D:\\Daily\\FIFS_Git\\FIFS_IPL"
+        base_app_dir = r"D:\App\FIFS_IPL"
         
         # Input and output directories with proper path formatting
         today_match_dir = os.path.join(base_app_dir, "Today_Match_Details")
