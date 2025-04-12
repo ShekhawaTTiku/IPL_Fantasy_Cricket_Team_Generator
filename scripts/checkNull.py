@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 
 # Load the CSV data
-df = pd.read_csv('data/register_data/squadData_ipl25_updated.csv')
+df = pd.read_csv('data/register_data/squadData_ipl25.csv')
 
 # Find rows where key_cricbuzz is null or NaN
 # This handles both empty strings and actual NaN values

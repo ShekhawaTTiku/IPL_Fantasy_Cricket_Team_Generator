@@ -12,6 +12,7 @@ import match_scraper
 import batsman_data_generation as batsman_gen
 import bowler_data_generation as bowler_gen
 from pycaret.regression import load_model, predict_model
+from sklearn.preprocessing import LabelEncoder
 # ---------------- CONFIG ----------------
 SCOPES = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/spreadsheets",
           "https://www.googleapis.com/auth/drive.file", "https://www.googleapis.com/auth/drive"]
@@ -133,123 +134,11 @@ def bat_test_gen(match_id):
 def bowl_test_gen(match_id):
     output_path = bowler_gen.bowling_test_gen(match_id)
     return output_path
-
-
-'''def load_batting_model(model_path=None):
-    """
-    Load the batting model from the specified path or download it if not provided.
     
-    Args:
-        model_path (str, optional): Path to the model file. If None, the model will be downloaded.
-        
-    Returns:
-        The loaded model
-    """
-    # If path is not provided, download the model
-    if model_path is None:
-        model_path = kagglehub.model_download("avignyansarangi/batting.pkl/other/default")
-    
-    # Check if the path is a directory (kagglehub might return a directory)
-    if os.path.isdir(model_path):
-        # Look for .pkl files in the directory
-        pkl_files = [f for f in os.listdir(model_path) if f.endswith('.pkl')]
-        if not pkl_files:
-            raise FileNotFoundError(f"No .pkl files found in {model_path}")
-        # Use the first .pkl file found
-        model_path = os.path.join(model_path, pkl_files[0])
-    
-    # Load and return the model
-    with open(model_path, 'rb') as f:
-        model = pickle.load(f)
-    
-    print(f"Model loaded successfully from {model_path}")
-    return model
-
-
-def load_bowling_model(model_path=None):
-    """
-    Load the bowling model from the specified path or download it if not provided.
-    
-    Args:
-        model_path (str, optional): Path to the model file. If None, the model will be downloaded.
-        
-    Returns:
-        The loaded model
-    """
-    # If path is not provided, download the model
-    if model_path is None:
-        model_path = kagglehub.model_download("avignyansarangi/bowling-model/other/default")
-    
-    # Check if the path is a directory (kagglehub might return a directory)
-    if os.path.isdir(model_path):
-        # Look for .pkl files in the directory
-        pkl_files = [f for f in os.listdir(model_path) if f.endswith('.pkl')]
-        if not pkl_files:
-            raise FileNotFoundError(f"No .pkl files found in {model_path}")
-        # Use the first .pkl file found
-        model_path = os.path.join(model_path, pkl_files[0])
-    
-    # Load and return the model
-    with open(model_path, 'rb') as f:
-        model = pickle.load(f)
-    
-    print(f"Bowling model loaded successfully from {model_path}")
-    return model
-
-def prediction_fp(bat_test_path, bowl_test_path, batting_model, bowling_model, match_number):
-    """
-    Generate fantasy point predictions for batsmen and bowlers using PyCaret models.
-    
-    Args:
-        bat_test_path (str): Path to batting test data CSV file
-        bowl_test_path (str): Path to bowling test data CSV file
-        batting_model: PyCaret trained model for batting FP prediction
-        bowling_model: PyCaret trained model for bowling FP prediction
-        match_number (str): Match number to use in output file names
-    
-    Returns:
-        tuple: Paths to the generated prediction CSV files (batting_fp_path, bowling_fp_path)
-    """
-    import os
-    import pandas as pd
-    import numpy as np
-    
-    # Create output directory if it doesn't exist
-    output_dir = "fp_prediction"
-    os.makedirs(output_dir, exist_ok=True)
-    
-    # Define output file paths
-    batting_fp_path = os.path.join(output_dir, f"match_{match_number}_bat_fp.csv")
-    bowling_fp_path = os.path.join(output_dir, f"match_{match_number}_bowl_fp.csv")'''
-    
-
-
-
-import os
-import sys
-import pandas as pd
-from pycaret.regression import load_model, predict_model
-
-import os
-import sys
-import pandas as pd
-from pycaret.regression import load_model, predict_model
-from sklearn.preprocessing import LabelEncoder
-
-import os
-import sys
-import pandas as pd
-from pycaret.regression import load_model, predict_model
-from sklearn.preprocessing import LabelEncoder
 
 def predict_fantasy_points(batting_data, bowling_data, match_number):
     """
     Predict fantasy points using PyCaret models for batting and bowling data.
-    
-    Args:
-        batting_data: DataFrame containing batting data or path to batting CSV
-        bowling_data: DataFrame containing bowling data or path to bowling CSV
-        match_number: Match number for naming the output files
     """
     print(f"Starting prediction process for match {match_number}")
     
@@ -375,7 +264,7 @@ def predict_fantasy_points(batting_data, bowling_data, match_number):
         
         # Load model - REMOVED .pkl extension
         print("Loading batting model...")
-        batting_model = load_model(r"D:\App\FIFS_IPL\models\batting_model_flag")
+        batting_model = load_model("D:/App/FIFS_IPL/models/batting_model_flag")
         print("Batting model loaded successfully")
         
         # Make predictions
@@ -459,27 +348,27 @@ def predict_fantasy_points(batting_data, bowling_data, match_number):
             'innings': 'inns',
             'career_average': 'career_avg',
             'career_strike_rate': 'career_sr',
-            'career_economy': 'career_econ',
+            'career_economy': 'career_eco',
             'career_wickets_per_match': 'career_wpm',
             'career_overs_per_match': 'career_opm',
             'last5_average': 'last5_avg',
             'last5_strike_rate': 'last5_sr',
-            'last5_economy': 'last5_econ',
+            'last5_economy': 'last5_eco',
             'last5_wickets_per_match': 'last5_wpm',
             'last5_overs_per_match': 'last5_opm',
             'innings_average': 'inns_avg',
             'innings_strike_rate': 'inns_sr',
-            'innings_economy': 'inns_econ',
+            'innings_economy': 'inns_eco',
             'innings_wickets_per_match': 'inns_wpm',
             'innings_overs_per_match': 'inns_opm',
-            'venue_average': 'ven_avg',
-            'venue_strike_rate': 'ven_sr',
-            'venue_economy': 'ven_econ',
-            'venue_wickets_per_match': 'ven_wpm',
-            'venue_overs_per_match': 'ven_opm',
+            'venue_average': 'venue_avg',
+            'venue_strike_rate': 'venue_sr',
+            'venue_economy': 'venue_eco',
+            'venue_wickets_per_match': 'venue_wpm',
+            'venue_overs_per_match': 'venue_opm',
             'season_average': 'ssn_avg',
             'season_strike_rate': 'ssn_sr',
-            'season_economy': 'ssn_econ',
+            'season_economy': 'ssn_eco',
             'season_wickets_per_match': 'ssn_wpm',
             'season_overs_per_match': 'ssn_opm'
         }
@@ -509,15 +398,10 @@ def predict_fantasy_points(batting_data, bowling_data, match_number):
         # Add required columns that were used during training
         required_columns = [
             'career_debut', 'season_debut', 'venue_debut', 'innings_debut', 
-            # We need to add batting model required columns too based on the error
-            'batter_id',
-            'career_avg', 'career_rpm', 'career_sr', 'career_bpm', 'career_bfpm', 
-            'inns_avg', 'inns_rpm', 'inns_sr', 'inns_bpm', 'inns_bfpm', 
-            'ven_avg', 'ven_rpm', 'ven_sr', 'ven_bpm', 'ven_bfpm', 
-            'ssn_avg', 'ssn_rpm', 'ssn_sr', 'ssn_bpm', 'ssn_bfpm', 
-            'last5_avg', 'last5_sr', 'last5_rpm', 'last5_bfpm', 'last5_bpm'
         ]
         
+
+
         for col in required_columns:
             if col not in bowling_df.columns:
                 print(f"Adding required column: {col}")
@@ -550,7 +434,7 @@ def predict_fantasy_points(batting_data, bowling_data, match_number):
         
         # Load model
         print("Loading bowling model...")
-        bowling_model = load_model(r"D:\App\FIFS_IPL\models\bowling_model_flag")
+        bowling_model = load_model(r"D:/App/FIFS_IPL/models/bowling_model_flag")
         print("Bowling model loaded successfully")
         
         # Make predictions
@@ -590,6 +474,142 @@ def predict_fantasy_points(batting_data, bowling_data, match_number):
     print("Prediction process completed.")
 
 
+def merge_fantasy_predictions(match_number):
+    """
+    Merge batting and bowling fantasy point predictions for a specific match.
+    
+    This function:
+    1. Reads the batting and bowling prediction CSVs for a given match number
+    2. Merges them based on player_id
+    3. Creates a final_fp column that sums the generated_fp from both sources
+    4. Maps player names from squadData_ipl25.csv using key_cricinfo as player_id
+    5. Saves the merged result to a new CSV in fp_predictor_merged folder
+    """
+    
+    # Define directories
+    source_dir = r"D:\App\FIFS_IPL\fp_predictor"
+    target_dir = r"D:\App\FIFS_IPL\fp_predictor_merged"
+    squad_data_path=r"D:\App\FIFS_IPL\data\register_data\squadData_ipl25.csv"
+    
+    # Create target directory if it doesn't exist
+    if not os.path.exists(target_dir):
+        os.makedirs(target_dir)
+        print(f"Created directory: {target_dir}")
+    else:
+        print(f"Target directory already exists: {target_dir}")
+    
+    # Define file paths
+    batting_file = os.path.join(source_dir, f"predicted_bat_{match_number}.csv")
+    bowling_file = os.path.join(source_dir, f"predicted_bowl_{match_number}.csv")
+    output_file = os.path.join(target_dir, f"predicted_merged_{match_number}.csv")
+    
+    # Check if source files exist
+    if not os.path.exists(batting_file):
+        print(f"ERROR: Batting predictions file not found: {batting_file}")
+        return
+    
+    if not os.path.exists(bowling_file):
+        print(f"ERROR: Bowling predictions file not found: {bowling_file}")
+        return
+    
+    try:
+        # Read the CSV files
+        print(f"Reading batting predictions from {batting_file}")
+        batting_df = pd.read_csv(batting_file)
+        
+        print(f"Reading bowling predictions from {bowling_file}")
+        bowling_df = pd.read_csv(bowling_file)
+        
+        # Read squad data file to get player names
+        print(f"Reading squad data from {squad_data_path}")
+        squad_df = pd.read_csv(squad_data_path)
+        
+        # Create a mapping from key_cricinfo (player_id) to dream11_name (player name)
+        # Convert key_cricinfo to string to match the player_id datatype in prediction files
+        squad_df['key_cricinfo'] = squad_df['key_cricinfo'].astype(str)
+        player_name_map = dict(zip(squad_df['key_cricinfo'], squad_df['dream11_name']))
+        
+        print(f"Created player name mapping for {len(player_name_map)} players")
+        
+        # Check for expected columns
+        if 'player id' not in batting_df.columns or 'generated_fp' not in batting_df.columns:
+            print(f"ERROR: Batting file is missing required columns. Found: {batting_df.columns.tolist()}")
+            return
+            
+        if 'player id' not in bowling_df.columns or 'generated_fp' not in bowling_df.columns:
+            print(f"ERROR: Bowling file is missing required columns. Found: {bowling_df.columns.tolist()}")
+            return
+        
+        # Create a merged dataframe
+        print("Merging batting and bowling data")
+        
+        # Initialize the merged dataframe with all player IDs
+        all_players = pd.concat([
+            batting_df[['player id']],
+            bowling_df[['player id']]
+        ]).drop_duplicates()
+        
+        # Convert player id to string to match with key_cricinfo
+        all_players['player id'] = all_players['player id'].astype(str)
+        
+        # Add player name column based on mapping
+        all_players['player name'] = all_players['player id'].map(player_name_map)
+        
+        # For any players not found in the mapping, set name to "Unknown"
+        all_players['player name'] = all_players['player name'].fillna("Unknown")
+        
+        # Rename columns for clarity in the merge
+        batting_df = batting_df.rename(columns={'generated_fp': 'batting_fp'})
+        bowling_df = bowling_df.rename(columns={'generated_fp': 'bowling_fp'})
+        
+        # Convert player id to string in batting and bowling dataframes
+        batting_df['player id'] = batting_df['player id'].astype(str)
+        bowling_df['player id'] = bowling_df['player id'].astype(str)
+        
+        # Merge batting data
+        merged_df = pd.merge(
+            all_players,
+            batting_df[['player id', 'batting_fp']],
+            on='player id',
+            how='left'
+        )
+        
+        # Merge bowling data
+        merged_df = pd.merge(
+            merged_df,
+            bowling_df[['player id', 'bowling_fp']],
+            on='player id',
+            how='left'
+        )
+        
+        # Fill NaN values with 0 (players who are only batters or only bowlers)
+        merged_df['batting_fp'] = merged_df['batting_fp'].fillna(0)
+        merged_df['bowling_fp'] = merged_df['bowling_fp'].fillna(0)
+        
+        # Calculate final fantasy points
+        merged_df['final_fp'] = merged_df['batting_fp'] + merged_df['bowling_fp']
+        
+        # Reorder columns to have player name first, then id, then fantasy points
+        merged_df = merged_df[['player name', 'player id', 'batting_fp', 'bowling_fp', 'final_fp']]
+        
+        # Save to CSV
+        print(f"Saving merged predictions to {output_file}")
+        merged_df.to_csv(output_file, index=False)
+        
+        # Print summary
+        print(f"Successfully merged predictions for match {match_number}")
+        print(f"Total players: {len(merged_df)}")
+        print(f"Players with batting points: {(merged_df['batting_fp'] > 0).sum()}")
+        print(f"Players with bowling points: {(merged_df['bowling_fp'] > 0).sum()}")
+        print(f"Players with both batting and bowling points: {((merged_df['batting_fp'] > 0) & (merged_df['bowling_fp'] > 0)).sum()}")
+        print(f"Players with mapped names: {(merged_df['player name'] != 'Unknown').sum()}")
+        
+    except Exception as e:
+        print(f"ERROR: Failed to merge predictions: {str(e)}")
+        import traceback
+        traceback.print_exc()
+
+
 if __name__ == "__main__": 
 
     # Load all datasets
@@ -618,3 +638,4 @@ if __name__ == "__main__":
     bowling_data_path = f"D:/App/FIFS_IPL/test_data_output/output_bowl_{match_number}.csv"
     #print(batting_data_path)
     predict_fantasy_points(batting_data_path, bowling_data_path, match_number)
+    merge_fantasy_predictions(match_number)
