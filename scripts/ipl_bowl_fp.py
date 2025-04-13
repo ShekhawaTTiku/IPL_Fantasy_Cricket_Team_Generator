@@ -37,7 +37,6 @@ def load_google_sheet(sheet_url):
     return pd.DataFrame(data)
 
 # ---------------- CALCULATE BOWLING FANTASY POINTS ----------------
-# ---------------- CALCULATE BOWLING FANTASY POINTS ----------------
 def calculate_bowling_fantasy_points(data):
     # Calculate wicket points (+30 per wicket)
     data['wicket_points'] = data['wickets'] * 30
