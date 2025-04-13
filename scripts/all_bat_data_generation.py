@@ -1,190 +1,189 @@
 import pandas as pd
-import numpy as np
+import sys
 import os
+from datetime import datetime
 
-
-# Validate the input data
-def validate_columns(df):
-    required_columns = [
-        'match_id', 'date', 'inns', 'batter', 'batter_id', 'bat_team', 'bowl_team',
-        'runs', 'balls', 'fours', 'sixes', 'sr', 'isOut', 'wicketType', 'bowler',
-        'bowler_id', 'venue', 'league'
-    ]
-    missing_columns = [col for col in required_columns if col not in df.columns]
-    if missing_columns:
-        raise ValueError(f"The following required columns are missing: {missing_columns}")
-
-
-# Preprocessing the data
-def preprocess_data(df):
-    print("Preprocessing data...")
-    # Convert dates to datetime
+# ---------------- LOAD LOCAL CSV ----------------
+def load_local_csv(file_path):
+    df = pd.read_csv(file_path)
     df['date'] = pd.to_datetime(df['date'], errors='coerce')
-    
-    # Sort data chronologically
-    df.sort_values(by=['date', 'inns'], inplace=True)
-    
-    # Extract season from date
-    df['season'] = df['date'].dt.year
-    
-    # Handle missing or NaN values for relevant columns
-    df['runs'] = df['runs'].fillna(0).astype(int)  # Assuming 'runs' column contains runs scored
-    df['balls'] = df['balls'].fillna(0).astype(int)  # Assuming 'balls' column contains balls faced
-    df['fours'] = df['fours'].fillna(0).astype(int)  # Assuming 'fours' column contains number of 4s
-    df['sixes'] = df['sixes'].fillna(0).astype(int)  # Assuming 'sixes' column contains number of 6s
-    df['isOut'] = df['isOut'].fillna(0).astype(int)  # Assuming 'isOut' is binary (1 if out, 0 if not out)
-    
-    # Calculate boundaries as the sum of fours and sixes
-    df['boundaries'] = df['fours'] + df['sixes']
-    
-    print("Data preprocessing complete!")
+
+    # Normalize isOut values
+    if 'isOut' in df.columns:
+        df['isOut'] = df['isOut'].astype(str).str.lower().isin(['true', '1'])
+    else:
+        print("❌ Column 'isOut' not found in match data.")
+        sys.exit(1)
+
     return df
 
+# ---------------- HELPERS ----------------
+def get_last_5_unique_matches(df):
+    df_sorted = df.sort_values(by='date', ascending=False)
+    unique_matches = df_sorted['match_id'].drop_duplicates()
+    last_5_ids = unique_matches.head(5).tolist()
+    return df[df['match_id'].isin(last_5_ids)]
 
-# Calculate career statistics
-def calculate_career_stats(df):
-    print("Calculating career statistics...")
-    df['cumulative_runs'] = df.groupby(['batter_id', 'league'])['runs'].cumsum() - df['runs']
-    df['cumulative_balls'] = df.groupby(['batter_id', 'league'])['balls'].cumsum() - df['balls']
-    df['cumulative_dismissals'] = df.groupby(['batter_id', 'league'])['isOut'].cumsum() - df['isOut']
-    df['cum_matches'] = df.groupby(['batter_id', 'league']).cumcount()
-    
-    # Career metrics
-    df['career_avg'] = df['cumulative_runs'] / df['cumulative_dismissals'].replace(0, np.nan)
-    df['career_sr'] = (df['cumulative_runs'] / df['cumulative_balls'].replace(0, np.nan)) * 100
-    df['career_rpm'] = df['cumulative_runs'] / df['cum_matches'].replace(0, np.nan)
-    df['career_bpm'] = df.groupby(['batter_id', 'league'])['boundaries'].cumsum() / df['cum_matches'].replace(0, np.nan)
-    df['career_bfpm'] = df['cumulative_balls'] / df['cum_matches'].replace(0, np.nan)
-    
-    print("Career statistics calculation complete!")
-    return df
+def get_last_5_batting_matches(df):
+    batted_df = df[df['balls'] > 0]
+    batted_df_sorted = batted_df.sort_values(by='date', ascending=False)
+    unique_batting_matches = batted_df_sorted['match_id'].drop_duplicates()
+    last_5_batting_ids = unique_batting_matches.head(5).tolist()
+    return df[df['match_id'].isin(last_5_batting_ids)]
 
+def calculate_stats(df):
+    if df.empty:
+        return {
+            "batting_average": 0.0,
+            "strike_rate": 0.0,
+            "boundaries_per_match": 0.0,
+            "runs_per_match": 0.0,
+            "balls_faced_per_match": 0.0
+        }
 
-# Calculate innings-specific statistics
-def calculate_innings_stats(df):
-    print("Calculating innings-specific statistics (optimized)...")
-    
-    # Group by batter_id, league, and innings
-    innings_groups = df.groupby(['batter_id', 'league', 'inns'])
-    
-    # Calculate cumulative metrics with proper index alignment
-    df['inns_avg'] = innings_groups['runs'].apply(lambda x: x.shift().expanding().mean()).reset_index(level=[0, 1, 2], drop=True)
-    df['inns_sr'] = (
-        innings_groups['runs'].apply(lambda x: x.shift().expanding().sum()) /
-        innings_groups['balls'].apply(lambda x: x.shift().expanding().sum())
-    ).reset_index(level=[0, 1, 2], drop=True) * 100
-    df['inns_rpm'] = innings_groups['runs'].apply(lambda x: x.shift().expanding().mean()).reset_index(level=[0, 1, 2], drop=True)
-    df['inns_bpm'] = innings_groups['boundaries'].apply(lambda x: x.shift().expanding().mean()).reset_index(level=[0, 1, 2], drop=True)
-    df['inns_bfpm'] = innings_groups['balls'].apply(lambda x: x.shift().expanding().mean()).reset_index(level=[0, 1, 2], drop=True)
+    total_runs = df['runs'].sum()
+    total_balls = df['balls'].sum()
+    total_fours = df['fours'].sum()
+    total_sixes = df['sixes'].sum()
+    times_out = df['isOut'].sum()
+    matches = df['match_id'].nunique()
 
-    print("Innings-specific statistics calculation complete!")
-    return df
+    batting_average = total_runs / times_out if times_out > 0 else total_runs
+    strike_rate = (total_runs / total_balls) * 100 if total_balls > 0 else 0
+    boundaries_per_match = (total_fours + total_sixes) / matches if matches > 0 else 0
+    runs_per_match = total_runs / matches if matches > 0 else 0
+    balls_faced_per_match = total_balls / matches if matches > 0 else 0
 
+    return {
+        "batting_average": round(batting_average, 4),
+        "strike_rate": round(strike_rate, 2),
+        "boundaries_per_match": round(boundaries_per_match, 4),
+        "runs_per_match": round(runs_per_match, 4),
+        "balls_faced_per_match": round(balls_faced_per_match, 4)
+    }
 
-def calculate_venue_stats(df):
-    print("Calculating venue-specific statistics (optimized)...")
-    
-    # Group by batter_id, league, and venue
-    venue_groups = df.groupby(['batter_id', 'league', 'venue'])
-    
-    # Calculate cumulative metrics with proper index alignment
-    df['venue_avg'] = venue_groups['runs'].apply(lambda x: x.shift().expanding().mean()).reset_index(level=[0, 1, 2], drop=True)
-    df['venue_sr'] = (
-        venue_groups['runs'].apply(lambda x: x.shift().expanding().sum()) /
-        venue_groups['balls'].apply(lambda x: x.shift().expanding().sum())
-    ).reset_index(level=[0, 1, 2], drop=True) * 100
-    df['venue_rpm'] = venue_groups['runs'].apply(lambda x: x.shift().expanding().mean()).reset_index(level=[0, 1, 2], drop=True)
-    df['venue_bpm'] = venue_groups['boundaries'].apply(lambda x: x.shift().expanding().mean()).reset_index(level=[0, 1, 2], drop=True)
-    df['venue_bfpm'] = venue_groups['balls'].apply(lambda x: x.shift().expanding().mean()).reset_index(level=[0, 1, 2], drop=True)
+def process_player_row(player_input, sheet_df):
+    player_id = player_input['player_id']
+    cutoff_date = pd.to_datetime(player_input['cutoff_date'])
+    player_name = player_input['player_name']
+    bat_team = player_input['bat_team']
+    bowl_team = player_input['bowl_team']
+    innings = int(player_input['innings'])
+    season = str(player_input['season'])
+    venue = player_input['venue']
 
-    print("Venue-specific statistics calculation complete!")
-    return df
+    print(f"\n📊 Processing player: {player_name} (ID: {player_id})")
 
+    player_df = sheet_df[
+        (sheet_df['batter_id'] == player_id) &
+        (sheet_df['date'] < cutoff_date)
+    ].copy()
 
-# Calculate season-specific statistics
-def calculate_season_stats(df):
-    print("Calculating season-specific statistics...")
-    season_groups = df.groupby(['batter_id', 'league', 'season'])
-    
-    df['ssn_avg'] = season_groups['runs'].transform(lambda x: x.shift().expanding().mean())
-    df['ssn_sr'] = (season_groups['runs'].transform(lambda x: x.shift().expanding().sum()) / 
-                    season_groups['balls'].transform(lambda x: x.shift().expanding().sum())) * 100
-    df['ssn_rpm'] = season_groups['runs'].transform(lambda x: x.shift().expanding().mean())
-    df['ssn_bpm'] = season_groups['boundaries'].transform(lambda x: x.shift().expanding().mean())
-    df['ssn_bfpm'] = season_groups['balls'].transform(lambda x: x.shift().expanding().mean())
-    
-    print("Season-specific statistics calculation complete!")
-    return df
+    result = {**player_input}
 
+    if player_df.empty:
+        print(f"⚠️ No match data found for player {player_name} before {cutoff_date.date()}")
+        return result  # If no data, just return input
 
-# Calculate recent form statistics (last N matches)
-def calculate_recent_form_stats(df, n_matches=5):
-    print("Calculating recent form statistics (optimized)...")
-    
-    # Ensure data is sorted by batter_id and date
-    df = df.sort_values(by=['batter_id', 'date'])
-    
-    # Group by batter_id
-    grouped = df.groupby('batter_id', group_keys=False)
-    
-    # Calculate rolling metrics for the last N matches
-    df['last5_avg'] = grouped['runs'].apply(lambda x: x.shift(1).rolling(window=n_matches, min_periods=1).mean())
-    df['last5_sr'] = (grouped['runs'].apply(lambda x: x.shift(1).rolling(window=n_matches, min_periods=1).sum()) /
-                      grouped['balls'].apply(lambda x: x.shift(1).rolling(window=n_matches, min_periods=1).sum()) * 100)
-    df['last5_rpm'] = grouped['runs'].apply(lambda x: x.shift(1).rolling(window=n_matches, min_periods=1).mean())
-    df['last5_bpm'] = grouped['boundaries'].apply(lambda x: x.shift(1).rolling(window=n_matches, min_periods=1).mean())
-    df['last5_bfpm'] = grouped['balls'].apply(lambda x: x.shift(1).rolling(window=n_matches, min_periods=1).mean())
+    # ------- Grouped by league -------
+    leagues = player_df['league'].dropna().unique()
+    for league in leagues:
+        league_df = player_df[player_df['league'] == league]
 
-    print("Recent form statistics calculation complete!")
-    return df
+        # Career by league
+        league_career = calculate_stats(league_df)
+        for key, value in league_career.items():
+            result[f"career_{league}_{key}"] = value
 
+        # Season by league
+        league_season_df = league_df[league_df['date'].dt.year == int(season)]
+        league_season = calculate_stats(league_season_df)
+        for key, value in league_season.items():
+            result[f"season_{league}_{key}"] = value
 
-# Data cleanup for NULL and infinite values
-def cleanup_data(df):
-    print("Cleaning up data (handling NaN and Infinite values)...")
-    df.replace([np.inf, -np.inf], np.nan, inplace=True)
-    df.fillna(0, inplace=True)
-    print("Data cleanup complete!")
-    return df
+        # Innings by league
+        league_innings_df = league_df[league_df['inns'] == innings]
+        league_innings = calculate_stats(league_innings_df)
+        for key, value in league_innings.items():
+            result[f"innings_{league}_{key}"] = value
 
+    # ------- Last 5 matches (not league specific) -------
+    last5_df = get_last_5_unique_matches(player_df[player_df['date'].dt.year == int(season)])
+    if len(last5_df['match_id'].unique()) < 5:
+        additional_df = get_last_5_unique_matches(player_df[player_df['date'].dt.year < int(season)])
+        last5_df = pd.concat([last5_df, additional_df]).drop_duplicates(subset='match_id').head(5)
 
-# Main function to process the data
-def process_batting_data(df):
-    print("Starting batting data processing...")
-    df = preprocess_data(df)
-    df = calculate_career_stats(df)
-    df = calculate_innings_stats(df)
-    df = calculate_venue_stats(df)
-    df = calculate_season_stats(df)
-    df = calculate_recent_form_stats(df, n_matches=5)  # Add recent form stats calculation
-    df = cleanup_data(df)
-    print("Batting data processing complete!")
-    return df
+    last5_batting_df = get_last_5_batting_matches(player_df[player_df['date'].dt.year == int(season)])
+    if len(last5_batting_df['match_id'].unique()) < 5:
+        additional_batting_df = get_last_5_batting_matches(player_df[player_df['date'].dt.year < int(season)])
+        last5_batting_df = pd.concat([last5_batting_df, additional_batting_df]).drop_duplicates(subset='match_id').head(5)
+
+    last5_stats_regular = calculate_stats(last5_df)
+    last5_stats_batting = calculate_stats(last5_batting_df)
+
+    result['last5_batting_average'] = last5_stats_batting['batting_average']
+    result['last5_strike_rate'] = last5_stats_batting['strike_rate']
+    result['last5_boundaries_per_match'] = last5_stats_regular['boundaries_per_match']
+    result['last5_runs_per_match'] = last5_stats_regular['runs_per_match']
+    result['last5_balls_faced_per_match'] = last5_stats_regular['balls_faced_per_match']
+
+    # ------- Venue stats (still overall) -------
+    venue_df = player_df[player_df['venue'] == venue]
+    venue_stats = calculate_stats(venue_df)
+    for key, value in venue_stats.items():
+        result[f"venue_{key}"] = value
+
+    return result
 
 
-# Example usage
-if __name__ == "__main__":
-    input_file = os.path.join('data', 'mbm', 'all_league', 'all_league_bat_final.csv')
-    output_file = os.path.join('scripts', 'processed_batting_data.csv')
+# ---------------- MAIN ----------------
+def main():
+    input_csv_path = "Today_Match_Details/match_1.csv"  # 🔁 Update if needed
+    output_csv_path = "scripts/player_output_bat.csv"               # 🔁 Update if needed
+    MATCH_DATA_PATH = "data/mbm/all_league/all_league_bat_final.csv"
+
+    print(f"📂 Loading match data from: {MATCH_DATA_PATH}")
+    sheet_df = load_local_csv(MATCH_DATA_PATH)
+
+    for col in ['runs', 'balls', 'fours', 'sixes', 'inns']:
+        sheet_df[col] = pd.to_numeric(sheet_df[col], errors='coerce').fillna(0).astype(int)
+
+    input_df = pd.read_csv(input_csv_path)
 
     try:
-        print(f"Loading input file: {input_file}")
-        df = pd.read_csv(input_file)
-        print(f"Input file loaded successfully. Number of rows: {len(df)}")
-        
-        # Validate columns
-        validate_columns(df)
-        
-        # Process data
-        processed_df = process_batting_data(df)
-        
-        # Save the processed data
-        print(f"Saving the processed data to: {output_file}")
-        processed_df.to_csv(output_file, index=False)
-        print(f"Processed data saved to: {output_file}")
-    except FileNotFoundError:
-        print(f"Error: File not found at {input_file}")
-    except ValueError as e:
-        print(f"Validation Error: {e}")
+        input_df['Date'] = input_df['Date'] + ", 2025"
+        input_df['Date'] = pd.to_datetime(input_df['Date'], format="%d %b, %Y", errors='coerce')
     except Exception as e:
-        print(f"An error occurred: {e}")
+        print(f"❌ Error parsing Date column: {e}")
+        sys.exit(1)
+
+    if input_df['Date'].isnull().any():
+        print("⚠️ Warning: Some rows have invalid dates and will be dropped.")
+        input_df = input_df.dropna(subset=['Date'])
+
+    input_df['Cricinfo ID'] = pd.to_numeric(input_df['Cricinfo ID'], errors='coerce')
+
+    output_rows = []
+    for _, row in input_df.iterrows():
+        player_input = {
+            "player_id": row['Cricinfo ID'],
+            "player_name": row['Player Name'],
+            "bat_team": row['Team'],
+            "bowl_team": row['Opponent'],
+            "innings": row['Innings'],
+            "season": 2025,
+            "venue": row['Venue'],
+            "cutoff_date": row['Date']
+        }
+        result_row = process_player_row(player_input, sheet_df)
+        output_rows.append(result_row)
+
+    output_df = pd.DataFrame(output_rows)
+
+    file_exists = os.path.exists(output_csv_path)
+    output_df.to_csv(output_csv_path, index=False, mode='a' if file_exists else 'w', header=not file_exists)
+    print(f"\n✅ Player stats written to: {output_csv_path}")
+
+# ---------------- RUN ----------------
+if __name__ == "__main__":
+    main()
