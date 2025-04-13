@@ -309,14 +309,14 @@ def extract_match_details(match_url):
         # Get the cricinfo_id from the mapping
         cricinfo_id = player_id_mapping.get(player_id, "Unknown")
         print(f"Looking up {player} with CricBuzz ID: {player_id} -> Cricinfo ID: {cricinfo_id}")
-        match_data.append([player, team1_full, team2_full, venue, toss_info, team1_innings, player_id, cricinfo_id])
+        match_data.append([player, team1_full, team2_full, venue, toss_info, team1_innings, player_id, cricinfo_id, match_date])
     
     # Add players from team 2
     for player, player_id in zip(team2_players, team2_ids):
         # Get the cricinfo_id from the mapping
         cricinfo_id = player_id_mapping.get(player_id, "Unknown")
         print(f"Looking up {player} with CricBuzz ID: {player_id} -> Cricinfo ID: {cricinfo_id}")
-        match_data.append([player, team2_full, team1_full, venue, toss_info, team2_innings, player_id, cricinfo_id])
+        match_data.append([player, team2_full, team1_full, venue, toss_info, team2_innings, player_id, cricinfo_id, match_date])
 
     print(f"✅ Successfully extracted match details for {match_url}")
     return match_date, match_data
@@ -328,7 +328,7 @@ def save_to_csv(data, match_number):
     file_path = os.path.join(download_folder, filename)
 
     # Convert to pandas DataFrame
-    df = pd.DataFrame(data, columns=["Player Name", "Team", "Opponent", "Venue", "Toss Info", "Innings", "Player ID", "Cricinfo ID"])
+    df = pd.DataFrame(data, columns=["Player Name", "Team", "Opponent", "Venue", "Toss Info", "Innings", "Player ID", "Cricinfo ID", "Date"])
     
     # Explicitly convert Venue column to string type (not object)
     # Using the pandas StringDtype for explicit string typing
@@ -427,7 +427,7 @@ def run_match_scrapper():
                 # Update result dictionary
                 result["success"] = True
                 result["message"] = f"Match details saved for match #{match_number}"
-                result["csv_path"] = f"Today_Match_Details/match_{match_number}.csv"
+                result["csv_path"] = f"D:/App/FIFS_IPL/Today_Match_Details/match_{match_number}.csv"
             else:
                 result["message"] = "No match data found!"
         else:
@@ -442,4 +442,3 @@ def run_match_scrapper():
 # Original main code replaced with the callable function above
 if __name__ == "__main__":
     result = run_match_scrapper()
-    print(f"Operation completed: {result['message']}")

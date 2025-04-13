@@ -41,10 +41,20 @@ def load_google_sheet(sheet_url):
 
 # ---------------- HELPERS ----------------
 def get_last_5_unique_matches(df):
+    """Gets the last 5 unique matches regardless of whether the player batted or not"""
     df_sorted = df.sort_values(by='date', ascending=False)
     unique_matches = df_sorted['match_id'].drop_duplicates()
     last_5_ids = unique_matches.head(5).tolist()
     return df[df['match_id'].isin(last_5_ids)]
+
+def get_last_5_batting_matches(df):
+    """Gets the last 5 unique matches where the player actually batted (excluding DNBs)"""
+    # Filter out DNBs (matches where player didn't face any balls)
+    batted_df = df[df['balls'] > 0]
+    batted_df_sorted = batted_df.sort_values(by='date', ascending=False)
+    unique_batting_matches = batted_df_sorted['match_id'].drop_duplicates()
+    last_5_batting_ids = unique_batting_matches.head(5).tolist()
+    return df[df['match_id'].isin(last_5_batting_ids)]
 
 def calculate_stats(df):
     if df.empty:
@@ -71,7 +81,7 @@ def calculate_stats(df):
 
     return {
         "batting_average": round(batting_average, 4),
-        "strike_rate": round(strike_rate, 42),
+        "strike_rate": round(strike_rate, 2),  # Fixed the rounding from 42 to 2
         "boundaries_per_match": round(boundaries_per_match, 4),
         "runs_per_match": round(runs_per_match, 4),
         "balls_faced_per_match": round(balls_faced_per_match, 4)
@@ -79,6 +89,7 @@ def calculate_stats(df):
 
 def process_player_row(player_input, sheet_df):
     player_id = player_input['player_id']
+    cutoff_date = pd.to_datetime(player_input['cutoff_date'])
     player_name = player_input['player_name']
     bat_team = player_input['bat_team']
     bowl_team = player_input['bowl_team']
@@ -86,7 +97,7 @@ def process_player_row(player_input, sheet_df):
     season = str(player_input['season'])
     venue = player_input['venue']
 
-    player_df = sheet_df[sheet_df['batter_cricinfo_id'] == player_id].copy()
+    player_df = sheet_df[(sheet_df['batter_cricinfo_id'] == player_id) & (pd.to_datetime(sheet_df['date']) < cutoff_date)].copy()
 
     if player_df.empty:
         return {**player_input,
@@ -98,7 +109,7 @@ def process_player_row(player_input, sheet_df):
     # Career stats
     career_stats = calculate_stats(player_df)
 
-    # Last 5 matches (consider across seasons if fewer than 5 matches in the current season)
+    # Last 5 matches for boundaries_per_match, runs_per_match, balls_faced_per_match
     last5_df = player_df[player_df['date'].dt.year == int(season)]
     last5_df = get_last_5_unique_matches(last5_df)
 
@@ -112,8 +123,23 @@ def process_player_row(player_input, sheet_df):
     
         # Combine current season and previous seasons matches
         last5_df = pd.concat([last5_df, additional_df]).drop_duplicates(subset='match_id').head(5)
+    
+    # Last 5 batting matches (excluding DNBs) for batting_average and strike_rate
+    last5_batting_df = player_df[player_df['date'].dt.year == int(season)]
+    last5_batting_df = get_last_5_batting_matches(last5_batting_df)
+    
+    # Check if fewer than 5 batting matches in current season
+    if len(last5_batting_df['match_id'].unique()) < 5:
+        # Get batting matches from previous seasons
+        additional_batting_df = player_df[player_df['date'].dt.year < int(season)]
+        additional_batting_df = get_last_5_batting_matches(additional_batting_df)
+        
+        # Combine current and previous seasons batting matches
+        last5_batting_df = pd.concat([last5_batting_df, additional_batting_df]).drop_duplicates(subset='match_id').head(5)
 
-    last5_stats = calculate_stats(last5_df)
+    # Calculate stats for regular and batting-only last 5 matches
+    last5_stats_regular = calculate_stats(last5_df)
+    last5_stats_batting = calculate_stats(last5_batting_df)
 
     # Innings stats
     innings_df = player_df[player_df['innings'] == innings]
@@ -129,68 +155,118 @@ def process_player_row(player_input, sheet_df):
 
     # Combine all stats
     result = {**player_input}
-    for prefix, stats in zip(['career', 'last5', 'innings', 'venue', 'season'], [career_stats, last5_stats, innings_stats, venue_stats, season_stats]):
+    
+    # Add career stats first
+    for key, value in career_stats.items():
+        result[f"career_{key}"] = value
+    
+    # Add last5 stats next (after career stats)
+    # For batting_average and strike_rate, use the batting-only stats
+    result['last5_batting_average'] = last5_stats_batting['batting_average']
+    result['last5_strike_rate'] = last5_stats_batting['strike_rate']
+    
+    # For other metrics, use the regular last5 stats
+    result['last5_boundaries_per_match'] = last5_stats_regular['boundaries_per_match']
+    result['last5_runs_per_match'] = last5_stats_regular['runs_per_match']
+    result['last5_balls_faced_per_match'] = last5_stats_regular['balls_faced_per_match']
+    
+    # Then add innings, venue, and season stats
+    for prefix, stats in zip(['innings', 'venue', 'season'], 
+                           [innings_stats, venue_stats, season_stats]):
         for key, value in stats.items():
             result[f"{prefix}_{key}"] = value
-
+    
     return result
 
-# ---------------- NEW FUNCTION FOR EXTERNAL CALLING ----------------
+# ---------------- BATTING GENERATOR FUNCTION ----------------
 def batting_test_gen(match_number):
     """
-    Analyze player stats for a specific match number.
+    Process batting statistics for a specific match number.
     
-    Parameters:
-    match_number (int): The match number to process
-    
+    Args:
+        match_number: The match number to process
+        
     Returns:
-    str: Path to the output CSV file
-    Today_Match_Details
+        None. Writes the processed data to an output CSV file.
     """
-    # Format input and output paths based on match_number
-    input_csv_path = f"Today_Match_Details/match_{match_number}.csv"
-    output_csv_path = f"test_data_output/output_bat_{match_number}.csv"
+    try:
+        # Base directories
+        base_app_dir = r"D:\App\FIFS_IPL"
+        
+        # Input and output directories with proper path formatting
+        today_match_dir = os.path.join(base_app_dir, "Today_Match_Details")
+        output_dir = os.path.join(base_app_dir, "test_data_output")
+        
+        # Create output directory if it doesn't exist
+        if not os.path.exists(output_dir):
+            print(f"📁 Creating output directory: {output_dir}")
+            os.makedirs(output_dir, exist_ok=True)
+        
+        # Construct input and output file paths
+        input_csv_path = os.path.join(today_match_dir, f"match_{match_number}.csv")
+        output_csv_path = os.path.join(output_dir, f"output_bat_{match_number}.csv")
+        
+        # Google Sheet URL
+        SHEET_URL = "https://docs.google.com/spreadsheets/d/1dumS1w_IQ7pv448tm-RKVqAQTEgOMKw59wf914qLHs0/edit?usp=sharing"
+        
+        # Load Google Sheet
+        print(f"⏳ Loading Google Sheet data...")
+        sheet_df = load_google_sheet(SHEET_URL)
+        
+        # Ensure numeric columns are parsed properly
+        for col in ['runs', 'balls', 'fours', 'sixes', 'innings']:
+            sheet_df[col] = pd.to_numeric(sheet_df[col], errors='coerce').fillna(0).astype(int)
+        
+        # Check if input file exists
+        if not os.path.exists(input_csv_path):
+            print(f"❌ Input file not found: {input_csv_path}")
+            return False
+            
+        # Read input CSV
+        print(f"⏳ Reading match data from: {input_csv_path}")
+        input_df = pd.read_csv(input_csv_path)
+
+        # Attempt to parse the Date column with a known format
+        try:
+            input_df['Date'] = input_df['Date'] + ", 2025"  # Append the year
+            input_df['Date'] = pd.to_datetime(input_df['Date'], format="%d %b, %Y", errors='coerce')
+        except Exception as e:
+            print(f"Error parsing Date column: {e}")
+            sys.exit(1)
+
+        # Drop rows with invalid or missing dates
+        if input_df['Date'].isnull().any():
+            print("⚠️ Warning: Some rows have invalid dates and will be dropped.")
+            input_df = input_df.dropna(subset=['Date'])
+        
+        # Convert Cricinfo ID column to integer type
+        input_df['Cricinfo ID'] = pd.to_numeric(input_df['Cricinfo ID'], errors='coerce')
+        
+        print(f"🔄 Processing player stats for match #{match_number}...")
+        output_rows = []
+        for _, row in input_df.iterrows():
+            player_input = {
+                "player_id": row['Cricinfo ID'],
+                "player_name": row['Player Name'],
+                "bat_team": row['Team'],
+                "bowl_team": row['Opponent'],
+                "innings": row['Innings'],
+                "season": 2025,
+                "venue": row['Venue'],
+                "cutoff_date": row['Date']
+            }
+            result_row = process_player_row(player_input, sheet_df)
+            output_rows.append(result_row)
+        
+        # Create output DataFrame and save to CSV
+        output_df = pd.DataFrame(output_rows)
+        output_df.to_csv(output_csv_path, index=False)
+        print(f"✅ Player stats saved to: {output_csv_path}")
+        return True
     
-    # Ensure output directory exists
-    os.makedirs(os.path.dirname(output_csv_path), exist_ok=True)
-    
-    # Put your sheet URL here
-    SHEET_URL = "https://docs.google.com/spreadsheets/d/1dumS1w_IQ7pv448tm-RKVqAQTEgOMKw59wf914qLHs0/edit?usp=sharing"
-    
-    # Load Google Sheet
-    sheet_df = load_google_sheet(SHEET_URL)
-
-    # Ensure numeric columns are parsed properly
-    for col in ['runs', 'balls', 'fours', 'sixes', 'innings']:
-        sheet_df[col] = pd.to_numeric(sheet_df[col], errors='coerce').fillna(0).astype(int)
-
-    # Read input CSV
-    input_df = pd.read_csv(input_csv_path)
-    # Convert Cricinfo ID column to integer type
-    input_df['Cricinfo ID'] = pd.to_numeric(input_df['Cricinfo ID'], errors='coerce')
-
-    output_rows = []
-    for _, row in input_df.iterrows():
-        player_input = {
-            "player_id": row['Cricinfo ID'],
-            "player_name": row['Player Name'],
-            "bat_team": row['Team'],
-            "bowl_team": row['Opponent'],
-            "innings": row['Innings'],
-            "season": 2025,
-            "venue": row['Venue']
-        }
-        result_row = process_player_row(player_input, sheet_df)
-        output_rows.append(result_row)
-
-    output_df = pd.DataFrame(output_rows)
-
-    # Use the same file handling logic as in main()
-    file_exists = os.path.exists(output_csv_path)
-    output_df.to_csv(output_csv_path, index=False, mode='a' if file_exists else 'w', header=not file_exists)
-    print(f"✅ Player stats for match {match_number} updated in: {output_csv_path}")
-    
-    return output_csv_path
+    except Exception as e:
+        print(f"❌ Error processing match #{match_number}: {str(e)}")
+        return False
 
 # ---------------- MAIN ----------------
 def main():
@@ -213,6 +289,20 @@ def main():
 
     # Read input CSV
     input_df = pd.read_csv(input_csv_path)
+
+    # Attempt to parse the Date column with a known format
+    try:
+        input_df['Date'] = input_df['Date'] + ", 2025"  # Append the year
+        input_df['Date'] = pd.to_datetime(input_df['Date'], format="%d %b, %Y", errors='coerce')
+    except Exception as e:
+        print(f"Error parsing Date column: {e}")
+        sys.exit(1)
+
+    # Drop rows with invalid or missing dates
+    if input_df['Date'].isnull().any():
+        print("⚠️ Warning: Some rows have invalid dates and will be dropped.")
+        input_df = input_df.dropna(subset=['Date'])
+
     # Convert Cricinfo ID column to integer type
     input_df['Cricinfo ID'] = pd.to_numeric(input_df['Cricinfo ID'], errors='coerce')
 
@@ -225,7 +315,8 @@ def main():
             "bowl_team": row['Opponent'],
             "innings": row['Innings'],
             "season": 2025,
-            "venue": row['Venue']
+            "venue": row['Venue'],
+            "cutoff_date": row['Date']
         }
         result_row = process_player_row(player_input, sheet_df)
         output_rows.append(result_row)

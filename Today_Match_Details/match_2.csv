@@ -1,33 +1,33 @@
-Player Name,Team,Opponent,Venue,Toss Info,Innings,Player ID,Cricinfo ID
-Travis Head,Sunrisers Hyderabad,Rajasthan Royals,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,1,8497,530011
-Abhishek Sharma,Sunrisers Hyderabad,Rajasthan Royals,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,1,12086,1070183
-Ishan Kishan,Sunrisers Hyderabad,Rajasthan Royals,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,1,10276,720471
-Nitish Kumar Reddy,Sunrisers Hyderabad,Rajasthan Royals,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,1,14701,1175496
-Heinrich Klaasen (wk),Sunrisers Hyderabad,Rajasthan Royals,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,1,10209,436757
-Aniket Verma,Sunrisers Hyderabad,Rajasthan Royals,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,1,1447065,1409976
-Abhinav Manohar,Sunrisers Hyderabad,Rajasthan Royals,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,1,10499,778963
-Pat Cummins (c),Sunrisers Hyderabad,Rajasthan Royals,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,1,8095,489889
-Simarjeet Singh,Sunrisers Hyderabad,Rajasthan Royals,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,1,14163,1159722
-Harshal Patel,Sunrisers Hyderabad,Rajasthan Royals,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,1,8175,390481
-Mohammed Shami,Sunrisers Hyderabad,Rajasthan Royals,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,1,7909,481896
-Sachin Baby,Sunrisers Hyderabad,Rajasthan Royals,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,1,8709,432783
-Jaydev Unadkat,Sunrisers Hyderabad,Rajasthan Royals,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,1,6327,390484
-Zeeshan Ansari,Sunrisers Hyderabad,Rajasthan Royals,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,1,10946,942371
-Adam Zampa,Sunrisers Hyderabad,Rajasthan Royals,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,1,8642,379504
-Wiaan Mulder,Sunrisers Hyderabad,Rajasthan Royals,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,1,11200,698189
-Yashasvi Jaiswal,Rajasthan Royals,Sunrisers Hyderabad,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,2,13940,1151278
-Shubham Dubey,Rajasthan Royals,Sunrisers Hyderabad,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,2,19328,1252585
-Nitish Rana,Rajasthan Royals,Sunrisers Hyderabad,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,2,9204,604527
-Riyan Parag (c),Rajasthan Royals,Sunrisers Hyderabad,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,2,12305,1079434
-Dhruv Jurel (wk),Rajasthan Royals,Sunrisers Hyderabad,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,2,14691,1175488
-Shimron Hetmyer,Rajasthan Royals,Sunrisers Hyderabad,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,2,9789,670025
-Jofra Archer,Rajasthan Royals,Sunrisers Hyderabad,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,2,11540,669855
-Maheesh Theekshana,Rajasthan Royals,Sunrisers Hyderabad,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,2,18504,1138316
-Tushar Deshpande,Rajasthan Royals,Sunrisers Hyderabad,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,2,11307,822553
-Sandeep Sharma,Rajasthan Royals,Sunrisers Hyderabad,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,2,8356,438362
-Fazalhaq Farooqi,Rajasthan Royals,Sunrisers Hyderabad,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,2,14282,974175
-Kunal Singh Rathore,Rajasthan Royals,Sunrisers Hyderabad,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,2,32854,1339031
-Akash Madhwal,Rajasthan Royals,Sunrisers Hyderabad,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,2,15727,1206039
-Kumar Kartikeya,Rajasthan Royals,Sunrisers Hyderabad,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,2,14190,1159843
-Kwena Maphaka,Rajasthan Royals,Sunrisers Hyderabad,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,2,23346,1294342
-Wanindu Hasaranga,Rajasthan Royals,Sunrisers Hyderabad,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,2,10926,784379
+Player Name,Team,Opponent,Venue,Toss Info,Innings,Player ID,Cricinfo ID,Date
+Travis Head,Sunrisers Hyderabad,Rajasthan Royals,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,1,8497,530011,23 Mar
+Abhishek Sharma,Sunrisers Hyderabad,Rajasthan Royals,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,1,12086,1070183,23 Mar
+Ishan Kishan,Sunrisers Hyderabad,Rajasthan Royals,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,1,10276,720471,23 Mar
+Nitish Kumar Reddy,Sunrisers Hyderabad,Rajasthan Royals,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,1,14701,1175496,23 Mar
+Heinrich Klaasen (wk),Sunrisers Hyderabad,Rajasthan Royals,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,1,10209,436757,23 Mar
+Aniket Verma,Sunrisers Hyderabad,Rajasthan Royals,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,1,1447065,1409976,23 Mar
+Abhinav Manohar,Sunrisers Hyderabad,Rajasthan Royals,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,1,10499,778963,23 Mar
+Pat Cummins (c),Sunrisers Hyderabad,Rajasthan Royals,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,1,8095,489889,23 Mar
+Simarjeet Singh,Sunrisers Hyderabad,Rajasthan Royals,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,1,14163,1159722,23 Mar
+Harshal Patel,Sunrisers Hyderabad,Rajasthan Royals,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,1,8175,390481,23 Mar
+Mohammed Shami,Sunrisers Hyderabad,Rajasthan Royals,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,1,7909,481896,23 Mar
+Sachin Baby,Sunrisers Hyderabad,Rajasthan Royals,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,1,8709,432783,23 Mar
+Jaydev Unadkat,Sunrisers Hyderabad,Rajasthan Royals,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,1,6327,390484,23 Mar
+Zeeshan Ansari,Sunrisers Hyderabad,Rajasthan Royals,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,1,10946,942371,23 Mar
+Adam Zampa,Sunrisers Hyderabad,Rajasthan Royals,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,1,8642,379504,23 Mar
+Wiaan Mulder,Sunrisers Hyderabad,Rajasthan Royals,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,1,11200,698189,23 Mar
+Yashasvi Jaiswal,Rajasthan Royals,Sunrisers Hyderabad,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,2,13940,1151278,23 Mar
+Shubham Dubey,Rajasthan Royals,Sunrisers Hyderabad,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,2,19328,1252585,23 Mar
+Nitish Rana,Rajasthan Royals,Sunrisers Hyderabad,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,2,9204,604527,23 Mar
+Riyan Parag (c),Rajasthan Royals,Sunrisers Hyderabad,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,2,12305,1079434,23 Mar
+Dhruv Jurel (wk),Rajasthan Royals,Sunrisers Hyderabad,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,2,14691,1175488,23 Mar
+Shimron Hetmyer,Rajasthan Royals,Sunrisers Hyderabad,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,2,9789,670025,23 Mar
+Jofra Archer,Rajasthan Royals,Sunrisers Hyderabad,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,2,11540,669855,23 Mar
+Maheesh Theekshana,Rajasthan Royals,Sunrisers Hyderabad,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,2,18504,1138316,23 Mar
+Tushar Deshpande,Rajasthan Royals,Sunrisers Hyderabad,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,2,11307,822553,23 Mar
+Sandeep Sharma,Rajasthan Royals,Sunrisers Hyderabad,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,2,8356,438362,23 Mar
+Fazalhaq Farooqi,Rajasthan Royals,Sunrisers Hyderabad,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,2,14282,974175,23 Mar
+Kunal Singh Rathore,Rajasthan Royals,Sunrisers Hyderabad,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,2,32854,1339031,23 Mar
+Akash Madhwal,Rajasthan Royals,Sunrisers Hyderabad,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,2,15727,1206039,23 Mar
+Kumar Kartikeya,Rajasthan Royals,Sunrisers Hyderabad,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,2,14190,1159843,23 Mar
+Kwena Maphaka,Rajasthan Royals,Sunrisers Hyderabad,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,2,23346,1294342,23 Mar
+Wanindu Hasaranga,Rajasthan Royals,Sunrisers Hyderabad,Rajiv Gandhi International Stadium,Rajasthan Royals won the toss and opt to bowl,2,10926,784379,23 Mar

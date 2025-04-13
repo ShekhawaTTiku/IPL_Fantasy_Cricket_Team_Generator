@@ -1,0 +1,623 @@
+date,match_id,batting_team,bowling_team,innings,batter_id,batter_cricinfo_id,batter,runs,balls,fours,sixes,strike_rate,isOut,wicket_desc,wicket_type,bowler_id,bowler_cricinfo_id,bowler,venue,batting_fp
+2025-03-22,114960,Kolkata Knight Riders,Royal Challengers Bengaluru,1,8520,379143,de Kock,4,5,1,0,80.0,TRUE,c Jitesh Sharma b Hazlewood,Caught,6258,288284,Hazlewood,Eden Gardens,8
+2025-03-22,114960,Kolkata Knight Riders,Royal Challengers Bengaluru,1,2276,230558,Narine,44,26,5,3,169.23,TRUE,c Jitesh Sharma b Rasikh Salam,Caught,14274,1161489,Rasikh Salam,Eden Gardens,90
+2025-03-22,114960,Kolkata Knight Riders,Royal Challengers Bengaluru,1,1447,277916,Ajinkya Rahane,56,31,6,4,180.65,TRUE,c Rasikh Salam b Krunal Pandya,Caught,11311,471342,Krunal Pandya,Eden Gardens,118
+2025-03-22,114960,Kolkata Knight Riders,Royal Challengers Bengaluru,1,10917,851403,Venkatesh Iyer,6,7,1,0,85.71,TRUE,b Krunal Pandya,Bowled,11311,471342,Krunal Pandya,Eden Gardens,10
+2025-03-22,114960,Kolkata Knight Riders,Royal Challengers Bengaluru,1,22566,1292495,Angkrish Raghuvanshi,30,22,2,1,136.36,TRUE,c Jitesh Sharma b Yash Dayal,Caught,14172,1159720,Yash Dayal,Eden Gardens,50
+2025-03-22,114960,Kolkata Knight Riders,Royal Challengers Bengaluru,1,10896,723105,Rinku Singh,12,10,1,0,120.0,TRUE,b Krunal Pandya,Bowled,11311,471342,Krunal Pandya,Eden Gardens,16
+2025-03-22,114960,Kolkata Knight Riders,Royal Challengers Bengaluru,1,7736,276298,Russell,4,3,1,0,133.33,TRUE,b Suyash Sharma,Bowled,36487,1350792,Suyash Sharma,Eden Gardens,8
+2025-03-22,114960,Kolkata Knight Riders,Royal Challengers Bengaluru,1,12337,1079470,Ramandeep Singh ,6,9,0,0,66.67,FALSE,not out,not out,,,,Eden Gardens,6
+2025-03-22,114960,Kolkata Knight Riders,Royal Challengers Bengaluru,1,24729,1312645,Harshit Rana,5,6,1,0,83.33,TRUE,c Jitesh Sharma b Hazlewood,Caught,6258,288284,Hazlewood,Eden Gardens,9
+2025-03-22,114960,Kolkata Knight Riders,Royal Challengers Bengaluru,1,13143,1123718,Spencer Johnson,1,1,0,0,100.0,FALSE,not out,not out,,,,Eden Gardens,1
+2025-03-22,114960,Kolkata Knight Riders,Royal Challengers Bengaluru,1,12926,1108375,Varun Chakaravarthy,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Eden Gardens,0
+2025-03-22,114960,Kolkata Knight Riders,Royal Challengers Bengaluru,1,15861,1209292,Vaibhav Arora,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Eden Gardens,0
+2025-03-22,114960,Royal Challengers Bengaluru,Kolkata Knight Riders,2,10479,669365,Philip Salt,56,31,9,2,180.65,TRUE,c Spencer Johnson b Varun Chakaravarthy,Caught,12926,1108375,Varun Chakaravarthy,Eden Gardens,118
+2025-03-22,114960,Royal Challengers Bengaluru,Kolkata Knight Riders,2,1413,253802,Virat Kohli,59,36,4,3,163.89,FALSE,not out,not out,,,,Eden Gardens,105
+2025-03-22,114960,Royal Challengers Bengaluru,Kolkata Knight Riders,2,13088,1119026,Devdutt Padikkal,10,10,1,0,100.0,TRUE,c Ramandeep Singh b Narine,Caught,2276,230558,Narine,Eden Gardens,14
+2025-03-22,114960,Royal Challengers Bengaluru,Kolkata Knight Riders,2,10636,823703,Rajat Patidar,34,16,5,1,212.5,TRUE,c Rinku Singh b Vaibhav Arora,Caught,15861,1209292,Vaibhav Arora,Eden Gardens,70
+2025-03-22,114960,Royal Challengers Bengaluru,Kolkata Knight Riders,2,10045,403902,Liam Livingstone,15,5,2,1,300.0,FALSE,not out,not out,,,,Eden Gardens,29
+2025-03-22,114960,Royal Challengers Bengaluru,Kolkata Knight Riders,2,10214,721867,Jitesh Sharma,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Eden Gardens,0
+2025-03-22,114960,Royal Challengers Bengaluru,Kolkata Knight Riders,2,13169,892749,Tim David,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Eden Gardens,0
+2025-03-22,114960,Royal Challengers Bengaluru,Kolkata Knight Riders,2,11311,471342,Krunal Pandya,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Eden Gardens,0
+2025-03-22,114960,Royal Challengers Bengaluru,Kolkata Knight Riders,2,14274,1161489,Rasikh Dar Salam,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Eden Gardens,0
+2025-03-22,114960,Royal Challengers Bengaluru,Kolkata Knight Riders,2,36487,1350792,Suyash Sharma,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Eden Gardens,0
+2025-03-22,114960,Royal Challengers Bengaluru,Kolkata Knight Riders,2,6258,288284,Josh Hazlewood,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Eden Gardens,0
+2025-03-22,114960,Royal Challengers Bengaluru,Kolkata Knight Riders,2,14172,1159720,Yash Dayal,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Eden Gardens,0
+2025-03-23,114967,Sunrisers Hyderabad,Rajasthan Royals,1,12086,1070183,Abhishek Sharma,24,11,5,0,218.18,TRUE,c Yashasvi Jaiswal b M Theekshana,Caught,18504,1138316,M Theekshana,Rajiv Gandhi International Stadium,50
+2025-03-23,114967,Sunrisers Hyderabad,Rajasthan Royals,1,8497,530011,Head,67,31,9,3,216.13,TRUE,c Hetmyer b Tushar Deshpande,Caught,11307,822553,Tushar Deshpande,Rajiv Gandhi International Stadium,135
+2025-03-23,114967,Sunrisers Hyderabad,Rajasthan Royals,1,10276,720471,Ishan Kishan,106,47,11,6,225.53,FALSE,not out,not out,,,,Rajiv Gandhi International Stadium,208
+2025-03-23,114967,Sunrisers Hyderabad,Rajasthan Royals,1,14701,1175496,Nitish Reddy,30,15,4,1,200.0,TRUE,c Yashasvi Jaiswal b M Theekshana,Caught,18504,1138316,M Theekshana,Rajiv Gandhi International Stadium,62
+2025-03-23,114967,Sunrisers Hyderabad,Rajasthan Royals,1,10209,436757,Klaasen,34,14,5,1,242.86,TRUE,c Riyan Parag b Sandeep Sharma,Caught,8356,438362,Sandeep Sharma,Rajiv Gandhi International Stadium,70
+2025-03-23,114967,Sunrisers Hyderabad,Rajasthan Royals,1,1447065,1409976,Aniket Verma,7,3,0,1,233.33,TRUE,c Jofra Archer b Tushar Deshpande,Caught,11307,822553,Tushar Deshpande,Rajiv Gandhi International Stadium,13
+2025-03-23,114967,Sunrisers Hyderabad,Rajasthan Royals,1,10499,778963,Abhinav Manohar,0,1,0,0,0.0,TRUE,c Riyan Parag b Tushar Deshpande,Caught,11307,822553,Tushar Deshpande,Rajiv Gandhi International Stadium,0
+2025-03-23,114967,Sunrisers Hyderabad,Rajasthan Royals,1,8095,489889,Cummins,0,1,0,0,0.0,FALSE,not out,not out,,,,Rajiv Gandhi International Stadium,0
+2025-03-23,114967,Sunrisers Hyderabad,Rajasthan Royals,1,14163,1159722,Simarjeet Singh,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Rajiv Gandhi International Stadium,0
+2025-03-23,114967,Sunrisers Hyderabad,Rajasthan Royals,1,8175,390481,Harshal Patel,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Rajiv Gandhi International Stadium,0
+2025-03-23,114967,Sunrisers Hyderabad,Rajasthan Royals,1,7909,481896,Shami,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Rajiv Gandhi International Stadium,0
+2025-03-23,114967,Sunrisers Hyderabad,Rajasthan Royals,1,8642,379504,Zampa,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Rajiv Gandhi International Stadium,0
+2025-03-23,114967,Rajasthan Royals,Sunrisers Hyderabad,2,13940,1151278,Yashasvi Jaiswal,1,5,0,0,20.0,TRUE,c Abhinav Manohar b Simarjeet Singh,Caught,14163,1159722,Simarjeet Singh,Rajiv Gandhi International Stadium,1
+2025-03-23,114967,Rajasthan Royals,Sunrisers Hyderabad,2,8271,425943,Sanju Samson,66,37,7,4,178.38,TRUE,c Klaasen b Harshal Patel,Caught,8175,390481,Harshal Patel,Rajiv Gandhi International Stadium,132
+2025-03-23,114967,Rajasthan Royals,Sunrisers Hyderabad,2,12305,1079434,Riyan Parag,4,2,1,0,200.0,TRUE,c Cummins b Simarjeet Singh,Caught,14163,1159722,Simarjeet Singh,Rajiv Gandhi International Stadium,8
+2025-03-23,114967,Rajasthan Royals,Sunrisers Hyderabad,2,9204,604527,Nitish Rana,11,8,2,0,137.5,TRUE,c Cummins b Shami,Caught,7909,481896,Shami,Rajiv Gandhi International Stadium,19
+2025-03-23,114967,Rajasthan Royals,Sunrisers Hyderabad,2,14691,1175488,Dhruv Jurel,70,35,5,6,200.0,TRUE,c Ishan Kishan b Zampa,Caught,8642,379504,Zampa,Rajiv Gandhi International Stadium,140
+2025-03-23,114967,Rajasthan Royals,Sunrisers Hyderabad,2,9789,670025,Shimron Hetmyer,42,23,1,4,182.61,TRUE,c Abhinav Manohar b Harshal Patel,Caught,8175,390481,Harshal Patel,Rajiv Gandhi International Stadium,80
+2025-03-23,114967,Rajasthan Royals,Sunrisers Hyderabad,2,19328,1252585,Shubham Dubey,34,11,1,4,309.09,FALSE,not out,not out,,,,Rajiv Gandhi International Stadium,72
+2025-03-23,114967,Rajasthan Royals,Sunrisers Hyderabad,2,11540,669855,Jofra Archer,1,1,0,0,100.0,FALSE,not out,not out,,,,Rajiv Gandhi International Stadium,1
+2025-03-23,114967,Rajasthan Royals,Sunrisers Hyderabad,2,18504,1138316,Maheesh Theekshana,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Rajiv Gandhi International Stadium,0
+2025-03-23,114967,Rajasthan Royals,Sunrisers Hyderabad,2,11307,822553,Tushar Deshpande,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Rajiv Gandhi International Stadium,0
+2025-03-23,114967,Rajasthan Royals,Sunrisers Hyderabad,2,8356,438362,Sandeep Sharma,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Rajiv Gandhi International Stadium,0
+2025-03-23,114967,Rajasthan Royals,Sunrisers Hyderabad,2,14282,974175,Fazalhaq Farooqi,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Rajiv Gandhi International Stadium,0
+2025-03-23,114976,Mumbai Indians,Chennai Super Kings,1,576,34102,Rohit,0,4,0,0,0.0,TRUE,c Shivam Dube b Khaleel Ahmed,Caught,10952,942645,Khaleel Ahmed,MA Chidambaram Stadium,0
+2025-03-23,114976,Mumbai Indians,Chennai Super Kings,1,13070,605661,Rickelton,13,7,3,0,185.71,TRUE,b Khaleel Ahmed,Bowled,10952,942645,Khaleel Ahmed,MA Chidambaram Stadium,25
+2025-03-23,114976,Mumbai Indians,Chennai Super Kings,1,12258,897549,Will Jacks,11,7,2,0,157.14,TRUE,c Shivam Dube b Ashwin,Caught,1593,26421,Ashwin,MA Chidambaram Stadium,19
+2025-03-23,114976,Mumbai Indians,Chennai Super Kings,1,7915,446507,Suryakumar Yadav,29,26,2,1,111.54,TRUE,st Dhoni b Noor Ahmad,Bowled,15452,1182529,Noor Ahmad,MA Chidambaram Stadium,47
+2025-03-23,114976,Mumbai Indians,Chennai Super Kings,1,14504,1170265,Tilak Varma,31,25,2,2,124.0,TRUE,lbw b Noor Ahmad,LBW,15452,1182529,Noor Ahmad,MA Chidambaram Stadium,55
+2025-03-23,114976,Mumbai Indians,Chennai Super Kings,1,36454,1350762,Robin Minz,3,9,0,0,33.33,TRUE,c Ravindra Jadeja b Noor Ahmad,Caught,15452,1182529,Noor Ahmad,MA Chidambaram Stadium,3
+2025-03-23,114976,Mumbai Indians,Chennai Super Kings,1,36139,1287032,Naman Dhir,17,12,1,0,141.67,TRUE,b Noor Ahmad,Bowled,15452,1182529,Noor Ahmad,MA Chidambaram Stadium,23
+2025-03-23,114976,Mumbai Indians,Chennai Super Kings,1,10100,502714,Santner,11,13,1,0,84.62,TRUE,lbw b Nathan Ellis,LBW,15480,826915,Nathan Ellis,MA Chidambaram Stadium,15
+2025-03-23,114976,Mumbai Indians,Chennai Super Kings,1,7836,447261,D Chahar,28,15,2,2,186.67,FALSE,not out,not out,,,,MA Chidambaram Stadium,58
+2025-03-23,114976,Mumbai Indians,Chennai Super Kings,1,8117,277912,Boult,1,2,0,0,50.0,TRUE,c Ruturaj Gaikwad b Khaleel Ahmed,Caught,10952,942645,Khaleel Ahmed,MA Chidambaram Stadium,1
+2025-03-23,114976,Mumbai Indians,Chennai Super Kings,1,1431171,1392201,Satyanarayana Raju,1,1,0,0,100.0,FALSE,not out,not out,,,,MA Chidambaram Stadium,1
+2025-03-23,114976,Mumbai Indians,Chennai Super Kings,1,1447337,1460388,Vignesh Puthur,0,0,0,0,0.0,DNB,Not Out,DNB,,,,MA Chidambaram Stadium,0
+2025-03-23,114976,Chennai Super Kings,Mumbai Indians,2,11177,959767,Rachin Ravindra,65,45,2,4,144.44,FALSE,not out,not out,,,,MA Chidambaram Stadium,107
+2025-03-23,114976,Chennai Super Kings,Mumbai Indians,2,9012,446763,Rahul Tripathi,2,3,0,0,66.67,TRUE,c Rickelton b D Chahar,Caught,7836,447261,D Chahar,MA Chidambaram Stadium,2
+2025-03-23,114976,Chennai Super Kings,Mumbai Indians,2,11813,1060380,Ruturaj Gaikwad,53,26,6,3,203.85,TRUE,c Will Jacks b Vignesh Puthur,Caught,1447337,1460388,Vignesh Puthur,MA Chidambaram Stadium,109
+2025-03-23,114976,Chennai Super Kings,Mumbai Indians,2,11195,714451,Shivam Dube,9,7,0,1,128.57,TRUE,c Tilak Varma b Vignesh Puthur,Caught,1447337,1460388,Vignesh Puthur,MA Chidambaram Stadium,15
+2025-03-23,114976,Chennai Super Kings,Mumbai Indians,2,9427,497121,Deepak Hooda,3,5,0,0,60.0,TRUE,c Satyanarayana Raju b Vignesh Puthur,Caught,1447337,1460388,Vignesh Puthur,MA Chidambaram Stadium,3
+2025-03-23,114976,Chennai Super Kings,Mumbai Indians,2,10420,662973,Sam Curran,4,9,0,0,44.44,TRUE,b Will Jacks,Bowled,12258,897549,Will Jacks,MA Chidambaram Stadium,4
+2025-03-23,114976,Chennai Super Kings,Mumbai Indians,2,587,234675,Ravindra Jadeja,17,18,1,0,94.44,TRUE,run out (D Chahar/Rickelton),Run Out,,,,MA Chidambaram Stadium,21
+2025-03-23,114976,Chennai Super Kings,Mumbai Indians,2,265,28081,MS Dhoni,0,2,0,0,0.0,FALSE,not out,not out,,,,MA Chidambaram Stadium,0
+2025-03-23,114976,Chennai Super Kings,Mumbai Indians,2,1593,26421,Ravichandran Ashwin,0,0,0,0,0.0,DNB,Not Out,DNB,,,,MA Chidambaram Stadium,0
+2025-03-23,114976,Chennai Super Kings,Mumbai Indians,2,15452,1182529,Noor Ahmad,0,0,0,0,0.0,DNB,Not Out,DNB,,,,MA Chidambaram Stadium,0
+2025-03-23,114976,Chennai Super Kings,Mumbai Indians,2,15480,826915,Nathan Ellis,0,0,0,0,0.0,DNB,Not Out,DNB,,,,MA Chidambaram Stadium,0
+2025-03-23,114976,Chennai Super Kings,Mumbai Indians,2,10952,942645,Khaleel Ahmed,0,0,0,0,0.0,DNB,Not Out,DNB,,,,MA Chidambaram Stadium,0
+2025-03-24,114985,Lucknow Super Giants,Delhi Capitals,1,9582,600498,Markram,15,13,1,1,115.38,TRUE,c Mitchell Starc b Vipraj Nigam,Caught,1431811,1449074,Vipraj Nigam,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,25
+2025-03-24,114985,Lucknow Super Giants,Delhi Capitals,1,6250,272450,Mitchell Marsh,72,36,6,6,200.0,TRUE,c Stubbs b Mukesh Kumar,Caught,10754,926851,Mukesh Kumar,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,146
+2025-03-24,114985,Lucknow Super Giants,Delhi Capitals,1,9406,604302,Pooran,75,30,6,7,250.0,TRUE,b Mitchell Starc,Bowled,7710,311592,Mitchell Starc,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,159
+2025-03-24,114985,Lucknow Super Giants,Delhi Capitals,1,10744,931581,Pant,0,6,0,0,0.0,TRUE,c du Plessis b Kuldeep Yadav,Caught,8292,559235,Kuldeep Yadav,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,0
+2025-03-24,114985,Lucknow Super Giants,Delhi Capitals,1,6349,321777,David Miller,27,19,1,2,142.11,FALSE,not out,not out,,,,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,49
+2025-03-24,114985,Lucknow Super Giants,Delhi Capitals,1,13907,1151270,Ayush Badoni,4,5,0,0,80.0,TRUE,c Stubbs b Kuldeep Yadav,Caught,8292,559235,Kuldeep Yadav,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,4
+2025-03-24,114985,Lucknow Super Giants,Delhi Capitals,1,8683,1070196,Thakur,0,2,0,0,0.0,TRUE,run out (Axar/Abishek Porel),Run Out,,,,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,0
+2025-03-24,114985,Lucknow Super Giants,Delhi Capitals,1,14606,1159711,Shahbaz Ahmed,9,8,1,0,112.5,TRUE,c (sub)Tripurana Vijay b Mitchell Starc,Caught,7710,311592,Mitchell Starc,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,13
+2025-03-24,114985,Lucknow Super Giants,Delhi Capitals,1,14659,1175441,Ravi Bishnoi,0,2,0,0,0.0,TRUE,b Mitchell Starc,Bowled,7710,311592,Mitchell Starc,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,0
+2025-03-24,114985,Lucknow Super Giants,Delhi Capitals,1,1448289,1460529,Digvesh Rathi,0,0,0,0,0.0,FALSE,not out,not out,,,,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,0
+2025-03-24,114985,Lucknow Super Giants,Delhi Capitals,1,54735,1350768,Prince Yadav,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,0
+2025-03-24,114985,Lucknow Super Giants,Delhi Capitals,1,12930,1151286,M Siddharth,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,0
+2025-03-24,114985,Delhi Capitals,Lucknow Super Giants,2,14501,1168049,Jake Fraser-McGurk,1,2,0,0,50.0,TRUE,c Ayush Badoni b Thakur,Caught,8683,1070196,Thakur,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,1
+2025-03-24,114985,Delhi Capitals,Lucknow Super Giants,2,7825,44828,Faf du Plessis,29,18,3,2,161.11,TRUE,c David Miller b Ravi Bishnoi,Caught,14659,1175441,Ravi Bishnoi,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,61
+2025-03-24,114985,Delhi Capitals,Lucknow Super Giants,2,24326,1277545,Abishek Porel,0,2,0,0,0.0,TRUE,c Pooran b Thakur,Caught,8683,1070196,Thakur,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,0
+2025-03-24,114985,Delhi Capitals,Lucknow Super Giants,2,14700,1175489,Sameer Rizvi ,4,4,1,0,100.0,TRUE,c Pant b M Siddharth,Caught,12930,1151286,M Siddharth,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,8
+2025-03-24,114985,Delhi Capitals,Lucknow Super Giants,2,8808,554691,Axar Patel,22,11,3,1,200.0,TRUE,c Pooran b Digvesh Rathi,Caught,1448289,1460529,Digvesh Rathi,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,46
+2025-03-24,114985,Delhi Capitals,Lucknow Super Giants,2,19243,595978,Tristan Stubbs,34,22,1,3,154.55,TRUE,b M Siddharth,Bowled,12930,1151286,M Siddharth,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,64
+2025-03-24,114985,Delhi Capitals,Lucknow Super Giants,2,13497,1131978,Ashutosh Sharma,66,31,5,5,212.9,FALSE,not out,not out,,,,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,130
+2025-03-24,114985,Delhi Capitals,Lucknow Super Giants,2,1431811,1449074,Vipraj Nigam,39,15,5,2,260.0,TRUE,c M Siddharth b Digvesh Rathi,Caught,1448289,1460529,Digvesh Rathi,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,81
+2025-03-24,114985,Delhi Capitals,Lucknow Super Giants,2,7710,311592,Mitchell Starc,2,5,0,0,40.0,TRUE,c Pant b Ravi Bishnoi,Caught,14659,1175441,Ravi Bishnoi,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,2
+2025-03-24,114985,Delhi Capitals,Lucknow Super Giants,2,8292,559235,Kuldeep Yadav,5,5,1,0,100.0,TRUE,run out (Pant/Prince Yadav),Run Out,,,,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,9
+2025-03-24,114985,Delhi Capitals,Lucknow Super Giants,2,8181,537119,Mohit Sharma,1,2,0,0,50.0,FALSE,not out,not out,,,,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,1
+2025-03-24,114985,Delhi Capitals,Lucknow Super Giants,2,10754,926851,Mukesh Kumar,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,0
+2025-03-25,114987,Punjab Kings,Gujarat Titans,1,14689,1175456,Priyansh Arya,47,23,7,2,204.35,TRUE,c Sai Sudharsan b Rashid Khan,Caught,10738,793463,Rashid Khan,Narendra Modi Stadium,97
+2025-03-25,114987,Punjab Kings,Gujarat Titans,1,14254,1161024,Prabhsimran,5,8,1,0,62.5,TRUE,c Arshad Khan b Rabada,Caught,9585,550215,Rabada,Narendra Modi Stadium,9
+2025-03-25,114987,Punjab Kings,Gujarat Titans,1,9428,642519,Shreyas Iyer,97,42,5,9,230.95,FALSE,not out,not out,,,,Narendra Modi Stadium,189
+2025-03-25,114987,Punjab Kings,Gujarat Titans,1,13214,819429,Azmatullah,16,15,2,1,106.67,TRUE,c Arshad Khan b Sai Kishore,Caught,11595,1048739,Sai Kishore,Narendra Modi Stadium,30
+2025-03-25,114987,Punjab Kings,Gujarat Titans,1,7662,325026,Maxwell,0,1,0,0,0.0,TRUE,lbw b Sai Kishore,LBW,11595,1048739,Sai Kishore,Narendra Modi Stadium,0
+2025-03-25,114987,Punjab Kings,Gujarat Titans,1,8989,325012,Stoinis,20,15,1,2,133.33,TRUE,c Arshad Khan b Sai Kishore,Caught,11595,1048739,Sai Kishore,Narendra Modi Stadium,38
+2025-03-25,114987,Punjab Kings,Gujarat Titans,1,10919,377534,Shashank Singh,44,16,6,2,275.0,FALSE,not out,not out,,,,Narendra Modi Stadium,90
+2025-03-25,114987,Punjab Kings,Gujarat Titans,1,14922,1339698,Suryansh Shedge,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Narendra Modi Stadium,0
+2025-03-25,114987,Punjab Kings,Gujarat Titans,1,14565,696401,Marco Jansen,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Narendra Modi Stadium,0
+2025-03-25,114987,Punjab Kings,Gujarat Titans,1,13217,1125976,Arshdeep Singh,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Narendra Modi Stadium,0
+2025-03-25,114987,Punjab Kings,Gujarat Titans,1,7910,430246,Chahal,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Narendra Modi Stadium,0
+2025-03-25,114987,Punjab Kings,Gujarat Titans,1,10486,777815,Vijaykumar Vyshak,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Narendra Modi Stadium,0
+2025-03-25,114987,Gujarat Titans,Punjab Kings,2,13866,1151288,Sai Sudharsan,74,41,5,6,180.49,TRUE,c Shashank Singh b Arshdeep Singh,Caught,13217,1125976,Arshdeep Singh,Narendra Modi Stadium,144
+2025-03-25,114987,Gujarat Titans,Punjab Kings,2,11808,1070173,Shubman Gill,33,14,2,3,235.71,TRUE,c Priyansh Arya b Maxwell,Caught,7662,325026,Maxwell,Narendra Modi Stadium,69
+2025-03-25,114987,Gujarat Titans,Punjab Kings,2,2258,308967,Jos Buttler,54,33,4,2,163.64,TRUE,b Marco Jansen,Bowled,14565,696401,Marco Jansen,Narendra Modi Stadium,94
+2025-03-25,114987,Gujarat Titans,Punjab Kings,2,13748,914541,Sherfane Rutherford,46,28,4,3,164.29,TRUE,b Arshdeep Singh,Bowled,13217,1125976,Arshdeep Singh,Narendra Modi Stadium,88
+2025-03-25,114987,Gujarat Titans,Punjab Kings,2,9693,423838,Rahul Tewatia,6,2,0,1,300.0,TRUE,run out (Arshdeep Singh),Run Out,,,,Narendra Modi Stadium,12
+2025-03-25,114987,Gujarat Titans,Punjab Kings,2,10226,719719,Shahrukh Khan,6,1,0,1,600.0,FALSE,not out,not out,,,,Narendra Modi Stadium,12
+2025-03-25,114987,Gujarat Titans,Punjab Kings,2,18637,1244751,Arshad Khan,1,1,0,0,100.0,FALSE,not out,not out,,,,Narendra Modi Stadium,1
+2025-03-25,114987,Gujarat Titans,Punjab Kings,2,11595,1048739,Ravisrinivasan Sai Kishore,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Narendra Modi Stadium,0
+2025-03-25,114987,Gujarat Titans,Punjab Kings,2,10738,793463,Rashid Khan,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Narendra Modi Stadium,0
+2025-03-25,114987,Gujarat Titans,Punjab Kings,2,9585,550215,Kagiso Rabada,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Narendra Modi Stadium,0
+2025-03-25,114987,Gujarat Titans,Punjab Kings,2,10808,940973,Mohammed Siraj,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Narendra Modi Stadium,0
+2025-03-25,114987,Gujarat Titans,Punjab Kings,2,10551,917159,Prasidh Krishna,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Narendra Modi Stadium,0
+2025-03-26,114996,Rajasthan Royals,Kolkata Knight Riders,1,13940,1151278,Yashasvi Jaiswal,29,24,2,2,120.83,TRUE,c Harshit Rana b Moeen,Caught,6692,8917,Moeen,Barsapara Cricket Stadium,53
+2025-03-26,114996,Rajasthan Royals,Kolkata Knight Riders,1,8271,425943,Samson,13,11,2,0,118.18,TRUE,b Vaibhav Arora,Bowled,15861,1209292,Vaibhav Arora,Barsapara Cricket Stadium,21
+2025-03-26,114996,Rajasthan Royals,Kolkata Knight Riders,1,12305,1079434,Riyan Parag,25,15,0,3,166.67,TRUE,c de Kock b Varun Chakaravarthy,Caught,12926,1108375,Varun Chakaravarthy,Barsapara Cricket Stadium,51
+2025-03-26,114996,Rajasthan Royals,Kolkata Knight Riders,1,9204,604527,Nitish Rana,8,9,0,0,88.89,TRUE,b Moeen,Bowled,6692,8917,Moeen,Barsapara Cricket Stadium,8
+2025-03-26,114996,Rajasthan Royals,Kolkata Knight Riders,1,10926,784379,W Hasaranga,4,4,0,0,100.0,TRUE,c Ajinkya Rahane b Varun Chakaravarthy,Caught,12926,1108375,Varun Chakaravarthy,Barsapara Cricket Stadium,4
+2025-03-26,114996,Rajasthan Royals,Kolkata Knight Riders,1,14691,1175488,Dhruv Jurel,33,28,5,0,117.86,TRUE,b Harshit Rana,Bowled,24729,1312645,Harshit Rana,Barsapara Cricket Stadium,57
+2025-03-26,114996,Rajasthan Royals,Kolkata Knight Riders,1,19328,1252585,Shubham Dubey,9,12,1,0,75.0,TRUE,c Russell b Vaibhav Arora,Caught,15861,1209292,Vaibhav Arora,Barsapara Cricket Stadium,13
+2025-03-26,114996,Rajasthan Royals,Kolkata Knight Riders,1,9789,670025,Hetmyer,7,8,1,0,87.5,TRUE,c Angkrish Raghuvanshi b Harshit Rana,Caught,24729,1312645,Harshit Rana,Barsapara Cricket Stadium,11
+2025-03-26,114996,Rajasthan Royals,Kolkata Knight Riders,1,11540,669855,Jofra Archer,16,7,0,2,228.57,TRUE,b Spencer Johnson,Bowled,13143,1123718,Spencer Johnson,Barsapara Cricket Stadium,28
+2025-03-26,114996,Rajasthan Royals,Kolkata Knight Riders,1,18504,1138316,M Theekshana,1,1,0,0,100.0,FALSE,not out,not out,,,,Barsapara Cricket Stadium,1
+2025-03-26,114996,Rajasthan Royals,Kolkata Knight Riders,1,11307,822553,Tushar Deshpande,2,1,0,0,200.0,FALSE,not out,not out,,,,Barsapara Cricket Stadium,2
+2025-03-26,114996,Rajasthan Royals,Kolkata Knight Riders,1,8356,438362,Sandeep Sharma,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Barsapara Cricket Stadium,0
+2025-03-26,114996,Kolkata Knight Riders,Rajasthan Royals,2,6692,8917,Moeen Ali,5,12,0,0,41.67,TRUE,run out (M Theekshana/Riyan Parag),Run Out,,,,Barsapara Cricket Stadium,-1
+2025-03-26,114996,Kolkata Knight Riders,Rajasthan Royals,2,8520,379143,Quinton de Kock,97,61,8,6,159.02,FALSE,not out,not out,,,,Barsapara Cricket Stadium,181
+2025-03-26,114996,Kolkata Knight Riders,Rajasthan Royals,2,1447,277916,Ajinkya Rahane,18,15,1,1,120.0,TRUE,c Tushar Deshpande b W Hasaranga,Caught,10926,784379,W Hasaranga,Barsapara Cricket Stadium,28
+2025-03-26,114996,Kolkata Knight Riders,Rajasthan Royals,2,22566,1292495,Angkrish Raghuvanshi,22,17,2,0,129.41,FALSE,not out,not out,,,,Barsapara Cricket Stadium,30
+2025-03-26,114996,Kolkata Knight Riders,Rajasthan Royals,2,10917,851403,Venkatesh Iyer,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Barsapara Cricket Stadium,0
+2025-03-26,114996,Kolkata Knight Riders,Rajasthan Royals,2,10896,723105,Rinku Singh,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Barsapara Cricket Stadium,0
+2025-03-26,114996,Kolkata Knight Riders,Rajasthan Royals,2,7736,276298,Andre Russell,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Barsapara Cricket Stadium,0
+2025-03-26,114996,Kolkata Knight Riders,Rajasthan Royals,2,12337,1079470,Ramandeep Singh ,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Barsapara Cricket Stadium,0
+2025-03-26,114996,Kolkata Knight Riders,Rajasthan Royals,2,13143,1123718,Spencer Johnson,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Barsapara Cricket Stadium,0
+2025-03-26,114996,Kolkata Knight Riders,Rajasthan Royals,2,15861,1209292,Vaibhav Arora,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Barsapara Cricket Stadium,0
+2025-03-26,114996,Kolkata Knight Riders,Rajasthan Royals,2,24729,1312645,Harshit Rana,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Barsapara Cricket Stadium,0
+2025-03-26,114996,Kolkata Knight Riders,Rajasthan Royals,2,12926,1108375,Varun Chakaravarthy,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Barsapara Cricket Stadium,0
+2025-03-27,115005,Sunrisers Hyderabad,Lucknow Super Giants,1,8497,530011,Head,47,28,5,3,167.86,TRUE,b Prince Yadav,Bowled,54735,1350768,Prince Yadav,Rajiv Gandhi International Stadium,93
+2025-03-27,115005,Sunrisers Hyderabad,Lucknow Super Giants,1,12086,1070183,Abhishek Sharma,6,6,1,0,100.0,TRUE,c Pooran b Thakur,Caught,8683,1070196,Thakur,Rajiv Gandhi International Stadium,10
+2025-03-27,115005,Sunrisers Hyderabad,Lucknow Super Giants,1,10276,720471,Ishan Kishan,0,1,0,0,0.0,TRUE,c Pant b Thakur,Caught,8683,1070196,Thakur,Rajiv Gandhi International Stadium,0
+2025-03-27,115005,Sunrisers Hyderabad,Lucknow Super Giants,1,14701,1175496,Nitish Reddy,32,28,2,0,114.29,TRUE,b Ravi Bishnoi,Bowled,14659,1175441,Ravi Bishnoi,Rajiv Gandhi International Stadium,44
+2025-03-27,115005,Sunrisers Hyderabad,Lucknow Super Giants,1,10209,436757,Klaasen,26,17,2,1,152.94,TRUE,run out (Prince Yadav),Run Out,,,,Rajiv Gandhi International Stadium,48
+2025-03-27,115005,Sunrisers Hyderabad,Lucknow Super Giants,1,1447065,1409976,Aniket Verma,36,13,0,5,276.92,TRUE,c David Miller b Digvesh Rathi,Caught,1448289,1460529,Digvesh Rathi,Rajiv Gandhi International Stadium,76
+2025-03-27,115005,Sunrisers Hyderabad,Lucknow Super Giants,1,10499,778963,Abhinav Manohar,2,6,0,0,33.33,TRUE,c Abdul Samad b Thakur,Caught,8683,1070196,Thakur,Rajiv Gandhi International Stadium,2
+2025-03-27,115005,Sunrisers Hyderabad,Lucknow Super Giants,1,8095,489889,Cummins,18,4,0,3,450.0,TRUE,c Digvesh Rathi b Avesh Khan,Caught,9781,694211,Avesh Khan,Rajiv Gandhi International Stadium,36
+2025-03-27,115005,Sunrisers Hyderabad,Lucknow Super Giants,1,8175,390481,Harshal Patel,12,11,0,0,109.09,FALSE,not out,not out,,,,Rajiv Gandhi International Stadium,12
+2025-03-27,115005,Sunrisers Hyderabad,Lucknow Super Giants,1,7909,481896,Shami,1,3,0,0,33.33,TRUE,c Ayush Badoni b Thakur,Caught,8683,1070196,Thakur,Rajiv Gandhi International Stadium,1
+2025-03-27,115005,Sunrisers Hyderabad,Lucknow Super Giants,1,14163,1159722,Simarjeet Singh,3,4,0,0,75.0,FALSE,not out,not out,,,,Rajiv Gandhi International Stadium,3
+2025-03-27,115005,Sunrisers Hyderabad,Lucknow Super Giants,1,8642,379504,Zampa,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Rajiv Gandhi International Stadium,0
+2025-03-27,115005,Lucknow Super Giants,Sunrisers Hyderabad,2,6250,272450,Mitchell Marsh,52,31,7,2,167.74,TRUE,c Nitish Reddy b Cummins,Caught,8095,489889,Cummins,Rajiv Gandhi International Stadium,104
+2025-03-27,115005,Lucknow Super Giants,Sunrisers Hyderabad,2,9582,600498,Aiden Markram,1,4,0,0,25.0,TRUE,c Cummins b Shami,Caught,7909,481896,Shami,Rajiv Gandhi International Stadium,1
+2025-03-27,115005,Lucknow Super Giants,Sunrisers Hyderabad,2,9406,604302,Nicholas Pooran,70,26,6,6,269.23,TRUE,lbw b Cummins,LBW,8095,489889,Cummins,Rajiv Gandhi International Stadium,144
+2025-03-27,115005,Lucknow Super Giants,Sunrisers Hyderabad,2,10744,931581,Rishabh Pant,15,15,0,1,100.0,TRUE,c Shami b Harshal Patel,Caught,8175,390481,Harshal Patel,Rajiv Gandhi International Stadium,21
+2025-03-27,115005,Lucknow Super Giants,Sunrisers Hyderabad,2,13907,1151270,Ayush Badoni,6,6,1,0,100.0,TRUE,c Harshal Patel b Zampa,Caught,8642,379504,Zampa,Rajiv Gandhi International Stadium,10
+2025-03-27,115005,Lucknow Super Giants,Sunrisers Hyderabad,2,6349,321777,David Miller,13,7,2,0,185.71,FALSE,not out,not out,,,,Rajiv Gandhi International Stadium,21
+2025-03-27,115005,Lucknow Super Giants,Sunrisers Hyderabad,2,14628,1175485,Abdul Samad,22,8,2,2,275.0,FALSE,not out,not out,,,,Rajiv Gandhi International Stadium,42
+2025-03-27,115005,Lucknow Super Giants,Sunrisers Hyderabad,2,8683,1070196,Shardul Thakur,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Rajiv Gandhi International Stadium,0
+2025-03-27,115005,Lucknow Super Giants,Sunrisers Hyderabad,2,14659,1175441,Ravi Bishnoi,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Rajiv Gandhi International Stadium,0
+2025-03-27,115005,Lucknow Super Giants,Sunrisers Hyderabad,2,9781,694211,Avesh Khan,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Rajiv Gandhi International Stadium,0
+2025-03-27,115005,Lucknow Super Giants,Sunrisers Hyderabad,2,1448289,1460529,Digvesh Rathi,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Rajiv Gandhi International Stadium,0
+2025-03-27,115005,Lucknow Super Giants,Sunrisers Hyderabad,2,54735,1350768,Prince Yadav,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Rajiv Gandhi International Stadium,0
+2025-03-28,115012,Royal Challengers Bengaluru,Chennai Super Kings,1,10479,669365,Phil Salt,32,16,5,1,200.0,TRUE,st Dhoni b Noor Ahmad,Bowled,15452,1182529,Noor Ahmad,MA Chidambaram Stadium,68
+2025-03-28,115012,Royal Challengers Bengaluru,Chennai Super Kings,1,1413,253802,Kohli,31,30,2,1,103.33,TRUE,c Rachin Ravindra b Noor Ahmad,Caught,15452,1182529,Noor Ahmad,MA Chidambaram Stadium,49
+2025-03-28,115012,Royal Challengers Bengaluru,Chennai Super Kings,1,13088,1119026,Padikkal,27,14,2,2,192.86,TRUE,c Ruturaj Gaikwad b Ashwin,Caught,1593,26421,Ashwin,MA Chidambaram Stadium,57
+2025-03-28,115012,Royal Challengers Bengaluru,Chennai Super Kings,1,10636,823703,Rajat Patidar,51,32,4,3,159.38,TRUE,c Sam Curran b Matheesha Pathirana,Caught,16458,1194795,Matheesha Pathirana,MA Chidambaram Stadium,97
+2025-03-28,115012,Royal Challengers Bengaluru,Chennai Super Kings,1,10045,403902,Livingstone,10,9,0,1,111.11,TRUE,b Noor Ahmad,Bowled,15452,1182529,Noor Ahmad,MA Chidambaram Stadium,16
+2025-03-28,115012,Royal Challengers Bengaluru,Chennai Super Kings,1,10214,721867,Jitesh Sharma,12,6,1,1,200.0,TRUE,c Ravindra Jadeja b Khaleel Ahmed,Caught,10952,942645,Khaleel Ahmed,MA Chidambaram Stadium,22
+2025-03-28,115012,Royal Challengers Bengaluru,Chennai Super Kings,1,13169,892749,Tim David,22,8,1,3,275.0,FALSE,not out,not out,,,,MA Chidambaram Stadium,44
+2025-03-28,115012,Royal Challengers Bengaluru,Chennai Super Kings,1,11311,471342,Krunal Pandya,0,3,0,0,0.0,TRUE,c Deepak Hooda b Matheesha Pathirana,Caught,16458,1194795,Matheesha Pathirana,MA Chidambaram Stadium,0
+2025-03-28,115012,Royal Challengers Bengaluru,Chennai Super Kings,1,1726,326016,Bhuvneshwar,0,2,0,0,0.0,FALSE,not out,not out,,,,MA Chidambaram Stadium,0
+2025-03-28,115012,Royal Challengers Bengaluru,Chennai Super Kings,1,6258,288284,Hazlewood,0,0,0,0,0.0,DNB,Not Out,DNB,,,,MA Chidambaram Stadium,0
+2025-03-28,115012,Royal Challengers Bengaluru,Chennai Super Kings,1,14172,1159720,Yash Dayal,0,0,0,0,0.0,DNB,Not Out,DNB,,,,MA Chidambaram Stadium,0
+2025-03-28,115012,Royal Challengers Bengaluru,Chennai Super Kings,1,36487,1350792,Suyash Sharma,0,0,0,0,0.0,DNB,Not Out,DNB,,,,MA Chidambaram Stadium,0
+2025-03-28,115012,Chennai Super Kings,Royal Challengers Bengaluru,2,11177,959767,Rachin Ravindra,41,31,5,0,132.26,TRUE,b Yash Dayal,Bowled,14172,1159720,Yash Dayal,MA Chidambaram Stadium,67
+2025-03-28,115012,Chennai Super Kings,Royal Challengers Bengaluru,2,9012,446763,Rahul Tripathi,5,3,1,0,166.67,TRUE,c Phil Salt b Hazlewood,Caught,6258,288284,Hazlewood,MA Chidambaram Stadium,9
+2025-03-28,115012,Chennai Super Kings,Royal Challengers Bengaluru,2,11813,1060380,Ruturaj Gaikwad,0,4,0,0,0.0,TRUE,c (sub)Manoj Bhandage b Hazlewood,Caught,6258,288284,Hazlewood,MA Chidambaram Stadium,0
+2025-03-28,115012,Chennai Super Kings,Royal Challengers Bengaluru,2,9427,497121,Deepak Hooda,4,9,1,0,44.44,TRUE,c Jitesh Sharma b Bhuvneshwar,Caught,1726,326016,Bhuvneshwar,MA Chidambaram Stadium,8
+2025-03-28,115012,Chennai Super Kings,Royal Challengers Bengaluru,2,10420,662973,Sam Curran,8,13,0,0,61.54,TRUE,c Krunal Pandya b Livingstone,Caught,10045,403902,Livingstone,MA Chidambaram Stadium,6
+2025-03-28,115012,Chennai Super Kings,Royal Challengers Bengaluru,2,11195,714451,Shivam Dube,19,15,2,1,126.67,TRUE,b Yash Dayal,Bowled,14172,1159720,Yash Dayal,MA Chidambaram Stadium,33
+2025-03-28,115012,Chennai Super Kings,Royal Challengers Bengaluru,2,587,234675,Ravindra Jadeja,25,19,2,1,131.58,TRUE,c Phil Salt b Hazlewood,Caught,6258,288284,Hazlewood,MA Chidambaram Stadium,45
+2025-03-28,115012,Chennai Super Kings,Royal Challengers Bengaluru,2,1593,26421,Ravichandran Ashwin,11,8,1,0,137.5,TRUE,c Phil Salt b Livingstone,Caught,10045,403902,Livingstone,MA Chidambaram Stadium,15
+2025-03-28,115012,Chennai Super Kings,Royal Challengers Bengaluru,2,265,28081,MS Dhoni,30,16,3,2,187.5,FALSE,not out,not out,,,,MA Chidambaram Stadium,64
+2025-03-28,115012,Chennai Super Kings,Royal Challengers Bengaluru,2,15452,1182529,Noor Ahmad,0,2,0,0,0.0,FALSE,not out,not out,,,,MA Chidambaram Stadium,0
+2025-03-28,115012,Chennai Super Kings,Royal Challengers Bengaluru,2,16458,1194795,Matheesha Pathirana,0,0,0,0,0.0,DNB,Not Out,DNB,,,,MA Chidambaram Stadium,0
+2025-03-28,115012,Chennai Super Kings,Royal Challengers Bengaluru,2,10952,942645,Khaleel Ahmed,0,0,0,0,0.0,DNB,Not Out,DNB,,,,MA Chidambaram Stadium,0
+2025-03-29,115014,Gujarat Titans,Mumbai Indians,1,13866,1151288,Sai Sudharsan,63,41,4,2,153.66,TRUE,lbw b Boult,LBW,8117,277912,Boult,Narendra Modi Stadium,103
+2025-03-29,115014,Gujarat Titans,Mumbai Indians,1,11808,1070173,Shubman Gill,38,27,4,1,140.74,TRUE,c Naman Dhir b Hardik Pandya,Caught,9647,625371,Hardik Pandya,Narendra Modi Stadium,66
+2025-03-29,115014,Gujarat Titans,Mumbai Indians,1,2258,308967,Jos Buttler,39,24,5,1,162.5,TRUE,c Rickelton b Mujeeb,Caught,12071,974109,Mujeeb,Narendra Modi Stadium,73
+2025-03-29,115014,Gujarat Titans,Mumbai Indians,1,10226,719719,Shahrukh Khan,9,7,0,1,128.57,TRUE,c Tilak Varma b Hardik Pandya,Caught,9647,625371,Hardik Pandya,Narendra Modi Stadium,15
+2025-03-29,115014,Gujarat Titans,Mumbai Indians,1,13748,914541,Sherfane Rutherford,18,11,0,2,163.64,TRUE,c Santner b D Chahar,Caught,7836,447261,D Chahar,Narendra Modi Stadium,34
+2025-03-29,115014,Gujarat Titans,Mumbai Indians,1,9693,423838,Rahul Tewatia,0,0,0,0,0.0,TRUE,run out (Hardik Pandya),Run Out,,,,Narendra Modi Stadium,0
+2025-03-29,115014,Gujarat Titans,Mumbai Indians,1,10738,793463,Rashid Khan,6,4,0,1,150.0,TRUE,c Hardik Pandya b Satyanarayana Raju,Caught,1431171,1392201,Satyanarayana Raju,Narendra Modi Stadium,12
+2025-03-29,115014,Gujarat Titans,Mumbai Indians,1,9585,550215,Rabada,7,5,0,1,140.0,FALSE,not out,not out,,,,Narendra Modi Stadium,13
+2025-03-29,115014,Gujarat Titans,Mumbai Indians,1,11595,1048739,Sai Kishore,1,1,0,0,100.0,TRUE,run out (Rickelton),Run Out,,,,Narendra Modi Stadium,1
+2025-03-29,115014,Gujarat Titans,Mumbai Indians,1,10808,940973,Siraj,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Narendra Modi Stadium,0
+2025-03-29,115014,Gujarat Titans,Mumbai Indians,1,10551,917159,Prasidh,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Narendra Modi Stadium,0
+2025-03-29,115014,Gujarat Titans,Mumbai Indians,1,702,236779,Ishant,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Narendra Modi Stadium,0
+2025-03-29,115014,Mumbai Indians,Gujarat Titans,2,576,34102,Rohit Sharma,8,4,2,0,200.0,TRUE,b Siraj,Bowled,10808,940973,Siraj,Narendra Modi Stadium,16
+2025-03-29,115014,Mumbai Indians,Gujarat Titans,2,13070,605661,Ryan Rickelton,6,9,1,0,66.67,TRUE,b Siraj,Bowled,10808,940973,Siraj,Narendra Modi Stadium,10
+2025-03-29,115014,Mumbai Indians,Gujarat Titans,2,14504,1170265,Tilak Varma,39,36,3,1,108.33,TRUE,c Rahul Tewatia b Prasidh,Caught,10551,917159,Prasidh,Narendra Modi Stadium,61
+2025-03-29,115014,Mumbai Indians,Gujarat Titans,2,7915,446507,Suryakumar Yadav,48,28,1,4,171.43,TRUE,c Shubman Gill b Prasidh,Caught,10551,917159,Prasidh,Narendra Modi Stadium,86
+2025-03-29,115014,Mumbai Indians,Gujarat Titans,2,36454,1350762,Robin Minz,3,6,0,0,50.0,TRUE,c Ishant b Sai Kishore,Caught,11595,1048739,Sai Kishore,Narendra Modi Stadium,3
+2025-03-29,115014,Mumbai Indians,Gujarat Titans,2,9647,625371,Hardik Pandya,11,17,1,0,64.71,TRUE,c Siraj b Rabada,Caught,9585,550215,Rabada,Narendra Modi Stadium,13
+2025-03-29,115014,Mumbai Indians,Gujarat Titans,2,36139,1287032,Naman Dhir,18,11,3,0,163.64,FALSE,not out,not out,,,,Narendra Modi Stadium,34
+2025-03-29,115014,Mumbai Indians,Gujarat Titans,2,10100,502714,Mitchell Santner,18,9,1,2,200.0,FALSE,not out,not out,,,,Narendra Modi Stadium,34
+2025-03-29,115014,Mumbai Indians,Gujarat Titans,2,7836,447261,Deepak Chahar,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Narendra Modi Stadium,0
+2025-03-29,115014,Mumbai Indians,Gujarat Titans,2,8117,277912,Trent Boult,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Narendra Modi Stadium,0
+2025-03-29,115014,Mumbai Indians,Gujarat Titans,2,12071,974109,Mujeeb Ur Rahman,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Narendra Modi Stadium,0
+2025-03-29,115014,Mumbai Indians,Gujarat Titans,2,1431171,1392201,Satyanarayana Raju,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Narendra Modi Stadium,0
+2025-03-30,115021,Sunrisers Hyderabad,Delhi Capitals,1,12086,1070183,Abhishek Sharma,1,1,0,0,100.0,TRUE,run out (Vipraj Nigam),Run Out,,,,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,1
+2025-03-30,115021,Sunrisers Hyderabad,Delhi Capitals,1,8497,530011,Head,22,12,4,0,183.33,TRUE,c Rahul b Mitchell Starc,Caught,7710,311592,Mitchell Starc,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,44
+2025-03-30,115021,Sunrisers Hyderabad,Delhi Capitals,1,10276,720471,Ishan Kishan,2,5,0,0,40.0,TRUE,c Stubbs b Mitchell Starc,Caught,7710,311592,Mitchell Starc,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,2
+2025-03-30,115021,Sunrisers Hyderabad,Delhi Capitals,1,14701,1175496,Nitish Reddy,0,2,0,0,0.0,TRUE,c Axar b Mitchell Starc,Caught,7710,311592,Mitchell Starc,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,0
+2025-03-30,115021,Sunrisers Hyderabad,Delhi Capitals,1,1447065,1409976,Aniket Verma,74,41,5,6,180.49,TRUE,c Jake Fraser-McGurk b Kuldeep Yadav,Caught,8292,559235,Kuldeep Yadav,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,144
+2025-03-30,115021,Sunrisers Hyderabad,Delhi Capitals,1,10209,436757,Klaasen,32,19,2,2,168.42,TRUE,c Vipraj Nigam b Mohit Sharma,Caught,8181,537119,Mohit Sharma,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,60
+2025-03-30,115021,Sunrisers Hyderabad,Delhi Capitals,1,10499,778963,Abhinav Manohar,4,6,0,0,66.67,TRUE,c du Plessis b Kuldeep Yadav,Caught,8292,559235,Kuldeep Yadav,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,4
+2025-03-30,115021,Sunrisers Hyderabad,Delhi Capitals,1,8095,489889,Cummins,2,7,0,0,28.57,TRUE,c Jake Fraser-McGurk b Kuldeep Yadav,Caught,8292,559235,Kuldeep Yadav,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,2
+2025-03-30,115021,Sunrisers Hyderabad,Delhi Capitals,1,11200,698189,Mulder,9,11,1,0,81.82,TRUE,c du Plessis b Mitchell Starc,Caught,7710,311592,Mitchell Starc,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,13
+2025-03-30,115021,Sunrisers Hyderabad,Delhi Capitals,1,8175,390481,Harshal Patel,5,9,0,0,55.56,TRUE,c Axar b Mitchell Starc,Caught,7710,311592,Mitchell Starc,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,5
+2025-03-30,115021,Sunrisers Hyderabad,Delhi Capitals,1,7909,481896,Shami,1,1,0,0,100.0,FALSE,not out,not out,,,,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,1
+2025-03-30,115021,Sunrisers Hyderabad,Delhi Capitals,1,10946,942371,Zeeshan Ansari,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,0
+2025-03-30,115021,Delhi Capitals,Sunrisers Hyderabad,2,14501,1168049,Jake Fraser-McGurk,38,32,4,2,118.75,TRUE,c and b Zeeshan Ansari,Caught,10946,942371,Zeeshan Ansari,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,70
+2025-03-30,115021,Delhi Capitals,Sunrisers Hyderabad,2,7825,44828,Faf du Plessis,50,27,3,3,185.19,TRUE,c Mulder b Zeeshan Ansari,Caught,10946,942371,Zeeshan Ansari,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,94
+2025-03-30,115021,Delhi Capitals,Sunrisers Hyderabad,2,24326,1277545,Abishek Porel,34,18,2,2,188.89,FALSE,not out,not out,,,,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,64
+2025-03-30,115021,Delhi Capitals,Sunrisers Hyderabad,2,8733,422108,KL Rahul,15,5,2,1,300.0,TRUE,b Zeeshan Ansari,Bowled,10946,942371,Zeeshan Ansari,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,29
+2025-03-30,115021,Delhi Capitals,Sunrisers Hyderabad,2,19243,595978,Tristan Stubbs,21,14,3,0,150.0,FALSE,not out,not out,,,,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,35
+2025-03-30,115021,Delhi Capitals,Sunrisers Hyderabad,2,8808,554691,Axar Patel,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,0
+2025-03-30,115021,Delhi Capitals,Sunrisers Hyderabad,2,1431811,1449074,Vipraj Nigam,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,0
+2025-03-30,115021,Delhi Capitals,Sunrisers Hyderabad,2,7710,311592,Mitchell Starc,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,0
+2025-03-30,115021,Delhi Capitals,Sunrisers Hyderabad,2,8292,559235,Kuldeep Yadav,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,0
+2025-03-30,115021,Delhi Capitals,Sunrisers Hyderabad,2,8181,537119,Mohit Sharma,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,0
+2025-03-30,115021,Delhi Capitals,Sunrisers Hyderabad,2,10754,926851,Mukesh Kumar,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,0
+2025-03-30,115030,Rajasthan Royals,Chennai Super Kings,1,13940,1151278,Yashasvi Jaiswal,4,3,1,0,133.33,TRUE,c Ashwin b Khaleel Ahmed,Caught,10952,942645,Khaleel Ahmed,Barsapara Cricket Stadium,8
+2025-03-30,115030,Rajasthan Royals,Chennai Super Kings,1,8271,425943,Samson,20,16,1,1,125.0,TRUE,c Rachin Ravindra b Noor Ahmad,Caught,15452,1182529,Noor Ahmad,Barsapara Cricket Stadium,30
+2025-03-30,115030,Rajasthan Royals,Chennai Super Kings,1,9204,604527,Nitish Rana,81,36,10,5,225.0,TRUE,st Dhoni b Ashwin,Bowled,1593,26421,Ashwin,Barsapara Cricket Stadium,169
+2025-03-30,115030,Rajasthan Royals,Chennai Super Kings,1,12305,1079434,Riyan Parag,37,28,2,2,132.14,TRUE,b Matheesha Pathirana,Bowled,16458,1194795,Matheesha Pathirana,Barsapara Cricket Stadium,63
+2025-03-30,115030,Rajasthan Royals,Chennai Super Kings,1,14691,1175488,Dhruv Jurel,3,7,0,0,42.86,TRUE,c Matheesha Pathirana b Noor Ahmad,Caught,15452,1182529,Noor Ahmad,Barsapara Cricket Stadium,3
+2025-03-30,115030,Rajasthan Royals,Chennai Super Kings,1,10926,784379,W Hasaranga,4,5,0,0,80.0,TRUE,c Vijay Shankar b Ravindra Jadeja,Caught,587,234675,Ravindra Jadeja,Barsapara Cricket Stadium,4
+2025-03-30,115030,Rajasthan Royals,Chennai Super Kings,1,9789,670025,Hetmyer,19,16,1,1,118.75,TRUE,c Ashwin b Matheesha Pathirana,Caught,16458,1194795,Matheesha Pathirana,Barsapara Cricket Stadium,29
+2025-03-30,115030,Rajasthan Royals,Chennai Super Kings,1,11540,669855,Jofra Archer,0,2,0,0,0.0,TRUE,c Ruturaj Gaikwad b Khaleel Ahmed,Caught,10952,942645,Khaleel Ahmed,Barsapara Cricket Stadium,0
+2025-03-30,115030,Rajasthan Royals,Chennai Super Kings,1,14190,1159843,Kumar Kartikeya,1,1,0,0,100.0,TRUE,run out (Khaleel Ahmed),Run Out,,,,Barsapara Cricket Stadium,1
+2025-03-30,115030,Rajasthan Royals,Chennai Super Kings,1,18504,1138316,M Theekshana,2,4,0,0,50.0,FALSE,not out,not out,,,,Barsapara Cricket Stadium,2
+2025-03-30,115030,Rajasthan Royals,Chennai Super Kings,1,11307,822553,Tushar Deshpande,1,2,0,0,50.0,FALSE,not out,not out,,,,Barsapara Cricket Stadium,1
+2025-03-30,115030,Rajasthan Royals,Chennai Super Kings,1,8356,438362,Sandeep Sharma,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Barsapara Cricket Stadium,0
+2025-03-30,115030,Chennai Super Kings,Rajasthan Royals,2,11177,959767,Rachin Ravindra,0,4,0,0,0.0,TRUE,c Dhruv Jurel b Jofra Archer,Caught,11540,669855,Jofra Archer,Barsapara Cricket Stadium,0
+2025-03-30,115030,Chennai Super Kings,Rajasthan Royals,2,9012,446763,Rahul Tripathi,23,19,3,1,121.05,TRUE,c Hetmyer b W Hasaranga,Caught,10926,784379,W Hasaranga,Barsapara Cricket Stadium,41
+2025-03-30,115030,Chennai Super Kings,Rajasthan Royals,2,11813,1060380,Ruturaj Gaikwad,63,44,7,1,143.18,TRUE,c Yashasvi Jaiswal b W Hasaranga,Caught,10926,784379,W Hasaranga,Barsapara Cricket Stadium,107
+2025-03-30,115030,Chennai Super Kings,Rajasthan Royals,2,11195,714451,Shivam Dube,18,10,1,2,180.0,TRUE,c Riyan Parag b W Hasaranga,Caught,10926,784379,W Hasaranga,Barsapara Cricket Stadium,40
+2025-03-30,115030,Chennai Super Kings,Rajasthan Royals,2,8204,477021,Vijay Shankar,9,6,0,1,150.0,TRUE,b W Hasaranga,Bowled,10926,784379,W Hasaranga,Barsapara Cricket Stadium,15
+2025-03-30,115030,Chennai Super Kings,Rajasthan Royals,2,587,234675,Ravindra Jadeja,32,22,2,1,145.45,FALSE,not out,not out,,,,Barsapara Cricket Stadium,52
+2025-03-30,115030,Chennai Super Kings,Rajasthan Royals,2,265,28081,MS Dhoni,16,11,1,1,145.45,TRUE,c Hetmyer b Sandeep Sharma,Caught,8356,438362,Sandeep Sharma,Barsapara Cricket Stadium,28
+2025-03-30,115030,Chennai Super Kings,Rajasthan Royals,2,8512,510530,Jamie Overton,11,4,0,1,275.0,FALSE,not out,not out,,,,Barsapara Cricket Stadium,17
+2025-03-30,115030,Chennai Super Kings,Rajasthan Royals,2,1593,26421,Ravichandran Ashwin,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Barsapara Cricket Stadium,0
+2025-03-30,115030,Chennai Super Kings,Rajasthan Royals,2,15452,1182529,Noor Ahmad,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Barsapara Cricket Stadium,0
+2025-03-30,115030,Chennai Super Kings,Rajasthan Royals,2,16458,1194795,Matheesha Pathirana,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Barsapara Cricket Stadium,0
+2025-03-30,115030,Chennai Super Kings,Rajasthan Royals,2,10952,942645,Khaleel Ahmed,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Barsapara Cricket Stadium,0
+2025-03-31,115032,Kolkata Knight Riders,Mumbai Indians,1,8520,379143,de Kock,1,3,0,0,33.33,TRUE,c Ashwani Kumar b D Chahar,Caught,7836,447261,D Chahar,Wankhede Stadium,1
+2025-03-31,115032,Kolkata Knight Riders,Mumbai Indians,1,2276,230558,Narine,0,2,0,0,0.0,TRUE,b Boult,Bowled,8117,277912,Boult,Wankhede Stadium,0
+2025-03-31,115032,Kolkata Knight Riders,Mumbai Indians,1,1447,277916,Ajinkya Rahane,11,7,1,1,157.14,TRUE,c Tilak Varma b Ashwani Kumar,Caught,11684,1209126,Ashwani Kumar,Wankhede Stadium,21
+2025-03-31,115032,Kolkata Knight Riders,Mumbai Indians,1,22566,1292495,Angkrish Raghuvanshi,26,16,3,1,162.5,TRUE,c Naman Dhir b Hardik Pandya,Caught,9647,625371,Hardik Pandya,Wankhede Stadium,52
+2025-03-31,115032,Kolkata Knight Riders,Mumbai Indians,1,10917,851403,Venkatesh Iyer,3,9,0,0,33.33,TRUE,c Rickelton b D Chahar,Caught,7836,447261,D Chahar,Wankhede Stadium,3
+2025-03-31,115032,Kolkata Knight Riders,Mumbai Indians,1,10896,723105,Rinku Singh,17,14,1,1,121.43,TRUE,c Naman Dhir b Ashwani Kumar,Caught,11684,1209126,Ashwani Kumar,Wankhede Stadium,27
+2025-03-31,115032,Kolkata Knight Riders,Mumbai Indians,1,1836,290630,Manish Pandey,19,14,2,1,135.71,TRUE,b Ashwani Kumar,Bowled,11684,1209126,Ashwani Kumar,Wankhede Stadium,35
+2025-03-31,115032,Kolkata Knight Riders,Mumbai Indians,1,7736,276298,Russell,5,11,1,0,45.45,TRUE,b Ashwani Kumar,Bowled,11684,1209126,Ashwani Kumar,Wankhede Stadium,3
+2025-03-31,115032,Kolkata Knight Riders,Mumbai Indians,1,12337,1079470,Ramandeep Singh ,22,12,1,2,183.33,TRUE,c Hardik Pandya b Santner,Caught,10100,502714,Santner,Wankhede Stadium,44
+2025-03-31,115032,Kolkata Knight Riders,Mumbai Indians,1,24729,1312645,Harshit Rana,4,8,0,0,50.0,TRUE,c Naman Dhir b Vignesh Puthur,Caught,1447337,1460388,Vignesh Puthur,Wankhede Stadium,4
+2025-03-31,115032,Kolkata Knight Riders,Mumbai Indians,1,13143,1123718,Spencer Johnson,1,3,0,0,33.33,FALSE,not out,not out,,,,Wankhede Stadium,1
+2025-03-31,115032,Kolkata Knight Riders,Mumbai Indians,1,12926,1108375,Varun Chakaravarthy,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Wankhede Stadium,0
+2025-03-31,115032,Mumbai Indians,Kolkata Knight Riders,2,576,34102,Rohit Sharma,13,12,0,1,108.33,TRUE,c Harshit Rana b Russell,Caught,7736,276298,Russell,Wankhede Stadium,19
+2025-03-31,115032,Mumbai Indians,Kolkata Knight Riders,2,13070,605661,Ryan Rickelton,62,41,4,5,151.22,FALSE,not out,not out,,,,Wankhede Stadium,120
+2025-03-31,115032,Mumbai Indians,Kolkata Knight Riders,2,12258,897549,Will Jacks,16,17,0,1,94.12,TRUE,c Ajinkya Rahane b Russell,Caught,7736,276298,Russell,Wankhede Stadium,22
+2025-03-31,115032,Mumbai Indians,Kolkata Knight Riders,2,7915,446507,Suryakumar Yadav,27,9,3,2,300.0,FALSE,not out,not out,,,,Wankhede Stadium,55
+2025-03-31,115032,Mumbai Indians,Kolkata Knight Riders,2,14504,1170265,Tilak Varma,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Wankhede Stadium,0
+2025-03-31,115032,Mumbai Indians,Kolkata Knight Riders,2,9647,625371,Hardik Pandya,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Wankhede Stadium,0
+2025-03-31,115032,Mumbai Indians,Kolkata Knight Riders,2,36139,1287032,Naman Dhir,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Wankhede Stadium,0
+2025-03-31,115032,Mumbai Indians,Kolkata Knight Riders,2,10100,502714,Mitchell Santner,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Wankhede Stadium,0
+2025-03-31,115032,Mumbai Indians,Kolkata Knight Riders,2,7836,447261,Deepak Chahar,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Wankhede Stadium,0
+2025-03-31,115032,Mumbai Indians,Kolkata Knight Riders,2,8117,277912,Trent Boult,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Wankhede Stadium,0
+2025-03-31,115032,Mumbai Indians,Kolkata Knight Riders,2,11684,1209126,Ashwani Kumar,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Wankhede Stadium,0
+2025-03-31,115032,Mumbai Indians,Kolkata Knight Riders,2,1447337,1460388,Vignesh Puthur,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Wankhede Stadium,0
+2025-04-01,115039,Lucknow Super Giants,Punjab Kings,1,9582,600498,Markram,28,18,4,1,155.56,TRUE,b Lockie Ferguson,Bowled,10692,493773,Lockie Ferguson,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,58
+2025-04-01,115039,Lucknow Super Giants,Punjab Kings,1,6250,272450,Mitchell Marsh,0,1,0,0,0.0,TRUE,c Marco Jansen b Arshdeep Singh,Caught,13217,1125976,Arshdeep Singh,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,0
+2025-04-01,115039,Lucknow Super Giants,Punjab Kings,1,9406,604302,Pooran,44,30,5,2,146.67,TRUE,c Maxwell b Chahal,Caught,7910,430246,Chahal,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,82
+2025-04-01,115039,Lucknow Super Giants,Punjab Kings,1,10744,931581,Pant,2,5,0,0,40.0,TRUE,c Chahal b Maxwell,Caught,7662,325026,Maxwell,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,2
+2025-04-01,115039,Lucknow Super Giants,Punjab Kings,1,13907,1151270,Ayush Badoni,41,33,1,3,124.24,TRUE,c Maxwell b Arshdeep Singh,Caught,13217,1125976,Arshdeep Singh,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,67
+2025-04-01,115039,Lucknow Super Giants,Punjab Kings,1,6349,321777,David Miller,19,18,3,0,105.56,TRUE,c Prabhsimran b Marco Jansen,Caught,14565,696401,Marco Jansen,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,31
+2025-04-01,115039,Lucknow Super Giants,Punjab Kings,1,14628,1175485,Abdul Samad,27,12,2,2,225.0,TRUE,c Priyansh Arya b Arshdeep Singh,Caught,13217,1125976,Arshdeep Singh,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,57
+2025-04-01,115039,Lucknow Super Giants,Punjab Kings,1,8683,1070196,Thakur,3,3,0,0,100.0,FALSE,not out,not out,,,,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,3
+2025-04-01,115039,Lucknow Super Giants,Punjab Kings,1,9781,694211,Avesh Khan,0,0,0,0,0.0,FALSE,not out,not out,,,,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,0
+2025-04-01,115039,Lucknow Super Giants,Punjab Kings,1,1448289,1460529,Digvesh Rathi,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,0
+2025-04-01,115039,Lucknow Super Giants,Punjab Kings,1,14659,1175441,Ravi Bishnoi,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,0
+2025-04-01,115039,Lucknow Super Giants,Punjab Kings,1,12930,1151286,M Siddharth,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,0
+2025-04-01,115039,Punjab Kings,Lucknow Super Giants,2,14689,1175456,Priyansh Arya,8,9,1,0,88.89,TRUE,c Thakur b Digvesh Rathi,Caught,1448289,1460529,Digvesh Rathi,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,12
+2025-04-01,115039,Punjab Kings,Lucknow Super Giants,2,14254,1161024,Prabhsimran Singh,69,34,9,3,202.94,TRUE,c Ravi Bishnoi b Digvesh Rathi,Caught,1448289,1460529,Digvesh Rathi,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,137
+2025-04-01,115039,Punjab Kings,Lucknow Super Giants,2,9428,642519,Shreyas Iyer,52,30,3,4,173.33,FALSE,not out,not out,,,,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,102
+2025-04-01,115039,Punjab Kings,Lucknow Super Giants,2,13915,1151273,Nehal Wadhera,43,25,3,4,172.0,FALSE,not out,not out,,,,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,89
+2025-04-01,115039,Punjab Kings,Lucknow Super Giants,2,10919,377534,Shashank Singh,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,0
+2025-04-01,115039,Punjab Kings,Lucknow Super Giants,2,8989,325012,Marcus Stoinis,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,0
+2025-04-01,115039,Punjab Kings,Lucknow Super Giants,2,7662,325026,Glenn Maxwell,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,0
+2025-04-01,115039,Punjab Kings,Lucknow Super Giants,2,14922,1339698,Suryansh Shedge,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,0
+2025-04-01,115039,Punjab Kings,Lucknow Super Giants,2,14565,696401,Marco Jansen,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,0
+2025-04-01,115039,Punjab Kings,Lucknow Super Giants,2,10692,493773,Lockie Ferguson,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,0
+2025-04-01,115039,Punjab Kings,Lucknow Super Giants,2,7910,430246,Yuzvendra Chahal,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,0
+2025-04-01,115039,Punjab Kings,Lucknow Super Giants,2,13217,1125976,Arshdeep Singh,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,0
+2025-04-02,115048,Royal Challengers Bengaluru,Gujarat Titans,1,10479,669365,Phil Salt,14,13,1,1,107.69,TRUE,b Siraj,Bowled,10808,940973,Siraj,M.Chinnaswamy Stadium,24
+2025-04-02,115048,Royal Challengers Bengaluru,Gujarat Titans,1,1413,253802,Kohli,7,6,1,0,116.67,TRUE,c Prasidh b Arshad Khan,Caught,18637,1244751,Arshad Khan,M.Chinnaswamy Stadium,11
+2025-04-02,115048,Royal Challengers Bengaluru,Gujarat Titans,1,13088,1119026,Padikkal,4,3,1,0,133.33,TRUE,b Siraj,Bowled,10808,940973,Siraj,M.Chinnaswamy Stadium,8
+2025-04-02,115048,Royal Challengers Bengaluru,Gujarat Titans,1,10636,823703,Rajat Patidar,12,12,2,0,100.0,TRUE,lbw b Ishant,LBW,702,236779,Ishant,M.Chinnaswamy Stadium,20
+2025-04-02,115048,Royal Challengers Bengaluru,Gujarat Titans,1,10045,403902,Livingstone,54,40,1,5,135.0,TRUE,c Jos Buttler b Siraj,Caught,10808,940973,Siraj,M.Chinnaswamy Stadium,98
+2025-04-02,115048,Royal Challengers Bengaluru,Gujarat Titans,1,10214,721867,Jitesh Sharma,33,21,5,1,157.14,TRUE,c Rahul Tewatia b Sai Kishore,Caught,11595,1048739,Sai Kishore,M.Chinnaswamy Stadium,67
+2025-04-02,115048,Royal Challengers Bengaluru,Gujarat Titans,1,11311,471342,Krunal Pandya,5,5,1,0,100.0,TRUE,c and b Sai Kishore,Caught,11595,1048739,Sai Kishore,M.Chinnaswamy Stadium,9
+2025-04-02,115048,Royal Challengers Bengaluru,Gujarat Titans,1,13169,892749,Tim David,32,18,3,2,177.78,TRUE,b Prasidh,Bowled,10551,917159,Prasidh,M.Chinnaswamy Stadium,66
+2025-04-02,115048,Royal Challengers Bengaluru,Gujarat Titans,1,1726,326016,Bhuvneshwar,1,2,0,0,50.0,FALSE,not out,not out,,,,M.Chinnaswamy Stadium,1
+2025-04-02,115048,Royal Challengers Bengaluru,Gujarat Titans,1,6258,288284,Hazlewood,0,0,0,0,0.0,DNB,Not Out,DNB,,,,M.Chinnaswamy Stadium,0
+2025-04-02,115048,Royal Challengers Bengaluru,Gujarat Titans,1,14172,1159720,Yash Dayal,0,0,0,0,0.0,DNB,Not Out,DNB,,,,M.Chinnaswamy Stadium,0
+2025-04-02,115048,Royal Challengers Bengaluru,Gujarat Titans,1,14274,1161489,Rasikh Salam,0,0,0,0,0.0,DNB,Not Out,DNB,,,,M.Chinnaswamy Stadium,0
+2025-04-02,115048,Gujarat Titans,Royal Challengers Bengaluru,2,13866,1151288,Sai Sudharsan,49,36,7,1,136.11,TRUE,c Jitesh Sharma b Hazlewood,Caught,6258,288284,Hazlewood,M.Chinnaswamy Stadium,89
+2025-04-02,115048,Gujarat Titans,Royal Challengers Bengaluru,2,11808,1070173,Shubman Gill,14,14,1,1,100.0,TRUE,c Livingstone b Bhuvneshwar,Caught,1726,326016,Bhuvneshwar,M.Chinnaswamy Stadium,24
+2025-04-02,115048,Gujarat Titans,Royal Challengers Bengaluru,2,2258,308967,Jos Buttler,73,39,5,6,187.18,FALSE,not out,not out,,,,M.Chinnaswamy Stadium,143
+2025-04-02,115048,Gujarat Titans,Royal Challengers Bengaluru,2,13748,914541,Sherfane Rutherford,30,18,1,3,166.67,FALSE,not out,not out,,,,M.Chinnaswamy Stadium,60
+2025-04-02,115048,Gujarat Titans,Royal Challengers Bengaluru,2,10226,719719,Shahrukh Khan,0,0,0,0,0.0,DNB,Not Out,DNB,,,,M.Chinnaswamy Stadium,0
+2025-04-02,115048,Gujarat Titans,Royal Challengers Bengaluru,2,9693,423838,Rahul Tewatia,0,0,0,0,0.0,DNB,Not Out,DNB,,,,M.Chinnaswamy Stadium,0
+2025-04-02,115048,Gujarat Titans,Royal Challengers Bengaluru,2,18637,1244751,Arshad Khan,0,0,0,0,0.0,DNB,Not Out,DNB,,,,M.Chinnaswamy Stadium,0
+2025-04-02,115048,Gujarat Titans,Royal Challengers Bengaluru,2,10738,793463,Rashid Khan,0,0,0,0,0.0,DNB,Not Out,DNB,,,,M.Chinnaswamy Stadium,0
+2025-04-02,115048,Gujarat Titans,Royal Challengers Bengaluru,2,11595,1048739,Ravisrinivasan Sai Kishore,0,0,0,0,0.0,DNB,Not Out,DNB,,,,M.Chinnaswamy Stadium,0
+2025-04-02,115048,Gujarat Titans,Royal Challengers Bengaluru,2,10808,940973,Mohammed Siraj,0,0,0,0,0.0,DNB,Not Out,DNB,,,,M.Chinnaswamy Stadium,0
+2025-04-02,115048,Gujarat Titans,Royal Challengers Bengaluru,2,10551,917159,Prasidh Krishna,0,0,0,0,0.0,DNB,Not Out,DNB,,,,M.Chinnaswamy Stadium,0
+2025-04-02,115048,Gujarat Titans,Royal Challengers Bengaluru,2,702,236779,Ishant Sharma,0,0,0,0,0.0,DNB,Not Out,DNB,,,,M.Chinnaswamy Stadium,0
+2025-04-03,115050,Kolkata Knight Riders,Sunrisers Hyderabad,1,8520,379143,de Kock,1,6,0,0,16.67,TRUE,c Zeeshan Ansari b Cummins,Caught,8095,489889,Cummins,Eden Gardens,1
+2025-04-03,115050,Kolkata Knight Riders,Sunrisers Hyderabad,1,2276,230558,Narine,7,7,0,1,100.0,TRUE,c Klaasen b Shami,Caught,7909,481896,Shami,Eden Gardens,13
+2025-04-03,115050,Kolkata Knight Riders,Sunrisers Hyderabad,1,1447,277916,Ajinkya Rahane,38,27,1,4,140.74,TRUE,c Klaasen b Zeeshan Ansari,Caught,10946,942371,Zeeshan Ansari,Eden Gardens,72
+2025-04-03,115050,Kolkata Knight Riders,Sunrisers Hyderabad,1,22566,1292495,Angkrish Raghuvanshi,50,32,5,2,156.25,TRUE,c Harshal Patel b Kamindu Mendis,Caught,10940,784373,Kamindu Mendis,Eden Gardens,94
+2025-04-03,115050,Kolkata Knight Riders,Sunrisers Hyderabad,1,10917,851403,Venkatesh Iyer,60,29,7,3,206.9,TRUE,c Aniket Verma b Harshal Patel,Caught,8175,390481,Harshal Patel,Eden Gardens,120
+2025-04-03,115050,Kolkata Knight Riders,Sunrisers Hyderabad,1,10896,723105,Rinku Singh,32,17,4,1,188.24,FALSE,not out,not out,,,,Eden Gardens,64
+2025-04-03,115050,Kolkata Knight Riders,Sunrisers Hyderabad,1,7736,276298,Russell,1,2,0,0,50.0,TRUE,run out (Klaasen),Run Out,,,,Eden Gardens,1
+2025-04-03,115050,Kolkata Knight Riders,Sunrisers Hyderabad,1,6692,8917,Moeen,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Eden Gardens,0
+2025-04-03,115050,Kolkata Knight Riders,Sunrisers Hyderabad,1,12337,1079470,Ramandeep Singh ,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Eden Gardens,0
+2025-04-03,115050,Kolkata Knight Riders,Sunrisers Hyderabad,1,24729,1312645,Harshit Rana,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Eden Gardens,0
+2025-04-03,115050,Kolkata Knight Riders,Sunrisers Hyderabad,1,12926,1108375,Varun Chakaravarthy,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Eden Gardens,0
+2025-04-03,115050,Kolkata Knight Riders,Sunrisers Hyderabad,1,15861,1209292,Vaibhav Arora,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Eden Gardens,0
+2025-04-03,115050,Sunrisers Hyderabad,Kolkata Knight Riders,2,8497,530011,Travis Head,4,2,1,0,200.0,TRUE,c Harshit Rana b Vaibhav Arora,Caught,15861,1209292,Vaibhav Arora,Eden Gardens,8
+2025-04-03,115050,Sunrisers Hyderabad,Kolkata Knight Riders,2,12086,1070183,Abhishek Sharma,2,6,0,0,33.33,TRUE,c Venkatesh Iyer b Harshit Rana,Caught,24729,1312645,Harshit Rana,Eden Gardens,2
+2025-04-03,115050,Sunrisers Hyderabad,Kolkata Knight Riders,2,10276,720471,Ishan Kishan,2,5,0,0,40.0,TRUE,c Ajinkya Rahane b Vaibhav Arora,Caught,15861,1209292,Vaibhav Arora,Eden Gardens,2
+2025-04-03,115050,Sunrisers Hyderabad,Kolkata Knight Riders,2,14701,1175496,Nitish Kumar Reddy,19,15,2,1,126.67,TRUE,c Narine b Russell,Caught,7736,276298,Russell,Eden Gardens,33
+2025-04-03,115050,Sunrisers Hyderabad,Kolkata Knight Riders,2,10940,784373,Kamindu Mendis,27,20,1,2,135.0,TRUE,c (sub)Anukul Roy b Narine,Caught,2276,230558,Narine,Eden Gardens,49
+2025-04-03,115050,Sunrisers Hyderabad,Kolkata Knight Riders,2,10209,436757,Heinrich Klaasen,33,21,2,2,157.14,TRUE,c Moeen b Vaibhav Arora,Caught,15861,1209292,Vaibhav Arora,Eden Gardens,61
+2025-04-03,115050,Sunrisers Hyderabad,Kolkata Knight Riders,2,1447065,1409976,Aniket Verma,6,6,1,0,100.0,TRUE,c Venkatesh Iyer b Varun Chakaravarthy,Caught,12926,1108375,Varun Chakaravarthy,Eden Gardens,10
+2025-04-03,115050,Sunrisers Hyderabad,Kolkata Knight Riders,2,8095,489889,Pat Cummins,14,15,2,0,93.33,TRUE,c Harshit Rana b Varun Chakaravarthy,Caught,12926,1108375,Varun Chakaravarthy,Eden Gardens,22
+2025-04-03,115050,Sunrisers Hyderabad,Kolkata Knight Riders,2,8175,390481,Harshal Patel,3,5,0,0,60.0,TRUE,c and b Russell,Caught,7736,276298,Russell,Eden Gardens,3
+2025-04-03,115050,Sunrisers Hyderabad,Kolkata Knight Riders,2,14163,1159722,Simarjeet Singh,0,1,0,0,0.0,TRUE,b Varun Chakaravarthy,Bowled,12926,1108375,Varun Chakaravarthy,Eden Gardens,0
+2025-04-03,115050,Sunrisers Hyderabad,Kolkata Knight Riders,2,7909,481896,Mohammed Shami,2,4,0,0,50.0,FALSE,not out,not out,,,,Eden Gardens,2
+2025-04-03,115050,Sunrisers Hyderabad,Kolkata Knight Riders,2,10946,942371,Zeeshan Ansari,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Eden Gardens,0
+2025-04-04,115059,Lucknow Super Giants,Mumbai Indians,1,6250,272450,Mitchell Marsh,60,31,9,2,193.55,TRUE,c and b Vignesh Puthur,Caught,1447337,1460388,Vignesh Puthur,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,122
+2025-04-04,115059,Lucknow Super Giants,Mumbai Indians,1,9582,600498,Markram,53,38,2,4,139.47,TRUE,c Raj Bawa b Hardik Pandya,Caught,9647,625371,Hardik Pandya,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,95
+2025-04-04,115059,Lucknow Super Giants,Mumbai Indians,1,9406,604302,Pooran,12,6,1,1,200.0,TRUE,c D Chahar b Hardik Pandya,Caught,9647,625371,Hardik Pandya,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,22
+2025-04-04,115059,Lucknow Super Giants,Mumbai Indians,1,10744,931581,Pant,2,6,0,0,33.33,TRUE,c (sub)Corbin Bosch b Hardik Pandya,Caught,9647,625371,Hardik Pandya,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,2
+2025-04-04,115059,Lucknow Super Giants,Mumbai Indians,1,13907,1151270,Ayush Badoni,30,19,4,0,157.89,TRUE,c Rickelton b Ashwani Kumar,Caught,11684,1209126,Ashwani Kumar,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,54
+2025-04-04,115059,Lucknow Super Giants,Mumbai Indians,1,6349,321777,David Miller,27,14,3,1,192.86,TRUE,c Naman Dhir b Hardik Pandya,Caught,9647,625371,Hardik Pandya,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,55
+2025-04-04,115059,Lucknow Super Giants,Mumbai Indians,1,14628,1175485,Abdul Samad,4,2,1,0,200.0,TRUE,c Naman Dhir b Boult,Caught,8117,277912,Boult,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,8
+2025-04-04,115059,Lucknow Super Giants,Mumbai Indians,1,8683,1070196,Thakur,5,2,1,0,250.0,FALSE,not out,not out,,,,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,9
+2025-04-04,115059,Lucknow Super Giants,Mumbai Indians,1,14726,1176959,Akash Deep,0,1,0,0,0.0,TRUE,c Santner b Hardik Pandya,Caught,9647,625371,Hardik Pandya,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,0
+2025-04-04,115059,Lucknow Super Giants,Mumbai Indians,1,9781,694211,Avesh Khan,2,1,0,0,200.0,FALSE,not out,not out,,,,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,2
+2025-04-04,115059,Lucknow Super Giants,Mumbai Indians,1,1448289,1460529,Digvesh Rathi,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,0
+2025-04-04,115059,Lucknow Super Giants,Mumbai Indians,1,14659,1175441,Ravi Bishnoi,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,0
+2025-04-04,115059,Mumbai Indians,Lucknow Super Giants,2,12258,897549,Will Jacks,5,7,0,0,71.43,TRUE,c Ravi Bishnoi b Akash Deep,Caught,14726,1176959,Akash Deep,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,5
+2025-04-04,115059,Mumbai Indians,Lucknow Super Giants,2,13070,605661,Ryan Rickelton,10,5,2,0,200.0,TRUE,c Ravi Bishnoi b Thakur,Caught,8683,1070196,Thakur,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,18
+2025-04-04,115059,Mumbai Indians,Lucknow Super Giants,2,36139,1287032,Naman Dhir,46,24,4,3,191.67,TRUE,b Digvesh Rathi,Bowled,1448289,1460529,Digvesh Rathi,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,90
+2025-04-04,115059,Mumbai Indians,Lucknow Super Giants,2,7915,446507,Suryakumar Yadav,67,43,9,1,155.81,TRUE,c Abdul Samad b Avesh Khan,Caught,9781,694211,Avesh Khan,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,121
+2025-04-04,115059,Mumbai Indians,Lucknow Super Giants,2,14504,1170265,Tilak Varma,25,23,2,0,108.7,FALSE,retd out,retd out,,,,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,37
+2025-04-04,115059,Mumbai Indians,Lucknow Super Giants,2,9647,625371,Hardik Pandya,28,16,2,1,175.0,FALSE,not out,not out,,,,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,52
+2025-04-04,115059,Mumbai Indians,Lucknow Super Giants,2,10100,502714,Mitchell Santner,2,2,0,0,100.0,FALSE,not out,not out,,,,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,2
+2025-04-04,115059,Mumbai Indians,Lucknow Super Giants,2,22601,1292502,Raj Bawa,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,0
+2025-04-04,115059,Mumbai Indians,Lucknow Super Giants,2,7836,447261,Deepak Chahar,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,0
+2025-04-04,115059,Mumbai Indians,Lucknow Super Giants,2,11684,1209126,Ashwani Kumar,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,0
+2025-04-04,115059,Mumbai Indians,Lucknow Super Giants,2,1447337,1460388,Vignesh Puthur,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,0
+2025-04-04,115059,Mumbai Indians,Lucknow Super Giants,2,8117,277912,Trent Boult,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,0
+2025-04-05,115075,Rajasthan Royals,Punjab Kings,1,13940,1151278,Yashasvi Jaiswal,67,45,3,5,148.89,TRUE,b Lockie Ferguson,Bowled,10692,493773,Lockie Ferguson,Maharaja Yadavindra Singh International Cricket Stadium,119
+2025-04-05,115075,Rajasthan Royals,Punjab Kings,1,8271,425943,Samson,38,26,6,0,146.15,TRUE,c Shreyas Iyer b Lockie Ferguson,Caught,10692,493773,Lockie Ferguson,Maharaja Yadavindra Singh International Cricket Stadium,68
+2025-04-05,115075,Rajasthan Royals,Punjab Kings,1,12305,1079434,Riyan Parag,43,25,3,3,172.0,FALSE,not out,not out,,,,Maharaja Yadavindra Singh International Cricket Stadium,83
+2025-04-05,115075,Rajasthan Royals,Punjab Kings,1,9204,604527,Nitish Rana,12,7,2,0,171.43,TRUE,c Maxwell b Marco Jansen,Caught,14565,696401,Marco Jansen,Maharaja Yadavindra Singh International Cricket Stadium,20
+2025-04-05,115075,Rajasthan Royals,Punjab Kings,1,9789,670025,Hetmyer,20,12,2,1,166.67,TRUE,c Maxwell b Arshdeep Singh,Caught,13217,1125976,Arshdeep Singh,Maharaja Yadavindra Singh International Cricket Stadium,38
+2025-04-05,115075,Rajasthan Royals,Punjab Kings,1,14691,1175488,Dhruv Jurel,13,5,1,1,260.0,FALSE,not out,not out,,,,Maharaja Yadavindra Singh International Cricket Stadium,23
+2025-04-05,115075,Rajasthan Royals,Punjab Kings,1,10926,784379,W Hasaranga,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Maharaja Yadavindra Singh International Cricket Stadium,0
+2025-04-05,115075,Rajasthan Royals,Punjab Kings,1,11540,669855,Jofra Archer,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Maharaja Yadavindra Singh International Cricket Stadium,0
+2025-04-05,115075,Rajasthan Royals,Punjab Kings,1,18504,1138316,M Theekshana,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Maharaja Yadavindra Singh International Cricket Stadium,0
+2025-04-05,115075,Rajasthan Royals,Punjab Kings,1,15749,1206052,Yudhvir Singh,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Maharaja Yadavindra Singh International Cricket Stadium,0
+2025-04-05,115075,Rajasthan Royals,Punjab Kings,1,8356,438362,Sandeep Sharma,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Maharaja Yadavindra Singh International Cricket Stadium,0
+2025-04-05,115075,Rajasthan Royals,Punjab Kings,1,14190,1159843,Kumar Kartikeya,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Maharaja Yadavindra Singh International Cricket Stadium,0
+2025-04-05,115075,Punjab Kings,Rajasthan Royals,2,14689,1175456,Priyansh Arya,0,1,0,0,0.0,TRUE,b Jofra Archer,Bowled,11540,669855,Jofra Archer,Maharaja Yadavindra Singh International Cricket Stadium,0
+2025-04-05,115075,Punjab Kings,Rajasthan Royals,2,14254,1161024,Prabhsimran Singh,17,16,2,0,106.25,TRUE,c W Hasaranga b Kumar Kartikeya,Caught,14190,1159843,Kumar Kartikeya,Maharaja Yadavindra Singh International Cricket Stadium,25
+2025-04-05,115075,Punjab Kings,Rajasthan Royals,2,9428,642519,Shreyas Iyer,10,5,2,0,200.0,TRUE,b Jofra Archer,Bowled,11540,669855,Jofra Archer,Maharaja Yadavindra Singh International Cricket Stadium,18
+2025-04-05,115075,Punjab Kings,Rajasthan Royals,2,8989,325012,Marcus Stoinis,1,7,0,0,14.29,TRUE,c and b Sandeep Sharma,Caught,8356,438362,Sandeep Sharma,Maharaja Yadavindra Singh International Cricket Stadium,1
+2025-04-05,115075,Punjab Kings,Rajasthan Royals,2,13915,1151273,Nehal Wadhera,62,41,4,3,151.22,TRUE,c Dhruv Jurel b W Hasaranga,Caught,10926,784379,W Hasaranga,Maharaja Yadavindra Singh International Cricket Stadium,108
+2025-04-05,115075,Punjab Kings,Rajasthan Royals,2,7662,325026,Glenn Maxwell,30,21,3,1,142.86,TRUE,c Yashasvi Jaiswal b M Theekshana,Caught,18504,1138316,M Theekshana,Maharaja Yadavindra Singh International Cricket Stadium,54
+2025-04-05,115075,Punjab Kings,Rajasthan Royals,2,10919,377534,Shashank Singh,10,13,0,0,76.92,FALSE,not out,not out,,,,Maharaja Yadavindra Singh International Cricket Stadium,10
+2025-04-05,115075,Punjab Kings,Rajasthan Royals,2,14922,1339698,Suryansh Shedge,2,4,0,0,50.0,TRUE,c Hetmyer b Sandeep Sharma,Caught,8356,438362,Sandeep Sharma,Maharaja Yadavindra Singh International Cricket Stadium,2
+2025-04-05,115075,Punjab Kings,Rajasthan Royals,2,14565,696401,Marco Jansen,3,6,0,0,50.0,TRUE,c Hetmyer b M Theekshana,Caught,18504,1138316,M Theekshana,Maharaja Yadavindra Singh International Cricket Stadium,3
+2025-04-05,115075,Punjab Kings,Rajasthan Royals,2,13217,1125976,Arshdeep Singh,1,5,0,0,20.0,TRUE,c W Hasaranga b Jofra Archer,Caught,11540,669855,Jofra Archer,Maharaja Yadavindra Singh International Cricket Stadium,1
+2025-04-05,115075,Punjab Kings,Rajasthan Royals,2,10692,493773,Lockie Ferguson,4,1,1,0,400.0,FALSE,not out,not out,,,,Maharaja Yadavindra Singh International Cricket Stadium,8
+2025-04-05,115075,Punjab Kings,Rajasthan Royals,2,7910,430246,Yuzvendra Chahal,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Maharaja Yadavindra Singh International Cricket Stadium,0
+2025-04-05,115068,Delhi Capitals,Chennai Super Kings,1,14501,1168049,Jake Fraser-McGurk,0,5,0,0,0.0,TRUE,c Ashwin b Khaleel Ahmed,Caught,10952,942645,Khaleel Ahmed,MA Chidambaram Stadium,0
+2025-04-05,115068,Delhi Capitals,Chennai Super Kings,1,8733,422108,Rahul,77,51,6,3,150.98,TRUE,c Dhoni b Matheesha Pathirana,Caught,16458,1194795,Matheesha Pathirana,MA Chidambaram Stadium,135
+2025-04-05,115068,Delhi Capitals,Chennai Super Kings,1,24326,1277545,Abishek Porel,33,20,4,1,165.0,TRUE,c Matheesha Pathirana b Ravindra Jadeja,Caught,587,234675,Ravindra Jadeja,MA Chidambaram Stadium,63
+2025-04-05,115068,Delhi Capitals,Chennai Super Kings,1,8808,554691,Axar,21,14,2,1,150.0,TRUE,b Noor Ahmad,Bowled,15452,1182529,Noor Ahmad,MA Chidambaram Stadium,37
+2025-04-05,115068,Delhi Capitals,Chennai Super Kings,1,14700,1175489,Sameer Rizvi ,20,15,1,1,133.33,TRUE,c Ravindra Jadeja b Khaleel Ahmed,Caught,10952,942645,Khaleel Ahmed,MA Chidambaram Stadium,32
+2025-04-05,115068,Delhi Capitals,Chennai Super Kings,1,19243,595978,Stubbs,24,12,2,1,200.0,FALSE,not out,not out,,,,MA Chidambaram Stadium,44
+2025-04-05,115068,Delhi Capitals,Chennai Super Kings,1,13497,1131978,Ashutosh Sharma,1,1,0,0,100.0,TRUE,run out (Ravindra Jadeja/Dhoni),Run Out,,,,MA Chidambaram Stadium,1
+2025-04-05,115068,Delhi Capitals,Chennai Super Kings,1,1431811,1449074,Vipraj Nigam,1,2,0,0,50.0,FALSE,not out,not out,,,,MA Chidambaram Stadium,1
+2025-04-05,115068,Delhi Capitals,Chennai Super Kings,1,7710,311592,Mitchell Starc,0,0,0,0,0.0,DNB,Not Out,DNB,,,,MA Chidambaram Stadium,0
+2025-04-05,115068,Delhi Capitals,Chennai Super Kings,1,8292,559235,Kuldeep Yadav,0,0,0,0,0.0,DNB,Not Out,DNB,,,,MA Chidambaram Stadium,0
+2025-04-05,115068,Delhi Capitals,Chennai Super Kings,1,8181,537119,Mohit Sharma,0,0,0,0,0.0,DNB,Not Out,DNB,,,,MA Chidambaram Stadium,0
+2025-04-05,115068,Delhi Capitals,Chennai Super Kings,1,10754,926851,Mukesh Kumar,0,0,0,0,0.0,DNB,Not Out,DNB,,,,MA Chidambaram Stadium,0
+2025-04-05,115068,Chennai Super Kings,Delhi Capitals,2,11177,959767,Rachin Ravindra,3,6,0,0,50.0,TRUE,c and b Mukesh Kumar,Caught,10754,926851,Mukesh Kumar,MA Chidambaram Stadium,3
+2025-04-05,115068,Chennai Super Kings,Delhi Capitals,2,9838,379140,Devon Conway,13,14,1,0,92.86,TRUE,c Axar b Vipraj Nigam,Caught,1431811,1449074,Vipraj Nigam,MA Chidambaram Stadium,17
+2025-04-05,115068,Chennai Super Kings,Delhi Capitals,2,11813,1060380,Ruturaj Gaikwad,5,4,1,0,125.0,TRUE,c Jake Fraser-McGurk b Mitchell Starc,Caught,7710,311592,Mitchell Starc,MA Chidambaram Stadium,9
+2025-04-05,115068,Chennai Super Kings,Delhi Capitals,2,8204,477021,Vijay Shankar,69,54,5,1,127.78,FALSE,not out,not out,,,,MA Chidambaram Stadium,103
+2025-04-05,115068,Chennai Super Kings,Delhi Capitals,2,11195,714451,Shivam Dube,18,15,1,1,120.0,TRUE,c Stubbs b Vipraj Nigam,Caught,1431811,1449074,Vipraj Nigam,MA Chidambaram Stadium,28
+2025-04-05,115068,Chennai Super Kings,Delhi Capitals,2,587,234675,Ravindra Jadeja,2,3,0,0,66.67,TRUE,lbw b Kuldeep Yadav,LBW,8292,559235,Kuldeep Yadav,MA Chidambaram Stadium,2
+2025-04-05,115068,Chennai Super Kings,Delhi Capitals,2,265,28081,MS Dhoni,30,26,1,1,115.38,FALSE,not out,not out,,,,MA Chidambaram Stadium,44
+2025-04-05,115068,Chennai Super Kings,Delhi Capitals,2,1593,26421,Ravichandran Ashwin,0,0,0,0,0.0,DNB,Not Out,DNB,,,,MA Chidambaram Stadium,0
+2025-04-05,115068,Chennai Super Kings,Delhi Capitals,2,15452,1182529,Noor Ahmad,0,0,0,0,0.0,DNB,Not Out,DNB,,,,MA Chidambaram Stadium,0
+2025-04-05,115068,Chennai Super Kings,Delhi Capitals,2,13184,1125688,Mukesh Choudhary,0,0,0,0,0.0,DNB,Not Out,DNB,,,,MA Chidambaram Stadium,0
+2025-04-05,115068,Chennai Super Kings,Delhi Capitals,2,10952,942645,Khaleel Ahmed,0,0,0,0,0.0,DNB,Not Out,DNB,,,,MA Chidambaram Stadium,0
+2025-04-05,115068,Chennai Super Kings,Delhi Capitals,2,16458,1194795,Matheesha Pathirana,0,0,0,0,0.0,DNB,Not Out,DNB,,,,MA Chidambaram Stadium,0
+2025-04-06,115093,Sunrisers Hyderabad,Gujarat Titans,1,12086,1070183,Abhishek Sharma,18,16,4,0,112.5,TRUE,c Rahul Tewatia b Siraj,Caught,10808,940973,Siraj,Rajiv Gandhi International Stadium,34
+2025-04-06,115093,Sunrisers Hyderabad,Gujarat Titans,1,8497,530011,Head,8,5,2,0,160.0,TRUE,c Sai Sudharsan b Siraj,Caught,10808,940973,Siraj,Rajiv Gandhi International Stadium,16
+2025-04-06,115093,Sunrisers Hyderabad,Gujarat Titans,1,10276,720471,Ishan Kishan,17,14,2,0,121.43,TRUE,c Ishant b Prasidh,Caught,10551,917159,Prasidh,Rajiv Gandhi International Stadium,25
+2025-04-06,115093,Sunrisers Hyderabad,Gujarat Titans,1,14701,1175496,Nitish Reddy,31,34,3,0,91.18,TRUE,c Rashid Khan b Sai Kishore,Caught,11595,1048739,Sai Kishore,Rajiv Gandhi International Stadium,47
+2025-04-06,115093,Sunrisers Hyderabad,Gujarat Titans,1,10209,436757,Klaasen,27,19,2,1,142.11,TRUE,b Sai Kishore,Bowled,11595,1048739,Sai Kishore,Rajiv Gandhi International Stadium,47
+2025-04-06,115093,Sunrisers Hyderabad,Gujarat Titans,1,1447065,1409976,Aniket Verma,18,14,2,0,128.57,TRUE,lbw b Siraj,LBW,10808,940973,Siraj,Rajiv Gandhi International Stadium,26
+2025-04-06,115093,Sunrisers Hyderabad,Gujarat Titans,1,10940,784373,Kamindu Mendis,1,5,0,0,20.0,TRUE,c Sai Sudharsan b Prasidh,Caught,10551,917159,Prasidh,Rajiv Gandhi International Stadium,1
+2025-04-06,115093,Sunrisers Hyderabad,Gujarat Titans,1,8095,489889,Cummins,22,9,3,1,244.44,FALSE,not out,not out,,,,Rajiv Gandhi International Stadium,40
+2025-04-06,115093,Sunrisers Hyderabad,Gujarat Titans,1,14163,1159722,Simarjeet Singh,0,2,0,0,0.0,TRUE,b Siraj,Bowled,10808,940973,Siraj,Rajiv Gandhi International Stadium,0
+2025-04-06,115093,Sunrisers Hyderabad,Gujarat Titans,1,7909,481896,Shami,6,2,1,0,300.0,FALSE,not out,not out,,,,Rajiv Gandhi International Stadium,10
+2025-04-06,115093,Sunrisers Hyderabad,Gujarat Titans,1,10946,942371,Zeeshan Ansari,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Rajiv Gandhi International Stadium,0
+2025-04-06,115093,Sunrisers Hyderabad,Gujarat Titans,1,6327,390484,Jaydev Unadkat,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Rajiv Gandhi International Stadium,0
+2025-04-06,115093,Gujarat Titans,Sunrisers Hyderabad,2,13866,1151288,Sai Sudharsan,5,9,0,0,55.56,TRUE,c Aniket Verma b Shami,Caught,7909,481896,Shami,Rajiv Gandhi International Stadium,5
+2025-04-06,115093,Gujarat Titans,Sunrisers Hyderabad,2,11808,1070173,Shubman Gill,61,43,9,0,141.86,FALSE,not out,not out,,,,Rajiv Gandhi International Stadium,107
+2025-04-06,115093,Gujarat Titans,Sunrisers Hyderabad,2,2258,308967,Jos Buttler,0,3,0,0,0.0,TRUE,c Klaasen b Cummins,Caught,8095,489889,Cummins,Rajiv Gandhi International Stadium,0
+2025-04-06,115093,Gujarat Titans,Sunrisers Hyderabad,2,10945,719715,Washington Sundar,49,29,5,2,168.97,TRUE,c Aniket Verma b Shami,Caught,7909,481896,Shami,Rajiv Gandhi International Stadium,89
+2025-04-06,115093,Gujarat Titans,Sunrisers Hyderabad,2,13748,914541,Sherfane Rutherford,35,16,6,1,218.75,FALSE,not out,not out,,,,Rajiv Gandhi International Stadium,75
+2025-04-06,115093,Gujarat Titans,Sunrisers Hyderabad,2,10226,719719,Shahrukh Khan,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Rajiv Gandhi International Stadium,0
+2025-04-06,115093,Gujarat Titans,Sunrisers Hyderabad,2,9693,423838,Rahul Tewatia,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Rajiv Gandhi International Stadium,0
+2025-04-06,115093,Gujarat Titans,Sunrisers Hyderabad,2,10738,793463,Rashid Khan,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Rajiv Gandhi International Stadium,0
+2025-04-06,115093,Gujarat Titans,Sunrisers Hyderabad,2,11595,1048739,Ravisrinivasan Sai Kishore,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Rajiv Gandhi International Stadium,0
+2025-04-06,115093,Gujarat Titans,Sunrisers Hyderabad,2,10808,940973,Mohammed Siraj,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Rajiv Gandhi International Stadium,0
+2025-04-06,115093,Gujarat Titans,Sunrisers Hyderabad,2,10551,917159,Prasidh Krishna,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Rajiv Gandhi International Stadium,0
+2025-04-06,115093,Gujarat Titans,Sunrisers Hyderabad,2,702,236779,Ishant Sharma,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Rajiv Gandhi International Stadium,0
+2025-04-07,115095,Royal Challengers Bengaluru,Mumbai Indians,1,10479,669365,Phil Salt,4,2,1,0,200.0,TRUE,b Boult,Bowled,8117,277912,Boult,Wankhede Stadium,8
+2025-04-07,115095,Royal Challengers Bengaluru,Mumbai Indians,1,1413,253802,Kohli,67,42,8,2,159.52,TRUE,c Naman Dhir b Hardik Pandya,Caught,9647,625371,Hardik Pandya,Wankhede Stadium,123
+2025-04-07,115095,Royal Challengers Bengaluru,Mumbai Indians,1,13088,1119026,Padikkal,37,22,2,3,168.18,TRUE,c Will Jacks b Vignesh Puthur,Caught,1447337,1460388,Vignesh Puthur,Wankhede Stadium,71
+2025-04-07,115095,Royal Challengers Bengaluru,Mumbai Indians,1,10636,823703,Rajat Patidar,64,32,5,4,200.0,TRUE,c Rickelton b Boult,Caught,8117,277912,Boult,Wankhede Stadium,122
+2025-04-07,115095,Royal Challengers Bengaluru,Mumbai Indians,1,10045,403902,Livingstone,0,2,0,0,0.0,TRUE,c Bumrah b Hardik Pandya,Caught,9647,625371,Hardik Pandya,Wankhede Stadium,0
+2025-04-07,115095,Royal Challengers Bengaluru,Mumbai Indians,1,10214,721867,Jitesh Sharma,40,19,2,4,210.53,FALSE,not out,not out,,,,Wankhede Stadium,82
+2025-04-07,115095,Royal Challengers Bengaluru,Mumbai Indians,1,13169,892749,Tim David,1,1,0,0,100.0,FALSE,not out,not out,,,,Wankhede Stadium,1
+2025-04-07,115095,Royal Challengers Bengaluru,Mumbai Indians,1,11311,471342,Krunal Pandya,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Wankhede Stadium,0
+2025-04-07,115095,Royal Challengers Bengaluru,Mumbai Indians,1,1726,326016,Bhuvneshwar,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Wankhede Stadium,0
+2025-04-07,115095,Royal Challengers Bengaluru,Mumbai Indians,1,6258,288284,Hazlewood,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Wankhede Stadium,0
+2025-04-07,115095,Royal Challengers Bengaluru,Mumbai Indians,1,14172,1159720,Yash Dayal,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Wankhede Stadium,0
+2025-04-07,115095,Royal Challengers Bengaluru,Mumbai Indians,1,36487,1350792,Suyash Sharma,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Wankhede Stadium,0
+2025-04-07,115095,Mumbai Indians,Royal Challengers Bengaluru,2,576,34102,Rohit Sharma,17,9,2,1,188.89,TRUE,b Yash Dayal,Bowled,14172,1159720,Yash Dayal,Wankhede Stadium,31
+2025-04-07,115095,Mumbai Indians,Royal Challengers Bengaluru,2,13070,605661,Ryan Rickelton,17,10,4,0,170.0,TRUE,lbw b Hazlewood,LBW,6258,288284,Hazlewood,Wankhede Stadium,37
+2025-04-07,115095,Mumbai Indians,Royal Challengers Bengaluru,2,12258,897549,Will Jacks,22,18,2,1,122.22,TRUE,c Kohli b Krunal Pandya,Caught,11311,471342,Krunal Pandya,Wankhede Stadium,36
+2025-04-07,115095,Mumbai Indians,Royal Challengers Bengaluru,2,7915,446507,Suryakumar Yadav,28,26,5,0,107.69,TRUE,c Livingstone b Yash Dayal,Caught,14172,1159720,Yash Dayal,Wankhede Stadium,52
+2025-04-07,115095,Mumbai Indians,Royal Challengers Bengaluru,2,14504,1170265,Tilak Varma,56,29,4,4,193.1,TRUE,c Phil Salt b Bhuvneshwar,Caught,1726,326016,Bhuvneshwar,Wankhede Stadium,110
+2025-04-07,115095,Mumbai Indians,Royal Challengers Bengaluru,2,9647,625371,Hardik Pandya,42,15,3,4,280.0,TRUE,c Livingstone b Hazlewood,Caught,6258,288284,Hazlewood,Wankhede Stadium,88
+2025-04-07,115095,Mumbai Indians,Royal Challengers Bengaluru,2,36139,1287032,Naman Dhir,11,6,1,1,183.33,TRUE,c Yash Dayal b Krunal Pandya,Caught,11311,471342,Krunal Pandya,Wankhede Stadium,21
+2025-04-07,115095,Mumbai Indians,Royal Challengers Bengaluru,2,10100,502714,Mitchell Santner,8,4,0,1,200.0,TRUE,c Tim David b Krunal Pandya,Caught,11311,471342,Krunal Pandya,Wankhede Stadium,14
+2025-04-07,115095,Mumbai Indians,Royal Challengers Bengaluru,2,7836,447261,Deepak Chahar,0,1,0,0,0.0,TRUE,c Tim David b Krunal Pandya,Caught,11311,471342,Krunal Pandya,Wankhede Stadium,0
+2025-04-07,115095,Mumbai Indians,Royal Challengers Bengaluru,2,8117,277912,Trent Boult,1,1,0,0,100.0,FALSE,not out,not out,,,,Wankhede Stadium,1
+2025-04-07,115095,Mumbai Indians,Royal Challengers Bengaluru,2,9311,625383,Jasprit Bumrah,0,1,0,0,0.0,FALSE,not out,not out,,,,Wankhede Stadium,0
+2025-04-07,115095,Mumbai Indians,Royal Challengers Bengaluru,2,1447337,1460388,Vignesh Puthur,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Wankhede Stadium,0
+2025-04-08,115102,Punjab Kings,Chennai Super Kings,1,14689,1175456,Priyansh Arya,103,42,7,9,245.24,TRUE,c Vijay Shankar b Noor Ahmad,Caught,15452,1182529,Noor Ahmad,Maharaja Yadavindra Singh International Cricket Stadium,207
+2025-04-08,115102,Punjab Kings,Chennai Super Kings,1,14254,1161024,Prabhsimran,0,2,0,0,0.0,TRUE,b Mukesh Choudhary,Bowled,13184,1125688,Mukesh Choudhary,Maharaja Yadavindra Singh International Cricket Stadium,0
+2025-04-08,115102,Punjab Kings,Chennai Super Kings,1,9428,642519,Shreyas Iyer,9,7,0,1,128.57,TRUE,b Khaleel Ahmed,Bowled,10952,942645,Khaleel Ahmed,Maharaja Yadavindra Singh International Cricket Stadium,15
+2025-04-08,115102,Punjab Kings,Chennai Super Kings,1,8989,325012,Stoinis,4,7,0,0,57.14,TRUE,c Conway b Khaleel Ahmed,Caught,10952,942645,Khaleel Ahmed,Maharaja Yadavindra Singh International Cricket Stadium,4
+2025-04-08,115102,Punjab Kings,Chennai Super Kings,1,13915,1151273,Nehal Wadhera,9,7,0,1,128.57,TRUE,c Dhoni b Ashwin,Caught,1593,26421,Ashwin,Maharaja Yadavindra Singh International Cricket Stadium,15
+2025-04-08,115102,Punjab Kings,Chennai Super Kings,1,7662,325026,Maxwell,1,2,0,0,50.0,TRUE,c and b Ashwin,Caught,1593,26421,Ashwin,Maharaja Yadavindra Singh International Cricket Stadium,1
+2025-04-08,115102,Punjab Kings,Chennai Super Kings,1,10919,377534,Shashank Singh,52,36,2,3,144.44,FALSE,not out,not out,,,,Maharaja Yadavindra Singh International Cricket Stadium,88
+2025-04-08,115102,Punjab Kings,Chennai Super Kings,1,14565,696401,Marco Jansen,34,19,2,2,178.95,FALSE,not out,not out,,,,Maharaja Yadavindra Singh International Cricket Stadium,64
+2025-04-08,115102,Punjab Kings,Chennai Super Kings,1,13217,1125976,Arshdeep Singh,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Maharaja Yadavindra Singh International Cricket Stadium,0
+2025-04-08,115102,Punjab Kings,Chennai Super Kings,1,10692,493773,Lockie Ferguson,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Maharaja Yadavindra Singh International Cricket Stadium,0
+2025-04-08,115102,Punjab Kings,Chennai Super Kings,1,7910,430246,Chahal,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Maharaja Yadavindra Singh International Cricket Stadium,0
+2025-04-08,115102,Punjab Kings,Chennai Super Kings,1,12096,N/A,Yash Thakur,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Maharaja Yadavindra Singh International Cricket Stadium,0
+2025-04-08,115102,Chennai Super Kings,Punjab Kings,2,11177,959767,Rachin Ravindra,36,23,6,0,156.52,TRUE,st Prabhsimran b Maxwell,Bowled,7662,325026,Maxwell,Maharaja Yadavindra Singh International Cricket Stadium,68
+2025-04-08,115102,Chennai Super Kings,Punjab Kings,2,9838,379140,Devon Conway,69,49,6,2,140.82,FALSE,retd out,retd out,,,,Maharaja Yadavindra Singh International Cricket Stadium,115
+2025-04-08,115102,Chennai Super Kings,Punjab Kings,2,11813,1060380,Ruturaj Gaikwad,1,3,0,0,33.33,TRUE,c Shashank Singh b Lockie Ferguson,Caught,10692,493773,Lockie Ferguson,Maharaja Yadavindra Singh International Cricket Stadium,1
+2025-04-08,115102,Chennai Super Kings,Punjab Kings,2,11195,714451,Shivam Dube,42,27,3,2,155.56,TRUE,b Lockie Ferguson,Bowled,10692,493773,Lockie Ferguson,Maharaja Yadavindra Singh International Cricket Stadium,74
+2025-04-08,115102,Chennai Super Kings,Punjab Kings,2,265,28081,MS Dhoni,27,12,1,3,225.0,TRUE,c Chahal b Yash Thakur,Caught,12096,N/A,Yash Thakur,Maharaja Yadavindra Singh International Cricket Stadium,59
+2025-04-08,115102,Chennai Super Kings,Punjab Kings,2,587,234675,Ravindra Jadeja,9,5,0,1,180.0,FALSE,not out,not out,,,,Maharaja Yadavindra Singh International Cricket Stadium,15
+2025-04-08,115102,Chennai Super Kings,Punjab Kings,2,8204,477021,Vijay Shankar,2,2,0,0,100.0,FALSE,not out,not out,,,,Maharaja Yadavindra Singh International Cricket Stadium,2
+2025-04-08,115102,Chennai Super Kings,Punjab Kings,2,1593,26421,Ravichandran Ashwin,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Maharaja Yadavindra Singh International Cricket Stadium,0
+2025-04-08,115102,Chennai Super Kings,Punjab Kings,2,15452,1182529,Noor Ahmad,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Maharaja Yadavindra Singh International Cricket Stadium,0
+2025-04-08,115102,Chennai Super Kings,Punjab Kings,2,13184,1125688,Mukesh Choudhary,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Maharaja Yadavindra Singh International Cricket Stadium,0
+2025-04-08,115102,Chennai Super Kings,Punjab Kings,2,10952,942645,Khaleel Ahmed,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Maharaja Yadavindra Singh International Cricket Stadium,0
+2025-04-08,115102,Chennai Super Kings,Punjab Kings,2,16458,1194795,Matheesha Pathirana,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Maharaja Yadavindra Singh International Cricket Stadium,0
+2025-04-08,115084,Lucknow Super Giants,Kolkata Knight Riders,1,9582,600498,Markram,47,28,4,2,167.86,TRUE,b Harshit Rana,Bowled,24729,1312645,Harshit Rana,Eden Gardens,83
+2025-04-08,115084,Lucknow Super Giants,Kolkata Knight Riders,1,6250,272450,Mitchell Marsh,81,48,6,5,168.75,TRUE,c Rinku Singh b Russell,Caught,7736,276298,Russell,Eden Gardens,151
+2025-04-08,115084,Lucknow Super Giants,Kolkata Knight Riders,1,9406,604302,Pooran,87,36,7,8,241.67,FALSE,not out,not out,,,,Eden Gardens,181
+2025-04-08,115084,Lucknow Super Giants,Kolkata Knight Riders,1,14628,1175485,Abdul Samad,6,4,1,0,150.0,TRUE,b Harshit Rana,Bowled,24729,1312645,Harshit Rana,Eden Gardens,10
+2025-04-08,115084,Lucknow Super Giants,Kolkata Knight Riders,1,6349,321777,David Miller,4,4,0,0,100.0,FALSE,not out,not out,,,,Eden Gardens,4
+2025-04-08,115084,Lucknow Super Giants,Kolkata Knight Riders,1,10744,931581,Pant,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Eden Gardens,0
+2025-04-08,115084,Lucknow Super Giants,Kolkata Knight Riders,1,13907,1151270,Ayush Badoni,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Eden Gardens,0
+2025-04-08,115084,Lucknow Super Giants,Kolkata Knight Riders,1,8683,1070196,Thakur,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Eden Gardens,0
+2025-04-08,115084,Lucknow Super Giants,Kolkata Knight Riders,1,14726,1176959,Akash Deep,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Eden Gardens,0
+2025-04-08,115084,Lucknow Super Giants,Kolkata Knight Riders,1,9781,694211,Avesh Khan,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Eden Gardens,0
+2025-04-08,115084,Lucknow Super Giants,Kolkata Knight Riders,1,1448289,1460529,Digvesh Rathi,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Eden Gardens,0
+2025-04-08,115084,Lucknow Super Giants,Kolkata Knight Riders,1,14659,1175441,Ravi Bishnoi,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Eden Gardens,0
+2025-04-08,115084,Kolkata Knight Riders,Lucknow Super Giants,2,8520,379143,Quinton de Kock,15,9,0,2,166.67,TRUE,lbw b Akash Deep,LBW,14726,1176959,Akash Deep,Eden Gardens,27
+2025-04-08,115084,Kolkata Knight Riders,Lucknow Super Giants,2,2276,230558,Sunil Narine,30,13,4,2,230.77,TRUE,c Markram b Digvesh Rathi,Caught,1448289,1460529,Digvesh Rathi,Eden Gardens,68
+2025-04-08,115084,Kolkata Knight Riders,Lucknow Super Giants,2,1447,277916,Ajinkya Rahane,61,35,8,2,174.29,TRUE,c Pooran b Thakur,Caught,8683,1070196,Thakur,Eden Gardens,119
+2025-04-08,115084,Kolkata Knight Riders,Lucknow Super Giants,2,10917,851403,Venkatesh Iyer,45,29,6,1,155.17,TRUE,c Markram b Akash Deep,Caught,14726,1176959,Akash Deep,Eden Gardens,83
+2025-04-08,115084,Kolkata Knight Riders,Lucknow Super Giants,2,12337,1079470,Ramandeep Singh ,1,2,0,0,50.0,TRUE,c Markram b Ravi Bishnoi,Caught,14659,1175441,Ravi Bishnoi,Eden Gardens,1
+2025-04-08,115084,Kolkata Knight Riders,Lucknow Super Giants,2,22566,1292495,Angkrish Raghuvanshi,5,4,1,0,125.0,TRUE,c Pant b Avesh Khan,Caught,9781,694211,Avesh Khan,Eden Gardens,9
+2025-04-08,115084,Kolkata Knight Riders,Lucknow Super Giants,2,7736,276298,Andre Russell,7,4,0,1,175.0,TRUE,c David Miller b Thakur,Caught,8683,1070196,Thakur,Eden Gardens,13
+2025-04-08,115084,Kolkata Knight Riders,Lucknow Super Giants,2,10896,723105,Rinku Singh,38,15,6,2,253.33,FALSE,not out,not out,,,,Eden Gardens,84
+2025-04-08,115084,Kolkata Knight Riders,Lucknow Super Giants,2,24729,1312645,Harshit Rana,10,9,2,0,111.11,FALSE,not out,not out,,,,Eden Gardens,18
+2025-04-08,115084,Kolkata Knight Riders,Lucknow Super Giants,2,13143,1123718,Spencer Johnson,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Eden Gardens,0
+2025-04-08,115084,Kolkata Knight Riders,Lucknow Super Giants,2,15861,1209292,Vaibhav Arora,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Eden Gardens,0
+2025-04-08,115084,Kolkata Knight Riders,Lucknow Super Giants,2,12926,1108375,Varun Chakaravarthy,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Eden Gardens,0
+2025-04-09,115104,Gujarat Titans,Rajasthan Royals,1,13866,1151288,Sai Sudharsan,82,53,8,3,154.72,TRUE,c Samson b Tushar Deshpande,Caught,11307,822553,Tushar Deshpande,Narendra Modi Stadium,148
+2025-04-09,115104,Gujarat Titans,Rajasthan Royals,1,11808,1070173,Shubman Gill,2,3,0,0,66.67,TRUE,b Jofra Archer,Bowled,11540,669855,Jofra Archer,Narendra Modi Stadium,2
+2025-04-09,115104,Gujarat Titans,Rajasthan Royals,1,2258,308967,Jos Buttler,36,25,5,0,144.0,TRUE,lbw b M Theekshana,LBW,18504,1138316,M Theekshana,Narendra Modi Stadium,62
+2025-04-09,115104,Gujarat Titans,Rajasthan Royals,1,10226,719719,Shahrukh Khan,36,20,4,2,180.0,TRUE,st Samson b M Theekshana,Bowled,18504,1138316,M Theekshana,Narendra Modi Stadium,74
+2025-04-09,115104,Gujarat Titans,Rajasthan Royals,1,13748,914541,Sherfane Rutherford,7,3,0,1,233.33,TRUE,c Samson b Sandeep Sharma,Caught,8356,438362,Sandeep Sharma,Narendra Modi Stadium,13
+2025-04-09,115104,Gujarat Titans,Rajasthan Royals,1,9693,423838,Rahul Tewatia,24,12,2,2,200.0,FALSE,not out,not out,,,,Narendra Modi Stadium,50
+2025-04-09,115104,Gujarat Titans,Rajasthan Royals,1,10738,793463,Rashid Khan,12,4,1,1,300.0,TRUE,c Yashasvi Jaiswal b Tushar Deshpande,Caught,11307,822553,Tushar Deshpande,Narendra Modi Stadium,22
+2025-04-09,115104,Gujarat Titans,Rajasthan Royals,1,18637,1244751,Arshad Khan,0,0,0,0,0.0,FALSE,not out,not out,,,,Narendra Modi Stadium,0
+2025-04-09,115104,Gujarat Titans,Rajasthan Royals,1,11595,1048739,Sai Kishore,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Narendra Modi Stadium,0
+2025-04-09,115104,Gujarat Titans,Rajasthan Royals,1,10808,940973,Siraj,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Narendra Modi Stadium,0
+2025-04-09,115104,Gujarat Titans,Rajasthan Royals,1,10551,917159,Prasidh,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Narendra Modi Stadium,0
+2025-04-09,115104,Gujarat Titans,Rajasthan Royals,1,12643,1083033,Kulwant Khejroliya,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Narendra Modi Stadium,0
+2025-04-09,115104,Rajasthan Royals,Gujarat Titans,2,13940,1151278,Yashasvi Jaiswal,6,7,1,0,85.71,TRUE,c Rashid Khan b Arshad Khan,Caught,18637,1244751,Arshad Khan,Narendra Modi Stadium,10
+2025-04-09,115104,Rajasthan Royals,Gujarat Titans,2,8271,425943,Sanju Samson,41,28,4,2,146.43,TRUE,c Sai Kishore b Prasidh,Caught,10551,917159,Prasidh,Narendra Modi Stadium,75
+2025-04-09,115104,Rajasthan Royals,Gujarat Titans,2,9204,604527,Nitish Rana,1,3,0,0,33.33,TRUE,c Kulwant Khejroliya b Siraj,Caught,10808,940973,Siraj,Narendra Modi Stadium,1
+2025-04-09,115104,Rajasthan Royals,Gujarat Titans,2,12305,1079434,Riyan Parag,26,14,1,3,185.71,TRUE,c Jos Buttler b Kulwant Khejroliya,Caught,12643,1083033,Kulwant Khejroliya,Narendra Modi Stadium,58
+2025-04-09,115104,Rajasthan Royals,Gujarat Titans,2,14691,1175488,Dhruv Jurel,5,4,1,0,125.0,TRUE,c Sai Sudharsan b Rashid Khan,Caught,10738,793463,Rashid Khan,Narendra Modi Stadium,9
+2025-04-09,115104,Rajasthan Royals,Gujarat Titans,2,9789,670025,Shimron Hetmyer,52,32,4,3,162.5,TRUE,c Sai Kishore b Prasidh,Caught,10551,917159,Prasidh,Narendra Modi Stadium,98
+2025-04-09,115104,Rajasthan Royals,Gujarat Titans,2,19328,1252585,Shubham Dubey,1,3,0,0,33.33,TRUE,lbw b Rashid Khan,LBW,10738,793463,Rashid Khan,Narendra Modi Stadium,1
+2025-04-09,115104,Rajasthan Royals,Gujarat Titans,2,11540,669855,Jofra Archer,4,4,0,0,100.0,TRUE,c Shubman Gill b Prasidh,Caught,10551,917159,Prasidh,Narendra Modi Stadium,4
+2025-04-09,115104,Rajasthan Royals,Gujarat Titans,2,18504,1138316,Maheesh Theekshana,5,13,0,0,38.46,TRUE,c Sai Sudharsan b Sai Kishore,Caught,11595,1048739,Sai Kishore,Narendra Modi Stadium,-1
+2025-04-09,115104,Rajasthan Royals,Gujarat Titans,2,11307,822553,Tushar Deshpande,3,3,0,0,100.0,TRUE,c Rashid Khan b Sai Kishore,Caught,11595,1048739,Sai Kishore,Narendra Modi Stadium,3
+2025-04-09,115104,Rajasthan Royals,Gujarat Titans,2,8356,438362,Sandeep Sharma,6,5,0,0,120.0,FALSE,not out,not out,,,,Narendra Modi Stadium,6
+2025-04-09,115104,Rajasthan Royals,Gujarat Titans,2,14282,974175,Fazalhaq Farooqi,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Narendra Modi Stadium,0
+2025-04-10,115111,Royal Challengers Bengaluru,Delhi Capitals,1,10479,669365,Phil Salt,37,17,4,3,217.65,TRUE,run out (Vipraj Nigam/Rahul),Run Out,,,,M.Chinnaswamy Stadium,81
+2025-04-10,115111,Royal Challengers Bengaluru,Delhi Capitals,1,1413,253802,Kohli,22,14,1,2,157.14,TRUE,c Mitchell Starc b Vipraj Nigam,Caught,1431811,1449074,Vipraj Nigam,M.Chinnaswamy Stadium,42
+2025-04-10,115111,Royal Challengers Bengaluru,Delhi Capitals,1,13088,1119026,Padikkal,1,8,0,0,12.5,TRUE,c Axar b Mukesh Kumar,Caught,10754,926851,Mukesh Kumar,M.Chinnaswamy Stadium,1
+2025-04-10,115111,Royal Challengers Bengaluru,Delhi Capitals,1,10636,823703,Rajat Patidar,25,23,1,1,108.7,TRUE,c Rahul b Kuldeep Yadav,Caught,8292,559235,Kuldeep Yadav,M.Chinnaswamy Stadium,39
+2025-04-10,115111,Royal Challengers Bengaluru,Delhi Capitals,1,10045,403902,Livingstone,4,6,0,0,66.67,TRUE,c Ashutosh Sharma b Mohit Sharma,Caught,8181,537119,Mohit Sharma,M.Chinnaswamy Stadium,4
+2025-04-10,115111,Royal Challengers Bengaluru,Delhi Capitals,1,10214,721867,Jitesh Sharma,3,11,0,0,27.27,TRUE,c Rahul b Kuldeep Yadav,Caught,8292,559235,Kuldeep Yadav,M.Chinnaswamy Stadium,-3
+2025-04-10,115111,Royal Challengers Bengaluru,Delhi Capitals,1,11311,471342,Krunal Pandya,18,18,1,0,100.0,TRUE,c Ashutosh Sharma b Vipraj Nigam,Caught,1431811,1449074,Vipraj Nigam,M.Chinnaswamy Stadium,22
+2025-04-10,115111,Royal Challengers Bengaluru,Delhi Capitals,1,13169,892749,Tim David,37,20,2,4,185.0,FALSE,not out,not out,,,,M.Chinnaswamy Stadium,79
+2025-04-10,115111,Royal Challengers Bengaluru,Delhi Capitals,1,1726,326016,Bhuvneshwar,1,4,0,0,25.0,FALSE,not out,not out,,,,M.Chinnaswamy Stadium,1
+2025-04-10,115111,Royal Challengers Bengaluru,Delhi Capitals,1,6258,288284,Hazlewood,0,0,0,0,0.0,DNB,Not Out,DNB,,,,M.Chinnaswamy Stadium,0
+2025-04-10,115111,Royal Challengers Bengaluru,Delhi Capitals,1,14172,1159720,Yash Dayal,0,0,0,0,0.0,DNB,Not Out,DNB,,,,M.Chinnaswamy Stadium,0
+2025-04-10,115111,Royal Challengers Bengaluru,Delhi Capitals,1,36487,1350792,Suyash Sharma,0,0,0,0,0.0,DNB,Not Out,DNB,,,,M.Chinnaswamy Stadium,0
+2025-04-10,115111,Delhi Capitals,Royal Challengers Bengaluru,2,7825,44828,Faf du Plessis,2,7,0,0,28.57,TRUE,c Rajat Patidar b Yash Dayal,Caught,14172,1159720,Yash Dayal,M.Chinnaswamy Stadium,2
+2025-04-10,115111,Delhi Capitals,Royal Challengers Bengaluru,2,14501,1168049,Jake Fraser-McGurk,7,6,1,0,116.67,TRUE,c Jitesh Sharma b Bhuvneshwar,Caught,1726,326016,Bhuvneshwar,M.Chinnaswamy Stadium,11
+2025-04-10,115111,Delhi Capitals,Royal Challengers Bengaluru,2,24326,1277545,Abishek Porel,7,7,1,0,100.0,TRUE,c Jitesh Sharma b Bhuvneshwar,Caught,1726,326016,Bhuvneshwar,M.Chinnaswamy Stadium,11
+2025-04-10,115111,Delhi Capitals,Royal Challengers Bengaluru,2,8733,422108,KL Rahul,93,53,7,6,175.47,FALSE,not out,not out,,,,M.Chinnaswamy Stadium,175
+2025-04-10,115111,Delhi Capitals,Royal Challengers Bengaluru,2,8808,554691,Axar Patel,15,11,2,0,136.36,TRUE,c Tim David b Suyash Sharma,Caught,36487,1350792,Suyash Sharma,M.Chinnaswamy Stadium,25
+2025-04-10,115111,Delhi Capitals,Royal Challengers Bengaluru,2,19243,595978,Tristan Stubbs,38,23,4,1,165.22,FALSE,not out,not out,,,,M.Chinnaswamy Stadium,68
+2025-04-10,115111,Delhi Capitals,Royal Challengers Bengaluru,2,13497,1131978,Ashutosh Sharma,0,0,0,0,0.0,DNB,Not Out,DNB,,,,M.Chinnaswamy Stadium,0
+2025-04-10,115111,Delhi Capitals,Royal Challengers Bengaluru,2,1431811,1449074,Vipraj Nigam,0,0,0,0,0.0,DNB,Not Out,DNB,,,,M.Chinnaswamy Stadium,0
+2025-04-10,115111,Delhi Capitals,Royal Challengers Bengaluru,2,7710,311592,Mitchell Starc,0,0,0,0,0.0,DNB,Not Out,DNB,,,,M.Chinnaswamy Stadium,0
+2025-04-10,115111,Delhi Capitals,Royal Challengers Bengaluru,2,8181,537119,Mohit Sharma,0,0,0,0,0.0,DNB,Not Out,DNB,,,,M.Chinnaswamy Stadium,0
+2025-04-10,115111,Delhi Capitals,Royal Challengers Bengaluru,2,8292,559235,Kuldeep Yadav,0,0,0,0,0.0,DNB,Not Out,DNB,,,,M.Chinnaswamy Stadium,0
+2025-04-10,115111,Delhi Capitals,Royal Challengers Bengaluru,2,10754,926851,Mukesh Kumar,0,0,0,0,0.0,DNB,Not Out,DNB,,,,M.Chinnaswamy Stadium,0
+2025-04-11,115113,Chennai Super Kings,Kolkata Knight Riders,1,11177,959767,Rachin Ravindra,4,9,0,0,44.44,TRUE,c Ajinkya Rahane b Harshit Rana,Caught,24729,1312645,Harshit Rana,MA Chidambaram Stadium,4
+2025-04-11,115113,Chennai Super Kings,Kolkata Knight Riders,1,9838,379140,Conway,12,11,2,0,109.09,TRUE,lbw b Moeen,LBW,6692,8917,Moeen,MA Chidambaram Stadium,20
+2025-04-11,115113,Chennai Super Kings,Kolkata Knight Riders,1,9012,446763,Tripathi,16,22,1,0,72.73,TRUE,b Narine,Bowled,2276,230558,Narine,MA Chidambaram Stadium,20
+2025-04-11,115113,Chennai Super Kings,Kolkata Knight Riders,1,8204,477021,Vijay Shankar,29,21,2,1,138.1,TRUE,c Moeen b Varun Chakaravarthy,Caught,12926,1108375,Varun Chakaravarthy,MA Chidambaram Stadium,49
+2025-04-11,115113,Chennai Super Kings,Kolkata Knight Riders,1,11195,714451,Shivam Dube,31,29,3,0,106.9,FALSE,not out,not out,,,,MA Chidambaram Stadium,47
+2025-04-11,115113,Chennai Super Kings,Kolkata Knight Riders,1,1593,26421,Ashwin,1,7,0,0,14.29,TRUE,c Vaibhav Arora b Harshit Rana,Caught,24729,1312645,Harshit Rana,MA Chidambaram Stadium,1
+2025-04-11,115113,Chennai Super Kings,Kolkata Knight Riders,1,587,234675,Ravindra Jadeja,0,2,0,0,0.0,TRUE,c de Kock b Narine,Caught,2276,230558,Narine,MA Chidambaram Stadium,0
+2025-04-11,115113,Chennai Super Kings,Kolkata Knight Riders,1,9427,497121,Deepak Hooda,0,4,0,0,0.0,TRUE,c Vaibhav Arora b Varun Chakaravarthy,Caught,12926,1108375,Varun Chakaravarthy,MA Chidambaram Stadium,0
+2025-04-11,115113,Chennai Super Kings,Kolkata Knight Riders,1,265,28081,Dhoni,1,4,0,0,25.0,TRUE,lbw b Narine,LBW,2276,230558,Narine,MA Chidambaram Stadium,1
+2025-04-11,115113,Chennai Super Kings,Kolkata Knight Riders,1,15452,1182529,Noor Ahmad,1,8,0,0,12.5,TRUE,c Varun Chakaravarthy b Vaibhav Arora,Caught,15861,1209292,Vaibhav Arora,MA Chidambaram Stadium,1
+2025-04-11,115113,Chennai Super Kings,Kolkata Knight Riders,1,14598,1175428,Anshul Kamboj,3,3,0,0,100.0,FALSE,not out,not out,,,,MA Chidambaram Stadium,3
+2025-04-11,115113,Chennai Super Kings,Kolkata Knight Riders,1,10952,942645,Khaleel Ahmed,0,0,0,0,0.0,DNB,Not Out,DNB,,,,MA Chidambaram Stadium,0
+2025-04-11,115113,Kolkata Knight Riders,Chennai Super Kings,2,8520,379143,Quinton de Kock,23,16,0,3,143.75,TRUE,b Anshul Kamboj,Bowled,14598,1175428,Anshul Kamboj,MA Chidambaram Stadium,43
+2025-04-11,115113,Kolkata Knight Riders,Chennai Super Kings,2,2276,230558,Sunil Narine,44,18,2,5,244.44,TRUE,b Noor Ahmad,Bowled,15452,1182529,Noor Ahmad,MA Chidambaram Stadium,92
+2025-04-11,115113,Kolkata Knight Riders,Chennai Super Kings,2,1447,277916,Ajinkya Rahane,20,17,1,1,117.65,FALSE,not out,not out,,,,MA Chidambaram Stadium,30
+2025-04-11,115113,Kolkata Knight Riders,Chennai Super Kings,2,10896,723105,Rinku Singh,15,12,1,1,125.0,FALSE,not out,not out,,,,MA Chidambaram Stadium,25
+2025-04-11,115113,Kolkata Knight Riders,Chennai Super Kings,2,10917,851403,Venkatesh Iyer,0,0,0,0,0.0,DNB,Not Out,DNB,,,,MA Chidambaram Stadium,0
+2025-04-11,115113,Kolkata Knight Riders,Chennai Super Kings,2,6692,8917,Moeen Ali,0,0,0,0,0.0,DNB,Not Out,DNB,,,,MA Chidambaram Stadium,0
+2025-04-11,115113,Kolkata Knight Riders,Chennai Super Kings,2,7736,276298,Andre Russell,0,0,0,0,0.0,DNB,Not Out,DNB,,,,MA Chidambaram Stadium,0
+2025-04-11,115113,Kolkata Knight Riders,Chennai Super Kings,2,12337,1079470,Ramandeep Singh ,0,0,0,0,0.0,DNB,Not Out,DNB,,,,MA Chidambaram Stadium,0
+2025-04-11,115113,Kolkata Knight Riders,Chennai Super Kings,2,24729,1312645,Harshit Rana,0,0,0,0,0.0,DNB,Not Out,DNB,,,,MA Chidambaram Stadium,0
+2025-04-11,115113,Kolkata Knight Riders,Chennai Super Kings,2,15861,1209292,Vaibhav Arora,0,0,0,0,0.0,DNB,Not Out,DNB,,,,MA Chidambaram Stadium,0
+2025-04-11,115113,Kolkata Knight Riders,Chennai Super Kings,2,12926,1108375,Varun Chakaravarthy,0,0,0,0,0.0,DNB,Not Out,DNB,,,,MA Chidambaram Stadium,0
+2025-04-12,115111,Royal Challengers Bengaluru,Delhi Capitals,1,10479,669365,Phil Salt,37,17,4,3,217.65,TRUE,run out (Vipraj Nigam/Rahul),Run Out,,,,M.Chinnaswamy Stadium,81
+2025-04-12,115111,Royal Challengers Bengaluru,Delhi Capitals,1,1413,253802,Kohli,22,14,1,2,157.14,TRUE,c Mitchell Starc b Vipraj Nigam,Caught,1431811,1449074,Vipraj Nigam,M.Chinnaswamy Stadium,42
+2025-04-12,115111,Royal Challengers Bengaluru,Delhi Capitals,1,13088,1119026,Padikkal,1,8,0,0,12.5,TRUE,c Axar b Mukesh Kumar,Caught,10754,926851,Mukesh Kumar,M.Chinnaswamy Stadium,1
+2025-04-12,115111,Royal Challengers Bengaluru,Delhi Capitals,1,10636,823703,Rajat Patidar,25,23,1,1,108.7,TRUE,c Rahul b Kuldeep Yadav,Caught,8292,559235,Kuldeep Yadav,M.Chinnaswamy Stadium,39
+2025-04-12,115111,Royal Challengers Bengaluru,Delhi Capitals,1,10045,403902,Livingstone,4,6,0,0,66.67,TRUE,c Ashutosh Sharma b Mohit Sharma,Caught,8181,537119,Mohit Sharma,M.Chinnaswamy Stadium,4
+2025-04-12,115111,Royal Challengers Bengaluru,Delhi Capitals,1,10214,721867,Jitesh Sharma,3,11,0,0,27.27,TRUE,c Rahul b Kuldeep Yadav,Caught,8292,559235,Kuldeep Yadav,M.Chinnaswamy Stadium,-3
+2025-04-12,115111,Royal Challengers Bengaluru,Delhi Capitals,1,11311,471342,Krunal Pandya,18,18,1,0,100.0,TRUE,c Ashutosh Sharma b Vipraj Nigam,Caught,1431811,1449074,Vipraj Nigam,M.Chinnaswamy Stadium,22
+2025-04-12,115111,Royal Challengers Bengaluru,Delhi Capitals,1,13169,892749,Tim David,37,20,2,4,185.0,FALSE,not out,not out,,,,M.Chinnaswamy Stadium,79
+2025-04-12,115111,Royal Challengers Bengaluru,Delhi Capitals,1,1726,326016,Bhuvneshwar,1,4,0,0,25.0,FALSE,not out,not out,,,,M.Chinnaswamy Stadium,1
+2025-04-12,115111,Royal Challengers Bengaluru,Delhi Capitals,1,6258,288284,Hazlewood,0,0,0,0,0.0,DNB,Not Out,DNB,,,,M.Chinnaswamy Stadium,0
+2025-04-12,115111,Royal Challengers Bengaluru,Delhi Capitals,1,14172,1159720,Yash Dayal,0,0,0,0,0.0,DNB,Not Out,DNB,,,,M.Chinnaswamy Stadium,0
+2025-04-12,115111,Royal Challengers Bengaluru,Delhi Capitals,1,36487,1350792,Suyash Sharma,0,0,0,0,0.0,DNB,Not Out,DNB,,,,M.Chinnaswamy Stadium,0
+2025-04-12,115111,Delhi Capitals,Royal Challengers Bengaluru,2,7825,44828,Faf du Plessis,2,7,0,0,28.57,TRUE,c Rajat Patidar b Yash Dayal,Caught,14172,1159720,Yash Dayal,M.Chinnaswamy Stadium,2
+2025-04-12,115111,Delhi Capitals,Royal Challengers Bengaluru,2,14501,1168049,Jake Fraser-McGurk,7,6,1,0,116.67,TRUE,c Jitesh Sharma b Bhuvneshwar,Caught,1726,326016,Bhuvneshwar,M.Chinnaswamy Stadium,11
+2025-04-12,115111,Delhi Capitals,Royal Challengers Bengaluru,2,24326,1277545,Abishek Porel,7,7,1,0,100.0,TRUE,c Jitesh Sharma b Bhuvneshwar,Caught,1726,326016,Bhuvneshwar,M.Chinnaswamy Stadium,11
+2025-04-12,115111,Delhi Capitals,Royal Challengers Bengaluru,2,8733,422108,KL Rahul,93,53,7,6,175.47,FALSE,not out,not out,,,,M.Chinnaswamy Stadium,175
+2025-04-12,115111,Delhi Capitals,Royal Challengers Bengaluru,2,8808,554691,Axar Patel,15,11,2,0,136.36,TRUE,c Tim David b Suyash Sharma,Caught,36487,1350792,Suyash Sharma,M.Chinnaswamy Stadium,25
+2025-04-12,115111,Delhi Capitals,Royal Challengers Bengaluru,2,19243,595978,Tristan Stubbs,38,23,4,1,165.22,FALSE,not out,not out,,,,M.Chinnaswamy Stadium,68
+2025-04-12,115111,Delhi Capitals,Royal Challengers Bengaluru,2,13497,1131978,Ashutosh Sharma,0,0,0,0,0.0,DNB,Not Out,DNB,,,,M.Chinnaswamy Stadium,0
+2025-04-12,115111,Delhi Capitals,Royal Challengers Bengaluru,2,1431811,1449074,Vipraj Nigam,0,0,0,0,0.0,DNB,Not Out,DNB,,,,M.Chinnaswamy Stadium,0
+2025-04-12,115111,Delhi Capitals,Royal Challengers Bengaluru,2,7710,311592,Mitchell Starc,0,0,0,0,0.0,DNB,Not Out,DNB,,,,M.Chinnaswamy Stadium,0
+2025-04-12,115111,Delhi Capitals,Royal Challengers Bengaluru,2,8181,537119,Mohit Sharma,0,0,0,0,0.0,DNB,Not Out,DNB,,,,M.Chinnaswamy Stadium,0
+2025-04-12,115111,Delhi Capitals,Royal Challengers Bengaluru,2,8292,559235,Kuldeep Yadav,0,0,0,0,0.0,DNB,Not Out,DNB,,,,M.Chinnaswamy Stadium,0
+2025-04-12,115111,Delhi Capitals,Royal Challengers Bengaluru,2,10754,926851,Mukesh Kumar,0,0,0,0,0.0,DNB,Not Out,DNB,,,,M.Chinnaswamy Stadium,0

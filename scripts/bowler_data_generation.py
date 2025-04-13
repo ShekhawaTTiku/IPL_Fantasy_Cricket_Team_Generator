@@ -41,10 +41,20 @@ def load_google_sheet(sheet_url):
 
 # ---------------- HELPERS ----------------
 def get_last_5_unique_matches(df):
+    """Gets the last 5 unique matches regardless of whether the player bowled or not"""
     df_sorted = df.sort_values(by='date', ascending=False)
     unique_matches = df_sorted['match_id'].drop_duplicates()
     last_5_ids = unique_matches.head(5).tolist()
     return df[df['match_id'].isin(last_5_ids)]
+
+def get_last_5_bowling_matches(df):
+    """Gets the last 5 unique matches where the player actually bowled (excluding DNB - Did Not Bowl)"""
+    # Filter out matches where player didn't bowl any balls
+    bowled_df = df[df['balls'] > 0]
+    bowled_df_sorted = bowled_df.sort_values(by='date', ascending=False)
+    unique_bowling_matches = bowled_df_sorted['match_id'].drop_duplicates()
+    last_5_bowling_ids = unique_bowling_matches.head(5).tolist()
+    return df[df['match_id'].isin(last_5_bowling_ids)]
 
 def calculate_stats(df):
     if df.empty:
@@ -81,6 +91,7 @@ def calculate_stats(df):
 
 def process_player_row(player_input, sheet_df):
     player_id = int(player_input['player_id'])  # Ensure player_id is an integer
+    cutoff_date = pd.to_datetime(player_input['cutoff_date'])  # Parse cutoff_date
     player_name = player_input['player_name']
     bowl_team = player_input['bowl_team']
     bat_team = player_input['bat_team']
@@ -93,7 +104,7 @@ def process_player_row(player_input, sheet_df):
     # Ensure key_cricinfo is treated as an integer
     sheet_df = sheet_df[pd.to_numeric(sheet_df['key_cricinfo'], errors='coerce').notnull()]
     sheet_df['key_cricinfo'] = sheet_df['key_cricinfo'].astype(int)
-    player_df = sheet_df[sheet_df['key_cricinfo'] == player_id].copy()
+    player_df = sheet_df[(sheet_df['key_cricinfo'] == player_id) & (pd.to_datetime(sheet_df['date']) < cutoff_date)].copy()
 
     if player_df.empty:
         print(f"Player {player_name} with ID {player_id} not found in Google Sheet.")
@@ -108,7 +119,7 @@ def process_player_row(player_input, sheet_df):
     # Career stats
     career_stats = calculate_stats(player_df)
 
-    # Last 5 matches (consider across seasons if fewer than 5 matches in the current season)
+    # Last 5 matches for economy, wickets_per_match, overs_per_match
     last5_df = player_df[player_df['date'].dt.year == int(season)]
     last5_df = get_last_5_unique_matches(last5_df)
 
@@ -122,8 +133,23 @@ def process_player_row(player_input, sheet_df):
     
         # Combine current season and previous seasons matches
         last5_df = pd.concat([last5_df, additional_df]).drop_duplicates(subset='match_id').head(5)
+    
+    # Last 5 bowling matches (excluding DNB) for average and strike_rate
+    last5_bowling_df = player_df[player_df['date'].dt.year == int(season)]
+    last5_bowling_df = get_last_5_bowling_matches(last5_bowling_df)
+    
+    # Check if fewer than 5 bowling matches in current season
+    if len(last5_bowling_df['match_id'].unique()) < 5:
+        # Get bowling matches from previous seasons
+        additional_bowling_df = player_df[player_df['date'].dt.year < int(season)]
+        additional_bowling_df = get_last_5_bowling_matches(additional_bowling_df)
+        
+        # Combine current and previous seasons bowling matches
+        last5_bowling_df = pd.concat([last5_bowling_df, additional_bowling_df]).drop_duplicates(subset='match_id').head(5)
 
-    last5_stats = calculate_stats(last5_df)
+    # Calculate stats for regular and bowling-only last 5 matches
+    last5_stats_regular = calculate_stats(last5_df)
+    last5_stats_bowling = calculate_stats(last5_bowling_df)
 
     # Innings stats
     innings_df = player_df[player_df['innings'] == innings]
@@ -139,10 +165,27 @@ def process_player_row(player_input, sheet_df):
 
     # Combine all stats
     result = {**player_input}
-    for prefix, stats in zip(['career', 'last5', 'innings', 'venue', 'season'], [career_stats, last5_stats, innings_stats, venue_stats, season_stats]):
+    
+    # Add career stats first
+    for key, value in career_stats.items():
+        result[f"career_{key}"] = value
+    
+    # Add last5 stats next (after career stats)
+    # For average and strike_rate, use the bowling-only stats
+    result['last5_average'] = last5_stats_bowling['average']
+    result['last5_strike_rate'] = last5_stats_bowling['strike_rate']
+    
+    # For other metrics, use the regular last5 stats
+    result['last5_economy'] = last5_stats_regular['economy']
+    result['last5_wickets_per_match'] = last5_stats_regular['wickets_per_match']
+    result['last5_overs_per_match'] = last5_stats_regular['overs_per_match']
+    
+    # Then add innings, venue, and season stats
+    for prefix, stats in zip(['innings', 'venue', 'season'], 
+                           [innings_stats, venue_stats, season_stats]):
         for key, value in stats.items():
             result[f"{prefix}_{key}"] = value
-
+    
     return result
 
 # ---------------- MAIN ----------------
@@ -173,6 +216,20 @@ def main():
 
     # Read input CSV
     input_df = pd.read_csv(input_csv_path)
+
+    # Add year to dates in the 'Date' column and parse them
+    try:
+        input_df['Date'] = input_df['Date'] + ", 2025"  # Append the year
+        input_df['Date'] = pd.to_datetime(input_df['Date'], format="%d %b, %Y", errors='coerce')
+    except Exception as e:
+        print(f"Error parsing Date column: {e}")
+        sys.exit(1)
+
+    # Drop rows with invalid or missing dates
+    if input_df['Date'].isnull().any():
+        print("⚠️ Warning: Some rows have invalid dates and will be dropped.")
+        input_df = input_df.dropna(subset=['Date'])
+
     # Convert Cricinfo ID column to integer type
     input_df['Cricinfo ID'] = pd.to_numeric(input_df['Cricinfo ID'], errors='coerce').fillna(0).astype(int)
 
@@ -189,7 +246,8 @@ def main():
             "bat_team": row['Opponent'],
             "innings": row['Innings'],
             "season": 2025,
-            "venue": row['Venue']
+            "venue": row['Venue'],
+            "cutoff_date": row['Date']
         }
         result_row = process_player_row(player_input, sheet_df)
         output_rows.append(result_row)
