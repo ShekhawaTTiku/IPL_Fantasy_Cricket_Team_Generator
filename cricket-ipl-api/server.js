@@ -1,6 +1,6 @@
 const express = require("express");
-const updateGoogleSheet_bat = require("./updateGoogleSheet_bat");
-//const updateGoogleSheet_bowl = require("./updateGoogleSheet_bowl");
+// const updateGoogleSheet_bat = require("./updateGoogleSheet_bat");
+const updateGoogleSheet_bowl = require("./updateGoogleSheet_bowl");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
