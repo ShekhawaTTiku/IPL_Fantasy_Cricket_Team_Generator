@@ -1,202 +1,181 @@
 import pandas as pd
-import numpy as np
 import os
+import sys
+from datetime import datetime
 
+# ---------------- CONFIG ----------------
+MATCH_DATA_PATH = 'data/mbm/all_league/all_league_bowl_final.csv'  # Update with your actual local match data CSV path
+INPUT_CSV_PATH = 'Today_Match_Details/match_1.csv'             # Update with your actual input CSV path
+OUTPUT_CSV_PATH = 'scripts/player_output_bowl.csv'                  # Update with your actual output CSV path
 
-# Preprocessing the data
-def preprocess_data(df):
-    print("Preprocessing data...")
-    # Convert dates to datetime
-    df['date'] = pd.to_datetime(df['date'])
+# ---------------- LOAD MATCH DATA ----------------
+def load_match_data():
+    if not os.path.exists(MATCH_DATA_PATH):
+        print(f"Error: The match data file '{MATCH_DATA_PATH}' does not exist.")
+        exit(1)
+    match_df = pd.read_csv(MATCH_DATA_PATH)
     
-    # Sort data chronologically
-    df.sort_values(by=['date', 'inns'], inplace=True)
+    # Debug: print first few rows to verify match data
+    print("Loaded match data (first few rows):")
+    print(match_df.head())
     
-    # Extract season from date
-    df['season'] = df['date'].dt.year
+    # Parse numeric columns
+    for col in ['runs', 'balls', 'wickets']:
+        match_df[col] = pd.to_numeric(match_df[col], errors='coerce').fillna(0)
+    match_df['bowler_id'] = pd.to_numeric(match_df['bowler_id'], errors='coerce').fillna(0).astype(int)
     
-    # Handle 'DNB' (Did Not Bowl) entries
-    df['overs'] = df['overs'].replace('DNB', '0.0')
+    # Convert the date column and drop any rows where conversion fails
+    match_df['date'] = pd.to_datetime(match_df['date'], errors='coerce')
+    match_df = match_df.dropna(subset=['date'])
     
-    # Split overs into whole overs and remaining balls
-    df[['overs_int', 'balls_int']] = df['overs'].astype(str).str.split('.', expand=True).astype(int)
+    return match_df
+
+# ---------------- STAT CALCULATIONS ----------------
+def calculate_bowling_stats(df):
+    if df.empty:
+        print("Warning: Empty dataframe passed to calculate_bowling_stats")
+        return {
+            "average": 0.0,
+            "strike_rate": 0.0,
+            "economy": 0.0,
+            "wickets_per_match": 0.0,
+            "overs_per_match": 0.0
+        }
+
+    runs = df['runs'].sum()
+    balls = df['balls'].sum()
+    wickets = df['wickets'].sum()
+    match_count = df['match_id'].nunique()
+
+    average = runs / wickets if wickets else runs
+    strike_rate = balls / wickets if wickets else balls
+    economy = (runs / balls * 6) if balls else 0.0
+    wickets_per_match = wickets / match_count if match_count else 0.0
+    overs_per_match = balls / 6 / match_count if match_count else 0.0
+
+    return {
+        "average": round(average, 2),
+        "strike_rate": round(strike_rate, 2),
+        "economy": round(economy, 2),
+        "wickets_per_match": round(wickets_per_match, 2),
+        "overs_per_match": round(overs_per_match, 2)
+    }
+
+# ---------------- GET LAST 5 MATCHES ----------------
+def get_last_5_unique_matches(df):
+    df_sorted = df.sort_values(by='date', ascending=False)
+    return df_sorted.drop_duplicates(subset='match_id').head(5)
+
+# ---------------- PROCESS BOWLER ----------------
+def process_bowler_row(player_input, match_df):
+    player_id = int(player_input['player_id'])
+    cutoff_date = pd.to_datetime(player_input['cutoff_date'])
+    innings = int(player_input['innings'])
+    season = int(player_input['season'])
+    venue = player_input['venue']
     
-    # Calculate total balls and overs
-    df['total_balls'] = df['overs_int'] * 6 + df['balls_int']
-    df['total_overs'] = df['total_balls'] / 6
+    # Check if bowler_id exists in match data
+    if player_id not in match_df['bowler_id'].values:
+        print(f"Warning: Bowler ID {player_id} for player {player_input['player_name']} not found in match data.")
+        return {**player_input}
+
+    bowler_df = match_df[(match_df['bowler_id'] == player_id) & (match_df['date'] < cutoff_date)]
     
-    print("Data preprocessing complete!")
-    return df
+    if bowler_df.empty:
+        print(f"No records found for player ID: {player_id}")
+        return {**player_input}
 
-
-# Calculate career statistics
-def calculate_career_stats(df):
-    print("Calculating career statistics...")
-    df['cumulative_runs'] = df.groupby(['bowler_id', 'league'])['runs'].cumsum() - df['runs']
-    df['cumulative_wickets'] = df.groupby(['bowler_id', 'league'])['wickets'].cumsum() - df['wickets']
-    df['cumulative_balls'] = df.groupby(['bowler_id', 'league'])['total_balls'].cumsum() - df['total_balls']
-    df['cum_matches'] = df.groupby(['bowler_id', 'league']).cumcount()
+    # Make sure all dates in bowler_df are Timestamps
+    bowler_df['date'] = pd.to_datetime(bowler_df['date'], errors='coerce')
     
-    # Career metrics
-    df['career_avg'] = df['cumulative_runs'] / df['cumulative_wickets']
-    df['career_eco'] = df['cumulative_runs'] / (df['cumulative_balls'] / 6)
-    df['career_sr'] = df['cumulative_balls'] / df['cumulative_wickets']
-    df['career_wpm'] = df['cumulative_wickets'] / df['cum_matches']
-    df['career_opm'] = (df['cumulative_balls'] / 6) / df['cum_matches']
-    
-    print("Career statistics calculation complete!")
-    return df
+    result = {**player_input}
 
+    # CAREER BY LEAGUE
+    for league, group in bowler_df.groupby('league'):
+        stats = calculate_bowling_stats(group)
+        league_clean = league.lower().replace(" ", "_")
+        for key, value in stats.items():
+            result[f"career_{league_clean}_{key}"] = value
 
-# Calculate innings-specific statistics
-def calculate_innings_stats(df):
-    print("Calculating innings-specific statistics...")
-    
-    # Group by bowler_id, league, and inns
-    innings_groups = df.groupby(['bowler_id', 'league', 'inns'])
-    
-    # Compute cumulative sums for metrics
-    cumulative_runs = innings_groups['runs'].cumsum()
-    cumulative_wickets = innings_groups['wickets'].cumsum()
-    cumulative_balls = innings_groups['total_balls'].cumsum()
-    matches_played = innings_groups.cumcount()
+    # INNINGS BY LEAGUE
+    innings_df = bowler_df[bowler_df['inns'] == innings]
+    for league, group in innings_df.groupby('league'):
+        stats = calculate_bowling_stats(group)
+        league_clean = league.lower().replace(" ", "_")
+        for key, value in stats.items():
+            result[f"innings_{league_clean}_{key}"] = value
 
-    # Calculate innings-specific statistics
-    df['inns_avg'] = (cumulative_runs - df['runs']) / (cumulative_wickets - df['wickets']).replace(0, np.nan)
-    df['inns_eco'] = (cumulative_runs - df['runs']) / ((cumulative_balls - df['total_balls']) / 6)
-    df['inns_sr'] = (cumulative_balls - df['total_balls']) / (cumulative_wickets - df['wickets']).replace(0, np.nan)
-    df['inns_wpm'] = (cumulative_wickets - df['wickets']) / matches_played.replace(0, np.nan)
-    df['inns_opm'] = ((cumulative_balls - df['total_balls']) / 6) / matches_played.replace(0, np.nan)
-    
-    print("Innings-specific statistics calculation complete!")
-    return df
+    # SEASON BY LEAGUE
+    season_df = bowler_df[bowler_df['date'].dt.year == season]
+    for league, group in season_df.groupby('league'):
+        stats = calculate_bowling_stats(group)
+        league_clean = league.lower().replace(" ", "_")
+        for key, value in stats.items():
+            result[f"season_{league_clean}_{key}"] = value
 
+    # VENUE
+    venue_df = bowler_df[bowler_df['venue'] == venue]
+    venue_stats = calculate_bowling_stats(venue_df)
+    for key, value in venue_stats.items():
+        result[f"venue_{key}"] = value
 
-# Calculate venue-specific statistics
-def calculate_venue_stats(df):
-    print("Calculating venue-specific statistics...")
+    # LAST 5 MATCHES
+    last5_df = get_last_5_unique_matches(bowler_df)
+    last5_stats = calculate_bowling_stats(last5_df)
+    for key, value in last5_stats.items():
+        result[f"last5_{key}"] = value
 
-    # Group by bowler_id, league, and venue
-    venue_groups = df.groupby(['bowler_id', 'league', 'venue'])
+    return result
 
-    # Compute cumulative sums for metrics
-    cumulative_runs = venue_groups['runs'].cumsum()
-    cumulative_wickets = venue_groups['wickets'].cumsum()
-    cumulative_balls = venue_groups['total_balls'].cumsum()
-    matches_played = venue_groups.cumcount()
+# ---------------- MAIN ----------------
+def main():
+    match_df = load_match_data()
 
-    # Calculate venue-specific statistics
-    df['venue_avg'] = (cumulative_runs - df['runs']) / (cumulative_wickets - df['wickets']).replace(0, np.nan)
-    df['venue_eco'] = (cumulative_runs - df['runs']) / ((cumulative_balls - df['total_balls']) / 6)
-    df['venue_sr'] = (cumulative_balls - df['total_balls']) / (cumulative_wickets - df['wickets']).replace(0, np.nan)
-    df['venue_wpm'] = (cumulative_wickets - df['wickets']) / matches_played.replace(0, np.nan)
-    df['venue_opm'] = ((cumulative_balls - df['total_balls']) / 6) / matches_played.replace(0, np.nan)
+    input_df = pd.read_csv(INPUT_CSV_PATH)
 
-    print("Venue-specific statistics calculation complete!")
-    return df
-
-
-# Calculate season-specific statistics
-def calculate_season_stats(df):
-    print("Calculating season-specific statistics...")
-
-    # Group by bowler_id, league, and season
-    season_groups = df.groupby(['bowler_id', 'league', 'season'])
-
-    # Compute cumulative sums for metrics
-    cumulative_runs = season_groups['runs'].cumsum()
-    cumulative_wickets = season_groups['wickets'].cumsum()
-    cumulative_balls = season_groups['total_balls'].cumsum()
-    matches_played = season_groups.cumcount()
-
-    # Calculate season-specific statistics
-    df['ssn_avg'] = (cumulative_runs - df['runs']) / (cumulative_wickets - df['wickets']).replace(0, np.nan)
-    df['ssn_eco'] = (cumulative_runs - df['runs']) / ((cumulative_balls - df['total_balls']) / 6)
-    df['ssn_sr'] = (cumulative_balls - df['total_balls']) / (cumulative_wickets - df['wickets']).replace(0, np.nan)
-    df['ssn_wpm'] = (cumulative_wickets - df['wickets']) / matches_played.replace(0, np.nan)
-    df['ssn_opm'] = ((cumulative_balls - df['total_balls']) / 6) / matches_played.replace(0, np.nan)
-
-    print("Season-specific statistics calculation complete!")
-    return df
-
-
-# Calculate recent form statistics (last N matches)
-def calculate_recent_form_stats(df, n_matches=5):
-    print("Calculating recent form statistics (optimized)...")
-    
-    # Ensure data is sorted by bowler_id and date
-    df = df.sort_values(by=['bowler_id', 'date'])
-    
-    # Rolling metrics
-    grouped = df.groupby('bowler_id', group_keys=False)
-    
-    # Calculate rolling averages and totals for the last N matches
-    df['last5_avg'] = grouped['runs'].apply(lambda x: x.shift(1).rolling(window=n_matches, min_periods=1).mean())
-    df['last5_eco'] = grouped.apply(
-        lambda group: (group['runs'].shift(1).rolling(window=n_matches, min_periods=1).sum()) /
-                      ((group['total_balls'].shift(1).rolling(window=n_matches, min_periods=1).sum()) / 6)
-    ).reset_index(level=0, drop=True)
-    df['last5_sr'] = grouped.apply(
-        lambda group: (group['total_balls'].shift(1).rolling(window=n_matches, min_periods=1).sum()) /
-                      (group['wickets'].shift(1).rolling(window=n_matches, min_periods=1).sum().replace(0, np.nan))
-    ).reset_index(level=0, drop=True)
-    df['last5_wpm'] = grouped['wickets'].apply(lambda x: x.shift(1).rolling(window=n_matches, min_periods=1).mean())
-    df['last5_opm'] = grouped.apply(
-        lambda group: (group['total_balls'].shift(1).rolling(window=n_matches, min_periods=1).sum() / 6) /
-                      n_matches
-    ).reset_index(level=0, drop=True)
-    
-    print("Recent form statistics calculation complete!")
-    return df
-
-
-# Data cleanup for NULL and infinite values
-def cleanup_data(df):
-    print("Cleaning up data (handling NaN and Infinite values)...")
-    for col in ['career_avg', 'career_eco', 'career_sr', 'inns_avg', 'inns_eco', 'inns_sr', 
-                'venue_avg', 'venue_eco', 'venue_sr', 'ssn_avg', 'ssn_eco', 'ssn_sr',
-                'last5_avg', 'last5_eco', 'last5_sr']:
-        df[col] = df[col].replace([np.inf, -np.inf], 0.0)
-        df[col] = df[col].fillna(0)
-    
-    # Mark first occurrences NULL
-    for col in ['career_avg', 'career_eco', 'career_sr', 'career_wpm', 'career_opm']:
-        df.loc[df.groupby(['bowler_id', 'league']).head(1).index, col] = pd.NA
-    
-    print("Data cleanup complete!")
-    return df
-
-
-# Main function to process the data
-def process_bowling_data(df):
-    print("Starting bowling data processing...")
-    df = preprocess_data(df)
-    df = calculate_career_stats(df)
-    df = calculate_innings_stats(df)
-    df = calculate_venue_stats(df)
-    df = calculate_season_stats(df)
-    df = calculate_recent_form_stats(df)
-    df = cleanup_data(df)
-    print("Bowling data processing complete!")
-    return df
-
-
-# Example usage
-if __name__ == "__main__":
-    input_file = 'data/mbm/all_league/all_league_bowl_final.csv'
-    output_file = 'scripts/processed_bowling_data.csv'
-
-    print(f"Loading input file: {input_file}")
     try:
-        df = pd.read_csv(input_file)
-        print(f"Input file loaded successfully. Number of rows: {len(df)}")
-        
-        # Process data
-        processed_df = process_bowling_data(df)
-        
-        # Save the processed data
-        print(f"Saving the processed data to: {output_file}")
-        processed_df.to_csv(output_file, index=False)
-        print(f"File saved successfully to: {output_file}")
+        input_df['Date'] = input_df['Date'] + ", 2025"  # Append year
+        input_df['Date'] = pd.to_datetime(input_df['Date'], format="%d %b, %Y", errors='coerce')
     except Exception as e:
-        print(f"An error occurred: {e}")
+        print(f"❌ Error parsing Date column: {e}")
+        sys.exit(1)
+
+    if input_df['Date'].isnull().any():
+        print("⚠️ Warning: Some rows have invalid dates and will be dropped.")
+        input_df = input_df.dropna(subset=['Date'])
+
+    input_df['Cricinfo ID'] = pd.to_numeric(input_df['Cricinfo ID'], errors='coerce').fillna(0).astype(int)
+
+    output_rows = []
+    print(f"Processing {len(input_df)} players...")
+
+    for _, row in input_df.iterrows():
+        player_input = {
+            "player_id": row['Cricinfo ID'],
+            "player_name": row['Player Name'],
+            "bowl_team": row['Team'],
+            "bat_team": row['Opponent'],
+            "innings": row['Innings'],
+            "season": 2025,
+            "venue": row['Venue'],
+            "cutoff_date": row['Date']
+        }
+        
+        if player_input['player_id'] not in match_df['bowler_id'].values:
+            print(f"Player ID {player_input['player_id']} not found in match data.")
+            continue
+        
+        player_output = process_bowler_row(player_input, match_df)
+        output_rows.append(player_output)
+
+    if output_rows:
+        output_df = pd.DataFrame(output_rows)
+
+        file_exists = os.path.exists(OUTPUT_CSV_PATH)
+        output_df.to_csv(OUTPUT_CSV_PATH, index=False, mode='a' if file_exists else 'w', header=not file_exists)
+        print(f"✅ Bowler stats saved to {OUTPUT_CSV_PATH}")
+    else:
+        print("No valid player data found to save.")
+
+if __name__ == "__main__":
+    main()
