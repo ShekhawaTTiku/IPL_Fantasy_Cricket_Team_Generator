@@ -138,7 +138,7 @@ def process_player_row(player_input, sheet_df):
 
 # ---------------- MAIN ----------------
 def main():
-    input_csv_path = "Today_Match_Details/match_1.csv"  # 🔁 Update if needed
+    input_csv_path = "Today_Match_Details/match_15.csv"  # 🔁 Update if needed
     output_csv_path = "scripts/player_output_bat.csv"               # 🔁 Update if needed
     MATCH_DATA_PATH = "data/mbm/all_league/all_league_bat_final.csv"
 
