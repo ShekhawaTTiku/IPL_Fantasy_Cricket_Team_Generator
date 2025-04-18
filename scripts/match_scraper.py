@@ -4,31 +4,58 @@ import csv
 from datetime import datetime, timezone
 import os
 import pandas as pd
+import gspread
+from google.oauth2.service_account import Credentials
+from dotenv import load_dotenv
+import json
 
 # Cricbuzz Fixtures URL for IPL 2025
 FIXTURES_URL = "https://www.cricbuzz.com/cricket-series/9237/indian-premier-league-2025/matches"
 headers = {"User-Agent": "Mozilla/5.0"}
 
-# Create a mapping from cricbuzz_id to cricinfo_id using the CSV file
-def create_id_mapping(csv_path="data/register_data/squadData_ipl25.csv"):
-    print(f"🔄 Creating player ID mapping from {csv_path}")
+# Load environment variables from .env file
+env_path = os.path.join(os.path.dirname("cricket-ipl-api\.env"), "../cricket-ipl-api/.env")
+load_dotenv(dotenv_path=env_path)
+
+# Environment variables
+GOOGLE_SHEET_ID_MAPPING = os.getenv("GOOGLE_SHEET_ID_MAPPING")
+GOOGLE_SERVICE_ACCOUNT_EMAIL = os.getenv("GOOGLE_SERVICE_ACCOUNT_EMAIL")
+GOOGLE_PRIVATE_KEY = os.getenv("GOOGLE_PRIVATE_KEY").replace("\\n", "\n")  # Replace escaped newlines
+
+def create_id_mapping():
+    """Fetch player ID mapping from Google Sheet."""
+    print(f"🔄 Fetching player ID mapping from Google Sheet (ID: {GOOGLE_SHEET_ID_MAPPING})")
     try:
-        df = pd.read_csv(csv_path)
-        
+        # Prepare service account credentials
+        credentials_info = {
+            "type": "service_account",
+            "client_email": GOOGLE_SERVICE_ACCOUNT_EMAIL,
+            "private_key": GOOGLE_PRIVATE_KEY,
+            "token_uri": "https://oauth2.googleapis.com/token"
+        }
+        scopes = ['https://www.googleapis.com/auth/spreadsheets.readonly']
+        credentials = Credentials.from_service_account_info(credentials_info, scopes=scopes)
+
+        # Authenticate and open the Google Sheet
+        gc = gspread.authorize(credentials)
+        sheet = gc.open_by_key(GOOGLE_SHEET_ID_MAPPING).sheet1  # Access the first sheet
+        records = sheet.get_all_records()
+
+        # Convert records to DataFrame
+        df = pd.DataFrame(records)
+
         # Create a dictionary mapping cricbuzz_id to cricinfo_id
         id_mapping = {}
         for _, row in df.iterrows():
-            # Skip rows with missing values
             if pd.isna(row['key_cricbuzz']) or pd.isna(row['key_cricinfo']):
                 continue
-                
-            # Convert to string and strip any decimal points (e.g. 12345.0 -> "12345")
+
             cricbuzz_id = str(int(row['key_cricbuzz'])) if not pd.isna(row['key_cricbuzz']) else None
             cricinfo_id = str(int(row['key_cricinfo'])) if not pd.isna(row['key_cricinfo']) else None
-            
+
             if cricbuzz_id and cricinfo_id:
                 id_mapping[cricbuzz_id] = cricinfo_id
-        
+
         print(f"✅ Successfully created mapping for {len(id_mapping)} players")
         print(f"🔍 Sample mapping entries: {list(id_mapping.items())[:5]}")
         return id_mapping

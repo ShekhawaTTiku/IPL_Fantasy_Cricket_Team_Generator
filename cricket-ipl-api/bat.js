@@ -148,6 +148,7 @@ async function updateGoogleSheet(matchId) {
                 bowler_cricinfo_id: bowlerCricinfoId, // Cricinfo ID
                 bowler: bowlerName,
                 venue: data.venue,
+                league: "IPL",
             });
         }
     }

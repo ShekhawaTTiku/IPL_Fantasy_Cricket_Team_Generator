@@ -5,13 +5,13 @@ const fs = require("fs");
 const csv = require("csv-parser");
 const getTodayIPLMatchIds = require("./fetchMatchId");
 
-const csvFilePath = "./map.csv";
+// const csvFilePath = "./map.csv";
 const doc = new GoogleSpreadsheet(process.env.GOOGLE_SHEET_ID_BOWL);
 
 async function authenticateGoogleSheet() {
     try {
         console.log("🔐 Authenticating Google Sheets...");
-        
+
         if (!process.env.GOOGLE_PRIVATE_KEY || !process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL) {
             throw new Error("Missing Google Service Account credentials in environment variables.");
         }
@@ -23,7 +23,15 @@ async function authenticateGoogleSheet() {
 
         await doc.loadInfo();
         console.log(`✅ Connected to Google Sheet: ${doc.title}`);
-        return doc.sheetsByIndex[0];
+
+        const sheet1 = doc.sheetsByTitle["Sheet1"];
+        const sheet2 = doc.sheetsByTitle["Sheet2"];
+
+        if (!sheet1 || !sheet2) {
+            throw new Error("One or both sheets (Sheet1, Sheet2) not found.");
+        }
+
+        return { sheet1, sheet2 };
     } catch (error) {
         console.error("❌ Google Sheets Authentication Failed:", error.message);
         process.exit(1);
@@ -49,32 +57,56 @@ async function fetchMatchDetails(matchId) {
 }
 
 // Load the mapping from people.csv
-async function loadPlayerMapping(csvFilePath) {
-    return new Promise((resolve, reject) => {
-        const playerMapping = new Map();
-        fs.createReadStream(csvFilePath)
-            .pipe(csv())
-            .on("data", (row) => {
-                // Use key_cricbuzz as the primary key, fallback to unique_name or name if key_cricbuzz is blank
-                const key = row.key_cricbuzz?.trim() || row.unique_name?.trim() || row.name?.trim();
-                if (key && row.key_cricinfo) {
-                    playerMapping.set(key, row.key_cricinfo.trim());
-                }
-            })
-            .on("end", () => {
-                console.log("✅ People mapping loaded successfully.");
-                resolve(playerMapping);
-            })
-            .on("error", (error) => reject(error));
+// async function loadPlayerMapping(csvFilePath) {
+//     return new Promise((resolve, reject) => {
+//         const playerMapping = new Map();
+//         fs.createReadStream(csvFilePath)
+//             .pipe(csv())
+//             .on("data", (row) => {
+//                 // Use key_cricbuzz as the primary key, fallback to unique_name or name if key_cricbuzz is blank
+//                 const key = row.key_cricbuzz?.trim() || row.unique_name?.trim() || row.name?.trim();
+//                 if (key && row.key_cricinfo) {
+//                     playerMapping.set(key, row.key_cricinfo.trim());
+//                 }
+//             })
+//             .on("end", () => {
+//                 console.log("✅ People mapping loaded successfully.");
+//                 resolve(playerMapping);
+//             })
+//             .on("error", (error) => reject(error));
+//     });
+// }
+
+// Load the mapping from IPL DATA Google Sheet
+async function loadPlayerMappingFromSheet() {
+    const mappingDoc = new GoogleSpreadsheet(process.env.GOOGLE_SHEET_ID_MAPPING);
+
+    await mappingDoc.useServiceAccountAuth({
+        client_email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
+        private_key: process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, "\n"),
     });
+
+    await mappingDoc.loadInfo();
+    const sheet = mappingDoc.sheetsByTitle["Mapping"]; // Adjust if your sheet name is different
+    const rows = await sheet.getRows();
+
+    const playerMapping = {};
+    for (const row of rows) {
+        if (row.key_cricbuzz && row.key_cricinfo) {
+            playerMapping[row.key_cricbuzz.trim()] = row.key_cricinfo.trim();
+        }
+    }
+
+    return playerMapping;
 }
 
 async function updateGoogleSheet() {
     const matchData = await getTodayIPLMatchIds(); // Get multiple matches
     if (!matchData || matchData.length === 0) return;
 
-    const sheet = await authenticateGoogleSheet();
-    const playerMapping = await loadPlayerMapping(csvFilePath);
+    const { sheet1, sheet2 } = await authenticateGoogleSheet();
+    // const playerMapping = await loadPlayerMapping(csvFilePath);
+    const playerMapping = await loadPlayerMappingFromSheet();
     let rows = [];
 
     for (const { matchId, venue } of matchData) {
@@ -192,15 +224,18 @@ async function updateGoogleSheet() {
         balls: ballsBowled,
         lbw_or_bowled: lbw_or_bowled,
         dots: dots,
-        venue: venue,
-        key_cricinfo: playerMapping.get(playerId) || "N/A", // Map key_cricbuzz to key_cricinfo
+        venue: venue.split(",")[0].trim(),
+        // key_cricinfo: playerMapping.get(playerId) || "N/A", // Map key_cricbuzz to key_cricinfo  //for mapping with local csv file
+        key_cricinfo: playerMapping[playerId] || "N/A", // Map key_cricbuzz to key_cricinfo
+        league: "IPL",
     });
 }
 }
 }
 
-await sheet.addRows(rows);
-console.log(`✅ Data for all matches added successfully!`);
+await sheet1.addRows(rows);
+await sheet2.addRows(rows);
+console.log(`✅ Data for all matches added to both Sheet1 and Sheet2 successfully!`);
 }
 
 updateGoogleSheet();
