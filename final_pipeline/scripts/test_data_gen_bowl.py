@@ -278,7 +278,7 @@ if __name__ == "__main__":
     df_match_detail = pd.read_csv(r"Today_Match_Details\match_15.csv")
 
     # Fetch MBM Data
-    df_mbm = fetch_google_sheet_data(sheet_id=GOOGLE_SHEET_ID_MBM, sheet_index=0)
+    df_mbm = fetch_google_sheet_data(sheet_id=GOOGLE_SHEET_ID_MBM, sheet_index=1)
 
     # Compute Test Data for Batting
     test_data_bat = compute_test_data_bowl(df_mbm, df_match_detail)
