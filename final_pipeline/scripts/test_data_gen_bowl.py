@@ -281,8 +281,8 @@ if __name__ == "__main__":
     df_mbm = fetch_google_sheet_data(sheet_id=GOOGLE_SHEET_ID_MBM, sheet_index=1)
 
     # Compute Test Data for Batting
-    test_data_bat = compute_test_data_bowl(df_mbm, df_match_detail)
+    test_data_bowl = compute_test_data_bowl(df_mbm, df_match_detail)
 
     # Print the resulting DataFrame
     with pd.option_context('display.max_columns', None):
-        print(test_data_bat)
+        print(test_data_bowl)
