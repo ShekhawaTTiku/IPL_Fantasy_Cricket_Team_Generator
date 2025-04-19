@@ -273,13 +273,13 @@ def compute_last5_bowling_stats(df: pd.DataFrame) -> dict:
         'last5_opm': opm
     }
 
-def get_bat_test(mbm_bat_final, match_df):
+def get_bowl_test(mbm_bowl_final, match_df):
     """
     Example function to demonstrate how to use the compute_test_data_bat function.
     This is a placeholder and should be replaced with actual data fetching and processing.
     """
     # Compute Test Data for Batting
-    test_data_bowl = compute_test_data_bowl(mbm_bat_final, match_df)
+    test_data_bowl = compute_test_data_bowl(mbm_bowl_final, match_df)
 
     return test_data_bowl
 
