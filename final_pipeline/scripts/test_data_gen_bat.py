@@ -239,13 +239,16 @@ def compute_test_data_bat(df_mbm: pd.DataFrame, df_match_detail: pd.DataFrame) -
     test_data_bat = pd.DataFrame(output_records)
     return test_data_bat
 
-# Example usage:
-# """
-# df_match_detail = pd.read_csv(r"C:\Users\HP\jupyter notebook files\FIFS_IPL\Today_Match_Details\match_2.csv") # match_detail file from scraper
-# df_mbm = pd.read_csv(r"C:\Users\HP\jupyter notebook files\FIFS_IPL\data\mbm\all_league\all_league_bat_final.csv") # this will be fetched from google sheet
-# test_data_bat = compute_test_data_bat(df_mbm, df_match_detail)
-# print(test_data_bat)
-# """
+def get_bat_test(mbm_bat_final, match_df):
+    """
+    Example function to demonstrate how to use the compute_test_data_bat function.
+    This is a placeholder and should be replaced with actual data fetching and processing.
+    """
+    # Compute Test Data for Batting
+    test_data_bat = compute_test_data_bat(mbm_bat_final, match_df)
+
+    return test_data_bat
+
 if __name__ == "__main__":
     # Fetch Match Details Data
     df_match_detail = pd.read_csv(r"Today_Match_Details\match_15.csv")
@@ -253,9 +256,4 @@ if __name__ == "__main__":
     # Fetch MBM Data
     df_mbm = fetch_google_sheet_data(sheet_id=GOOGLE_SHEET_ID_MBM, sheet_index=1)
 
-    # Compute Test Data for Batting
-    test_data_bat = compute_test_data_bat(df_mbm, df_match_detail)
-
-    # Print the resulting DataFrame
-    with pd.option_context('display.max_columns', None):
-        print(test_data_bat)
+    get_bat_test(df_mbm, df_match_detail)
