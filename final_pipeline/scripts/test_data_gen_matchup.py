@@ -217,12 +217,8 @@ def compute_batter_matchup_scores(perf_filtered: pd.DataFrame, match_df: pd.Data
 
     return matchup
 
-def get_matchup_score():
-    # Load datasets
-    perf_metric_df = pd.read_csv(r"C:\Users\HP\jupyter notebook files\FIFS_IPL\data\processed_data\batter_perf_metric.csv")
-    bowl_df = pd.read_csv(r"C:\Users\HP\jupyter notebook files\FIFS_IPL\data\mbm\all_league\all_league_bowl_final.csv")
-    match_df = pd.read_csv(r"C:\Users\HP\jupyter notebook files\FIFS_IPL\Today_Match_Details\match_1.csv")
-    squad_df = pd.read_csv(r"C:\Users\HP\jupyter notebook files\FIFS_IPL\data\register_data\squadData_ipl25.csv")
+def get_matchup_score(perf_metric_df, bowl_df, match_df, squad_df):
+
 
     # 1. Compute bowler quality
     calculator = BowlerQualityCalculator()
@@ -269,4 +265,9 @@ def get_matchup_score():
 
 
 if __name__ == "__main__":
-    get_matchup_score()
+    # Load datasets
+    perf_metric_df = pd.read_csv(r"C:\Users\HP\jupyter notebook files\FIFS_IPL\data\processed_data\batter_perf_metric.csv")
+    bowl_df = pd.read_csv(r"C:\Users\HP\jupyter notebook files\FIFS_IPL\data\mbm\all_league\all_league_bowl_final.csv")
+    match_df = pd.read_csv(r"C:\Users\HP\jupyter notebook files\FIFS_IPL\Today_Match_Details\match_1.csv")
+    squad_df = pd.read_csv(r"C:\Users\HP\jupyter notebook files\FIFS_IPL\data\register_data\squadData_ipl25.csv")
+    get_matchup_score(perf_metric_df, bowl_df, match_df, squad_df)
