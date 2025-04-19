@@ -249,11 +249,11 @@ def get_bat_test(mbm_bat_final, match_df):
 
     return test_data_bat
 
-if __name__ == "__main__":
-    # Fetch Match Details Data
-    df_match_detail = pd.read_csv(r"Today_Match_Details\match_15.csv")
+# if __name__ == "__main__":
+#     # Fetch Match Details Data
+#     df_match_detail = pd.read_csv(r"Today_Match_Details\match_15.csv")
 
-    # Fetch MBM Data
-    df_mbm = fetch_google_sheet_data(sheet_id=GOOGLE_SHEET_ID_MBM, sheet_index=1)
+#     # Fetch MBM Data
+#     df_mbm = fetch_google_sheet_data(sheet_id=GOOGLE_SHEET_ID_MBM, sheet_index=1)
 
-    get_bat_test(df_mbm, df_match_detail)
+#     get_bat_test(df_mbm, df_match_detail)

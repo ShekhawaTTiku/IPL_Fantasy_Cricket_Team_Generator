@@ -273,16 +273,26 @@ def compute_last5_bowling_stats(df: pd.DataFrame) -> dict:
         'last5_opm': opm
     }
 
-if __name__ == "__main__":
-    # Fetch Match Details Data
-    df_match_detail = pd.read_csv(r"Today_Match_Details\match_15.csv")
-
-    # Fetch MBM Data
-    df_mbm = fetch_google_sheet_data(sheet_id=GOOGLE_SHEET_ID_MBM, sheet_index=1)
-
+def get_bat_test(mbm_bat_final, match_df):
+    """
+    Example function to demonstrate how to use the compute_test_data_bat function.
+    This is a placeholder and should be replaced with actual data fetching and processing.
+    """
     # Compute Test Data for Batting
-    test_data_bowl = compute_test_data_bowl(df_mbm, df_match_detail)
+    test_data_bowl = compute_test_data_bowl(mbm_bat_final, match_df)
 
-    # Print the resulting DataFrame
-    with pd.option_context('display.max_columns', None):
-        print(test_data_bowl)
+    return test_data_bowl
+
+# if __name__ == "__main__":
+#     # Fetch Match Details Data
+#     df_match_detail = pd.read_csv(r"Today_Match_Details\match_15.csv")
+
+#     # Fetch MBM Data
+#     df_mbm = fetch_google_sheet_data(sheet_id=GOOGLE_SHEET_ID_MBM, sheet_index=1)
+
+#     # Compute Test Data for Batting
+#     test_data_bowl = compute_test_data_bowl(df_mbm, df_match_detail)
+
+#     # Print the resulting DataFrame
+#     with pd.option_context('display.max_columns', None):
+#         print(test_data_bowl)
