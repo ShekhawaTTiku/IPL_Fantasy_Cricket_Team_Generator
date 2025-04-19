@@ -263,7 +263,6 @@ def get_matchup_score(perf_metric_df, bowl_df, match_df, squad_df):
 
     return matchup_df
 
-
 if __name__ == "__main__":
     # Load datasets
     perf_metric_df = pd.read_csv(r"C:\Users\HP\jupyter notebook files\FIFS_IPL\data\processed_data\batter_perf_metric.csv")
