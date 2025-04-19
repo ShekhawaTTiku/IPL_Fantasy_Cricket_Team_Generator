@@ -190,6 +190,7 @@ async function updateGoogleSheet(matchId) {
                 dots: dots,
                 venue: "Unknown",
                 key_cricinfo: playerMapping.get(playerId) || "N/A", // Map key_cricbuzz to key_cricinfo
+                league: "IPL",
             });
         }
     }

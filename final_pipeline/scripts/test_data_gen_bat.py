@@ -1,5 +1,47 @@
 import pandas as pd
 import numpy as np
+import gspread
+from google.oauth2.service_account import Credentials
+from dotenv import load_dotenv
+import os
+
+# Load environment variables from .env file
+env_path = os.path.join(os.path.dirname("cricket-ipl-api\.env"), "../cricket-ipl-api/.env")
+load_dotenv(dotenv_path=env_path)
+
+# Environment variables
+GOOGLE_SHEET_ID_MBM = os.getenv("GOOGLE_SHEET_ID_BAT")  # Google Sheet ID for MBM data
+GOOGLE_SERVICE_ACCOUNT_EMAIL = os.getenv("GOOGLE_SERVICE_ACCOUNT_EMAIL")
+GOOGLE_PRIVATE_KEY = os.getenv("GOOGLE_PRIVATE_KEY").replace("\\n", "\n")  # Replace escaped newlines
+
+# Authenticate Google Sheets API
+def authenticate_google_sheets():
+    """Authenticate and return a gspread client."""
+    credentials_info = {
+        "type": "service_account",
+        "client_email": GOOGLE_SERVICE_ACCOUNT_EMAIL,
+        "private_key": GOOGLE_PRIVATE_KEY,
+        "token_uri": "https://oauth2.googleapis.com/token"
+    }
+    scopes = ['https://www.googleapis.com/auth/spreadsheets.readonly']
+    credentials = Credentials.from_service_account_info(credentials_info, scopes=scopes)
+    return gspread.authorize(credentials)
+
+def fetch_google_sheet_data(sheet_id, sheet_index=1):
+    """
+    Fetch data from the specified Google Sheet by index.
+    
+    Parameters:
+        sheet_id (str): The ID of the Google Sheet.
+        sheet_index (int): The index of the sheet to fetch (0-based).
+        
+    Returns:
+        pd.DataFrame: Data from the specified sheet as a Pandas DataFrame.
+    """
+    client = authenticate_google_sheets()
+    sheet = client.open_by_key(sheet_id).get_worksheet(sheet_index)  # Access sheet by index
+    records = sheet.get_all_records()  # Fetch all rows as a list of dictionaries
+    return pd.DataFrame(records)  # Convert to a Pandas DataFrame
 
 def compute_stats(df: pd.DataFrame) -> dict:
     """
@@ -14,6 +56,10 @@ def compute_stats(df: pd.DataFrame) -> dict:
     """
     if df.empty:
         return {'avg': np.nan, 'rpm': np.nan, 'sr': np.nan, 'bpm': np.nan, 'bfpm': np.nan}
+    
+    df = df.copy()
+    df['isOut'] = pd.to_numeric(df['isOut'], errors='coerce').fillna(0).astype(int)
+
     total_runs = df['runs'].sum()
     dismissals = df['isOut'].sum()
     matches = len(df)
@@ -63,9 +109,14 @@ def compute_test_data_bat(df_mbm: pd.DataFrame, df_match_detail: pd.DataFrame) -
     # Copy & preprocess
     df_mbm = df_mbm.copy()
     df_match_detail = df_match_detail.copy()
+
+    numeric_columns = ['runs', 'balls', 'fours', 'sixes', 'isOut']
+    for col in numeric_columns:
+        df_mbm[col] = pd.to_numeric(df_mbm[col], errors='coerce').fillna(0).astype(int)
+
     df_mbm['date'] = pd.to_datetime(df_mbm['date'])
     df_match_detail['Date'] = pd.to_datetime(df_match_detail['Date'] + ' 2025', format='%d %b %Y')
-    df_mbm['batter_id'] = df_mbm['batter_id'].astype(str)
+    df_mbm['batter_cricinfo_id'] = df_mbm['batter_cricinfo_id'].astype(str)
     df_match_detail['Cricinfo ID'] = df_match_detail['Cricinfo ID'].astype(str)
 
     # Static assignment
@@ -88,7 +139,7 @@ def compute_test_data_bat(df_mbm: pd.DataFrame, df_match_detail: pd.DataFrame) -
         season = row['season']
         match_date = row['Date']
         # Historical matches before today
-        hist_df = df_mbm[(df_mbm['date'] < match_date) & (df_mbm['batter_id'] == batter_id)]
+        hist_df = df_mbm[(df_mbm['date'] < match_date) & (df_mbm['batter_cricinfo_id'] == batter_id)]
 
         # A) Career stats
         hist_career = hist_df[hist_df['league'] == league]
@@ -97,10 +148,10 @@ def compute_test_data_bat(df_mbm: pd.DataFrame, df_match_detail: pd.DataFrame) -
             career_stats = compute_stats(hist_df)
 
         # B) Innings stats: league innings, fallback to global innings
-        hist_innings_league = hist_career[hist_career['inns'] == inns]
+        hist_innings_league = hist_career[hist_career['innings'] == inns]
         inns_stats = compute_stats(hist_innings_league)
         if np.isnan(inns_stats['avg']):
-            hist_global_inns = hist_df[hist_df['inns'] == inns]
+            hist_global_inns = hist_df[hist_df['innings'] == inns]
             inns_stats = compute_stats(hist_global_inns)
 
         # C) Venue stats
@@ -189,9 +240,22 @@ def compute_test_data_bat(df_mbm: pd.DataFrame, df_match_detail: pd.DataFrame) -
     return test_data_bat
 
 # Example usage:
-"""
-df_match_detail = pd.read_csv(r"C:\Users\HP\jupyter notebook files\FIFS_IPL\Today_Match_Details\match_2.csv") # match_detail file from scraper
-df_mbm = pd.read_csv(r"C:\Users\HP\jupyter notebook files\FIFS_IPL\data\mbm\all_league\all_league_bat_final.csv") # this will be fetched from google sheet
-test_data_bat = compute_test_data_bat(df_mbm, df_match_detail)
-print(test_data_bat)
-"""
+# """
+# df_match_detail = pd.read_csv(r"C:\Users\HP\jupyter notebook files\FIFS_IPL\Today_Match_Details\match_2.csv") # match_detail file from scraper
+# df_mbm = pd.read_csv(r"C:\Users\HP\jupyter notebook files\FIFS_IPL\data\mbm\all_league\all_league_bat_final.csv") # this will be fetched from google sheet
+# test_data_bat = compute_test_data_bat(df_mbm, df_match_detail)
+# print(test_data_bat)
+# """
+if __name__ == "__main__":
+    # Fetch Match Details Data
+    df_match_detail = pd.read_csv(r"Today_Match_Details\match_15.csv")
+
+    # Fetch MBM Data
+    df_mbm = fetch_google_sheet_data(sheet_id=GOOGLE_SHEET_ID_MBM, sheet_index=1)
+
+    # Compute Test Data for Batting
+    test_data_bat = compute_test_data_bat(df_mbm, df_match_detail)
+
+    # Print the resulting DataFrame
+    with pd.option_context('display.max_columns', None):
+        print(test_data_bat)
