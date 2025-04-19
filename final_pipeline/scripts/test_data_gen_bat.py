@@ -239,7 +239,7 @@ def compute_test_data_bat(df_mbm: pd.DataFrame, df_match_detail: pd.DataFrame) -
     test_data_bat = pd.DataFrame(output_records)
     return test_data_bat
 
-def get_bat_test(mbm_bat_final, match_df):
+def get_test_bat(mbm_bat_final, match_df):
     """
     Example function to demonstrate how to use the compute_test_data_bat function.
     This is a placeholder and should be replaced with actual data fetching and processing.
@@ -252,8 +252,6 @@ def get_bat_test(mbm_bat_final, match_df):
 if __name__ == "__main__":
     # Fetch Match Details Data
     df_match_detail = pd.read_csv(r"Today_Match_Details\match_15.csv")
-
     # Fetch MBM Data
     df_mbm = fetch_google_sheet_data(sheet_id=GOOGLE_SHEET_ID_MBM, sheet_index=1)
-
-    get_bat_test(df_mbm, df_match_detail)
+    get_test_bat(df_mbm, df_match_detail)

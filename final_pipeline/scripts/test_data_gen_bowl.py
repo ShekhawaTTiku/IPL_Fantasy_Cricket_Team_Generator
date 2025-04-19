@@ -1,288 +1,236 @@
 import pandas as pd
 import numpy as np
-import gspread
-from google.oauth2.service_account import Credentials
-from dotenv import load_dotenv
-import os
 
-# Load environment variables from .env file
-env_path = os.path.join(os.path.dirname("cricket-ipl-api\.env"), "../cricket-ipl-api/.env")
-load_dotenv(dotenv_path=env_path)
+def compute_test_data_bowl(df_mbm, df_match_detail, min_season_matches=3):
+    # 0) PREP & CLEAN df_mbm
+    bowling_df = df_mbm.copy()
+    bowling_df['date']       = pd.to_datetime(bowling_df['date'])
+    bowling_df['bowler_id']  = bowling_df['bowler_id'].astype(str)
 
-# Environment variables
-GOOGLE_SHEET_ID_MBM = os.getenv("GOOGLE_SHEET_ID_BOWL")  # Google Sheet ID for MBM data
-GOOGLE_SERVICE_ACCOUNT_EMAIL = os.getenv("GOOGLE_SERVICE_ACCOUNT_EMAIL")
-GOOGLE_PRIVATE_KEY = os.getenv("GOOGLE_PRIVATE_KEY").replace("\\n", "\n")  # Replace escaped newlines
+    # Convert overs → total_balls & total_overs
+    bowling_df['overs'] = bowling_df['overs'].replace('DNB', '0.0').astype(str)
+    split = bowling_df['overs'].str.split('.', expand=True).fillna('0')
+    bowling_df['overs_int']   = split[0].astype(int)
+    bowling_df['balls_int']   = split[1].astype(int)
+    bowling_df['total_balls'] = bowling_df['overs_int'] * 6 + bowling_df['balls_int']
+    bowling_df['total_overs'] = bowling_df['total_balls'] / 6
 
-# Authenticate Google Sheets API
-def authenticate_google_sheets():
-    """Authenticate and return a gspread client."""
-    credentials_info = {
-        "type": "service_account",
-        "client_email": GOOGLE_SERVICE_ACCOUNT_EMAIL,
-        "private_key": GOOGLE_PRIVATE_KEY,
-        "token_uri": "https://oauth2.googleapis.com/token"
-    }
-    scopes = ['https://www.googleapis.com/auth/spreadsheets.readonly']
-    credentials = Credentials.from_service_account_info(credentials_info, scopes=scopes)
-    return gspread.authorize(credentials)
+    # ——————————————————————————————
+    # 0.1) PRECOMPUTE season-statistics
+    bowling_df['season'] = bowling_df['date'].dt.year
+    grp = bowling_df.groupby(['bowler_id','season','league'])
+    bowling_df['cumulative_runs']    = grp['runs'].cumsum()    - bowling_df['runs']
+    bowling_df['cumulative_wickets'] = grp['wickets'].cumsum() - bowling_df['wickets']
+    bowling_df['cumulative_balls']   = grp['total_balls'].cumsum() - bowling_df['total_balls']
+    bowling_df['cum_matches']        = grp.cumcount()
 
-def fetch_google_sheet_data(sheet_id, sheet_index=1):
-    """
-    Fetch data from the specified Google Sheet by index.
-    
-    Parameters:
-        sheet_id (str): The ID of the Google Sheet.
-        sheet_index (int): The index of the sheet to fetch (0-based).
-        
-    Returns:
-        pd.DataFrame: Data from the specified sheet as a Pandas DataFrame.
-    """
-    client = authenticate_google_sheets()
-    sheet = client.open_by_key(sheet_id).get_worksheet(sheet_index)  # Access sheet by index
-    records = sheet.get_all_records()  # Fetch all rows as a list of dictionaries
-    return pd.DataFrame(records)  # Convert to a Pandas DataFrame
+    bowling_df['ssn_avg'] = bowling_df['cumulative_runs']    / bowling_df['cumulative_wickets'].replace(0, np.nan)
+    bowling_df['ssn_eco'] = bowling_df['cumulative_runs']    / (bowling_df['cumulative_balls'] / 6).replace(0, np.nan)
+    bowling_df['ssn_sr']  = bowling_df['cumulative_balls']   / bowling_df['cumulative_wickets'].replace(0, np.nan)
+    bowling_df['ssn_wpm'] = bowling_df['cumulative_wickets']/ bowling_df['cum_matches'].replace(0, np.nan)
+    bowling_df['ssn_opm'] = (bowling_df['cumulative_balls']/6) / bowling_df['cum_matches'].replace(0, np.nan)
 
-def compute_test_data_bowl(df_mbm: pd.DataFrame, df_match_detail: pd.DataFrame) -> pd.DataFrame:
-    """
-    Compute bowling stats for each player-match in df_match_detail using historical data from df_mbm.
-    
-    Parameters:
-        df_mbm (pd.DataFrame): Match-by-match dataset containing bowling scorecard data.
-        df_match_detail (pd.DataFrame): Dataset containing match and player details.
-    
-    Returns:
-        pd.DataFrame: A DataFrame containing test data for bowlers with required statistics.
-    """
-    # Copy & preprocess
-    df_mbm = df_mbm.copy()
-    df_match_detail = df_match_detail.copy()
+    # drop only the truly temporary cols (keep total_balls & total_overs!)
+    bowling_df.drop(columns=[
+        'overs_int','balls_int',
+        'cumulative_runs','cumulative_wickets','cumulative_balls','cum_matches'
+    ], inplace=True)
 
-    # Convert numeric columns to appropriate types and fill missing values
-    numeric_columns = ['runs', 'balls', 'wickets', 'maiden', 'eco']
-    for col in numeric_columns:
-        df_mbm[col] = pd.to_numeric(df_mbm[col], errors='coerce').fillna(0).astype(int)
+    # clean up infinities & fill NaN → 0
+    for col in ['ssn_avg','ssn_eco','ssn_sr','ssn_wpm','ssn_opm']:
+        bowling_df[col] = bowling_df[col].replace([np.inf, -np.inf], 0).fillna(0)
 
-    df_mbm['date'] = pd.to_datetime(df_mbm['date'])
-    df_match_detail['Date'] = pd.to_datetime(df_match_detail['Date'] + ' 2025', format='%d %b %Y')
-    df_mbm['key_cricinfo'] = df_mbm['key_cricinfo'].astype(str)
-    df_match_detail['Cricinfo ID'] = df_match_detail['Cricinfo ID'].astype(str)
+    # mark first row per (bowler,season,league) as NA
+    first_idx = bowling_df.groupby(['bowler_id','season','league']).head(1).index
+    bowling_df.loc[first_idx, ['ssn_avg','ssn_eco','ssn_sr','ssn_wpm','ssn_opm']] = pd.NA
+    # ——————————————————————————————
 
-    # Rename columns for consistency
-    df_match_detail['league'] = 'IPL'
-    df_match_detail['season'] = df_match_detail['Date'].dt.year
-    df_match_detail.rename(columns={
-        'Team': 'bowler_team',
-        'Opponent': 'bat_team',
-        'Venue': 'venue',
-        'Innings': 'inns',
-        'Cricinfo ID': 'bowler_id'
-    }, inplace=True)
+    # 1) PREPARE df_match_detail
+    md = df_match_detail.copy()
+    md['date']       = pd.to_datetime('2025 ' + md['Date'], format='%Y %d %b')
+    md['season']     = md['date'].dt.year
+    md['league']     = 'IPL'
+    md['bowler_id']  = md['Cricinfo ID'].astype(str)
+    md['bowl_team']  = md['Team']
+    md['bat_team']   = md['Opponent']
+    md['inns']       = md['Innings']
+    md['venue']      = md['Venue']
 
-    output_records = []
+    def compute_bowl_stats(df):
+        if df.empty:
+            return dict(avg=np.nan, eco=np.nan, sr=np.nan, wpm=np.nan, opm=np.nan)
+        runs    = df['runs'].sum()
+        wkts    = df['wickets'].sum()
+        balls   = df['total_balls'].sum()
+        overs   = df['total_overs'].sum()
+        matches = len(df)
+        return dict(
+            avg = runs / (wkts if wkts>0 else 1),
+            eco = runs / (overs if overs>0 else 1),
+            sr  = balls / (wkts if wkts>0 else 1),
+            wpm = wkts / matches,
+            opm = overs / matches
+        )
 
-    for _, row in df_match_detail.iterrows():
-        # Extract direct fields
-        bowler_id = row['bowler_id']
-        inns = row['inns']
-        bowler_team = row['bowler_team']
-        bat_team = row['bat_team']
-        venue = row['venue']
-        league = row.get('league', 'Unknown League')  # Default to 'Unknown League' if not present
-        season = row['Date'].year
-        match_date = row['Date']
+    results = []
+    for _, row in md.iterrows():
+        bid     = row['bowler_id']
+        mdate   = row['date']
+        cleag   = row['league']
+        cses    = row['season']
+        inns    = row['inns']
+        venue   = row['venue']
 
-        # Filter historical data for the bowler
-        hist_df = df_mbm[(df_mbm['date'] < match_date) & (df_mbm['key_cricinfo'] == bowler_id)]
+        # filter history
+        hist = bowling_df[
+            (bowling_df['bowler_id']==bid) &
+            (bowling_df['date']      < mdate)
+        ].copy()
+        debut = int(hist.empty)
 
-        # A) Career statistics
-        hist_career = hist_df[hist_df['league'] == league]
-        career_stats = compute_bowling_stats(hist_career)
-        if np.isnan(career_stats['career_avg']):
-            career_stats = compute_bowling_stats(hist_df)
+        # A) Career
+        h_leag = hist[hist['league']==cleag]
+        career = compute_bowl_stats(h_leag)
+        if pd.isna(career['avg']):
+            career = compute_bowl_stats(hist)
 
-        # B) Innings statistics
-        hist_innings = hist_career[hist_career['innings'] == inns]
-        inns_stats = compute_bowling_stats(hist_innings)
-        if np.isnan(inns_stats['inns_avg']):
-            hist_global_inns = hist_df[hist_df['innings'] == inns]
-            inns_stats = compute_bowling_stats(hist_global_inns)
+        # B) Venue
+        h_ven = hist[hist['venue']==venue]
+        venue_stats = compute_bowl_stats(h_ven)
+        if pd.isna(venue_stats['avg']):
+            venue_stats = compute_bowl_stats(hist)
 
-        # C) Venue statistics
-        hist_venue = hist_career[hist_career['venue'] == venue]
-        venue_stats = compute_bowling_stats(hist_venue)
-        if np.isnan(venue_stats['ven_avg']):
-            venue_stats = compute_bowling_stats(hist_df)
+        # C) Innings
+        h_ins_le = h_leag[h_leag['inns']==inns]
+        inns_stats = compute_bowl_stats(h_ins_le)
+        if pd.isna(inns_stats['avg']):
+            inns_stats = compute_bowl_stats(hist[hist['inns']==inns])
 
-        # D) Season statistics
-        season_stats = compute_season_stats(hist_df, league, season)
+        # D) Season: first try the precomputed row, then fallback
+        mask = (
+            (bowling_df['bowler_id']==bid) &
+            (bowling_df['league']==cleag) &
+            (bowling_df['season']==cses) &
+            (bowling_df['date']    < mdate)
+        )
+        if mask.any():
+            last_row = bowling_df.loc[mask].sort_values('date').iloc[-1]
+            ssn_stats = {
+                'avg': last_row['ssn_avg'],
+                'eco': last_row['ssn_eco'],
+                'sr' : last_row['ssn_sr'],
+                'wpm': last_row['ssn_wpm'],
+                'opm': last_row['ssn_opm']
+            }
+        else:
+            ssn_stats = dict(avg=np.nan, eco=np.nan, sr=np.nan, wpm=np.nan, opm=np.nan)
 
-        # E) Last 5 matches
-        last5_stats = compute_last5_bowling_stats(hist_df.sort_values('date').tail(5))
+        # fallback block (same as before)
+        if pd.isna(ssn_stats['avg']):
+            prior = hist
+            prior_same = prior[prior['league']==cleag]
+            if len(prior_same)>0:
+                past_seasons = sorted(prior_same['season'].unique())
+                past = [s for s in past_seasons if s < cses]
+                grp = (prior_same[prior_same['season']==max(past)]
+                       if past else prior)
+            else:
+                leagues_played = prior['league'].unique()
+                grp = None
+                order = sorted(
+                    leagues_played,
+                    key=lambda lg: prior[prior['league']==lg]['date'].max(),
+                    reverse=True
+                )
+                for lg in order:
+                    lg_grp = prior[prior['league']==lg]
+                    if len(lg_grp)>=min_season_matches:
+                        grp = lg_grp
+                        break
+                if grp is None:
+                    curr_oth = prior[prior['season']==cses]
+                    grp = curr_oth if len(curr_oth)>0 else prior
 
-        # F) Career debut flag
-        career_debut = 1 if hist_df.empty else 0
+            total_runs    = grp['runs'].sum()
+            total_wkts    = grp['wickets'].sum()
+            total_balls   = grp['total_balls'].sum()
+            total_overs   = grp['total_overs'].sum()
+            total_matches = len(grp)
+            ssn_stats = {
+                'avg': total_runs / max(total_wkts,1),
+                'eco': total_runs / max(total_overs,1),
+                'sr' : total_balls / max(total_wkts,1),
+                'wpm': total_wkts / max(total_matches,1),
+                'opm': total_overs / max(total_matches,1)
+            }
 
-        # Build the final record
-        record = {
-            'inns': inns,
-            'bowler_id': bowler_id,
-            'bowler_team': bowler_team,
-            'bat_team': bat_team,
-            'venue': venue,
-            'league': league,
-            'career_avg': career_stats['career_avg'],
-            'career_eco': career_stats['career_eco'],
-            'career_sr': career_stats['career_sr'],
-            'career_wpm': career_stats['career_wpm'],
-            'career_opm': career_stats['career_opm'],
-            'inns_avg': inns_stats['inns_avg'],
-            'inns_eco': inns_stats['inns_eco'],
-            'inns_sr': inns_stats['inns_sr'],
-            'inns_wpm': inns_stats['inns_wpm'],
-            'inns_opm': inns_stats['inns_opm'],
-            'ven_avg': venue_stats['ven_avg'],
-            'ven_eco': venue_stats['ven_eco'],
-            'ven_sr': venue_stats['ven_sr'],
-            'ven_wpm': venue_stats['ven_wpm'],
-            'ven_opm': venue_stats['ven_opm'],
-            'season': season,
-            'ssn_avg': season_stats['ssn_avg'],
-            'ssn_eco': season_stats['ssn_eco'],
-            'ssn_sr': season_stats['ssn_sr'],
-            'ssn_wpm': season_stats['ssn_wpm'],
-            'ssn_opm': season_stats['ssn_opm'],
-            'last5_avg': last5_stats['last5_avg'],
-            'last5_sr': last5_stats['last5_sr'],
-            'last5_eco': last5_stats['last5_eco'],
-            'last5_wpm': last5_stats['last5_wpm'],
-            'last5_opm': last5_stats['last5_opm'],
-            'career_debut': career_debut
+        # E) Last 5
+        last5 = hist.sort_values('date', ascending=False).head(5)
+        last5_stats = compute_bowl_stats(last5)
+
+        # assemble
+        rec = {
+            'bowler_id':  bid,
+            'bowl_team':  row['bowl_team'],
+            'bat_team':   row['bat_team'],
+            'league':     cleag,
+            'career_avg': career['avg'],
+            'career_eco': career['eco'],
+            'career_sr':  career['sr'],
+            'career_wpm': career['wpm'],
+            'career_opm': career['opm'],
+            'inns':       inns,
+            'inns_avg':   inns_stats['avg'],
+            'inns_eco':   inns_stats['eco'],
+            'inns_sr':    inns_stats['sr'],
+            'inns_wpm':   inns_stats['wpm'],
+            'inns_opm':   inns_stats['opm'],
+            'venue':      venue,
+            'venue_avg':  venue_stats['avg'],
+            'venue_eco':  venue_stats['eco'],
+            'venue_sr':   venue_stats['sr'],
+            'venue_wpm':  venue_stats['wpm'],
+            'venue_opm':  venue_stats['opm'],
+            'season':     cses,
+            'ssn_avg':    ssn_stats['avg'],
+            'ssn_eco':    ssn_stats['eco'],
+            'ssn_sr':     ssn_stats['sr'],
+            'ssn_wpm':    ssn_stats['wpm'],
+            'ssn_opm':    ssn_stats['opm'],
+            'last5_avg':  last5_stats['avg'],
+            'last5_eco':  last5_stats['eco'],
+            'last5_sr':   last5_stats['sr'],
+            'last5_wpm':  last5_stats['wpm'],
+            'last5_opm':  last5_stats['opm'],
+            'career_debut': debut
         }
 
-        # Replace NaN values with 0
-        record = {k: (0 if isinstance(v, float) and np.isnan(v) else v) for k, v in record.items()}
-        output_records.append(record)
+        # fill NaN → 0
+        for k,v in rec.items():
+            if pd.isna(v):
+                rec[k] = 0
 
-    return pd.DataFrame(output_records)
+        results.append(rec)
 
-def compute_bowling_stats(df: pd.DataFrame) -> dict:
+    return pd.DataFrame(results)
+
+def get_test_bowl(df_mbm, df_match_detail):
     """
-    Compute bowling statistics from a DataFrame.
-    """
-    if df.empty:
-        # Return all necessary keys with NaN if the DataFrame is empty
-        return {
-            'career_avg': np.nan, 'career_eco': np.nan, 'career_sr': np.nan,
-            'career_wpm': np.nan, 'career_opm': np.nan,
-            'inns_avg': np.nan, 'inns_eco': np.nan, 'inns_sr': np.nan,
-            'inns_wpm': np.nan, 'inns_opm': np.nan,
-            'ven_avg': np.nan, 'ven_eco': np.nan, 'ven_sr': np.nan,
-            'ven_wpm': np.nan, 'ven_opm': np.nan
-        }
-
-    runs = df['runs'].sum()
-    balls = df['balls'].sum()
-    wickets = df['wickets'].sum()
-    matches = len(df)
-
-    avg = runs / (wickets if wickets > 0 else 1)
-    eco = (runs / balls * 6) if balls > 0 else 0
-    sr = balls / (wickets if wickets > 0 else 1)
-    wpm = wickets / matches
-    opm = balls / 6 / matches
-
-    # Return all necessary statistics with appropriate keys
-    return {
-        'career_avg': avg, 'career_eco': eco, 'career_sr': sr,
-        'career_wpm': wpm, 'career_opm': opm,
-        'inns_avg': avg, 'inns_eco': eco, 'inns_sr': sr,
-        'inns_wpm': wpm, 'inns_opm': opm,
-        'ven_avg': avg, 'ven_eco': eco, 'ven_sr': sr,
-        'ven_wpm': wpm, 'ven_opm': opm
-    }
-
-def compute_season_stats(hist_df: pd.DataFrame, league: str, season: int) -> dict:
-    """
-    Compute season-based statistics for the given league and season.
+    Computes test data for bowlers based on match details and MBM data.
 
     Parameters:
-        hist_df (pd.DataFrame): Historical match data for the bowler.
-        league (str): The league to filter.
-        season (int): The season year to compute statistics for.
+        df_mbm (pd.DataFrame): DataFrame containing MBM data.
+        df_match_detail (pd.DataFrame): DataFrame containing match details.
 
     Returns:
-        dict: A dictionary with season statistics (e.g., ssn_avg, ssn_eco, etc.).
+        pd.DataFrame: DataFrame with computed test data for bowlers.
     """
-    # Filter historical data for the specified league and season
-    season_df = hist_df[(hist_df['league'] == league) & (hist_df['date'].dt.year == season)]
+    return compute_test_data_bowl(df_mbm, df_match_detail)
 
-    # If no season data exists, provide fallback keys with NaN values
-    if season_df.empty:
-        return {
-            'ssn_avg': np.nan, 'ssn_eco': np.nan, 'ssn_sr': np.nan,
-            'ssn_wpm': np.nan, 'ssn_opm': np.nan
-        }
-
-    # Use compute_bowling_stats to calculate statistics for the season
-    stats = compute_bowling_stats(season_df)
-
-    return {
-        'ssn_avg': stats['career_avg'],  # Use 'career_avg' for season average
-        'ssn_eco': stats['career_eco'],  # Use 'career_eco' for season economy
-        'ssn_sr': stats['career_sr'],    # Use 'career_sr' for season strike rate
-        'ssn_wpm': stats['career_wpm'],  # Use 'career_wpm' for season wickets per match
-        'ssn_opm': stats['career_opm']   # Use 'career_opm' for season overs per match
-    }
-
-def compute_last5_bowling_stats(df: pd.DataFrame) -> dict:
-    """
-    Compute rolling last-5 match statistics for bowling.
-    
-    Parameters:
-        df (pd.DataFrame): DataFrame containing the last 5 matches for a bowler.
-    
-    Returns:
-        dict: A dictionary containing the last 5 match statistics (e.g., last5_avg, last5_eco, etc.).
-    """
-    if df.empty:
-        # If no data exists, return all required keys with 0 as default values
-        return {
-            'last5_avg': 0, 'last5_sr': 0, 'last5_eco': 0,
-            'last5_wpm': 0, 'last5_opm': 0
-        }
-
-    # Compute statistics for the last 5 matches
-    runs = df['runs'].sum()
-    balls = df['balls'].sum()
-    wickets = df['wickets'].sum()
-    matches = len(df)
-
-    # Ensure no division-by-zero errors
-    avg = runs / (wickets if wickets > 0 else 1)
-    sr = balls / (wickets if wickets > 0 else 1)
-    eco = (runs / balls * 6) if balls > 0 else 0
-    wpm = wickets / matches
-    opm = balls / 6 / matches
-
-    return {
-        'last5_avg': avg,
-        'last5_sr': sr,
-        'last5_eco': eco,
-        'last5_wpm': wpm,
-        'last5_opm': opm
-    }
 
 if __name__ == "__main__":
     # Fetch Match Details Data
-    df_match_detail = pd.read_csv(r"Today_Match_Details\match_15.csv")
-
+    df_match_detail = pd.read_csv(r"C:\Users\HP\jupyter notebook files\FIFS_IPL\Today_Match_Details\match_15.csv")
     # Fetch MBM Data
-    df_mbm = fetch_google_sheet_data(sheet_id=GOOGLE_SHEET_ID_MBM, sheet_index=1)
-
-    # Compute Test Data for Batting
-    test_data_bowl = compute_test_data_bowl(df_mbm, df_match_detail)
-
-    # Print the resulting DataFrame
-    with pd.option_context('display.max_columns', None):
-        print(test_data_bowl)
+    df_mbm = pd.read_csv(r"C:\Users\HP\jupyter notebook files\FIFS_IPL\data\mbm\all_league\all_league_bowl_final.csv")
+    get_test_bowl(df_mbm, df_match_detail)
