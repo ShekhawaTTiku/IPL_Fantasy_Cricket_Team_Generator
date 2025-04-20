@@ -115,8 +115,8 @@ def main():
         raise ValueError("The data must contain a 'match_id' column.")
 
     # Save each match's data to a separate CSV in the folder
-    for match_id, group in result.groupby('match_id'):
-        filename = f"bfp_{match_id}.csv"
+    for idx, (_, group) in enumerate(result.groupby('match_id'), start=1):
+        filename = f"bfp_{idx}.csv"
         filepath = os.path.join(output_folder, filename)
         group.to_csv(filepath, index=False)
         print(f"Saved: {filepath}")
