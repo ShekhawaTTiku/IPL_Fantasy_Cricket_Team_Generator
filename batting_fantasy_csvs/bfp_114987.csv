@@ -1,0 +1,25 @@
+date,match_id,batting_team,bowling_team,innings,batter_id,batter_cricinfo_id,batter,runs,balls,fours,sixes,strike_rate,isOut,wicket_desc,wicket_type,bowler_id,bowler_cricinfo_id,bowler,venue,batting_fp
+2025-03-25,114987,Punjab Kings,Gujarat Titans,1,14689,1175456,Priyansh Arya,47,23,7,2,204.35,TRUE,c Sai Sudharsan b Rashid Khan,Caught,10738,793463,Rashid Khan,Narendra Modi Stadium,97
+2025-03-25,114987,Punjab Kings,Gujarat Titans,1,14254,1161024,Prabhsimran,5,8,1,0,62.5,TRUE,c Arshad Khan b Rabada,Caught,9585,550215,Rabada,Narendra Modi Stadium,9
+2025-03-25,114987,Punjab Kings,Gujarat Titans,1,9428,642519,Shreyas Iyer,97,42,5,9,230.95,FALSE,not out,not out,,,,Narendra Modi Stadium,189
+2025-03-25,114987,Punjab Kings,Gujarat Titans,1,13214,819429,Azmatullah,16,15,2,1,106.67,TRUE,c Arshad Khan b Sai Kishore,Caught,11595,1048739,Sai Kishore,Narendra Modi Stadium,30
+2025-03-25,114987,Punjab Kings,Gujarat Titans,1,7662,325026,Maxwell,0,1,0,0,0.0,TRUE,lbw b Sai Kishore,LBW,11595,1048739,Sai Kishore,Narendra Modi Stadium,0
+2025-03-25,114987,Punjab Kings,Gujarat Titans,1,8989,325012,Stoinis,20,15,1,2,133.33,TRUE,c Arshad Khan b Sai Kishore,Caught,11595,1048739,Sai Kishore,Narendra Modi Stadium,38
+2025-03-25,114987,Punjab Kings,Gujarat Titans,1,10919,377534,Shashank Singh,44,16,6,2,275.0,FALSE,not out,not out,,,,Narendra Modi Stadium,90
+2025-03-25,114987,Punjab Kings,Gujarat Titans,1,14922,1339698,Suryansh Shedge,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Narendra Modi Stadium,0
+2025-03-25,114987,Punjab Kings,Gujarat Titans,1,14565,696401,Marco Jansen,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Narendra Modi Stadium,0
+2025-03-25,114987,Punjab Kings,Gujarat Titans,1,13217,1125976,Arshdeep Singh,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Narendra Modi Stadium,0
+2025-03-25,114987,Punjab Kings,Gujarat Titans,1,7910,430246,Chahal,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Narendra Modi Stadium,0
+2025-03-25,114987,Punjab Kings,Gujarat Titans,1,10486,777815,Vijaykumar Vyshak,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Narendra Modi Stadium,0
+2025-03-25,114987,Gujarat Titans,Punjab Kings,2,13866,1151288,Sai Sudharsan,74,41,5,6,180.49,TRUE,c Shashank Singh b Arshdeep Singh,Caught,13217,1125976,Arshdeep Singh,Narendra Modi Stadium,144
+2025-03-25,114987,Gujarat Titans,Punjab Kings,2,11808,1070173,Shubman Gill,33,14,2,3,235.71,TRUE,c Priyansh Arya b Maxwell,Caught,7662,325026,Maxwell,Narendra Modi Stadium,69
+2025-03-25,114987,Gujarat Titans,Punjab Kings,2,2258,308967,Jos Buttler,54,33,4,2,163.64,TRUE,b Marco Jansen,Bowled,14565,696401,Marco Jansen,Narendra Modi Stadium,94
+2025-03-25,114987,Gujarat Titans,Punjab Kings,2,13748,914541,Sherfane Rutherford,46,28,4,3,164.29,TRUE,b Arshdeep Singh,Bowled,13217,1125976,Arshdeep Singh,Narendra Modi Stadium,88
+2025-03-25,114987,Gujarat Titans,Punjab Kings,2,9693,423838,Rahul Tewatia,6,2,0,1,300.0,TRUE,run out (Arshdeep Singh),Run Out,,,,Narendra Modi Stadium,12
+2025-03-25,114987,Gujarat Titans,Punjab Kings,2,10226,719719,Shahrukh Khan,6,1,0,1,600.0,FALSE,not out,not out,,,,Narendra Modi Stadium,12
+2025-03-25,114987,Gujarat Titans,Punjab Kings,2,18637,1244751,Arshad Khan,1,1,0,0,100.0,FALSE,not out,not out,,,,Narendra Modi Stadium,1
+2025-03-25,114987,Gujarat Titans,Punjab Kings,2,11595,1048739,Ravisrinivasan Sai Kishore,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Narendra Modi Stadium,0
+2025-03-25,114987,Gujarat Titans,Punjab Kings,2,10738,793463,Rashid Khan,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Narendra Modi Stadium,0
+2025-03-25,114987,Gujarat Titans,Punjab Kings,2,9585,550215,Kagiso Rabada,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Narendra Modi Stadium,0
+2025-03-25,114987,Gujarat Titans,Punjab Kings,2,10808,940973,Mohammed Siraj,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Narendra Modi Stadium,0
+2025-03-25,114987,Gujarat Titans,Punjab Kings,2,10551,917159,Prasidh Krishna,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Narendra Modi Stadium,0

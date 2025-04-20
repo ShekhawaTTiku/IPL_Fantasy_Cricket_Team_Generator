@@ -1,0 +1,25 @@
+date,match_id,batting_team,bowling_team,innings,batter_id,batter_cricinfo_id,batter,runs,balls,fours,sixes,strike_rate,isOut,wicket_desc,wicket_type,bowler_id,bowler_cricinfo_id,bowler,venue,batting_fp
+2025-04-12,115129,Punjab Kings,Sunrisers Hyderabad,1,14689,1175456,Priyansh Arya,36,13,2,4,276.92,TRUE,c Nitish Reddy b Harshal Patel,Caught,8175,390481,Harshal Patel,Rajiv Gandhi International Stadium,78
+2025-04-12,115129,Punjab Kings,Sunrisers Hyderabad,1,14254,1161024,Prabhsimran,42,23,7,1,182.61,TRUE,c Cummins b Eshan Malinga,Caught,46926,1306214,Eshan Malinga,Rajiv Gandhi International Stadium,86
+2025-04-12,115129,Punjab Kings,Sunrisers Hyderabad,1,9428,642519,Shreyas Iyer,82,36,6,6,227.78,TRUE,c Head b Harshal Patel,Caught,8175,390481,Harshal Patel,Rajiv Gandhi International Stadium,160
+2025-04-12,115129,Punjab Kings,Sunrisers Hyderabad,1,13915,1151273,Nehal Wadhera,27,22,2,1,122.73,TRUE,lbw b Eshan Malinga,LBW,46926,1306214,Eshan Malinga,Rajiv Gandhi International Stadium,45
+2025-04-12,115129,Punjab Kings,Sunrisers Hyderabad,1,10919,377534,Shashank Singh,2,3,0,0,66.67,TRUE,lbw b Harshal Patel,LBW,8175,390481,Harshal Patel,Rajiv Gandhi International Stadium,2
+2025-04-12,115129,Punjab Kings,Sunrisers Hyderabad,1,7662,325026,Maxwell,3,7,0,0,42.86,TRUE,b Harshal Patel,Bowled,8175,390481,Harshal Patel,Rajiv Gandhi International Stadium,3
+2025-04-12,115129,Punjab Kings,Sunrisers Hyderabad,1,8989,325012,Stoinis,34,11,1,4,309.09,FALSE,not out,not out,,,,Rajiv Gandhi International Stadium,72
+2025-04-12,115129,Punjab Kings,Sunrisers Hyderabad,1,14565,696401,Marco Jansen,5,5,0,0,100.0,FALSE,not out,not out,,,,Rajiv Gandhi International Stadium,5
+2025-04-12,115129,Punjab Kings,Sunrisers Hyderabad,1,7910,430246,Chahal,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Rajiv Gandhi International Stadium,0
+2025-04-12,115129,Punjab Kings,Sunrisers Hyderabad,1,13217,1125976,Arshdeep Singh,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Rajiv Gandhi International Stadium,0
+2025-04-12,115129,Punjab Kings,Sunrisers Hyderabad,1,10692,493773,Lockie Ferguson,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Rajiv Gandhi International Stadium,0
+2025-04-12,115129,Punjab Kings,Sunrisers Hyderabad,1,12096,1070196,Yash Thakur,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Rajiv Gandhi International Stadium,0
+2025-04-12,115129,Sunrisers Hyderabad,Punjab Kings,2,8497,530011,Travis Head,66,37,9,3,178.38,TRUE,c Maxwell b Chahal,Caught,7910,430246,Chahal,Rajiv Gandhi International Stadium,134
+2025-04-12,115129,Sunrisers Hyderabad,Punjab Kings,2,12086,1070183,Abhishek Sharma,141,55,14,10,256.36,TRUE,c (sub)Praveen Dubey b Arshdeep Singh,Caught,13217,1125976,Arshdeep Singh,Rajiv Gandhi International Stadium,279
+2025-04-12,115129,Sunrisers Hyderabad,Punjab Kings,2,10209,436757,Heinrich Klaasen,21,14,2,1,150.0,FALSE,not out,not out,,,,Rajiv Gandhi International Stadium,37
+2025-04-12,115129,Sunrisers Hyderabad,Punjab Kings,2,10276,720471,Ishan Kishan,9,6,1,0,150.0,FALSE,not out,not out,,,,Rajiv Gandhi International Stadium,13
+2025-04-12,115129,Sunrisers Hyderabad,Punjab Kings,2,14701,1175496,Nitish Kumar Reddy,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Rajiv Gandhi International Stadium,0
+2025-04-12,115129,Sunrisers Hyderabad,Punjab Kings,2,1447065,1409976,Aniket Verma,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Rajiv Gandhi International Stadium,0
+2025-04-12,115129,Sunrisers Hyderabad,Punjab Kings,2,8095,489889,Pat Cummins,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Rajiv Gandhi International Stadium,0
+2025-04-12,115129,Sunrisers Hyderabad,Punjab Kings,2,8175,390481,Harshal Patel,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Rajiv Gandhi International Stadium,0
+2025-04-12,115129,Sunrisers Hyderabad,Punjab Kings,2,10946,942371,Zeeshan Ansari,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Rajiv Gandhi International Stadium,0
+2025-04-12,115129,Sunrisers Hyderabad,Punjab Kings,2,7909,481896,Mohammed Shami,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Rajiv Gandhi International Stadium,0
+2025-04-12,115129,Sunrisers Hyderabad,Punjab Kings,2,46926,1306214,Eshan Malinga,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Rajiv Gandhi International Stadium,0
+2025-04-12,115129,Sunrisers Hyderabad,Punjab Kings,2,10499,778963,Abhinav Manohar,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Rajiv Gandhi International Stadium,0

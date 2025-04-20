@@ -1,0 +1,25 @@
+date,match_id,batting_team,bowling_team,innings,batter_id,batter_cricinfo_id,batter,runs,balls,fours,sixes,strike_rate,isOut,wicket_desc,wicket_type,bowler_id,bowler_cricinfo_id,bowler,venue,batting_fp
+2025-04-07,115095,Royal Challengers Bengaluru,Mumbai Indians,1,10479,669365,Phil Salt,4,2,1,0,200.0,TRUE,b Boult,Bowled,8117,277912,Boult,Wankhede Stadium,8
+2025-04-07,115095,Royal Challengers Bengaluru,Mumbai Indians,1,1413,253802,Kohli,67,42,8,2,159.52,TRUE,c Naman Dhir b Hardik Pandya,Caught,9647,625371,Hardik Pandya,Wankhede Stadium,123
+2025-04-07,115095,Royal Challengers Bengaluru,Mumbai Indians,1,13088,1119026,Padikkal,37,22,2,3,168.18,TRUE,c Will Jacks b Vignesh Puthur,Caught,1447337,1460388,Vignesh Puthur,Wankhede Stadium,71
+2025-04-07,115095,Royal Challengers Bengaluru,Mumbai Indians,1,10636,823703,Rajat Patidar,64,32,5,4,200.0,TRUE,c Rickelton b Boult,Caught,8117,277912,Boult,Wankhede Stadium,122
+2025-04-07,115095,Royal Challengers Bengaluru,Mumbai Indians,1,10045,403902,Livingstone,0,2,0,0,0.0,TRUE,c Bumrah b Hardik Pandya,Caught,9647,625371,Hardik Pandya,Wankhede Stadium,0
+2025-04-07,115095,Royal Challengers Bengaluru,Mumbai Indians,1,10214,721867,Jitesh Sharma,40,19,2,4,210.53,FALSE,not out,not out,,,,Wankhede Stadium,82
+2025-04-07,115095,Royal Challengers Bengaluru,Mumbai Indians,1,13169,892749,Tim David,1,1,0,0,100.0,FALSE,not out,not out,,,,Wankhede Stadium,1
+2025-04-07,115095,Royal Challengers Bengaluru,Mumbai Indians,1,11311,471342,Krunal Pandya,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Wankhede Stadium,0
+2025-04-07,115095,Royal Challengers Bengaluru,Mumbai Indians,1,1726,326016,Bhuvneshwar,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Wankhede Stadium,0
+2025-04-07,115095,Royal Challengers Bengaluru,Mumbai Indians,1,6258,288284,Hazlewood,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Wankhede Stadium,0
+2025-04-07,115095,Royal Challengers Bengaluru,Mumbai Indians,1,14172,1159720,Yash Dayal,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Wankhede Stadium,0
+2025-04-07,115095,Royal Challengers Bengaluru,Mumbai Indians,1,36487,1350792,Suyash Sharma,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Wankhede Stadium,0
+2025-04-07,115095,Mumbai Indians,Royal Challengers Bengaluru,2,576,34102,Rohit Sharma,17,9,2,1,188.89,TRUE,b Yash Dayal,Bowled,14172,1159720,Yash Dayal,Wankhede Stadium,31
+2025-04-07,115095,Mumbai Indians,Royal Challengers Bengaluru,2,13070,605661,Ryan Rickelton,17,10,4,0,170.0,TRUE,lbw b Hazlewood,LBW,6258,288284,Hazlewood,Wankhede Stadium,37
+2025-04-07,115095,Mumbai Indians,Royal Challengers Bengaluru,2,12258,897549,Will Jacks,22,18,2,1,122.22,TRUE,c Kohli b Krunal Pandya,Caught,11311,471342,Krunal Pandya,Wankhede Stadium,36
+2025-04-07,115095,Mumbai Indians,Royal Challengers Bengaluru,2,7915,446507,Suryakumar Yadav,28,26,5,0,107.69,TRUE,c Livingstone b Yash Dayal,Caught,14172,1159720,Yash Dayal,Wankhede Stadium,52
+2025-04-07,115095,Mumbai Indians,Royal Challengers Bengaluru,2,14504,1170265,Tilak Varma,56,29,4,4,193.1,TRUE,c Phil Salt b Bhuvneshwar,Caught,1726,326016,Bhuvneshwar,Wankhede Stadium,110
+2025-04-07,115095,Mumbai Indians,Royal Challengers Bengaluru,2,9647,625371,Hardik Pandya,42,15,3,4,280.0,TRUE,c Livingstone b Hazlewood,Caught,6258,288284,Hazlewood,Wankhede Stadium,88
+2025-04-07,115095,Mumbai Indians,Royal Challengers Bengaluru,2,36139,1287032,Naman Dhir,11,6,1,1,183.33,TRUE,c Yash Dayal b Krunal Pandya,Caught,11311,471342,Krunal Pandya,Wankhede Stadium,21
+2025-04-07,115095,Mumbai Indians,Royal Challengers Bengaluru,2,10100,502714,Mitchell Santner,8,4,0,1,200.0,TRUE,c Tim David b Krunal Pandya,Caught,11311,471342,Krunal Pandya,Wankhede Stadium,14
+2025-04-07,115095,Mumbai Indians,Royal Challengers Bengaluru,2,7836,447261,Deepak Chahar,0,1,0,0,0.0,TRUE,c Tim David b Krunal Pandya,Caught,11311,471342,Krunal Pandya,Wankhede Stadium,0
+2025-04-07,115095,Mumbai Indians,Royal Challengers Bengaluru,2,8117,277912,Trent Boult,1,1,0,0,100.0,FALSE,not out,not out,,,,Wankhede Stadium,1
+2025-04-07,115095,Mumbai Indians,Royal Challengers Bengaluru,2,9311,625383,Jasprit Bumrah,0,1,0,0,0.0,FALSE,not out,not out,,,,Wankhede Stadium,0
+2025-04-07,115095,Mumbai Indians,Royal Challengers Bengaluru,2,1447337,1460388,Vignesh Puthur,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Wankhede Stadium,0

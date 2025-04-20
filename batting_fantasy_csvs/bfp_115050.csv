@@ -1,0 +1,25 @@
+date,match_id,batting_team,bowling_team,innings,batter_id,batter_cricinfo_id,batter,runs,balls,fours,sixes,strike_rate,isOut,wicket_desc,wicket_type,bowler_id,bowler_cricinfo_id,bowler,venue,batting_fp
+2025-04-03,115050,Kolkata Knight Riders,Sunrisers Hyderabad,1,8520,379143,de Kock,1,6,0,0,16.67,TRUE,c Zeeshan Ansari b Cummins,Caught,8095,489889,Cummins,Eden Gardens,1
+2025-04-03,115050,Kolkata Knight Riders,Sunrisers Hyderabad,1,2276,230558,Narine,7,7,0,1,100.0,TRUE,c Klaasen b Shami,Caught,7909,481896,Shami,Eden Gardens,13
+2025-04-03,115050,Kolkata Knight Riders,Sunrisers Hyderabad,1,1447,277916,Ajinkya Rahane,38,27,1,4,140.74,TRUE,c Klaasen b Zeeshan Ansari,Caught,10946,942371,Zeeshan Ansari,Eden Gardens,72
+2025-04-03,115050,Kolkata Knight Riders,Sunrisers Hyderabad,1,22566,1292495,Angkrish Raghuvanshi,50,32,5,2,156.25,TRUE,c Harshal Patel b Kamindu Mendis,Caught,10940,784373,Kamindu Mendis,Eden Gardens,94
+2025-04-03,115050,Kolkata Knight Riders,Sunrisers Hyderabad,1,10917,851403,Venkatesh Iyer,60,29,7,3,206.9,TRUE,c Aniket Verma b Harshal Patel,Caught,8175,390481,Harshal Patel,Eden Gardens,120
+2025-04-03,115050,Kolkata Knight Riders,Sunrisers Hyderabad,1,10896,723105,Rinku Singh,32,17,4,1,188.24,FALSE,not out,not out,,,,Eden Gardens,64
+2025-04-03,115050,Kolkata Knight Riders,Sunrisers Hyderabad,1,7736,276298,Russell,1,2,0,0,50.0,TRUE,run out (Klaasen),Run Out,,,,Eden Gardens,1
+2025-04-03,115050,Kolkata Knight Riders,Sunrisers Hyderabad,1,6692,8917,Moeen,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Eden Gardens,0
+2025-04-03,115050,Kolkata Knight Riders,Sunrisers Hyderabad,1,12337,1079470,Ramandeep Singh ,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Eden Gardens,0
+2025-04-03,115050,Kolkata Knight Riders,Sunrisers Hyderabad,1,24729,1312645,Harshit Rana,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Eden Gardens,0
+2025-04-03,115050,Kolkata Knight Riders,Sunrisers Hyderabad,1,12926,1108375,Varun Chakaravarthy,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Eden Gardens,0
+2025-04-03,115050,Kolkata Knight Riders,Sunrisers Hyderabad,1,15861,1209292,Vaibhav Arora,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Eden Gardens,0
+2025-04-03,115050,Sunrisers Hyderabad,Kolkata Knight Riders,2,8497,530011,Travis Head,4,2,1,0,200.0,TRUE,c Harshit Rana b Vaibhav Arora,Caught,15861,1209292,Vaibhav Arora,Eden Gardens,8
+2025-04-03,115050,Sunrisers Hyderabad,Kolkata Knight Riders,2,12086,1070183,Abhishek Sharma,2,6,0,0,33.33,TRUE,c Venkatesh Iyer b Harshit Rana,Caught,24729,1312645,Harshit Rana,Eden Gardens,2
+2025-04-03,115050,Sunrisers Hyderabad,Kolkata Knight Riders,2,10276,720471,Ishan Kishan,2,5,0,0,40.0,TRUE,c Ajinkya Rahane b Vaibhav Arora,Caught,15861,1209292,Vaibhav Arora,Eden Gardens,2
+2025-04-03,115050,Sunrisers Hyderabad,Kolkata Knight Riders,2,14701,1175496,Nitish Kumar Reddy,19,15,2,1,126.67,TRUE,c Narine b Russell,Caught,7736,276298,Russell,Eden Gardens,33
+2025-04-03,115050,Sunrisers Hyderabad,Kolkata Knight Riders,2,10940,784373,Kamindu Mendis,27,20,1,2,135.0,TRUE,c (sub)Anukul Roy b Narine,Caught,2276,230558,Narine,Eden Gardens,49
+2025-04-03,115050,Sunrisers Hyderabad,Kolkata Knight Riders,2,10209,436757,Heinrich Klaasen,33,21,2,2,157.14,TRUE,c Moeen b Vaibhav Arora,Caught,15861,1209292,Vaibhav Arora,Eden Gardens,61
+2025-04-03,115050,Sunrisers Hyderabad,Kolkata Knight Riders,2,1447065,1409976,Aniket Verma,6,6,1,0,100.0,TRUE,c Venkatesh Iyer b Varun Chakaravarthy,Caught,12926,1108375,Varun Chakaravarthy,Eden Gardens,10
+2025-04-03,115050,Sunrisers Hyderabad,Kolkata Knight Riders,2,8095,489889,Pat Cummins,14,15,2,0,93.33,TRUE,c Harshit Rana b Varun Chakaravarthy,Caught,12926,1108375,Varun Chakaravarthy,Eden Gardens,22
+2025-04-03,115050,Sunrisers Hyderabad,Kolkata Knight Riders,2,8175,390481,Harshal Patel,3,5,0,0,60.0,TRUE,c and b Russell,Caught,7736,276298,Russell,Eden Gardens,3
+2025-04-03,115050,Sunrisers Hyderabad,Kolkata Knight Riders,2,14163,1159722,Simarjeet Singh,0,1,0,0,0.0,TRUE,b Varun Chakaravarthy,Bowled,12926,1108375,Varun Chakaravarthy,Eden Gardens,0
+2025-04-03,115050,Sunrisers Hyderabad,Kolkata Knight Riders,2,7909,481896,Mohammed Shami,2,4,0,0,50.0,FALSE,not out,not out,,,,Eden Gardens,2
+2025-04-03,115050,Sunrisers Hyderabad,Kolkata Knight Riders,2,10946,942371,Zeeshan Ansari,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Eden Gardens,0

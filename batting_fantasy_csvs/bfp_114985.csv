@@ -1,0 +1,25 @@
+date,match_id,batting_team,bowling_team,innings,batter_id,batter_cricinfo_id,batter,runs,balls,fours,sixes,strike_rate,isOut,wicket_desc,wicket_type,bowler_id,bowler_cricinfo_id,bowler,venue,batting_fp
+2025-03-24,114985,Lucknow Super Giants,Delhi Capitals,1,9582,600498,Markram,15,13,1,1,115.38,TRUE,c Mitchell Starc b Vipraj Nigam,Caught,1431811,1449074,Vipraj Nigam,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,25
+2025-03-24,114985,Lucknow Super Giants,Delhi Capitals,1,6250,272450,Mitchell Marsh,72,36,6,6,200.0,TRUE,c Stubbs b Mukesh Kumar,Caught,10754,926851,Mukesh Kumar,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,146
+2025-03-24,114985,Lucknow Super Giants,Delhi Capitals,1,9406,604302,Pooran,75,30,6,7,250.0,TRUE,b Mitchell Starc,Bowled,7710,311592,Mitchell Starc,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,159
+2025-03-24,114985,Lucknow Super Giants,Delhi Capitals,1,10744,931581,Pant,0,6,0,0,0.0,TRUE,c du Plessis b Kuldeep Yadav,Caught,8292,559235,Kuldeep Yadav,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,0
+2025-03-24,114985,Lucknow Super Giants,Delhi Capitals,1,6349,321777,David Miller,27,19,1,2,142.11,FALSE,not out,not out,,,,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,49
+2025-03-24,114985,Lucknow Super Giants,Delhi Capitals,1,13907,1151270,Ayush Badoni,4,5,0,0,80.0,TRUE,c Stubbs b Kuldeep Yadav,Caught,8292,559235,Kuldeep Yadav,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,4
+2025-03-24,114985,Lucknow Super Giants,Delhi Capitals,1,8683,1070196,Thakur,0,2,0,0,0.0,TRUE,run out (Axar/Abishek Porel),Run Out,,,,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,0
+2025-03-24,114985,Lucknow Super Giants,Delhi Capitals,1,14606,1159711,Shahbaz Ahmed,9,8,1,0,112.5,TRUE,c (sub)Tripurana Vijay b Mitchell Starc,Caught,7710,311592,Mitchell Starc,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,13
+2025-03-24,114985,Lucknow Super Giants,Delhi Capitals,1,14659,1175441,Ravi Bishnoi,0,2,0,0,0.0,TRUE,b Mitchell Starc,Bowled,7710,311592,Mitchell Starc,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,0
+2025-03-24,114985,Lucknow Super Giants,Delhi Capitals,1,1448289,1460529,Digvesh Rathi,0,0,0,0,0.0,FALSE,not out,not out,,,,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,0
+2025-03-24,114985,Lucknow Super Giants,Delhi Capitals,1,54735,1350768,Prince Yadav,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,0
+2025-03-24,114985,Lucknow Super Giants,Delhi Capitals,1,12930,1151286,M Siddharth,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,0
+2025-03-24,114985,Delhi Capitals,Lucknow Super Giants,2,14501,1168049,Jake Fraser-McGurk,1,2,0,0,50.0,TRUE,c Ayush Badoni b Thakur,Caught,8683,1070196,Thakur,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,1
+2025-03-24,114985,Delhi Capitals,Lucknow Super Giants,2,7825,44828,Faf du Plessis,29,18,3,2,161.11,TRUE,c David Miller b Ravi Bishnoi,Caught,14659,1175441,Ravi Bishnoi,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,61
+2025-03-24,114985,Delhi Capitals,Lucknow Super Giants,2,24326,1277545,Abishek Porel,0,2,0,0,0.0,TRUE,c Pooran b Thakur,Caught,8683,1070196,Thakur,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,0
+2025-03-24,114985,Delhi Capitals,Lucknow Super Giants,2,14700,1175489,Sameer Rizvi ,4,4,1,0,100.0,TRUE,c Pant b M Siddharth,Caught,12930,1151286,M Siddharth,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,8
+2025-03-24,114985,Delhi Capitals,Lucknow Super Giants,2,8808,554691,Axar Patel,22,11,3,1,200.0,TRUE,c Pooran b Digvesh Rathi,Caught,1448289,1460529,Digvesh Rathi,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,46
+2025-03-24,114985,Delhi Capitals,Lucknow Super Giants,2,19243,595978,Tristan Stubbs,34,22,1,3,154.55,TRUE,b M Siddharth,Bowled,12930,1151286,M Siddharth,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,64
+2025-03-24,114985,Delhi Capitals,Lucknow Super Giants,2,13497,1131978,Ashutosh Sharma,66,31,5,5,212.9,FALSE,not out,not out,,,,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,130
+2025-03-24,114985,Delhi Capitals,Lucknow Super Giants,2,1431811,1449074,Vipraj Nigam,39,15,5,2,260.0,TRUE,c M Siddharth b Digvesh Rathi,Caught,1448289,1460529,Digvesh Rathi,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,81
+2025-03-24,114985,Delhi Capitals,Lucknow Super Giants,2,7710,311592,Mitchell Starc,2,5,0,0,40.0,TRUE,c Pant b Ravi Bishnoi,Caught,14659,1175441,Ravi Bishnoi,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,2
+2025-03-24,114985,Delhi Capitals,Lucknow Super Giants,2,8292,559235,Kuldeep Yadav,5,5,1,0,100.0,TRUE,run out (Pant/Prince Yadav),Run Out,,,,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,9
+2025-03-24,114985,Delhi Capitals,Lucknow Super Giants,2,8181,537119,Mohit Sharma,1,2,0,0,50.0,FALSE,not out,not out,,,,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,1
+2025-03-24,114985,Delhi Capitals,Lucknow Super Giants,2,10754,926851,Mukesh Kumar,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,0

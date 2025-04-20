@@ -1,0 +1,25 @@
+date,match_id,batting_team,bowling_team,innings,batter_id,batter_cricinfo_id,batter,runs,balls,fours,sixes,strike_rate,isOut,wicket_desc,wicket_type,bowler_id,bowler_cricinfo_id,bowler,venue,batting_fp
+2025-04-12,115122,Gujarat Titans,Lucknow Super Giants,1,13866,1151288,Sai Sudharsan,56,37,7,1,151.35,TRUE,c Pooran b Ravi Bishnoi,Caught,14659,1175441,Ravi Bishnoi,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,102
+2025-04-12,115122,Gujarat Titans,Lucknow Super Giants,1,11808,1070173,Shubman Gill,60,38,6,1,157.89,TRUE,c Markram b Avesh Khan,Caught,9781,694211,Avesh Khan,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,102
+2025-04-12,115122,Gujarat Titans,Lucknow Super Giants,1,2258,308967,Jos Buttler,16,14,2,0,114.29,TRUE,c Thakur b Digvesh Rathi,Caught,1448289,1460529,Digvesh Rathi,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,24
+2025-04-12,115122,Gujarat Titans,Lucknow Super Giants,1,10945,719715,Washington Sundar,2,3,0,0,66.67,TRUE,b Ravi Bishnoi,Bowled,14659,1175441,Ravi Bishnoi,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,2
+2025-04-12,115122,Gujarat Titans,Lucknow Super Giants,1,13748,914541,Sherfane Rutherford,22,19,3,0,115.79,TRUE,lbw b Thakur,LBW,8683,1070196,Thakur,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,34
+2025-04-12,115122,Gujarat Titans,Lucknow Super Giants,1,10226,719719,Shahrukh Khan,11,6,0,1,183.33,FALSE,not out,not out,,,,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,17
+2025-04-12,115122,Gujarat Titans,Lucknow Super Giants,1,9693,423838,Rahul Tewatia,0,1,0,0,0.0,TRUE,c Markram b Thakur,Caught,8683,1070196,Thakur,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,0
+2025-04-12,115122,Gujarat Titans,Lucknow Super Giants,1,10738,793463,Rashid Khan,4,2,0,0,200.0,FALSE,not out,not out,,,,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,4
+2025-04-12,115122,Gujarat Titans,Lucknow Super Giants,1,18637,1244751,Arshad Khan,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,0
+2025-04-12,115122,Gujarat Titans,Lucknow Super Giants,1,11595,1048739,Sai Kishore,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,0
+2025-04-12,115122,Gujarat Titans,Lucknow Super Giants,1,10808,940973,Siraj,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,0
+2025-04-12,115122,Gujarat Titans,Lucknow Super Giants,1,10551,917159,Prasidh,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,0
+2025-04-12,115122,Lucknow Super Giants,Gujarat Titans,2,9582,600498,Aiden Markram,58,31,9,1,187.1,TRUE,c Shubman Gill b Prasidh,Caught,10551,917159,Prasidh,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,114
+2025-04-12,115122,Lucknow Super Giants,Gujarat Titans,2,10744,931581,Rishabh Pant,21,18,4,0,116.67,TRUE,c Washington Sundar b Prasidh,Caught,10551,917159,Prasidh,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,37
+2025-04-12,115122,Lucknow Super Giants,Gujarat Titans,2,9406,604302,Nicholas Pooran,61,34,1,7,179.41,TRUE,c Shahrukh Khan b Rashid Khan,Caught,10738,793463,Rashid Khan,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,121
+2025-04-12,115122,Lucknow Super Giants,Gujarat Titans,2,13907,1151270,Ayush Badoni,28,20,2,1,140.0,FALSE,not out,not out,,,,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,48
+2025-04-12,115122,Lucknow Super Giants,Gujarat Titans,2,6349,321777,David Miller,7,11,0,0,63.64,TRUE,b Washington Sundar,Bowled,10945,719715,Washington Sundar,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,5
+2025-04-12,115122,Lucknow Super Giants,Gujarat Titans,2,14628,1175485,Abdul Samad,2,3,0,0,66.67,FALSE,not out,not out,,,,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,2
+2025-04-12,115122,Lucknow Super Giants,Gujarat Titans,2,10223,805235,Himmat Singh,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,0
+2025-04-12,115122,Lucknow Super Giants,Gujarat Titans,2,8683,1070196,Shardul Thakur,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,0
+2025-04-12,115122,Lucknow Super Giants,Gujarat Titans,2,14726,1176959,Akash Deep,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,0
+2025-04-12,115122,Lucknow Super Giants,Gujarat Titans,2,1448289,1460529,Digvesh Singh Rathi,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,0
+2025-04-12,115122,Lucknow Super Giants,Gujarat Titans,2,9781,694211,Avesh Khan,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,0
+2025-04-12,115122,Lucknow Super Giants,Gujarat Titans,2,14659,1175441,Ravi Bishnoi,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,0

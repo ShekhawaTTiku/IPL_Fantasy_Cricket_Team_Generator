@@ -1,0 +1,25 @@
+date,match_id,batting_team,bowling_team,innings,batter_id,batter_cricinfo_id,batter,runs,balls,fours,sixes,strike_rate,isOut,wicket_desc,wicket_type,bowler_id,bowler_cricinfo_id,bowler,venue,batting_fp
+2025-04-19,115183,Lucknow Super Giants,Rajasthan Royals,1,6250,272450,Mitchell Marsh,4,6,0,0,66.67,TRUE,c Hetmyer b Jofra Archer,Caught,11540,669855,Jofra Archer,Sawai Mansingh Stadium,4
+2025-04-19,115183,Lucknow Super Giants,Rajasthan Royals,1,9582,600498,Markram,66,45,5,3,146.67,TRUE,c Riyan Parag b W Hasaranga,Caught,10926,784379,W Hasaranga,Sawai Mansingh Stadium,114
+2025-04-19,115183,Lucknow Super Giants,Rajasthan Royals,1,9406,604302,Pooran,11,8,2,0,137.5,TRUE,lbw b Sandeep Sharma,LBW,8356,438362,Sandeep Sharma,Sawai Mansingh Stadium,19
+2025-04-19,115183,Lucknow Super Giants,Rajasthan Royals,1,10744,931581,Pant,3,9,0,0,33.33,TRUE,c Dhruv Jurel b W Hasaranga,Caught,10926,784379,W Hasaranga,Sawai Mansingh Stadium,3
+2025-04-19,115183,Lucknow Super Giants,Rajasthan Royals,1,13907,1151270,Ayush Badoni,50,34,5,1,147.06,TRUE,c Shubham Dubey b Tushar Deshpande,Caught,11307,822553,Tushar Deshpande,Sawai Mansingh Stadium,86
+2025-04-19,115183,Lucknow Super Giants,Rajasthan Royals,1,6349,321777,David Miller,7,8,0,0,87.5,FALSE,not out,not out,,,,Sawai Mansingh Stadium,7
+2025-04-19,115183,Lucknow Super Giants,Rajasthan Royals,1,14628,1175485,Abdul Samad,30,10,0,4,300.0,FALSE,not out,not out,,,,Sawai Mansingh Stadium,64
+2025-04-19,115183,Lucknow Super Giants,Rajasthan Royals,1,14659,1175441,Ravi Bishnoi,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Sawai Mansingh Stadium,0
+2025-04-19,115183,Lucknow Super Giants,Rajasthan Royals,1,8683,1070196,Thakur,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Sawai Mansingh Stadium,0
+2025-04-19,115183,Lucknow Super Giants,Rajasthan Royals,1,54735,1350768,Prince Yadav,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Sawai Mansingh Stadium,0
+2025-04-19,115183,Lucknow Super Giants,Rajasthan Royals,1,1448289,1460529,Digvesh Rathi,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Sawai Mansingh Stadium,0
+2025-04-19,115183,Lucknow Super Giants,Rajasthan Royals,1,9781,694211,Avesh Khan,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Sawai Mansingh Stadium,0
+2025-04-19,115183,Rajasthan Royals,Lucknow Super Giants,2,13940,1151278,Yashasvi Jaiswal,74,52,5,4,142.31,TRUE,b Avesh Khan,Bowled,9781,694211,Avesh Khan,Sawai Mansingh Stadium,128
+2025-04-19,115183,Rajasthan Royals,Lucknow Super Giants,2,51791,1408688,Vaibhav Suryavanshi,34,20,2,3,170.0,TRUE,st Pant b Markram,Bowled,9582,600498,Markram,Sawai Mansingh Stadium,68
+2025-04-19,115183,Rajasthan Royals,Lucknow Super Giants,2,9204,604527,Nitish Rana,8,7,0,1,114.29,TRUE,c Avesh Khan b Thakur,Caught,8683,1070196,Thakur,Sawai Mansingh Stadium,14
+2025-04-19,115183,Rajasthan Royals,Lucknow Super Giants,2,12305,1079434,Riyan Parag,39,26,3,2,150.0,TRUE,lbw b Avesh Khan,LBW,9781,694211,Avesh Khan,Sawai Mansingh Stadium,69
+2025-04-19,115183,Rajasthan Royals,Lucknow Super Giants,2,14691,1175488,Dhruv Jurel,6,5,0,0,120.0,FALSE,not out,not out,,,,Sawai Mansingh Stadium,6
+2025-04-19,115183,Rajasthan Royals,Lucknow Super Giants,2,9789,670025,Shimron Hetmyer,12,7,2,0,171.43,TRUE,c Thakur b Avesh Khan,Caught,9781,694211,Avesh Khan,Sawai Mansingh Stadium,20
+2025-04-19,115183,Rajasthan Royals,Lucknow Super Giants,2,19328,1252585,Shubham Dubey,3,3,0,0,100.0,FALSE,not out,not out,,,,Sawai Mansingh Stadium,3
+2025-04-19,115183,Rajasthan Royals,Lucknow Super Giants,2,10926,784379,Wanindu Hasaranga,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Sawai Mansingh Stadium,0
+2025-04-19,115183,Rajasthan Royals,Lucknow Super Giants,2,11540,669855,Jofra Archer,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Sawai Mansingh Stadium,0
+2025-04-19,115183,Rajasthan Royals,Lucknow Super Giants,2,18504,1138316,Maheesh Theekshana,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Sawai Mansingh Stadium,0
+2025-04-19,115183,Rajasthan Royals,Lucknow Super Giants,2,8356,438362,Sandeep Sharma,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Sawai Mansingh Stadium,0
+2025-04-19,115183,Rajasthan Royals,Lucknow Super Giants,2,11307,822553,Tushar Deshpande,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Sawai Mansingh Stadium,0

@@ -1,0 +1,25 @@
+date,match_id,batting_team,bowling_team,innings,batter_id,batter_cricinfo_id,batter,runs,balls,fours,sixes,strike_rate,isOut,wicket_desc,wicket_type,bowler_id,bowler_cricinfo_id,bowler,venue,batting_fp
+2025-04-06,115093,Sunrisers Hyderabad,Gujarat Titans,1,12086,1070183,Abhishek Sharma,18,16,4,0,112.5,TRUE,c Rahul Tewatia b Siraj,Caught,10808,940973,Siraj,Rajiv Gandhi International Stadium,34
+2025-04-06,115093,Sunrisers Hyderabad,Gujarat Titans,1,8497,530011,Head,8,5,2,0,160.0,TRUE,c Sai Sudharsan b Siraj,Caught,10808,940973,Siraj,Rajiv Gandhi International Stadium,16
+2025-04-06,115093,Sunrisers Hyderabad,Gujarat Titans,1,10276,720471,Ishan Kishan,17,14,2,0,121.43,TRUE,c Ishant b Prasidh,Caught,10551,917159,Prasidh,Rajiv Gandhi International Stadium,25
+2025-04-06,115093,Sunrisers Hyderabad,Gujarat Titans,1,14701,1175496,Nitish Reddy,31,34,3,0,91.18,TRUE,c Rashid Khan b Sai Kishore,Caught,11595,1048739,Sai Kishore,Rajiv Gandhi International Stadium,47
+2025-04-06,115093,Sunrisers Hyderabad,Gujarat Titans,1,10209,436757,Klaasen,27,19,2,1,142.11,TRUE,b Sai Kishore,Bowled,11595,1048739,Sai Kishore,Rajiv Gandhi International Stadium,47
+2025-04-06,115093,Sunrisers Hyderabad,Gujarat Titans,1,1447065,1409976,Aniket Verma,18,14,2,0,128.57,TRUE,lbw b Siraj,LBW,10808,940973,Siraj,Rajiv Gandhi International Stadium,26
+2025-04-06,115093,Sunrisers Hyderabad,Gujarat Titans,1,10940,784373,Kamindu Mendis,1,5,0,0,20.0,TRUE,c Sai Sudharsan b Prasidh,Caught,10551,917159,Prasidh,Rajiv Gandhi International Stadium,1
+2025-04-06,115093,Sunrisers Hyderabad,Gujarat Titans,1,8095,489889,Cummins,22,9,3,1,244.44,FALSE,not out,not out,,,,Rajiv Gandhi International Stadium,40
+2025-04-06,115093,Sunrisers Hyderabad,Gujarat Titans,1,14163,1159722,Simarjeet Singh,0,2,0,0,0.0,TRUE,b Siraj,Bowled,10808,940973,Siraj,Rajiv Gandhi International Stadium,0
+2025-04-06,115093,Sunrisers Hyderabad,Gujarat Titans,1,7909,481896,Shami,6,2,1,0,300.0,FALSE,not out,not out,,,,Rajiv Gandhi International Stadium,10
+2025-04-06,115093,Sunrisers Hyderabad,Gujarat Titans,1,10946,942371,Zeeshan Ansari,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Rajiv Gandhi International Stadium,0
+2025-04-06,115093,Sunrisers Hyderabad,Gujarat Titans,1,6327,390484,Jaydev Unadkat,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Rajiv Gandhi International Stadium,0
+2025-04-06,115093,Gujarat Titans,Sunrisers Hyderabad,2,13866,1151288,Sai Sudharsan,5,9,0,0,55.56,TRUE,c Aniket Verma b Shami,Caught,7909,481896,Shami,Rajiv Gandhi International Stadium,5
+2025-04-06,115093,Gujarat Titans,Sunrisers Hyderabad,2,11808,1070173,Shubman Gill,61,43,9,0,141.86,FALSE,not out,not out,,,,Rajiv Gandhi International Stadium,107
+2025-04-06,115093,Gujarat Titans,Sunrisers Hyderabad,2,2258,308967,Jos Buttler,0,3,0,0,0.0,TRUE,c Klaasen b Cummins,Caught,8095,489889,Cummins,Rajiv Gandhi International Stadium,0
+2025-04-06,115093,Gujarat Titans,Sunrisers Hyderabad,2,10945,719715,Washington Sundar,49,29,5,2,168.97,TRUE,c Aniket Verma b Shami,Caught,7909,481896,Shami,Rajiv Gandhi International Stadium,89
+2025-04-06,115093,Gujarat Titans,Sunrisers Hyderabad,2,13748,914541,Sherfane Rutherford,35,16,6,1,218.75,FALSE,not out,not out,,,,Rajiv Gandhi International Stadium,75
+2025-04-06,115093,Gujarat Titans,Sunrisers Hyderabad,2,10226,719719,Shahrukh Khan,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Rajiv Gandhi International Stadium,0
+2025-04-06,115093,Gujarat Titans,Sunrisers Hyderabad,2,9693,423838,Rahul Tewatia,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Rajiv Gandhi International Stadium,0
+2025-04-06,115093,Gujarat Titans,Sunrisers Hyderabad,2,10738,793463,Rashid Khan,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Rajiv Gandhi International Stadium,0
+2025-04-06,115093,Gujarat Titans,Sunrisers Hyderabad,2,11595,1048739,Ravisrinivasan Sai Kishore,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Rajiv Gandhi International Stadium,0
+2025-04-06,115093,Gujarat Titans,Sunrisers Hyderabad,2,10808,940973,Mohammed Siraj,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Rajiv Gandhi International Stadium,0
+2025-04-06,115093,Gujarat Titans,Sunrisers Hyderabad,2,10551,917159,Prasidh Krishna,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Rajiv Gandhi International Stadium,0
+2025-04-06,115093,Gujarat Titans,Sunrisers Hyderabad,2,702,236779,Ishant Sharma,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Rajiv Gandhi International Stadium,0

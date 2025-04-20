@@ -1,0 +1,24 @@
+date,match_id,batting_team,bowling_team,innings,batter_id,batter_cricinfo_id,batter,runs,balls,fours,sixes,strike_rate,isOut,wicket_desc,wicket_type,bowler_id,bowler_cricinfo_id,bowler,venue,batting_fp
+2025-03-30,115021,Sunrisers Hyderabad,Delhi Capitals,1,12086,1070183,Abhishek Sharma,1,1,0,0,100.0,TRUE,run out (Vipraj Nigam),Run Out,,,,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,1
+2025-03-30,115021,Sunrisers Hyderabad,Delhi Capitals,1,8497,530011,Head,22,12,4,0,183.33,TRUE,c Rahul b Mitchell Starc,Caught,7710,311592,Mitchell Starc,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,44
+2025-03-30,115021,Sunrisers Hyderabad,Delhi Capitals,1,10276,720471,Ishan Kishan,2,5,0,0,40.0,TRUE,c Stubbs b Mitchell Starc,Caught,7710,311592,Mitchell Starc,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,2
+2025-03-30,115021,Sunrisers Hyderabad,Delhi Capitals,1,14701,1175496,Nitish Reddy,0,2,0,0,0.0,TRUE,c Axar b Mitchell Starc,Caught,7710,311592,Mitchell Starc,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,0
+2025-03-30,115021,Sunrisers Hyderabad,Delhi Capitals,1,1447065,1409976,Aniket Verma,74,41,5,6,180.49,TRUE,c Jake Fraser-McGurk b Kuldeep Yadav,Caught,8292,559235,Kuldeep Yadav,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,144
+2025-03-30,115021,Sunrisers Hyderabad,Delhi Capitals,1,10209,436757,Klaasen,32,19,2,2,168.42,TRUE,c Vipraj Nigam b Mohit Sharma,Caught,8181,537119,Mohit Sharma,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,60
+2025-03-30,115021,Sunrisers Hyderabad,Delhi Capitals,1,10499,778963,Abhinav Manohar,4,6,0,0,66.67,TRUE,c du Plessis b Kuldeep Yadav,Caught,8292,559235,Kuldeep Yadav,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,4
+2025-03-30,115021,Sunrisers Hyderabad,Delhi Capitals,1,8095,489889,Cummins,2,7,0,0,28.57,TRUE,c Jake Fraser-McGurk b Kuldeep Yadav,Caught,8292,559235,Kuldeep Yadav,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,2
+2025-03-30,115021,Sunrisers Hyderabad,Delhi Capitals,1,11200,698189,Mulder,9,11,1,0,81.82,TRUE,c du Plessis b Mitchell Starc,Caught,7710,311592,Mitchell Starc,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,13
+2025-03-30,115021,Sunrisers Hyderabad,Delhi Capitals,1,8175,390481,Harshal Patel,5,9,0,0,55.56,TRUE,c Axar b Mitchell Starc,Caught,7710,311592,Mitchell Starc,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,5
+2025-03-30,115021,Sunrisers Hyderabad,Delhi Capitals,1,7909,481896,Shami,1,1,0,0,100.0,FALSE,not out,not out,,,,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,1
+2025-03-30,115021,Sunrisers Hyderabad,Delhi Capitals,1,10946,942371,Zeeshan Ansari,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,0
+2025-03-30,115021,Delhi Capitals,Sunrisers Hyderabad,2,14501,1168049,Jake Fraser-McGurk,38,32,4,2,118.75,TRUE,c and b Zeeshan Ansari,Caught,10946,942371,Zeeshan Ansari,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,70
+2025-03-30,115021,Delhi Capitals,Sunrisers Hyderabad,2,7825,44828,Faf du Plessis,50,27,3,3,185.19,TRUE,c Mulder b Zeeshan Ansari,Caught,10946,942371,Zeeshan Ansari,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,94
+2025-03-30,115021,Delhi Capitals,Sunrisers Hyderabad,2,24326,1277545,Abishek Porel,34,18,2,2,188.89,FALSE,not out,not out,,,,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,64
+2025-03-30,115021,Delhi Capitals,Sunrisers Hyderabad,2,8733,422108,KL Rahul,15,5,2,1,300.0,TRUE,b Zeeshan Ansari,Bowled,10946,942371,Zeeshan Ansari,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,29
+2025-03-30,115021,Delhi Capitals,Sunrisers Hyderabad,2,19243,595978,Tristan Stubbs,21,14,3,0,150.0,FALSE,not out,not out,,,,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,35
+2025-03-30,115021,Delhi Capitals,Sunrisers Hyderabad,2,8808,554691,Axar Patel,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,0
+2025-03-30,115021,Delhi Capitals,Sunrisers Hyderabad,2,1431811,1449074,Vipraj Nigam,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,0
+2025-03-30,115021,Delhi Capitals,Sunrisers Hyderabad,2,7710,311592,Mitchell Starc,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,0
+2025-03-30,115021,Delhi Capitals,Sunrisers Hyderabad,2,8292,559235,Kuldeep Yadav,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,0
+2025-03-30,115021,Delhi Capitals,Sunrisers Hyderabad,2,8181,537119,Mohit Sharma,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,0
+2025-03-30,115021,Delhi Capitals,Sunrisers Hyderabad,2,10754,926851,Mukesh Kumar,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,0

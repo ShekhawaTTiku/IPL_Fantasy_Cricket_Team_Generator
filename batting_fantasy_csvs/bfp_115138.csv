@@ -1,0 +1,25 @@
+date,match_id,batting_team,bowling_team,innings,batter_id,batter_cricinfo_id,batter,runs,balls,fours,sixes,strike_rate,isOut,wicket_desc,wicket_type,bowler_id,bowler_cricinfo_id,bowler,venue,batting_fp
+2025-04-13,115138,Rajasthan Royals,Royal Challengers Bengaluru,1,13940,1151278,Yashasvi Jaiswal,75,47,10,2,159.57,TRUE,lbw b Hazlewood,LBW,6258,288284,Hazlewood,Sawai Mansingh Stadium,143
+2025-04-13,115138,Rajasthan Royals,Royal Challengers Bengaluru,1,8271,425943,Samson,15,19,1,0,78.95,TRUE,st Jitesh Sharma b Krunal Pandya,Bowled,11311,471342,Krunal Pandya,Sawai Mansingh Stadium,19
+2025-04-13,115138,Rajasthan Royals,Royal Challengers Bengaluru,1,12305,1079434,Riyan Parag,30,22,3,1,136.36,TRUE,c Kohli b Yash Dayal,Caught,14172,1159720,Yash Dayal,Sawai Mansingh Stadium,54
+2025-04-13,115138,Rajasthan Royals,Royal Challengers Bengaluru,1,14691,1175488,Dhruv Jurel,35,23,2,2,152.17,FALSE,not out,not out,,,,Sawai Mansingh Stadium,63
+2025-04-13,115138,Rajasthan Royals,Royal Challengers Bengaluru,1,9789,670025,Hetmyer,9,8,1,0,112.5,TRUE,c Padikkal b Bhuvneshwar,Caught,1726,326016,Bhuvneshwar,Sawai Mansingh Stadium,13
+2025-04-13,115138,Rajasthan Royals,Royal Challengers Bengaluru,1,9204,604527,Nitish Rana,4,1,1,0,400.0,FALSE,not out,not out,,,,Sawai Mansingh Stadium,8
+2025-04-13,115138,Rajasthan Royals,Royal Challengers Bengaluru,1,10926,784379,W Hasaranga,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Sawai Mansingh Stadium,0
+2025-04-13,115138,Rajasthan Royals,Royal Challengers Bengaluru,1,11540,669855,Jofra Archer,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Sawai Mansingh Stadium,0
+2025-04-13,115138,Rajasthan Royals,Royal Challengers Bengaluru,1,18504,1138316,M Theekshana,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Sawai Mansingh Stadium,0
+2025-04-13,115138,Rajasthan Royals,Royal Challengers Bengaluru,1,8356,438362,Sandeep Sharma,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Sawai Mansingh Stadium,0
+2025-04-13,115138,Rajasthan Royals,Royal Challengers Bengaluru,1,11307,822553,Tushar Deshpande,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Sawai Mansingh Stadium,0
+2025-04-13,115138,Rajasthan Royals,Royal Challengers Bengaluru,1,14190,1159843,Kumar Kartikeya,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Sawai Mansingh Stadium,0
+2025-04-13,115138,Royal Challengers Bengaluru,Rajasthan Royals,2,10479,669365,Philip Salt,65,33,5,6,196.97,TRUE,c Yashasvi Jaiswal b Kumar Kartikeya,Caught,14190,1159843,Kumar Kartikeya,Sawai Mansingh Stadium,135
+2025-04-13,115138,Royal Challengers Bengaluru,Rajasthan Royals,2,1413,253802,Virat Kohli,62,45,4,2,137.78,FALSE,not out,not out,,,,Sawai Mansingh Stadium,100
+2025-04-13,115138,Royal Challengers Bengaluru,Rajasthan Royals,2,13088,1119026,Devdutt Padikkal,40,28,5,1,142.86,FALSE,not out,not out,,,,Sawai Mansingh Stadium,72
+2025-04-13,115138,Royal Challengers Bengaluru,Rajasthan Royals,2,10636,823703,Rajat Patidar,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Sawai Mansingh Stadium,0
+2025-04-13,115138,Royal Challengers Bengaluru,Rajasthan Royals,2,10045,403902,Liam Livingstone,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Sawai Mansingh Stadium,0
+2025-04-13,115138,Royal Challengers Bengaluru,Rajasthan Royals,2,10214,721867,Jitesh Sharma,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Sawai Mansingh Stadium,0
+2025-04-13,115138,Royal Challengers Bengaluru,Rajasthan Royals,2,13169,892749,Tim David,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Sawai Mansingh Stadium,0
+2025-04-13,115138,Royal Challengers Bengaluru,Rajasthan Royals,2,11311,471342,Krunal Pandya,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Sawai Mansingh Stadium,0
+2025-04-13,115138,Royal Challengers Bengaluru,Rajasthan Royals,2,1726,326016,Bhuvneshwar Kumar,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Sawai Mansingh Stadium,0
+2025-04-13,115138,Royal Challengers Bengaluru,Rajasthan Royals,2,6258,288284,Josh Hazlewood,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Sawai Mansingh Stadium,0
+2025-04-13,115138,Royal Challengers Bengaluru,Rajasthan Royals,2,36487,1350792,Suyash Sharma,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Sawai Mansingh Stadium,0
+2025-04-13,115138,Royal Challengers Bengaluru,Rajasthan Royals,2,14172,1159720,Yash Dayal,0,0,0,0,0.0,DNB,Not Out,DNB,,,,Sawai Mansingh Stadium,0

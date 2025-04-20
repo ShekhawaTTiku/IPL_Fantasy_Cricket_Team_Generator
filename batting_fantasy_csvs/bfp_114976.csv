@@ -1,0 +1,25 @@
+date,match_id,batting_team,bowling_team,innings,batter_id,batter_cricinfo_id,batter,runs,balls,fours,sixes,strike_rate,isOut,wicket_desc,wicket_type,bowler_id,bowler_cricinfo_id,bowler,venue,batting_fp
+2025-03-23,114976,Mumbai Indians,Chennai Super Kings,1,576,34102,Rohit,0,4,0,0,0.0,TRUE,c Shivam Dube b Khaleel Ahmed,Caught,10952,942645,Khaleel Ahmed,MA Chidambaram Stadium,0
+2025-03-23,114976,Mumbai Indians,Chennai Super Kings,1,13070,605661,Rickelton,13,7,3,0,185.71,TRUE,b Khaleel Ahmed,Bowled,10952,942645,Khaleel Ahmed,MA Chidambaram Stadium,25
+2025-03-23,114976,Mumbai Indians,Chennai Super Kings,1,12258,897549,Will Jacks,11,7,2,0,157.14,TRUE,c Shivam Dube b Ashwin,Caught,1593,26421,Ashwin,MA Chidambaram Stadium,19
+2025-03-23,114976,Mumbai Indians,Chennai Super Kings,1,7915,446507,Suryakumar Yadav,29,26,2,1,111.54,TRUE,st Dhoni b Noor Ahmad,Bowled,15452,1182529,Noor Ahmad,MA Chidambaram Stadium,47
+2025-03-23,114976,Mumbai Indians,Chennai Super Kings,1,14504,1170265,Tilak Varma,31,25,2,2,124.0,TRUE,lbw b Noor Ahmad,LBW,15452,1182529,Noor Ahmad,MA Chidambaram Stadium,55
+2025-03-23,114976,Mumbai Indians,Chennai Super Kings,1,36454,1350762,Robin Minz,3,9,0,0,33.33,TRUE,c Ravindra Jadeja b Noor Ahmad,Caught,15452,1182529,Noor Ahmad,MA Chidambaram Stadium,3
+2025-03-23,114976,Mumbai Indians,Chennai Super Kings,1,36139,1287032,Naman Dhir,17,12,1,0,141.67,TRUE,b Noor Ahmad,Bowled,15452,1182529,Noor Ahmad,MA Chidambaram Stadium,23
+2025-03-23,114976,Mumbai Indians,Chennai Super Kings,1,10100,502714,Santner,11,13,1,0,84.62,TRUE,lbw b Nathan Ellis,LBW,15480,826915,Nathan Ellis,MA Chidambaram Stadium,15
+2025-03-23,114976,Mumbai Indians,Chennai Super Kings,1,7836,447261,D Chahar,28,15,2,2,186.67,FALSE,not out,not out,,,,MA Chidambaram Stadium,58
+2025-03-23,114976,Mumbai Indians,Chennai Super Kings,1,8117,277912,Boult,1,2,0,0,50.0,TRUE,c Ruturaj Gaikwad b Khaleel Ahmed,Caught,10952,942645,Khaleel Ahmed,MA Chidambaram Stadium,1
+2025-03-23,114976,Mumbai Indians,Chennai Super Kings,1,1431171,1392201,Satyanarayana Raju,1,1,0,0,100.0,FALSE,not out,not out,,,,MA Chidambaram Stadium,1
+2025-03-23,114976,Mumbai Indians,Chennai Super Kings,1,1447337,1460388,Vignesh Puthur,0,0,0,0,0.0,DNB,Not Out,DNB,,,,MA Chidambaram Stadium,0
+2025-03-23,114976,Chennai Super Kings,Mumbai Indians,2,11177,959767,Rachin Ravindra,65,45,2,4,144.44,FALSE,not out,not out,,,,MA Chidambaram Stadium,107
+2025-03-23,114976,Chennai Super Kings,Mumbai Indians,2,9012,446763,Rahul Tripathi,2,3,0,0,66.67,TRUE,c Rickelton b D Chahar,Caught,7836,447261,D Chahar,MA Chidambaram Stadium,2
+2025-03-23,114976,Chennai Super Kings,Mumbai Indians,2,11813,1060380,Ruturaj Gaikwad,53,26,6,3,203.85,TRUE,c Will Jacks b Vignesh Puthur,Caught,1447337,1460388,Vignesh Puthur,MA Chidambaram Stadium,109
+2025-03-23,114976,Chennai Super Kings,Mumbai Indians,2,11195,714451,Shivam Dube,9,7,0,1,128.57,TRUE,c Tilak Varma b Vignesh Puthur,Caught,1447337,1460388,Vignesh Puthur,MA Chidambaram Stadium,15
+2025-03-23,114976,Chennai Super Kings,Mumbai Indians,2,9427,497121,Deepak Hooda,3,5,0,0,60.0,TRUE,c Satyanarayana Raju b Vignesh Puthur,Caught,1447337,1460388,Vignesh Puthur,MA Chidambaram Stadium,3
+2025-03-23,114976,Chennai Super Kings,Mumbai Indians,2,10420,662973,Sam Curran,4,9,0,0,44.44,TRUE,b Will Jacks,Bowled,12258,897549,Will Jacks,MA Chidambaram Stadium,4
+2025-03-23,114976,Chennai Super Kings,Mumbai Indians,2,587,234675,Ravindra Jadeja,17,18,1,0,94.44,TRUE,run out (D Chahar/Rickelton),Run Out,,,,MA Chidambaram Stadium,21
+2025-03-23,114976,Chennai Super Kings,Mumbai Indians,2,265,28081,MS Dhoni,0,2,0,0,0.0,FALSE,not out,not out,,,,MA Chidambaram Stadium,0
+2025-03-23,114976,Chennai Super Kings,Mumbai Indians,2,1593,26421,Ravichandran Ashwin,0,0,0,0,0.0,DNB,Not Out,DNB,,,,MA Chidambaram Stadium,0
+2025-03-23,114976,Chennai Super Kings,Mumbai Indians,2,15452,1182529,Noor Ahmad,0,0,0,0,0.0,DNB,Not Out,DNB,,,,MA Chidambaram Stadium,0
+2025-03-23,114976,Chennai Super Kings,Mumbai Indians,2,15480,826915,Nathan Ellis,0,0,0,0,0.0,DNB,Not Out,DNB,,,,MA Chidambaram Stadium,0
+2025-03-23,114976,Chennai Super Kings,Mumbai Indians,2,10952,942645,Khaleel Ahmed,0,0,0,0,0.0,DNB,Not Out,DNB,,,,MA Chidambaram Stadium,0

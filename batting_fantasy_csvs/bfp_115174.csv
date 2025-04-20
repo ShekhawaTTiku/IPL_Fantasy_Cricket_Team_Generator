@@ -1,0 +1,25 @@
+date,match_id,batting_team,bowling_team,innings,batter_id,batter_cricinfo_id,batter,runs,balls,fours,sixes,strike_rate,isOut,wicket_desc,wicket_type,bowler_id,bowler_cricinfo_id,bowler,venue,batting_fp
+2025-04-18,115174,Royal Challengers Bengaluru,Punjab Kings,1,10479,669365,Phil Salt,4,4,1,0,100.0,TRUE,c Josh Inglis b Arshdeep Singh,Caught,13217,1125976,Arshdeep Singh,M.Chinnaswamy Stadium,8
+2025-04-18,115174,Royal Challengers Bengaluru,Punjab Kings,1,1413,253802,Kohli,1,3,0,0,33.33,TRUE,c Marco Jansen b Arshdeep Singh,Caught,13217,1125976,Arshdeep Singh,M.Chinnaswamy Stadium,1
+2025-04-18,115174,Royal Challengers Bengaluru,Punjab Kings,1,10636,823703,Rajat Patidar,23,18,1,1,127.78,TRUE,c Xavier Bartlett b Chahal,Caught,7910,430246,Chahal,M.Chinnaswamy Stadium,33
+2025-04-18,115174,Royal Challengers Bengaluru,Punjab Kings,1,10045,403902,Livingstone,4,6,1,0,66.67,TRUE,c Priyansh Arya b Xavier Bartlett,Caught,11689,1050545,Xavier Bartlett,M.Chinnaswamy Stadium,8
+2025-04-18,115174,Royal Challengers Bengaluru,Punjab Kings,1,10214,721867,Jitesh Sharma,2,7,0,0,28.57,TRUE,c Nehal Wadhera b Chahal,Caught,7910,430246,Chahal,M.Chinnaswamy Stadium,2
+2025-04-18,115174,Royal Challengers Bengaluru,Punjab Kings,1,11311,471342,Krunal Pandya,1,2,0,0,50.0,TRUE,c and b Marco Jansen,Caught,14565,696401,Marco Jansen,M.Chinnaswamy Stadium,1
+2025-04-18,115174,Royal Challengers Bengaluru,Punjab Kings,1,13169,892749,Tim David,50,26,5,3,192.31,FALSE,not out,not out,,,,M.Chinnaswamy Stadium,102
+2025-04-18,115174,Royal Challengers Bengaluru,Punjab Kings,1,13962,1057399,Manoj Bhandage,1,4,0,0,25.0,TRUE,lbw b Marco Jansen,LBW,14565,696401,Marco Jansen,M.Chinnaswamy Stadium,1
+2025-04-18,115174,Royal Challengers Bengaluru,Punjab Kings,1,1726,326016,Bhuvneshwar,8,13,1,0,61.54,TRUE,c Xavier Bartlett b Harpreet Brar,Caught,14452,1168641,Harpreet Brar,M.Chinnaswamy Stadium,10
+2025-04-18,115174,Royal Challengers Bengaluru,Punjab Kings,1,14172,1159720,Yash Dayal,0,1,0,0,0.0,TRUE,lbw b Harpreet Brar,LBW,14452,1168641,Harpreet Brar,M.Chinnaswamy Stadium,0
+2025-04-18,115174,Royal Challengers Bengaluru,Punjab Kings,1,6258,288284,Hazlewood,0,1,0,0,0.0,FALSE,not out,not out,,,,M.Chinnaswamy Stadium,0
+2025-04-18,115174,Royal Challengers Bengaluru,Punjab Kings,1,36487,1350792,Suyash Sharma,0,0,0,0,0.0,DNB,Not Out,DNB,,,,M.Chinnaswamy Stadium,0
+2025-04-18,115174,Punjab Kings,Royal Challengers Bengaluru,2,14689,1175456,Priyansh Arya,16,11,1,1,145.45,TRUE,c Tim David b Hazlewood,Caught,6258,288284,Hazlewood,M.Chinnaswamy Stadium,28
+2025-04-18,115174,Punjab Kings,Royal Challengers Bengaluru,2,14254,1161024,Prabhsimran Singh,13,9,2,0,144.44,TRUE,c Tim David b Bhuvneshwar,Caught,1726,326016,Bhuvneshwar,M.Chinnaswamy Stadium,21
+2025-04-18,115174,Punjab Kings,Royal Challengers Bengaluru,2,9428,642519,Shreyas Iyer,7,10,0,0,70.0,TRUE,c Jitesh Sharma b Hazlewood,Caught,6258,288284,Hazlewood,M.Chinnaswamy Stadium,7
+2025-04-18,115174,Punjab Kings,Royal Challengers Bengaluru,2,10637,662235,Josh Inglis,14,17,2,0,82.35,TRUE,c Suyash Sharma b Hazlewood,Caught,6258,288284,Hazlewood,M.Chinnaswamy Stadium,22
+2025-04-18,115174,Punjab Kings,Royal Challengers Bengaluru,2,13915,1151273,Nehal Wadhera,33,19,3,3,173.68,FALSE,not out,not out,,,,M.Chinnaswamy Stadium,73
+2025-04-18,115174,Punjab Kings,Royal Challengers Bengaluru,2,10919,377534,Shashank Singh,1,5,0,0,20.0,TRUE,c Phil Salt b Bhuvneshwar,Caught,1726,326016,Bhuvneshwar,M.Chinnaswamy Stadium,1
+2025-04-18,115174,Punjab Kings,Royal Challengers Bengaluru,2,8989,325012,Marcus Stoinis,7,2,0,1,350.0,FALSE,not out,not out,,,,M.Chinnaswamy Stadium,13
+2025-04-18,115174,Punjab Kings,Royal Challengers Bengaluru,2,14565,696401,Marco Jansen,0,0,0,0,0.0,DNB,Not Out,DNB,,,,M.Chinnaswamy Stadium,0
+2025-04-18,115174,Punjab Kings,Royal Challengers Bengaluru,2,14452,1168641,Harpreet Brar,0,0,0,0,0.0,DNB,Not Out,DNB,,,,M.Chinnaswamy Stadium,0
+2025-04-18,115174,Punjab Kings,Royal Challengers Bengaluru,2,11689,1050545,Xavier Bartlett,0,0,0,0,0.0,DNB,Not Out,DNB,,,,M.Chinnaswamy Stadium,0
+2025-04-18,115174,Punjab Kings,Royal Challengers Bengaluru,2,13217,1125976,Arshdeep Singh,0,0,0,0,0.0,DNB,Not Out,DNB,,,,M.Chinnaswamy Stadium,0
+2025-04-18,115174,Punjab Kings,Royal Challengers Bengaluru,2,7910,430246,Yuzvendra Chahal,0,0,0,0,0.0,DNB,Not Out,DNB,,,,M.Chinnaswamy Stadium,0

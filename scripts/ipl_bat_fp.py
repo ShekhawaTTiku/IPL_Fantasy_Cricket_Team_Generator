@@ -96,15 +96,31 @@ def filter_data(data, start_date):
     return data[data["date"] >= pd.Timestamp(start_date)]
 
 # ---------------- MAIN ----------------
+import os
+
 def main():
     sheet_url = "https://docs.google.com/spreadsheets/d/1dumS1w_IQ7pv448tm-RKVqAQTEgOMKw59wf914qLHs0/edit?usp=sharing"
     start_date = "2025-03-22"
+    output_folder = "batting_fantasy_csvs"
+
+    # Create folder if it doesn't exist
+    os.makedirs(output_folder, exist_ok=True)
 
     df = load_google_sheet(sheet_url)
     filtered_data = filter_data(df, start_date)
     result = calculate_batting_fantasy_points(filtered_data)
-    result.to_csv("batting_fantasy_points.csv", index=False)
-    print("Fantasy points calculated and saved to 'batting_fantasy_points.csv'")
+
+    # Ensure 'match_id' column exists
+    if 'match_id' not in result.columns:
+        raise ValueError("The data must contain a 'match_id' column.")
+
+    # Save each match's data to a separate CSV in the folder
+    for match_id, group in result.groupby('match_id'):
+        filename = f"bfp_{match_id}.csv"
+        filepath = os.path.join(output_folder, filename)
+        group.to_csv(filepath, index=False)
+        print(f"Saved: {filepath}")
+
 
 if __name__ == "__main__":
     main()
