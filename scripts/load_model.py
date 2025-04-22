@@ -1,6 +1,6 @@
 import joblib
-import os
 from pycaret.regression import load_model
+from pathlib import Path
 
 def load_bat_model(bat_model_path):
     """
@@ -69,16 +69,14 @@ def load_model_pycaret():
         The loaded label encoder.
     """
     try:
-        # Get the directory where the script is located
-        script_dir = os.path.dirname(os.path.abspath(__file__))
-        # Go up one directory to the project root
-        project_root = os.path.dirname(script_dir)
+        # Get project root (parent of this script's directory)
+        project_root = Path(__file__).resolve().parent.parent
 
-        # Define model directory paths using project root
-        model_dir = os.path.join(project_root, 'model')
-        bat_model_path = os.path.join(model_dir, 'batting_model_pycaret')
-        bowl_model_path = os.path.join(model_dir, 'bowling_model_pycaret')
-        encoder_path = os.path.join(model_dir, 'label_encoders.joblib')
+        # Define model paths
+        model_dir = project_root / 'model'
+        bat_model_path = model_dir / 'batting_model_pycaret'
+        bowl_model_path = model_dir / 'bowling_model_pycaret'
+        encoder_path = model_dir / 'label_encoders.joblib'
 
         print(
             f"Using paths: \nBatting model: {bat_model_path} \nBowling model: {bowl_model_path} \nEncoder: {encoder_path}")
