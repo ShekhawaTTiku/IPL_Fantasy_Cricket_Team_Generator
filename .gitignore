@@ -16,3 +16,4 @@ models/h20_ml_final
 models/pycaret_final
 models
 models/h20_ml_final/StackedEnsemble_AllModels_3_AutoML_3_20250419_144122_bowl
+Dockerfile
