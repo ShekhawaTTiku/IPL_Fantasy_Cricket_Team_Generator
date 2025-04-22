@@ -3,6 +3,8 @@ import csv
 import numpy as np
 import os
 import pickle
+import argparse
+import sys
 from scripts.google_sheet_data_fetch import get_data_from_google_sheet
 from scripts.match_scraper import get_today_details
 from scripts.backup_match_scraper import backup_match_scrapping
@@ -13,6 +15,20 @@ from scripts.load_model import load_model_pycaret
 from scripts.batting_prediction import predict_batting_performance
 from scripts.predict_match import predict_one_match
 from scripts.optimiser import optimize_fantasy_team
+
+# Parse command line arguments with proper validation
+parser = argparse.ArgumentParser(description='Cricket Fantasy Team Optimization')
+parser.add_argument('--match', '-m', dest='match_number', type=int, default=1,
+                   help='Match number to process (default: 1)')
+
+try:
+    args = parser.parse_args()
+    if args.match_number <= 0:
+        raise ValueError("Match number must be positive")
+except Exception as e:
+    print(f"Error with command line arguments: {e}")
+    sys.exit(1)
+
 # =====MAKING DIRECTORIES=====
 downloads_folder = 'Downloads'
 output_folder = 'Output'
@@ -52,8 +68,8 @@ else:
     squad_df.to_csv(squad_csv, index=False)
 
 # =====MATCH DETAIL SCRAPING=====
-# Take match number as input
-match_number = int(input("Enter match number: "))
+# Get match number from command line arguments
+match_number = args.match_number
 print(f"\nProcessing match number: {match_number}")
 print("Starting match scrapper...")
 
@@ -70,6 +86,7 @@ else:
 
 if match_df.empty:
     print("Error: No match data found. Toss has not happened yet.")
+    sys.exit(1)
 
 # Save the match data to CSV files with match number suffix.
 match_df.to_csv(os.path.join(output_folder, f'match_df{match_number}.csv'), index=False)
@@ -107,4 +124,5 @@ fp_df = predict_one_match(
 
 # OPTIMISATION
 out = optimize_fantasy_team(match_number=match_number, fp_df=fp_df, squad_df=squad_df, output_dir=output_folder)
+
 print(out)
