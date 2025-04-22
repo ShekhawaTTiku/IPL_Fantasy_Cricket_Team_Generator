@@ -5,15 +5,6 @@
 venv/
 cricket-ipl-api/node_modules/
 logs.log
-data/bbb/ganjoo_t20_bbb_filtered.csv
-data/bbb/t20_bbb.csv
-notebooks/model_training/logs.log
-scripts/pipeline/__pycache__
 pycaret_env
-data/bbb/all_league_all_matches_bbb.csv
-models/flaml_final
-models/h20_ml_final
-models/pycaret_final
-models
-models/h20_ml_final/StackedEnsemble_AllModels_3_AutoML_3_20250419_144122_bowl
 Dockerfile
+.pyc

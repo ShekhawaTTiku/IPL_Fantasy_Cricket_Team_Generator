@@ -116,7 +116,7 @@ def predict_one_match(
         out_bowl,
         on='player_id', how='outer'
     ).fillna(0)
-    merged['total_fp'] = merged['batting_fp'] * 1.3 + merged['bowling_fp']
+    merged['total_fp'] = merged['batting_fp'] * 1.275 + merged['bowling_fp']
 
     merged_csv = os.path.join(save_dir, f"prediction_match_{match_number}_merged.csv")
     merged.to_csv(merged_csv, index=False)
