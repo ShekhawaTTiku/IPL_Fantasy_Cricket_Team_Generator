@@ -129,9 +129,8 @@ def optimize_fantasy_team(
 
         # Save CSV
         os.makedirs(output_dir, exist_ok=True)
-        path = os.path.join(output_dir, f"output_team_match_no_{match_number}.csv")
-        out.to_csv(path, index=False)
-        print(f"Optimized team saved to {path}")
+        out.to_csv(f"output_match{match_number}", index=False)
+        print(f"Optimized team saved.")
         return out
 
     except Exception as e:
