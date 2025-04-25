@@ -1,8 +1,5 @@
 import pandas as pd
-import csv
-import numpy as np
 import os
-import pickle
 import argparse
 import sys
 from scripts.google_sheet_data_fetch import get_data_from_google_sheet
@@ -12,7 +9,6 @@ from scripts.test_data_gen_bat import get_test_bat
 from scripts.test_data_gen_bowl import get_test_bowl
 from scripts.test_data_gen_matchup import get_matchup_score
 from scripts.load_model import load_model_pycaret
-from scripts.batting_prediction import predict_batting_performance
 from scripts.predict_match import predict_one_match
 from scripts.optimiser import optimize_fantasy_team
 
@@ -53,19 +49,7 @@ perf_csv = os.path.join(downloads_folder, 'perf_metric_df.csv')
 squad_csv = os.path.join(downloads_folder, 'squad_df.csv')
 
 # Load data from CSV files if they exist; otherwise, fetch from Google Sheets.
-if all(os.path.exists(path) for path in [mbm_bat_csv, mbm_bowl_csv, perf_csv, squad_csv]):
-    print("Loading data from CSV files...")
-    mbm_bat_final = pd.read_csv(mbm_bat_csv)
-    mbm_bowl_final = pd.read_csv(mbm_bowl_csv)
-    perf_metric_df = pd.read_csv(perf_csv)
-    squad_df = pd.read_csv(squad_csv)
-else:
-    print("Fetching data from Google Sheets...")
-    mbm_bat_final, mbm_bowl_final, perf_metric_df, squad_df = get_data_from_google_sheet()
-    mbm_bowl_final.to_csv(mbm_bowl_csv, index=False)
-    mbm_bat_final.to_csv(mbm_bat_csv, index=False)
-    perf_metric_df.to_csv(perf_csv, index=False)
-    squad_df.to_csv(squad_csv, index=False)
+mbm_bat_final, mbm_bowl_final, perf_metric_df, squad_df = get_data_from_google_sheet()
 
 # =====MATCH DETAIL SCRAPING=====
 # Get match number from command line arguments
@@ -97,13 +81,12 @@ test_bat = get_test_bat(mbm_bat_final, match_df)
 test_bowl = get_test_bowl(mbm_bowl_final, match_df)
 matchup_df = get_matchup_score(perf_metric_df, mbm_bowl_final, match_df, squad_df)
 
-
 # Save the test data to CSV files with match number suffix.
-test_bat.to_csv(os.path.join(output_folder, f'test_bat{match_number}.csv'), index=False)
-test_bowl.to_csv(os.path.join(output_folder, f'test_bowl{match_number}.csv'), index=False)
-matchup_df.to_csv(os.path.join(output_folder, f'matchup_score{match_number}.csv'), index=False)
+test_bat.to_csv(os.path.join(downloads_folder, f'test_bat{match_number}.csv'), index=False)
+test_bowl.to_csv(os.path.join(downloads_folder, f'test_bowl{match_number}.csv'), index=False)
+matchup_df.to_csv(os.path.join(downloads_folder, f'matchup_score{match_number}.csv'), index=False)
 
-print(f"Test data for match number {match_number} generated and saved to CSV files.")
+print(f"Test data for match number {match_number} generated and saved to CSV files in Downloads folder.")
 
 # MODEL PREDICTION
 # Load the model
