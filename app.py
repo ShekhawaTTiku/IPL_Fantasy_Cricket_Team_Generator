@@ -215,10 +215,10 @@ if matches:
                 # Display optimized team
                 st.subheader("Selected Team")
 
-                # Sort by role for display
-                role_order = {'C': 0, 'VC': 1, '': 2}
+                # Sort by role for display - using the actual values in your data
+                role_order = {'captain': 0, 'vice captain': 1, 'player': 2}
                 optimized_team['role_order'] = optimized_team['C/VC'].map(role_order)
-                display_team = optimized_team.sort_values(['role_order', 'Role'])
+                display_team = optimized_team.sort_values('role_order')
 
                 # Drop the ordering column
                 display_team = display_team.drop(columns=['role_order'])
