@@ -9,7 +9,6 @@ def load_bat_model(bat_model_path):
     try:
         # Pass the path directly to load_model, don't open the file first
         model = load_model(bat_model_path)
-        print(f"Batting model loaded successfully from {bat_model_path}")
         return model
     except Exception as e:
         print(f"Error loading batting model: {e}")
@@ -23,7 +22,6 @@ def load_bowl_model(bowl_model_path):
     try:
         # Pass the path directly to load_model, don't open the file first
         model = load_model(bowl_model_path)
-        print(f"Bowling model loaded successfully from {bowl_model_path}")
         return model
     except Exception as e:
         print(f"Error loading bowling model: {e}")
@@ -46,7 +44,6 @@ def load_label_encoder(encoder_path):
     """
     try:
         label_encoder = joblib.load(encoder_path)
-        print(f"Label encoder loaded successfully from {encoder_path}")
         return label_encoder
 
     except Exception as e:
@@ -77,9 +74,6 @@ def load_model_pycaret():
         bat_model_path = model_dir / 'batting_model_pycaret'
         bowl_model_path = model_dir / 'bowling_model_pycaret'
         encoder_path = model_dir / 'label_encoders.joblib'
-
-        print(
-            f"Using paths: \nBatting model: {bat_model_path} \nBowling model: {bowl_model_path} \nEncoder: {encoder_path}")
 
         # Load batting model
         batting_model = load_bat_model(bat_model_path)
