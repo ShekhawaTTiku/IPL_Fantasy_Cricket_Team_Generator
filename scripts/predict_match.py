@@ -120,7 +120,4 @@ def predict_one_match(
 
     merged_csv = os.path.join(save_dir, f"prediction_match_{match_number}_merged.csv")
     merged.to_csv(merged_csv, index=False)
-
-    print(f"Saved: {bat_csv}, {bowl_csv}, {merged_csv}")
-
     return merged

@@ -1,3 +1,12 @@
+# python
+"""
+Module to scrape match details from Cricbuzz for IPL 2025.
+
+This module fetches match URLs, extracts match details including date, playing XI,
+teams, venue, toss information and saves the data to a CSV file. It also creates a mapping
+between Cricbuzz and Cricinfo IDs based on data fetched from a Google Sheet.
+"""
+
 import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
@@ -6,13 +15,17 @@ import pandas as pd
 import gspread
 from google.oauth2.service_account import Credentials
 from dotenv import load_dotenv
+import logging
+
+# Configure module-level logging
+logger = logging.getLogger(__name__)
 
 # Cricbuzz Fixtures URL for IPL 2025
 FIXTURES_URL = "https://www.cricbuzz.com/cricket-series/9237/indian-premier-league-2025/matches"
 headers = {"User-Agent": "Mozilla/5.0"}
 
 # Load environment variables from .env file
-env_path = os.path.join(os.path.dirname("cricket-ipl-api\.env"), "../cricket-ipl-api/.env")
+env_path = ".env"
 load_dotenv(dotenv_path=env_path)
 
 # Environment variables
@@ -22,7 +35,12 @@ GOOGLE_PRIVATE_KEY = os.getenv("GOOGLE_PRIVATE_KEY").replace("\\n", "\n")  # Rep
 
 
 def create_id_mapping():
-    """Fetch player ID mapping from Google Sheet."""
+    """
+    Fetch player ID mapping from the Google Sheet.
+
+    Returns:
+        dict: Mapping between Cricbuzz ID and Cricinfo ID.
+    """
     try:
         credentials_info = {
             "type": "service_account",
@@ -30,29 +48,28 @@ def create_id_mapping():
             "private_key": GOOGLE_PRIVATE_KEY,
             "token_uri": "https://oauth2.googleapis.com/token"
         }
-        scopes = ['https://www.googleapis.com/auth/spreadsheets.readonly']
+        scopes = ["https://www.googleapis.com/auth/spreadsheets.readonly"]
         credentials = Credentials.from_service_account_info(credentials_info, scopes=scopes)
 
         gc = gspread.authorize(credentials)
         sheet = gc.open_by_key(GOOGLE_SHEET_ID_MAPPING).sheet1  # Access the first sheet
         records = sheet.get_all_records()
-
         df = pd.DataFrame(records)
 
         id_mapping = {}
         for _, row in df.iterrows():
-            if pd.isna(row['key_cricbuzz']) or pd.isna(row['key_cricinfo']):
+            if pd.isna(row["key_cricbuzz"]) or pd.isna(row["key_cricinfo"]):
                 continue
 
-            cricbuzz_id = str(int(row['key_cricbuzz'])) if not pd.isna(row['key_cricbuzz']) else None
-            cricinfo_id = str(int(row['key_cricinfo'])) if not pd.isna(row['key_cricinfo']) else None
+            cricbuzz_id = str(int(row["key_cricbuzz"])) if not pd.isna(row["key_cricbuzz"]) else None
+            cricinfo_id = str(int(row["key_cricinfo"])) if not pd.isna(row["key_cricinfo"]) else None
 
             if cricbuzz_id and cricinfo_id:
                 id_mapping[cricbuzz_id] = cricinfo_id
 
         return id_mapping
     except Exception as e:
-        print(f"Error creating ID mapping: {e}")
+        logger.error(f"Error creating ID mapping: {e}")
         return {}
 
 
@@ -61,10 +78,14 @@ player_id_mapping = create_id_mapping()
 
 
 def get_match_urls():
-    """Fetch all match URLs from the IPL 2025 fixtures page and list them by number."""
+    """
+    Fetch all match URLs from the IPL 2025 fixtures page.
+
+    Returns:
+        list: List of match URLs.
+    """
     response = requests.get(FIXTURES_URL, headers=headers)
     soup = BeautifulSoup(response.text, "html.parser")
-
     match_links = []
     seen_links = set()
 
@@ -90,10 +111,17 @@ def get_match_urls():
 
 
 def extract_match_date(soup):
-    """Extracts match date from the match facts page."""
+    """
+    Extracts match date from the match facts page.
+
+    Args:
+        soup (BeautifulSoup): Parsed HTML of the match page.
+
+    Returns:
+        str: Formatted match date or 'Unknown' if not found.
+    """
     try:
         date_tags = soup.find_all("span", class_="schedule-date")
-
         for tag in date_tags:
             timestamp = tag.get("timestamp")
             if timestamp:
@@ -102,18 +130,24 @@ def extract_match_date(soup):
                     formatted_date = match_date_obj.strftime("%d %b")
                     return formatted_date
                 except Exception as e:
-                    print(f"Error parsing timestamp: {e}")
-
-        print("Error: Date not found.")
+                    logger.error(f"Error parsing timestamp: {e}")
+        logger.error("Date not found.")
         return "Unknown"
-
     except Exception as e:
-        print(f"Error extracting match date: {e}")
+        logger.error(f"Error extracting match date: {e}")
         return "Unknown"
 
 
 def extract_player_id(url):
-    """Extract player ID from URL."""
+    """
+    Extract player ID from the given profile URL.
+
+    Args:
+        url (str): URL containing the player profile.
+
+    Returns:
+        str: Extracted player ID or 'Unknown' on failure.
+    """
     try:
         parts = url.split('/')
         for i, part in enumerate(parts):
@@ -121,20 +155,28 @@ def extract_player_id(url):
                 return parts[i + 1]
         return "Unknown"
     except Exception as e:
-        print(f"Error extracting player ID: {e}")
+        logger.error(f"Error extracting player ID: {e}")
         return "Unknown"
 
 
 def extract_playing_xi(soup):
-    """Extracts Playing XI and Bench players from the match page."""
+    """
+    Extracts Playing XI and Bench players from the match page.
+
+    Args:
+        soup (BeautifulSoup): Parsed HTML of the match page.
+
+    Returns:
+        tuple: ((team1_players, team2_players),
+                (team1_full_urls + bench1_full_urls, team2_full_urls + bench2_full_urls),
+                (team1_ids, team2_ids))
+    """
     match_info_sections = soup.select("div.cb-col.cb-col-100")
 
     team1_players, team2_players = [], []
     bench1_players, bench2_players = [], []
-
     team1_urls, team2_urls = [], []
     bench1_urls, bench2_urls = [], []
-
     team1_ids, team2_ids = [], []
     bench1_ids, bench2_ids = [], []
 
@@ -189,15 +231,22 @@ def extract_playing_xi(soup):
     team1_ids.extend(bench1_ids)
     team2_ids.extend(bench2_ids)
 
-    return (team1_players, team2_players), (team1_full_urls + bench1_full_urls, team2_full_urls + bench2_full_urls), (
-        team1_ids, team2_ids)
+    return (team1_players, team2_players), (team1_full_urls + bench1_full_urls, team2_full_urls + bench2_full_urls), (team1_ids, team2_ids)
 
 
 def extract_match_details(match_url):
-    """Extracts match details including date, playing XI, teams, venue, toss, innings, and player IDs."""
+    """
+    Extracts match details including date, playing XI, teams, venue, toss info, innings and player IDs.
+
+    Args:
+        match_url (str): URL of the match facts page.
+
+    Returns:
+        tuple: (match_date, match_data) where match_data is a list of match detail rows.
+    """
     response = requests.get(match_url, headers=headers)
     if response.status_code != 200:
-        print(f"Error fetching match page: {response.status_code}")
+        logger.error(f"Error fetching match page: {response.status_code}")
         return None, []
 
     soup = BeautifulSoup(response.text, "html.parser")
@@ -208,21 +257,18 @@ def extract_match_details(match_url):
     if len(fact_sections) > 4:
         full_venue = fact_sections[4].get_text(strip=True)
         venue = full_venue.split(',')[0].strip()
-
     venue = str(venue)
 
     toss_info = fact_sections[2].get_text(strip=True) if len(fact_sections) > 2 else "Unknown"
-
     teams = fact_sections[0].get_text(strip=True).split(",")[0].split(" vs ") if len(fact_sections) > 0 else []
     if len(teams) < 2:
-        print(f"Error extracting team names for {match_url}")
+        logger.error(f"Error extracting team names for {match_url}")
         return match_date, []
     team1_name, team2_name = teams
 
     (team1_players, team2_players), (_, _), (team1_ids, team2_ids) = extract_playing_xi(soup)
-
     if not team1_players or not team2_players:
-        print(f"Error extracting playing XI for {match_url}")
+        logger.error(f"Error extracting playing XI for {match_url}")
         return match_date, []
 
     team_name_map = {
@@ -242,12 +288,10 @@ def extract_match_details(match_url):
     if len(toss_winner) == 2:
         toss_team_full, decision = toss_winner[0], toss_winner[1]
         toss_team = team_name_map.get(toss_team_full, toss_team_full)
-
         if decision == "bat":
             bat_first_team = toss_team
         else:
             bat_first_team = team2_name if toss_team == team1_name else team1_name
-
         team1_innings = 1 if bat_first_team == team1_name else 2
         team2_innings = 1 if bat_first_team == team2_name else 2
     else:
@@ -268,53 +312,69 @@ def extract_match_details(match_url):
         team2_full = team2_name
 
     match_data = []
-
     for player, player_id in zip(team1_players, team1_ids):
         cricinfo_id = player_id_mapping.get(player_id, "Unknown")
-        match_data.append(
-            [player, team1_full, team2_full, venue, toss_info, team1_innings, player_id, cricinfo_id, match_date])
+        match_data.append([
+            player, team1_full, team2_full, venue, toss_info,
+            team1_innings, player_id, cricinfo_id, match_date
+        ])
 
     for player, player_id in zip(team2_players, team2_ids):
         cricinfo_id = player_id_mapping.get(player_id, "Unknown")
-        match_data.append(
-            [player, team2_full, team1_full, venue, toss_info, team2_innings, player_id, cricinfo_id, match_date])
+        match_data.append([
+            player, team2_full, team1_full, venue, toss_info,
+            team2_innings, player_id, cricinfo_id, match_date
+        ])
 
     return match_date, match_data
 
 
 def save_to_csv(data, match_number):
+    """
+    Saves match details to a CSV file.
+
+    Args:
+        data (list): Match data rows.
+        match_number (int): Match number used to name the CSV file.
+    """
     download_folder = "Today_Match_Details"
     os.makedirs(download_folder, exist_ok=True)
     filename = f"match_{match_number}.csv"
     file_path = os.path.join(download_folder, filename)
-
-    df = pd.DataFrame(data, columns=["Player Name", "Team", "Opponent", "Venue", "Toss Info", "Innings", "Player ID",
-                                     "Cricinfo ID", "Date"])
-
+    df = pd.DataFrame(data, columns=[
+        "Player Name", "Team", "Opponent", "Venue",
+        "Toss Info", "Innings", "Player ID", "Cricinfo ID", "Date"
+    ])
     try:
-        df['Venue'] = df['Venue'].astype('string')
-    except:
-        df['Venue'] = df['Venue'].astype(str)
-
+        df["Venue"] = df["Venue"].astype("string")
+    except Exception:
+        df["Venue"] = df["Venue"].astype(str)
     df.to_csv(file_path, index=False)
-
-    print(f"CSV file saved successfully: {file_path}")
+    logger.info(f"CSV file saved successfully: {file_path}")
 
 
 def check_venue_dtype(match_number):
+    """
+    Ensures the Venue column in the CSV is of string type.
+
+    Args:
+        match_number (int): Match number to locate the CSV file.
+    """
     filename = f"Today_Match_Details/match_{match_number}.csv"
-    df = pd.read_csv(filename, dtype={'Venue': 'string'})
-    if df['Venue'].dtype != 'string':
+    df = pd.read_csv(filename, dtype={"Venue": "string"})
+    if df["Venue"].dtype != "string":
         try:
-            df['Venue'] = df['Venue'].astype('string')
-        except:
-            df['Venue'] = df['Venue'].astype(str)
+            df["Venue"] = df["Venue"].astype("string")
+        except Exception:
+            df["Venue"] = df["Venue"].astype(str)
         df.to_csv(filename, index=False)
-        print("CSV file updated with venue explicitly as string type")
+        logger.info("CSV file updated with venue explicitly as string type")
 
 
 def fetch_match_details_by_number():
-    """Asks for a match number, fetches match details, and saves to CSV."""
+    """
+    Asks for a match number from the user, fetches match details and saves it to a CSV file.
+    """
     match_urls = get_match_urls()
     try:
         match_number = int(input("Enter the match number: "))
@@ -323,53 +383,49 @@ def fetch_match_details_by_number():
             match_date, match_data = extract_match_details(selected_url)
             if match_data:
                 save_to_csv(match_data, match_number)
-                print(f"Match details saved for {selected_url}")
+                logger.info(f"Match details saved for {selected_url}")
             else:
-                print(f"No Playing XI data found for match number {match_number}")
+                logger.error(f"No Playing XI data found for match number {match_number}")
         else:
-            print("Invalid match number. Please try again.")
+            logger.error("Invalid match number. Please try again.")
     except ValueError:
-        print("Invalid input. Please enter a number.")
+        logger.error("Invalid input. Please enter a number.")
 
 
-def get_today_details(match_number):
+def match_detail_scraper(match_number):
     """
-    Fetches details for a specific match by its number and returns as DataFrame.
+    Fetches details for a specific match by its number and returns a DataFrame.
 
     Args:
-        match_number (int): The number of the match to fetch details for
+        match_number (int): The number of the match to fetch.
 
     Returns:
-        pd.DataFrame: DataFrame containing match details or None if unsuccessful
+        pandas.DataFrame or None: DataFrame containing match details or None if unsuccessful.
     """
     match_urls = get_match_urls()
-
     if 1 <= match_number <= len(match_urls):
         selected_url = match_urls[match_number - 1]
         match_date, match_data = extract_match_details(selected_url)
-
         if match_data:
             df = pd.DataFrame(match_data, columns=[
                 "Player Name", "Team", "Opponent", "Venue",
                 "Toss Info", "Innings", "Player ID", "Cricinfo ID", "Date"
             ])
-
-            df['Player ID'] = df['Player ID'].astype(int)
-            df['Cricinfo ID'] = df['Cricinfo ID'].astype(int)
+            try:
+                df["Player ID"] = df["Player ID"].astype(int)
+                df["Cricinfo ID"] = df["Cricinfo ID"].astype(int)
+            except Exception as e:
+                logger.error(f"Error casting IDs to int: {e}")
 
             try:
-                df['Venue'] = df['Venue'].astype('string')
-            except:
-                df['Venue'] = df['Venue'].astype(str)
+                df["Venue"] = df["Venue"].astype("string")
+            except Exception:
+                df["Venue"] = df["Venue"].astype(str)
 
             return df
         else:
-            print("No match data found!")
+            logger.error("No match data found!")
             return None
     else:
-        print("Invalid match number!")
+        logger.error("Invalid match number!")
         return None
-
-# Uncomment the following line to run the script standalone:
-# if __name__ == "__main__":
-#     get_today_details(1)

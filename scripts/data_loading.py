@@ -1,3 +1,4 @@
+import logging
 import os
 import pandas as pd
 import gspread
@@ -5,12 +6,12 @@ from google.oauth2.service_account import Credentials
 from dotenv import load_dotenv
 
 # Load environment variables from .env file
-env_path = "cricket-ipl-api/.env"
+env_path = ".env"
 load_dotenv(dotenv_path=env_path)
 
 # Environment variables
 GOOGLE_SERVICE_ACCOUNT_EMAIL = os.getenv("GOOGLE_SERVICE_ACCOUNT_EMAIL")
-GOOGLE_PRIVATE_KEY = os.getenv("GOOGLE_PRIVATE_KEY").replace("\\n", "\n")  # Replace escaped newlines
+GOOGLE_PRIVATE_KEY = os.getenv("GOOGLE_PRIVATE_KEY").replace("\\n", "\n")
 GOOGLE_SHEET_ID_BAT = os.getenv("GOOGLE_SHEET_ID_BAT")  # Google Sheet ID for batting data
 GOOGLE_SHEET_ID_BOWL = os.getenv("GOOGLE_SHEET_ID_BOWL")  # Google Sheet ID for bowling data
 GOOGLE_SHEET_ID_IPL_DATA = os.getenv("GOOGLE_SHEET_ID_MAPPING")
@@ -44,7 +45,7 @@ def fetch_google_sheet_data(sheet_id, sheet_index=1):
     records = sheet.get_all_records()  # Fetch all rows as a list of dictionaries
     return pd.DataFrame(records)  # Convert to a Pandas DataFrame
 
-def get_data_from_google_sheet():
+def get_data():
     """
     Main function to generate test data for batting and bowling.
     """
@@ -65,4 +66,5 @@ def get_data_from_google_sheet():
         return mbm_bat_final, mbm_bowl_final, perf_metric_df, squad_df
 
     except Exception as e:
-        print(f"An error occurred: {e}")
+        logging.error(f"Error fetching data from Google Sheets: {e}")
+        return None

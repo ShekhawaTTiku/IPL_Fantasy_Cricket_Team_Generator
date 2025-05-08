@@ -14,9 +14,12 @@ def compute_stats(df: pd.DataFrame) -> dict:
     """
     if df.empty:
         return {'avg': np.nan, 'rpm': np.nan, 'sr': np.nan, 'bpm': np.nan, 'bfpm': np.nan}
-    
+
     df = df.copy()
-    df['isOut'] = pd.to_numeric(df['isOut'], errors='coerce').fillna(0).astype(int)
+    df['isOut'] = df['isOut'].replace('DNB', False)
+    df['isOut'] = df['isOut'].replace('FALSE', False)
+    df['isOut'] = df['isOut'].replace('TRUE', True)
+    df['isOut'] = pd.to_numeric(df['isOut']).astype(int)
 
     total_runs = df['runs'].sum()
     dismissals = df['isOut'].sum()
@@ -39,6 +42,11 @@ def compute_last5_stats(df: pd.DataFrame) -> dict:
     """
     if df.empty:
         return {'last5_avg': 0, 'last5_sr': 0, 'last5_rpm': 0, 'last5_bfpm': 0, 'last5_bpm': 0}
+    df['isOut'] = df['isOut'].replace('DNB', False)
+    df['isOut'] = df['isOut'].replace('FALSE', False)
+    df['isOut'] = df['isOut'].replace('TRUE', True)
+    df['isOut'] = pd.to_numeric(df['isOut']).astype(int)
+
     total_runs = df['runs'].sum()
     dismissals = df['isOut'].sum()
     total_balls = df['balls'].sum()
@@ -68,9 +76,10 @@ def compute_test_data_bat(df_mbm: pd.DataFrame, df_match_detail: pd.DataFrame) -
     df_mbm = df_mbm.copy()
     df_match_detail = df_match_detail.copy()
 
-    numeric_columns = ['runs', 'balls', 'fours', 'sixes', 'isOut']
+    numeric_columns = ['runs', 'balls', 'fours', 'sixes']
     for col in numeric_columns:
         df_mbm[col] = pd.to_numeric(df_mbm[col], errors='coerce').fillna(0).astype(int)
+
 
     df_mbm['date'] = pd.to_datetime(df_mbm['date'])
     df_match_detail['Date'] = pd.to_datetime(df_match_detail['Date'] + ' 2025', format='%d %b %Y')
