@@ -1,111 +1,105 @@
-import pandas as pd
+import logging
 import os
-import argparse
-import sys
-from scripts.google_sheet_data_fetch import get_data_from_google_sheet
-from scripts.match_scraper import get_today_details
-from scripts.backup_match_scraper import backup_match_scrapping
 from scripts.test_data_gen_bat import get_test_bat
 from scripts.test_data_gen_bowl import get_test_bowl
 from scripts.test_data_gen_matchup import get_matchup_score
-from scripts.load_model import load_model_pycaret
 from scripts.predict_match import predict_one_match
+from scripts.data_loading import get_data
+from scripts.model_loading import load_models
+from scripts.output_module import get_output_mode
+from scripts.input_module import (get_input_method, process_input)
 from scripts.optimiser import optimize_fantasy_team
 
-# Parse command line arguments with proper validation
-parser = argparse.ArgumentParser(description='Cricket Fantasy Team Optimization')
-parser.add_argument('--match', '-m', dest='match_number', type=int, default=1,
-                   help='Match number to process (default: 1)')
-
-try:
-    args = parser.parse_args()
-    if args.match_number <= 0:
-        raise ValueError("Match number must be positive")
-except Exception as e:
-    print(f"Error with command line arguments: {e}")
-    sys.exit(1)
-
-# =====MAKING DIRECTORIES=====
-downloads_folder = 'Downloads'
-output_folder = 'Output'
-
-if not os.path.exists(output_folder):
-    os.makedirs(output_folder)
-    print(f"Created folder: {output_folder}")
-else:
-    print(f"Folder already exists: {output_folder}")
-
-if not os.path.exists(downloads_folder):
-    os.makedirs(downloads_folder)
-    print(f"Created folder: {downloads_folder}")
-else:
-    print(f"Folder already exists: {downloads_folder}")
-
-# =====FETCHING GOOGLE SHEET DATA=====
-# Define CSV file paths.
-mbm_bat_csv = os.path.join(downloads_folder, 'mbm_bat_final.csv')
-mbm_bowl_csv = os.path.join(downloads_folder, 'mbm_bowl_final.csv')
-perf_csv = os.path.join(downloads_folder, 'perf_metric_df.csv')
-squad_csv = os.path.join(downloads_folder, 'squad_df.csv')
-
-# Load data from CSV files if they exist; otherwise, fetch from Google Sheets.
-mbm_bat_final, mbm_bowl_final, perf_metric_df, squad_df = get_data_from_google_sheet()
-
-# =====MATCH DETAIL SCRAPING=====
-# Get match number from command line arguments
-match_number = args.match_number
-print(f"\nProcessing match number: {match_number}")
-print("Starting match scrapper...")
-
-# Scrape match details
-match_df = get_today_details(match_number=match_number)
-# Check if match_df is empty
-if not match_df.empty:
-    print("Successfully scraped match data!")
-    print(f"Match date: {match_df['Date'].iloc[0]}")
-else:
-    print(f"Failed to scrape match data for match number {match_number}.")
-    print("Using backup match scrapping...")
-    match_df = backup_match_scrapping()
-
-if match_df.empty:
-    print("Error: No match data found. Toss has not happened yet.")
-    sys.exit(1)
-
-# Save the match data to CSV files with match number suffix.
-match_df.to_csv(os.path.join(output_folder, f'match_df{match_number}.csv'), index=False)
-
-# =====TEST DATA GENERATION=====
-# Generate test data for batting, bowling, and matchup scores.
-test_bat = get_test_bat(mbm_bat_final, match_df)
-test_bowl = get_test_bowl(mbm_bowl_final, match_df)
-matchup_df = get_matchup_score(perf_metric_df, mbm_bowl_final, match_df, squad_df)
-
-# Save the test data to CSV files with match number suffix.
-test_bat.to_csv(os.path.join(downloads_folder, f'test_bat{match_number}.csv'), index=False)
-test_bowl.to_csv(os.path.join(downloads_folder, f'test_bowl{match_number}.csv'), index=False)
-matchup_df.to_csv(os.path.join(downloads_folder, f'matchup_score{match_number}.csv'), index=False)
-
-print(f"Test data for match number {match_number} generated and saved to CSV files in Downloads folder.")
-
-# MODEL PREDICTION
-# Load the model
-bat_model, bowl_model, label_encoder = load_model_pycaret()
-
-# Prediction
-# run predictions for this single match
-fp_df = predict_one_match(
-    match_number=match_number,
-    bat_model=bat_model,
-    bowl_model=bowl_model,
-    label_encoder=label_encoder,
-    test_bat_df=test_bat,
-    test_bowl_df=test_bowl,
-    matchup_df=matchup_df,
-    save_dir=output_folder
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler('fantasy_team.log'),
+        logging.StreamHandler()
+    ]
 )
 
-# OPTIMISATION
-out = optimize_fantasy_team(match_number=match_number, fp_df=fp_df, squad_df=squad_df, output_dir=output_folder)
+def main():
+    """Main function to run the fantasy team optimization process."""
+    try:
+        logging.info("Starting fantasy team optimization process")
 
-print(out)
+        # =====MAKING DIRECTORIES=====
+        output_folder = 'Output'
+        os.makedirs(output_folder, exist_ok=True)
+
+        # =====FETCHING GOOGLE SHEET DATA=====
+        logging.info("Fetching data from Google Sheets")
+        mbm_bat_final, mbm_bowl_final, perf_metric_df, squad_df = get_data()
+
+        # =====GET INPUT METHOD=====
+        input_method = get_input_method()
+        match_df, match_number = process_input(input_method, squad_df)
+
+        # =====TEST DATA GENERATION=====
+        logging.info("Generating test data")
+        try:
+            test_bat = get_test_bat(mbm_bat_final, match_df)
+            test_bowl = get_test_bowl(mbm_bowl_final, match_df)
+            matchup_df = get_matchup_score(perf_metric_df, mbm_bowl_final, match_df, squad_df)
+        except Exception as e:
+            logging.error(f"Error in test data generation: {str(e)}")
+            return
+
+        # =====MODEL LOADING=====
+        logging.info("Loading ML models")
+        try:
+            batting_model, bowling_model, label_encoder = load_models()
+        except Exception as e:
+            logging.error(f"Error in loading models: {str(e)}")
+            return
+
+        # =====MODEL PREDICTION=====
+        logging.info("Running predictions")
+        try:
+            fp_df = predict_one_match(
+                match_number=match_number,
+                test_bat_df=test_bat,
+                test_bowl_df=test_bowl,
+                matchup_df=matchup_df,
+                bat_model=batting_model,
+                bowl_model=bowling_model,
+                label_encoder=label_encoder,
+                save_dir=output_folder
+            )
+        except Exception as e:
+            logging.error(f"Error in prediction: {str(e)}")
+            print("Failed to generate predictions. Please try again.")
+            return
+
+        # =====OUTPUT MODE SELECTION=====
+        logging.info("Selecting output mode")
+        output_mode = get_output_mode()
+
+        # =====OPTIMISATION=====
+        logging.info(f"Processing output mode {output_mode}")
+        try:
+            result  = optimize_fantasy_team(
+                match_number=match_number,
+                fp_df=fp_df,
+                squad_df=squad_df,
+                output_dir=output_folder,
+                output_mode=output_mode
+            )
+
+            if result is not None:
+                logging.info("Team selection completed successfully")
+                logging.info(f"Results have been saved in the {output_folder} directory.")
+
+        except Exception as e:
+            logging.error(f"Error in optimising team: {str(e)}")
+            return
+
+    except Exception as e:
+        logging.error(f"Unexpected error in main process: {str(e)}")
+        print("An unexpected error occurred. Please check the logs for details.")
+        return
+
+if __name__ == "__main__":
+    main()
