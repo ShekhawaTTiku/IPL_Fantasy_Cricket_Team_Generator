@@ -6,3 +6,4 @@ venv/
 logs.log
 pycaret_env
 .pyc
+.env

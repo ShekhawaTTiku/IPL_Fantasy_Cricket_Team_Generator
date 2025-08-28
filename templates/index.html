@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy Cricket Team Generator</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; margin: 20px; background-color: #f4f4f4; }
+        .container { max-width: 800px; margin: auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h1 { text-align: center; color: #333; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; }
+        input[type="text"], input[type="number"], select { width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box; }
+        button { display: block; width: 100%; padding: 10px; background-color: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; }
+        button:hover { background-color: #218838; }
+        #results { margin-top: 20px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { padding: 12px; border: 1px solid #ddd; text-align: left; }
+        th { background-color: #f2f2f2; }
+        .loader { text-align: center; display: none; }
+        .error { color: red; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Fantasy Cricket Team Generator</h1>
+
+        <div class="form-group">
+            <label for="input_method">Input Method:</label>
+            <select id="input_method" onchange="toggleInputFields()">
+                <option value="scraper">Match Number (Scraper)</option>
+                <option value="custom">Custom Input</option>
+            </select>
+        </div>
+
+        <div id="scraper_fields">
+            <div class="form-group">
+                <label for="match_number">Match Number:</label>
+                <input type="number" id="match_number" placeholder="Enter match number (e.g., 1)" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+            </div>
+        </div>
+
+        <div id="custom_fields" style="display: none;">
+            <div class="form-group">
+                <label for="team1">Team 1:</label>
+                <select id="team1" onchange="updateTeamAndTossOptions()"></select>
+            </div>
+            <div class="form-group">
+                <label for="team2">Team 2:</label>
+                <select id="team2" onchange="updateTeamAndTossOptions()"></select>
+            </div>
+            <div class="form-group">
+                <label for="venue">Venue:</label>
+                <select id="venue"></select>
+            </div>
+            <div class="form-group">
+                <label for="toss_winner">Toss Winner:</label>
+                <select id="toss_winner"></select>
+            </div>
+            <div class="form-group">
+                <label for="toss_decision">Toss Decision:</label>
+                <select id="toss_decision">
+                    <option value="bat">Bat</option>
+                    <option value="field">Field</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="output_mode">Output Mode:</label>
+            <select id="output_mode">
+                <option value="1">Best XI</option>
+                <option value="2" selected>Best XI + Backups</option>
+                <option value="3">Player Rankings</option>
+            </select>
+        </div>
+
+        <button onclick="getPredictions()">Generate Team</button>
+
+        <div class="loader" id="loader">
+            <p>Generating team... This may take a moment.</p>
+        </div>
+        <div class="error" id="error"></div>
+        <div id="results"></div>
+    </div>
+
+    <script>
+        const validTeams = ['CSK', 'DC', 'GT', 'KKR', 'LSG', 'MI', 'PBKS', 'RCB', 'RR', 'SRH'];
+        const validVenues = [
+            'MA Chidambaram Stadium', 'Arun Jaitley Stadium', 'Narendra Modi Stadium', 'Eden Gardens',
+            'Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium', 'Wankhede Stadium',
+            'Punjab Cricket Association IS Bindra Stadium', 'M.Chinnaswamy Stadium', 'Sawai Mansingh Stadium',
+            'Rajiv Gandhi International Stadium', 'Himachal Pradesh Cricket Association Stadium',
+            'Maharaja Yadavindra Singh International Cricket Stadium', 'Barsapara Cricket Stadium',
+            'Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium'
+        ];
+
+        function populateDropdown(selectElement, options, selectedValue) {
+            selectElement.innerHTML = ''; // Clear existing options
+            options.forEach(optionValue => {
+                const option = document.createElement('option');
+                option.value = optionValue;
+                option.textContent = optionValue;
+                selectElement.appendChild(option);
+            });
+            if (selectedValue) {
+                selectElement.value = selectedValue;
+            }
+        }
+
+        function updateTeamAndTossOptions() {
+            const team1Select = document.getElementById('team1');
+            const team2Select = document.getElementById('team2');
+            const selectedTeam1 = team1Select.value;
+            const selectedTeam2 = team2Select.value;
+
+            // Update Team 2 dropdown to exclude selected Team 1
+            const team2Options = validTeams.filter(team => team !== selectedTeam1);
+            populateDropdown(team2Select, team2Options, selectedTeam2);
+
+            // Update Team 1 dropdown to exclude selected Team 2
+            const team1Options = validTeams.filter(team => team !== team2Select.value);
+            populateDropdown(team1Select, team1Options, selectedTeam1);
+
+            updateTossWinnerOptions();
+        }
+
+        function updateTossWinnerOptions() {
+            const team1 = document.getElementById('team1').value;
+            const team2 = document.getElementById('team2').value;
+            const tossWinnerSelect = document.getElementById('toss_winner');
+
+            const options = [];
+            if (team1) options.push(team1);
+            if (team2) options.push(team2);
+
+            populateDropdown(tossWinnerSelect, options);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const team1Select = document.getElementById('team1');
+            const team2Select = document.getElementById('team2');
+            const venueSelect = document.getElementById('venue');
+
+            populateDropdown(team1Select, validTeams);
+            populateDropdown(team2Select, validTeams);
+            populateDropdown(venueSelect, validVenues);
+
+            // Set a default different team for team2 to avoid confusion
+            if(validTeams.length > 1) {
+                team2Select.value = validTeams[1];
+            }
+
+            updateTeamAndTossOptions();
+        });
+
+
+        function toggleInputFields() {
+            const method = document.getElementById('input_method').value;
+            if (method === 'scraper') {
+                document.getElementById('scraper_fields').style.display = 'block';
+                document.getElementById('custom_fields').style.display = 'none';
+            } else {
+                document.getElementById('scraper_fields').style.display = 'none';
+                document.getElementById('custom_fields').style.display = 'block';
+            }
+        }
+
+        async function getPredictions() {
+            document.getElementById('loader').style.display = 'block';
+            document.getElementById('results').innerHTML = '';
+            document.getElementById('error').innerHTML = '';
+
+            const input_method = document.getElementById('input_method').value;
+            const output_mode = document.getElementById('output_mode').value;
+            let payload = { input_method, output_mode };
+
+            if (input_method === 'scraper') {
+                const matchNumber = document.getElementById('match_number').value;
+                if (!matchNumber) {
+                    document.getElementById('error').innerText = 'Error: Please enter a match number.';
+                    document.getElementById('loader').style.display = 'none';
+                    return;
+                }
+                payload.match_number = matchNumber;
+            } else {
+                const team1 = document.getElementById('team1').value;
+                const team2 = document.getElementById('team2').value;
+                if (team1 === team2) {
+                    document.getElementById('error').innerText = 'Error: Team 1 and Team 2 cannot be the same.';
+                    document.getElementById('loader').style.display = 'none';
+                    return;
+                }
+                payload.match_details = {
+                    team1: team1,
+                    team2: team2,
+                    venue: document.getElementById('venue').value,
+                    toss_winner: document.getElementById('toss_winner').value,
+                    toss_decision: document.getElementById('toss_decision').value
+                };
+            }
+
+            try {
+                const response = await fetch('/predict', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                if (!response.ok) {
+                    const err = await response.json();
+                    throw new Error(err.error || 'Something went wrong');
+                }
+
+                const data = await response.json();
+                displayResults(data);
+
+            } catch (error) {
+                document.getElementById('error').innerText = `Error: ${error.message}`;
+            } finally {
+                document.getElementById('loader').style.display = 'none';
+            }
+        }
+
+        function displayResults(data) {
+            const resultsDiv = document.getElementById('results');
+            if (!data || data.length === 0) {
+                resultsDiv.innerHTML = '<p>No results to display.</p>';
+                return;
+            }
+
+            const table = document.createElement('table');
+            const thead = document.createElement('thead');
+            const tbody = document.createElement('tbody');
+            const headers = Object.keys(data[0]);
+
+            const headerRow = document.createElement('tr');
+            headers.forEach(header => {
+                const th = document.createElement('th');
+                th.innerText = header;
+                headerRow.appendChild(th);
+            });
+            thead.appendChild(headerRow);
+
+            data.forEach(rowData => {
+                const row = document.createElement('tr');
+                headers.forEach(header => {
+                    const td = document.createElement('td');
+                    td.innerText = rowData[header];
+                    row.appendChild(td);
+                });
+                tbody.appendChild(row);
+            });
+
+            table.appendChild(thead);
+            table.appendChild(tbody);
+            resultsDiv.appendChild(table);
+        }
+    </script>
+</body>
+</html>
