@@ -7,3 +7,11 @@ logs.log
 pycaret_env
 .pyc
 .env
+__pycache__/
+*.pyo
+*.pyd
+
+# Output files
+Output/
+fantasy_team.log
+Today_Match_Details/

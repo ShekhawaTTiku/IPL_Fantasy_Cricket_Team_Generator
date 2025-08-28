@@ -148,7 +148,7 @@ class BowlerQualityCalculator:
 
         # Rename key and cast bowler_id to string.
         agg.rename(columns={'key_cricinfo': 'bowler_id'}, inplace=True)
-        agg['bowler_id'] = agg['bowler_id'].astype(int)
+        agg['bowler_id'] = agg['bowler_id'].astype(str)
         return agg[[
             'bowler_id', 'bowler', 'matches_played',
             'bowling_avg_hist', 'strike_rate_hist',

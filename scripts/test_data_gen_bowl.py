@@ -215,8 +215,7 @@ def compute_test_data_bowl(df_mbm, df_match_detail, min_season_matches=3):
         results.append(rec)
 
         df_results = pd.DataFrame(results)
-        df_results.bowler_id = df_results.bowler_id.astype(int)
-
+        df_results.bowler_id = df_results.bowler_id.astype(str)
     return df_results
 
 def get_test_bowl(df_mbm, df_match_detail):
