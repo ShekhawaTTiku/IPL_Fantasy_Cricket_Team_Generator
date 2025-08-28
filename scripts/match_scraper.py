@@ -231,7 +231,8 @@ def extract_playing_xi(soup):
     team1_ids.extend(bench1_ids)
     team2_ids.extend(bench2_ids)
 
-    return (team1_players, team2_players), (team1_full_urls + bench1_full_urls, team2_full_urls + bench2_full_urls), (team1_ids, team2_ids)
+    return (team1_players, team2_players), (team1_full_urls + bench1_full_urls, team2_full_urls + bench2_full_urls), (
+        team1_ids, team2_ids)
 
 
 def extract_match_details(match_url):
@@ -411,12 +412,8 @@ def match_detail_scraper(match_number):
                 "Player Name", "Team", "Opponent", "Venue",
                 "Toss Info", "Innings", "Player ID", "Cricinfo ID", "Date"
             ])
-            try:
-                df["Player ID"] = df["Player ID"].astype(int)
-                df["Cricinfo ID"] = df["Cricinfo ID"].astype(int)
-            except Exception as e:
-                logger.error(f"Error casting IDs to int: {e}")
 
+            # Ensure Venue is string type
             try:
                 df["Venue"] = df["Venue"].astype("string")
             except Exception:

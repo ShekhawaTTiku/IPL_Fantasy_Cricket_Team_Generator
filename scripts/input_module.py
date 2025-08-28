@@ -3,7 +3,6 @@ import pandas as pd
 import random
 from datetime import datetime
 
-# from main import squad_df
 from scripts.match_scraper import match_detail_scraper
 from scripts.backup_match_scraper import backup_match_details_scraper
 
@@ -35,33 +34,6 @@ def generate_match_number():
     base = int(datetime.now().strftime("%d%m%y"))
     return base * 100 + random.randint(0, 99)
 
-def get_input_method():
-    """Get the user's preferred input method."""
-    while True:
-        print("\nChoose Input Method:")
-        print("1. MATCH NUMBER")
-        print("2. CUSTOM INPUT")
-        try:
-            choice = int(input("Enter your choice (1 or 2): "))
-            if choice in [1, 2]:
-                return choice
-            else:
-                logging.warning("Invalid choice entered")
-        except ValueError:
-            logging.warning("Non-numeric input received")
-
-def get_match_details_method_1():
-    """Get match details using match number input method."""
-    while True:
-        try:
-            match_number = int(input("Enter the match number: "))
-            if match_number > 0:
-                return match_number
-            else:
-                logging.warning("Invalid match number entered")
-        except ValueError:
-            logging.warning("Non-numeric match number entered")
-
 def create_match_df(squad_df, team1, team2, venue, toss_info, team1_innings, team2_innings):
     """Create match DataFrame from input details."""
     try:
@@ -73,7 +45,7 @@ def create_match_df(squad_df, team1, team2, venue, toss_info, team1_innings, tea
             raise ValueError(f"No players found for {'team1' if team1_players.empty else 'team2'}")
 
         # Add toss information to players
-        toss_info = f"{toss_info['toss_winner']} won the toss and chose to {toss_info['toss_decision']}"
+        toss_string = f"{toss_info['toss_winner']} won the toss and chose to {toss_info['toss_decision']}"
 
         # Create dataframes for both teams with required columns
         team1_df = pd.DataFrame({
@@ -81,7 +53,7 @@ def create_match_df(squad_df, team1, team2, venue, toss_info, team1_innings, tea
             'Team': team1,
             'Opponent': team2,
             'Venue': venue,
-            'Toss Info': toss_info,
+            'Toss Info': toss_string,
             'Innings': team1_innings,
             'Cricinfo ID': team1_players['key_cricinfo']
         })
@@ -91,7 +63,7 @@ def create_match_df(squad_df, team1, team2, venue, toss_info, team1_innings, tea
             'Team': team2,
             'Opponent': team1,
             'Venue': venue,
-            'Toss Info': toss_info,
+            'Toss Info': toss_string,
             'Innings': team2_innings,
             'Cricinfo ID': team2_players['key_cricinfo']
         })
@@ -108,113 +80,60 @@ def create_match_df(squad_df, team1, team2, venue, toss_info, team1_innings, tea
         logging.error(f"Error creating match DataFrame: {str(e)}")
         raise
 
-def get_match_details_method_2():
-    """Get match details using detailed information input method."""
-    logging.info("Starting detailed match information input")
-    print("\nEnter Match Details:")
-
-    # Get team inputs
-    print(f"\nAvailable teams: {', '.join(VALID_TEAMS)}")
-    while True:
-        team1 = input("Enter Team 1: ").upper()
-        if team1 in VALID_TEAMS:
-            break
-        logging.warning(f"Invalid team name entered: {team1}")
-
-    while True:
-        team2 = input("Enter Team 2: ").upper()
-        if team2 in VALID_TEAMS and team2 != team1:
-            break
-        logging.warning(f"Invalid team name entered: {team2}")
-
-    # Get venue
-    print("\nAvailable venues:")
-    for idx, venue in enumerate(VALID_VENUES, 1):
-        print(f"{idx}. {venue}")
-
-    while True:
-        venue = input("Enter venue (name or number): ")
-        try:
-            if venue.isdigit() and 1 <= int(venue) <= len(VALID_VENUES):
-                venue = VALID_VENUES[int(venue)-1]
-                break
-            elif venue in VALID_VENUES:
-                break
-            logging.warning(f"Invalid venue entered: {venue}")
-        except ValueError:
-            logging.warning("Invalid venue input")
-
-    # Get toss details
-    while True:
-        toss_winner = input(f"Enter toss winner ({team1}/{team2}): ").upper()
-        if toss_winner in [team1, team2]:
-            break
-        logging.warning(f"Invalid toss winner entered: {toss_winner}")
-
-    while True:
-        toss_decision = input("Enter toss decision (bat/field): ").lower()
-        if toss_decision in ['bat', 'field']:
-            break
-        logging.warning(f"Invalid toss decision entered: {toss_decision}")
-
-    toss_info = {
-    'toss_winner': toss_winner,
-    'toss_decision': toss_decision
-    }
-
-    # Determine innings for each team
-    if (toss_winner == team1 and toss_decision == 'bat') or (toss_winner == team2 and toss_decision == 'field'):
-        team1_innings = 1
-        team2_innings = 2
-    else:
-        team1_innings = 2
-        team2_innings = 1
-
-    # Create match details dictionary to return
-    match_details = {
-        'team1': team1,
-        'team2': team2,
-        'venue': venue,
-        'toss_winner': toss_winner,
-        'toss_decision': toss_decision,
-        'team1_innings': team1_innings,
-        'team2_innings': team2_innings,
-        'toss_info': toss_info
-    }
-
-    logging.info("Match details collected successfully")
-    return match_details
-
-def process_input(input_method, squad_df):
-    """Main function to process user input and create match DataFrame."""
+def process_input_scraper(match_number):
+    """Process match details using the scraper method."""
+    logging.info(f"Processing match number: {match_number}")
     try:
-        # Method 1: Match number input
-        if input_method == 1:
-            match_number = get_match_details_method_1()
-            logging.info(f"Processing match number: {match_number}")
-            try:
-                match_df = match_detail_scraper(match_number=match_number)
-                if match_df is None or match_df.empty:
-                    logging.warning("Primary match scraper failed, trying backup")
-                    match_df = backup_match_details_scraper()
-                return match_df, match_number
-            except Exception as e:
-                logging.error(f"Error in match scraping: {str(e)}")
-                return pd.DataFrame(), None
+        match_df = match_detail_scraper(match_number=match_number)
+        if match_df is None or match_df.empty:
+            logging.warning("Primary match scraper failed, trying backup")
+            match_df = backup_match_details_scraper()
 
-        else:
-            match_details = get_match_details_method_2()
-            match_df = create_match_df(
-                squad_df=squad_df,
-                team1=match_details['team1'],
-                team2=match_details['team2'],
-                venue=match_details['venue'],
-                toss_info=match_details['toss_info'],
-                team1_innings=match_details['team1_innings'],
-                team2_innings=match_details['team2_innings']
-            )
-            return match_df, generate_match_number()
+        # FIX: Ensure the final DataFrame from either scraper has string IDs to prevent merge errors.
+        if match_df is not None and not match_df.empty and 'Cricinfo ID' in match_df.columns:
+            match_df['Cricinfo ID'] = match_df['Cricinfo ID'].astype(str)
 
+        return match_df
     except Exception as e:
-        logging.error(f"Error processing input: {str(e)}")
+        logging.error(f"Error in match scraping: {str(e)}")
+        return pd.DataFrame()
+
+def process_input_custom(squad_df, match_details):
+    """Process match details from custom user input."""
+    try:
+        # FIX: Ensure the squad_df passed in has string IDs. This will also affect the
+        # global DataFrame in app.py for this request, fixing downstream merges.
+        squad_df['key_cricinfo'] = squad_df['key_cricinfo'].astype(str)
+
+        team1 = match_details['team1'].upper()
+        team2 = match_details['team2'].upper()
+        venue = match_details['venue']
+        toss_winner = match_details['toss_winner'].upper()
+        toss_decision = match_details['toss_decision'].lower()
+
+        toss_info = {
+            'toss_winner': toss_winner,
+            'toss_decision': toss_decision
+        }
+
+        # Determine innings for each team
+        if (toss_winner == team1 and toss_decision == 'bat') or (toss_winner == team2 and toss_decision == 'field'):
+            team1_innings = 1
+            team2_innings = 2
+        else:
+            team1_innings = 2
+            team2_innings = 1
+
+        match_df = create_match_df(
+            squad_df=squad_df,
+            team1=team1,
+            team2=team2,
+            venue=venue,
+            toss_info=toss_info,
+            team1_innings=team1_innings,
+            team2_innings=team2_innings
+        )
+        return match_df
+    except Exception as e:
+        logging.error(f"Error processing custom input: {str(e)}")
         return pd.DataFrame()
