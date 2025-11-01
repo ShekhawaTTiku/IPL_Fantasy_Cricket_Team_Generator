@@ -1,8 +1,11 @@
-# Fantasy Cricket Team Generator
+# IPL Fantasy Cricket Team Generator
 
 This project is a comprehensive tool for fantasy cricket enthusiasts, specifically designed for the Indian Premier League (IPL). 
 It leverages machine learning models to predict player performance based on a rich set of historical data, recent form, and match-specific conditions. 
 The application can generate optimized fantasy teams (Best XI or a 15-player squad) based on these predictions, adhering to standard fantasy sports constraints like budget and player roles.
+
+## Check it Out
+https://ipl-fantasy-team-predictor.streamlit.app/
 
 ## Features
 
@@ -18,3 +21,5 @@ The application can generate optimized fantasy teams (Best XI or a 15-player squ
   - Best XI: The single best 11-player team. 
   - Best XI + Backups: A 15-player squad with the optimal 11 players. 
   - Player Rankings: A simple ranked list of all players based on their predicted fantasy points.
+ 
+
