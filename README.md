@@ -15,6 +15,15 @@
 
 </div>
 
+## 🖥️ Hosted Application
+
+The current project README links to the deployed Streamlit app:
+
+**[Open IPL Fantasy Cricket Team Generator](https://ipl-fantasy-team-predictor.streamlit.app/)**
+
+The hosted deployment requires its own configured secrets and access to the backing Google Sheets and model repository. If the service is unavailable, use the local setup below with credentials you are authorized to use.
+
+---
 ---
 
 ## ✨ Overview
